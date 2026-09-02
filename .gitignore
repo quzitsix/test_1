@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# Tests / tooling
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Secrets. Judge and adapter API keys live in the environment or .env,
+# never in the repo.
+.env
+.env.*
+!.env.example
+**/credentials*
+**/secrets*
+**/api.sh
+
+# Results and scratch. Runs are reproducible from the frozen suite + config,
+# so the databases and staging dirs are not tracked.
+runs/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+staging/
+.meowbench_scratch/
+
+# Mined candidates before audit. Only frozen releases/ are tracked.
+candidates/
+
+# Never commit media or upstream annotation copies: every source dataset
+# forbids redistributing frames, and most forbid redistributing annotations.
+# Releases ship ids + timestamps + our own QA text only.
+*.mp4
+*.mkv
+*.avi
+*.webm
+*.wav
+*.mp3
+*.ply
+data/
+datasets/
+
+# ...except the tiny synthetic fixtures generated for CI.
+!fixtures/**
