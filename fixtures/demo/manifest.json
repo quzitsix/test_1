@@ -1,0 +1,14 @@
+{
+  "schema": "meowbench.suite/1",
+  "name": "demo-v0.1",
+  "n_items": 16,
+  "n_envs": 1,
+  "axes": {
+    "A3_spatial_change": 8,
+    "A8_routine": 8
+  },
+  "items_sha256": "823d92c392bfd05e6476a26cc2c305b21f6b5575ea43145d4fb67ec751ba0c7a",
+  "envs_sha256": "be884b3d8c04e08f62b15e383b21acbd59c29e5bb28a58a4ca934f31a0be0cd2",
+  "suite_sha": "d51b8c850f02ecaa1c8282fedd1f4d56d2e0a4039b8968164f5fab064d69ad85",
+  "note": "synthetic CI fixture; answers encoded in the video bytes"
+}
