@@ -11,16 +11,23 @@ from meowbench.adapters.protocol import (
     read_messages,
     write_message,
 )
-from meowbench.adapters.staging import RevocationReport, StagingArea
+from meowbench.adapters.staging import (
+    EnforcementTier,
+    RevocationReport,
+    StagingArea,
+    open_handles_under,
+)
 
 __all__ = [
     "AdapterCrashed",
     "AdapterProcess",
     "AdapterTimeout",
+    "EnforcementTier",
     "ProtocolError",
     "RevocationReport",
     "StagingArea",
     "Timeouts",
+    "open_handles_under",
     "read_messages",
     "write_message",
 ]

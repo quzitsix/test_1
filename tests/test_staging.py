@@ -9,11 +9,12 @@ caught the data-destroying variant of this module.
 from __future__ import annotations
 
 import os
+import sys
 from pathlib import Path
 
 import pytest
 
-from meowbench.adapters.staging import StagingArea
+from meowbench.adapters.staging import EnforcementTier, StagingArea, open_handles_under
 
 PAYLOAD = b"PRECIOUS DATASET VIDEO" * 100
 
@@ -153,3 +154,56 @@ def test_hardlinks_share_inodes_on_this_platform(tmp_path: Path, source_video: P
     with open(link, "r+b") as fh:
         fh.truncate(0)
     assert source_video.stat().st_size == 0, "truncating a hardlink must hit the source"
+
+
+# -- open-handle audit ------------------------------------------------------
+
+
+def test_fd_audit_reports_availability(tmp_path: Path, source_video: Path) -> None:
+    """The audit runs on Linux only; elsewhere it must say so, not lie."""
+    with StagingArea(tmp_path / "stage", "e1") as area:
+        area.stage("s1", source_video)
+        report = area.revoke(pid=os.getpid())
+    expected = sys.platform.startswith("linux")
+    assert report.fd_audit_available is expected
+
+
+@pytest.mark.skipif(not sys.platform.startswith("linux"), reason="needs /proc")
+def test_fd_audit_detects_our_own_open_handle(tmp_path: Path, source_video: Path) -> None:
+    with StagingArea(tmp_path / "stage", "e1") as area:
+        staged = area.stage("s1", source_video)
+        with open(staged, "rb") as held:
+            held.read(4)
+            report = area.revoke(pid=os.getpid())
+        assert report.open_handles, "an open fd under the staging dir must be seen"
+        assert report.is_contested
+
+
+def test_fd_audit_clean_when_nothing_held(tmp_path: Path, source_video: Path) -> None:
+    with StagingArea(tmp_path / "stage", "e1") as area:
+        area.stage("s1", source_video)
+        report = area.revoke(pid=os.getpid())
+    assert report.open_handles == []
+    assert not report.is_contested
+
+
+def test_revoke_without_pid_skips_the_audit(tmp_path: Path, source_video: Path) -> None:
+    with StagingArea(tmp_path / "stage", "e1") as area:
+        area.stage("s1", source_video)
+        report = area.revoke()
+    assert report.fd_audit_available is False
+    assert report.open_handles == []
+
+
+def test_open_handles_under_tolerates_dead_pid(tmp_path: Path) -> None:
+    """A crashed system must not turn the audit into an exception."""
+    paths, available = open_handles_under(999_999_999, tmp_path)
+    assert paths == []
+    assert available is False
+
+
+def test_enforcement_tiers_are_ordered_by_strength() -> None:
+    """The tier is reported alongside every number, so keep it explicit."""
+    assert EnforcementTier.DECLARED.value == "declared"
+    assert EnforcementTier.REVOKED.value == "revoked"
+    assert EnforcementTier.ISOLATED.value == "isolated"

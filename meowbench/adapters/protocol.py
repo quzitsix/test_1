@@ -135,6 +135,9 @@ class AdapterProcess:
         self._proc: subprocess.Popen[str] | None = None
         self._reader: _LineReader | None = None
         self._stderr_reader: _LineReader | None = None
+        #: Items whose query timed out. A late reply for one of these is stale
+        #: and must be discarded rather than matched to a later question.
+        self._abandoned: set[str] = set()
         self.system_id: str = ""
         self.capabilities: Capabilities | None = None
 
@@ -193,6 +196,11 @@ class AdapterProcess:
     @property
     def alive(self) -> bool:
         return self._proc is not None and self._proc.poll() is None
+
+    @property
+    def pid(self) -> int | None:
+        """The system's process id, for the post-revocation fd audit."""
+        return self._proc.pid if self._proc is not None else None
 
     def drain_stderr(self, limit: int = 40) -> list[str]:
         """Recent stderr lines, for diagnostics on failure."""
@@ -299,18 +307,36 @@ class AdapterProcess:
         return self._expect("ingest_end_ack", self._timeouts.ingest)
 
     def query(self, msg: QueryMsg) -> AnswerMsg:
+        """Ask one question.
+
+        A timeout leaves the stream desynced: the slow reply is still in flight
+        and would otherwise be read as the *next* question's answer. So a
+        timed-out item is remembered, and any late answer for it is discarded on
+        the next read rather than mis-attributed.
+        """
         self._send(msg.model_dump())
-        payload = self._expect("answer", self._timeouts.query, item_id=msg.item_id)
-        try:
-            answer = AnswerMsg.model_validate(payload)
-        except ValidationError as exc:
-            raise ProtocolError(f"malformed answer for {msg.item_id}: {exc}") from exc
-        if answer.item_id != msg.item_id:
+        while True:
+            try:
+                payload = self._expect("answer", self._timeouts.query, item_id=msg.item_id)
+            except AdapterTimeout:
+                self._abandoned.add(msg.item_id)
+                raise
+            try:
+                answer = AnswerMsg.model_validate(payload)
+            except ValidationError as exc:
+                raise ProtocolError(f"malformed answer for {msg.item_id}: {exc}") from exc
+            if answer.item_id == msg.item_id:
+                return answer
+            if answer.item_id in self._abandoned:
+                # Late reply to a question we already gave up on. Drop it and
+                # keep waiting for the current one.
+                logger.debug("discarding late answer for abandoned item %s", answer.item_id)
+                self._abandoned.discard(answer.item_id)
+                continue
             raise ProtocolError(
                 f"answer for {answer.item_id!r}, expected {msg.item_id!r} "
                 "(systems must not reorder or batch queries)"
             )
-        return answer
 
     def env_end(self) -> None:
         self._send(EnvEndMsg().model_dump())

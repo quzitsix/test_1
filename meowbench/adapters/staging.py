@@ -36,6 +36,14 @@ Residual risk, stated plainly: a handle opened before revocation can still
 return data already sitting in its buffer (~8 KB in local tests). This is a
 strong, auditable honesty constraint rather than cryptographic isolation.
 Hard isolation would need containers with mount lifecycle control.
+
+For context on how much this buys: mainstream harnesses (lmms-eval,
+VLMEvalKit, BIG-bench, HELM, OpenEQA) enforce *nothing* — they hand over full
+paths and trust the model wrapper. Streaming benchmarks enforce their
+timestamp discipline purely by convention while the whole video sits decoded in
+memory. Only the embodied-AI challenges (Habitat, Dynabench) do real
+isolation, via containers. Truncate-then-unlink plus the open-handle audit
+below is the strongest thing available without containerising the system.
 """
 
 from __future__ import annotations
@@ -43,10 +51,30 @@ from __future__ import annotations
 import logging
 import os
 import shutil
+import sys
 from dataclasses import dataclass, field
+from enum import Enum
 from pathlib import Path
 
 logger = logging.getLogger(__name__)
+
+
+class EnforcementTier(str, Enum):
+    """How strongly the two-phase boundary was enforced for a given run.
+
+    Recorded on every run so a reported number always carries the strength of
+    the guarantee behind it.
+    """
+
+    #: The system declared it does not touch media at query time. Nothing
+    #: verified. This is what most published benchmarks actually do.
+    DECLARED = "declared"
+    #: Payload copied to scratch and revoked (truncate + unlink) before the
+    #: query phase, with open handles audited. The default here.
+    REVOKED = "revoked"
+    #: Media never reachable by the system's filesystem at all (container with
+    #: no media mount, frames delivered over the wire). Not yet implemented.
+    ISOLATED = "isolated"
 
 
 @dataclass
@@ -65,20 +93,54 @@ class RevocationReport:
     unlinked: list[str] = field(default_factory=list)
     contested: list[str] = field(default_factory=list)
     errors: list[str] = field(default_factory=list)
+    #: Paths under the staging dir still held open by the system, found by
+    #: inspecting /proc/<pid>/fd. Populated only when a pid is supplied and
+    #: /proc is available; empty elsewhere, which is not proof of innocence.
+    open_handles: list[str] = field(default_factory=list)
+    fd_audit_available: bool = False
 
     @property
     def is_contested(self) -> bool:
-        """True if any staged file was still held open by the system."""
-        return bool(self.contested)
+        """True if the system was still holding a staged file at revocation."""
+        return bool(self.contested or self.open_handles)
 
     def summary(self) -> dict[str, int | bool]:
         return {
             "truncated": len(self.truncated),
             "unlinked": len(self.unlinked),
             "contested": len(self.contested),
+            "open_handles": len(self.open_handles),
+            "fd_audit_available": self.fd_audit_available,
             "errors": len(self.errors),
             "is_contested": self.is_contested,
         }
+
+
+def open_handles_under(pid: int, root: Path) -> tuple[list[str], bool]:
+    """Staged paths the process still has open, via /proc/<pid>/fd.
+
+    Returns ``(paths, audit_available)``. On platforms without /proc the audit
+    simply does not run — absence of evidence, not evidence of absence. On
+    Windows the equivalent signal is the ``PermissionError`` that unlink raises,
+    which `revoke()` already captures as `contested`.
+    """
+    fd_dir = Path(f"/proc/{pid}/fd")
+    if not sys.platform.startswith("linux") or not fd_dir.is_dir():
+        return [], False
+    root_str = str(root.resolve())
+    found: list[str] = []
+    try:
+        entries = list(fd_dir.iterdir())
+    except OSError:
+        return [], False
+    for entry in entries:
+        try:
+            target = os.readlink(entry)
+        except OSError:
+            continue
+        if target.startswith(root_str):
+            found.append(target)
+    return found, True
 
 
 class StagingArea:
@@ -148,14 +210,23 @@ class StagingArea:
         logger.debug("staged %s via %s -> %s", logical_name, mode, dst)
         return dst
 
-    def revoke(self) -> RevocationReport:
+    def revoke(self, *, pid: int | None = None) -> RevocationReport:
         """Make every staged file unusable. Idempotent.
 
         Truncation is the primary mechanism because it is the only one that
         works while a reader holds the file open. Unlink is best-effort, and
         its failure is reported rather than ignored.
+
+        Args:
+            pid: the system's process id. When given (and /proc is available)
+                the staged directory is audited for still-open descriptors
+                *before* truncation, which is the Linux counterpart to the
+                PermissionError signal Windows gives us.
         """
         report = RevocationReport()
+        if pid is not None:
+            report.open_handles, report.fd_audit_available = open_handles_under(pid, self._dir)
+
         for name, sf in self._files.items():
             if not sf.staged.exists():
                 continue
@@ -186,10 +257,11 @@ class StagingArea:
         self._revoked = True
         if report.is_contested:
             logger.warning(
-                "env %s: %d staged file(s) still held open at revocation: %s",
+                "env %s: system still held staged media at revocation "
+                "(unlink-blocked=%s, open fds=%s)",
                 self._env_id,
-                len(report.contested),
-                ", ".join(report.contested),
+                ", ".join(report.contested) or "none",
+                ", ".join(report.open_handles) or "none",
             )
         return report
 
