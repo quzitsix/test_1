@@ -73,8 +73,37 @@ source "$CONDA_BASE/etc/profile.d/conda.sh"
 if [ -d "$CONDA_BASE/envs/$ENV_NAME" ]; then
   say "env '$ENV_NAME' already exists — reusing it (delete it first for a clean build)"
 else
-  say "creating env '$ENV_NAME'"
-  conda create -y -n "$ENV_NAME" "python=$PY"
+  say "creating env '$ENV_NAME' from conda-forge"
+  # conda-forge with --override-channels, deliberately, for two reasons:
+  #   1. conda >= 26 refuses to touch repo.anaconda.com's `defaults` channels
+  #      until their Terms of Service are accepted interactively, which would
+  #      wedge this script.
+  #   2. Anaconda's ToS restricts commercial use; conda-forge (BSD-3) has no
+  #      such condition, which is the safer default for a lab.
+  # We only need python + pip from conda anyway; everything real comes from pip.
+  CREATE_ARGS=(-y -n "$ENV_NAME" "python=$PY" pip)
+  if [ "${NO_CONDA_FORGE:-0}" != "1" ]; then
+    CREATE_ARGS=(-y -n "$ENV_NAME" -c conda-forge --override-channels "python=$PY" pip)
+  else
+    say "NO_CONDA_FORGE=1 -> using whatever channels conda is configured with"
+  fi
+  conda create "${CREATE_ARGS[@]}" || {
+    cat >&2 <<'EOF'
+
+conda-forge could not be reached or resolved. Two options:
+
+  a) point conda at a mirror, then re-run this script:
+       conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+       conda config --set channel_priority flexible
+
+  b) accept Anaconda's ToS and use the default channels instead (note their
+     licence restricts commercial use):
+       conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
+       conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
+     then:  NO_CONDA_FORGE=1 bash scripts/setup_conda_env.sh
+EOF
+    exit 1
+  }
 fi
 conda activate "$ENV_NAME"
 
