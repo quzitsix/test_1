@@ -49,13 +49,18 @@ fi
 DRIVER_MAJOR="${DRIVER%%.*}"
 say "nvidia driver: ${DRIVER:-not found}"
 
-# cu13 wheels need a ~580+ driver; below that, stay on the last cu12 torch.
+# cu13 wheels need a ~580+ driver; below that, stay on a cu12 torch.
+# 2.9.1 rather than 2.10.x deliberately: both report cu128, but 2.10 adds
+# `cuda-bindings` + `cuda-pathfinder` dependencies whose driver floor we could not
+# confirm, while 2.9.1's 16-package CUDA graph was audited end to end against the
+# TUNA mirror. torchvision 0.24.1 pins torch==2.9.1 exactly.
 TORCH_SPEC="torch"
+TV_SPEC=""
 if [ -n "$DRIVER_MAJOR" ] && [ "$DRIVER_MAJOR" -lt 580 ] 2>/dev/null; then
-  TORCH_SPEC="torch==2.10.*"
-  say "driver $DRIVER < 580 -> pinning $TORCH_SPEC (last release with cu12 deps)"
+  TORCH_SPEC="torch==2.9.1"; TV_SPEC="torchvision==0.24.1"
+  say "driver $DRIVER < 580 (CUDA 13 needs >=580.65) -> pinning $TORCH_SPEC"
 elif [ -z "$DRIVER" ]; then
-  TORCH_SPEC="torch==2.10.*"
+  TORCH_SPEC="torch==2.9.1"; TV_SPEC="torchvision==0.24.1"
   say "no driver detected -> pinning $TORCH_SPEC conservatively"
 else
   say "driver $DRIVER supports cu13 -> installing latest torch"
@@ -114,13 +119,18 @@ say "python: $("$PYBIN" -V)"
 say "upgrading pip"
 "$PYBIN" -m pip install -q -U pip "${PIP_ARGS[@]}"
 
-say "installing $TORCH_SPEC (this is the big one, ~2-3 GiB with CUDA deps)"
-"$PYBIN" -m pip install "$TORCH_SPEC" "${PIP_ARGS[@]}"
+say "installing $TORCH_SPEC ${TV_SPEC} (~3.8 GiB of wheels; torch vendors all of CUDA)"
+# --no-cache-dir: these wheels are huge and a partial cache from an interrupted
+# run is a common source of confusing resolution failures.
+# shellcheck disable=SC2086
+"$PYBIN" -m pip install --no-cache-dir "$TORCH_SPEC" $TV_SPEC "${PIP_ARGS[@]}"
 
 say "verifying CUDA before going further"
 if ! "$PYBIN" - <<'PY'
 import sys
+
 import torch
+
 print(f"  torch        {torch.__version__}")
 print(f"  cuda build   {torch.version.cuda}")
 ok = torch.cuda.is_available()
@@ -128,6 +138,10 @@ print(f"  cuda usable  {ok}")
 if ok:
     print(f"  devices      {torch.cuda.device_count()}")
     print(f"  gpu 0        {torch.cuda.get_device_name(0)}")
+    print(f"  capability   {torch.cuda.get_device_capability(0)}")
+    # is_available() can pass while cuBLAS is broken, so actually multiply.
+    a = torch.randn(256, 256, device="cuda", dtype=torch.bfloat16)
+    print(f"  matmul       {(a @ a).float().sum().isfinite().item()}")
 sys.exit(0 if ok else 1)
 PY
 then
@@ -149,7 +163,24 @@ EOF
 fi
 
 say "installing MEOWBench + adapters"
-"$PYBIN" -m pip install -e "$REPO[hf,api,dev]" "${PIP_ARGS[@]}"
+# Ordering is load-bearing: accelerate/transformers declare `torch>=...` with no
+# upper bound, so installing them without a constraint can resolve a NEWER torch
+# and silently clobber the pinned CUDA-12 build we just verified. Re-stating the
+# pin here makes the resolver keep it.
+"$PYBIN" -m pip install -e "$REPO[hf,api,dev]" "$TORCH_SPEC" ${TV_SPEC:+"$TV_SPEC"} "${PIP_ARGS[@]}"
+
+say "re-verifying CUDA after the dependency install (a newer torch would break it)"
+"$PYBIN" - <<'PY'
+import sys
+
+import torch
+
+print(f"  torch {torch.__version__}  cuda={torch.cuda.is_available()}")
+if not torch.cuda.is_available():
+    print("\n  CUDA broke during the dependency install — something pulled a newer"
+          "\n  torch over the pinned one. Check with:  pip list | grep -i torch")
+    sys.exit(1)
+PY
 
 say "final check"
 "$PYBIN" - <<'PY'

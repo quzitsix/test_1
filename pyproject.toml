@@ -20,7 +20,17 @@ dependencies = [
 video = ["av>=12.0", "pillow>=10.0"]
 # Local HF vision-language models (hf_vlm adapter). Install a CUDA-matched torch
 # separately; pip's default wheel may be CPU-only.
-hf = ["av>=12.0", "pillow>=10.0", "torch", "transformers>=4.49", "accelerate>=0.34"]
+hf = [
+    "av>=12.0",
+    "pillow>=10.0",
+    "torch",
+    # 4.56 is the floor for two reasons: `dtype=` (older versions silently
+    # ignore it and load fp32), and Qwen3-VL support. 4.57.x is what we
+    # verified against; do not drop below it casually.
+    "transformers>=4.56",
+    "accelerate>=1.0",
+    "safetensors",
+]
 # OpenAI-compatible endpoints (openai_compat adapter) and LLM judges.
 api = ["av>=12.0", "pillow>=10.0", "openai>=1.40", "httpx>=0.27"]
 # Review UI (M3).
