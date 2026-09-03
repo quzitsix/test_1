@@ -17,94 +17,65 @@ written, and the three tracks differ mechanically — not accuracy.**
 ## Step 1 — probe the machine (read-only, ~1 min)
 
 ```bash
-# on master, since homeSentinel's code + conda live on master's local /home
-cd /home/liuchang            # or wherever you want the repo
+cd ~                          # or wherever you want the repo
 git clone git@github.com:quzitsix/test_1.git meowbench
 cd meowbench
 bash scripts/server_check.sh
 ```
 
-If GitHub is unreachable from the node, clone on a machine that can reach it and
-`rsync -av meowbench/ master:/home/liuchang/meowbench/`.
+GitHub over **HTTPS** may be blocked while **SSH works** — use the `git@` URL
+above, not `https://`. Also useful:
 
-**Paste the whole output back.** The lines that decide the plan:
+```bash
+bash scripts/find_weights.sh   # locate local model weights + the emptiest GPU
+```
+
+**Paste the output back if anything looks off.** What it decides:
 
 | line | decides |
 |---|---|
-| gpu name + memory | which model sizes fit, and `--n-frames` |
-| the env table (torch / cuda?) | whether we clone an existing GPU env or build fresh |
-| `pypi.tuna` / `download.pytorch.org` reachable | which index to install from |
+| gpu name, memory, and how much is already in use | model size, `--n-frames`, which card to pin |
+| the env table (torch / cuda?) | whether an existing env can be reused |
+| which package index is reachable | `INDEX=` for the setup script |
 | model root listing | which weights to point at |
-| disk free | whether a ~10 GiB env clone is affordable |
+| disk free | ~10 GiB is needed for the env |
 
-Then **stop and wait** — I will give you the exact install command for what the
-probe found. The two branches below are what I expect; do not guess between them.
+Step 2 adapts to most of this automatically, so you can go straight on unless the
+probe shows no GPU, no conda, or no reachable index.
 
 ---
 
 ## Step 2 — the conda environment
 
-> Fill this in after step 1. Both branches are written out so you can see where
-> we are heading, but **run the one I confirm**, not whichever looks right.
-
-### Branch A — clone an existing GPU env (preferred if one has working CUDA)
-
-`homeSentinel` already does this, and it avoids re-downloading a multi-GB torch
-wheel. If the probe shows an env with `torch ... cuda? True`, we copy it.
+One command:
 
 ```bash
-CONDA_BASE="$(conda info --base)"
-source "$CONDA_BASE/etc/profile.d/conda.sh"
-
-# <BASE_ENV> comes from the probe output — do not assume it
-cp -a "$CONDA_BASE/envs/<BASE_ENV>" "$CONDA_BASE/envs/meowbench"
+bash scripts/setup_conda_env.sh
 conda activate meowbench
-
-python -m pip install -U pip
-python -m pip install -e ".[hf,api,dev]" \
-  -i https://pypi.tuna.tsinghua.edu.cn/simple \
-  --trusted-host pypi.tuna.tsinghua.edu.cn
 ```
 
-`cp -a` rather than `conda create --clone`: it is what `homeSentinel`'s own setup
-script uses, and it is much faster on this filesystem.
+If the TUNA mirror is slow, `INDEX=aliyun bash scripts/setup_conda_env.sh`; to
+bypass mirrors entirely, `INDEX=pypi`.
 
-### Branch B — build from scratch (if no env has working CUDA)
+### What it does, and why not the usual advice
 
-```bash
-conda create -y -n meowbench python=3.11
-conda activate meowbench
+The usual instruction is "install torch from `download.pytorch.org`". **On this
+machine that index returns 403**, so it is unusable — and it turns out to be
+unnecessary:
 
-python -m pip install -U pip
-# The cuXXX suffix must match the driver's CUDA version from the probe.
-python -m pip install torch --index-url https://download.pytorch.org/whl/cu121
-python -m pip install -e ".[hf,api,dev]" \
-  -i https://pypi.tuna.tsinghua.edu.cn/simple \
-  --trusted-host pypi.tuna.tsinghua.edu.cn
-```
+- The default linux x86_64 `torch` wheel **on plain PyPI is already
+  CUDA-enabled** — 555 MB, and it declares `nvidia-cudnn`, `nvidia-nccl` etc. as
+  dependencies. Only the CPU-only build lives exclusively on the PyTorch index.
+  So any PyPI mirror is sufficient. Verified against the PyPI JSON API, not
+  assumed.
+- **torch ≥ 2.11 pins `nvidia-*-cu13` wheels**, which want a driver around 580+.
+  This box has **570.211.01**, so the script reads the driver version and pins
+  `torch==2.10.*` — the last release on cu12 deps. Installing "latest" here would
+  produce a broken CUDA runtime.
 
-Install torch **first and from the pytorch index**; the TUNA mirror can serve a
-CPU-only wheel that silently gives you `cuda? False`.
-
-### Either way, confirm the env before going on
-
-```bash
-conda activate meowbench
-python - <<'PY'
-import torch, transformers, av, PIL, openai, meowbench
-print("python      ", __import__("sys").version.split()[0])
-print("torch       ", torch.__version__, "| cuda:", torch.cuda.is_available())
-print("gpu         ", torch.cuda.get_device_name(0) if torch.cuda.is_available() else "-")
-print("transformers", transformers.__version__)
-print("pyav        ", av.__version__)
-print("meowbench   ", meowbench.__version__)
-PY
-```
-
-`cuda: True` is required for `hf_vlm`. If it says `False`, stop and send me the
-output — running a 7B on CPU will look like a hang, not an error.
-
----
+The script then **verifies `torch.cuda.is_available()` and stops if it is False**,
+because a silent CPU-only install does not error: a 7B model just appears to
+hang. If it stops there, paste the output and I will pin it exactly.
 
 ## Step 3 — prove the install (no GPU, no API key, ~2 min)
 
@@ -124,7 +95,7 @@ skip**) and `14/14 checks passed`.
 ## Step 4 — smoke one model, cheaply
 
 ```bash
-export MODEL=/mnt/nfs_data/shared/model/Qwen2.5-VL-7B-Instruct   # confirm from the probe
+export MODEL=/path/to/Qwen2.5-VL-7B-Instruct   # from find_weights.sh
 
 meowbench verify-adapter --handshake-timeout 900 \
   --system "python -m meowbench.adapters.hf_vlm --model-path $MODEL --context-mode memory --n-frames 4"
@@ -156,33 +127,23 @@ meowbench compare --run runs/hf-oracle --baseline runs/hf-memory
 Runs resume: if one dies, re-run the same `--run-id` and it skips what already
 succeeded.
 
-### As a slurm job
+### Pick a free GPU
+
+`device_map="auto"` spreads the model across every visible card, which on a
+shared box means landing on GPUs other people are using. Pin to a free one:
 
 ```bash
-#!/bin/bash
-#SBATCH -J meowbench-m2
-#SBATCH -p debug
-#SBATCH -N 1 -w master
-#SBATCH --gres=gpu:1 -c 8 --mem=64G
-#SBATCH -t 04:00:00
-#SBATCH -o /home/liuchang/meowbench/logs/%x-%j.out
-#SBATCH -e /home/liuchang/meowbench/logs/%x-%j.err
-
-# Must run on master: code + conda are on master's local /home, not NFS.
-set -euo pipefail
-mkdir -p /home/liuchang/meowbench/logs
-source /home/liuchang/miniconda3/bin/activate meowbench
-cd /home/liuchang/meowbench
-
-MODEL=/mnt/nfs_data/shared/model/Qwen2.5-VL-7B-Instruct
-for MODE in blind memory oracle; do
-  meowbench run --suite fixtures/demo \
-    --run-id "hf-$MODE" --context-mode "$MODE" \
-    --system "python -m meowbench.adapters.hf_vlm --model-path $MODEL --context-mode $MODE --n-frames 8" \
-    --handshake-timeout 900 --ingest-timeout 1800 --query-timeout 600
-done
-meowbench compare --run runs/hf-memory --baseline runs/hf-blind --out runs/gain.json
+export CUDA_VISIBLE_DEVICES=7        # the emptiest card per find_weights.sh
 ```
+
+With 48 GiB per card a 7B in bf16 plus 8 frames fits on one GPU comfortably, so
+there is no reason to spread it.
+
+### If the box has slurm
+
+It did not when we probed it (`sinfo` absent), so run the loop above directly —
+no queue, no node pinning. If that changes, wrap the same loop in an `sbatch`
+script and `source ~/miniconda3/bin/activate meowbench` inside it.
 
 ---
 
@@ -203,7 +164,7 @@ Local vLLM:
 
 ```bash
 python -m vllm.entrypoints.openai.api_server \
-  --model /mnt/nfs_data/shared/model/Qwen2.5-VL-7B-Instruct \
+  --model "$MODEL" \
   --served-model-name qwen2.5-vl-7b --port 8000 --limit-mm-per-prompt image=16
 
 meowbench run --suite fixtures/demo --run-id vllm-memory --context-mode memory \
@@ -266,7 +227,7 @@ a synthetic fixture and confirms nothing is leaking.
 | CUDA OOM during ingest | too many frames per prompt | `--n-frames 4 --max-side 448` |
 | CUDA OOM only in oracle | oracle sends `n_frames × n_sessions` images | lower `--n-frames`, or skip oracle for large models |
 | `MediaError: could not open ...` | payload revoked, or file not decodable | expected in `memory` mode *after* `ingest_end`; during ingest, check the video |
-| job dies instantly with no logs | ran on `node0X` instead of `master` | `-w master` (code + conda are on master's local /home) |
+| model lands on a busy GPU, or OOM | `device_map="auto"` used every visible card | `export CUDA_VISIBLE_DEVICES=7` (or whichever is free) |
 | vLLM 400 about image count | `--limit-mm-per-prompt` below `n_frames` | raise it |
 | `revocation_contested` warning | adapter held the video past `ingest_end` | a first-party adapter should not; send me the run |
 | run died mid-way | anything | re-run the same `--run-id`; it resumes |
