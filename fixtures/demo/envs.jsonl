@@ -1,1 +1,1 @@
-{"env_id":"demo:home1","dataset":"synthetic","sessions":[{"session_id":"s1","order":0,"video_path":"session_01.mp4","duration_sec":5.0,"asr_path":null,"caption_path":null}]}
+{"env_id":"demo:home1","dataset":"synthetic","sessions":[{"session_id":"s1","order":0,"video_path":"session_01.mp4","duration_sec":6.0,"asr_path":null,"caption_path":null}]}

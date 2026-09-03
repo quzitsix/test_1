@@ -58,8 +58,7 @@ def run_conformance(
 
     with TemporaryDirectory(prefix="meowbench_conformance_") as tmp:
         tmp_path = Path(tmp)
-        video = tmp_path / "session.mp4"
-        video.write_bytes(b"CONFORMANCE PAYLOAD" * 64)
+        video = _make_probe_video(tmp_path / "session.mp4")
 
         try:
             with AdapterProcess(command, timeouts=timeouts) as proc:
@@ -80,6 +79,37 @@ def run_conformance(
             results.append(CheckResult("responds within timeout", False, str(exc)))
 
     return results
+
+
+def _make_probe_video(path: Path) -> Path:
+    """A real, tiny, decodable mp4.
+
+    It must be genuinely decodable: any adapter that actually samples frames
+    would otherwise fail conformance because of *our* placeholder rather than
+    its own behaviour. Falls back to a byte blob only if PyAV is unavailable,
+    which limits the check to adapters that never open the file.
+    """
+    try:
+        import av
+        import numpy as np
+    except ImportError:  # pragma: no cover - PyAV is an install extra
+        path.write_bytes(b"CONFORMANCE PAYLOAD" * 64)
+        return path
+
+    container = av.open(str(path), "w")
+    stream = container.add_stream("libx264", rate=10)
+    stream.width, stream.height, stream.pix_fmt = 160, 120, "yuv420p"
+    stream.options = {"g": "10"}
+    for i in range(30):  # 3 seconds
+        frame = av.VideoFrame.from_ndarray(
+            np.full((120, 160, 3), (i * 8) % 256, np.uint8), format="rgb24"
+        )
+        for packet in stream.encode(frame):
+            container.mux(packet)
+    for packet in stream.encode():
+        container.mux(packet)
+    container.close()
+    return path
 
 
 def _check_handshake(proc: AdapterProcess, results: list[CheckResult]) -> ContextMode | None:

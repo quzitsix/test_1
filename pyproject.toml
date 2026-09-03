@@ -14,18 +14,20 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-# Video decoding. ffmpeg is intentionally not required: PyAV is used as a
-# library so the harness works on machines without ffmpeg on PATH.
-video = ["av>=12.0"]
-# Local VLM adapters (M2).
-hf = ["torch", "transformers>=4.49", "accelerate>=0.34"]
-# API adapters and LLM judges (M2/M4).
-api = ["openai>=1.40", "httpx>=0.27"]
+# Video decoding, needed by every adapter that looks at frames. ffmpeg is
+# intentionally NOT required: PyAV is used as a library, so the harness works on
+# machines without ffmpeg on PATH.
+video = ["av>=12.0", "pillow>=10.0"]
+# Local HF vision-language models (hf_vlm adapter). Install a CUDA-matched torch
+# separately; pip's default wheel may be CPU-only.
+hf = ["av>=12.0", "pillow>=10.0", "torch", "transformers>=4.49", "accelerate>=0.34"]
+# OpenAI-compatible endpoints (openai_compat adapter) and LLM judges.
+api = ["av>=12.0", "pillow>=10.0", "openai>=1.40", "httpx>=0.27"]
 # Review UI (M3).
 audit = ["fastapi>=0.110", "uvicorn>=0.29"]
 # Debias stage (M4).
 debias = ["scikit-learn>=1.4"]
-dev = ["pytest>=8.0", "pytest-timeout>=2.3"]
+dev = ["pytest>=8.0", "pytest-timeout>=2.3", "av>=12.0", "pillow>=10.0", "openai>=1.40"]
 
 [project.scripts]
 meowbench = "meowbench.cli:main"

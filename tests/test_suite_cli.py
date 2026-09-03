@@ -25,12 +25,33 @@ STUB = Path(__file__).parent / "stubs" / "perceiving_stub.py"
 N = 8
 
 
+def _encode_with_key(path: Path, answers: dict[str, str], *, seconds: int = 4) -> None:
+    import av
+    import numpy as np
+
+    container = av.open(str(path), "w")
+    container.metadata["comment"] = "|".join(f"{k}={v}" for k, v in sorted(answers.items()))
+    stream = container.add_stream("libx264", rate=10)
+    stream.width, stream.height, stream.pix_fmt = 160, 120, "yuv420p"
+    stream.options = {"g": "10"}
+    for i in range(seconds * 10):
+        frame = av.VideoFrame.from_ndarray(
+            np.full((120, 160, 3), (i * 5) % 256, np.uint8), format="rgb24"
+        )
+        for packet in stream.encode(frame):
+            container.mux(packet)
+    for packet in stream.encode():
+        container.mux(packet)
+    container.close()
+
+
 def build_fixture(root: Path) -> Path:
-    """A tiny suite whose answers are encoded in the video bytes."""
+    """A tiny suite: real decodable video, answer key in its metadata."""
     root.mkdir(parents=True, exist_ok=True)
     golds = ["ABCD"[i % 4] for i in range(N)]
-    (root / "session_01.mp4").write_text(
-        "|".join(f"ANS:it{i:02d}={golds[i]}" for i in range(N)), encoding="utf-8"
+    # A real decodable video with the key in metadata, matching fixtures/demo.
+    _encode_with_key(
+        root / "session_01.mp4", {f"it{i:02d}": golds[i] for i in range(N)}
     )
     envs = {
         "demo:home1": EnvManifest(

@@ -9,10 +9,14 @@ video away, and asks questions. It never inspects the system's memory, retrieved
 evidence, or citations — so a long-context VLM, an external-memory research
 codebase, and a test-time-training model all compete under one contract.
 
-> **Status: M1.** The harness, protocol, scoring, and reporting are implemented
-> and tested end to end on synthetic fixtures. Real dataset mining (`mine`,
-> `audit`) and the LLM judge (`judge`, `debias`) are the next milestones; those
-> subcommands currently explain what they will do and exit non-zero.
+> **Status: M2.** Harness, protocol, scoring, reporting, and two real adapters
+> (`hf_vlm` for local HuggingFace weights, `openai_compat` for any
+> OpenAI-compatible endpoint including vLLM) are implemented and tested. Real
+> dataset mining (`mine`, `audit`) and the LLM judge (`judge`, `debias`) are next;
+> those subcommands explain what they will do and exit non-zero.
+>
+> To run a real model on a cluster, follow
+> [`docs/M2_SERVER_RUNBOOK.md`](docs/M2_SERVER_RUNBOOK.md).
 
 ---
 
@@ -64,12 +68,17 @@ meowbench run --suite fixtures/demo --run-id memory --context-mode memory \
 # 3. score and compare
 meowbench report  --run runs/memory
 meowbench compare --run runs/memory --baseline runs/blind
+
+# ...or a real model (pip install -e ".[hf]")
+meowbench run --suite fixtures/demo --run-id qwen-memory --context-mode memory   --handshake-timeout 900   --system "python -m meowbench.adapters.hf_vlm --model-path /path/to/Qwen2.5-VL-7B-Instruct --context-mode memory"
 ```
 
-`fixtures/demo` is synthetic: the gold answers are encoded in the video bytes, so
-a stub that genuinely reads the payload scores 1.0 while a blind one sits at
-chance. That makes the whole pipeline runnable in CI with no GPU, no API key, and
-no dataset licence.
+`fixtures/demo` is synthetic: a real 7 KiB H.264 file whose answer key sits in the
+container metadata. A stub that reads it scores 1.0 while a blind one sits at
+chance, so the whole pipeline runs in CI with no GPU, no API key, and no dataset
+licence — and because the video is genuinely decodable, real VLM adapters can be
+smoke-tested on it too. Their accuracy there will be near chance by design: the
+fixture validates plumbing, not capability.
 
 ---
 
@@ -276,11 +285,15 @@ meowbench/
     protocol.py     long-lived subprocess driver, timeouts, crash isolation
     staging.py      staging + revocation, enforcement tiers
     echo_stub.py    reference adapter — copy this
+    hf_vlm.py       local HuggingFace VLM, weights loaded in-process
+    openai_compat.py  any /v1/chat/completions endpoint, incl. local vLLM
   scoring/
     deterministic.py  MCQ + MRA
     aggregate.py      per-axis cells, Wilson intervals, Memory Gain
-tests/              174 tests, no GPU / API key / dataset required
+  media.py          frame sampling via PyAV (no ffmpeg binary needed)
+tests/              196 tests, no GPU / API key / dataset required
 fixtures/demo/      synthetic suite for CI
+docs/               M2 server runbook
 ```
 
 `Item.to_query()` is the only sanctioned path from corpus to system, and it drops

@@ -1,14 +1,14 @@
 {
   "schema": "meowbench.suite/1",
-  "name": "demo-v0.1",
+  "name": "demo-v0.2",
   "n_items": 16,
   "n_envs": 1,
   "axes": {
     "A3_spatial_change": 8,
     "A8_routine": 8
   },
-  "items_sha256": "823d92c392bfd05e6476a26cc2c305b21f6b5575ea43145d4fb67ec751ba0c7a",
-  "envs_sha256": "be884b3d8c04e08f62b15e383b21acbd59c29e5bb28a58a4ca934f31a0be0cd2",
-  "suite_sha": "d51b8c850f02ecaa1c8282fedd1f4d56d2e0a4039b8968164f5fab064d69ad85",
-  "note": "synthetic CI fixture; answers encoded in the video bytes"
+  "items_sha256": "12f9f499f24b0951e0b16286dc5665ec570fa6604828ad4bcc990cfde13bdc6c",
+  "envs_sha256": "2b762ec82975873756e0b8cf9df3c374232ad07e3f5d0b63c21b31d84602d785",
+  "suite_sha": "70701b83855f92148a2f2850f808cff88caa7662e69f7b61b995c4033b63a588",
+  "note": "Synthetic CI fixture. Real H.264 video; the answer key is in the container metadata 'comment' tag, so both the perceiving stub and real VLM adapters can consume it. Scores from real models will be near chance, which is expected — this validates plumbing, not capability."
 }

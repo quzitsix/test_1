@@ -51,10 +51,14 @@ def gold_for(index: int) -> str:
 
 @pytest.fixture()
 def suite(tmp_path: Path) -> tuple[dict[str, EnvManifest], list[Item]]:
-    """A video whose bytes encode the answers, plus items asking for them."""
-    payload = "|".join(f"ANS:it{i:02d}={gold_for(i)}" for i in range(N_ITEMS))
+    """A real video carrying its own answer key, plus items asking for it.
+
+    The key lives in the container's metadata rather than in raw bytes, so the
+    file is genuinely decodable — a text blob named `.mp4` would make every real
+    VLM adapter fail with `MediaError` while this stub passed.
+    """
     video = tmp_path / "v.mp4"
-    video.write_text(payload, encoding="utf-8")
+    _encode_with_key(video, {f"it{i:02d}": gold_for(i) for i in range(N_ITEMS)})
 
     envs = {
         "e1": EnvManifest(
@@ -78,6 +82,26 @@ def suite(tmp_path: Path) -> tuple[dict[str, EnvManifest], list[Item]]:
         for i in range(N_ITEMS)
     ]
     return envs, items
+
+
+def _encode_with_key(path: Path, answers: dict[str, str], *, seconds: int = 5) -> None:
+    import av
+    import numpy as np
+
+    container = av.open(str(path), "w")
+    container.metadata["comment"] = "|".join(f"{k}={v}" for k, v in sorted(answers.items()))
+    stream = container.add_stream("libx264", rate=10)
+    stream.width, stream.height, stream.pix_fmt = 160, 120, "yuv420p"
+    stream.options = {"g": "10"}
+    for i in range(seconds * 10):
+        frame = av.VideoFrame.from_ndarray(
+            np.full((120, 160, 3), (i * 5) % 256, np.uint8), format="rgb24"
+        )
+        for packet in stream.encode(frame):
+            container.mux(packet)
+    for packet in stream.encode():
+        container.mux(packet)
+    container.close()
 
 
 def run_track(
