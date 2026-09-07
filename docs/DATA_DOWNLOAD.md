@@ -198,16 +198,21 @@ EOF
 
 **完整版** —— `main_vrs`（原始 RGB+SLAM+IMU，中位 1.75 GiB/序列）。16 个 relocation 丰富的序列 = **27.6 GiB**：
 
+序列清单已在仓库里，不用手敲：
+
 ```bash
-aria_dataset_downloader -c ~/adt/ADT_download_urls.json -o ~/adt/data -d 0 \
-  -l Apartment_release_multiuser_clean_seq118_M1292 \
-     Apartment_release_multiuser_clean_seq114_M1292 \
-     Apartment_release_multiuser_clean_seq117_M1292 \
-     Apartment_release_multiuser_meal_seq135_M1292 \
-     Apartment_release_multiuser_cook_seq117_M1292
+SEQS=$(grep -v '^#' configs/datasets/adt_sequences.txt | grep -v '^$' | tr '\n' ' ')
+aria_dataset_downloader -c ~/adt/ADT_download_urls.json -o ~/adt/data -d 0 -l $SEQS
 ```
 
-（完整 16 序列清单在 workflow 输出里；上面是前 5 个示例。）这批**刻意避开了 R3D-Bench 用掉的 57 个序列**，所以我们挖的题与他们已发表的题池不重叠 —— 179 个候选序列里选的。
+这 16 个**刻意避开了 R3D-Bench 用掉的 57 个序列** —— 从 179 个候选里按"交互物体数"排序选出，所以我们挖的题与他们已发表的题池不可能重叠。
+
+另有 4 个**刻意与 R3D 重叠**的序列用于 oracle 轨校验（6.3 GiB）—— 目的正是复现他们已发表的分数，以此证明我们的 staging / 抽帧 / 打分是对的。**这 4 个不能用来挖我们自己的题**：
+
+```bash
+SEQS=$(grep -v '^#' configs/datasets/adt_sequences_r3d_oracle.txt | grep -v '^$' | tr '\n' ' ')
+aria_dataset_downloader -c ~/adt/ADT_download_urls.json -o ~/adt/data -d 0 -l $SEQS
+```
 
 ### 3g. R3D-Bench 的 QA（288 KB）
 
