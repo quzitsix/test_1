@@ -1,0 +1,16 @@
+# Suite files are checksummed, so their bytes must survive a round trip.
+#
+# `write_suite` writes items.jsonl and envs.jsonl with newline="\n" and records
+# a sha256 of the bytes in manifest.json. Git's autocrlf would rewrite those
+# newlines on checkout, changing the bytes and breaking verification with
+# "the suite was edited after freezing" on a clean clone — on Windows only,
+# which is the worst kind of bug to debug. Measured: fixtures/probe came back
+# with 28 CRLF line endings and a mismatched sha.
+*.jsonl text eol=lf
+fixtures/**/manifest.json text eol=lf
+
+# Videos are binary; never transform them.
+*.mp4 binary
+
+# Shell scripts run on the Linux server, so CRLF would break the shebang.
+*.sh text eol=lf
