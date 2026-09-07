@@ -1,9 +1,18 @@
 """Staging and revocation: the enforcement behind memory mode.
 
-These tests encode empirically-established platform behaviour. On Windows,
-`unlink` fails while a peer holds the file open, and truncating a *hardlink*
-zeroes the dataset original — both verified locally. The tests below would have
-caught the data-destroying variant of this module.
+These tests encode empirically-established platform behaviour, and the two
+platforms differ in a way that matters:
+
+* Truncating a **hardlink** zeroes the dataset original — verified. Hence
+  revocable staging always copies.
+* A held handle is detected differently. Windows refuses the `unlink`, so the
+  failure is the signal. POSIX `unlink` **succeeds** with a live reader — the
+  directory entry goes, the holder keeps reading its fd, nothing raises — so
+  there the signal must come from an fd audit over `/proc`.
+
+Assertions therefore go through `RevocationReport.is_contested`, the union of
+both signals, rather than either platform's field. Asserting on one field is
+what let a broken Linux path pass on Windows.
 """
 
 from __future__ import annotations
@@ -65,6 +74,12 @@ def test_revoke_defeats_a_held_handle(tmp_path: Path, source_video: Path) -> Non
 
     Truncation still fires, so re-reading yields nothing usable, *and* the
     violation is reported rather than passing silently.
+
+    Which field carries the report is platform-dependent, and deliberately so:
+    Windows refuses the unlink (-> `contested`), while POSIX unlink succeeds even
+    with a live reader (-> the fd audit fills `open_handles`). Asserting on
+    `contested` alone is what made this test pass on Windows and fail on Linux,
+    so it asserts on `is_contested`, which is the union.
     """
     with StagingArea(tmp_path / "stage", "e1") as area:
         staged = area.stage("s1", source_video)
@@ -73,7 +88,9 @@ def test_revoke_defeats_a_held_handle(tmp_path: Path, source_video: Path) -> Non
             report = area.revoke()
 
             assert report.is_contested, "a live handle must be reported"
-            assert "s1" in report.contested
+            assert report.contested or report.open_handles, (
+                "the violation must land in one of the two platform signals"
+            )
             assert _unreadable(staged)
         assert source_video.read_bytes() == PAYLOAD
 

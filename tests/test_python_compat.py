@@ -70,23 +70,38 @@ def test_grammar_is_not_newer_than_minimum(path: Path) -> None:
 def backslashes_in_fstring_expressions(source: str) -> list[int]:
     """Line numbers where an f-string's `{...}` slot contains a backslash.
 
-    Illegal before 3.12. Implemented against the 3.12+ tokenizer, which (per
-    PEP 701) no longer emits an f-string as one STRING token: it emits
-    FSTRING_START, then FSTRING_MIDDLE for the literal runs, then the ordinary
-    tokens of each replacement field, then FSTRING_END. So we track f-string
-    nesting and brace depth and look at the tokens *inside* the braces — which is
-    also why a naive scan of the whole string literal found nothing.
+    Illegal before 3.12, and this scanner has to work on *both* tokenizers,
+    which disagree about what an f-string even is:
+
+    * **3.12+** (PEP 701) emits ``FSTRING_START``, ``FSTRING_MIDDLE`` for the
+      literal runs, then the ordinary tokens of each replacement field, then
+      ``FSTRING_END``. So the backslash lives in a separate token and we track
+      brace depth across tokens.
+    * **3.11 and earlier** emit the whole f-string as a single ``STRING`` token,
+      so the backslash is inside that token's text and we scan the text.
+
+    Supporting only one of them is how this check silently passed on the machine
+    it was written on and failed on the machine it was meant to protect.
     """
-    hits: list[int] = []
+    if hasattr(tokenize, "FSTRING_START"):
+        return _scan_pep701(source)
+    return _scan_single_string_token(source)
+
+
+def _tokens(source: str) -> list[tokenize.TokenInfo]:
     try:
-        tokens = list(tokenize.generate_tokens(io.StringIO(source).readline))
+        return list(tokenize.generate_tokens(io.StringIO(source).readline))
     except (tokenize.TokenError, IndentationError, SyntaxError):
-        return hits  # unparseable for another reason; the ast check reports it
+        return []  # unparseable for another reason; the ast check reports it
 
+
+def _scan_pep701(source: str) -> list[int]:
+    """3.12+: f-strings are structured tokens; inspect the replacement fields."""
+    hits: list[int] = []
     fstring_depth = 0
-    brace_depth: list[int] = []  # brace nesting per active f-string
+    brace_depth: list[int] = []
 
-    for token in tokens:
+    for token in _tokens(source):
         name = tokenize.tok_name[token.type]
 
         if name == "FSTRING_START":
@@ -98,7 +113,6 @@ def backslashes_in_fstring_expressions(source: str) -> list[int]:
                 fstring_depth -= 1
                 brace_depth.pop()
             continue
-
         if not fstring_depth:
             continue
 
@@ -109,11 +123,46 @@ def backslashes_in_fstring_expressions(source: str) -> list[int]:
             brace_depth[-1] = max(brace_depth[-1] - 1, 0)
             continue
 
-        # Inside a replacement field: any token carrying a backslash is fatal
-        # before 3.12, whether it is a nested string or a line continuation.
         if brace_depth[-1] > 0 and "\\" in token.string:
             hits.append(token.start[0])
 
+    return sorted(set(hits))
+
+
+def _scan_string_text(text: str, line: int) -> list[int]:
+    """Does this f-string literal's text carry a backslash inside a `{...}`?
+
+    Split out from the tokenizer walk so it can be unit-tested on any
+    interpreter: on 3.12 the pre-3.12 branch can never be reached from source,
+    because that tokenizer does not produce the single STRING token it expects.
+    """
+    quote_at = min((i for i, ch in enumerate(text) if ch in "\"'"), default=len(text))
+    if "f" not in text[:quote_at].lower():
+        return []
+
+    depth = 0
+    index = 0
+    while index < len(text):
+        char = text[index]
+        if char == "{":
+            if index + 1 < len(text) and text[index + 1] == "{":
+                index += 2  # `{{` is a literal brace, not a field
+                continue
+            depth += 1
+        elif char == "}":
+            depth = max(depth - 1, 0)
+        elif char == "\\" and depth > 0:
+            return [line]
+        index += 1
+    return []
+
+
+def _scan_single_string_token(source: str) -> list[int]:
+    """3.11 and earlier: the f-string is one STRING token; scan its text."""
+    hits: list[int] = []
+    for token in _tokens(source):
+        if token.type == tokenize.STRING:
+            hits.extend(_scan_string_text(token.string, token.start[0]))
     return sorted(set(hits))
 
 
@@ -129,7 +178,11 @@ def test_no_backslash_inside_fstring_expressions(path: Path) -> None:
 
 
 def test_the_scanner_actually_detects_the_original_bug() -> None:
-    """Without this, the check above could silently match nothing forever."""
+    """Without this, the check above could silently match nothing forever.
+
+    Exercises the *dispatching* entry point, i.e. whichever scanner this
+    interpreter actually uses.
+    """
     backslash = chr(92)
     offender = 'x = f"a:{p.rstrip(' + "'/" + backslash + backslash + "'" + ')}"'
     assert backslashes_in_fstring_expressions(offender) == [1]
@@ -139,3 +192,38 @@ def test_the_scanner_actually_detects_the_original_bug() -> None:
     assert backslashes_in_fstring_expressions('x = "plain \\\\ string"') == []
     assert backslashes_in_fstring_expressions('x = f"{{literal braces}}"') == []
     assert backslashes_in_fstring_expressions("x = f'{a}{b}'") == []
+
+
+def test_the_pre_312_scanner_handles_a_single_string_token() -> None:
+    """Exercise the 3.11-shaped path using a synthetic token stream.
+
+    The scanner cannot be driven from source on 3.12, because this tokenizer
+    never emits an f-string as one STRING token — that is the whole reason there
+    are two implementations. So feed it the token shape a 3.11 tokenizer *would*
+    produce and check the text-scanning logic directly.
+
+    Without this the 3.11 branch would only ever be exercised on 3.11, which is
+    exactly how the first version of this file passed on 3.12 while the check it
+    was protecting was broken on the server.
+    """
+    backslash = chr(92)
+    offender = 'f"a:{p.rstrip(' + "'/" + backslash + backslash + "'" + ')}"'
+
+    assert _scan_string_text(offender, line=1) == [1]
+    assert _scan_string_text('f"a:{p}"', line=1) == []
+    assert _scan_string_text('"plain ' + backslash + backslash + ' string"', line=1) == []
+    assert _scan_string_text('f"{{literal}}"', line=1) == []
+    # A backslash outside any replacement field is legal even in an f-string.
+    assert _scan_string_text('f"tab' + backslash + backslash + 't {p}"', line=1) == []
+
+
+@pytest.mark.skipif(
+    not hasattr(tokenize, "FSTRING_START"),
+    reason="PEP 701 tokenizer only exists on 3.12+",
+)
+def test_the_pep701_scanner_is_exercised_where_available() -> None:
+    backslash = chr(92)
+    offender = 'x = f"a:{p.rstrip(' + "'/" + backslash + backslash + "'" + ')}"'
+    assert _scan_pep701(offender) == [1]
+    assert _scan_pep701('x = f"a:{p}"') == []
+    assert _scan_pep701('x = "plain ' + backslash + backslash + ' string"') == []
