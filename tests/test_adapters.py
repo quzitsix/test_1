@@ -354,3 +354,57 @@ def test_hf_vlm_rejects_an_unknown_dtype() -> None:
     assert _resolve_dtype(torch, "bfloat16") is torch.bfloat16
     with pytest.raises(SystemExit, match="unknown dtype"):
         _resolve_dtype(torch, "float8_nonsense")
+
+
+def test_transformers_still_collects_images_by_key_name() -> None:
+    """Pin the transformers behaviour `hf_vlm._generate` depends on.
+
+    `apply_chat_template(tokenize=True)` gathers visuals by looking for the keys
+    ("image", "url", "path", "base64") on each content part, and passes
+    `images=None` when it finds none. So a content part of `{"type": "image"}`
+    with no `"image"` key produces a prompt full of image placeholder tokens and
+    *no pixel values*: generation succeeds and the model answers without ever
+    seeing the video, while the harness reports healthy frame counts. That makes
+    the oracle and memory tracks measure priors and reads as a scientific result
+    rather than a bug.
+
+    This asserts against the installed source because it is the only signal that
+    would catch upstream changing how visuals are collected. If it fails, read
+    `processing_utils.apply_chat_template` before touching `_generate`.
+    """
+    import inspect
+
+    from transformers.processing_utils import ProcessorMixin
+
+    source = inspect.getsource(ProcessorMixin.apply_chat_template)
+    assert 'for key in ["image", "url", "path", "base64"]' in source, (
+        "transformers changed how apply_chat_template collects images; "
+        "hf_vlm._generate places PIL objects under the 'image' key to match"
+    )
+    assert "images=batch_images if images_exist else None" in source, (
+        "transformers changed the images=None fallback; verify hf_vlm still "
+        "gets pixel values through the fused path"
+    )
+
+
+def test_hf_vlm_refuses_to_answer_when_frames_were_dropped() -> None:
+    """Sampled frames but no pixel values must abort, not answer blind."""
+    from meowbench.adapters.hf_vlm import _assert_images_reached_the_model
+
+    class _Tensor:
+        def __init__(self, n: int) -> None:
+            self._n = n
+
+        def numel(self) -> int:
+            return self._n
+
+    # Healthy: pixels present for the frames that were sampled.
+    _assert_images_reached_the_model({"pixel_values": _Tensor(1000)}, 3)
+    _assert_images_reached_the_model({"pixel_values_videos": _Tensor(900)}, 2)
+    # Blind track: no frames sampled, so nothing to check.
+    _assert_images_reached_the_model({"input_ids": _Tensor(50)}, 0)
+
+    with pytest.raises(RuntimeError, match="no pixel"):
+        _assert_images_reached_the_model({"input_ids": _Tensor(50)}, 3)
+    with pytest.raises(RuntimeError, match="no pixel"):
+        _assert_images_reached_the_model({"pixel_values": _Tensor(0)}, 3)

@@ -1,4 +1,9 @@
-"""Structural invariants of `fixtures/probe`, so a zero-signal suite fails loudly.
+"""`fixtures/probe`: structural invariants, and the measurement it makes possible.
+
+Two halves. The first pins structural properties of the suite on disk; the
+second runs all three tracks over it with a stub that reads answers out of the
+video pixels, so a working Memory Gain is demonstrated with no GPU and no model
+weights.
 
 These are regression guards, not a capability check. They exist because
 `fixtures/demo` was silently unmeasurable: its answer key lives in container
@@ -15,8 +20,8 @@ manufactures a significant +0.250 Memory Gain out of a change in willingness to
 answer. A fixture can thus *fabricate* the headline number as easily as it can
 destroy it.
 
-So each test below pins one property that, if lost, would reintroduce one of
-those failures:
+So each structural test below pins one property that, if lost, would
+reintroduce one of those failures:
 
 * distinct questions      - a greedy decoder returning one answer for everything
                             makes every paired difference identical, and
@@ -37,11 +42,23 @@ these vacuously true.
 
 from __future__ import annotations
 
+import sys
 from pathlib import Path
 
 import pytest
 
+from meowbench.adapters.protocol import Timeouts
+from meowbench.artifacts import PredictionRow, read_predictions
 from meowbench.media import sample_frames
+from meowbench.runner import RunConfig, Runner
+from meowbench.schema import ContextMode
+from meowbench.scoring.aggregate import (
+    ItemScore,
+    build_report,
+    memory_gain,
+    score_prediction,
+)
+from meowbench.store import Store
 from meowbench.suite import Suite, load_suite
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -234,3 +251,225 @@ def test_the_frames_are_not_flat(probe_suite: Suite) -> None:
                 f"distinct colours (<= {MIN_DISTINCT_COLOURS}); "
                 "the rendered text did not survive encoding"
             )
+
+
+# ---------------------------------------------------------------------------
+# The three-track measurement, end to end on the probe suite.
+#
+# `tests/test_end_to_end.py` proves the tracks are wired up using a synthetic
+# video whose answer key sits in container metadata. That cannot show the
+# *pixels* reach the system: a harness that delivered blank frames would pass it
+# unchanged. `tests/stubs/ocr_stub.py` recovers its answers by re-rendering
+# candidate glyphs and matching them against the decoded frame, so here a gain
+# is only possible if real image content survived staging, sampling and
+# revocation. No GPU and no model weights are involved.
+# ---------------------------------------------------------------------------
+
+OCR_STUB = Path(__file__).parent / "stubs" / "ocr_stub.py"
+
+#: Generous enough for a cold interpreter plus six H.264 decodes on a loaded CI
+#: box, tight enough that a wedged stub fails the run instead of hanging it.
+PROBE_TIMEOUTS = Timeouts(handshake=60.0, ingest=180.0, query=60.0)
+
+#: The constant-letter ceiling from `test_a_constant_letter_guesser_stays_near_chance`,
+#: plus room for the paired-difference noise of a 28-item suite.
+CHANCE_CEILING = 0.35
+
+#: Memory Gain has to clear this to count as a working measurement. The stub
+#: recovers every item it can read, so the true gain is far above it; the slack
+#: absorbs a single unlucky frame without making the test flaky.
+MIN_MEANINGFUL_GAIN = 0.3
+
+
+def run_probe_track(
+    tmp_path: Path,
+    suite: Suite,
+    mode: ContextMode,
+    *,
+    extra: list[str] | None = None,
+    run_id: str | None = None,
+) -> list[PredictionRow]:
+    """Drive the ocr stub through one track, returning its prediction rows.
+
+    Uses the Python API rather than the CLI so a failure surfaces as a stack
+    trace in the test rather than an exit code, matching `test_end_to_end.py`.
+    """
+    run_id = run_id or f"probe-{mode.value}"
+    command = [sys.executable, str(OCR_STUB), "--context-mode", mode.value, *(extra or [])]
+    with Store(tmp_path / f"{run_id}.sqlite") as store:
+        cfg = RunConfig(
+            run_id=run_id,
+            suite=probe_suite_name(suite),
+            suite_sha=suite.suite_sha,
+            command=command,
+            context_mode=mode,
+            timeouts=PROBE_TIMEOUTS,
+            scratch_dir=tmp_path / "scratch",
+            artifacts_dir=tmp_path / "artifacts" / run_id,
+        )
+        summary = Runner(cfg, store).run(suite.envs, suite.items)
+    assert not summary.crashed, summary.message
+    assert not summary.revocation_contested, "staged media outlived ingest_end"
+    rows = read_predictions(tmp_path / "artifacts" / run_id / "predictions.jsonl")
+    assert len(rows) == len(suite.items)
+    return rows
+
+
+def probe_suite_name(suite: Suite) -> str:
+    return suite.name or "probe"
+
+
+def scores_of(rows: list[PredictionRow]) -> list[ItemScore]:
+    return [score_prediction(row) for row in rows]
+
+
+def mean_score(scores: list[ItemScore]) -> float:
+    values = [s.score for s in scores if s.score is not None]
+    assert values, "no scorable items"
+    return sum(values) / len(values)
+
+
+@pytest.fixture(scope="module")
+def probe_tracks(
+    tmp_path_factory: pytest.TempPathFactory, probe_suite: Suite
+) -> dict[str, list[PredictionRow]]:
+    """All three tracks, run once and shared.
+
+    Each track decodes six videos, so running them per-test would triple the
+    cost of this module for no extra coverage.
+    """
+    tmp_path = tmp_path_factory.mktemp("probe-tracks")
+    return {
+        mode.value: run_probe_track(tmp_path, probe_suite, mode)
+        for mode in (ContextMode.BLIND, ContextMode.MEMORY, ContextMode.ORACLE)
+    }
+
+
+def test_reading_pixels_beats_answering_from_priors(
+    probe_tracks: dict[str, list[PredictionRow]],
+) -> None:
+    """Oracle and memory must both clear blind by a wide margin.
+
+    Blind is never handed a path, so it can only guess and is pinned near the
+    constant-guesser ceiling. Any real score above it had to come out of the
+    frames — this is the positive control for the whole media path.
+    """
+    blind = scores_of(probe_tracks["blind"])
+    memory = scores_of(probe_tracks["memory"])
+    oracle = scores_of(probe_tracks["oracle"])
+
+    blind_mean = mean_score(blind)
+    memory_mean = mean_score(memory)
+    oracle_mean = mean_score(oracle)
+
+    assert blind_mean <= CHANCE_CEILING, (
+        f"blind scored {blind_mean:.3f}; it sees no video, so anything above "
+        "chance means the answer is inferable from the question text alone"
+    )
+    assert memory_mean > blind_mean + MIN_MEANINGFUL_GAIN, (
+        f"memory {memory_mean:.3f} vs blind {blind_mean:.3f}: the memory track "
+        "learned little or nothing from the pixels"
+    )
+    assert oracle_mean > blind_mean + MIN_MEANINGFUL_GAIN
+    assert oracle_mean >= memory_mean - 1e-9, (
+        f"memory {memory_mean:.3f} beat oracle {oracle_mean:.3f}; oracle keeps "
+        "the video and is meant to be an upper bound"
+    )
+
+
+def test_memory_gain_on_probe_is_significant_and_non_degenerate(
+    probe_tracks: dict[str, list[PredictionRow]],
+) -> None:
+    """The headline number, computed the way the benchmark reports it."""
+    memory = scores_of(probe_tracks["memory"])
+    blind = scores_of(probe_tracks["blind"])
+
+    overall = memory_gain(memory, blind)["overall"]
+
+    assert overall.gain > MIN_MEANINGFUL_GAIN, f"gain {overall.gain:.3f} is not a signal"
+    assert overall.significant, (
+        f"gain {overall.gain:.3f} with CI "
+        f"[{overall.ci95_low:.3f}, {overall.ci95_high:.3f}] excludes nothing"
+    )
+    assert not overall.degenerate, (
+        "every paired difference was identical, so the interval is an artefact "
+        "rather than an uncertainty estimate"
+    )
+    assert overall.n_dropped == 0, (
+        f"{overall.n_dropped} item(s) were not scorable in both tracks; pairing "
+        "on the survivors conditions the estimate"
+    )
+    assert overall.n_paired == len(memory)
+
+
+def test_the_memory_run_reports_what_it_ingested(
+    probe_tracks: dict[str, list[PredictionRow]],
+) -> None:
+    """A memory score is only meaningful alongside evidence of ingestion.
+
+    Without this, a run whose frame sampling silently returned nothing is
+    bit-identical to a healthy one: both sit near chance, which reads as
+    "working". `build_report` attaches a note in that case, so an empty note
+    list is part of the assertion.
+    """
+    payload = build_report(probe_tracks["memory"], run_id="probe-memory").to_dict()
+
+    assert payload["enforcement"] == "revoked"
+    assert payload["revocation_contested"] is False
+
+    ingest = payload["ingest"]
+    assert ingest["n_records"] > 0, "the memory track stored nothing during ingest"
+    assert ingest["memory_bytes"] > 0
+    assert ingest["total_frames"] > 0, "no frames were decoded in any session"
+    assert ingest["sessions_without_frames"] == 0
+    assert not payload["notes"], f"unexpected caveats: {payload['notes']}"
+
+
+def test_revocation_is_what_forces_the_collapse(
+    tmp_path: Path, probe_suite: Suite, probe_tracks: dict[str, list[PredictionRow]]
+) -> None:
+    """The negative control, and its complement.
+
+    A stub that discards its notes at `ingest_end` must fall back to chance in
+    memory mode, because the staged video is gone by query time. The same stub
+    in oracle mode still scores, since re-reading a retained payload is
+    legitimate there. Running both is what distinguishes "revocation works" from
+    "the --forget flag lowers the score", which a memory-only check cannot tell
+    apart.
+    """
+    forgetful_memory = scores_of(
+        run_probe_track(
+            tmp_path,
+            probe_suite,
+            ContextMode.MEMORY,
+            extra=["--forget"],
+            run_id="probe-forgetful-memory",
+        )
+    )
+    forgetful_oracle = scores_of(
+        run_probe_track(
+            tmp_path,
+            probe_suite,
+            ContextMode.ORACLE,
+            extra=["--forget"],
+            run_id="probe-forgetful-oracle",
+        )
+    )
+    blind = scores_of(probe_tracks["blind"])
+
+    assert mean_score(forgetful_memory) <= CHANCE_CEILING, (
+        f"a forgetful system scored {mean_score(forgetful_memory):.3f} in memory "
+        "mode; the revoked video is still readable at query time"
+    )
+    assert mean_score(forgetful_oracle) > mean_score(blind) + MIN_MEANINGFUL_GAIN, (
+        f"the same forgetful system scored {mean_score(forgetful_oracle):.3f} in "
+        "oracle mode, so the memory-mode collapse cannot be attributed to "
+        "revocation"
+    )
+
+    gain = memory_gain(forgetful_memory, blind)["overall"]
+    assert not gain.significant, (
+        f"a system that remembers nothing still shows Memory Gain "
+        f"{gain.gain:.3f} with CI [{gain.ci95_low:.3f}, {gain.ci95_high:.3f}]"
+    )
+

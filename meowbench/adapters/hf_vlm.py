@@ -176,11 +176,23 @@ class HFVLMAdapter(AdapterBase):
         return self._oracle_frames
 
     def _generate(self, images: list[Any], prompt: str, *, max_new_tokens: int) -> str:
-        content: list[dict[str, Any]] = [{"type": "image"} for _ in images]
+        # The PIL object goes under the "image" key, not just {"type": "image"}.
+        # transformers' fused apply_chat_template collects visuals by looking for
+        # the keys ("image", "url", "path", "base64") on each content part
+        # (processing_utils.py, the image_fnames comprehension). A bare
+        # {"type": "image"} matches none of them, so it computes
+        # `images_exist = False` and calls the processor with images=None: the
+        # prompt keeps its image placeholder tokens while no pixel_values are
+        # produced, and the model answers *without ever seeing the video*.
+        # Measured directly against the installed 4.57.6 source.
+        content: list[dict[str, Any]] = [
+            {"type": "image", "image": image} for image in images
+        ]
         content.append({"type": "text", "text": prompt})
         messages = [{"role": "user", "content": content}]
 
         inputs = self._encode(messages, images)
+        _assert_images_reached_the_model(inputs, len(images))
         inputs = self._to_model_device(inputs)
 
         gen: dict[str, Any] = {"max_new_tokens": max_new_tokens}
@@ -279,6 +291,34 @@ class HFVLMAdapter(AdapterBase):
             trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
         )
         return (decoded[0] if decoded else "").strip()
+
+
+def _assert_images_reached_the_model(inputs: Any, n_images: int) -> None:
+    """Fail loudly when frames were sampled but no pixels were encoded.
+
+    This is the one failure the rest of the harness cannot see. If the processor
+    silently drops the images, the prompt still carries its image placeholder
+    tokens, generation still succeeds, and the model answers from text alone —
+    so the oracle and memory tracks report healthy frame counts while measuring
+    priors. Memory Gain then collapses toward zero for a plumbing reason that
+    looks exactly like a scientific result.
+
+    It is a real hazard rather than a theoretical one: passing
+    `{"type": "image"}` without an `"image"` key does precisely this, because
+    transformers collects visuals by key name.
+    """
+    if not n_images:
+        return
+    for key in ("pixel_values", "pixel_values_videos", "image_patches"):
+        value = inputs.get(key) if hasattr(inputs, "get") else None
+        if value is not None and getattr(value, "numel", lambda: 1)():
+            return
+    raise RuntimeError(
+        f"{n_images} frame(s) were sampled but the processor produced no pixel "
+        "values, so the model would answer without seeing the video. This is a "
+        "chat-template/processor mismatch, not a model failure — refusing to "
+        "report an unmeasured track as a measured one."
+    )
 
 
 def _input_device(torch: Any, model: Any) -> Any:

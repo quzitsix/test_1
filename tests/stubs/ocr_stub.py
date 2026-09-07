@@ -519,7 +519,7 @@ def main(argv: list[str] | None = None) -> int:
                 # legitimate. Done once per environment, not once per question.
                 reread = True
                 for index, path in enumerate(memory.paths):
-                    late_session, late_facts, _ = read_session(path, index + 1)
+                    late_session, late_facts, _ = read_session(path, env_id, index + 1)
                     memory.add(late_session, late_facts)
             place = memory.lookup(name, session) if name else None
             if place is None:
