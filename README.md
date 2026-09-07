@@ -15,8 +15,11 @@ codebase, and a test-time-training model all compete under one contract.
 > dataset mining (`mine`, `audit`) and the LLM judge (`judge`, `debias`) are next;
 > those subcommands explain what they will do and exit non-zero.
 >
-> To run a real model on a cluster, follow
-> [`docs/M2_SERVER_RUNBOOK.md`](docs/M2_SERVER_RUNBOOK.md).
+> **Setting this up on a server? Start at
+> [`docs/START_HERE.md`](docs/START_HERE.md)** — one linear checklist from an empty
+> machine to a working three-track comparison, with an acceptance test after every
+> step. [`docs/DATA_DOWNLOAD.md`](docs/DATA_DOWNLOAD.md) has the dataset detail and
+> [`docs/M2_SERVER_RUNBOOK.md`](docs/M2_SERVER_RUNBOOK.md) the model-adapter detail.
 
 ---
 
