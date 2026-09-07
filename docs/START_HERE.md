@@ -69,7 +69,7 @@ pytest -q
 meowbench verify-adapter --system "python -m meowbench.adapters.echo_stub"
 ```
 
-**验收**：`197 passed`（Linux 上 `/proc` 那个测试会跑，所以**不该有 skip**）+ `14/14 checks passed`。
+**验收**：`279 passed`（Linux 上 `/proc` 那个测试会跑，所以**不该有 skip**）+ `14/14 checks passed`。
 
 > 这步不绿**就别往下走**。在坏的安装上调数据和模型是纯浪费时间。
 
@@ -77,7 +77,19 @@ meowbench verify-adapter --system "python -m meowbench.adapters.echo_stub"
 
 ## 第 5 步 — 跑一次完整的三轨对照（1 分钟，不用 GPU、不用数据）
 
-仓库自带一个 7 KiB 的合成 fixture，答案编码在视频容器的 metadata 里：
+仓库自带两个 fixture，**用途完全不同，别搞混**：
+
+| fixture | 答案在哪 | 用途 |
+|---|---|---|
+| `fixtures/probe` | **画在画面上的大号文字** | 真模型评测。看得见的模型能读出来，看不见的读不出来，所以 **oracle ≫ blind 是真实测量** |
+| `fixtures/demo` | 容器 metadata（视觉模型读不到）；每帧是**纯灰色** | 只做协议/CI 检查。**它的 Memory Gain 无定义，永不可引用** |
+
+`fixtures/demo` 为什么不能用来评测：它的 E 选项永远不是正确答案，所以 blind 模型
+老实回答"信息不足"会被判错（0 分），而 memory 轨瞎猜字母能得 0.25 —— 于是报出
+**+0.250 且置信区间排除 0 的"显著"Memory Gain，而这完全来自"愿不愿意作答"的差异，
+与感知无关**（已实测复现）。
+
+先用确定性 stub 在 demo 上验证协议链路：
 
 ```bash
 for MODE in blind memory oracle; do
@@ -87,9 +99,42 @@ done
 meowbench compare --run runs/demo-memory --baseline runs/demo-blind
 ```
 
-**验收**：应看到 `blind` 约 0.25、`memory` 1.00，Memory Gain **+0.75 且置信区间不含 0**。
+**验收**：`blind` 约 0.25、`memory` 1.00，Memory Gain **+0.75 且置信区间不含 0**。
 
 这一步的意义是：**在碰任何真实数据之前，先确认整条测量链路是通的** —— staging、撤销、打分、配对统计。
+
+---
+
+## 第 5b 步 — 用一个小开源模型跑真模型三轨（需要 GPU）
+
+```bash
+bash scripts/check_model_ready.sh     # 打印的每个路径都能直接当 MODEL 用
+```
+
+没有权重的话，推荐 **Qwen3-VL-2B-Instruct**（单文件 4.0 GiB、bf16 约 6 GiB 显存、
+不需要 trust_remote_code、不需要 qwen-vl-utils，**要求 transformers >= 4.57**）：
+
+```bash
+pip install -U modelscope
+modelscope download --model Qwen/Qwen3-VL-2B-Instruct \
+  --local_dir /data/quzitsix/models/Qwen3-VL-2B-Instruct   # 注意是下划线 --local_dir
+```
+
+然后：
+
+```bash
+export MODEL=/data/quzitsix/models/Qwen3-VL-2B-Instruct
+bash scripts/run_qwen_demo.sh          # 默认跑 fixtures/probe，三轨 + Memory Gain
+```
+
+**验收**（这次准确率是有意义的）：
+- `status: {'ok': 28}`、memory 轨 `enforcement: revoked`、无 `revocation_contested`；
+- `ingest:` 那行的 frames 和 records **都非零**；
+- **oracle 明显高于 blind** —— 答案就在画面上，模型看得见就该读得出；
+- gain 表上没有 `degenerate` 标记。
+
+若 oracle 没有明显高于 blind，那是**真问题**（帧没喂进去 / chat template 不匹配 /
+文字没读出来），**请把输出发我**，不要当成"合成数据本来就该接近随机"。
 
 ---
 

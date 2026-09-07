@@ -6,11 +6,19 @@ Workflow: you run the commands, paste the output back, I adjust. **Step 1 is a
 read-only probe** — nothing is installed until we have looked at what the machine
 already has.
 
-Everything here runs against the **synthetic fixture** (`fixtures/demo`), which
-ships in the repo. That is deliberate: it separates "does the model plumbing
-work" from "is the benchmark data good", and the latter is still M3. Real models
-will score near chance on it. **You are validating that frames flow, notes get
-written, and the three tracks differ mechanically — not accuracy.**
+Everything here runs against the **positive-control fixture**
+(`fixtures/probe`), which ships in the repo. Its answers are rendered as large
+text in the video frames, so a model that is really shown frames can read them
+and one that is not, cannot. That makes `oracle >> blind` a **real measurement**:
+if the gain collapses, something is broken (frames not reaching the model, chat
+template mismatch, OCR failure) rather than "expected on a synthetic suite".
+
+The other fixture, `fixtures/demo`, is for protocol and CI checks only. Every
+frame is a flat grey field with the answer key in container metadata, so no
+vision model can score above chance — and because option E is never correct
+there, a blind model that honestly abstains is scored wrong while the memory
+track's guessing scores 0.25, reporting a significant +0.25 Memory Gain caused
+purely by willingness to answer. **Its Memory Gain is undefined; never cite it.**
 
 ---
 
@@ -84,8 +92,8 @@ pytest -q
 meowbench verify-adapter --system "python -m meowbench.adapters.echo_stub"
 ```
 
-Expect `197 passed` (on Linux the `/proc` test runs, so there should be **no
-skip**) and `14/14 checks passed`.
+Expect **`279 passed`** (on Linux the `/proc` fd-audit test runs, so there
+should be **no skip**) and `14/14 checks passed`.
 
 > **If `pytest` fails here, stop and send me the output.** Everything below
 > assumes a green baseline; debugging a model on a broken install wastes GPU time.
@@ -113,7 +121,7 @@ images, and generation returns text. That is the cheapest possible confirmation.
 
 ```bash
 for MODE in blind memory oracle; do
-  meowbench run --suite fixtures/demo \
+  meowbench run --suite fixtures/probe \
     --run-id "hf-$MODE" --context-mode $MODE \
     --system "python -m meowbench.adapters.hf_vlm --model-path $MODEL --context-mode $MODE --n-frames 8" \
     --handshake-timeout 900 --ingest-timeout 1800 --query-timeout 600
@@ -156,7 +164,7 @@ Use for a hosted API, or for local weights behind vLLM (better throughput than
 export OPENAI_API_KEY=sk-...            # never commit this
 export BASE_URL=https://your-gateway/v1
 
-meowbench run --suite fixtures/demo --run-id api-memory --context-mode memory \
+meowbench run --suite fixtures/probe --run-id api-memory --context-mode memory \
   --system "python -m meowbench.adapters.openai_compat --model <name> --base-url $BASE_URL --context-mode memory --n-frames 8"
 ```
 
@@ -167,7 +175,7 @@ python -m vllm.entrypoints.openai.api_server \
   --model "$MODEL" \
   --served-model-name qwen2.5-vl-7b --port 8000 --limit-mm-per-prompt image=16
 
-meowbench run --suite fixtures/demo --run-id vllm-memory --context-mode memory \
+meowbench run --suite fixtures/probe --run-id vllm-memory --context-mode memory \
   --system "python -m meowbench.adapters.openai_compat --model qwen2.5-vl-7b --base-url http://localhost:8000/v1 --api-key EMPTY --context-mode memory --n-frames 8"
 ```
 
@@ -181,23 +189,33 @@ meowbench run --suite fixtures/demo --run-id vllm-memory --context-mode memory \
 ```
 $ meowbench report --run runs/hf-memory
 
+run:    hf-memory
+system: hf_vlm:Qwen3-VL-2B-Instruct  mode: memory
+enforcement: revoked
+ingest: 6 session(s), 48 frame(s), 6 record(s), 5312 byte(s)
+
 axis                              n    mean  95% CI
 --------------------------------------------------------------
-A3_spatial_change                 8   0.250  [0.071, 0.591]
-A8_routine                        8   0.125  [0.022, 0.474]
+A12_unanswerable                  4   0.750  [0.301, 0.954]
+A1_static_location               18   0.611  [0.386, 0.798]
+A3_spatial_change                 6   0.500  [0.188, 0.812]
 --------------------------------------------------------------
-OVERALL                          16   0.188  [0.067, 0.424]
+OVERALL                          28   0.607  [0.424, 0.764]
 ```
+
+(Illustrative shape, not a measured result.)
 
 ### What "working" looks like at this stage
 
 | check | where | why it matters |
 |---|---|---|
-| `status: {'ok': 16}` | `run` output | every question got an answer |
+| `status: {'ok': 28}` | `run` output | every question got an answer |
 | `enforcement: revoked` on the memory run | `run` output | staging + revocation fired |
 | no `revocation_contested` warning | `run` output | the adapter released its handles |
-| `frames` > 0 in ingest stats | `predictions.jsonl` | frames really were decoded |
-| `n_records` and `memory_bytes` non-zero | `predictions.jsonl` | the model wrote notes |
+| the `ingest:` line shows non-zero frames **and** records | `report` output | frames were decoded and notes written |
+| no "ingestion produced no memory records" note | `report` output | the memory track had something to remember |
+| **oracle clearly above blind** | `compare` output | the model is really being shown the video |
+| no `degenerate` marker on the gain table | `compare` output | the questions discriminate between items |
 
 Check the notes contain real vision rather than boilerplate:
 
@@ -208,12 +226,16 @@ rows = read_predictions("runs/hf-memory/predictions.jsonl")
 r = rows[0]
 print("status:", r.status, "| latency ms:", r.latency_ms)
 print("ingest:", r.env_run.n_records, "notes,", r.env_run.memory_bytes, "bytes")
+print("frames:", r.env_run.total_frames, "| blank sessions:", r.env_run.sessions_without_frames)
 print("raw answer:", (r.raw or "")[:300])
 PY
 ```
 
-**Do not read the accuracy as a result.** Near-chance is the expected outcome on
-a synthetic fixture and confirms nothing is leaking.
+**On `fixtures/probe`, accuracy IS informative** — the answers are rendered in
+the frames, so a model that sees them can read them. If `oracle` is not clearly
+above `blind`, chase it: frames are not reaching the model, the chat template is
+mismatched, or the text is not being read. (This is the opposite of
+`fixtures/demo`, where near-chance is the only possible outcome.)
 
 ---
 
