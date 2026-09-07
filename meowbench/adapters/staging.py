@@ -18,9 +18,17 @@ strategy                         behaviour with a live reader
 ===============================  ==========================================
 
 So we truncate first (always effective, makes reopening useless), then try to
-unlink. A `PermissionError` during unlink is not swallowed as noise: it means
-the system held the video across the phase boundary, which we surface as
-`RevocationReport.contested` and record on the run.
+unlink. Detection of a violation is **platform-specific, and both signals are
+collected**:
+
+* **Windows** — ``unlink`` raises ``PermissionError`` while a handle is open, so
+  the failure itself is the signal.
+* **Linux** — ``unlink`` *succeeds* with a live reader: the directory entry goes
+  away, the holder keeps reading its open fd, and nothing raises. Measured. So
+  the unlink tells us nothing and the detector must be an fd audit over
+  ``/proc``, which `revoke()` runs before truncating.
+
+Either way the run is marked ``revocation_contested``.
 
 **Hardlinks are forbidden when the payload must be revocable.** A hardlink
 shares its inode with the dataset original, so truncating it would zero the
@@ -116,30 +124,56 @@ class RevocationReport:
         }
 
 
-def open_handles_under(pid: int, root: Path) -> tuple[list[str], bool]:
-    """Staged paths the process still has open, via /proc/<pid>/fd.
+def open_handles_under(root: Path, pid: int | None = None) -> tuple[list[str], bool]:
+    """Staged paths still open somewhere, via /proc/<pid>/fd.
 
-    Returns ``(paths, audit_available)``. On platforms without /proc the audit
-    simply does not run — absence of evidence, not evidence of absence. On
-    Windows the equivalent signal is the ``PermissionError`` that unlink raises,
-    which `revoke()` already captures as `contested`.
+    Returns ``(paths, audit_available)``.
+
+    With ``pid`` we inspect just that process; without one we sweep every
+    readable ``/proc/*/fd``, which also catches a *child* the adapter forked —
+    and costs about a millisecond in practice.
+
+    This is the primary detector on Linux, because POSIX ``unlink`` succeeds
+    even while another process holds the file open: the directory entry goes
+    away, the holder keeps reading its open fd, and no error is raised anywhere.
+    Windows is the opposite — it refuses the unlink — so the two platforms need
+    different signals for the same violation.
     """
-    fd_dir = Path(f"/proc/{pid}/fd")
-    if not sys.platform.startswith("linux") or not fd_dir.is_dir():
+    if not sys.platform.startswith("linux") or not Path("/proc").is_dir():
         return [], False
+
     root_str = str(root.resolve())
-    found: list[str] = []
-    try:
-        entries = list(fd_dir.iterdir())
-    except OSError:
-        return [], False
-    for entry in entries:
+    fd_dirs: list[Path]
+    if pid is not None:
+        fd_dirs = [Path(f"/proc/{pid}/fd")]
+    else:
         try:
-            target = os.readlink(entry)
+            fd_dirs = [
+                entry / "fd"
+                for entry in Path("/proc").iterdir()
+                if entry.name.isdigit()
+            ]
+        except OSError:  # pragma: no cover
+            return [], False
+
+    found: list[str] = []
+    for fd_dir in fd_dirs:
+        try:
+            entries = list(fd_dir.iterdir())
         except OSError:
+            # A process exited mid-scan, or is not ours to inspect. When a
+            # specific pid was requested and is unreadable, the audit did not
+            # actually run, so say so rather than claiming a clean result.
+            if pid is not None:
+                return [], False
             continue
-        if target.startswith(root_str):
-            found.append(target)
+        for entry in entries:
+            try:
+                target = os.readlink(entry)
+            except OSError:
+                continue
+            if target.startswith(root_str) and target not in found:
+                found.append(target)
     return found, True
 
 
@@ -214,18 +248,28 @@ class StagingArea:
         """Make every staged file unusable. Idempotent.
 
         Truncation is the primary mechanism because it is the only one that
-        works while a reader holds the file open. Unlink is best-effort, and
-        its failure is reported rather than ignored.
+        works while a reader holds the file open. Unlink is best-effort, and its
+        failure is reported rather than ignored.
+
+        Detection differs by platform, and both signals are collected:
+
+        * **Linux** — an fd audit over ``/proc``, run *before* truncation while
+          the handle is still observable. POSIX ``unlink`` succeeds even with a
+          live reader, so the unlink itself reveals nothing.
+        * **Windows** — ``unlink`` raises ``PermissionError`` when a handle is
+          open, which is captured as ``contested``.
 
         Args:
-            pid: the system's process id. When given (and /proc is available)
-                the staged directory is audited for still-open descriptors
-                *before* truncation, which is the Linux counterpart to the
-                PermissionError signal Windows gives us.
+            pid: the system's process id, if known. Narrows the fd audit to that
+                process; without it every readable process is swept, which also
+                catches a child the adapter forked.
         """
         report = RevocationReport()
-        if pid is not None:
-            report.open_handles, report.fd_audit_available = open_handles_under(pid, self._dir)
+        # Before truncating: once the file is unlinked the fd target still
+        # resolves, but scanning early keeps the signal unambiguous.
+        report.open_handles, report.fd_audit_available = open_handles_under(
+            self._dir, pid
+        )
 
         for name, sf in self._files.items():
             if not sf.staged.exists():

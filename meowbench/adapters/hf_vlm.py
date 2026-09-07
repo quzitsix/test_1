@@ -51,7 +51,11 @@ class HFVLMAdapter(AdapterBase):
         attn_implementation: str | None = None,
         trust_remote_code: bool = False,
     ) -> None:
-        super().__init__(system_id or f"hf_vlm:{os.path.basename(model_path.rstrip('/\\'))}")
+        # Computed outside the f-string: backslashes inside f-string expressions
+        # are a syntax error before Python 3.12 (PEP 701 relaxed it), and the
+        # project supports 3.11.
+        model_label = os.path.basename(model_path.rstrip("/\\")) or model_path
+        super().__init__(system_id or f"hf_vlm:{model_label}")
         self.context_mode = context_mode
         self._n_frames = n_frames
         self._max_side = max_side

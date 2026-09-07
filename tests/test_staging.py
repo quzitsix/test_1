@@ -180,6 +180,7 @@ def test_fd_audit_detects_our_own_open_handle(tmp_path: Path, source_video: Path
 
 
 def test_fd_audit_clean_when_nothing_held(tmp_path: Path, source_video: Path) -> None:
+    """No handle held anywhere -> nothing reported, on either platform."""
     with StagingArea(tmp_path / "stage", "e1") as area:
         area.stage("s1", source_video)
         report = area.revoke(pid=os.getpid())
@@ -187,19 +188,36 @@ def test_fd_audit_clean_when_nothing_held(tmp_path: Path, source_video: Path) ->
     assert not report.is_contested
 
 
-def test_revoke_without_pid_skips_the_audit(tmp_path: Path, source_video: Path) -> None:
+def test_revoke_without_a_pid_still_audits(tmp_path: Path, source_video: Path) -> None:
+    """The audit must not depend on being told which pid to look at.
+
+    A held handle is a violation whoever holds it — including a child the
+    adapter forked — so revoke() sweeps every readable process when no pid is
+    given. Scanning all of /proc costs about a millisecond.
+    """
     with StagingArea(tmp_path / "stage", "e1") as area:
-        area.stage("s1", source_video)
-        report = area.revoke()
-    assert report.fd_audit_available is False
-    assert report.open_handles == []
+        staged = area.stage("s1", source_video)
+        with open(staged, "rb") as held:
+            held.read(4)
+            report = area.revoke()          # deliberately no pid
+        if sys.platform.startswith("linux"):
+            assert report.open_handles, "the sweep should have seen our own fd"
+            assert report.is_contested
+        else:
+            # Windows detects the same violation via a refused unlink instead.
+            assert report.is_contested
 
 
-def test_open_handles_under_tolerates_dead_pid(tmp_path: Path) -> None:
+def test_open_handles_under_tolerates_a_dead_pid(tmp_path: Path) -> None:
     """A crashed system must not turn the audit into an exception."""
-    paths, available = open_handles_under(999_999_999, tmp_path)
+    paths, available = open_handles_under(tmp_path, 999_999_999)
     assert paths == []
     assert available is False
+
+
+def test_open_handles_under_finds_nothing_when_clean(tmp_path: Path) -> None:
+    paths, _ = open_handles_under(tmp_path)
+    assert paths == []
 
 
 def test_enforcement_tiers_are_ordered_by_strength() -> None:
