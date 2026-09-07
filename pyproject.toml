@@ -17,27 +17,38 @@ dependencies = [
 # Video decoding, needed by every adapter that looks at frames. ffmpeg is
 # intentionally NOT required: PyAV is used as a library, so the harness works on
 # machines without ffmpeg on PATH.
-video = ["av>=12.0", "pillow>=10.0"]
+# pillow>=10.1 is a hard floor, not a preference: `ImageFont.load_default(size=)`
+# arrived there, and older Pillow silently returns an 8-pixel bitmap font
+# instead — which renders a fixture no model can read.
+video = ["av>=12.0", "pillow>=10.1"]
 # Local HF vision-language models (hf_vlm adapter). Install a CUDA-matched torch
 # separately; pip's default wheel may be CPU-only.
 hf = [
     "av>=12.0",
-    "pillow>=10.0",
+    "pillow>=10.1",
     "torch",
-    # 4.56 is the floor for two reasons: `dtype=` (older versions silently
-    # ignore it and load fp32), and Qwen3-VL support. 4.57.x is what we
-    # verified against; do not drop below it casually.
-    "transformers>=4.56",
-    "accelerate>=1.0",
+    # Both bounds are load-bearing.
+    #   >=4.57  `dtype=` landed in 4.56 (4.55 and earlier silently ignore it and
+    #           load fp32), but `qwen3_vl` only enters the auto mappings in
+    #           4.57.0 — verified by grepping models/auto/modeling_auto.py per
+    #           tag: v4.56.0 and v4.57.0 give 0 and 8 hits respectively. On 4.56
+    #           a Qwen3-VL checkpoint fails with a message that reads like a
+    #           corrupt download.
+    #   <5      transformers 5.x exists and `>=4.57` alone resolves to it, which
+    #           flips huggingface-hub to 1.x and changes the from_pretrained
+    #           default dtype to "auto". Untested here; widen deliberately, in
+    #           the same commit that records the check.
+    "transformers>=4.57,<5",
+    "accelerate>=1.1",
     "safetensors",
 ]
 # OpenAI-compatible endpoints (openai_compat adapter) and LLM judges.
-api = ["av>=12.0", "pillow>=10.0", "openai>=1.40", "httpx>=0.27"]
+api = ["av>=12.0", "pillow>=10.1", "openai>=1.40", "httpx>=0.27"]
 # Review UI (M3).
 audit = ["fastapi>=0.110", "uvicorn>=0.29"]
 # Debias stage (M4).
 debias = ["scikit-learn>=1.4"]
-dev = ["pytest>=8.0", "pytest-timeout>=2.3", "av>=12.0", "pillow>=10.0", "openai>=1.40"]
+dev = ["pytest>=8.0", "pytest-timeout>=2.3", "av>=12.0", "pillow>=10.1", "openai>=1.40"]
 
 [project.scripts]
 meowbench = "meowbench.cli:main"

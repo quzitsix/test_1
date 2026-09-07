@@ -128,11 +128,20 @@ def main() -> int:
         name="demo-v0.2",
         extra={
             "note": (
-                "Synthetic CI fixture. Real H.264 video; the answer key is in the "
-                "container metadata 'comment' tag, so both the perceiving stub and "
-                "real VLM adapters can consume it. Scores from real models will be "
-                "near chance, which is expected — this validates plumbing, not "
-                "capability."
+                "PROTOCOL FIXTURE ONLY — Memory Gain is undefined here and must "
+                "never be cited. The answer key lives in the container metadata "
+                "'comment' tag and every frame is a flat grey field, so no "
+                "vision model can recover an answer: a real model scores chance "
+                "on all three tracks. Worse, option E is never correct, so a "
+                "blind model that honestly answers 'information not available' "
+                "is scored wrong while the memory track's guessing scores 0.25, "
+                "which reports a significant +0.25 gain caused purely by "
+                "willingness to answer. Gold also cycles with i%4 while the axis "
+                "alternates with i%2, giving each axis a two-letter gold "
+                "alphabet that turns any letter bias into spurious per-axis "
+                "effects. Use fixtures/probe for anything that measures "
+                "perception; use this one for protocol and CI checks, where the "
+                "deterministic stub recovers the key from metadata."
             )
         },
     )

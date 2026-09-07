@@ -224,21 +224,38 @@ class GainEstimate:
     gain: float
     ci95_low: float
     ci95_high: float
+    #: Items present in either track but not scorable in both, so excluded from
+    #: the pairing. Reported because `aggregate()` keeps errors in its
+    #: denominator while pairing cannot: without this, `report` and `compare`
+    #: disagree about n for the same run with nothing to explain why.
+    n_dropped: int = 0
+    #: True when every paired difference is identical, making the interval an
+    #: artefact rather than an uncertainty estimate.
+    degenerate: bool = False
 
     @property
     def significant(self) -> bool:
-        """True when the paired interval excludes zero."""
+        """True when the paired interval excludes zero.
+
+        Never true for a degenerate comparison: with zero variance the interval
+        collapses to a point, and a point that happens to sit off zero would
+        otherwise be reported as an infinitely precise effect.
+        """
+        if self.degenerate:
+            return False
         return self.ci95_low > 0.0 or self.ci95_high < 0.0
 
     def summary(self) -> dict[str, float | int | bool | str]:
         return {
             "axis": self.axis,
             "n_paired": self.n_paired,
+            "n_dropped": self.n_dropped,
             "mean_a": round(self.mean_a, 4),
             "mean_b": round(self.mean_b, 4),
             "gain": round(self.gain, 4),
             "ci95_low": round(self.ci95_low, 4),
             "ci95_high": round(self.ci95_high, 4),
+            "degenerate": self.degenerate,
             "significant": self.significant,
         }
 
@@ -251,12 +268,18 @@ def paired_gain(
     Paired, not two-sample: both tracks answer the *same* questions, so the
     per-item difference removes item difficulty from the variance. Treating them
     as independent would inflate the interval and hide real effects.
+
+    Items that are not scorable in *both* tracks cannot be paired, so they are
+    excluded and counted in `n_dropped`. That exclusion is survivorship
+    conditioning — a system that errors on the questions it finds hardest would
+    otherwise be rewarded — so the count is surfaced rather than hidden.
     """
     a_by_id = {s.item_id: s for s in a if s.score is not None}
     b_by_id = {s.item_id: s for s in b if s.score is not None}
     shared = sorted(set(a_by_id) & set(b_by_id))
     if not shared:
         return None
+    considered = {s.item_id for s in a} | {s.item_id for s in b}
     diffs = [a_by_id[i].score - b_by_id[i].score for i in shared]  # type: ignore[operator]
     n = len(diffs)
     mean_diff = sum(diffs) / n
@@ -264,16 +287,19 @@ def paired_gain(
         variance = sum((d - mean_diff) ** 2 for d in diffs) / (n - 1)
         stderr = math.sqrt(variance / n)
     else:
+        variance = 0.0
         stderr = 0.0
     margin = 1.959963984540054 * stderr
     return GainEstimate(
         axis=axis,
         n_paired=n,
+        n_dropped=len(considered) - n,
         mean_a=sum(a_by_id[i].score for i in shared) / n,  # type: ignore[misc]
         mean_b=sum(b_by_id[i].score for i in shared) / n,  # type: ignore[misc]
         gain=mean_diff,
         ci95_low=mean_diff - margin,
         ci95_high=mean_diff + margin,
+        degenerate=n > 1 and variance == 0.0,
     )
 
 
@@ -315,6 +341,11 @@ class Report:
     axes: dict[str, ScoreBreakdown] = field(default_factory=dict)
     gains: dict[str, GainEstimate] = field(default_factory=dict)
     notes: list[str] = field(default_factory=list)
+    #: Evidence that ingestion actually happened. Without this in the report, a
+    #: run whose frame sampling silently returned nothing is bit-identical to a
+    #: healthy one — the accuracy stays at chance either way, which reads as
+    #: "working" rather than "measuring nothing".
+    ingest: dict[str, object] = field(default_factory=dict)
 
     def to_dict(self) -> dict[str, object]:
         payload: dict[str, object] = {
@@ -327,11 +358,34 @@ class Report:
             "include_errors": self.include_errors,
             "overall": self.overall.summary(),
             "axes": {axis: b.summary() for axis, b in self.axes.items()},
+            "ingest": dict(self.ingest),
             "notes": list(self.notes),
         }
         if self.gains:
             payload["memory_gain"] = {k: v.summary() for k, v in self.gains.items()}
         return payload
+
+
+def _ingest_evidence(rows: Sequence[PredictionRow]) -> dict[str, object]:
+    """Aggregate the per-environment ingest stats across a run."""
+    envs = {r.env_run.env_id: r.env_run for r in rows if r.env_run is not None}
+    if not envs:
+        return {}
+    runs = list(envs.values())
+    total = sum(e.n_records or 0 for e in runs)
+    frames = sum(int(getattr(e, "total_frames", 0) or 0) for e in runs)
+    return {
+        "n_envs": len(runs),
+        "n_sessions": sum(e.n_sessions for e in runs),
+        "n_records": total,
+        "memory_bytes": sum(e.memory_bytes or 0 for e in runs),
+        "total_frames": frames,
+        "sessions_without_frames": sum(
+            int(getattr(e, "sessions_without_frames", 0) or 0) for e in runs
+        ),
+        "open_media_handles": sum(e.open_media_handles for e in runs),
+        "fd_audit_available": all(e.fd_audit_available for e in runs),
+    }
 
 
 def build_report(
@@ -355,6 +409,7 @@ def build_report(
         include_errors=include_errors,
         overall=aggregate(scores, include_errors=include_errors),
         axes=by_axis(scores, include_errors=include_errors),
+        ingest=_ingest_evidence(rows),
     )
     pending = report.overall.n_pending_judge
     if pending:
@@ -367,7 +422,35 @@ def build_report(
             "the system held staged media across ingest_end; memory-mode "
             "results for this run are not trustworthy"
         )
+    _note_ingest_problems(report)
     return report
+
+
+def _note_ingest_problems(report: Report) -> None:
+    """Warn when the memory track had nothing to remember.
+
+    A memory-track run that produced no notes is not a low score — it is an
+    unmeasured one. Scores stay near chance either way, so without this note
+    the failure is indistinguishable from a working run.
+
+    Only `n_records` is treated as the signal. `memory_bytes` is optional in the
+    protocol (a system may legitimately not know its own footprint, and the
+    reference stub does not report it), so requiring it would accuse a healthy
+    system of remembering nothing.
+    """
+    if not report.ingest or report.context_mode != "memory":
+        return
+    if not report.ingest.get("n_records"):
+        report.notes.append(
+            "ingestion produced no memory records; the memory track answered "
+            "from nothing, so these results measure priors, not memory"
+        )
+    blank = report.ingest.get("sessions_without_frames") or 0
+    if blank:
+        report.notes.append(
+            f"{blank} session(s) yielded zero decoded frames; the memory built "
+            "for this run is incomplete"
+        )
 
 
 __all__ = [

@@ -100,6 +100,25 @@ _LETTER_PATTERNS = (
     re.compile(r"^\s*\(?([A-E])\)?[.):]\s+\S", re.IGNORECASE),
 )
 
+#: Inline markup to strip before matching. Instruction-tuned models emphasise
+#: their final answer as a matter of default style, so `**B**` is one of the
+#: most common real reply shapes — and every pattern above anchors on a bare
+#: letter, so without this it extracts nothing and the item scores 0.0 with
+#: `status=ok`. That is worse than a visible failure: the memory track produces
+#: more prose than the blind track, so the *rate* of emphasis differs per track
+#: and the bias lands directly on Memory Gain.
+_MARKUP = re.compile(r"</?[a-zA-Z][^>]*>|[*_`~]+")
+
+#: Words that flip the meaning of a nearby option mention. Only consulted for
+#: the containment fallback, where "Not the drawer." would otherwise be scored
+#: as having *chosen* the drawer.
+_NEGATION = re.compile(r"\b(?:not|isn'?t|no longer|never|nowhere|none)\b", re.IGNORECASE)
+
+
+def strip_markup(text: str) -> str:
+    """Remove markdown/HTML emphasis so a bare letter can be recognised."""
+    return _MARKUP.sub("", text).strip()
+
 
 def extract_mcq_letter(pred: object, *, options: dict[str, str] | None = None) -> str | None:
     """Recover the chosen letter from a free-form response.
@@ -107,10 +126,14 @@ def extract_mcq_letter(pred: object, *, options: dict[str, str] | None = None) -
     Tries upstream's first-token rule, then a few common phrasings, then — if
     options are supplied — an exact match against the option *text*, since
     models often echo the answer instead of its label.
+
+    Inline emphasis is stripped first: `**B**` is a extremely common reply shape
+    from instruction-tuned models and every pattern here anchors on a bare
+    letter.
     """
     if pred is None:
         return None
-    text = str(pred).strip()
+    text = strip_markup(str(pred).strip())
     if not text:
         return None
 
@@ -128,6 +151,15 @@ def extract_mcq_letter(pred: object, *, options: dict[str, str] | None = None) -
         exact = [k for k, v in options.items() if v.strip().casefold() == lowered]
         if len(exact) == 1:
             return exact[0].upper()
+        # A reply that names an option in order to *rule it out* ("Not the
+        # drawer.") must not be read as choosing it. Containment cannot tell
+        # assertion from denial, so refuse rather than guess: returning None
+        # scores 0.0, which is the safe direction for a benchmark, whereas a
+        # false positive would silently credit a wrong answer — and hedging is
+        # most common in the blind track, i.e. the baseline Memory Gain
+        # subtracts.
+        if _NEGATION.search(text):
+            return None
         # Containment fallback. Two distinct situations look alike here:
         #   nesting   - "shelf" matches only because "the top shelf" does
         #   ambiguity - the response really names two options ("sink or drawer")
@@ -167,5 +199,6 @@ __all__ = [
     "mean_relative_accuracy",
     "mra_thresholds",
     "score_mcq",
+    "strip_markup",
     "to_float",
 ]

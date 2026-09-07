@@ -151,6 +151,17 @@ def cmd_report(args: argparse.Namespace) -> int:
         print(f"run:    {payload['run_id']}")
         print(f"system: {payload['system_id']}  mode: {payload['context_mode']}")
         print(f"enforcement: {payload['enforcement']}")
+        ingest = payload.get("ingest") or {}
+        if ingest:
+            # Printed before the scores on purpose: if ingestion produced
+            # nothing, the accuracy below is a measurement of priors and the
+            # reader needs to know that first.
+            print(
+                f"ingest: {ingest.get('n_sessions', 0)} session(s), "
+                f"{ingest.get('total_frames', 0)} frame(s), "
+                f"{ingest.get('n_records', 0)} record(s), "
+                f"{ingest.get('memory_bytes', 0)} byte(s)"
+            )
         print()
         print(f"{'axis':30} {'n':>4} {'mean':>7}  95% CI")
         print("-" * 62)
@@ -199,11 +210,26 @@ def cmd_compare(args: argparse.Namespace) -> int:
         print("-" * 70)
         for axis, cell in payload["gains"].items():
             marker = "*" if cell["significant"] else ""
+            if cell.get("degenerate"):
+                marker = "degenerate"
             print(
                 f"{axis:30} {cell['n_paired']:>4} {cell['gain']:>+7.3f}  "
                 f"[{cell['ci95_low']:+.3f}, {cell['ci95_high']:+.3f}]  {marker}"
             )
         print("\n* the paired 95% interval excludes zero")
+        dropped = max((c.get("n_dropped") or 0) for c in payload["gains"].values())
+        if dropped:
+            print(
+                f"note: {dropped} item(s) were not scorable in both runs and are "
+                "excluded from the pairing; the gain is conditioned on the "
+                "items that survived in both"
+            )
+        if any(c.get("degenerate") for c in payload["gains"].values()):
+            print(
+                "note: 'degenerate' means every paired difference was identical, "
+                "so the interval is an artefact, not an uncertainty estimate — "
+                "usually a sign the questions do not discriminate"
+            )
     if args.out:
         Path(args.out).write_text(
             json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"

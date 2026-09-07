@@ -82,16 +82,21 @@ class HFVLMAdapter(AdapterBase):
             model_path, trust_remote_code=trust_remote_code
         )
         self._model.eval()
-        logger.info("model ready")
+        self._input_device = _input_device(torch, self._model)
+        logger.info("model ready (inputs go to %s)", self._input_device)
 
         self._notes: list[str] = []
         self._session_paths: list[str] = []
+        #: Oracle frames, decoded lazily on the first query and reused for the
+        #: rest of the environment. None means "not yet decoded".
+        self._oracle_frames: list[Any] | None = None
 
     # -- lifecycle -----------------------------------------------------------
 
     def on_env_begin(self, env_id: str, n_sessions: int) -> None:
         self._notes.clear()
         self._session_paths.clear()
+        self._oracle_frames = None
 
     def ingest(self, msg: dict[str, Any]) -> dict[str, Any]:
         path = msg.get("video_path")
@@ -122,43 +127,61 @@ class HFVLMAdapter(AdapterBase):
         prompt = build_prompt(msg)
         images: list[Any] = []
         if self.context_mode == "oracle":
+            images.extend(self._oracle_images())
+        elif self.context_mode == "memory":
+            if self._notes:
+                prompt = (
+                    "Here are your own notes from watching this home. The video is no "
+                    "longer available; answer from these notes.\n\n"
+                    + "\n\n".join(self._notes)
+                    + "\n\n"
+                    + prompt
+                )
+            else:
+                # With no notes the memory prompt is byte-identical to the blind
+                # one, so this track would silently measure priors while being
+                # reported as memory — and Memory Gain would come out at zero
+                # for a plumbing reason, not a scientific one. Say so loudly;
+                # the runner also surfaces n_records in the report.
+                logger.warning(
+                    "memory track has no notes for this environment; answering "
+                    "from priors alone, which is the blind condition"
+                )
+        text = self._generate(images, prompt, max_new_tokens=self._max_new_tokens)
+        return parse_reply(msg, text)
+
+    # -- generation ----------------------------------------------------------
+
+    def _oracle_images(self) -> list[Any]:
+        """Frames for every retained session, decoded once per environment.
+
+        Oracle media is never revoked, so the frames cannot change mid-run and
+        re-decoding them per question is pure waste: on a 3-session environment
+        with 28 questions at 8 frames that is 672 decodes instead of 24. The
+        cache is cleared in `on_env_begin`, so no environment can see another's
+        frames.
+        """
+        if self._oracle_frames is None:
+            frames: list[Any] = []
             for path in self._session_paths:
-                images.extend(
+                frames.extend(
                     f.image
                     for f in sample_frames(
                         path, n_frames=self._n_frames, max_side=self._max_side
                     )
                 )
-        elif self.context_mode == "memory" and self._notes:
-            prompt = (
-                "Here are your own notes from watching this home. The video is no "
-                "longer available; answer from these notes.\n\n"
-                + "\n\n".join(self._notes)
-                + "\n\n"
-                + prompt
-            )
-        text = self._generate(images, prompt, max_new_tokens=self._max_new_tokens)
-        return parse_reply(msg, text)
-
-    # -- generation ----------------------------------------------------------
+            logger.info("oracle: cached %d frame(s) from %d session(s)",
+                        len(frames), len(self._session_paths))
+            self._oracle_frames = frames
+        return self._oracle_frames
 
     def _generate(self, images: list[Any], prompt: str, *, max_new_tokens: int) -> str:
         content: list[dict[str, Any]] = [{"type": "image"} for _ in images]
         content.append({"type": "text", "text": prompt})
         messages = [{"role": "user", "content": content}]
 
-        chat_text = self._processor.apply_chat_template(
-            messages, tokenize=False, add_generation_prompt=True
-        )
-        inputs = self._processor(
-            text=[chat_text],
-            images=images or None,
-            return_tensors="pt",
-            padding=True,
-        )
-        inputs = {
-            k: (v.to(self._model.device) if hasattr(v, "to") else v) for k, v in inputs.items()
-        }
+        inputs = self._encode(messages, images)
+        inputs = self._to_model_device(inputs)
 
         gen: dict[str, Any] = {"max_new_tokens": max_new_tokens}
         if self._temperature and self._temperature > 0:
@@ -166,16 +189,125 @@ class HFVLMAdapter(AdapterBase):
         else:
             gen["do_sample"] = False  # greedy, so repeat runs are comparable
 
+        prompt_len = int(inputs["input_ids"].shape[1])
+        logger.debug("prompt is %d token(s) for %d image(s)", prompt_len, len(images))
+
         with self._torch.inference_mode():
             output = self._model.generate(**inputs, **gen)
 
-        # Strip the prompt; generate() returns prompt + continuation.
-        prompt_len = inputs["input_ids"].shape[1]
-        trimmed = output[:, prompt_len:]
+        return self._decode(output, prompt_len)
+
+    def _encode(self, messages: list[dict[str, Any]], images: list[Any]) -> Any:
+        """Render the chat template and tokenise, preferring the fused call.
+
+        The fused `apply_chat_template(tokenize=True)` path is not a style
+        choice. Templates for several families (Gemma3, Idefics3) emit the BOS
+        token literally, and transformers suppresses the tokeniser's own BOS
+        only inside that call:
+
+            if self.tokenizer.bos_token is not None and prompt.startswith(...):
+                kwargs["add_special_tokens"] = False
+
+        Rendering with `tokenize=False` and then calling the processor
+        separately bypasses that guard and yields two leading BOS tokens —
+        silent quality loss with no exception. Older processors do not accept
+        the fused form, so fall back to the two-step call for them.
+        """
+        try:
+            return self._processor.apply_chat_template(
+                messages,
+                tokenize=True,
+                add_generation_prompt=True,
+                return_dict=True,
+                return_tensors="pt",
+            )
+        except (TypeError, ValueError, KeyError) as exc:
+            logger.debug("fused apply_chat_template unavailable (%s); using two steps", exc)
+
+        chat_text = self._processor.apply_chat_template(
+            messages, tokenize=False, add_generation_prompt=True
+        )
+        kwargs: dict[str, Any] = {}
+        bos = getattr(getattr(self._processor, "tokenizer", None), "bos_token", None)
+        if bos and chat_text.startswith(bos):
+            # Reproduce the guard the fused path would have applied.
+            kwargs["add_special_tokens"] = False
+        return self._processor(
+            text=[chat_text],
+            images=images or None,
+            return_tensors="pt",
+            padding=True,
+            **kwargs,
+        )
+
+    def _to_model_device(self, inputs: Any) -> Any:
+        """Move and dtype-align the batch in one step.
+
+        `BatchFeature.to(device=..., dtype=...)` casts only floating-point
+        entries, so `pixel_values` follows the model's dtype while `input_ids`
+        and `image_grid_thw` stay integral and are merely moved. A hand-rolled
+        dict comprehension moves without casting, which breaks on the families
+        whose vision tower does not cast internally.
+        """
+        target = self._input_device
+        if hasattr(inputs, "to"):
+            try:
+                return inputs.to(device=target, dtype=self._model.dtype)
+            except (TypeError, NotImplementedError):
+                return inputs.to(target)
+        return {k: (v.to(target) if hasattr(v, "to") else v) for k, v in inputs.items()}
+
+    def _decode(self, output: Any, prompt_len: int) -> str:
+        """Strip the prompt from `generate()`'s output and decode.
+
+        Decoder-only models return prompt + continuation; encoder-decoder models
+        return only the continuation, so slicing at `prompt_len` would discard
+        the answer entirely and hand back "". An empty string is scored as a
+        wrong answer with `status=ok`, so this must fail loudly instead.
+        """
+        if getattr(self._model.config, "is_encoder_decoder", False):
+            trimmed = output
+        elif output.shape[1] > prompt_len:
+            trimmed = output[:, prompt_len:]
+        else:
+            raise RuntimeError(
+                f"generate() returned {output.shape[1]} token(s) for a "
+                f"{prompt_len}-token prompt; cannot separate the continuation. "
+                "This model may be encoder-decoder without declaring it."
+            )
         decoded = self._processor.batch_decode(
             trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
         )
         return (decoded[0] if decoded else "").strip()
+
+
+def _input_device(torch: Any, model: Any) -> Any:
+    """Where to put input tensors, refusing the meta device.
+
+    `model.device` is the device of the *first* parameter. Under
+    `device_map="auto"` with too little VRAM, accelerate offloads rather than
+    raising, and if the first parameter is offloaded that property reads `meta`.
+    Moving inputs to `meta` yields storage-free tensors, so generation either
+    raises deep inside the model or returns garbage token ids that get scored as
+    a wrong answer — a silent hit to the very number being measured. Prefer a
+    real device from `hf_device_map`, and refuse outright if none exists.
+    """
+    mapping = getattr(model, "hf_device_map", None) or {}
+    for value in mapping.values():
+        # Entries are torch devices, device strings, or bare ints (a CUDA
+        # ordinal). Normalise all three before comparing.
+        text = f"cuda:{value}" if isinstance(value, int) else str(value)
+        if text not in {"meta", "disk"}:
+            return torch.device(text)
+    device = model.device
+    if getattr(device, "type", None) == "meta":
+        raise RuntimeError(
+            "the model loaded onto the meta device, which means accelerate "
+            "offloaded it for lack of memory. Free a GPU, pin one with "
+            "CUDA_VISIBLE_DEVICES, or pass --device-map cuda:0 to fail fast "
+            "instead of producing untrustworthy answers."
+        )
+    return device
 
 
 def _load_model(model_path: str, kwargs: dict[str, Any]):
@@ -183,13 +315,24 @@ def _load_model(model_path: str, kwargs: dict[str, Any]):
 
     `AutoModelForImageTextToText` covers current transformers; the explicit Qwen
     classes are the fallback for older pins where the auto class does not map.
+
+    The fallback triggers only on a genuine "unrecognised architecture" error.
+    Catching every ValueError/KeyError/OSError also swallowed missing-accelerate,
+    bad-path and corrupt-shard failures, then re-raised a RuntimeError blaming
+    the architecture — with the real message logged at INFO, i.e. invisible at
+    the default WARNING level. That turned a one-line install problem into a
+    misleading dead end.
     """
     from transformers import AutoModelForImageTextToText
 
+    unsupported = ("unrecognized configuration class", "does not recognize this architecture")
     try:
         return AutoModelForImageTextToText.from_pretrained(model_path, **kwargs)
-    except (ValueError, KeyError, OSError) as exc:
-        logger.info("AutoModelForImageTextToText did not load (%s); trying Qwen classes", exc)
+    except ValueError as exc:
+        if not any(marker in str(exc).lower() for marker in unsupported):
+            raise
+        first_error = exc
+        logger.info("architecture not in the auto mapping (%s); trying Qwen classes", exc)
 
     for name in ("Qwen3VLForConditionalGeneration", "Qwen2_5_VLForConditionalGeneration"):
         try:
@@ -203,9 +346,10 @@ def _load_model(model_path: str, kwargs: dict[str, Any]):
         except (ValueError, KeyError, OSError) as exc:
             logger.info("%s did not load: %s", name, exc)
     raise RuntimeError(
-        f"could not load a vision-language model from {model_path}. Check the path, "
-        "and that your transformers version supports this architecture."
-    )
+        f"could not load a vision-language model from {model_path}. If this is a "
+        "Qwen3-VL checkpoint, transformers must be >= 4.57 (qwen3_vl is absent "
+        "from the auto mappings before then)."
+    ) from first_error
 
 
 def _resolve_dtype(torch: Any, name: str) -> Any:

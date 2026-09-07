@@ -216,10 +216,12 @@ class Runner:
         started = time.monotonic()
         with area:
             proc.env_begin(env.env_id, len(sessions))
+            total_frames = 0
+            blank_sessions = 0
             for session in sessions:
                 msg = self._ingest_msg(session, area)
                 try:
-                    proc.ingest(msg)
+                    stats = proc.ingest(msg)
                 except AdapterCrashed:
                     raise  # subclasses ProtocolError; must not be downgraded
                 except (ProtocolError, AdapterTimeout) as exc:
@@ -232,11 +234,28 @@ class Runner:
                         items, summary, system_info, env_run, writer, str(exc)
                     )
                     return
+                # The adapter's own accounting is the only evidence that the
+                # payload was really consumed. Dropping it made a per-session
+                # decode failure invisible: two of three sessions succeeding
+                # still yields a non-zero n_records and no warning anywhere.
+                frames = stats.get("frames")
+                if isinstance(frames, int):
+                    total_frames += frames
+                    if frames == 0 and cfg.context_mode is not ContextMode.BLIND:
+                        blank_sessions += 1
+                        logger.warning(
+                            "env %s: session %s decoded zero frames; the memory "
+                            "built for this environment is incomplete",
+                            env.env_id,
+                            session.session_id,
+                        )
 
             ack = proc.ingest_end(env.env_id)
             env_run.ingest_seconds = time.monotonic() - started
             env_run.memory_bytes = ack.get("memory_bytes")
             env_run.n_records = ack.get("n_records")
+            env_run.total_frames = total_frames
+            env_run.sessions_without_frames = blank_sessions
 
             if cfg.context_mode is ContextMode.MEMORY:
                 report = area.revoke(pid=proc.pid)

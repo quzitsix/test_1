@@ -63,6 +63,11 @@ class EnvRunInfo(BaseModel):
     ingest_seconds: float | None = None
     memory_bytes: int | None = None
     n_records: int | None = None
+    #: Frames the adapter reported decoding across all sessions, and how many
+    #: sessions yielded none. `n_records` alone cannot detect a partial
+    #: failure: two of three sessions succeeding still leaves it non-zero.
+    total_frames: int = 0
+    sessions_without_frames: int = 0
     enforcement: str = "revoked"
     revocation_contested: bool = False
     open_media_handles: int = 0
