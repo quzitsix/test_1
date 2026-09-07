@@ -202,19 +202,29 @@ class AdapterProcess:
         """The system's process id, for the post-revocation fd audit."""
         return self._proc.pid if self._proc is not None else None
 
-    def drain_stderr(self, limit: int = 40) -> list[str]:
-        """Recent stderr lines, for diagnostics on failure."""
+    def drain_stderr(self, limit: int = 40, *, settle: float = 0.6) -> list[str]:
+        """Recent stderr lines, for diagnostics on failure.
+
+        `settle` matters: when a subprocess dies the harness usually notices EOF
+        on stdout *before* the interpreter has finished flushing its traceback to
+        stderr. Draining with a near-zero timeout therefore returned an empty
+        tail and printed "system crashed: ...stderr tail:" with nothing after it,
+        hiding the actual cause of every adapter crash. Waiting briefly on the
+        first line fixes that; subsequent lines arrive together.
+        """
         out: list[str] = []
         if self._stderr_reader is None:
             return out
+        timeout = settle
         while len(out) < limit:
             try:
-                line = self._stderr_reader.readline(timeout=0.01)
+                line = self._stderr_reader.readline(timeout=timeout)
             except AdapterTimeout:
                 break
             if line is None:
                 break
             out.append(line.rstrip())
+            timeout = 0.05  # the rest of a traceback follows immediately
         return out
 
     # -- framing ------------------------------------------------------------

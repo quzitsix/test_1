@@ -276,6 +276,40 @@ def test_dead_process_raises_crash(tmp_path: Path) -> None:
             proc.query(a_query())
 
 
+def test_crash_reports_the_stderr_cause(tmp_path: Path) -> None:
+    """A dying adapter must surface WHY, not merely that it died.
+
+    The realistic failure is a crash *mid-run*, after the handshake: the harness
+    sees EOF on stdout while the child is still flushing its traceback, so
+    draining with a near-zero timeout printed
+    "system crashed: ...stderr tail:" with nothing after it. That hid the cause
+    of every adapter crash and cost real debugging time.
+
+    An immediate crash does not reproduce it — the traceback is already buffered
+    before the harness looks — hence the sleep before raising, which puts the
+    write genuinely after the EOF.
+    """
+    cmd = _write_adapter(
+        tmp_path,
+        """
+        if msg["type"] == "hello":
+            send({"type": "ready", "system_id": "doomed",
+                  "capabilities": {"context_mode": "blind"}})
+        elif msg["type"] == "query":
+            sys.stdout.close()
+            time.sleep(0.25)
+            raise RuntimeError("CANARY_a7f3 the real cause")
+        """,
+    )
+    with AdapterProcess(cmd, timeouts=FAST) as proc:
+        proc.handshake()
+        with pytest.raises(AdapterCrashed) as excinfo:
+            proc.query(a_query())
+    assert "CANARY_a7f3" in str(excinfo.value), (
+        "the traceback must reach the error message, or crashes are undebuggable"
+    )
+
+
 def test_hung_system_times_out(tmp_path: Path) -> None:
     """A wedged system must not hang the whole run."""
     cmd = _write_adapter(
