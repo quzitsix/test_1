@@ -72,16 +72,34 @@ meowbench run --suite fixtures/demo --run-id memory --context-mode memory \
 meowbench report  --run runs/memory
 meowbench compare --run runs/memory --baseline runs/blind
 
-# ...or a real model (pip install -e ".[hf]")
-meowbench run --suite fixtures/demo --run-id qwen-memory --context-mode memory   --handshake-timeout 900   --system "python -m meowbench.adapters.hf_vlm --model-path /path/to/Qwen2.5-VL-7B-Instruct --context-mode memory"
+# ...or a real model (pip install -e ".[hf]") — note the fixture changes
+export MODEL=/path/to/Qwen3-VL-2B-Instruct
+bash scripts/run_qwen_demo.sh
 ```
 
-`fixtures/demo` is synthetic: a real 7 KiB H.264 file whose answer key sits in the
-container metadata. A stub that reads it scores 1.0 while a blind one sits at
-chance, so the whole pipeline runs in CI with no GPU, no API key, and no dataset
-licence — and because the video is genuinely decodable, real VLM adapters can be
-smoke-tested on it too. Their accuracy there will be near chance by design: the
-fixture validates plumbing, not capability.
+Two fixtures ship, for two different jobs, and using the wrong one will mislead
+you:
+
+**`fixtures/demo`** — protocol and CI. A real 7 KiB H.264 file whose answer key
+sits in the container metadata, so the deterministic stub scores 1.0 while a
+blind one sits at chance and the whole pipeline runs with no GPU, no API key and
+no dataset licence. But every frame is a flat grey field, so **no vision model
+can score above chance here**, and its Memory Gain is not merely uninformative —
+it is actively misleading. Option E is never correct, so a blind model that
+honestly answers "information not available" is scored wrong while the memory
+track's guessing scores 0.25, reporting a significant +0.25 gain caused purely
+by willingness to answer. Never cite a number from this suite.
+
+**`fixtures/probe`** — real models. The answers are rendered as large text in
+the frames, so a model that is shown frames can read them and one that is not
+cannot. `oracle >> blind` is therefore a genuine measurement, and a collapsed
+gain means the measurement chain is broken rather than that the questions were
+hard. It also carries gold-`E` unanswerable controls (so honest abstention is
+rewarded and gain cannot be manufactured by guessing more freely), balanced gold
+letters independent of the axis, distinct question text per item, and 2
+environments × 3 sessions so multi-session ordering is exercised. It measures
+whether the harness can detect memory — **not** household spatial
+understanding; reading rendered text is far easier than that.
 
 ---
 
@@ -214,9 +232,28 @@ Errors stay in the denominator by default. Dropping them would let a flaky syste
 raise its own score by failing selectively; `--exclude-errors` exists for
 diagnosis and the report says which convention was used.
 
+Memory Gain is paired, which means it can only use items that scored in *both*
+runs, so an item that errored on one side is unpairable. That exclusion is
+survivorship conditioning — a system that fails on the questions it finds
+hardest would otherwise be flattered — so `compare` reports `n_dropped`
+alongside the gain instead of quietly narrowing the sample. It also flags a
+comparison as `degenerate` when every paired difference is identical: the
+interval then collapses to a point and would otherwise be presented as an
+infinitely precise result rather than as questions that failed to discriminate.
+
 Every MCQ item carries the same option `E` text corpus-wide, so the unanswerable
 class cannot be spotted from wording, and unanswerable controls are built by
 transplanting a question from a *different* environment.
+
+One thing worth knowing about MCQ extraction, because it silently biases the
+headline number if you get it wrong: instruction-tuned models emphasise their
+answer by default, and `**B**` matches none of the bare-letter patterns. It
+scored 0.0 with `status=ok` — indistinguishable from a wrong answer. Since the
+memory track produces more prose than the blind track, the *rate* of emphasis
+differed per track and the loss landed straight on Memory Gain. Markup is now
+stripped before matching. The same reasoning drives the opposite call on
+negation: "Not the drawer." no longer counts as choosing the drawer, because for
+a benchmark an explicit non-answer is safer than a false positive.
 
 ---
 
@@ -294,9 +331,10 @@ meowbench/
     deterministic.py  MCQ + MRA
     aggregate.py      per-axis cells, Wilson intervals, Memory Gain
   media.py          frame sampling via PyAV (no ffmpeg binary needed)
-tests/              196 tests, no GPU / API key / dataset required
-fixtures/demo/      synthetic suite for CI
-docs/               M2 server runbook
+tests/              279 tests, no GPU / API key / dataset required
+fixtures/demo/      flat-grey suite for protocol + CI only (gain undefined)
+fixtures/probe/     positive control: answers rendered in the pixels
+docs/               server runbooks + how to integrate your own system
 ```
 
 `Item.to_query()` is the only sanctioned path from corpus to system, and it drops
