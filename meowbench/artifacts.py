@@ -23,12 +23,15 @@ from __future__ import annotations
 
 import hashlib
 import json
+import logging
 from pathlib import Path
 from typing import Any, Iterator
 
 from pydantic import BaseModel, ConfigDict, Field
 
 from meowbench.schema import AnswerFormat, Evidence, Item, PredictionStatus
+
+logger = logging.getLogger(__name__)
 
 PREDICTION_SCHEMA = "meowbench.prediction/1"
 JUDGMENT_SCHEMA = "meowbench.judgment/1"
@@ -251,7 +254,32 @@ def read_jsonl(path: Path | str) -> Iterator[dict[str, Any]]:
 
 
 def read_predictions(path: Path | str) -> list[PredictionRow]:
-    return [PredictionRow.model_validate(row) for row in read_jsonl(path)]
+    """Load a run's predictions, keeping the last row per item.
+
+    Deduplication is a correctness guard, not tidiness. A prediction file can
+    legitimately contain more than one row per item — a resumed run appends,
+    and a re-run that truncates was only fixed after a real run produced 56
+    rows for 28 items. Scoring the file as-is doubled n, which left every mean
+    unchanged while narrowing each confidence interval by a factor of sqrt(2):
+    silently over-confident statistics, which is worse than a visible error.
+
+    The last row wins, matching the store's `ON CONFLICT DO UPDATE`: a later
+    attempt at an item supersedes an earlier one.
+    """
+    rows = [PredictionRow.model_validate(row) for row in read_jsonl(path)]
+    by_item: dict[str, PredictionRow] = {}
+    for row in rows:
+        by_item[row.item_id] = row
+    if len(by_item) != len(rows):
+        logger.warning(
+            "%s holds %d row(s) for %d item(s); keeping the last row per item. "
+            "Scoring the duplicates would have inflated n and narrowed every "
+            "interval.",
+            Path(path).name,
+            len(rows),
+            len(by_item),
+        )
+    return list(by_item.values())
 
 
 def read_judgments(path: Path | str) -> list[JudgmentRow]:

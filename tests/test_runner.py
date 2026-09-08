@@ -403,3 +403,54 @@ def test_deferred_ingest_is_not_a_decode_failure(tmp_path: Path) -> None:
         "deferred decoding was misreported as a decode failure"
     )
     assert env_run.total_frames > 0, "oracle must still account for its frames"
+
+
+def test_rerunning_without_resume_does_not_duplicate_rows(tmp_path: Path) -> None:
+    """A --no-resume re-run must truncate the artifact, not append to it.
+
+    Observed live: re-running an oracle track with --no-resume left 56 rows for
+    28 items. The means were unaffected but n doubled, narrowing every
+    confidence interval by a factor of sqrt(2) -- silently over-confident
+    statistics, which is worse than a visible failure.
+    """
+    suite = load_suite(Path(__file__).resolve().parent.parent / "fixtures" / "demo")
+    command = [sys.executable, "-m", "meowbench.adapters.echo_stub"]
+    artifacts = tmp_path / "art"
+
+    for _ in range(2):
+        with Store(tmp_path / "s.sqlite") as store:
+            cfg = RunConfig(
+                run_id="twice",
+                suite="demo",
+                command=command,
+                scratch_dir=tmp_path / "scratch",
+                artifacts_dir=artifacts,
+                resume=False,
+            )
+            Runner(cfg, store).run(suite.envs, suite.items)
+
+    lines = (artifacts / "predictions.jsonl").read_text(encoding="utf-8").splitlines()
+    assert len(lines) == len(suite.items), (
+        f"{len(lines)} row(s) for {len(suite.items)} item(s) after two runs"
+    )
+
+
+def test_reading_predictions_survives_a_duplicated_file(tmp_path: Path) -> None:
+    """Duplicate item rows must not inflate n, whatever produced them."""
+    suite = load_suite(Path(__file__).resolve().parent.parent / "fixtures" / "demo")
+    command = [sys.executable, "-m", "meowbench.adapters.echo_stub"]
+    artifacts = tmp_path / "art"
+    with Store(tmp_path / "s.sqlite") as store:
+        cfg = RunConfig(
+            run_id="once", suite="demo", command=command,
+            scratch_dir=tmp_path / "scratch", artifacts_dir=artifacts,
+        )
+        Runner(cfg, store).run(suite.envs, suite.items)
+
+    path = artifacts / "predictions.jsonl"
+    original = path.read_text(encoding="utf-8")
+    path.write_text(original + original, encoding="utf-8")  # simulate the old bug
+
+    rows = read_predictions(path)
+    assert len(rows) == len(suite.items)
+    assert len({r.item_id for r in rows}) == len(rows)

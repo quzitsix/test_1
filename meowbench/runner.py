@@ -125,7 +125,16 @@ class Runner:
 
         writer = None
         if cfg.artifacts_dir:
-            writer = JsonlWriter(Path(cfg.artifacts_dir) / "predictions.jsonl")
+            # Append when resuming, truncate when not. Appending on a fresh run
+            # duplicates every row that a previous attempt already wrote: a
+            # re-run with --no-resume produced 56 lines for 28 items, and since
+            # the scorer reads the file rather than deduplicating it, the
+            # doubled n narrowed every confidence interval by a factor of
+            # sqrt(2) while the means stayed put. Silently over-confident
+            # intervals are worse than a crash.
+            writer = JsonlWriter(
+                Path(cfg.artifacts_dir) / "predictions.jsonl", append=cfg.resume
+            )
 
         system_info: SystemInfo | None = None
         try:
