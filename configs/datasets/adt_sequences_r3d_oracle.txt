@@ -1,0 +1,10 @@
+# The 4 cheapest sequences that ARE in R3D-Bench's 57, for the oracle-track
+# instrument check only (6.3 GiB of VRS).
+#
+# These deliberately DO overlap R3D-Bench: the point is to reproduce their
+# published per-type numbers and thereby prove our staging, frame extraction and
+# scorer are correct. They must NOT be used for mining our own items.
+Apartment_release_decoration_seq140_M1292
+Apartment_release_decoration_seq134_M1292
+Apartment_release_decoration_seq131_M1292
+Apartment_release_decoration_seq136_M1292

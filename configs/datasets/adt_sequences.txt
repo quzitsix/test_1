@@ -1,0 +1,24 @@
+# ADT sequences selected for MEOWBench, with the reason for each group.
+# Use with:  aria_dataset_downloader ... -d 0 -l $(grep -v '^#' FILE | tr '\n' ' ')
+#
+# Ranked by len(object_names_interacted_with) from the live CDN metadata, then
+# filtered to EXCLUDE all 57 sequences R3D-Bench already published items on, so
+# anything we mine here cannot overlap their pool. 179 candidates remained.
+
+# --- memory track: relocation-rich, disjoint from R3D-Bench (27.6 GiB of VRS) ---
+Apartment_release_multiuser_clean_seq118_M1292
+Apartment_release_multiuser_clean_seq114_M1292
+Apartment_release_multiuser_clean_seq117_M1292
+Apartment_release_multiuser_clean_seq119_M1292
+Apartment_release_multiuser_clean_seq116_M1292
+Apartment_release_multiuser_clean_seq113_M1292
+Apartment_release_multiuser_clean_seq111_M1292
+Apartment_release_multiuser_clean_seq120_M1292
+Apartment_release_multiuser_clean_seq112_M1292
+Apartment_release_multiuser_meal_seq135_M1292
+Apartment_release_multiuser_meal_seq134_M1292
+Apartment_release_multiuser_meal_seq140_M1292
+Apartment_release_multiuser_cook_seq117_M1292
+Apartment_release_multiuser_cook_seq143_M1292
+Apartment_release_multiuser_cook_seq118_M1292
+Apartment_release_multiskeleton_party_seq107_M1292
