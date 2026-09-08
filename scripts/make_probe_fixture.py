@@ -194,9 +194,19 @@ def balanced_placements(rng: random.Random, n_slots: int) -> list[str]:
     mild bias toward B would score 0.357 and look like it was perceiving. A
     balanced pool pins the constant-answer ceiling near 1/4 instead, which is
     what makes "above chance" mean "actually read the frame".
+
+    When `n_slots` is not a multiple of the option count the remainder is drawn
+    from a shuffled pool rather than sliced off the front. Truncating
+    `PLACES * reps` gave the earliest options a deterministic surplus for every
+    seed — a systematic bias, not the sampling noise a balanced pool is meant
+    to remove.
     """
-    reps = -(-n_slots // len(PLACES))  # ceil
-    pool = (PLACES * reps)[:n_slots]
+    whole, remainder = divmod(n_slots, len(PLACES))
+    pool = PLACES * whole
+    if remainder:
+        spare = list(PLACES)
+        rng.shuffle(spare)
+        pool += spare[:remainder]
     rng.shuffle(pool)
     return pool
 
@@ -316,28 +326,40 @@ def build() -> int:
             )
 
         # -- unanswerable controls: objects that were never shown -------------
-        for obj in ABSENT[env_id]:
+        # Phrased EXACTLY like the answerable within-session items, naming a
+        # real session. An earlier version asked "In <env>, where was the X?" --
+        # the only question shape with no session reference -- which made the
+        # whole control group identifiable from the question text alone: a blind
+        # model could learn "no session mentioned, answer E" and take all of
+        # them without watching anything. That is the text shortcut the debias
+        # stage exists to find, built into the one group that is supposed to be
+        # shortcut-proof.
+        for offset, obj in enumerate(ABSENT[env_id]):
+            index = offset % N_SESSIONS
+            session_id = sessions[index].session_id
             items.append(
                 Item(
                     item_id=f"{tag}.absent.{obj.split()[-1].lower()}",
                     env_id=env_id,
-                    session_ids=[s.session_id for s in sessions],
+                    session_ids=[session_id],
                     axis="A12_unanswerable",
                     answer_format=AnswerFormat.MCQ5,
-                    question=f"In {env_id}, where was the {obj.lower()}?",
+                    question=(
+                        f"In session {index + 1:02d} of {env_id}, "
+                        f"where was the {obj.lower()}?"
+                    ),
                     options=options_with_e(),
                     answer="E",
                     is_unanswerable=True,
                     evidence=Evidence(
-                        session_ids=[s.session_id for s in sessions],
+                        session_ids=[session_id],
                         source_rows=[f"probe#{tag}/absent/{obj}"],
                         notes="this object is never rendered in any session",
                     ),
                     certificate=Certificate(
-                        n_sessions=N_SESSIONS,
-                        span_seconds=float(SECONDS_PER_SESSION * N_SESSIONS),
-                        cross_session=True,
-                        scope=EvidenceScope.CROSS_SESSION,
+                        n_sessions=1,
+                        span_seconds=float(SECONDS_PER_SESSION),
+                        scope=EvidenceScope.SINGLE_SESSION,
                     ),
                     provenance=Provenance(
                         miner="probe@v1",

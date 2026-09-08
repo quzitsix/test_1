@@ -8,9 +8,9 @@
     "A1_static_location": 18,
     "A3_spatial_change": 6
   },
-  "items_sha256": "c2e78251da11dcd0002ef1270d37e5394d89466aedc64680ae6e9603fa450c18",
+  "items_sha256": "0fb02c45b4459e55a162c6fa887204f1b36077c7141d0e4090f2a4d921b54e9e",
   "envs_sha256": "35a1fcc71cb1b974f99f036f370e7d3cf59bbedcc51b2c91dffd06a42b5ead84",
-  "suite_sha": "32534dbaf4135383d6b7b6eb50eba278fdd0b542156b18787f0f123eab8f9fde",
+  "suite_sha": "12874256a662f96e3e507c80b2eba5501f8f9e80d3e98c395351c5f3a55e63c3",
   "note": "Positive control. The answer to every non-abstention item is rendered as large text in the video frames, so a model that receives frames can read it and one that does not cannot: oracle >> blind is therefore a real measurement, and a collapsed gain means the measurement chain is broken rather than that the questions are hard. Includes unanswerable controls (gold E) so honest abstention is rewarded and gain cannot be manufactured by becoming more willing to guess. This suite does NOT measure household spatial understanding, long-term memory, or visual reasoning - reading rendered text is far easier. Never cite a score here as a capability claim.",
   "seed": 20260908,
   "generator": "scripts/make_probe_fixture.py"

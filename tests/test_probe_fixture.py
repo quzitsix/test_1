@@ -473,3 +473,37 @@ def test_revocation_is_what_forces_the_collapse(
         f"{gain.gain:.3f} with CI [{gain.ci95_low:.3f}, {gain.ci95_high:.3f}]"
     )
 
+
+
+def test_unanswerable_items_are_not_identifiable_from_the_question(
+    probe_suite: Suite,
+) -> None:
+    """No question shape may be unique to the abstention items.
+
+    This is the guard for a shortcut that was actually shipped. The controls
+    were phrased "In <env>, where was the X?" while every answerable item named
+    a session, making them the only questions with no session reference. A blind
+    model could learn "no session mentioned, answer E" and take the entire
+    control group without watching anything -- a text shortcut built into the
+    one group that exists to be shortcut-proof, and the exact failure the debias
+    stage is for.
+
+    Compares the question prefix up to the first comma, which is where the
+    session reference lives.
+    """
+    unanswerable = {
+        item.question.split(",")[0].strip()
+        for item in probe_suite.items
+        if item.is_unanswerable
+    }
+    answerable = {
+        item.question.split(",")[0].strip()
+        for item in probe_suite.items
+        if not item.is_unanswerable
+    }
+    assert unanswerable, "no unanswerable controls to check"
+    leaked = unanswerable - answerable
+    assert not leaked, (
+        "these question shapes occur ONLY on unanswerable items, so option E is "
+        f"guessable from the wording alone: {sorted(leaked)}"
+    )
