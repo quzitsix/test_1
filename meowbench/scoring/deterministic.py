@@ -107,12 +107,38 @@ _LETTER_PATTERNS = (
 #: `status=ok`. That is worse than a visible failure: the memory track produces
 #: more prose than the blind track, so the *rate* of emphasis differs per track
 #: and the bias lands directly on Memory Gain.
-_MARKUP = re.compile(r"</?[a-zA-Z][^>]*>|[*_`~]+")
+#:
+#: Deliberately narrow. Underscores are excluded because option text can carry
+#: them (`kitchen_counter`), and the tag branch requires a plausible closing
+#: `>` immediately after a tag-like name so that "the value is <5 minutes" and
+#: "a < b" survive intact rather than having a span of real text deleted.
+_MARKUP = re.compile(r"</?[a-zA-Z][a-zA-Z0-9]{0,19}\s*/?>|\*+|`+|~~")
 
 #: Words that flip the meaning of a nearby option mention. Only consulted for
 #: the containment fallback, where "Not the drawer." would otherwise be scored
 #: as having *chosen* the drawer.
 _NEGATION = re.compile(r"\b(?:not|isn'?t|no longer|never|nowhere|none)\b", re.IGNORECASE)
+
+
+#: Phrases that mean "I cannot answer this from what I was given". Recognising
+#: them matters more than it looks: the unanswerable controls are the only thing
+#: stopping a system from manufacturing Memory Gain by guessing more freely, and
+#: they only work if an honest refusal is actually scored as option E. A model
+#: rarely echoes the canonical option text verbatim — it rewords, or just says
+#: it cannot tell — so requiring an exact match would silently mark most real
+#: abstentions wrong.
+_ABSTENTION = re.compile(
+    r"\b(?:"
+    r"information is not available"
+    r"|not available based on"
+    r"|cannot (?:be )?(?:determine|determined|tell|say|answer|know)"
+    r"|can(?:'|no)?t (?:determine|tell|say|answer|know)"
+    r"|(?:no|insufficient|not enough) (?:information|evidence|context)"
+    r"|impossible to (?:tell|determine|say)"
+    r"|unable to (?:determine|tell|say|answer)"
+    r")\b",
+    re.IGNORECASE,
+)
 
 
 def strip_markup(text: str) -> str:
@@ -151,15 +177,6 @@ def extract_mcq_letter(pred: object, *, options: dict[str, str] | None = None) -
         exact = [k for k, v in options.items() if v.strip().casefold() == lowered]
         if len(exact) == 1:
             return exact[0].upper()
-        # A reply that names an option in order to *rule it out* ("Not the
-        # drawer.") must not be read as choosing it. Containment cannot tell
-        # assertion from denial, so refuse rather than guess: returning None
-        # scores 0.0, which is the safe direction for a benchmark, whereas a
-        # false positive would silently credit a wrong answer — and hedging is
-        # most common in the blind track, i.e. the baseline Memory Gain
-        # subtracts.
-        if _NEGATION.search(text):
-            return None
         # Containment fallback. Two distinct situations look alike here:
         #   nesting   - "shelf" matches only because "the top shelf" does
         #   ambiguity - the response really names two options ("sink or drawer")
@@ -174,8 +191,33 @@ def extract_mcq_letter(pred: object, *, options: dict[str, str] | None = None) -
         if contained:
             best_key, best_text = max(contained, key=lambda kv: len(kv[1]))
             if all(other in best_text for _, other in contained):
+                if _denies(lowered, best_text):
+                    return None
                 return best_key.upper()
+        # Last resort: a reworded refusal maps to the abstention option. Checked
+        # after containment so an explicit option always wins over a hedge.
+        if "E" in options and _ABSTENTION.search(text):
+            return "E"
     return None
+
+
+def _denies(text: str, matched: str) -> bool:
+    """Is the option named in order to rule it out, as in "Not the drawer."?
+
+    Containment cannot distinguish assertion from denial, so a reply that
+    mentions an option only to reject it would otherwise be scored as having
+    chosen it.
+
+    Crucially, the negation is looked for in the text *around* the match rather
+    than in the whole reply. The canonical option E reads "The information is
+    not available based on the given context", so scanning everything would make
+    every abstention that is not a byte-exact echo — adding a full stop was
+    enough — come back as None. That would silently destroy the unanswerable
+    controls, which exist precisely so that a system cannot manufacture Memory
+    Gain by becoming more willing to guess.
+    """
+    outside = text.replace(matched, " ")
+    return bool(_NEGATION.search(outside))
 
 
 def score_mcq(pred: object, gold: str, *, options: dict[str, str] | None = None) -> float:

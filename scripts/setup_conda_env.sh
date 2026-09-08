@@ -184,6 +184,8 @@ PY
 
 say "final check"
 "$PYBIN" - <<'PY'
+import sys
+
 import av, meowbench, openai, PIL, torch, transformers
 print(f"  torch        {torch.__version__}  cuda={torch.cuda.is_available()}")
 print(f"  transformers {transformers.__version__}")
@@ -191,6 +193,23 @@ print(f"  pyav         {av.__version__}")
 print(f"  pillow       {PIL.__version__}")
 print(f"  openai       {openai.__version__}")
 print(f"  meowbench    {meowbench.__version__}")
+
+# Qwen3-VL is the recommended first model and `qwen3_vl` only enters the
+# transformers auto mappings in 4.57.0. On an older pin the load fails with a
+# message that reads like a corrupt download, so check it here instead.
+# Compare as integer tuples: "9.5.0" < "10.1" is False as a string compare,
+# which would silently skip the warning on exactly the versions that need it.
+def older(version, floor):
+    parts = tuple(int(p) for p in version.split(".")[:2] if p.isdigit())
+    return parts < floor
+
+if older(transformers.__version__, (4, 57)):
+    print("\n  WARNING: transformers < 4.57 cannot load Qwen3-VL. Either upgrade,"
+          "\n  or use Qwen/Qwen2.5-VL-3B-Instruct instead.")
+if older(PIL.__version__, (10, 1)):
+    print("\n  WARNING: pillow < 10.1 cannot render the probe fixture legibly"
+          "\n  (ImageFont.load_default(size=) is unavailable).")
+sys.exit(0)
 PY
 
 cat <<EOF
@@ -199,6 +218,6 @@ Done. Activate with:
   conda activate $ENV_NAME
 
 Next:
-  pytest -q                                   # expect 197 passed
+  pytest -q                                   # expect 287 passed, 1 skipped on Linux: 288
   meowbench verify-adapter --system "python -m meowbench.adapters.echo_stub"
 EOF

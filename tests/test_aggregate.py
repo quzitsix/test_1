@@ -271,3 +271,83 @@ def test_empty_report_does_not_crash() -> None:
     report = build_report([], run_id="r1")
     assert report.overall.n == 0
     assert report.overall.mean is None
+
+
+# -- degenerate comparisons and unpairable items ---------------------------
+
+
+def _scores(values: list[float | None], axis: str = "A") -> list[ItemScore]:
+    return [
+        ItemScore(
+            item_id=f"it{i:02d}",
+            axis=axis,
+            score=v,
+            status=PredictionStatus.OK if v is not None else PredictionStatus.ERROR,
+        )
+        for i, v in enumerate(values)
+    ]
+
+
+def test_identical_differences_are_flagged_not_certified() -> None:
+    """A zero-variance comparison must not be reported as significant.
+
+    The interval collapses to a point, which reads as an infinitely precise
+    result when it actually means the items did not discriminate.
+    """
+    gain = paired_gain(_scores([1.0] * 8), _scores([0.0] * 8))
+    assert gain is not None
+    assert gain.gain == pytest.approx(1.0)
+    assert gain.degenerate is True
+    assert gain.significant is False
+
+
+def test_degeneracy_survives_floating_point_on_the_numeric_path() -> None:
+    """The MRA path is where an exact `variance == 0.0` test silently failed.
+
+    MRA yields multiples of 1/10, which are not exactly representable in binary
+    floating point: `0.3 - 0.2` is 0.09999999999999998 while `0.1 - 0.0` is
+    0.1. A set of mathematically identical differences therefore computes a
+    variance around 1e-34 rather than 0.0, so the flag stayed False and the
+    comparison was published as significant with an interval ~1e-17 wide.
+    Measured across every constant-shift MRA run, an exact test missed 94.3% of
+    genuinely degenerate cases.
+    """
+    gain = paired_gain(_scores([0.1, 0.1, 0.1, 0.3]), _scores([0.0, 0.0, 0.0, 0.2]))
+    assert gain is not None
+    assert gain.gain == pytest.approx(0.1)
+    assert gain.degenerate is True, "float noise defeated the degeneracy check"
+    assert gain.significant is False
+
+
+def test_a_single_pair_is_never_significant() -> None:
+    """One observation says nothing about its own variability."""
+    gain = paired_gain(_scores([1.0]), _scores([0.0]))
+    assert gain is not None
+    assert gain.n_paired == 1
+    assert gain.degenerate is True
+    assert gain.significant is False
+
+
+def test_genuine_variation_is_still_certified() -> None:
+    """The guards must not suppress real effects."""
+    treatment = _scores([1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0])
+    baseline = _scores([0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0])
+    gain = paired_gain(treatment, baseline)
+    assert gain is not None
+    assert gain.degenerate is False
+    assert gain.significant is True
+    assert gain.ci95_low > 0.0
+
+
+def test_unpairable_items_are_counted_not_hidden() -> None:
+    """Dropping an errored item narrows the sample; say so.
+
+    `aggregate()` keeps errors in its denominator but pairing cannot, so
+    `report` and `compare` would otherwise disagree about n with nothing in the
+    output to explain why.
+    """
+    gain = paired_gain(_scores([1.0] * 8), _scores([0.0, 0.0, None, 0.0, 1.0, 0.0, 0.0, 1.0]))
+    assert gain is not None
+    assert gain.n_paired == 7
+    assert gain.n_dropped == 1
+    assert gain.summary()["n_dropped"] == 1

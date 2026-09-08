@@ -12,6 +12,7 @@ from meowbench.scoring.deterministic import (
     mean_relative_accuracy,
     mra_thresholds,
     score_mcq,
+    strip_markup,
     to_float,
 )
 
@@ -133,3 +134,72 @@ def test_exact_match_is_case_insensitive() -> None:
     assert exact_match("Kitchen", "kitchen") == 1.0
     assert exact_match(" kitchen ", "kitchen") == 1.0
     assert exact_match("bathroom", "kitchen") == 0.0
+
+
+# -- emphasis, denial and abstention ---------------------------------------
+#
+# These three interact, and getting any of them wrong biases Memory Gain rather
+# than merely losing accuracy, because the *rate* at which a model emphasises,
+# hedges or refuses differs between the blind and memory tracks.
+
+
+def test_emphasised_answers_are_recognised() -> None:
+    """`**B**` is how instruction-tuned models write an answer by default.
+
+    Every letter pattern anchors on a bare letter, so before markup was
+    stripped this returned None and scored 0.0 with `status=ok` — a wrong answer
+    that never looked like a bug.
+    """
+    for reply in ("**B**", "*B*", "`B`", "<b>B</b>", "**Answer:** B", "The answer is **B**."):
+        assert extract_mcq_letter(reply, options=OPTIONS) == "B", reply
+    assert extract_mcq_letter("**E**", options=OPTIONS) == "E"
+
+
+def test_stripping_markup_leaves_real_text_alone() -> None:
+    """The markup patterns must not eat content that merely looks like markup."""
+    assert strip_markup("the value is <5 minutes") == "the value is <5 minutes"
+    assert strip_markup("a < b") == "a < b"
+    # Underscores appear in real option text, e.g. a `kitchen_counter` label.
+    assert strip_markup("kitchen_counter") == "kitchen_counter"
+    snake = {"A": "kitchen_counter", "B": "dining_table", "C": "c", "D": "d",
+             "E": UNANSWERABLE_TEXT}
+    assert extract_mcq_letter("kitchen_counter", options=snake) == "A"
+
+
+def test_naming_an_option_to_rule_it_out_is_not_choosing_it() -> None:
+    """"Not the drawer." must not be scored as having chosen the drawer."""
+    for reply in ("Not the drawer.", "It is not in the sink.", "no longer on the shelf"):
+        assert extract_mcq_letter(reply, options=OPTIONS) is None, reply
+
+
+def test_reworded_abstentions_still_reach_option_e() -> None:
+    """A refusal must score as E even when it is not a verbatim echo.
+
+    The unanswerable controls are the only thing preventing a system from
+    manufacturing Memory Gain by becoming more willing to guess, and they work
+    only if an honest refusal is actually credited. Models reword, so requiring
+    the canonical text would mark most real abstentions wrong.
+
+    This nearly broke: the canonical option E text itself contains "not
+    available", so a negation check over the whole reply rejected every
+    abstention that was not byte-exact — adding a full stop was enough.
+    """
+    for reply in (
+        UNANSWERABLE_TEXT,
+        UNANSWERABLE_TEXT + ".",
+        "Based on the given context, the information is not available",
+        "I cannot determine this from my notes.",
+        "There is not enough information to answer.",
+        "It is impossible to tell.",
+    ):
+        assert extract_mcq_letter(reply, options=OPTIONS) == "E", reply
+
+
+def test_an_explicit_option_beats_a_hedge() -> None:
+    """Hedged prose that still commits to an option scores that option."""
+    assert extract_mcq_letter(
+        "I cannot be certain, but it is in the drawer.", options=OPTIONS
+    ) == "B"
+    assert extract_mcq_letter(
+        "The answer is B, though I cannot be sure.", options=OPTIONS
+    ) == "B"
