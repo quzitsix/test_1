@@ -23,7 +23,7 @@ THE ARCHITECTURE, AND WHY IT IS SHAPED THIS WAY
 
 Ingestion folds each session's frame embeddings into a fixed-size SwiGLU fast
 weight by one large-chunk gradient step on `-f_W(k)ᵀv` (Zhang et al., 2505.23884;
-see `meowbench/ttt/lact.py` for the corrected update). Session boundaries are the
+the memory lives in the `ttt-frame` package). Session boundaries are the
 chunk boundaries, which is LaCT's own advice — align the chunk with the data's
 structure rather than a token count — and here it means the memory updates once
 per visit to the home.
@@ -84,7 +84,22 @@ from meowbench.adapters.base import (
     configure_logging,
 )
 from meowbench.media import sample_frames
-from meowbench.ttt.lact import LaCTMemory
+
+# The memory itself lives in a separate repo (github.com/quzitsix/TTT_frame) so
+# that the TTT research and the benchmark harness can evolve independently: the
+# harness must stay model-agnostic, and a fast-weight implementation is exactly
+# the kind of system-under-test it is not supposed to know about. This adapter is
+# the bridge, and the only place the two touch.
+#     pip install -e path/to/TTT_frame
+try:
+    from ttt_frame.lact import LaCTMemory
+except ImportError as exc:  # pragma: no cover - depends on the optional install
+    raise SystemExit(
+        "this adapter needs the ttt-frame package:\n"
+        "    git clone git@github.com:quzitsix/TTT_frame.git\n"
+        "    pip install -e TTT_frame\n"
+        f"(import failed: {exc})"
+    ) from exc
 
 logger = logging.getLogger(__name__)
 
