@@ -116,7 +116,8 @@ def report(dataset: ThreeRScan, items: list[MinedItem]) -> None:
     golds = Counter(m.item.answer for m in items)
     print(f"gold letters: {dict(sorted(golds.items()))}  "
           f"(constant guesser {max(golds.values()) / n:.3f})")
-    print(f"predicates:   {dict(Counter(m.predicate for m in items))}")
+    margins = sorted(m.margin_m for m in items)
+    print(f"margin:       p10 {margins[n // 10]:.2f}m  median {margins[n // 2]:.2f}m")
     print(f"sessions:     {dict(sorted(Counter(m.n_sessions for m in items).items()))}")
 
     disp = sorted(m.displacement_m for m in items)
@@ -158,9 +159,14 @@ def build_suite(
         name=out.name,
         extra={
             "note": (
-                "Axis A3 mined from 3RScan rigid-move ground truth plus 3DSSG "
-                "spatial relations. Gold answers are annotated relations, not "
-                "inferred from text. IMPORTANT: 3RScan carries no timestamps or "
+                "Axis A3 mined from 3RScan rigid-move ground truth. The gold "
+                "answer is the geometrically nearest object, computed from "
+                "semseg.v2.json OBB centroids, and an item is kept only when "
+                "that object beats the runner-up by at least 0.2 m -- a "
+                "near-tie has no defensible answer. 3DSSG's `close by` "
+                "predicate is deliberately NOT the answer key: measured on one "
+                "scan it named the true nearest object in 2 of 20 cases, one "
+                "pair ranking 16th. IMPORTANT: 3RScan carries no timestamps or "
                 "ordering, so 'later scan' means a separate scan of the same "
                 "room, NOT a known elapsed time -- some rescans are minutes "
                 "apart under controlled change, others up to months apart. Do "

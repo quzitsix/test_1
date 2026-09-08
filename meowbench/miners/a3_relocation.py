@@ -1,33 +1,36 @@
 """A3 object relocation: mine "what did it end up next to" from 3RScan.
 
-An item asks where an object ended up in the *most recent* scan of a room,
-after the ground truth says it moved. The gold answer is a real 3DSSG spatial
-relation, so nothing is inferred from text and no human labels an item.
+An item asks which object a moved thing ended up nearest to, in a later scan of
+the same room. The move is 3RScan's own rigid-transform ground truth and the
+answer is computed from object centroids, so nothing is inferred from text and
+no human labels an item.
 
-WHY THE QUESTION IS "NEXT TO WHAT" RATHER THAN "WHERE"
+WHY THE GOLD IS GEOMETRY AND NOT 3DSSG's `close by`
 
-3RScan's ground truth for a move is a displacement *vector*, and neither
-`3RScan.json` nor 3DSSG's `objects.json` carries an object centroid or bounding
-box. So "the chair is 5.12 m from where it was" is knowable, but "the chair is
-in the cupboard" is not — there is no symbolic place to name. What 3DSSG does
-provide is a hand-annotated relationship graph, and `close by` / `standing on`
-/ `lying on` / `inside` answer proximity directly, with no coordinates needed.
-Measured: 26,500 `close by` relations, 23,998 of them attached to an object
-that moved.
+The obvious shortcut is 3DSSG's hand-annotated `close by` predicate — 26,500 of
+them, 23,998 attached to an object that moved, and no coordinates needed. It is
+the wrong answer key, and measurement is what settled it: on one bathroom scan
+the `close by` partner was the true nearest object in **2 of 20** cases, with
+one pair ranking 16th. `bathtub close by bath cabinet` holds while the actual
+nearest object is the toilet. `close by` is a loose human proximity judgement,
+so using it as the gold for a "closest" question marks a large share of items
+wrong AND can leave a nearer object sitting in the distractors.
 
-HOW THE DISTRACTORS ARE BUILT, AND WHY THAT IS THE HARD PART
+So the gold comes from `semseg.v2.json` OBB centroids (see
+`scripts/fetch_3rscan_obbs.py`, ~7 MiB for 1,380 scans, no usage agreement
+needed to fetch). Centroid distance is itself an approximation — two large
+touching objects can measure metres apart — which is why an item is only kept
+when the nearest object beats the runner-up by `MIN_MARGIN_M`. A near-tie has
+no defensible answer and would punish a model for being right.
 
-TemporalBench showed that MCQ distractors leak lexical cues that let a model
-skip the perception entirely. Here every distractor is **another real object in
-the same room** whose relation to the target is *known to be absent*. So all
-five options share one room's vocabulary, a language prior has nothing to grip,
-and — this is the part that needs care — a distractor is only used when the
-graph does not record it as near the target, so it cannot be quietly correct.
+HOW THE DISTRACTORS ARE BUILT
 
-Objects that are near the target under *any* spatial predicate are excluded
-from the distractor pool, not just under the proximity ones. If the graph says
-the basket is `left` of the bed, "bed" is a defensible answer to "what is it
-closest to" and must not be scored wrong.
+Distractors are the next-nearest objects in the same room, not a random sample.
+That matters twice over: they share the room's vocabulary, so a language prior
+has nothing to grip (the failure TemporalBench documented), and they share its
+spatial scale, so a model cannot win by noticing one option is implausibly far
+away. Objects sharing the gold's label are skipped, since "closest to the
+chair" does not identify one of two chairs.
 
 WHAT THIS AXIS CANNOT CLAIM
 
@@ -46,8 +49,6 @@ from dataclasses import dataclass
 from typing import Iterator
 
 from meowbench.datasets.r3scan import (
-    PROXIMITY_PREDICATES,
-    SPATIAL_PREDICATES,
     Environment,
     ObjectMove,
     ThreeRScan,
@@ -72,6 +73,11 @@ MINER = "a3_relocation_r3scan@v1"
 #: an item built on noise is unanswerable from the video however good the model.
 MIN_DISPLACEMENT_M = 0.5
 
+#: How much nearer the gold must be than the runner-up. Centroid distance is an
+#: approximation -- two large touching objects can measure metres apart -- so a
+#: near-tie has no defensible answer and would punish a model for being right.
+MIN_MARGIN_M = 0.2
+
 #: An item needs four plausible wrong answers plus option E.
 N_DISTRACTORS = 3
 
@@ -90,7 +96,9 @@ class MinedItem:
 
     item: Item
     displacement_m: float
-    predicate: str
+    #: How much nearer the gold is than the runner-up. Small margins mean
+    #: "closest" is not well defined, so items below MIN_MARGIN_M are rejected.
+    margin_m: float
     n_sessions: int
 
 
@@ -112,11 +120,13 @@ class A3RelocationMiner:
         *,
         seed: int = 20260908,
         min_displacement_m: float = MIN_DISPLACEMENT_M,
+        min_margin_m: float = MIN_MARGIN_M,
         max_per_environment: int = 4,
     ) -> None:
         self._data = dataset
         self._rng = random.Random(seed)
         self._min_displacement = min_displacement_m
+        self._min_margin = min_margin_m
         # Capping per environment keeps one heavily-rescanned room from
         # dominating the axis: without it, the top environment alone
         # contributes dozens of near-identical items and the per-axis mean
@@ -186,44 +196,43 @@ class A3RelocationMiner:
         if sum(1 for label in labels if label.lower() == move.label.lower()) != 1:
             return None
 
-        near = self._data.relations_for(
-            move.rescan, move.instance_id_rescan, proximity_only=True
+        near = self._data.nearest_to(
+            move.rescan, move.instance_id_rescan, exclude=UNUSABLE_LABELS
         )
-        gold_relations = [
-            r for r in near
-            if _usable(r.object_label)
-            # The gold must also be unambiguous: if two `stool`s exist, "closest
-            # to the stool" does not identify one of them.
-            and sum(1 for label in labels if label.lower() == r.object_label.lower()) == 1
-        ]
-        if not gold_relations:
+        if len(near) < N_DISTRACTORS + 1:
             return None
 
-        # Prefer `close by`: "standing on floor" is true of almost everything
-        # and makes a question nobody could get wrong.
-        gold_relations.sort(key=lambda r: 0 if r.predicate == "close by" else 1)
-        gold = gold_relations[0]
-
-        # Everything the graph puts near the target under ANY spatial
-        # predicate, so a defensible answer never becomes a distractor.
-        excluded = {
-            r.object_label.lower()
-            for r in self._data.relations_for(move.rescan, move.instance_id_rescan)
-        }
-        excluded.add(move.label.lower())
-
-        pool = sorted(
-            {
-                label
-                for label in self._data.objects_in(move.rescan).values()
-                if _usable(label) and label.lower() not in excluded
-            }
-        )
-        if len(pool) < N_DISTRACTORS:
+        gold_id, gold_label, gold_distance = near[0]
+        runner_up_distance = near[1][2]
+        # A clear margin is required, not just the top rank. Distances are
+        # between OBB centroids, so two large touching objects can measure
+        # metres apart; when the top two are nearly tied, "closest" has no
+        # defensible answer and the item would punish a model for being right.
+        if runner_up_distance - gold_distance < self._min_margin:
             return None
-        distractors = self._rng.sample(pool, N_DISTRACTORS)
 
-        options, answer = self._options(gold.object_label, distractors)
+        # The gold label must be unique in the room, or "closest to the chair"
+        # does not identify one object.
+        labels = [label for _, label, _ in near]
+        if labels.count(gold_label) != 1:
+            return None
+
+        # Distractors are the next-nearest objects rather than a random sample:
+        # they share the room's vocabulary AND its spatial scale, so a model
+        # cannot win by noticing that one option is implausibly far away.
+        # Objects sharing the gold's label are skipped for the same
+        # disambiguation reason.
+        distractors: list[str] = []
+        for _, label, _ in near[1:]:
+            if label == gold_label or label in distractors:
+                continue
+            distractors.append(label)
+            if len(distractors) == N_DISTRACTORS:
+                break
+        if len(distractors) < N_DISTRACTORS:
+            return None
+
+        options, answer = self._options(gold_label, distractors)
         sessions = env.sessions()
         item = Item(
             item_id=f"r3scan.{env.env_id[:8]}.{move.rescan[:8]}.{move.instance_id}",
@@ -238,12 +247,14 @@ class A3RelocationMiner:
                 session_ids=[move.reference_scan, move.rescan],
                 source_rows=[
                     f"3RScan.json#{env.env_id}/rigid/{move.instance_id}",
-                    f"3DSSG/relationships.json#{move.rescan}"
-                    f"/{move.instance_id_rescan}/{gold.predicate}/{gold.object_id}",
+                    f"semseg.v2.json#{move.rescan}/{move.instance_id_rescan}",
+                    f"semseg.v2.json#{move.rescan}/{gold_id}",
                 ],
                 notes=(
-                    f"{move.label} moved {move.displacement_m:.2f} m; "
-                    f"3DSSG records it '{gold.predicate}' {gold.object_label}"
+                    f"{move.label} moved {move.displacement_m:.2f} m; nearest "
+                    f"object afterwards is {gold_label} at {gold_distance:.2f} m, "
+                    f"next is {near[1][1]} at {runner_up_distance:.2f} m "
+                    f"(margin {runner_up_distance - gold_distance:.2f} m)"
                 ),
             ),
             certificate=Certificate(
@@ -266,7 +277,7 @@ class A3RelocationMiner:
         return MinedItem(
             item=item,
             displacement_m=move.displacement_m,
-            predicate=gold.predicate,
+            margin_m=runner_up_distance - gold_distance,
             n_sessions=len(sessions),
         )
 
@@ -317,6 +328,7 @@ def mine_a3(
     *,
     seed: int = 20260908,
     min_displacement_m: float = MIN_DISPLACEMENT_M,
+    min_margin_m: float = MIN_MARGIN_M,
     max_per_environment: int = 4,
     limit: int | None = None,
 ) -> list[MinedItem]:
@@ -324,6 +336,7 @@ def mine_a3(
         dataset,
         seed=seed,
         min_displacement_m=min_displacement_m,
+        min_margin_m=min_margin_m,
         max_per_environment=max_per_environment,
     )
     out: list[MinedItem] = []
@@ -334,4 +347,4 @@ def mine_a3(
     return out
 
 
-__all__ = ["A3RelocationMiner", "MINER", "MinedItem", "mine_a3"]
+__all__ = ["A3RelocationMiner", "MINER", "MIN_MARGIN_M", "MinedItem", "mine_a3"]

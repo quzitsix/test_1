@@ -185,11 +185,17 @@ class ThreeRScan:
     """Loads 3RScan's metadata and 3DSSG's labels into one queryable object."""
 
     def __init__(self, root: Path | str) -> None:
-        """`root` holds `3RScan.json` and the unpacked `3DSSG/` directory."""
+        """`root` holds `3RScan.json` and the unpacked `3DSSG/` directory.
+
+        `3rscan_obbs.json`, if present, adds object centroids — fetch it with
+        `scripts/fetch_3rscan_obbs.py`. Without it, questions about which
+        object is *nearest* cannot be answered correctly; see `nearest_to`.
+        """
         self.root = Path(root)
         self._labels: dict[str, dict[int, str]] = {}
         self._attributes: dict[str, dict[int, dict]] = {}
         self._relations: dict[str, list[Relation]] = {}
+        self._centroids: dict[str, dict[int, tuple[float, float, float]]] = {}
         self.environments: dict[str, Environment] = {}
         self._load()
 
@@ -202,10 +208,30 @@ class ThreeRScan:
         relationships = self._find("3DSSG/relationships.json", "relationships.json")
         if relationships:
             self._load_relations(relationships)
+        boxes = self._find("3rscan_obbs.json")
+        if boxes:
+            self._load_centroids(boxes)
         meta = self._find("3RScan.json")
         if not meta:
             raise FileNotFoundError(f"3RScan.json not found under {self.root}")
         self._load_environments(meta)
+
+    def _load_centroids(self, path: Path) -> None:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        for scan_id, objects in payload.items():
+            found: dict[int, tuple[float, float, float]] = {}
+            for raw_id, record in objects.items():
+                centroid = record.get("centroid")
+                if not centroid or len(centroid) != 3:
+                    continue
+                try:
+                    found[int(raw_id)] = (
+                        float(centroid[0]), float(centroid[1]), float(centroid[2])
+                    )
+                except (TypeError, ValueError):
+                    continue
+            if found:
+                self._centroids[scan_id] = found
 
     def _find(self, *relative: str) -> Path | None:
         for name in relative:
@@ -377,6 +403,46 @@ class ThreeRScan:
     def has_relations(self, scan_id: str) -> bool:
         """3DSSG annotates 1,335 of the 1,482 scans, so this must be checked."""
         return bool(self._relations.get(scan_id))
+
+    def has_centroids(self, scan_id: str) -> bool:
+        """Boxes exist for 1,380 of 1,482 scans; the hidden test split has none."""
+        return bool(self._centroids.get(scan_id))
+
+    def nearest_to(
+        self, scan_id: str, instance_id: int, *, exclude: set[str] | None = None
+    ) -> list[tuple[int, str, float]]:
+        """Objects ranked by centroid distance from this one: (id, label, metres).
+
+        This exists because 3DSSG's `close by` predicate is NOT a
+        nearest-neighbour relation and must not be used as the gold for a
+        "closest to" question. Measured on one bathroom scan, the `close by`
+        partner was the true nearest object in 2 of 20 cases; one pair ranked
+        16th, and `bathtub close by bath cabinet` held while the actual nearest
+        object was the toilet. Answering "closest" from `close by` therefore
+        marks a large share of items wrong and can leave a nearer object among
+        the distractors.
+
+        Distance is between OBB centroids, which is an approximation: two large
+        objects can be touching while their centres are metres apart. That is
+        why the miner also demands a clear margin over the runner-up rather
+        than trusting the top rank alone.
+        """
+        centroids = self._centroids.get(scan_id)
+        if not centroids or instance_id not in centroids:
+            return []
+        labels = self._labels.get(scan_id, {})
+        origin = centroids[instance_id]
+        skip = {s.lower() for s in (exclude or set())}
+        ranked: list[tuple[int, str, float]] = []
+        for other, point in centroids.items():
+            if other == instance_id:
+                continue
+            label = labels.get(other)
+            if not label or label.lower() in skip:
+                continue
+            ranked.append((other, label, math.dist(origin, point)))
+        ranked.sort(key=lambda row: row[2])
+        return ranked
 
     def multi_session(
         self, *, min_sessions: int = 2, splits: tuple[str, ...] = ("train", "validation")
