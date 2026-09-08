@@ -62,7 +62,14 @@ SUITE="${SUITE:-fixtures/probe}"
 
 # Pin to one GPU. device_map="auto" otherwise spreads the model over every
 # visible card, which on a shared box means landing on a co-tenant's memory —
-# and a 7B in bf16 fits on one 48 GiB card with room to spare anyway.
+# and a 2B in bf16 fits on one card with room to spare anyway.
+#
+# Selection looks at BOTH free memory and utilisation. Memory alone is not
+# enough: a co-tenant can hold little memory while pegging the SM at 100%, and
+# picking that card means crawling behind someone else's work. Observed on this
+# box, seven cards sat at 17.5 GiB used and 85-100% util while one sat at
+# 8.6 GiB and 0% — so cards busier than $BUSY_UTIL% are skipped when any
+# quieter card exists, and among the quiet ones the emptiest wins.
 #
 # Two guards, both learned the hard way:
 #   `|| true`        nvidia-smi fails routinely on a shared box (ECC scrub,
@@ -71,12 +78,24 @@ SUITE="${SUITE:-fixtures/probe}"
 #   `$2 ~ /^[0-9]/`  a card in a bad state reports "[N/A]", which `$2+0`
 #                    coerces to 0 — i.e. it looks like the emptiest card and
 #                    wins. Skip non-numeric rows instead.
+BUSY_UTIL="${BUSY_UTIL:-50}"
 if [ -z "$GPU" ] && command -v nvidia-smi >/dev/null 2>&1; then
-  GPU="$(nvidia-smi --query-gpu=index,memory.used --format=csv,noheader 2>/dev/null \
-         | awk -F', ' '$2 ~ /^[0-9]/ {u=$2+0; if (best=="" || u<best) {best=u; idx=$1}}
-                       END{print idx}')" || true
+  GPU="$(nvidia-smi --query-gpu=index,memory.used,utilization.gpu \
+           --format=csv,noheader,nounits 2>/dev/null \
+         | awk -F', ' -v busy="$BUSY_UTIL" '
+             $2 ~ /^[0-9]/ && $3 ~ /^[0-9]/ {
+               n++; idx[n]=$1; mem[n]=$2+0; util[n]=$3+0
+               if (util[n] <= busy) quiet=1
+             }
+             END {
+               for (i = 1; i <= n; i++) {
+                 if (quiet && util[i] > busy) continue   # someone else is on it
+                 if (best == "" || mem[i] < best) { best = mem[i]; pick = idx[i] }
+               }
+               print pick
+             }')" || true
   if [ -n "$GPU" ]; then
-    echo "==> auto-selected the emptiest GPU: $GPU"
+    echo "==> auto-selected the quietest GPU: $GPU"
   else
     echo "==> could not read GPU occupancy; leaving CUDA_VISIBLE_DEVICES unset" >&2
   fi
