@@ -50,8 +50,41 @@ import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
-#: Verbs that put an object somewhere. From the real verb distribution:
-#: put-down 7726, put 2106, place 504 are the only ones with useful volume.
+#: Verbs that put an object somewhere.
+#:
+#: EPIC's verb vocabulary is COMPOUNDED WITH THE PREPOSITION, which is the whole
+#: game here and cost two wrong conclusions before it was measured. Among the
+#: 1,306 narrations containing a classic destination phrase, the verbs are
+#: put-in 840, put-on 114, place-on 50, place-in 46 — while bare `put-down` (30)
+#: and `put` (19) are a rounding error, and `put-down` is precisely the form
+#: that names NO destination. A verb list without the compounds matched 6% of
+#: the real placements and made A3 look like a dead end.
+#:
+#: So the set is built by prefix: any verb whose head is a placement verb.
+PLACEMENT_HEADS = {"put", "place", "insert", "store", "leave", "return", "throw", "move"}
+
+#: Compound suffixes that indicate a destination rather than a source. `-from`
+#: and `-out` are deliberately absent: they mark where an object CAME FROM, and
+#: treating them as destinations would invent relocations backwards.
+DEST_SUFFIXES = {"in", "on", "into", "onto", "down", "to", "inside", "under", "back"}
+
+
+def is_placement_verb(verb: str) -> bool:
+    """Does this verb put an object somewhere?
+
+    Accepts both the bare form and EPIC's preposition compounds (`put-in`,
+    `place-on`), while rejecting source-directed compounds like `take-from`
+    and `put-out`.
+    """
+    parts = verb.lower().split("-")
+    if parts[0] not in PLACEMENT_HEADS:
+        return False
+    if len(parts) == 1:
+        return True
+    return parts[1] in DEST_SUFFIXES
+
+
+#: Kept for the diagnostic script's import, and as the bare-form subset.
 PLACEMENT_VERBS = {"put", "put-down", "place", "insert", "store", "leave", "return"}
 
 #: Prepositions that introduce a destination. `to` is included for "return X to
@@ -118,8 +151,20 @@ def normalise(phrase: str) -> str:
     return words[-1] if words else ""
 
 
-def parse_destination(narration: str, vocab: set[str]) -> tuple[str, str] | None:
-    """(head, surface) of the destination named in this narration, if any."""
+def parse_destination(
+    narration: str, vocab: set[str], *, verb: str = ""
+) -> tuple[str, str] | None:
+    """(head, surface) of the destination named in this narration, if any.
+
+    Two shapes occur, because EPIC's verbs carry the preposition:
+
+    * an explicit preposition — "put knife in drawer";
+    * none at all, when the verb already supplies it — `put-in` with the
+      narration "put plate cupboard". Falling back to the trailing noun for
+      those recovers placements that a preposition-only parse discards, but
+      only when the verb is a destination compound, so "put down bowl" is not
+      read as putting the bowl into a bowl.
+    """
     for match in DEST_PREP.finditer(narration):
         surface = " ".join(match.group(1).split())
         head = normalise(surface)
@@ -127,6 +172,13 @@ def parse_destination(narration: str, vocab: set[str]) -> tuple[str, str] | None
             continue
         if head in PLACE_HEADS or (head in vocab and head not in NOT_A_PLACE):
             return head, surface
+
+    # No preposition: trust the verb's own compound, and only then.
+    parts = verb.lower().split("-")
+    if len(parts) > 1 and parts[1] in {"in", "on", "into", "onto", "inside", "under"}:
+        tail = normalise(narration)
+        if tail and tail not in NOT_A_PLACE and tail in PLACE_HEADS:
+            return tail, tail
     return None
 
 
@@ -154,9 +206,9 @@ def survey(path: Path, vocab: set[str], *, dump: Path | None = None) -> int:
     with_dest = without_dest = 0
 
     for row in rows:
-        if row["verb"] not in PLACEMENT_VERBS:
+        if not is_placement_verb(row["verb"]):
             continue
-        found = parse_destination(row["narration"], vocab)
+        found = parse_destination(row["narration"], vocab, verb=row["verb"])
         if not found:
             without_dest += 1
             continue
