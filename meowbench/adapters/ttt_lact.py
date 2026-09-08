@@ -262,11 +262,14 @@ class TTTAdapter(AdapterBase):
         """
         options: dict[str, str] = msg.get("options") or {}
         if msg.get("answer_format") != "mcq5" or not options:
-            return {
-                "answer": "",
-                "raw": "",
-                "note": "this adapter only answers mcq5 items",
-            }
+            # No language model here, so free-form and numeric items cannot be
+            # attempted. Return an empty answer in the field the format expects
+            # rather than an explanatory extra key: `AnswerMsg` forbids unknown
+            # fields, and a malformed reply would be recorded as a protocol
+            # error against the whole item instead of a blank answer.
+            if msg.get("answer_format") == "open":
+                return {"answer_text": "", "raw": ""}
+            return {"answer": "", "raw": ""}
 
         question = QUERY_TEMPLATE.format(question=msg["question"])
         q_vec = self._encode_texts([question])            # [1, dim]
@@ -276,21 +279,38 @@ class TTTAdapter(AdapterBase):
         if self.memory_kind == "lact":
             retrieved = self._mem.read(q_vec)
         elif self.memory_kind == "mean" and self._running is not None:
-            # Read the running mean by the same interface shape: the memory's
-            # contribution is a single vector, added to the query.
             retrieved = self._running / max(self._n_chunks, 1)
         else:
             retrieved = torch.zeros_like(q_vec)
 
-        # The query is kept in the readout alongside the memory. Reading from
-        # the memory alone would make the `none` control degenerate (a zero
-        # vector has no nearest option) and would discard the question's own
-        # semantics, which even a perfect memory needs in order to know what is
-        # being asked.
-        probe = F.normalize(
-            F.normalize(q_vec, dim=-1) + F.normalize(retrieved, dim=-1), dim=-1
-        )
-        scores = (probe @ opt_vecs.T).squeeze(0)
+        # Score options by what the MEMORY returns, with each option's
+        # question-independent affinity removed.
+        #
+        # The calibration is not optional. CLIP's text similarity is strongly
+        # length- and phrasing-biased: measured here, the option-E sentence
+        # ("The information is not available based on the given context")
+        # out-scores every bare name for *every* question, including
+        # nonsensical ones. Uncalibrated, all three memory arms therefore
+        # answered E on all 14 items and produced byte-identical reports — a
+        # readout artifact indistinguishable from "memory does nothing".
+        #
+        # Subtracting the affinity of an empty-memory probe removes exactly the
+        # part of the score that does not depend on what was ingested, so what
+        # remains is the memory's contribution. `none` is then flat by
+        # construction, which is the correct floor for this control.
+        mem_scores = (F.normalize(retrieved, dim=-1) @ opt_vecs.T).squeeze(0)
+        base_scores = (F.normalize(q_vec, dim=-1) @ opt_vecs.T).squeeze(0)
+        scores = mem_scores - base_scores
+
+        if self.memory_kind == "none" or float(retrieved.abs().sum()) == 0.0:
+            # With no memory every option's calibrated score is identical, and
+            # argmax would silently return the first letter for every item —
+            # a constant-A system that looks like a decision. Abstain instead,
+            # which is the honest answer for a system that ingested nothing and
+            # is scored correct only on the unanswerable controls.
+            choice = "E" if "E" in options else letters[0]
+            return {"answer": choice, "raw": f"{choice}  (no memory; abstained)"}
+
         choice = letters[int(scores.argmax())]
 
         detail = " ".join(

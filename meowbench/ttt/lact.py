@@ -191,10 +191,17 @@ class LaCTMemory(nn.Module):
         base_lr: initial test-time learning rate (softplus-parameterised).
         use_muon: orthogonalise updates. The paper recommends this when the
             chunk is longer than ~2x head_dim.
-        learn_projections: when False the q/k/v/o projections are fixed random
-            (a deterministic, untrained encoder). Keep False for a pure
-            mechanism probe with no training, so any measured retention comes
-            from the fast weights rather than from learned features.
+        learn_projections: when False the q/k/v/o projections are fixed (a
+            deterministic, untrained encoder), so anything that survives from
+            write to read survived in the fast weights rather than in a learned
+            readout.
+        projection: "identity" keeps the memory in the encoder's own embedding
+            space — q/k/v/o are all the identity, so `read()` returns a vector
+            directly comparable to the encoder's other embeddings. "random"
+            uses fixed random projections, which is the upstream shape but puts
+            the readout in an arbitrarily rotated space; a caller that compares
+            `read()` output against encoder embeddings must use "identity" or
+            the comparison is meaningless.
     """
 
     def __init__(
@@ -206,31 +213,41 @@ class LaCTMemory(nn.Module):
         use_muon: bool = True,
         qk_l2_norm: bool = True,
         learn_projections: bool = False,
+        projection: str = "identity",
         seed: int | None = 0,
     ) -> None:
         super().__init__()
         if dim % head_dim != 0:
             raise ValueError(f"dim={dim} must be divisible by head_dim={head_dim}")
+        if projection not in {"identity", "random"}:
+            raise ValueError(f"projection must be 'identity' or 'random', got {projection!r}")
         self.dim = dim
         self.head_dim = head_dim
         self.num_heads = dim // head_dim
         self.use_muon = use_muon
         self.qk_l2_norm = qk_l2_norm
         self.base_lr = base_lr
+        self.projection = projection
 
         gen = None
         if seed is not None:
             gen = torch.Generator().manual_seed(seed)
 
         def _lin(o: int, i: int) -> nn.Parameter:
-            w = torch.randn(o, i, generator=gen) / math.sqrt(i)
+            if projection == "identity" and o == i:
+                w = torch.eye(i)
+            else:
+                w = torch.randn(o, i, generator=gen) / math.sqrt(i)
             return nn.Parameter(w, requires_grad=learn_projections)
 
         self.wq = _lin(dim, dim)
         self.wk = _lin(dim, dim)
         self.wv = _lin(dim, dim)
         self.wo = _lin(dim, dim)
-        self.w_lr = _lin(3 * self.num_heads, dim)
+        # The learning-rate head is always a real projection: an identity here
+        # would make the rate depend on a single coordinate of the input.
+        w_lr = torch.randn(3 * self.num_heads, dim, generator=gen) / math.sqrt(dim)
+        self.w_lr = nn.Parameter(w_lr, requires_grad=learn_projections)
         self.base_lr_inv = inv_softplus(base_lr)
 
         d_h = int(head_dim * inter_multi)

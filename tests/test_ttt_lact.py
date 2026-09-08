@@ -176,3 +176,58 @@ def test_state_norm_is_finite_after_many_writes():
     norm = mem.state_norm()
     assert math.isfinite(norm) and norm > 0
     assert torch.isfinite(mem.fw0).all()
+
+
+def test_binding_survives_write_read_with_adequate_perception():
+    """The end-to-end claim, with perception factored out.
+
+    The relocate fixture renders its facts as text in the frames, and a frozen
+    CLIP ViT-B/32 cannot read them: measured, every frame within one session
+    embeds to cosine 0.9996 of every other, so there is nothing for a memory to
+    bind. That is a *perception* limit, and it would otherwise be mistaken for
+    "fast weights cannot hold a binding".
+
+    This test removes perception from the loop by writing the facts as text
+    embeddings, then asks the memory the same question the benchmark asks. If
+    it passes, the write/revoke/read chain is sound and any failure on the
+    fixture belongs to the encoder. It is skipped when CLIP is unavailable, so
+    the suite still runs offline.
+    """
+    transformers = pytest.importorskip("transformers")
+    try:
+        model = transformers.AutoModel.from_pretrained("openai/clip-vit-base-patch32")
+        proc = transformers.AutoProcessor.from_pretrained("openai/clip-vit-base-patch32")
+    except Exception:  # noqa: BLE001 - offline or no cached weights
+        pytest.skip("CLIP weights unavailable")
+    model.eval()
+
+    def encode(texts: list[str]) -> torch.Tensor:
+        inputs = proc(text=texts, return_tensors="pt", padding=True, truncation=True)
+        with torch.no_grad():
+            return F.normalize(model.get_text_features(**inputs), dim=-1)
+
+    facts = encode(
+        [
+            "the red mug belongs to David",
+            "the blue bowl belongs to Anna",
+            "the green cup belongs to Clara",
+        ]
+    )
+    mem = LaCTMemory(dim=facts.shape[-1], head_dim=64, base_lr=0.05, seed=0)
+    mem.write(facts)
+
+    people = ["Anna", "Ben", "Clara", "David"]
+    option_vecs = encode(people)
+    for question, gold in [
+        ("who owns the red mug?", "David"),
+        ("who owns the blue bowl?", "Anna"),
+        ("who owns the green cup?", "Clara"),
+    ]:
+        q_vec = encode([question])
+        out = mem.read(q_vec)
+        # Same calibration the adapter uses: remove each option's
+        # question-independent affinity so length bias cannot decide the answer.
+        scores = (F.normalize(out, dim=-1) @ option_vecs.T).squeeze(0) - (
+            q_vec @ option_vecs.T
+        ).squeeze(0)
+        assert people[int(scores.argmax())] == gold, f"{question} -> expected {gold}"
