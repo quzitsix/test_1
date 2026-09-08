@@ -47,7 +47,9 @@ candidates/
 *.mp3
 *.ply
 data/
-datasets/
+# Downloaded corpora only. Anchored with a leading slash so it cannot also
+# swallow the `meowbench/datasets/` package, which is source, not data.
+/datasets/
 
 # ...except the tiny synthetic fixtures generated for CI.
 !fixtures/**
