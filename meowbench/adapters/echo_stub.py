@@ -5,8 +5,8 @@ Run it standalone to see the protocol:
 
     python -m meowbench.adapters.echo_stub --context-mode memory
 
-There are exactly four things a real system must fill in, marked TODO below:
-ingest a session, finish ingestion, answer a question, and declare its
+There are exactly three methods a real system must fill in, marked TODO below:
+ingest a session, finish ingestion, answer a question. Plus one flag — its
 `context_mode`. Everything else is framing.
 
 `context_mode` tells the harness how to stage video, and thereby which baseline
