@@ -53,6 +53,26 @@ if ! command -v "$PYTHON" >/dev/null 2>&1; then
   exit 1
 fi
 
+# The `meowbench` console script resolves the package through the editable
+# install's path mapping, which goes stale if the repo is moved or if new
+# subpackages appear after `pip install -e`. When it does, every track fails
+# identically with ModuleNotFoundError after the model has already loaded —
+# so check it here, where the fix is one line, rather than after three crashes.
+if ! "$PYTHON" -c "import meowbench" >/dev/null 2>&1; then
+  cat >&2 <<EOF
+error: the meowbench package is not importable by $PYTHON.
+
+  The editable install's path mapping is stale. Rebuild it without touching
+  your torch install:
+
+    cd "$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+    pip install -e . --no-deps
+
+  Then re-run this script.
+EOF
+  exit 1
+fi
+
 GPU="${GPU:-}"
 N_FRAMES="${N_FRAMES:-8}"
 MAX_SIDE="${MAX_SIDE:-768}"
@@ -161,31 +181,46 @@ fi
 cat <<EOF
 
 =================== what to check ===================
-On fixtures/probe the answer is rendered as large text in the frames, so a model
-that receives frames can read it and one that does not cannot. That makes the
-comparison below a real measurement:
+Suite: $SUITE
 
   1. every run said   status: {'ok': N}   with no errors
   2. the memory run said   enforcement: revoked
   3. no "revocation_contested" warning appeared
   4. the "ingest:" line reports non-zero frames AND records
-  5. oracle >> blind, and memory > blind with a CI that excludes zero
-  6. no "degenerate" marker on the gain table
 
-If oracle is NOT clearly above blind, that is a real failure to chase (frames
-not reaching the model, chat template mismatch, or OCR failure) — not an
-expected near-chance result.
+What accuracy MEANS depends on the suite, so read the right paragraph:
+
+  fixtures/probe  - answers are rendered as large text in the frames, so a
+                    model shown frames can read them and one that is not
+                    cannot. oracle >> blind is a real measurement, and a
+                    collapsed gain means the chain is broken, not that the
+                    questions were hard.
+  fixtures/demo   - flat grey frames, answer key in container metadata. No
+                    vision model can score above chance and its Memory Gain is
+                    undefined. Protocol checks only.
+  releases/*      - mined from real data. Sessions may have no video_path, in
+                    which case ONLY the blind track is meaningful: it measures
+                    whether the questions carry a non-visual shortcut. Blind
+                    near chance is the good outcome; blind well above chance
+                    means the items are guessable and the miner needs work.
 
 Inspect one prediction in detail:
 
 $PYTHON - <<'PY'
 from meowbench.artifacts import read_predictions
-rows = read_predictions("runs/$TAG-memory/predictions.jsonl")
+import glob
+path = sorted(glob.glob("runs/$TAG-*/predictions.jsonl"))[0]
+rows = read_predictions(path)
 r = rows[0]
-print("notes:", r.env_run.n_records, "| bytes:", r.env_run.memory_bytes)
-print("frames:", r.env_run.total_frames, "| blank sessions:", r.env_run.sessions_without_frames)
+print("run:", path, "| items:", len(rows))
+if r.env_run:
+    print("records:", r.env_run.n_records, "| bytes:", r.env_run.memory_bytes)
+    print("frames:", r.env_run.total_frames,
+          "| blank sessions:", r.env_run.sessions_without_frames)
 print("latency ms:", r.latency_ms)
-print("raw answer:", (r.raw or "")[:400])
+print("question:", r.question[:160])
+print("gold:", r.gold_answer, "| answered:", r.answer)
+print("raw answer:", (r.raw or "")[:300])
 PY
 
 Send me runs/$TAG-*/predictions.jsonl — they are self-contained, so I can
