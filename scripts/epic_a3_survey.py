@@ -107,19 +107,34 @@ NOT_A_PLACE = {
     "water", "oil", "salt", "pepper", "soup", "sauce", "milk", "sugar",
 }
 
-#: Head nouns that name a place. Used to *accept* a parsed phrase; the noun
-#: vocabulary from the CSV supplies the rest. Kept because several real
-#: containers are absent from EPIC's noun list in the surface form used here.
-PLACE_HEADS = {
+#: Places that are FIXED in the kitchen — furniture, appliances, surfaces. An
+#: object's location among these is a genuine spatial fact that persists after
+#: the video ends, which is what axis A3 asks about ("where was the pan put
+#: away?").
+FIXED_PLACES = {
     "drawer", "cupboard", "cupboards", "fridge", "refrigerator", "freezer",
     "sink", "shelf", "shelves", "table", "counter", "countertop", "worktop",
-    "hob", "stove", "oven", "microwave", "dishwasher", "bin", "rack", "tray",
-    "board", "box", "bag", "container", "jar", "cabinet", "basket", "pantry",
-    "drainer", "tupperware", "floor", "surface", "plate", "bowl", "pan",
-    "pot", "saucepan", "cup", "mug", "glass", "kettle", "toaster", "grill",
-    "colander", "sideboard", "desk", "stand", "holder", "cooker", "washer",
-    "machine", "steamer", "wok", "dish", "jug", "tin", "cutlery",
+    "hob", "stove", "oven", "microwave", "dishwasher", "bin", "rack",
+    "cabinet", "pantry", "drainer", "floor", "surface", "sideboard", "desk",
+    "cooker", "washer", "machine", "holder", "stand", "door", "tap",
+    "cupboard:top", "drainer:dish", "rack:drying",
 }
+
+#: Vessels: containers that are THEMSELVES portable. Putting a spoon in a bowl
+#: is a use, not a relocation — the bowl moves too, so "the spoon is in the
+#: bowl" says nothing about where either ends up. Admitting these produced the
+#: bulk of the false positives in a 361-candidate run: `spoon -> bowl, glass,
+#: plate`, `pasta -> dish, plate, pot, saucepan`, `v60 -> mug`. Tracked
+#: separately so the loss is visible rather than silent.
+VESSELS = {
+    "plate", "bowl", "pan", "pot", "cup", "mug", "glass", "jar", "box", "tin",
+    "saucepan", "dish", "jug", "tray", "container", "tupperware", "basket",
+    "board", "colander", "kettle", "bottle", "can", "bag", "wok", "steamer",
+    "pitcher", "cafetiere", "grinder", "processor", "blender",
+}
+
+#: Accepted destinations. Fixed places only, by default.
+PLACE_HEADS = FIXED_PLACES
 
 
 def load_noun_vocab(path: Path) -> set[str]:
@@ -152,7 +167,7 @@ def normalise(phrase: str) -> str:
 
 
 def parse_destination(
-    narration: str, vocab: set[str], *, verb: str = ""
+    narration: str, vocab: set[str], *, verb: str = "", places: set[str] | None = None
 ) -> tuple[str, str] | None:
     """(head, surface) of the destination named in this narration, if any.
 
@@ -164,20 +179,25 @@ def parse_destination(
       those recovers placements that a preposition-only parse discards, but
       only when the verb is a destination compound, so "put down bowl" is not
       read as putting the bowl into a bowl.
+
+    `places` is the set of acceptable destinations. The noun vocabulary is
+    consulted only as a fallback for surface forms missing from that set, and
+    never overrides it — otherwise every noun in the kitchen becomes a location.
     """
+    allowed = places if places is not None else PLACE_HEADS
     for match in DEST_PREP.finditer(narration):
         surface = " ".join(match.group(1).split())
         head = normalise(surface)
         if not head or head in NOT_A_PLACE:
             continue
-        if head in PLACE_HEADS or (head in vocab and head not in NOT_A_PLACE):
+        if head in allowed:
             return head, surface
 
     # No preposition: trust the verb's own compound, and only then.
     parts = verb.lower().split("-")
     if len(parts) > 1 and parts[1] in {"in", "on", "into", "onto", "inside", "under"}:
         tail = normalise(narration)
-        if tail and tail not in NOT_A_PLACE and tail in PLACE_HEADS:
+        if tail and tail not in NOT_A_PLACE and tail in allowed:
             return tail, tail
     return None
 
@@ -191,9 +211,16 @@ def parse_nouns(raw: str) -> list[str]:
     return [str(n) for n in value] if isinstance(value, list) else []
 
 
-def survey(path: Path, vocab: set[str], *, dump: Path | None = None) -> int:
+def survey(
+    path: Path, vocab: set[str], *, dump: Path | None = None, include_vessels: bool = False
+) -> int:
     rows = list(csv.DictReader(path.open(encoding="utf-8")))
+    places = FIXED_PLACES | VESSELS if include_vessels else FIXED_PLACES
     print(f"narrations: {len(rows)}   noun vocabulary heads: {len(vocab)}")
+    print(
+        f"destinations accepted: {len(places)} "
+        f"({'fixed places + portable vessels' if include_vessels else 'fixed places only'})"
+    )
 
     sessions: dict[str, set[str]] = defaultdict(set)
     for row in rows:
@@ -208,7 +235,9 @@ def survey(path: Path, vocab: set[str], *, dump: Path | None = None) -> int:
     for row in rows:
         if not is_placement_verb(row["verb"]):
             continue
-        found = parse_destination(row["narration"], vocab, verb=row["verb"])
+        found = parse_destination(
+            row["narration"], vocab, verb=row["verb"], places=places
+        )
         if not found:
             without_dest += 1
             continue
@@ -296,6 +325,13 @@ def main() -> int:
     ap.add_argument("--csv", default="EPIC_100_train.csv")
     ap.add_argument("--nouns", default="EPIC_100_noun_classes_v2.csv")
     ap.add_argument("--dump-items", default=None, help="write candidates as JSONL")
+    ap.add_argument(
+        "--include-vessels",
+        action="store_true",
+        help="also accept portable vessels (bowl, plate, pan) as destinations. "
+        "Off by default: putting a spoon in a bowl is a use, not a relocation, "
+        "and the bowl moves too, so it says nothing about where either ends up",
+    )
     args = ap.parse_args()
 
     root = Path(args.annotations)
@@ -308,7 +344,7 @@ def main() -> int:
         print(f"warning: no noun vocabulary at {root / args.nouns}; "
               "falling back to the built-in place list", file=sys.stderr)
     dump = Path(args.dump_items) if args.dump_items else None
-    return survey(path, vocab, dump=dump)
+    return survey(path, vocab, dump=dump, include_vessels=args.include_vessels)
 
 
 if __name__ == "__main__":
