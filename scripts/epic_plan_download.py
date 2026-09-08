@@ -39,7 +39,14 @@ def video_url(video_id: str) -> str:
 
 
 def probe_size(video_id: str, timeout: int = 25) -> float | None:
-    """Real size in GiB from a HEAD request, or None if unreachable."""
+    """Real size in GiB from a HEAD request, or None if unreachable.
+
+    A 404 on this host still carries `content-length: 0`, so the status line
+    must be checked too. Treating that 0 as a real size made unreachable videos
+    look free, and a greedy planner that ranks by items-per-gigabyte then picks
+    them first: a 25 GiB plan filled up with 404s and covered 46% of what it
+    should have.
+    """
     try:
         out = subprocess.run(
             ["curl", "-sIL", "--max-time", str(timeout), video_url(video_id)],
@@ -47,13 +54,37 @@ def probe_size(video_id: str, timeout: int = 25) -> float | None:
         ).stdout
     except (subprocess.TimeoutExpired, OSError):
         return None
+
+    status = None
+    size = None
     for line in out.splitlines():
-        if line.lower().startswith("content-length:"):
+        lowered = line.lower()
+        if lowered.startswith("http/"):
+            parts = line.split()
+            if len(parts) > 1 and parts[1].isdigit():
+                status = int(parts[1])  # last status wins, after redirects
+        elif lowered.startswith("content-length:"):
             try:
-                return int(line.split(":", 1)[1].strip()) / 2**30
+                size = int(line.split(":", 1)[1].strip())
             except ValueError:
                 continue
-    return None
+    if status is None or status >= 400 or not size:
+        return None
+    return size / 2**30
+
+
+def is_extension_video(video_id: str) -> bool:
+    """Is this an EPIC-100 extension video, i.e. actually at this URL?
+
+    EPIC_100_train.csv mixes two generations of id: EPIC-55 videos are
+    `P01_01` (two digits) and the extension's are `P04_101` (three, from 100
+    up). Only the latter live under `<participant>/videos/` on data.bris —
+    every two-digit id 404s there. Filtering them out is not cosmetic: they are
+    a third of the candidate sessions, and without this the planner spends its
+    whole budget on them.
+    """
+    parts = video_id.split("_")
+    return len(parts) == 2 and parts[1].isdigit() and int(parts[1]) >= 100
 
 
 def load(path: Path) -> list[dict]:
@@ -98,8 +129,11 @@ def plan(
 
         def value(item: tuple[str, tuple[int, int]]) -> tuple[float, float]:
             session, (done, partial) = item
+            # `or MEAN_GIB` guards against a zero cost, which would make a
+            # session look infinitely valuable and win every round. A 404 on
+            # this host returns content-length: 0, so that is a real path.
             gib = sizes.get(session, MEAN_GIB) or MEAN_GIB
-            return ((done * 4 + partial) / gib, -gib)
+            return ((done * 4 + partial) / max(gib, 0.01), -gib)
 
         session, (done, partial) = max(by_session.items(), key=value)
         gib = sizes.get(session, MEAN_GIB) or MEAN_GIB
@@ -133,6 +167,24 @@ def main() -> int:
         return 2
 
     candidates = load(path)
+    total_before = len(candidates)
+
+    # An item whose sessions are not all downloadable can never be asked, so
+    # drop it before planning rather than letting it distort the budget. The
+    # EPIC-55 ids in EPIC_100_train.csv are a third of the sessions here.
+    candidates = [
+        c for c in candidates if all(is_extension_video(s) for s in c["sessions"])
+    ]
+    dropped = total_before - len(candidates)
+    if dropped:
+        print(
+            f"dropped {dropped}/{total_before} candidate(s) that need EPIC-55 "
+            f"videos (two-digit ids are not on this host)"
+        )
+    if not candidates:
+        print("error: no candidate is fully covered by extension videos", file=sys.stderr)
+        return 2
+
     all_sessions = sorted({s for c in candidates for s in c["sessions"]})
     per_participant: dict[str, int] = defaultdict(int)
     for c in candidates:
@@ -146,10 +198,13 @@ def main() -> int:
     sizes: dict[str, float] = {}
     if args.probe_sizes:
         print(f"\nprobing {len(all_sessions)} video sizes (HEAD requests)...")
+        unreachable: list[str] = []
         for n, session in enumerate(all_sessions, 1):
             size = probe_size(session)
             if size:
                 sizes[session] = size
+            else:
+                unreachable.append(session)
             if n % 20 == 0 or n == len(all_sessions):
                 print(f"  {n}/{len(all_sessions)}")
         known = [v for v in sizes.values() if v]
@@ -157,6 +212,19 @@ def main() -> int:
             print(f"  measured {len(known)} video(s): "
                   f"{min(known):.2f}–{max(known):.2f} GiB, "
                   f"total if all: {sum(known):.0f} GiB")
+        if unreachable:
+            print(f"  UNREACHABLE: {len(unreachable)} video(s), e.g. "
+                  f"{', '.join(unreachable[:5])}")
+            # Excluding them beats pricing them at the mean: a video that
+            # cannot be fetched must not be planned for.
+            candidates = [
+                c for c in candidates
+                if all(s in sizes for s in c["sessions"])
+            ]
+            print(f"  -> {len(candidates)} candidate(s) remain fully reachable")
+            if not candidates:
+                print("error: nothing left to plan", file=sys.stderr)
+                return 2
     else:
         print(f"\n(using the {MEAN_GIB} GiB mean; pass --probe-sizes for real sizes)")
 
