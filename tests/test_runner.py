@@ -21,6 +21,7 @@ from meowbench.schema import (
     SessionRef,
 )
 from meowbench.store import PredictionRecord, RunRecord, Store
+from meowbench.suite import load_suite
 
 FAST = Timeouts(handshake=30.0, ingest=30.0, query=30.0)
 OPTIONS = {"A": "a", "B": "b", "C": "c", "D": "d", "E": UNANSWERABLE_TEXT}
@@ -361,3 +362,44 @@ def test_declared_mode_mismatch_is_tolerated_and_logged(
             ).run(envs, make_items(1))
     assert summary.counts == {"ok": 1}
     assert any("declares context_mode" in rec.message for rec in caplog.records)
+
+
+def test_deferred_ingest_is_not_a_decode_failure(tmp_path: Path) -> None:
+    """The oracle track reads at query time; zero frames at ingest is correct.
+
+    Oracle keeps the media, so it returns `{"frames": 0, "deferred": True}`
+    during ingest and samples later. Treating that as a decode failure made the
+    oracle track warn on every session and report
+    `sessions_without_frames == n_sessions`, which directly contradicts the
+    "frames must be non-zero" check the report tells operators to make. Seen on
+    a real 8B run before it was fixed.
+
+    The exemption is keyed on `deferred`, not on the context mode, so an
+    adapter that genuinely decodes nothing is still reported.
+    """
+    from meowbench.runner import ContextMode
+
+    stub = Path(__file__).parent / "stubs" / "ocr_stub.py"
+    if not stub.is_file():  # pragma: no cover - stub ships with the repo
+        pytest.skip("ocr_stub.py is required")
+
+    suite = load_suite(Path(__file__).resolve().parent.parent / "fixtures" / "probe")
+    command = [sys.executable, str(stub), "--context-mode", "oracle"]
+    with Store(tmp_path / "s.sqlite") as store:
+        cfg = RunConfig(
+            run_id="deferred",
+            suite="probe",
+            command=command,
+            context_mode=ContextMode.ORACLE,
+            scratch_dir=tmp_path / "scratch",
+            artifacts_dir=tmp_path / "art",
+        )
+        Runner(cfg, store).run(suite.envs, suite.items)
+
+    rows = read_predictions(tmp_path / "art" / "predictions.jsonl")
+    env_run = rows[0].env_run
+    assert env_run is not None
+    assert env_run.sessions_without_frames == 0, (
+        "deferred decoding was misreported as a decode failure"
+    )
+    assert env_run.total_frames > 0, "oracle must still account for its frames"

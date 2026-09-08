@@ -134,6 +134,15 @@ class HFVLMAdapter(AdapterBase):
         return {"frames": len(frames), "note_chars": len(note)}
 
     def on_ingest_end(self) -> dict[str, Any]:
+        if self.context_mode == "oracle":
+            # Oracle defers decoding to query time, so there are no notes to
+            # count. Report the frames it will actually use, decoded once here
+            # rather than on the first question: otherwise the run reports
+            # "0 frames, 0 records" for a perfectly healthy oracle track, which
+            # is exactly the signature of the silent failure the report exists
+            # to catch.
+            frames = self._oracle_images()
+            return {"n_records": len(frames), "memory_bytes": 0, "frames": len(frames)}
         return {
             "n_records": len(self._notes),
             "memory_bytes": sum(len(n.encode("utf-8")) for n in self._notes),

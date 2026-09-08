@@ -238,7 +238,17 @@ class Runner:
                 # payload was really consumed. Dropping it made a per-session
                 # decode failure invisible: two of three sessions succeeding
                 # still yields a non-zero n_records and no warning anywhere.
+                #
+                # `deferred` means the adapter chose to read this session later
+                # rather than failing to read it now — the oracle track keeps
+                # the media and samples at query time, so zero frames here is
+                # correct. Without this the oracle track warned on every
+                # session and reported `sessions_without_frames` equal to the
+                # session count, contradicting the very "frames must be
+                # non-zero" check the report tells the operator to make.
                 frames = stats.get("frames")
+                if stats.get("deferred"):
+                    continue
                 if isinstance(frames, int):
                     total_frames += frames
                     if frames == 0 and cfg.context_mode is not ContextMode.BLIND:
@@ -254,6 +264,11 @@ class Runner:
             env_run.ingest_seconds = time.monotonic() - started
             env_run.memory_bytes = ack.get("memory_bytes")
             env_run.n_records = ack.get("n_records")
+            # A track that defers decoding (oracle) reports its frame count at
+            # ingest_end instead of per session.
+            deferred_frames = ack.get("frames")
+            if not total_frames and isinstance(deferred_frames, int):
+                total_frames = deferred_frames
             env_run.total_frames = total_frames
             env_run.sessions_without_frames = blank_sessions
 
