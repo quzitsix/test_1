@@ -335,6 +335,7 @@ tests/              279 tests, no GPU / API key / dataset required
 fixtures/demo/      flat-grey suite for protocol + CI only (gain undefined)
 fixtures/probe/     positive control: answers rendered in the pixels
 docs/               server runbooks + how to integrate your own system
+                    SERVER_RUN.md is the shortest path from a bare GPU box
 ```
 
 `Item.to_query()` is the only sanctioned path from corpus to system, and it drops
