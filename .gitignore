@@ -51,3 +51,8 @@ datasets/
 
 # ...except the tiny synthetic fixtures generated for CI.
 !fixtures/**
+
+# Scratch dirs from dataset investigation (papers, sample annotations)
+.egomonth_check/
+.m2/
+*_viewer.html
