@@ -1,0 +1,1226 @@
+[
+  {
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "object_category": "knife",
+    "object_id": "0001_obj_knife_01",
+    "time": "00:02",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "living_room",
+      "description": "used to cut items , in the dormitory_01"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "object_category": "box",
+    "object_id": "0001_obj_box_01",
+    "time": "00:02",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "living_room",
+      "description": "Containing the unassembled display panel"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "object_category": "display",
+    "object_id": "0001_obj_display_01",
+    "time": "3:35",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The unassembled monitor in the courier box"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "object_category": "drawer",
+    "object_id": "0001_obj_drawer_01",
+    "time": "6:56",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The left drawer beneath the table"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "object_category": "napkin",
+    "object_id": "0001_obj_napkin_01",
+    "time": "9:43",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The four packs of tissues placed on the right side of the computer desk"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "object_category": "computer",
+    "object_id": "0001_obj_computer_01",
+    "time": "9:37",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The computer on the desk"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "object_category": "display",
+    "object_id": "0001_obj_display_01",
+    "time": "3:35",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The unassembled monitor in the courier box"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "object_category": "display",
+    "object_id": "0001_obj_display_01",
+    "time": "3:35",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The unassembled monitor in the courier box"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "object_category": "display",
+    "object_id": "0001_obj_display_01",
+    "time": "3:35",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The unassembled monitor in the courier box"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "object_category": "tennis racket",
+    "object_id": "0001_obj_tennis_racket_01",
+    "time": "4:52",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The tennis racket is beside the corner of the wall at the back of the table."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "object_category": "trash can",
+    "object_id": "0001_obj_trash_can_01",
+    "time": "4:52",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The blue trash can is beside the corner of the wall at the back of the table."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "object_category": "trash can",
+    "object_id": "0001_obj_trash_can_02",
+    "time": "4:52",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The pink trash can is on the side of the corridor near the sink.."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "object_category": "keyboard",
+    "object_id": "0002_obj_keyboard_01",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The pink keyboard placed on the table"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "object_category": "drinks",
+    "object_id": "0002_obj_drinks_01",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The soft drinks placed on the table(left side)"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "object_category": "cup",
+    "object_id": "0002_obj_cup_01",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "A water cup printed with an anime character placed on the table (right side)"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "object_category": "fan",
+    "object_id": "0002_obj_fan_01",
+    "time": "0:12",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "Portable dark green fan placed on the table (right side)"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "object_category": "display",
+    "object_id": "0002_obj_display_01",
+    "time": "0:15",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The computer monitor placed right in the middle of the table"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "object_category": "computer",
+    "object_id": "0002_obj_computer_01",
+    "time": "0:20",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The computer host placed near the table"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "object_category": "mouse",
+    "object_id": "0002_obj_mouse_01",
+    "time": "0:25",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The black computer mouse placed on the table (right side of the keyboard)"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "object_category": "headphones",
+    "object_id": "0002_obj_headphones_01",
+    "time": "0:20",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The black wireless headphones Hanging on the left wall"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "object_category": "mobile phone",
+    "object_id": "0002_obj_mobile_phone_01",
+    "time": "0:30",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The mobile phone placed on the desk beside the computer"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "object_category": "pad",
+    "object_id": "0002_obj_pad_01",
+    "time": "5:51",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The pad Lean against the right wall"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "object_category": "drawer",
+    "object_id": "0002_obj_drawer_01",
+    "time": "9:56",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The left drawer beneath the table"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "object_category": "drawer",
+    "object_id": "0002_obj_drawer_02",
+    "time": "9:56",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The right drawer beneath the table"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "cup",
+    "object_id": "0003_obj_cup_01",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "A water cup printed with an anime character placed on the table (right side)"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "fan",
+    "object_id": "0003_obj_fan_01",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "Portable dark green fan placed on the table (right side)"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "display",
+    "object_id": "0003_obj_display_01",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The computer monitor placed right in the middle of the table"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "computer",
+    "object_id": "0003_obj_computer_01",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The computer host placed  on  the commodity s helf near the table(left side)"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "mouse",
+    "object_id": "0003_obj_mouse_01",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The black computer mouse placed on the table (right side of the keyboard)"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "headphones",
+    "object_id": "0003_obj_headphones_01",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The black wireless headphones Hanging on the left wall"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "mobile phone",
+    "object_id": "0003_obj_mobile_phone_01",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The mobile phone placed on the desk beside the computer"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "drawer",
+    "object_id": "0003_obj_drawer_01",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The left drawer beneath the table"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "drawer",
+    "object_id": "0003_obj_drawer_02",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The right drawer beneath the table"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "keyboard",
+    "object_id": "0003_obj_keyboard_01",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The pink keyboard placed on the table"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "box",
+    "object_id": "0003_obj_box_01",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The red box under the table"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "box",
+    "object_id": "0003_obj_box_02",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The blue box under the table"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "shelf",
+    "object_id": "0003_obj_shelf_01",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": " a shelf where many items are placed on the left side of the desk, ."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "napkin",
+    "object_id": "0003_obj_napkin_01",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": " The black tissue paper placed on the right side of the table, against the wall. ."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "slippers",
+    "object_id": "0003_obj_slippers_01",
+    "time": "0:23",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": " Dark blue slippers."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "shoes",
+    "object_id": "0003_obj_shoes_01",
+    "time": "0:23",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": " Black sports shoes with silver-white laces"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "bottle",
+    "object_id": "0003_obj_bottle_01",
+    "time": "0:23",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The two empty green mineral water bottles placed beside the left foot"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "power strip",
+    "object_id": "0003_obj_power_strip_01",
+    "time": "0:23",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The white power strip placed on the right side below the table"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "bracelet",
+    "object_id": "0003_obj_bracelet_01",
+    "time": "0:23",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "A dark brown bracelet is worn on the right hand."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "trash can",
+    "object_id": "0003_obj_trash_can_01",
+    "time": "1:23",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The trash can filled with garbage is placed beside the storage rack."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "suitcase",
+    "object_id": "0003_obj_suitcase_01",
+    "time": "1:40",
+    "location": {
+      "place_id": "balcony_01",
+      "place_type": "balcony",
+      "description": "Three suitcases placed at the corner of the balcony wall"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "object_category": "besom",
+    "object_id": "0003_obj_besom_01",
+    "time": "1:49",
+    "location": {
+      "place_id": "balcony_01",
+      "place_type": "balcony",
+      "description": "A besom leaning against the wall on the balcony"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "object_category": "cup",
+    "object_id": "0011_obj_cup_01",
+    "time": "0:29",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "A water cup printed with an anime character placed on the table (right side)"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "object_category": "display",
+    "object_id": "0011_obj_display_01",
+    "time": "0:29",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The computer monitor placed right in the middle of the table"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "object_category": "computer",
+    "object_id": "0011_obj_computer_01",
+    "time": "0:29",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The computer host placed  on  the commodity s helf near the table(left side)"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "object_category": "mouse",
+    "object_id": "0011_obj_mouse_01",
+    "time": "0:29",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The black computer mouse placed on the table (right side of the keyboard)"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "object_category": "headphones",
+    "object_id": "0011_obj_headphones_01",
+    "time": "30:29",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The black wireless headphones Hanging on the left wall"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "object_category": "mobile phone",
+    "object_id": "0011_obj_mobile_phone_01",
+    "time": "0:29",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The mobile phone placed on the desk beside the computer"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "object_category": "drawer",
+    "object_id": "0011_obj_drawer_01",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The left drawer beneath the table"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "object_category": "drawer",
+    "object_id": "0011_obj_drawer_02",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The right drawer beneath the table"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "object_category": "keyboard",
+    "object_id": "0011_obj_keyboard_01",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The pink keyboard placed on the table"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "object_category": "box",
+    "object_id": "0011_obj_box_01",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The red box under the table"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "object_category": "box",
+    "object_id": "0011_obj_box_02",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The blue box under the table"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "object_category": "shelf",
+    "object_id": "0011_obj_shelf_01",
+    "time": "0:01",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": " a shelf where many items are placed on the left side of the desk, ."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "object_category": "slippers",
+    "object_id": "0011_obj_slippers_01",
+    "time": "1:33",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": " Dark blue slippers."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "object_category": "shoes",
+    "object_id": "0011_obj_shoes_01",
+    "time": "0:50",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": " Black sports shoes with silver-white laces"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "object_category": "trash can",
+    "object_id": "0011_obj_trash_can_01",
+    "time": "1:44",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "The trash can filled with garbage is placed beside the storage rack."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "object_category": "bottle",
+    "object_id": "0011_obj_bottle_01",
+    "time": "1:31",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "A green bottle placed on the floor near the trash can"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0012",
+    "video_path": "020/020_0012",
+    "object_category": "coat",
+    "object_id": "0012_obj_coat_01",
+    "time": "00:08",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "hold it in your hand"
+    },
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0012",
+    "video_path": "020/020_0012",
+    "object_category": "computer",
+    "object_id": "0012_obj_computer_01",
+    "time": "00:03",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "on the table"
+    },
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0012",
+    "video_path": "020/020_0012",
+    "object_category": "recruitment form",
+    "object_id": "0012_obj_recruitment_form_01",
+    "time": "20:52",
+    "location": {
+      "place_id": "science and technology innovation building_01",
+      "place_type": "building",
+      "description": "on the hand"
+    },
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-12-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0012",
+    "video_path": "020/020_0012",
+    "object_category": "recruitment form",
+    "object_id": "0012_obj_recruitment_form_02",
+    "time": "23:18",
+    "location": {
+      "place_id": "science and technology innovation building_01",
+      "place_type": "building",
+      "description": "on the hand"
+    },
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0014",
+    "video_path": "020/020_0014",
+    "object_category": "iced black tea",
+    "object_id": "0014_obj_ice_tea_01",
+    "time": "05:14",
+    "location": {
+      "place_id": "canteen_01",
+      "place_type": "building",
+      "description": "on the dining plate"
+    },
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-1-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0017",
+    "video_path": "020/020_0017",
+    "object_category": "dumbbell",
+    "object_id": "0017_obj_dumbbell_01",
+    "time": "06:11",
+    "location": {
+      "place_id": "gym_01",
+      "place_type": "building",
+      "description": "on the hand"
+    },
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-1-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0023",
+    "video_path": "020/020_0023",
+    "object_category": "car",
+    "object_id": "0023_obj_car_01",
+    "time": "08:05",
+    "location": {
+      "place_id": "street_04",
+      "place_type": "street",
+      "description": "on the road"
+    },
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-1-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0025",
+    "video_path": "020/020_0025",
+    "object_category": "razor",
+    "object_id": "0025_obj_razor_01",
+    "time": "09:26",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "on the hand"
+    },
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-1-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0030",
+    "video_path": "020/020_0030",
+    "object_category": "fitness bag",
+    "object_id": "0030_obj_fitness_bag_01",
+    "time": "03:27",
+    "location": {
+      "place_id": "dormitory_01",
+      "place_type": "dormitory",
+      "description": "on the hand"
+    },
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-1-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "020_0041",
+    "video_path": "020/020_0041",
+    "object_category": "spicy hot pot",
+    "object_id": "0041_obj_spicy hot pot_01",
+    "time": "15:34",
+    "location": {
+      "place_id": "canteen_01",
+      "place_type": "building",
+      "description": "on the hand"
+    },
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-1-21",
+      "qc_status": "accepted"
+    }
+  }
+]

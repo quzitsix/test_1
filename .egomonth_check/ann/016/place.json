@@ -1,0 +1,197 @@
+[
+    {
+        "place_id": "home_1",
+        "video_id": "016_0001",
+        "video_path": "016/016_0001",
+        "category": "home",
+        "floor_index": "",
+        "adjacent_place": [],
+        "parent_place_id": "",
+        "is_outdoor": false,
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "place_id": "living room_1",
+        "video_id": "016_0001",
+        "video_path": "016/016_0001",
+        "category": "living room",
+        "floor_index": "",
+        "adjacent_place": [
+            {
+                "place_id": "storeroom_1",
+                "description": "The living room and storeroom are connected by a corridor."
+            }
+        ],
+        "parent_place_id": "home_1",
+        "is_outdoor": false,
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "place_id": "storeroom_1",
+        "video_id": "016_0001",
+        "video_path": "016/016_0001",
+        "category": "storeroom",
+        "floor_index": "",
+        "adjacent_place": [
+            {
+                "place_id": "living room_1",
+                "description": "The living room and storeroom are connected by a corridor."
+            }
+        ],
+        "parent_place_id": "home_1",
+        "is_outdoor": false,
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "place_id": "balcony_1",
+        "video_id": "016_0002",
+        "video_path": "016/016_0002",
+        "category": "balcony",
+        "floor_index": "",
+        "adjacent_place": [
+            {
+                "place_id": "living room_1",
+                "description": "The living room and balcony are connected by a door."
+            }
+        ],
+        "parent_place_id": "home_1",
+        "is_outdoor": false,
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "place_id": "kitchen_1",
+        "video_id": "016_0002",
+        "video_path": "016/016_0002",
+        "category": "kitchen",
+        "floor_index": "",
+        "adjacent_place": [
+            {
+                "place_id": "living room_1",
+                "description": "The living room and kitchen are connected by a door."
+            }
+        ],
+        "parent_place_id": "home_1",
+        "is_outdoor": false,
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "place_id": "corridor_1",
+        "video_id": "016_0006",
+        "video_path": "016/016_0006",
+        "category": "corridor",
+        "floor_index": "",
+        "adjacent_place": [
+            {
+                "place_id": "living room_1",
+                "description": "the corridor between the outside of the home and the elevator"
+            }
+        ],
+        "parent_place_id": "",
+        "is_outdoor": false,
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-9",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "place_id": "corridor_2",
+        "video_id": "016_0013",
+        "video_path": "016/016_0013",
+        "category": "corridor",
+        "floor_index": "",
+        "adjacent_place": [
+            {
+                "place_id": "living room_1",
+                "description": "a corridor connecting multiple rooms"
+            }
+        ],
+        "parent_place_id": "home_1",
+        "is_outdoor": false,
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-13",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "place_id": "storeroom_2",
+        "video_id": "016_0013",
+        "video_path": "016/016_0013",
+        "category": "storeroom",
+        "floor_index": "",
+        "adjacent_place": [
+            {
+                "place_id": "corridor_2",
+                "description": "connect with the corridor"
+            }
+        ],
+        "parent_place_id": "home_1",
+        "is_outdoor": false,
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-13",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "place_id": "bedroom_1",
+        "video_id": "016_0013",
+        "video_path": "016/016_0013",
+        "category": "bedroom",
+        "floor_index": "",
+        "adjacent_place": [
+            {
+                "place_id": "corridor_2",
+                "description": "connect with the corridor"
+            }
+        ],
+        "parent_place_id": "home_1",
+        "is_outdoor": false,
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-13",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "place_id": "toilet_1",
+        "video_id": "016_0017",
+        "video_path": "016/016_0017",
+        "category": "toilet",
+        "floor_index": "",
+        "adjacent_place": [
+            {
+                "place_id": "corridor_2",
+                "description": "connect with the corridor"
+            }
+        ],
+        "parent_place_id": "home_1",
+        "is_outdoor": false,
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-16",
+            "qc_status": "accepted"
+        }
+    }
+]

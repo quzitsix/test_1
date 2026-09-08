@@ -1,0 +1,132 @@
+[
+  {
+    "place_id": "home_1",
+    "video_id": "003_0001",
+    "video_path": "003/003_0001",
+    "category": "home",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "bathroom_1",
+    "video_id": "003_0001",
+    "video_path": "003/003_0001",
+    "category": "bathroom",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "living_room_1",
+        "description": "The living room and bathroom are connected by a corridor."
+      }
+    ],
+    "parent_place_id": "home_1",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "living_room_1",
+    "video_id": "003_0001",
+    "video_path": "003/003_0001",
+    "category": "living_room",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "bathroom_1",
+        "description": "The living room and bathroom are connected by a corridor."
+      }
+    ],
+    "parent_place_id": "home_1",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "corridor_1",
+    "video_id": "003_0002",
+    "video_path": "003/003_0002",
+    "category": "corridor",
+    "floor_index": "38",
+    "adjacent_place": [
+      {
+        "place_id": "living_room_1",
+        "description": "The corridor connects to the living room."
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "lobby_1",
+    "video_id": "003_0005",
+    "video_path": "003/003_0005",
+    "category": "lobby",
+    "floor_index": "38",
+    "adjacent_place": [
+      {
+        "place_id": "home_1",
+        "description": "The lobby connects to the home through the corridor."
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "garbage_room_1",
+    "video_id": "003_0005",
+    "video_path": "003/003_0005",
+    "category": "garbage_room",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "lobby_2",
+    "video_id": "003_0006",
+    "video_path": "003/003_0006",
+    "category": "lobby",
+    "floor_index": "1",
+    "adjacent_place": [
+      {
+        "place_id": "elevator_1",
+        "description": "The lobby connects to the elevator area."
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  }
+]

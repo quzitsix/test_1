@@ -1,0 +1,647 @@
+[
+  {
+    "event_id": "ev_01",
+    "video_id": "005_0001",
+    "video_path": "005/005_0001",
+    "start_time": "00:00",
+    "end_time": "16:50",
+    "description": "ride electric bike",
+    "place_id": "street1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_02",
+    "video_id": "005_0001",
+    "video_path": "005/005_0001",
+    "start_time": "24:18",
+    "end_time": "43:53",
+    "description": "walk",
+    "place_id": "park1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_03",
+    "video_id": "005_0001",
+    "video_path": "005/005_0001",
+    "start_time": "54:37",
+    "end_time": "54:38",
+    "description": "drink water",
+    "place_id": "room1",
+    "objects_involved": [
+      "0001_obj Water cup 02",
+      "0001_obj Water bucket 03",
+      "0001_obj Glass Water cup 04"
+    ],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_04",
+    "video_id": "005_0001",
+    "video_path": "005/005_0001",
+    "start_time": "54:51",
+    "end_time": "55:04",
+    "description": "go upstairs",
+    "place_id": "stair1",
+    "objects_involved": [
+      "0001_obj chair 05"
+    ],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_05",
+    "video_id": "005_0002",
+    "video_path": "005/005_0002",
+    "start_time": "00:00",
+    "end_time": "34:05",
+    "description": "ride electric bike",
+    "place_id": "street_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_06",
+    "video_id": "005_0002",
+    "video_path": "005/005_0002",
+    "start_time": "34:05",
+    "end_time": "56:55",
+    "description": "watch performance in the park and walk on the track",
+    "place_id": "park_1",
+    "objects_involved": [
+      "0002_obj Rock climbing wall 01",
+      "0002_obj Trampoline 02"
+    ],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_07",
+    "video_id": "005_0002",
+    "video_path": "005/005_0002",
+    "start_time": "57:31",
+    "end_time": "01:09:00",
+    "description": "ride electric bike",
+    "place_id": "street_2",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_08",
+    "video_id": "005_0003",
+    "video_path": "005/005_0003",
+    "start_time": "00:00",
+    "end_time": "14:31",
+    "description": "ride electric bike",
+    "place_id": "street_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_09",
+    "video_id": "005_0003",
+    "video_path": "005/005_0003",
+    "start_time": "14:32",
+    "end_time": "44:30",
+    "description": "walk in the park and watch willows",
+    "place_id": "park_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_10",
+    "video_id": "005_0004",
+    "video_path": "005/005_0004",
+    "start_time": "00:00",
+    "end_time": "07:00",
+    "description": "drive a car",
+    "place_id": "Street1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_11",
+    "video_id": "005_0004",
+    "video_path": "005/005_0004",
+    "start_time": "07:05",
+    "end_time": "07:10",
+    "description": "get off the car to take the red bag",
+    "place_id": "Street5",
+    "objects_involved": [
+      "0004_obj Red bag 01"
+    ],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_12",
+    "video_id": "005_0005",
+    "video_path": "005/005_0005",
+    "start_time": "00:00",
+    "end_time": "49:58",
+    "description": "walk in the park",
+    "place_id": "park_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_13",
+    "video_id": "005_0006",
+    "video_path": "005/005_0006",
+    "start_time": "00:00",
+    "end_time": "01:49",
+    "description": "finish class and go downstairs",
+    "place_id": "stair2",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_14",
+    "video_id": "005_0006",
+    "video_path": "005/005_0006",
+    "start_time": "02:19",
+    "end_time": "13:07",
+    "description": "return to dormitory",
+    "place_id": "Street15",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_15",
+    "video_id": "005_0006",
+    "video_path": "005/005_0006",
+    "start_time": "13:07",
+    "end_time": "13:30",
+    "description": "return to dormitory room",
+    "place_id": "dormitory_building_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_16",
+    "video_id": "005_0006",
+    "video_path": "005/005_0006",
+    "start_time": "07:17",
+    "end_time": "08:29",
+    "description": "walk around the park",
+    "place_id": "park2",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_17",
+    "video_id": "005_0007",
+    "video_path": "005/005_0007",
+    "start_time": "00:00",
+    "end_time": "06:12",
+    "description": "return to dormitory",
+    "place_id": "street15",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_18",
+    "video_id": "005_0008",
+    "video_path": "005/005_0008",
+    "start_time": "00:00",
+    "end_time": "08:33",
+    "description": "enter teaching building for class",
+    "place_id": "Street14",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_19",
+    "video_id": "005_0008",
+    "video_path": "005/005_0008",
+    "start_time": "11:06",
+    "end_time": "23:58",
+    "description": "return to dormitory",
+    "place_id": "Street15",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_20",
+    "video_id": "005_0008",
+    "video_path": "005/005_0008",
+    "start_time": "24:00",
+    "end_time": "25:00",
+    "description": "watch classmates ride bikes",
+    "place_id": "dormitory1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_21",
+    "video_id": "005_0008",
+    "video_path": "005/005_0008",
+    "start_time": "26:44",
+    "end_time": "27:58",
+    "description": "pass the park to go to class",
+    "place_id": "park2",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_22",
+    "video_id": "005_0008",
+    "video_path": "005/005_0008",
+    "start_time": "32:35",
+    "end_time": "38:00",
+    "description": "walk to class",
+    "place_id": "teaching_building_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_23",
+    "video_id": "005_0008",
+    "video_path": "005/005_0008",
+    "start_time": "38:00",
+    "end_time": "49:16",
+    "description": "finish class and return to dormitory",
+    "place_id": "street15",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_24",
+    "video_id": "005_0009",
+    "video_path": "005/005_0009",
+    "start_time": "00:00",
+    "end_time": "10:01",
+    "description": "walk",
+    "place_id": "Street14",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_25",
+    "video_id": "005_0009",
+    "video_path": "005/005_0009",
+    "start_time": "10:01",
+    "end_time": "11:00",
+    "description": "buy Zhengxin chicken chops",
+    "place_id":" store1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_26",
+    "video_id": "005_0009",
+    "video_path": "005/005_0009",
+    "start_time": "12:01",
+    "end_time": "14:02",
+    "description": "return to dormitory",
+    "place_id": "dormitory_building_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_27",
+    "video_id": "005_0009",
+    "video_path": "005/005_0009",
+    "start_time": "19:27",
+    "end_time": "20:33",
+    "description": "walk in the park",
+    "place_id": "park2",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_28",
+    "video_id": "005_0010",
+    "video_path": "005/005_0010",
+    "start_time": "00:00",
+    "end_time": "00:17",
+    "description": "take mobile phone to shoot dormitory",
+    "place_id": "dormitory_building_1",
+    "objects_involved": [
+      "0010_obj mobile phone 01"
+    ],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_29",
+    "video_id": "005_0010",
+    "video_path": "005/005_0010",
+    "start_time": "00:20",
+    "end_time": "22:01",
+    "description": "use computer to handle work",
+    "place_id": "dormitory_building_1",
+    "objects_involved": [
+      "0010_obj computer 02"
+    ],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_30",
+    "video_id": "005_0011",
+    "video_path": "005/005_0011",
+    "start_time": "00:00",
+    "end_time": "14:22",
+    "description": "finish class and return to dormitory",
+    "place_id": "street15",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_31",
+    "video_id": "005_0012",
+    "video_path": "005/005_0012",
+    "start_time": "00:00",
+    "end_time": "07:01",
+    "description": "walk",
+    "place_id": "Street14",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_32",
+    "video_id": "005_0012",
+    "video_path": "005/005_0012",
+    "start_time": "07:18",
+    "end_time": "09:30",
+    "description": "climb five floors of stairs to enter classroom",
+    "place_id": "teaching_building_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_33",
+    "video_id": "005_0013",
+    "video_path": "005/005_0013",
+    "start_time": "00:00",
+    "end_time": "20:13",
+    "description": "have class in classroom",
+    "place_id": "teaching_building_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_34",
+    "video_id": "005_0014",
+    "video_path": "005/005_0014",
+    "start_time": "00:00",
+    "end_time": "04:26",
+    "description": "run on playground",
+    "place_id": "playground_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_35",
+    "video_id": "005_0014",
+    "video_path": "005/005_0014",
+    "start_time": "04:26",
+    "end_time": "11:14",
+    "description": "return to dormitory",
+    "place_id": "street15",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_36",
+    "video_id": "005_0015",
+    "video_path": "005/005_0015",
+    "start_time": "00:00",
+    "end_time": "06:00",
+    "description": "walk to classroom",
+    "place_id": "street14",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_37",
+    "video_id": "005_0015",
+    "video_path": "005/005_0015",
+    "start_time": "06:00",
+    "end_time": "08:16",
+    "description": "take elevator to classroom for class",
+    "place_id": "teaching_building_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_38",
+    "video_id": "005_0016",
+    "video_path": "005/005_0016",
+    "start_time": "00:00",
+    "end_time": "11:13",
+    "description": "walk from dormitory building to teaching building",
+    "place_id": "teaching_building_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_39",
+    "video_id": "005_0017",
+    "video_path": "005/005_0017",
+    "start_time": "00:00",
+    "end_time": "05:11",
+    "description": "walk to teaching building",
+    "place_id": "street14",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_40",
+    "video_id": "005_0018",
+    "video_path": "005/005_0018",
+    "start_time": "00:00",
+    "end_time": "07:10",
+    "description": "walk",
+    "place_id": "street15",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_41",
+    "video_id": "005_0018",
+    "video_path": "005/005_0018",
+    "start_time": "07:28",
+    "end_time": "08:03",
+    "description": "tease cat",
+    "place_id": "teaching_building_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_42",
+    "video_id": "005_0019",
+    "video_path": "005/005_0019",
+    "start_time": "00:00",
+    "end_time": "28:42",
+    "description": "watch performance on playground during sports meeting",
+    "place_id": "playground_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  }
+]

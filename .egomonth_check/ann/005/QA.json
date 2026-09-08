@@ -1,0 +1,1622 @@
+[
+  {
+    "sample_id": "005",
+    "video_id": "005_0001",
+    "video_path": [
+      "005/005_0001.mp4"
+    ],
+    "question": "<005_0001.mp4>which floor is the glass",
+    "options": [
+      "A.first floor",
+      "B.second floor",
+      "C.third floor",
+      "D.fourth floor"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 02"
+    ],
+    "evidence_spatial": [
+      "0001 obj cup 04"
+    ],
+    "reasoning_chain": "The glass is in the first-floor room",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0001",
+    "video_path": [
+      "005/005_0001.mp4"
+    ],
+    "question": "<005_0001.mp4>what color is the cup",
+    "options": [
+      "A.red",
+      "B.white",
+      "C.blue",
+      "D.pink"
+    ],
+    "correct_options": "D",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0001 obj cup 02"
+    ],
+    "reasoning_chain": "The cup is pink",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0001",
+    "video_path": [
+      "005/005_0001.mp4"
+    ],
+    "question": "<005_0001.mp4>where is the chair",
+    "options": [
+      "A.first floor living room",
+      "B.second floor living room",
+      "C.first floor room",
+      "D.stairs"
+    ],
+    "correct_options": "D",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0001 obj chair 05"
+    ],
+    "reasoning_chain": "The chair is at the stair landing",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0001",
+    "video_path": [
+      "005/005_0001.mp4"
+    ],
+    "question": "<005_0001.mp4>how many water cups are there on the first floor",
+    "options": [
+      "A.two",
+      "B.one",
+      "C.three",
+      "D.four"
+    ],
+    "correct_options": "A",
+    "task_type": "object_counting_global",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 03"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "There are two cups on the table in the first-floor room, one pink water cup and the other a glass",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0001",
+    "video_path": [
+      "005/005_0001.mp4"
+    ],
+    "question": "<005_0001.mp4>how many minutes did the creator ride the bike at first",
+    "options": [
+      "A.10 minutes",
+      "B.20 minutes",
+      "C.40 minutes",
+      "D.16 minutes"
+    ],
+    "correct_options": "D",
+    "task_type": "event_counting",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 01"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The creator left the electric bike at 16:50",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0001",
+    "video_path": [
+      "005/005_0001.mp4"
+    ],
+    "question": "<005_0001.mp4>when did the author finish walking",
+    "options": [
+      "A.16:23",
+      "B.11:30",
+      "C.15:20",
+      "D.43:53"
+    ],
+    "correct_options": "D",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev02"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The author finished walking and rode a bike at 43:53",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0001",
+    "video_path": [
+      "005/005_0001.mp4"
+    ],
+    "question": "<005_0001.mp4>what was the creator doing at 24:17",
+    "options": [
+      "A.riding a bike",
+      "B.swimming",
+      "C.riding a horse",
+      "D.visiting food stalls"
+    ],
+    "correct_options": "D",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "Started visiting at 18:20, and the author finished visiting the food stalls at 24:17",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0001",
+    "video_path": [
+      "005/005_0001.mp4"
+    ],
+    "question": "<005_0001.mp4>what time did the creator get home",
+    "options": [
+      "A.18:20",
+      "B.10:15",
+      "C.11:15",
+      "D.54:34"
+    ],
+    "correct_options": "D",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 03",
+      "ev04"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The creator got home at 54:34",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0001",
+    "video_path": [
+      "005/005_0001.mp4"
+    ],
+    "question": "<005_0001.mp4>what is the sequence of actions after the creator gets home",
+    "options": [
+      "A.drink water first, then go upstairs, then open the door",
+      "B.go upstairs first, then drink water, then open the door",
+      "C.go upstairs first, then open the door, then drink water",
+      "D.open the door first, then drink water, then go upstairs"
+    ],
+    "correct_options": "D",
+    "task_type": "temporal_ordering",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 01",
+      "ev 02",
+      "ev 04"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The author first opened the door, then drank a sip of water, and finally went upstairs",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0001",
+    "video_path": [
+      "005/005_0001.mp4"
+    ],
+    "question": "<005_0001.mp4>what is the creator's location change",
+    "options": [
+      "A.first on the street, then home, finally in the park",
+      "B.first go to the street, then go to the park, finally go home",
+      "C.first go home, then go to the park, finally the street",
+      "D.first go home, then go to the street, finally go to the park"
+    ],
+    "correct_options": "B",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 01",
+      "ev02",
+      "ev03"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The creator's location changes from street to park and finally home",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0001",
+    "video_path": [
+      "005/005_0001.mp4"
+    ],
+    "question": "<005_0001.mp4>which place does the driver usually pass by",
+    "options": [
+      "A.lake",
+      "B.park",
+      "C.residential area",
+      "D.teaching building"
+    ],
+    "correct_options": "C",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev 01",
+      "ev 05"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The author passes by the residential area from home in multiple videos",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0001",
+    "video_path": [
+      "005/005_0001.mp4"
+    ],
+    "question": "<005_0001.mp4>the route from home to the supermarket",
+    "options": [
+      "A.go straight",
+      "B.turn right",
+      "C.turn left",
+      "D.None"
+    ],
+    "correct_options": "B",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 01"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The author turns right and sees the supermarket",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0002",
+    "video_path": [
+      "005/005_0002.mp4"
+    ],
+    "question": "<005_0002.mp4>what time did the creator arrive at the park",
+    "options": [
+      "A.13:15",
+      "B.12:30",
+      "C.14:50",
+      "D.34:05"
+    ],
+    "correct_options": "D",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 05"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The creator got off the bike and arrived at the park at 34:05",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0002",
+    "video_path": [
+      "005/005_0002.mp4"
+    ],
+    "question": "<005_0002.mp4>why did the author stop at 06:04",
+    "options": [
+      "A.traffic light",
+      "B.arrived at destination",
+      "C.traffic jam",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 05"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The author stopped due to a red light",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0002",
+    "video_path": [
+      "005/005_0002.mp4"
+    ],
+    "question": "<005_0002.mp4>what is the author's route",
+    "options": [
+      "A.first street, then park",
+      "B.first park, then street",
+      "C.None",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 05",
+      "ev 06"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The creator first rode a bike on the street, then arrived at the park",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0002",
+    "video_path": [
+      "005/005_0002.mp4"
+    ],
+    "question": "<005_0002.mp4>why did the author suddenly brake at 12:30",
+    "options": [
+      "A.red light",
+      "B.vehicle breakdown",
+      "C.blocked by other vehicles",
+      "D.None"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 05"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "There was a red car blocking the road during the ride",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0002",
+    "video_path": [
+      "005/005_0002.mp4"
+    ],
+    "question": "<005_0002.mp4>why did the author brake at 05:10",
+    "options": [
+      "A.traffic jam",
+      "B.vehicle breakdown",
+      "C.red light",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 05"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "There were many vehicles on the road, so the author braked",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0002",
+    "video_path": [
+      "005/005_0002.mp4"
+    ],
+    "question": "<005_0002.mp4>what shop is on street three",
+    "options": [
+      "A.swimming shop",
+      "B.flower shop",
+      "C.gas station",
+      "D.None"
+    ],
+    "correct_options": "C",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 05"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "There is a blue gas station around the road",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0003",
+    "video_path": [
+      "005/005_0003.mp4"
+    ],
+    "question": "<005_0003.mp4>what is the name of the square arrived at 14:26",
+    "options": [
+      "A.Guangzhong Square",
+      "B.Yaozu Square",
+      "C.Cultural Square",
+      "D.None"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 08"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The author rode a bike to Cultural Square",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0004",
+    "video_path": [
+      "005/005_0004.mp4"
+    ],
+    "question": "<005_0004.mp4>why did the author park the car",
+    "options": [
+      "A.red light",
+      "B.get off to pick up something",
+      "C.traffic jam",
+      "D.None"
+    ],
+    "correct_options": "B",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 10"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The author parked the car to pick up the red bag from the front bike",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0004",
+    "video_path": [
+      "005/005_0004.mp4"
+    ],
+    "question": "<005_0004.mp4>which street is the yellow car on",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.4"
+    ],
+    "correct_options": "B",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 10"
+    ],
+    "evidence_spatial": [
+      "0004 obj car 01"
+    ],
+    "reasoning_chain": "There are yellow cars on both sides of street two",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0004",
+    "video_path": [
+      "005/005_0004.mp4"
+    ],
+    "question": "<005_0004.mp4>which direction did the car turn at 00:15",
+    "options": [
+      "A.turn left",
+      "B.turn right",
+      "C.None",
+      "D.None"
+    ],
+    "correct_options": "B",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 10"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The car turned right while riding",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0004",
+    "video_path": [
+      "005/005_0004.mp4"
+    ],
+    "question": "<005_0004.mp4>what color is the bag",
+    "options": [
+      "A.blue",
+      "B.black",
+      "C.red",
+      "D.gray"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 11"
+    ],
+    "evidence_spatial": [
+      "0004 obj bag 01"
+    ],
+    "reasoning_chain": "The bag is red",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0005",
+    "video_path": [
+      "005/005_0005.mp4"
+    ],
+    "question": "<005_0005.mp4>what color is the car at 31:39",
+    "options": [
+      "A.red",
+      "B.pink",
+      "C.black",
+      "D.yellow"
+    ],
+    "correct_options": "D",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 12"
+    ],
+    "evidence_spatial": [
+      "0005 obj car 01"
+    ],
+    "reasoning_chain": "The car is yellow",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0005",
+    "video_path": [
+      "005/005_0005.mp4"
+    ],
+    "question": "<005_0005.mp4>where was the author at 29:52",
+    "options": [
+      "A.teaching building",
+      "B.playground",
+      "C.bridge",
+      "D.residential area"
+    ],
+    "correct_options": "C",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 12"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The author was walking on the bridge",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0005",
+    "video_path": [
+      "005/005_0005.mp4"
+    ],
+    "question": "<005_0005.mp4>what types of goods are there in the market",
+    "options": [
+      "A.food",
+      "B.toys",
+      "C.food and toys",
+      "D.None"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 12"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The market stalls have snacks, oil and gypsum dolls",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0006",
+    "video_path": [
+      "005/005_0006.mp4"
+    ],
+    "question": "<005_0006.mp4>where was the author at 01:49",
+    "options": [
+      "A.playground",
+      "B.swimming pool",
+      "C.dormitory building",
+      "D.teaching building"
+    ],
+    "correct_options": "D",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 13"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The author was in the teaching building",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0006",
+    "video_path": [
+      "005/005_0006.mp4"
+    ],
+    "question": "<005_0006.mp4>what is the author's route",
+    "options": [
+      "A.first teaching building, then park, finally dormitory building",
+      "B.first park, then teaching building, finally dormitory building",
+      "C.first park, then dormitory building, then teaching building",
+      "D.first dormitory building, then teaching building, then park"
+    ],
+    "correct_options": "A",
+    "task_type": "route_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev 13",
+      "ev 14",
+      "ev 15"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The author first finished class, came out of the teaching building, passed the park, and finally returned to the dormitory building",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0006",
+    "video_path": [
+      "005/005_0006.mp4"
+    ],
+    "question": "<005_0006.mp4>which direction to turn in the dormitory corridor to get to the stairs",
+    "options": [
+      "A.turn left",
+      "B.turn right",
+      "C.go straight",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 15"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Turn left in the corridor to go upstairs",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0007",
+    "video_path": [
+      "005/005_0007.mp4"
+    ],
+    "question": "<005_0007.mp4>which direction did the author turn on the street at 03:10",
+    "options": [
+      "A.turn left",
+      "B.turn right",
+      "C.None",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 17"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The author turned left",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0008",
+    "video_path": [
+      "005/005_0008.mp4"
+    ],
+    "question": "<005_0008.mp4>where is the stagnation place",
+    "options": [
+      "A.teaching building",
+      "B.dormitory building",
+      "C.swimming pool",
+      "D.park"
+    ],
+    "correct_options": "D",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 17"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The pavilion is in the park",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0009",
+    "video_path": [
+      "005/005_0009.mp4"
+    ],
+    "question": "<005_0009.mp4>how many umbrellas are there at 01:08",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.6"
+    ],
+    "correct_options": "D",
+    "task_type": "object_counting_global",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0009 obj umbrella 01"
+    ],
+    "reasoning_chain": "There are 6 umbrellas",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0009",
+    "video_path": [
+      "005/005_0009.mp4"
+    ],
+    "question": "<005_0009.mp4>how many schoolbags are there at 01:08",
+    "options": [
+      "A.3",
+      "B.4",
+      "C.5",
+      "D.2"
+    ],
+    "correct_options": "D",
+    "task_type": "object_counting_global",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 24"
+    ],
+    "evidence_spatial": [
+      "0009 obj schoolbag 01"
+    ],
+    "reasoning_chain": "There are two schoolbags ahead, one black and one white",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0009",
+    "video_path": [
+      "005/005_0009.mp4"
+    ],
+    "question": "<005_0009.mp4>what is the name of the store where the author ordered food",
+    "options": [
+      "A.Mixue Bingcheng",
+      "B.Bawang Chaji",
+      "C.Zhengxin Chicken Steak",
+      "D.None"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev 25"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The author ordered food at Zhengxin Chicken Steak",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0009",
+    "video_path": [
+      "005/005_0009.mp4"
+    ],
+    "question": "<005_0009.mp4>what time did the author return to the dormitory",
+    "options": [
+      "A.12:01",
+      "B.13:02",
+      "C.13:48",
+      "D.21:10"
+    ],
+    "correct_options": "C",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 26"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The author returned to the dormitory at 13:48",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0009",
+    "video_path": [
+      "005/005_0009.mp4"
+    ],
+    "question": "<005_0009.mp4>which side is the dormitory building on the store",
+    "options": [
+      "A.left",
+      "B.right",
+      "C.None",
+      "D.None"
+    ],
+    "correct_options": "B",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 26"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The author turns right at the store and goes straight to the dormitory",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0009",
+    "video_path": [
+      "005/005_0009.mp4"
+    ],
+    "question": "<005_0009.mp4>what route should the author take to return to the dormitory at the store intersection",
+    "options": [
+      "A.first turn left, then turn right",
+      "B.first turn right, then turn left",
+      "C.None",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "route_reasoning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 26"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The store is ahead at the intersection, the author first turns left, then turns right, and goes straight to the dormitory",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0010",
+    "video_path": [
+      "005/005_0010.mp4"
+    ],
+    "question": "<005_0010.mp4>what color is the desk lamp",
+    "options": [
+      "A.red",
+      "B.blue",
+      "C.black",
+      "D.pink"
+    ],
+    "correct_options": "D",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 28"
+    ],
+    "evidence_spatial": [
+      "0010 obj desk lamp 01"
+    ],
+    "reasoning_chain": "The desk lamp is pink",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0011",
+    "video_path": [
+      "005/005_0011.mp4"
+    ],
+    "question": "<005_0011.mp4>which floor does the author have class on",
+    "options": [
+      "A.1st floor",
+      "B.2nd floor",
+      "C.3rd floor",
+      "D.5th floor"
+    ],
+    "correct_options": "D",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev 22,",
+      "ev 18",
+      "ev 36"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "It can be seen from multiple videos that the author has classes on the 5th floor",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0011",
+    "video_path": [
+      "005/005_0011.mp4"
+    ],
+    "question": "<005_0011.mp4>which store is the author in front of at 11:43",
+    "options": [
+      "A.McDonald's",
+      "B.Mixue Bingcheng",
+      "C.Bawang Chaji",
+      "D.KFC"
+    ],
+    "correct_options": "D",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 30"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The author is in front of KFC",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0011",
+    "video_path": [
+      "005/005_0011.mp4"
+    ],
+    "question": "<005_0011.mp4>what was the author doing at 04:23",
+    "options": [
+      "A.swimming",
+      "B.eating",
+      "C.throwing garbage",
+      "D.sleeping"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 30"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The author threw garbage after class",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0012",
+    "video_path": [
+      "005/005_0012.mp4"
+    ],
+    "question": "<005_0012.mp4>where is the landscape stone",
+    "options": [
+      "A.classroom",
+      "B.dormitory building",
+      "C.swimming pool",
+      "D.park"
+    ],
+    "correct_options": "D",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 31"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Landscape stone, located on the park square",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "0012",
+    "video_path": [
+      "005/005_0012.mp4"
+    ],
+    "question": "<005_0012.mp4>what is the name of the square",
+    "options": [
+      "A.Guangzhong Square",
+      "B.Yaozu Square",
+      "C.People's Square",
+      "D.Minghu Square"
+    ],
+    "correct_options": "D",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 31"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The stone is engraved with the words Minghu Square",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0012",
+    "video_path": [
+      "005/005_0012.mp4"
+    ],
+    "question": "<005_0012.mp4>what is the name of the drink appearing at 09:30",
+    "options": [
+      "A.Nutri-Express",
+      "B.Oriental Leaf",
+      "C.Ice Black Tea",
+      "D.Coca-Cola"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 32"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Ice Black Tea on the table",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0013",
+    "video_path": [
+      "005/005_0013.mp4"
+    ],
+    "question": "<005_0013.mp4>where is the projector",
+    "options": [
+      "A.playground",
+      "B.swimming pool",
+      "C.classroom",
+      "D.dormitory building"
+    ],
+    "correct_options": "C",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 33"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Projector in the classroom",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0013",
+    "video_path": [
+      "005/005_0013.mp4"
+    ],
+    "question": "<005_0013.mp4>where is the blackboard",
+    "options": [
+      "A.store",
+      "B.playground",
+      "C.swimming pool",
+      "D.classroom"
+    ],
+    "correct_options": "D",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 33"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The blackboard is in the classroom",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0014",
+    "video_path": [
+      "005/005_0014.mp4"
+    ],
+    "question": "<005_0014.mp4>what is the author's movement route",
+    "options": [
+      "A.from playground to dormitory",
+      "B.from dormitory to playground",
+      "C.None",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "route_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev 35"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The author returns to the dormitory from the playground",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0014",
+    "video_path": [
+      "005/005_0014.mp4"
+    ],
+    "question": "<005_0014.mp4>what time did the author arrive at the dormitory",
+    "options": [
+      "A.12:12",
+      "B.13:15",
+      "C.19:18",
+      "D.11:11"
+    ],
+    "correct_options": "D",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 35"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The author arrived at the dormitory at 11:11",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0015",
+    "video_path": [
+      "005/005_0015.mp4"
+    ],
+    "question": "<005_0015.mp4>what is the name of the intersection sign at 04:14",
+    "options": [
+      "A.Rose Garden",
+      "B.Tea Garden",
+      "C.Cherry Blossom Garden",
+      "D.Peony Garden"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 36"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The text is Cherry Blossom Garden",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0015",
+    "video_path": [
+      "005/005_0015.mp4"
+    ],
+    "question": "<005_0015.mp4>how did the author go upstairs",
+    "options": [
+      "A.climb stairs",
+      "B.take elevator",
+      "C.take helicopter",
+      "D.None"
+    ],
+    "correct_options": "B",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 37"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Take the elevator upstairs",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0015",
+    "video_path": [
+      "005/005_0015.mp4"
+    ],
+    "question": "<005_0015.mp4>how many ways can the author go upstairs",
+    "options": [
+      "A.1 way",
+      "B.2 ways",
+      "C.3 ways",
+      "D.4 ways"
+    ],
+    "correct_options": "B",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev 37"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "You can go upstairs by climbing stairs or taking the elevator",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0015",
+    "video_path": [
+      "005/005_0015.mp4"
+    ],
+    "question": "<005_0015.mp4>how many roads are there to the teaching building",
+    "options": [
+      "A.1 road",
+      "B.2 roads",
+      "C.3 roads",
+      "D.4 roads"
+    ],
+    "correct_options": "B",
+    "task_type": "event_counting",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev 37",
+      "ev 36"
+    ],
+    "evidence_spatial": [
+      "cross_video"
+    ],
+    "reasoning_chain": "One can take the street and the other can take the park",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0015",
+    "video_path": [
+      "005/005_0015.mp4"
+    ],
+    "question": "<005_0015.mp4>what color bags do the author's friends like to carry",
+    "options": [
+      "A.white and black",
+      "B.green and blue",
+      "C.red and blue",
+      "D.purple and green"
+    ],
+    "correct_options": "A",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev 36",
+      "ev 40"
+    ],
+    "evidence_spatial": [
+      "cross_video"
+    ],
+    "reasoning_chain": "In multiple videos, two classmates walked in front of the video carrying white and black bags",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0016",
+    "video_path": [
+      "005/005_0016.mp4"
+    ],
+    "question": "<005_0016.mp4>how to walk along the street to reach the teaching building",
+    "options": [
+      "A.turn left first, then right",
+      "B.turn right first, then left",
+      "C.None",
+      "D.None"
+    ],
+    "correct_options": "B",
+    "task_type": "route_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev 38"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Turn right first, then left to reach the teaching building",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0017",
+    "video_path": [
+      "005/005_0017.mp4"
+    ],
+    "question": "<005_0017.mp4>how many streets are there",
+    "options": [
+      "A.1 street",
+      "B.2 streets",
+      "C.3 streets",
+      "D.4 streets"
+    ],
+    "correct_options": "C",
+    "task_type": "object_counting_global",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev 39"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "There are three streets in total",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0017",
+    "video_path": [
+      "005/005_0017.mp4"
+    ],
+    "question": "<005_0017.mp4>which direction to turn on Street 2",
+    "options": [
+      "A.turn left",
+      "B.turn right",
+      "C.None",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 39"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Turn left on Street 2",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0018",
+    "video_path": [
+      "005/005_0018.mp4"
+    ],
+    "question": "<005_0018.mp4>what color is the truck at the beginning",
+    "options": [
+      "A.white",
+      "B.red",
+      "C.blue",
+      "D.pink"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 40"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "White truck by the road",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0018",
+    "video_path": [
+      "005/005_0018.mp4"
+    ],
+    "question": "<005_0018.mp4>how many streets are there",
+    "options": [
+      "A.1 street",
+      "B.2 streets",
+      "C.3 streets",
+      "D.4 streets"
+    ],
+    "correct_options": "D",
+    "task_type": "object_counting_global",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev 40"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "There are four streets in total",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "005",
+    "video_id": "005_0018",
+    "video_path": [
+      "005/005_0018.mp4"
+    ],
+    "question": "<005_0018.mp4>what color is the cat",
+    "options": [
+      "A.white",
+      "B.black",
+      "C.red",
+      "D.green"
+    ],
+    "correct_options": "B",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev 41"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Black cat",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  }
+]

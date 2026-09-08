@@ -1,0 +1,1260 @@
+[
+  {
+    "video_id": "004_0001",
+    "video_path": "004/004_0001",
+    "object_category": "backpack",
+    "object_id": "0001_obj_backpack_01",
+    "time": "00:33",
+    "location": {
+      "place_id": "dorm_room_1",
+      "place_type": "dorm_room",
+      "description": "On the desk in the dorm room"
+    },
+    "meta": {
+      "annotator_id": "worker_08",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0001",
+    "video_path": "004/004_0001",
+    "object_category": "watch",
+    "object_id": "0001_obj_watch_01",
+    "time": "00:22",
+    "location": {
+      "place_id": "dorm_room_1",
+      "place_type": "dorm_room",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_08",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0001",
+    "video_path": "004/004_0001",
+    "object_category": "phone",
+    "object_id": "0001_obj_phone_01",
+    "time": "01:27",
+    "location": {
+      "place_id": "dorm_room_1",
+      "place_type": "dorm_room",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_08",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0001",
+    "video_path": "004/004_0001",
+    "object_category": "water_dispenser",
+    "object_id": "0001_obj_water_dispenser_01",
+    "time": "00:47",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "hallway",
+      "description": "Near the stairway entrance on the first floor"
+    },
+    "meta": {
+      "annotator_id": "worker_08",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0001",
+    "video_path": "004/004_0001",
+    "object_category": "textbook",
+    "object_id": "0001_obj_textbook_01",
+    "time": "17:37",
+    "location": {
+      "place_id": "classroom_1",
+      "place_type": "classroom",
+      "description": "On the desk in the classroom"
+    },
+    "meta": {
+      "annotator_id": "worker_08",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0001",
+    "video_path": "004/004_0001",
+    "object_category": "bread",
+    "object_id": "0001_obj_bread_01",
+    "time": "17:30",
+    "location": {
+      "place_id": "classroom_1",
+      "place_type": "classroom",
+      "description": "taken out from the backpack"
+    },
+    "meta": {
+      "annotator_id": "worker_08",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0001",
+    "video_path": "004/004_0001",
+    "object_category": "milk",
+    "object_id": "0001_obj_milk_01",
+    "time": "17:28",
+    "location": {
+      "place_id": "classroom_1",
+      "place_type": "classroom",
+      "description": "taken out from the backpack"
+    },
+    "meta": {
+      "annotator_id": "worker_08",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0001",
+    "video_path": "004/004_0001",
+    "object_category": "sausage",
+    "object_id": "0001_obj_sausage_01",
+    "time": "17:37",
+    "location": {
+      "place_id": "classroom_1",
+      "place_type": "classroom",
+      "description": "taken out from the backpack"
+    },
+    "meta": {
+      "annotator_id": "worker_08",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0001",
+    "video_path": "004/004_0001",
+    "object_category": "air_conditioner",
+    "object_id": "0001_obj_air_conditioner_01",
+    "time": "17:41",
+    "location": {
+      "place_id": "classroom_1",
+      "place_type": "classroom",
+      "description": "at the front-left of the classroom"
+    },
+    "meta": {
+      "annotator_id": "worker_08",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0001",
+    "video_path": "004/004_0001",
+    "object_category": "air_conditioner",
+    "object_id": "0001_obj_air_conditioner_02",
+    "time": "17:41",
+    "location": {
+      "place_id": "classroom_2",
+      "place_type": "classroom",
+      "description": "at the front-left of the classroom"
+    },
+    "meta": {
+      "annotator_id": "worker_08",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0001",
+    "video_path": "004/004_0001",
+    "object_category": "textbook",
+    "object_id": "0001_obj_textbook_02",
+    "time": "36:19",
+    "location": {
+      "place_id": "classroom_2",
+      "place_type": "classroom",
+      "description": "On the desk in the classroom"
+    },
+    "meta": {
+      "annotator_id": "worker_08",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0002",
+    "video_path": "004/004_0002",
+    "object_category": "package",
+    "object_id": "0002_obj_package_01",
+    "time": "9:44",
+    "location": {
+      "place_id": "delivery_station_1",
+      "place_type": "delivery_station",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_08",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0002",
+    "video_path": "004/004_0002",
+    "object_category": "meal",
+    "object_id": "0002_obj_meal_01",
+    "time": "22:18",
+    "location": {
+      "place_id": "dining_hall_1",
+      "place_type": "dining_hall",
+      "description": ""
+    },
+    "meta": {
+      "created_at": "2025-12-06",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0002",
+    "video_path": "004/004_0002",
+    "object_category": "meal",
+    "object_id": "0002_obj_meal_02",
+    "time": "31:15",
+    "location": {
+      "place_id": "dining_hall_2",
+      "place_type": "dining_hall",
+      "description": ""
+    },
+    "meta": {
+      "created_at": "2025-12-06",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0002",
+    "video_path": "004/004_0002",
+    "object_category": "meal_box",
+    "object_id": "0002_obj_meal_box_01",
+    "time": "28:11",
+    "location": {
+      "place_id": "dining_hall_2",
+      "place_type": "dining_hall",
+      "description": ""
+    },
+    "meta": {
+      "created_at": "2025-12-06",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0002",
+    "video_path": "004/004_0002",
+    "object_category": "suitcase",
+    "object_id": "0002_obj_suitcase_01",
+    "time": "35:50",
+    "location": {
+      "place_id": "dorm_room_1",
+      "place_type": "dorm_room",
+      "description": "under the desk"
+    },
+    "meta": {
+      "created_at": "2025-12-06",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0003",
+    "video_path": "004/004_0003",
+    "object_category": "computer",
+    "object_id": "0003_obj_computer_01",
+    "time": "00:00",
+    "location": {
+      "place_id": "dorm_room_1",
+      "place_type": "dorm_room",
+      "description": "on the desk"
+    },
+    "meta": {
+      "created_at": "2025-12-09",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0003",
+    "video_path": "004/004_0003",
+    "object_category": "teacup",
+    "object_id": "0003_obj_teacup_01",
+    "time": "00:55",
+    "location": {
+      "place_id": "dorm_room_1",
+      "place_type": "dorm_room",
+      "description": "on the desk"
+    },
+    "meta": {
+      "created_at": "2025-12-09",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0003",
+    "video_path": "004/004_0003",
+    "object_category": "photos",
+    "object_id": "0003_obj_photos_01",
+    "time": "11:32",
+    "location": {
+      "place_id": "dorm_room_1",
+      "place_type": "dorm_room",
+      "description": "on the wall"
+    },
+    "meta": {
+      "created_at": "2025-12-09",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0003",
+    "video_path": "004/004_0003",
+    "object_category": "yogurt",
+    "object_id": "0003_obj_yogurt_01",
+    "time": "11:40",
+    "location": {
+      "place_id": "dorm_room_1",
+      "place_type": "dorm_room",
+      "description": "on the shelf"
+    },
+    "meta": {
+      "created_at": "2025-12-09",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0003",
+    "video_path": "004/004_0003",
+    "object_category": "milk",
+    "object_id": "0003_obj_milk_01",
+    "time": "11:45",
+    "location": {
+      "place_id": "dorm_room_1",
+      "place_type": "dorm_room",
+      "description": "on the shelf"
+    },
+    "meta": {
+      "created_at": "2025-12-09",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0003",
+    "video_path": "004/004_0003",
+    "object_category": "mirror",
+    "object_id": "0003_obj_mirror_01",
+    "time": "11:47",
+    "location": {
+      "place_id": "dorm_room_1",
+      "place_type": "dorm_room",
+      "description": "on the door"
+    },
+    "meta": {
+      "created_at": "2025-12-09",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0003",
+    "video_path": "004/004_0003",
+    "object_category": "light_switch",
+    "object_id": "0003_obj_light_switch_01",
+    "time": "11:48",
+    "location": {
+      "place_id": "dorm_room_1",
+      "place_type": "dorm_room",
+      "description": "near the door"
+    },
+    "meta": {
+      "created_at": "2025-12-09",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0003",
+    "video_path": "004/004_0003",
+    "object_category": "trash_bin",
+    "object_id": "0003_obj_trash_bin_01",
+    "time": "14:33",
+    "location": {
+      "place_id": "road_1",
+      "place_type": "road",
+      "description": ""
+    },
+    "meta": {
+      "created_at": "2025-12-09",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0003",
+    "video_path": "004/004_0003",
+    "object_category": "trash_bin",
+    "object_id": "0003_obj_trash_bin_02",
+    "time": "15:08",
+    "location": {
+      "place_id": "road_1",
+      "place_type": "road",
+      "description": ""
+    },
+    "meta": {
+      "created_at": "2025-12-09",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0003",
+    "video_path": "004/004_0003",
+    "object_category": "road_sign",
+    "object_id": "0003_obj_road_sign_01",
+    "time": "15:10",
+    "location": {
+      "place_id": "road_1",
+      "place_type": "road",
+      "description": ""
+    },
+    "meta": {
+      "created_at": "2025-12-09",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0003",
+    "video_path": "004/004_0003",
+    "object_category": "food_weighing_scale",
+    "object_id": "0003_obj_food_weighing_scale_01",
+    "time": "21:44",
+    "location": {
+      "place_id": "dining_hall_3",
+      "place_type": "dining_hall",
+      "description": ""
+    },
+    "meta": {
+      "created_at": "2025-12-09",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0004",
+    "video_path": "004/004_0004",
+    "object_category": "notebook",
+    "object_id": "0004_obj_notebook_01",
+    "time": "00:14",
+    "location": {
+      "place_id": "dorm_room_1",
+      "place_type": "dorm_room",
+      "description": ""
+    },
+    "meta": {
+      "created_at": "2025-12-13",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0004",
+    "video_path": "004/004_0004",
+    "object_category": "pen",
+    "object_id": "0004_obj_pen_01",
+    "time": "00:17",
+    "location": {
+      "place_id": "dorm_room_1",
+      "place_type": "dorm_room",
+      "description": ""
+    },
+    "meta": {
+      "created_at": "2025-12-13",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0004",
+    "video_path": "004/004_0004",
+    "object_category": "cat",
+    "object_id": "0004_obj_cat_01",
+    "time": "02:01",
+    "location": {
+      "place_id": "road_1",
+      "place_type": "road",
+      "description": ""
+    },
+    "meta": {
+      "created_at": "2025-12-13",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0004",
+    "video_path": "004/004_0004",
+    "object_category": "washing_machine",
+    "object_id": "0004_obj_washing_machine_01",
+    "time": "26:43",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": ""
+    },
+    "meta": {
+      "created_at": "2025-12-13",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0005",
+    "video_path": "004/004_0005",
+    "object_category": "backpacks",
+    "object_id": "0005_obj_backpacks_01",
+    "time": "03:32",
+    "location": {
+      "place_id": "playground_1",
+      "place_type": "playground",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_08",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0006",
+    "video_path": "004/004_0006",
+    "object_category": "water_dispenser",
+    "object_id": "0006_obj_water_dispenser_01",
+    "time": "00:51",
+    "location": {
+      "place_id": "balcony_1",
+      "place_type": "balcony",
+      "description": ""
+    },
+    "meta": {
+      "created_at": "2025-12-15",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0006",
+    "video_path": "004/004_0006",
+    "object_category": "notice",
+    "object_id": "0006_obj_notice_01",
+    "time": "15:46",
+    "location": {
+      "place_id": "delivery_station_1",
+      "place_type": "delivery_station",
+      "description": ""
+    },
+    "meta": {
+      "created_at": "2025-12-15",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0007",
+    "video_path": "004/004_0007",
+    "object_category": "book",
+    "object_id": "0007_obj_book_01",
+    "time": "16:01",
+    "location": {
+      "place_id": "library_1",
+      "place_type": "library",
+      "description": ""
+    },
+    "meta": {
+      "created_at": "2025-12-17",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0007",
+    "video_path": "004/004_0007",
+    "object_category": "book",
+    "object_id": "0007_obj_book_02",
+    "time": "16:20",
+    "location": {
+      "place_id": "library_1",
+      "place_type": "library",
+      "description": ""
+    },
+    "meta": {
+      "created_at": "2025-12-17",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0007",
+    "video_path": "004/004_0007",
+    "object_category": "book",
+    "object_id": "0007_obj_book_03",
+    "time": "16:57",
+    "location": {
+      "place_id": "library_1",
+      "place_type": "library",
+      "description": ""
+    },
+    "meta": {
+      "created_at": "2025-12-17",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0007",
+    "video_path": "004/004_0007",
+    "object_category": "book",
+    "object_id": "0007_obj_book_04",
+    "time": "19:22",
+    "location": {
+      "place_id": "library_1",
+      "place_type": "library",
+      "description": ""
+    },
+    "meta": {
+      "created_at": "2025-12-17",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0008",
+    "video_path": "004/004_0008",
+    "object_category": "pancake",
+    "object_id": "0008_obj_pancake_01",
+    "time": "13:30",
+    "location": {
+      "place_id": "snack_shop_1",
+      "place_type": "snack_shop",
+      "description": ""
+    },
+    "meta": {
+      "created_at": "2025-12-17",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0009",
+    "video_path": "004/004_0009",
+    "object_category": "event_tent",
+    "object_id": "0009_obj_event_tent_01",
+    "time": "01:58",
+    "location": {
+      "place_id": "road_11",
+      "place_type": "road",
+      "description": "Red tent"
+    },
+    "meta": {
+      "created_at": "2025-12-19",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0009",
+    "video_path": "004/004_0009",
+    "object_category": "towel",
+    "object_id": "0009_obj_towel_01",
+    "time": "04:40",
+    "location": {
+      "place_id": "dorm_room_1",
+      "place_type": "dorm_room",
+      "description": "On a hanger in front of the wardrobe door"
+    },
+    "meta": {
+      "created_at": "2025-12-19",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0009",
+    "video_path": "004/004_0009",
+    "object_category": "computer",
+    "object_id": "0009_obj_computer_01",
+    "time": "17:09",
+    "location": {
+      "place_id": "computer_lab_1",
+      "place_type": "computer_lab",
+      "description": "On the desk in the computer lab"
+    },
+    "meta": {
+      "created_at": "2025-12-19",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0010",
+    "video_path": "004/004_0010",
+    "object_category": "milk",
+    "object_id": "0010_obj_milk_01",
+    "time": "00:03",
+    "location": {
+      "place_id": "classroom_3",
+      "place_type": "classroom",
+      "description": "On the desk"
+    },
+    "meta": {
+      "created_at": "2025-12-20",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0011",
+    "video_path": "004/004_0011",
+    "object_category": "drying_rack",
+    "object_id": "0011_obj_drying_rack_01",
+    "time": "00:24",
+    "location": {
+      "place_id": "road_1",
+      "place_type": "road",
+      "description": "On the left side of the road"
+    },
+    "meta": {
+      "created_at": "2025-12-28",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0011",
+    "video_path": "004/004_0011",
+    "object_category": "milk_tea",
+    "object_id": "0011_obj_milk_tea_01",
+    "time": "00:26",
+    "location": {
+      "place_id": "road_1",
+      "place_type": "road",
+      "description": "Held by hand"
+    },
+    "meta": {
+      "created_at": "2025-12-28",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0011",
+    "video_path": "004/004_0011",
+    "object_category": "drying_rack",
+    "object_id": "0011_obj_drying_rack_02",
+    "time": "01:34",
+    "location": {
+      "place_id": "road_1",
+      "place_type": "road",
+      "description": "On the right side of the road"
+    },
+    "meta": {
+      "created_at": "2025-12-28",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0011",
+    "video_path": "004/004_0011",
+    "object_category": "drying_rack",
+    "object_id": "0011_obj_drying_rack_03",
+    "time": "02:19",
+    "location": {
+      "place_id": "road_1",
+      "place_type": "road",
+      "description": "On the right side of the road"
+    },
+    "meta": {
+      "created_at": "2025-12-28",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0011",
+    "video_path": "004/004_0011",
+    "object_category": "drying_rack",
+    "object_id": "0011_obj_drying_rack_04",
+    "time": "02:55",
+    "location": {
+      "place_id": "road_1",
+      "place_type": "road",
+      "description": "On the left side of the road"
+    },
+    "meta": {
+      "created_at": "2025-12-28",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0011",
+    "video_path": "004/004_0011",
+    "object_category": "drying_rack",
+    "object_id": "0011_obj_drying_rack_05",
+    "time": "03:47",
+    "location": {
+      "place_id": "road_1",
+      "place_type": "road",
+      "description": "On the left side of the road"
+    },
+    "meta": {
+      "created_at": "2025-12-28",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0011",
+    "video_path": "004/004_0011",
+    "object_category": "textbook",
+    "object_id": "0011_obj_textbook_01",
+    "time": "27:57",
+    "location": {
+      "place_id": "classroom_1",
+      "place_type": "classroom",
+      "description": "On the desk"
+    },
+    "meta": {
+      "created_at": "2025-12-28",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0011",
+    "video_path": "004/004_0011",
+    "object_category": "milk",
+    "object_id": "0011_obj_milk_01",
+    "time": "33:03",
+    "location": {
+      "place_id": "classroom_1",
+      "place_type": "classroom",
+      "description": "Strawberry milk on the desk"
+    },
+    "meta": {
+      "created_at": "2025-12-28",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0012",
+    "video_path": "004/004_0012",
+    "object_category": "textbook",
+    "object_id": "0012_obj_textbook_01",
+    "time": "00:00",
+    "location": {
+      "place_id": "classroom_2",
+      "place_type": "classroom",
+      "description": "On the desk"
+    },
+    "meta": {
+      "created_at": "2025-12-28",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0012",
+    "video_path": "004/004_0012",
+    "object_category": "textbook",
+    "object_id": "0012_obj_textbook_02",
+    "time": "13:14",
+    "location": {
+      "place_id": "computer_lab_1",
+      "place_type": "computer_lab",
+      "description": "On the desk, English textbook"
+    },
+    "meta": {
+      "created_at": "2025-12-28",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0012",
+    "video_path": "004/004_0012",
+    "object_category": "headphone",
+    "object_id": "0012_obj_headphone_01",
+    "time": "19:18",
+    "location": {
+      "place_id": "computer_lab_1",
+      "place_type": "computer_lab",
+      "description": "hanging on the right side of the desk"
+    },
+    "meta": {
+      "created_at": "2025-12-28",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0012",
+    "video_path": "004/004_0012",
+    "object_category": "fountain",
+    "object_id": "0012_obj_fountain_01",
+    "time": "33:44",
+    "location": {
+      "place_id": "school_gate_1",
+      "place_type": "school_gate",
+      "description": "Near the school gate"
+    },
+    "meta": {
+      "created_at": "2025-12-28",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0013",
+    "video_path": "004/004_0013",
+    "object_category": "banner",
+    "object_id": "0013_obj_banner_01",
+    "time": "5:38",
+    "location": {
+      "place_id": "road_1",
+      "place_type": "road",
+      "description": "Red banner on the left side of the road"
+    },
+    "meta": {
+      "created_at": "2025-12-29",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0013",
+    "video_path": "004/004_0013",
+    "object_category": "phone",
+    "object_id": "0013_obj_phone_01",
+    "time": "13:17",
+    "location": {
+      "place_id": "classroom_4",
+      "place_type": "classroom",
+      "description": "On the desk in the classroom"
+    },
+    "meta": {
+      "created_at": "2025-12-29",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0013",
+    "video_path": "004/004_0013",
+    "object_category": "textbook",
+    "object_id": "0013_obj_textbook_02",
+    "time": "13:57",
+    "location": {
+      "place_id": "classroom_4",
+      "place_type": "classroom",
+      "description": "On the desk in the classroom"
+    },
+    "meta": {
+      "created_at": "2025-12-29",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0013",
+    "video_path": "004/004_0013",
+    "object_category": "milk",
+    "object_id": "0013_obj_milk_01",
+    "time": "13:17",
+    "location": {
+      "place_id": "classroom_4",
+      "place_type": "classroom",
+      "description": "On the desk in the classroom"
+    },
+    "meta": {
+      "created_at": "2025-12-29",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0014",
+    "video_path": "004/004_0014",
+    "object_category": "advertising_shelter",
+    "object_id": "0014_obj_advertising_shelter_01",
+    "time": "11:00",
+    "location": {
+      "place_id": "road_1",
+      "place_type": "road",
+      "description": "On the left side of the road"
+    },
+    "meta": {
+      "created_at": "2025-12-31",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0014",
+    "video_path": "004/004_0014",
+    "object_category": "textbook",
+    "object_id": "0014_obj_textbook_01",
+    "time": "16:52",
+    "location": {
+      "place_id": "classroom_5",
+      "place_type": "classroom",
+      "description": "On the desk in the classroom, title: 'Fundamentals of Programming'"
+    },
+    "meta": {
+      "created_at": "2025-12-31",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0014",
+    "video_path": "004/004_0014",
+    "object_category": "watch",
+    "object_id": "0014_obj_watch_01",
+    "time": "27:52",
+    "location": {
+      "place_id": "classroom_5",
+      "place_type": "classroom",
+      "description": "Metal watch worn on left wrist"
+    },
+    "meta": {
+      "created_at": "2025-12-31",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0015",
+    "video_path": "004/004_0015",
+    "object_category": "event_tent",
+    "object_id": "0015_obj_event_tent_01",
+    "time": "01:22",
+    "location": {
+      "place_id": "road_1",
+      "place_type": "road",
+      "description": ""
+    },
+    "meta": {
+      "created_at": "2026-01-06",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0015",
+    "video_path": "004/004_0015",
+    "object_category": "phone",
+    "object_id": "0015_obj_phone_01",
+    "time": "13:11",
+    "location": {
+      "place_id": "classroom_1",
+      "place_type": "classroom",
+      "description": "On the desk"
+    },
+    "meta": {
+      "created_at": "2026-01-06",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0015",
+    "video_path": "004/004_0015",
+    "object_category": "textbook",
+    "object_id": "0015_obj_textbook_01",
+    "time": "13:15",
+    "location": {
+      "place_id": "classroom_1",
+      "place_type": "classroom",
+      "description": "On the desk"
+    },
+    "meta": {
+      "created_at": "2026-01-06",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0015",
+    "video_path": "004/004_0015",
+    "object_category": "milk",
+    "object_id": "0015_obj_milk_01",
+    "time": "13:15",
+    "location": {
+      "place_id": "classroom_1",
+      "place_type": "classroom",
+      "description": "Strawberry milk on the desk"
+    },
+    "meta": {
+      "created_at": "2026-01-06",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0016",
+    "video_path": "004/004_0016",
+    "object_category": "police_room",
+    "object_id": "0016_obj_police_room_01",
+    "time": "00:01",
+    "location": {
+      "place_id": "school_gate_1",
+      "place_type": "school_gate",
+      "description": "Near the school gate"
+    },
+    "meta": {
+      "annotator_id": "worker_08",
+      "created_at": "2026-01-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0016",
+    "video_path": "004/004_0016",
+    "object_category": "barrier_gate",
+    "object_id": "0016_obj_barrier_gate_01",
+    "time": "00:04",
+    "location": {
+      "place_id": "school_gate_1",
+      "place_type": "school_gate",
+      "description": "At the entrance of the school gate"
+    },
+    "meta": {
+      "annotator_id": "worker_08",
+      "created_at": "2026-01-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0016",
+    "video_path": "004/004_0016",
+    "object_category": "fence",
+    "object_id": "0016_obj_fence_01",
+    "time": "00:04",
+    "location": {
+      "place_id": "school_gate_1",
+      "place_type": "school_gate",
+      "description": "At the entrance of the school gate"
+    },
+    "meta": {
+      "annotator_id": "worker_08",
+      "created_at": "2026-01-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0017",
+    "video_path": "004/004_0017",
+    "object_category": "computer",
+    "object_id": "0017_obj_computer_01",
+    "time": "00:46",
+    "location": {
+      "place_id": "dorm_room_1",
+      "place_type": "dorm_room",
+      "description": "On the desk, at the right side"
+    },
+    "meta": {
+      "created_at": "2026-01-07",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0017",
+    "video_path": "004/004_0017",
+    "object_category": "bowl",
+    "object_id": "0017_obj_bowl_01",
+    "time": "01:48",
+    "location": {
+      "place_id": "dorm_room_1",
+      "place_type": "dorm_room",
+      "description": "On the desk, at the left side"
+    },
+    "meta": {
+      "created_at": "2026-01-07",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0017",
+    "video_path": "004/004_0017",
+    "object_category": "chopsticks",
+    "object_id": "0017_obj_chopsticks_01",
+    "time": "01:48",
+    "location": {
+      "place_id": "dorm_room_1",
+      "place_type": "dorm_room",
+      "description": "On the bowl"
+    },
+    "meta": {
+      "created_at": "2026-01-07",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0017",
+    "video_path": "004/004_0017",
+    "object_category": "mask",
+    "object_id": "0017_obj_mask_01",
+    "time": "03:14",
+    "location": {
+      "place_id": "dorm_room_1",
+      "place_type": "dorm_room",
+      "description": "Fox mask hanging on the wall"
+    },
+    "meta": {
+      "created_at": "2026-01-07",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "004_0017",
+    "video_path": "004/004_0017",
+    "object_category": "cup",
+    "object_id": "0017_obj_cup_01",
+    "time": "12:36",
+    "location": {
+      "place_id": "dorm_room_1",
+      "place_type": "dorm_room",
+      "description": "On the desk, at the left side"
+    },
+    "meta": {
+      "created_at": "2026-01-07",
+      "annotator_id": "worker_08",
+      "qc_status": "accepted"
+    }
+  }
+]

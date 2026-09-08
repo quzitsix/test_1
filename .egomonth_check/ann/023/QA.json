@@ -1,0 +1,2477 @@
+[
+  {
+    "sample_id": "023",
+    "video_id": "023_0001",
+    "video_path": [
+      "023/023_0001.mp4"
+    ],
+    "question": "<023_0001.mp4>How many floors did the photographer go down after leaving the dorm?",
+    "options": [
+      "A.4",
+      "B.5",
+      "C.6",
+      "D.7"
+    ],
+    "correct_options": "B",
+    "task_type": "event_counting",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_01"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The photographer went down five floors, from the sixth floor to the first floor",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0001",
+    "video_path": [
+      "023/023_0001.mp4"
+    ],
+    "question": "<023_0001.mp4>What did the photographer buy?",
+    "options": [
+      "A.Whiteboard eraser",
+      "B.bread",
+      "C.A packet of potato chips",
+      "D.double-sided adhesive tape"
+    ],
+    "correct_options": "D",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_02"
+    ],
+    "evidence_spatial": [
+      "0001_obj_adhesive_tape_01"
+    ],
+    "reasoning_chain": "The photographer bought double-sided adhesive tape in the supermarket.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0002",
+    "video_path": [
+      "023/023_0002.mp4"
+    ],
+    "question": "<023_0002.mp4>How to walk from the dormitory to the playground",
+    "options": [
+      "A.Turn right after going out of the dormitory -> Turn left at the first intersection -> Turn left at the second intersection -> Go straight through the third intersection -> Turn right to go down stairs to reach the playground",
+      "B.Turn left after going out of the dormitory -> Turn left at the first intersection -> Turn right at the second intersection -> Go straight through the third intersection -> Turn left to go down stairs to reach the playground",
+      "C.Turn left after going out of the dormitory -> Turn right at the first intersection -> Turn left at the second intersection -> Turn left through the third intersection -> Turn left to go down stairs to reach the playground",
+      "D.Turn right after going out of the dormitory -> Turn left at the first intersection -> Turn right at the second intersection -> Turn left through the third intersection -> Turn right to go down stairs to reach the playground"
+    ],
+    "correct_options": "B",
+    "task_type": "route_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_11",
+      "ev_12",
+      "ev_13",
+      "ev_14",
+      "ev_15"
+    ],
+    "evidence_spatial": [
+      "dormitory_1",
+      "road_1",
+      "playground_1"
+    ],
+    "reasoning_chain": "The photographer turned left after going out of the dormitory, then turned left at the first intersection, next turned right at the second intersection, after that went straight through the third intersection, and finally turned left to go down stairs to reach the playground.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0002",
+    "video_path": [
+      "023/023_0002.mp4"
+    ],
+    "question": "<023_0002.mp4>What happened after the second wash of the towel?",
+    "options": [
+      "A.Wipe the table",
+      "B.Wash hands",
+      "C.Organize the desk",
+      "D.Clean the mobile phone"
+    ],
+    "correct_options": "B",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_05",
+      "ev_06",
+      "ev_07",
+      "ev_08",
+      "ev_09",
+      "ev_10"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The photographer washed hands after the second towel wash.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0003",
+    "video_path": [
+      "023/023_0003.mp4"
+    ],
+    "question": "<023_0003.mp4>When did the photographer clean the laptop?",
+    "options": [
+      "A.00:25-00:42",
+      "B.00:51-01:10",
+      "C.08:36-08:59",
+      "D.13:12-13:35"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_21"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The photographer cleaned the laptop between 00:25 and 00:42.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0003",
+    "video_path": [
+      "023/023_0003.mp4"
+    ],
+    "question": "<023_0003.mp4>What is the spatial relation between self-study area and the toilet?",
+    "options": [
+      "A.The self-study area is next to the toilet.",
+      "B.The self-study area is opposite the toilet.",
+      "C.The self-study area and the toilet are connected by a corridor.",
+      "D.The toilet is inside the self-study area."
+    ],
+    "correct_options": "C",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "self-study_area_1",
+      "toilet_1",
+      "corridor_2"
+    ],
+    "reasoning_chain": "The self-study area and the toilet are connected by a corridor.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0004",
+    "video_path": [
+      "023/023_0003.mp4",
+      "023/023_0004.mp4"
+    ],
+    "question": "<023_0003.mp4><023_0004.mp4>What is the photographer's travel habits?",
+    "options": [
+      "A.Walk",
+      "B.By bicycle",
+      "C.By electric bike",
+      "D.By motorcycle"
+    ],
+    "correct_options": "C",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_22",
+      "ev_23",
+      "ev_27"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The photographer rode an electric bike from the dormitory to the canteen_2, then rode an electric bike to the teaching building, and finally rode an electric bike to the canteen_1.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0005",
+    "video_path": [
+      "023/023_0005.mp4"
+    ],
+    "question": "<023_0005.mp4>At which floor did the photographer at the beginning?",
+    "options": [
+      "A.24",
+      "B.1",
+      "C.23",
+      "D.14"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_28"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "When the photographer was getting on the elevator, the screen beside the elevator showed the number 24.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0005",
+    "video_path": [
+      "023/023_0005.mp4"
+    ],
+    "question": "<023_0005.mp4>How to enter the subway station and wait for the subway?",
+    "options": [
+      "A.Go downstairs to enter the entrance of the underground passage -> Carry out subway security checks -> Walk forward along the underground passage -> Scan a code to enter the subway station -> Take the escalator downstairs -> Wait for the subway",
+      "B.Carry out subway security checks -> Walk forward along the underground passage -> Scan a code to enter the subway station -> Go downstairs to enter the entrance of the underground passage -> Take the escalator downstairs -> Wait for the subway",
+      "C.Go downstairs to enter the entrance of the underground passage -> Take the escalator downstairs -> Walk forward along the underground passage -> Scan a code to enter the subway station -> Carry out subway security checks -> Wait for the subway",
+      "D.Go downstairs to enter the entrance of the underground passage -> Walk forward along the underground passage -> Carry out subway security checks -> Scan a code to enter the subway station -> Take the escalator downstairs -> Wait for the subway"
+    ],
+    "correct_options": "D",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_29",
+      "ev_30",
+      "ev_31",
+      "ev_32",
+      "ev_33",
+      "ev_34"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The photographer firstly went downstairs to enter the entrance of the underground passage, then walked forward along the underground passage, next carried out subway security checks, after that scanned a code to enter the subway station, then took the escalator downstairs, and finally waited for the subway.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0006",
+    "video_path": [
+      "023/023_0006.mp4"
+    ],
+    "question": "<023_0006.mp4>When placing the reagents on the workbench table, which side of the reagent with the black cap is located relative to the reagent with the blue cap?",
+    "options": [
+      "A.Left",
+      "B.Right",
+      "C.Above",
+      "D.Below"
+    ],
+    "correct_options": "A",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_40"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The reagent with the black cap is located to the left of the reagent with the blue cap.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0006",
+    "video_path": [
+      "023/023_0006.mp4"
+    ],
+    "question": "<023_0006.mp4>How many tables are there in the laboratory?",
+    "options": [
+      "A.6",
+      "B.7",
+      "C.8",
+      "D.9"
+    ],
+    "correct_options": "C",
+    "task_type": "object_counting_global",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0006_obj_table_01",
+      "0006_obj_table_02",
+      "0006_obj_table_03",
+      "0006_obj_table_04",
+      "0006_obj_table_05",
+      "0006_obj_table_06",
+      "0006_obj_table_07",
+      "0006_obj_table_08"
+    ],
+    "reasoning_chain": "There are 8 tables in the laboratory.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0007",
+    "video_path": [
+      "023/023_0007.mp4"
+    ],
+    "question": "<023_0007.mp4>How many times did the photographer pick up the fried dough sticks?",
+    "options": [
+      "A.0",
+      "B.1",
+      "C.3",
+      "D.4"
+    ],
+    "correct_options": "D",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_44",
+      "ev_45",
+      "ev_46",
+      "ev_47"
+    ],
+    "evidence_spatial": [
+      "0007_obj_fried_dough_sticks_01"
+    ],
+    "reasoning_chain": "The photographer picked up the fried dough sticks 4 times.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0008",
+    "video_path": [
+      "023/023_0008.mp4"
+    ],
+    "question": "<023_0008.mp4>When did the photographer ask his companion for a tissue?",
+    "options": [
+      "A.04:56-05:10",
+      "B.05:25-05:35",
+      "C.06:00-06:08",
+      "D.09:33-09:39"
+    ],
+    "correct_options": "B",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_50"
+    ],
+    "evidence_spatial": [
+      "0008_obj_tissues_01"
+    ],
+    "reasoning_chain": "The photographer asked his companion for a tissue between 05:25-05:35.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0008",
+    "video_path": [
+      "023/023_0001.mp4",
+      "023/023_0008.mp4"
+    ],
+    "question": "<023_0001.mp4><023_0008.mp4>What side of the bowl does the photographer usually place his mobile phone on when having a meal?",
+    "options": [
+      "A.Left side",
+      "B.Right side",
+      "C.Front side",
+      "D.The photographer doesn't use mobile phone during meals."
+    ],
+    "correct_options": "A",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_03",
+      "ev_49"
+    ],
+    "evidence_spatial": [
+      "0001_obj_bowl_01",
+      "0001_obj_mobile_phone_01",
+      "0008_obj_mobile_phone_01",
+      "0008_obj_bowl_01"
+    ],
+    "reasoning_chain": "The photographer usually places his mobile phone on the left side of the bowl when having a meal in the two videos.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0009",
+    "video_path": [
+      "023/023_0009.mp4"
+    ],
+    "question": "<023_0009.mp4>How many times did the vehicle stop in the video?",
+    "options": [
+      "A.6",
+      "B.8",
+      "C.9",
+      "D.10"
+    ],
+    "correct_options": "B",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_51",
+      "ev_52",
+      "ev_53",
+      "ev_54",
+      "ev_55",
+      "ev_56",
+      "ev_57",
+      "ev_58",
+      "ev_59"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The vehicle stopped 8 times in the video.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0009",
+    "video_path": [
+      "023/023_0009.mp4"
+    ],
+    "question": "<023_0009.mp4>Which stop is the vehicle making between 04:00 and 05:00?",
+    "options": [
+      "A.The second stop",
+      "B.The third stop",
+      "C.The fourth stop",
+      "D.The vehicle didn't stop between 04:00 and 05:00."
+    ],
+    "correct_options": "D",
+    "task_type": "event_time",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_51",
+      "ev_52",
+      "ev_53",
+      "ev_54",
+      "ev_55",
+      "ev_56",
+      "ev_57",
+      "ev_58",
+      "ev_59"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The vehicle didn't stop between 04:00 and 05:00.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0010",
+    "video_path": [
+      "023/023_0010.mp4"
+    ],
+    "question": "<023_0010.mp4>Where is the photographer in this video?",
+    "options": [
+      "A.Canteen",
+      "B.Dormitory",
+      "C.Hotel",
+      "D.Laboratory"
+    ],
+    "correct_options": "D",
+    "task_type": "self_localization",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "Laboratory_1"
+    ],
+    "reasoning_chain": "The photographer is in the laboratory in this video.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0010",
+    "video_path": [
+      "023/023_0010.mp4"
+    ],
+    "question": "<023_0010.mp4>At 10:21 in the video, which time period is the clock pointing to?",
+    "options": [
+      "A.2:35-2:40",
+      "B.6:10-6:15",
+      "C.7:10-7:15",
+      "D.3:35-3:40"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "Laboratory_1",
+      "0010_obj_clock_01"
+    ],
+    "reasoning_chain": "The short hand of the clock points between the numbers 7 and 8, while the long hand points between the numbers 2 and 3.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0011",
+    "video_path": [
+      "023/023_0011.mp4"
+    ],
+    "question": "<023_0011.mp4>Where is canteen_3 located in relation to canteen_1?",
+    "options": [
+      "A.One floor above",
+      "B.One floor below",
+      "C.On the opposite side of canteen_1",
+      "D.Far away from canteen_1"
+    ],
+    "correct_options": "B",
+    "task_type": "spatial_relation",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "canteen_1",
+      "canteen_3"
+    ],
+    "reasoning_chain": "The canteen_3 is located one floor below the canteen_1.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0011",
+    "video_path": [
+      "023/023_0011.mp4"
+    ],
+    "question": "<023_0011.mp4>Which way should you turn to get to the bridge?",
+    "options": [
+      "A.Turn left",
+      "B.Turn right",
+      "C.Go straight",
+      "D.Turn back"
+    ],
+    "correct_options": "B",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_60"
+    ],
+    "evidence_spatial": [
+      "bridge_1"
+    ],
+    "reasoning_chain": "The photographer turned right to get to the bridge.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0012",
+    "video_path": [
+      "023/023_0012.mp4"
+    ],
+    "question": "<023_0012.mp4>Which object is in the bathroom?",
+    "options": [
+      "A.Mirror",
+      "B.Sink",
+      "C.Washing_machine",
+      "D.Shower_head"
+    ],
+    "correct_options": "D",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "bathroom_1",
+      "balcony_1",
+      "0012_obj_mirror_01",
+      "0012_obj_sink_01",
+      "0012_obj_washing_machine_01",
+      "0012_obj_shower_head_01"
+    ],
+    "reasoning_chain": "The shower head is in the bathroom, while the mirror, sink, and washing machine are on the balcony.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0013",
+    "video_path": [
+      "023/023_0013.mp4"
+    ],
+    "question": "<023_0013.mp4>What is the color sequence of the trash cans at the entrance of the dormitory from left to right?",
+    "options": [
+      "A.Red, Black, Blue, Green",
+      "B.Blue, Green, Red, Black",
+      "C.Black, Red, Green, Blue",
+      "D.Black, Green, Red, Blue"
+    ],
+    "correct_options": "C",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "dormitory_1",
+      "0013_obj_black_trash_can_01",
+      "0013_obj_red_trash_can_01",
+      "0013_obj_blue_trash_can_01",
+      "0013_obj_green_trash_can_01"
+    ],
+    "reasoning_chain": "The black trash can is on the leftmost side, the red trash can is to the right of the black trash can, the green trash can is to the right of the red trash can, and the blue trash can is on the rightmost side.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0013",
+    "video_path": [
+      "023/023_0002.mp4",
+      "023/023_0013.mp4"
+    ],
+    "question": "<023_0002.mp4><023_0013.mp4>Where is the canteen_2 located relative to the playground?",
+    "options": [
+      "A.The canteen_2 is opposite the playground.",
+      "B.The canteen_2 is located behind the playground.",
+      "C.The canteen_2 is located to the left of the playground.",
+      "D.The canteen_2 is located to the right of the playground."
+    ],
+    "correct_options": "A",
+    "task_type": "cross_view_spatial_reasoning",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_11",
+      "ev_12",
+      "ev_13",
+      "ev_14",
+      "ev_15",
+      "ev_61",
+      "ev_62",
+      "ev_63",
+      "ev_64"
+    ],
+    "evidence_spatial": [
+      "road_1",
+      "dormitory_1",
+      "playground_1",
+      "canteen_2"
+    ],
+    "reasoning_chain": "The canteen_2 is opposite the playground.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0014",
+    "video_path": [
+      "023/023_0002.mp4",
+      "023/023_0013.mp4",
+      "023/023_0014.mp4"
+    ],
+    "question": "<023_0002.mp4><023_0013.mp4><023_0014.mp4>After turning left from the dormitory, what is the photographer's usual route at the first crossroads?",
+    "options": [
+      "A.Go straight",
+      "B.Turn back",
+      "C.Turn right",
+      "D.Turn left"
+    ],
+    "correct_options": "D",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_11",
+      "ev_12",
+      "ev_61",
+      "ev_62",
+      "ev_65",
+      "ev_66"
+    ],
+    "evidence_spatial": [
+      "road_1",
+      "dormitory_1"
+    ],
+    "reasoning_chain": "The photographer turned left at the first intersection after leaving the dormitory in three videos.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0014",
+    "video_path": [
+      "023/023_0014.mp4"
+    ],
+    "question": "<023_0014.mp4>How to get to Burger King from the dormitory?",
+    "options": [
+      "A.Turn left after going out of the dormitory -> Turn left at the first intersection -> Go straight through the second intersection -> Turn right at the T-junction -> Go straight at the second T-junction. -> Turn left at the third T-junction. -> Pass by canteen_1 and canteen_2. -> Arrive at Burger King",
+      "B.Turn left after going out of the dormitory -> Turn left at the first intersection -> Turn right at the second intersection -> Go straight through the third intersection -> Turn left to go down stairs to reach Burger King",
+      "C.Turn left after going out of the dormitory -> Turn right at the first intersection -> Go straight through the second intersection -> Turn right at the T-junction -> Pass by canteen_1 and canteen_2. -> Go straight at the second T-junction. -> Turn right at the third T-junction. -> Arrive at Burger King",
+      "D.Turn left after going out of the dormitory -> Turn left at the first intersection -> Go straight through the second intersection -> Turn right at the T-junction -> Turn left at the second T-junction. -> Turn left at the third T-junction. -> Pass by canteen_1 and canteen_2. -> Arrive at Burger King"
+    ],
+    "correct_options": "A",
+    "task_type": "route_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_65",
+      "ev_66",
+      "ev_67",
+      "ev_68",
+      "ev_69",
+      "ev_70",
+      "ev_71",
+      "ev_72"
+    ],
+    "evidence_spatial": [
+      "road_1",
+      "dormitory_1",
+      "canteen_1",
+      "canteen_2",
+      "burger_king_1"
+    ],
+    "reasoning_chain": "The photographer turned left at the first intersection after leaving the dormitory, then go straight through the second intersection, turned right at the T-junction next, and then go straight through the second T-junction, finally turned left at the third T-junction and passed by canteen_1 and canteen_2 to reach Burger King.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0015",
+    "video_path": [
+      "023/023_0015.mp4"
+    ],
+    "question": "<023_0015.mp4>What are the steps for washing socks?",
+    "options": [
+      "A.Soak the socks in water -> Apply soap to the socks -> Wash the socks with water -> Rub the socks -> Wring out the socks -> Hang the socks up to dry",
+      "B.Soak the socks in water -> Apply soap to the socks -> Rub the socks -> Wash the socks with water -> Wring out the socks -> Hang the socks up to dry",
+      "C.Apply soap to the socks -> Soak the socks in water -> Wash the socks with water -> Rub the socks -> Wring out the socks -> Hang the socks up to dry",
+      "D.Apply soap to the socks -> Soak the socks in water -> Rub the socks -> Wring out the socks -> Wash the socks with water -> Hang the socks up to dry"
+    ],
+    "correct_options": "B",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_73",
+      "ev_74",
+      "ev_75",
+      "ev_76",
+      "ev_77",
+      "ev_78"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The photographer firstly soaked the socks in water, then applied soap to the socks, next rubbed the socks, after that washed the socks with water, then wringed out the socks, and finally hung the socks up to dry.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0015",
+    "video_path": [
+      "023/023_0001.mp4",
+      "023/023_0015.mp4"
+    ],
+    "question": "<023_0001.mp4><023_0015.mp4>Which floor of the dormitory is the bedroom on?",
+    "options": [
+      "A.The second floor",
+      "B.The fifth floor",
+      "C.The sixth floor",
+      "D.The seventh floor"
+    ],
+    "correct_options": "C",
+    "task_type": "cross_view_spatial_reasoning",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_01"
+    ],
+    "evidence_spatial": [
+      "dormitory_1",
+      "bedroom_1"
+    ],
+    "reasoning_chain": "The photographer was in the bedroom on the sixth floor because he went down five floors to go out of the dormitory.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0016",
+    "video_path": [
+      "023/023_0016.mp4"
+    ],
+    "question": "<023_0016.mp4>Which room of the dormitory was the photographer in at the 01:12 of the video?",
+    "options": [
+      "A.bedroom",
+      "B.balcony",
+      "C.bathroom",
+      "D.dormitory"
+    ],
+    "correct_options": "B",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "dormitory_1",
+      "bedroom_1",
+      "balcony_1",
+      "bathroom_1"
+    ],
+    "reasoning_chain": "The photographer was in the balcony at 01:12 of the video.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0018",
+    "video_path": [
+      "023/023_0017.mp4",
+      "023/023_0018.mp4"
+    ],
+    "question": "<023_0017.mp4><023_0018.mp4>How many people are in the photographer's group?",
+    "options": [
+      "A.8",
+      "B.7",
+      "C.3",
+      "D.5"
+    ],
+    "correct_options": "D",
+    "task_type": "object_counting_global",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "The photographer's group consists of 5 people.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0019",
+    "video_path": [
+      "023/023_0019.mp4"
+    ],
+    "question": "<023_0019.mp4>What did the photographer do after running on the playground immediately?",
+    "options": [
+      "A.Waiting for the playground to open",
+      "B.Walk from the playground to the dormitory",
+      "C.Rest and chat on the phone",
+      "D.None"
+    ],
+    "correct_options": "C",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_81",
+      "ev_82",
+      "ev_83",
+      "ev_84"
+    ],
+    "evidence_spatial": [
+      "playground_1"
+    ],
+    "reasoning_chain": "The photographer ran on the playground and then rested and chatted on the phone.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0019",
+    "video_path": [
+      "023/023_0019.mp4"
+    ],
+    "question": "<023_0019.mp4>Which direction did the photographer turn after leaving the playground?",
+    "options": [
+      "A.Turn left",
+      "B.Turn right",
+      "C.Go straight",
+      "D.Turn back"
+    ],
+    "correct_options": "A",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_85",
+      "ev_86"
+    ],
+    "evidence_spatial": [
+      "playground_1"
+    ],
+    "reasoning_chain": "The photographer left the playground and climbed a few stairs, then turned left.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0020",
+    "video_path": [
+      "023/023_0020.mp4"
+    ],
+    "question": "<023_0020.mp4>How many rooms are there in the dormitory?",
+    "options": [
+      "A.1",
+      "B.4",
+      "C.2",
+      "D.3"
+    ],
+    "correct_options": "D",
+    "task_type": "object_counting_global",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "dormitory_1",
+      "bedroom_1",
+      "balcony_1",
+      "bathroom_1"
+    ],
+    "reasoning_chain": "The dormitory has 3 rooms: bedroom, balcony, and bathroom.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0020",
+    "video_path": [
+      "023/023_0020.mp4"
+    ],
+    "question": "<023_0020.mp4>Where is the photographer at 11:50 in the video?",
+    "options": [
+      "A.canteen_1",
+      "B.dormitory",
+      "C.canteen_3",
+      "D.canteen_2"
+    ],
+    "correct_options": "D",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "dormitory_1",
+      "canteen_1",
+      "canteen_2",
+      "canteen_3"
+    ],
+    "reasoning_chain": "The photographer is at canteen_2 at 11:50 in the video.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0021",
+    "video_path": [
+      "023/023_0021.mp4"
+    ],
+    "question": "<023_0021.mp4>How many laps did the photographer roughly run on the playground?",
+    "options": [
+      "A.1.5 lap",
+      "B.2 laps",
+      "C.3.5 laps",
+      "D.4 laps"
+    ],
+    "correct_options": "C",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_88"
+    ],
+    "evidence_spatial": [
+      "playground_1"
+    ],
+    "reasoning_chain": "The photographer ran on the playground for 3.5 laps.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0022",
+    "video_path": [
+      "023/023_0022.mp4"
+    ],
+    "question": "<023_0022.mp4>What color is the trash can that appears at the beginning of the video?",
+    "options": [
+      "A.Green",
+      "B.Blue",
+      "C.Red",
+      "D.Black"
+    ],
+    "correct_options": "B",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "bedroom_1",
+      "0022_obj_trash_can_01"
+    ],
+    "reasoning_chain": "The trash can that appears at the beginning of the video is blue.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0022",
+    "video_path": [
+      "023/023_0022.mp4"
+    ],
+    "question": "<023_0022.mp4>How to walk from the dormitory to the teaching_building_2?",
+    "options": [
+      "A.Turn left after going out of the dormitory -> Turn left at the first intersection -> Go straight through the second intersection -> Turn right at the T-junction -> Turn left to enter the teaching_building_2",
+      "B.Turn right after going out of the dormitory -> Turn left at the first intersection -> Turn right at the second intersection -> Turn left at the T-junction -> Turn left to enter the teaching_building_2",
+      "C.Turn left after going out of the dormitory -> Turn left at the first intersection -> Turn left at the T-junction -> Go straight through the second intersection -> Turn left to enter the teaching_building_2",
+      "D.Turn right after going out of the dormitory -> Turn left at the first intersection -> Go straight through the second intersection -> Turn right at the T-junction -> Turn right to enter the teaching_building_2"
+    ],
+    "correct_options": "A",
+    "task_type": "route_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_89",
+      "ev_90",
+      "ev_91",
+      "ev_92"
+    ],
+    "evidence_spatial": [
+      "road_1",
+      "dormitory_1",
+      "teaching_building_2"
+    ],
+    "reasoning_chain": "The photographer turned left after going out of the dormitory, then turned left at the first intersection, and went straight through the second intersection, then turned right at the T-junction, and finally turned left to enter the teaching_building_2.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0022",
+    "video_path": [
+      "023/023_0022.mp4"
+    ],
+    "question": "<023_0022.mp4>Which direction did the photographer turn at the intersection in the teaching_building_2?",
+    "options": [
+      "A.Turn left",
+      "B.Turn right",
+      "C.Go straight",
+      "D.Turn back"
+    ],
+    "correct_options": "A",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_93",
+      "ev_94"
+    ],
+    "evidence_spatial": [
+      "teaching_building_2"
+    ],
+    "reasoning_chain": "The photographer turned left at the intersection in the teaching_building_2.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0023",
+    "video_path": [
+      "023/023_0023.mp4"
+    ],
+    "question": "<023_0023.mp4>Which floor is the classroom on?",
+    "options": [
+      "A.The 1st floor",
+      "B.The 2nd floor",
+      "C.The 3rd floor",
+      "D.None"
+    ],
+    "correct_options": "B",
+    "task_type": "cross_view_spatial_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_95",
+      "ev_96",
+      "ev_98"
+    ],
+    "evidence_spatial": [
+      "teaching_building_2",
+      "classroom_tb1_1"
+    ],
+    "reasoning_chain": "The classroom in this video is on the 2nd floor because the photographer only went up one floor.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0024",
+    "video_path": [
+      "023/023_0024.mp4"
+    ],
+    "question": "<023_0024.mp4>Where is the food delivery shelf located?",
+    "options": [
+      "A.Canteen",
+      "B.Teaching building",
+      "C.Laboratory",
+      "D.Dormitory"
+    ],
+    "correct_options": "D",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "dormitory_1",
+      "0024_obj_shelf4delivery_01"
+    ],
+    "reasoning_chain": "The shelf used for food delivery is located at the entrance of the dormitory.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0025",
+    "video_path": [
+      "023/023_0025.mp4"
+    ],
+    "question": "<023_0025.mp4>When did photographers start washing his hands in the video?",
+    "options": [
+      "A.06:36",
+      "B.03:43",
+      "C.00:30",
+      "D.00:19"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_103"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The photographers start washing his hands at 06:36 of the video.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0025",
+    "video_path": [
+      "023/023_0025.mp4"
+    ],
+    "question": "<023_0025.mp4>What did the photographer do after eating the banana?",
+    "options": [
+      "A.Peel the banana",
+      "B.Blow his nose",
+      "C.Break off a banana from a bunch of bananas.",
+      "D.Wash hands"
+    ],
+    "correct_options": "B",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_99",
+      "ev_100",
+      "ev_101",
+      "ev_102",
+      "ev_103"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The photographers firstly broke off a banana from a bunch of bananas, the peeled the banana and ate it, after that he blew his nose.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0026",
+    "video_path": [
+      "023/023_0026.mp4"
+    ],
+    "question": "<023_0026.mp4>How to get to canteen_1 from dormitory?",
+    "options": [
+      "A.Turn left after going out of the dormitory -> Turn right at the first intersection -> Go straight through the second intersection -> Turn left at the T-junction -> Turn left at the second T-junction. -> Turn left at the third T-junction. -> Turn right and go downstairs to enter the canteen_1.",
+      "B.Turn left after going out of the dormitory -> Turn right at the first intersection -> Turn right through the second intersection -> Turn right at the T-junction -> Turn left at the second T-junction. -> Go through at the third T-junction. -> Turn right and go downstairs to enter the canteen_1.",
+      "C.Turn left after going out of the dormitory -> Turn left at the first intersection -> Turn right through the second intersection -> Turn left at the T-junction -> Go straight at the second T-junction. -> Go through at the third T-junction. -> Turn right and go upstairs to enter the canteen_1.",
+      "D.Turn left after going out of the dormitory -> Turn left at the first intersection -> Go straight through the second intersection -> Turn right at the T-junction -> Go straight at the second T-junction. -> Turn left at the third T-junction. -> Turn right and go upstairs to enter the canteen_1."
+    ],
+    "correct_options": "D",
+    "task_type": "route_reasoning",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_104",
+      "ev_105",
+      "ev_106",
+      "ev_107",
+      "ev_108",
+      "ev_109",
+      "ev_110"
+    ],
+    "evidence_spatial": [
+      "dormitory_1",
+      "canteen_1",
+      "canteen_3"
+    ],
+    "reasoning_chain": "In this video, the photographer turned left at the first intersection after leaving the dormitory, then go straight through the second intersection, turned right at the T-junction next, and then go straight through the second T-junction, finally turned left at the third T-junction and turn right and go downstairs to enter the canteen_3. But the canteen_1 is on the floor above canteen_3, so you need to go upstairs",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0027",
+    "video_path": [
+      "023/023_0027.mp4"
+    ],
+    "question": "<023_0027.mp4>Where was the photographer at 00:30 of the video?",
+    "options": [
+      "A.Classroom",
+      "B.Laboratory",
+      "C.Dormitory",
+      "D.Canteen"
+    ],
+    "correct_options": "A",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "classroom_tb1_1"
+    ],
+    "reasoning_chain": "The photographer was in a classroom at 00:30 of the video.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0028",
+    "video_path": [
+      "023/023_0028.mp4"
+    ],
+    "question": "<023_0028.mp4>How to dry clothes?",
+    "options": [
+      "A.Hang the clothes on a hanger. -> Take out a piece of clothing from the washing machine. -> Hang clothes on the balcony with a clothesline.",
+      "B.Take out a piece of clothing from the washing machine. -> Hang clothes on the balcony with a clothesline. -> Hang the clothes on a hanger.",
+      "C.Take out a piece of clothing from the washing machine. -> Hang the clothes on a hanger. -> Hang clothes on the balcony with a clothesline.",
+      "D.Hang clothes on the balcony with a clothesline. -> Hang the clothes on a hanger. -> Take out a piece of clothing from the washing machine."
+    ],
+    "correct_options": "C",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_111",
+      "ev_112",
+      "ev_113"
+    ],
+    "evidence_spatial": [
+      "balcony_1"
+    ],
+    "reasoning_chain": "The photographer firstly take out a piece of clothing from the washing machine, then hang the clothes on a hanger, and finally use a clothesline to hang clothes on the balcony.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0028",
+    "video_path": [
+      "023/023_0028.mp4"
+    ],
+    "question": "<023_0028.mp4>How many times did the photographer hang up their clothes?",
+    "options": [
+      "A.3",
+      "B.4",
+      "C.5",
+      "D.6"
+    ],
+    "correct_options": "B",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_111",
+      "ev_112",
+      "ev_113",
+      "ev_114",
+      "ev_115",
+      "ev_116",
+      "ev_117",
+      "ev_118",
+      "ev_119",
+      "ev_120",
+      "ev_121",
+      "ev_122",
+      "ev_123",
+      "ev_124",
+      "ev_125"
+    ],
+    "evidence_spatial": [
+      "balcony_1",
+      "0028_obj_clothes_01",
+      "0028_obj_clothes_02",
+      "0028_obj_clothes_03",
+      "0028_obj_clothes_04",
+      "0028_obj_clothesline_01",
+      "0028_obj_towel_01"
+    ],
+    "reasoning_chain": "The photographer hung the clothes for four times, and hung a towel once.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0029",
+    "video_path": [
+      "023/023_0029.mp4"
+    ],
+    "question": "<023_0029.mp4>What color of clothing is the person running past the photographer at 6:01 in the video?",
+    "options": [
+      "A.Blue",
+      "B.Green",
+      "C.Black",
+      "D.Red"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person who runs past the photographer at 6:01 in the video wears a blue clothing.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0030",
+    "video_path": [
+      "023/023_0030.mp4"
+    ],
+    "question": "<023_0030.mp4>How to pass through the second intersection?",
+    "options": [
+      "A.Just turn left.",
+      "B.Turn left to cross the road.",
+      "C.Turn left to cross the road, then turn right to cross another road.",
+      "D.Turn right to cross the road, then turn left to cross another road."
+    ],
+    "correct_options": "D",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_126",
+      "ev_127",
+      "ev_128",
+      "ev_129",
+      "ev_130",
+      "ev_131",
+      "ev_132"
+    ],
+    "evidence_spatial": [
+      "road_4"
+    ],
+    "reasoning_chain": "The photographer first turn right to cross the road, then turn left to cross another road to cross the second intersection.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0031",
+    "video_path": [
+      "023/023_0031.mp4"
+    ],
+    "question": "<023_0031.mp4>Where is the water dispenser in this video?",
+    "options": [
+      "A.Teaching building",
+      "B.Canteen",
+      "C.Dormitory",
+      "D.Laboratory"
+    ],
+    "correct_options": "C",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_133",
+      "ev_134"
+    ],
+    "evidence_spatial": [
+      "dormitory_1",
+      "0031_obj_water_dispenser_01"
+    ],
+    "reasoning_chain": "The photographer turned left after exiting the bedroom door and reach the water dispenser, so it is in the dormitory.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0031",
+    "video_path": [
+      "023/023_0031.mp4"
+    ],
+    "question": "<023_0031.mp4>Where is the photographer at 11:55 in this video?",
+    "options": [
+      "A.Supermarket",
+      "B.Canteen",
+      "C.Laboratory",
+      "D.Dormitory"
+    ],
+    "correct_options": "A",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "supermarket_1"
+    ],
+    "reasoning_chain": "The photographer was in the supermarket at 11:55.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0032",
+    "video_path": [
+      "023/023_0032.mp4"
+    ],
+    "question": "<023_0032.mp4>How many doors are there on the right side of the corridor from the staircase on the first floor to the entrance of the dormitory?",
+    "options": [
+      "A.9",
+      "B.11",
+      "C.8",
+      "D.10"
+    ],
+    "correct_options": "D",
+    "task_type": "object_counting_global",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "dormitory_1"
+    ],
+    "reasoning_chain": "There are 10 doors on the right side of the corridor from the staircase on the first floor to the entrance of the dormitory.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0032",
+    "video_path": [
+      "023/023_0032.mp4"
+    ],
+    "question": "<023_0032.mp4>How to get to the public electric vehicle parking area form dormitory?",
+    "options": [
+      "A.Turn right after going out of the dormitory -> Turn right at the first intersection -> Turn left at the second intersection",
+      "B.Turn left after going out of the dormitory -> Turn right at the first intersection -> Turn right at the second intersection",
+      "C.Turn left after going out of the dormitory -> Turn left at the first intersection -> Turn right at the second intersection",
+      "D.Turn right after going out of the dormitory -> Turn left at the first intersection -> Turn left at the second intersection"
+    ],
+    "correct_options": "B",
+    "task_type": "route_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_135",
+      "ev_136",
+      "ev_137"
+    ],
+    "evidence_spatial": [
+      "dormitory_1",
+      "public_electric_vehicle_parking_area_1"
+    ],
+    "reasoning_chain": "The photographer turned left after going out of the dormitory, then turned right at the first intersection, next turned right at the second intersection to reach the public electric vehicle parking area.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0033",
+    "video_path": [
+      "023/023_0033.mp4"
+    ],
+    "question": "<023_0033.mp4>What did the photographer do before having the meal?",
+    "options": [
+      "A.Leave the dormitory.",
+      "B.Go to canteen.",
+      "C.Wash hands.",
+      "D.Walk to the teaching building."
+    ],
+    "correct_options": "C",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_138",
+      "ev_139",
+      "ev_140",
+      "ev_141",
+      "ev_142"
+    ],
+    "evidence_spatial": [
+      "dormitory_1",
+      "canteen_2",
+      "teaching_building_1"
+    ],
+    "reasoning_chain": "The photographer wash hands before the breakfast.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0034",
+    "video_path": [
+      "023/023_0034.mp4"
+    ],
+    "question": "<023_0034.mp4>Where is the desk lamp be placed relative to the laptop?",
+    "options": [
+      "A.On the left side of the laptop",
+      "B.On the back of the laptop computer",
+      "C.On the front of the laptop computer",
+      "D.On the right side of the laptop"
+    ],
+    "correct_options": "D",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0001_obj_laptop_01",
+      "0034_obj_lamp_01"
+    ],
+    "reasoning_chain": "The desk lamp is on the right side of the laptop.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0035",
+    "video_path": [
+      "023/023_0035.mp4"
+    ],
+    "question": "<023_0035.mp4>If you want to go to the canteen_6, how do you make the turn at the intersection where the canteen_5 is located?",
+    "options": [
+      "A.Turn left",
+      "B.Go straight",
+      "C.Turn right",
+      "D.Turn back"
+    ],
+    "correct_options": "C",
+    "task_type": "direction_judgement",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_144",
+      "ev_145",
+      "ev_146",
+      "ev_147",
+      "ev_148",
+      "ev_149",
+      "ev_150",
+      "ev_151"
+    ],
+    "evidence_spatial": [
+      "canteen_5",
+      "canteen_6"
+    ],
+    "reasoning_chain": "The photographer turned right at the intersection where the canteen_5 located in this video.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0036",
+    "video_path": [
+      "023/023_0036.mp4"
+    ],
+    "question": "<023_0036.mp4>How to ride from the canteen to the stadium in this video?",
+    "options": [
+      "A.Turn left at the first intersection -> Turn right at the second intersection -> Keep riding along this road -> Ride cross the bridge -> Turn left after crossing the bridge -> Reach the stadium",
+      "B.Turn left at the first intersection -> Turn left at the second intersection -> Ride cross the bridge -> Turn left after crossing the bridge -> Keep riding along this road -> Reach the stadium",
+      "C.Turn left at the first intersection -> Turn right at the second intersection -> Keep riding along this road -> Ride cross the bridge -> Turn left after crossing the bridge -> Reach the stadium",
+      "D.Turn right at the first intersection -> Turn left at the second intersection -> Ride cross the bridge -> Turn right after crossing the bridge -> Keep riding along this road -> Reach the stadium"
+    ],
+    "correct_options": "A",
+    "task_type": "route_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_153",
+      "ev_154",
+      "ev_155",
+      "ev_156",
+      "ev_157",
+      "ev_158",
+      "ev_159"
+    ],
+    "evidence_spatial": [
+      "canteen_5",
+      "stadium_1",
+      "bridge_2"
+    ],
+    "reasoning_chain": "The photographer turned left at the first intersection, then turn right at the second intersection, then keep riding along this road, and ride cross the bridge and turn left after crossing the bridge, finally reach the stadium.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-25",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0037",
+    "video_path": [
+      "023/023_0037.mp4"
+    ],
+    "question": "<023_0037.mp4>Where is the self-service vending machine?",
+    "options": [
+      "A.dormitory",
+      "B.canteen_2",
+      "C.teaching building",
+      "D.Laboratory"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "dormitory_1",
+      "0037_obj_vending_machine_01"
+    ],
+    "reasoning_chain": "The self-service vending machine is located on the first floor of the dormitory, facing the dormitory entrance.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-25",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0037",
+    "video_path": [
+      "023/023_0037.mp4"
+    ],
+    "question": "<023_0037.mp4>What color is the drink the photographer bought?",
+    "options": [
+      "A.red",
+      "B.blue",
+      "C.yellow",
+      "D.orange"
+    ],
+    "correct_options": "D",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0037_obj_drink_01"
+    ],
+    "reasoning_chain": "The drink photographer bought was orange.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-25",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0038",
+    "video_path": [
+      "023/023_0038.mp4"
+    ],
+    "question": "<023_0038.mp4>Which floor is the classroom on?",
+    "options": [
+      "A.The 1st floor",
+      "B.The 2nd floor",
+      "C.The 3rd floor",
+      "D.The 4th floor"
+    ],
+    "correct_options": "B",
+    "task_type": "cross_view_spatial_reasoning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_160",
+      "ev_162",
+      "ev_163"
+    ],
+    "evidence_spatial": [
+      "teaching_building_2",
+      "classroom_tb2_1"
+    ],
+    "reasoning_chain": "After going out of the classroom, the photographer went down just one floor then went out of the teaching building, thus the classroom is on the second floor.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-26",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0038",
+    "video_path": [
+      "023/023_0038.mp4"
+    ],
+    "question": "<023_0038.mp4>When did the photographer go shopping in the supermarket in the video?",
+    "options": [
+      "A.01:48-06:40",
+      "B.00:33-00:52",
+      "C.06:40-08:49",
+      "D.16:50-18:05"
+    ],
+    "correct_options": "C",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_162",
+      "ev_164",
+      "ev_165"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The photographer shopped in supermarket between 06:40 and 08:49 in the video.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-26",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0039",
+    "video_path": [
+      "023/023_0039.mp4"
+    ],
+    "question": "<023_0039.mp4>What is the brand of the backpack?",
+    "options": [
+      "A.Dickies",
+      "B.National Geographic",
+      "C.Swiss",
+      "D.Adidas"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0039_obj_backpack_01"
+    ],
+    "reasoning_chain": "The brand on the shoulder strap of the backpack is Swiss.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-26",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0039",
+    "video_path": [
+      "023/023_0039.mp4"
+    ],
+    "question": "<023_0039.mp4>What is the brand of the backpack?",
+    "options": [
+      "A.Dickies",
+      "B.National Geographic",
+      "C.Swiss",
+      "D.Adidas"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0039_obj_backpack_01"
+    ],
+    "reasoning_chain": "The brand on the shoulder strap of the backpack is Swiss.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-26",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0039",
+    "video_path": [
+      "023/023_0039.mp4"
+    ],
+    "question": "<023_0039.mp4>Which way did the photographer turn after leaving the canteen?",
+    "options": [
+      "A.Turn right",
+      "B.Turn left",
+      "C.Go straight",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_169"
+    ],
+    "evidence_spatial": [
+      "canteen_2"
+    ],
+    "reasoning_chain": "The photographer turned right after leaving the canteen.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-26",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0040",
+    "video_path": [
+      "023/023_0040.mp4"
+    ],
+    "question": "<023_0040.mp4>When did the photographer tie the shoelaces?",
+    "options": [
+      "A.00:52-01:01",
+      "B.01:33-01:46",
+      "C.02:01-02-10",
+      "D.02:01-02-10"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_170"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The photographer tied the shoelaces at 00:52-01:01 in the video.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0041",
+    "video_path": [
+      "023/023_0041.mp4"
+    ],
+    "question": "<023_0041.mp4>How many things were taken out from the bag in Burger King?",
+    "options": [
+      "A.2",
+      "B.3",
+      "C.4",
+      "D.5"
+    ],
+    "correct_options": "D",
+    "task_type": "event_counting",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_173",
+      "ev_174",
+      "ev_175",
+      "ev_176",
+      "ev_177"
+    ],
+    "evidence_spatial": [
+      "0041_obj_potato_chips_01",
+      "0041_obj_potato_chips_02",
+      "0041_obj_tissue_01",
+      "0041_obj_burger_01",
+      "0041_obj_ketchup_01"
+    ],
+    "reasoning_chain": "The photographer firstly took out a box of potato chips, then took out another box of potato chips, then took out tissues, then a burger and finally the ketchup.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0042",
+    "video_path": [
+      "023/023_0042.mp4"
+    ],
+    "question": "<023_0042.mp4>What is the location relationship between canteen_2 and supermarket?",
+    "options": [
+      "A.The two are far apart.",
+      "B.The two are right next to each other.",
+      "C.The two are facing each other across the road.",
+      "D.The two are in an up-down relationship."
+    ],
+    "correct_options": "B",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "supermarket_1",
+      "canteen_2"
+    ],
+    "reasoning_chain": "The canteen_2 and the supermarket are next to each other.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0043",
+    "video_path": [
+      "023/023_0043.mp4"
+    ],
+    "question": "<023_0043.mp4>How many red signboards are there on the first floor under the corridor bridge of the teaching building?",
+    "options": [
+      "A.5",
+      "B.6",
+      "C.7",
+      "D.8"
+    ],
+    "correct_options": "B",
+    "task_type": "object_counting_global",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "teaching_building_1",
+      "0043_obj_signboards_01"
+    ],
+    "reasoning_chain": "There are 6 red signboards on the first floor under the corridor bridge of the teaching building.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0044",
+    "video_path": [
+      "023/023_0044.mp4"
+    ],
+    "question": "<023_0044.mp4>Where was the photographer at 21:39 in the video?",
+    "options": [
+      "A.teaching building",
+      "B.canteen",
+      "C.laboratory",
+      "D.Burger King"
+    ],
+    "correct_options": "B",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "canteen_2"
+    ],
+    "reasoning_chain": "The photographer was in a canteen at 21:39",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0045",
+    "video_path": [
+      "023/023_0045.mp4"
+    ],
+    "question": "<023_0045.mp4>What color is the water bottle carried by the person walking ahead in his backpack between 04:23-04:45?",
+    "options": [
+      "A.white",
+      "B.black",
+      "C.yellow",
+      "D.pink"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "The water bottle carried by the person walking ahead in his backpack is white.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0045",
+    "video_path": [
+      "023/023_0045.mp4"
+    ],
+    "question": "<023_0045.mp4>Where did the photographer go after leaving the canteen?",
+    "options": [
+      "A.teaching building",
+      "B.dormitory",
+      "C.supermarket",
+      "D.canteen_1"
+    ],
+    "correct_options": "C",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_181",
+      "ev_182"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "He left the canteen and enter the supermarket.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0046",
+    "video_path": [
+      "023/023_0046.mp4"
+    ],
+    "question": "<023_0046.mp4>Where is the mop placed?",
+    "options": [
+      "A.bedroom",
+      "B.balcony",
+      "C.bathroom",
+      "D.None"
+    ],
+    "correct_options": "B",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "balcony_1",
+      "0046_obj_mop_01"
+    ],
+    "reasoning_chain": "The mop is placed in the balcony next to the sink.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0046",
+    "video_path": [
+      "023/023_0046.mp4"
+    ],
+    "question": "<023_0046.mp4>What are the steps for the photographer to clean the dormitory?",
+    "options": [
+      "A.Clean up the garbage -> Sweep the floor -> Put the garbage outside the bedroom door -> Wash the mop -> Mop the bedroom floor -> Wash the mop again -> Mop the balcony floor -> Wash the mop again -> Clean the bathroom -> Go downstairs and throw the garbage away",
+      "B.Clean up the garbage -> Put the garbage outside the bedroom door -> Sweep the floor -> Wash the mop -> Mop the balcony floor -> Wash the mop again -> Mop the bedroom floor -> Wash the mop again -> Clean the bathroom -> Go downstairs and throw the garbage away",
+      "C.Clean up the garbage -> Sweep the floor -> Put the garbage outside the bedroom door -> Go downstairs and throw the garbage away -> Wash the mop -> Mop the bedroom floor -> Wash the mop again -> Mop the balcony floor -> Wash the mop again -> Clean the bathroom",
+      "D.Clean up the garbage -> Sweep the floor -> Clean the bathroom -> Put the garbage outside the bedroom door -> Wash the mop -> Mop the balcony floor -> Wash the mop again -> Mop the bedroom floor -> Wash the mop again -> Go downstairs and throw the garbage away"
+    ],
+    "correct_options": "A",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_183",
+      "ev_184",
+      "ev_185",
+      "ev_186",
+      "ev_187",
+      "ev_188",
+      "ev_189",
+      "ev_190",
+      "ev_191",
+      "ev_192"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The photographer cleaned up the garbage at first, then swept the floor, and put the garbage outside the bedroom door. After that he washed the mop and mopped the bedroom floor, then washed the mop again and mopped the balcony floor, then washed the mop for the last time. After mopping he cleaned the bathroom, and finally went downstairs and threw the garbage away",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0047",
+    "video_path": [
+      "023/023_0047.mp4"
+    ],
+    "question": "<023_0047.mp4>At 03:56 of the video, where is the blue signboard  relative to the red sign on the opposite side of the road?",
+    "options": [
+      "A.The blue signboard is below the red signboard",
+      "B.The blue signboard is above the red signboard",
+      "C.The blue signboard is to the right of the red signboard",
+      "D.The blue signboard is to the left of the red signboard."
+    ],
+    "correct_options": "D",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0047_obj_blue_signboard_01",
+      "0047_obj_red_signboard_01"
+    ],
+    "reasoning_chain": "The blue signboard is to the left of the red signboard.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0048",
+    "video_path": [
+      "023/023_0048.mp4"
+    ],
+    "question": "<023_0048.mp4>What color is the photographer's cap?",
+    "options": [
+      "A.White",
+      "B.Black",
+      "C.Red",
+      "D.Blue"
+    ],
+    "correct_options": "A",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "The photographer wears a white cap in the mirror at the beginning of the video.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0048",
+    "video_path": [
+      "023/023_0048.mp4"
+    ],
+    "question": "<023_0048.mp4>Which floor is the classroom located on at the end of the video?",
+    "options": [
+      "A.1st",
+      "B.2nd",
+      "C.3rd",
+      "D.4th"
+    ],
+    "correct_options": "C",
+    "task_type": "cross_view_spatial_reasoning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "teaching_building_1",
+      "classroom_tb1_2"
+    ],
+    "reasoning_chain": "The classroom is on the third floor because the photographer went up two floors from the first floor and then turned right to reach the classroom.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0049",
+    "video_path": [
+      "023/023_0049.mp4"
+    ],
+    "question": "<023_0049.mp4>Which direction did the photographer take when approaching the forked road?",
+    "options": [
+      "A.Left",
+      "B.Right",
+      "C.None",
+      "D.None"
+    ],
+    "correct_options": "B",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "park_1"
+    ],
+    "reasoning_chain": "The photographer turned right at the forked road",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-03-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0050",
+    "video_path": [
+      "023/023_0050.mp4"
+    ],
+    "question": "<023_0050.mp4>Where is the photographer at 08:22 in the video?",
+    "options": [
+      "A.classroom",
+      "B.laboratory",
+      "C.bedroom",
+      "D.canteen"
+    ],
+    "correct_options": "A",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "classroom_tb2_2"
+    ],
+    "reasoning_chain": "The photographer was in a classroom at 08:22 in the video.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-03-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0047",
+    "video_path": [
+      "023/023_0007.mp4",
+      "023/023_0039.mp4",
+      "023/023_0044.mp4",
+      "023/023_0047.mp4"
+    ],
+    "question": "<023_0007.mp4><023_0039.mp4><023_0044.mp4><023_0047.mp4>What does the photographer usually drink while having a meal?",
+    "options": [
+      "A.water",
+      "B.milk",
+      "C.soy milk",
+      "D.coke"
+    ],
+    "correct_options": "C",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_41",
+      "ev_168",
+      "ev_180",
+      "ev_194"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The photographer usually drink soy milk when having a meal.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-03-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "023",
+    "video_id": "023_0047",
+    "video_path": [
+      "023/023_0035.mp4",
+      "023/023_0037.mp4",
+      "023/023_0039.mp4",
+      "023/023_0041.mp4",
+      "023/023_0042.mp4",
+      "023/023_0044.mp4",
+      "023/023_0047.mp4"
+    ],
+    "question": "<023_0035.mp4><023_0037.mp4><023_0039.mp4><023_0041.mp4><023_0042.mp4><023_0044.mp4><023_0047.mp4>What does the photographer usually do when going down the stairs in the dormitory?",
+    "options": [
+      "A.Just walking",
+      "B.Watching the phone",
+      "C.Reading a book",
+      "D.Chat with partners"
+    ],
+    "correct_options": "B",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_143",
+      "ev_161",
+      "ev_166",
+      "ev_171",
+      "ev_178",
+      "ev_179",
+      "ev_193"
+    ],
+    "evidence_spatial": [
+      "dormitory_1"
+    ],
+    "reasoning_chain": "The photographer usually watching the phone while going down the stairs in dormitory.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-03-01",
+      "qc_status": "accepted"
+    }
+  }
+]

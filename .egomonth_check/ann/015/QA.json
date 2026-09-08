@@ -1,0 +1,1511 @@
+[
+  {
+    "sample_id": "015",
+    "video_id": "015_0001",
+    "video_path": [
+      "015/015_0001.mp4"
+    ],
+    "question": "<015_0001.mp4>How many dishes did this person make",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.4"
+    ],
+    "correct_options": "C",
+    "task_type": "object_counting_global",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_02",
+      "ev_03",
+      "ev_23",
+      "ev_24",
+      "ev_29",
+      "ev_30"
+    ],
+    "evidence_spatial": [
+      "0001_obj_bigbowl_01",
+      "0001_obj_plate_01",
+      "0001_obj_plate_02"
+    ],
+    "reasoning_chain": "This person made three dishes",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-21T20:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0001",
+    "video_path": [
+      "015/015_0001.mp4"
+    ],
+    "question": "<015_0001.mp4>At what point in the video was this person in the living room",
+    "options": [
+      "A.00:59",
+      "B.07:14",
+      "C.16:32",
+      "D.23:14"
+    ],
+    "correct_options": "D",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "This person was in the living room at 23:14",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-21T20:15:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0001",
+    "video_path": [
+      "015/015_0001.mp4"
+    ],
+    "question": "<015_0001.mp4> What is this person doing while cooking",
+    "options": [
+      "A.Watching TV series",
+      "B.Listening to music",
+      "C.Chatting with others",
+      "D.Browse TikTok"
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0001_obj_ipad_01"
+    ],
+    "reasoning_chain": "A TV series is playing on the ipad",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-22T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0001",
+    "video_path": [
+      "015/015_0001.mp4"
+    ],
+    "question": "<015_0001.mp4> Where is the dishsoap placed in this video",
+    "options": [
+      "A.On the left of the sink",
+      "B.Behind the sink",
+      "C.On the platform in front of the kitchen",
+      "D.On the right of the sink"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0001_obj_dishsoap_01"
+    ],
+    "reasoning_chain": "The dishsoap is on the left side of the sink",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-22T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0001",
+    "video_path": [
+      "015/015_0001.mp4"
+    ],
+    "question": "<015_0001.mp4> When was the first time this person used a water dispenser to get water",
+    "options": [
+      "A.00:21",
+      "B.04:50",
+      "C.09:36",
+      "D.12:14"
+    ],
+    "correct_options": "B",
+    "task_type": "temporal_ordering",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_11"
+    ],
+    "evidence_spatial": [
+      "0001_obj_smallbowl_01",
+      "0001_obj_waterdispenser_01"
+    ],
+    "reasoning_chain": "This person first used the water dispenser to get water at 4:50",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-23T22:30:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0001",
+    "video_path": [
+      "015/015_0001.mp4"
+    ],
+    "question": "<015_0001.mp4>How many times did this person fill the bowl with water from the water dispenser while stir-frying eggplant",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.4"
+    ],
+    "correct_options": "C",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_11",
+      "ev_13",
+      "ev_15"
+    ],
+    "evidence_spatial": [
+      "0001_obj_smallbowl_01",
+      "0001_obj_waterdispenser_01"
+    ],
+    "reasoning_chain": "The waiter added the condiments twice initially, and then added them twice more at the customer's request",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-23T22:30:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0001",
+    "video_path": [
+      "015/015_0001.mp4"
+    ],
+    "question": "<015_0001.mp4> Where is the water dispenser placed in this video",
+    "options": [
+      "A.On the left of the sink",
+      "B.On the platform behind the kitchen",
+      "C.On the platform in front of the kitchen",
+      "D.On the right of the sink"
+    ],
+    "correct_options": "B",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0001_obj_waterdispenser_01"
+    ],
+    "reasoning_chain": "The water dispenser was placed on the platform behind the kitchen",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T10:30:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0001",
+    "video_path": [
+      "015/015_0001.mp4"
+    ],
+    "question": "<015_0001.mp4>Which cooking order is correct",
+    "options": [
+      "A.Stir-fry lettuce->Stir-fry minced meat and tofu->Stir-fry eggplant with minced meat",
+      "B.Stir-fry eggplant with minced meat->Stir-fry minced meat and tofu->Stir-fry lettuce",
+      "C.Stir-fry minced meat and tofu->Stir-fry eggplant with minced meat->Stir-fry lettuce",
+      "D.Stir-fry eggplant with minced meat->Stir-fry lettuce->Stir-fry minced meat and tofu"
+    ],
+    "correct_options": "C",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_02",
+      "ev_03",
+      "ev_23",
+      "ev_24",
+      "ev_29",
+      "ev_30"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The whole process involved first stir-frying minced meat and tofu,stir-frying eggplant with minced meat, and then stir-frying lettuce",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0001",
+    "video_path": [
+      "015/015_0001.mp4"
+    ],
+    "question": "<015_0001.mp4>At the very beginning of the video, where is this person",
+    "options": [
+      "A.washroom",
+      "B.bedroom",
+      "C.livingroom",
+      "D.kitchen"
+    ],
+    "correct_options": "D",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "The video begins with stove and cutting board",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0001",
+    "video_path": [
+      "015/015_0001.mp4"
+    ],
+    "question": "<015_0001.mp4>What are this person's cooking habits",
+    "options": [
+      "A.Make sure everything is prepared before cooking, leaving no room for oversight",
+      "B.Make some preparations before cooking, but not all",
+      "C.Only basic preparations were made and many things were not considered",
+      "D.Without any planning and in a chaotic state when cooking"
+    ],
+    "correct_options": "B",
+    "task_type": "personality_inference",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_01",
+      "ev_08",
+      "ev_21",
+      "ev_28"
+    ],
+    "evidence_spatial": [
+      "0001_obj_cuttingboard_01",
+      "0001_obj_chili_01"
+    ],
+    "reasoning_chain": "The scallions, garlic, and eggplant were neatly chopped on the cutting board before cooking, but forgot to prepare the chili",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0001",
+    "video_path": [
+      "015/015_0001.mp4"
+    ],
+    "question": "<015_0001.mp4>What personality traits does the person who cooks have",
+    "options": [
+      "A.meticulous and thoughtful",
+      "B.rough and careless",
+      "C.None",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "personality_inference",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "This person is very organized when cooking",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0001",
+    "video_path": [
+      "015/015_0001.mp4"
+    ],
+    "question": "<015_0001.mp4>What is the woman in the living room doing",
+    "options": [
+      "A.Watch video",
+      "B.Play computer games",
+      "C.Do homework",
+      "D.Clean the living room"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0001_obj_monitor_01"
+    ],
+    "reasoning_chain": "The woman sat at the table looking at a monitor that was playing a video",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0002",
+    "video_path": [
+      "015/015_0002.mp4"
+    ],
+    "question": "<015_0002.mp4>What is the person using",
+    "options": [
+      "A.phone",
+      "B.computer",
+      "C.pen",
+      "D.book"
+    ],
+    "correct_options": "B",
+    "task_type": "detail_retrieval",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_33"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0003",
+    "video_path": [
+      "015/015_0003.mp4"
+    ],
+    "question": "<015_0003.mp4>How to walk from the corridor to the counter?",
+    "options": [
+      "A.Walk to the first corner, turn left and go straight. Then turn left at the second corner and walk straight to the counter.",
+      "B.Walk to the first corner, turn right and go straight. Then turn left at the second corner and walk straight to the counter.",
+      "C.Walk to the first corner, turn left and go straight. Then turn right at the second corner and walk straight to the counter.",
+      "D.Walk to the first corner, turn right and go straight. Then turn right at the second corner and walk straight to the counter."
+    ],
+    "correct_options": "B",
+    "task_type": "route_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_35"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0003",
+    "video_path": [
+      "015/015_0003.mp4"
+    ],
+    "question": "<015_0003.mp4>Where are the electronic devices placed?",
+    "options": [
+      "A.on the floor",
+      "B.on the desk",
+      "C.on the chair",
+      "D.on the bed"
+    ],
+    "correct_options": "B",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0009",
+    "video_path": [
+      "015/015_0009.mp4",
+      "015/015_0010.mp4"
+    ],
+    "question": "<015_0009.mp4>Does this person have the habit of taking medicine?",
+    "options": [
+      "A.No",
+      "B.Not sure",
+      "C.Yes",
+      "D.None"
+    ],
+    "correct_options": "C",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_53",
+      "ev_54"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0007",
+    "video_path": [
+      "015/015_0007.mp4",
+      "015/015_0008.mp4",
+      "015/015_0009.mp4",
+      "015/015_0010.mp4"
+    ],
+    "question": "<015_0007.mp4>Does this person love playing with the phone?",
+    "options": [
+      "A.Yes",
+      "B.Not",
+      "C.Not sure",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "personality_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_40",
+      "ev_43",
+      "ev_44",
+      "ev_50"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0010",
+    "video_path": [
+      "015/015_0010.mp4"
+    ],
+    "question": "<015_0010.mp4>What is the positional relationship between the bedroom and the living room.",
+    "options": [
+      "A.go straight when out of the bedroom to go to the living room",
+      "B.go back when out of the bedroom to go to the living room.",
+      "C.Turn left when out of the bedroom to go to the living room.",
+      "D.Turn right when out of the bedroom to go to the living room."
+    ],
+    "correct_options": "C",
+    "task_type": "cross_view_spatial_reasoning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0009",
+    "video_path": [
+      "015/015_0009.mp4"
+    ],
+    "question": "<015_0009.mp4>How many packs of tissue paper are there in the bathroom?",
+    "options": [
+      "A.Four",
+      "B.One",
+      "C.Three",
+      "D.Two"
+    ],
+    "correct_options": "D",
+    "task_type": "object_counting_global",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_52"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0009",
+    "video_path": [
+      "015/015_0009.mp4"
+    ],
+    "question": "<015_0009.mp4>How many pairs of socks were washed?",
+    "options": [
+      "A.Four",
+      "B.One",
+      "C.Three",
+      "D.Two"
+    ],
+    "correct_options": "A",
+    "task_type": "object_counting_global",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_51"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0009",
+    "video_path": [
+      "015/015_0009.mp4"
+    ],
+    "question": "<015_0009.mp4>What is the positional relationship between the washing machine and the living room?",
+    "options": [
+      "A.Walk through the living room, and the washing machine is in the room on the left.",
+      "B.Walk through the living room, and the washing machine is in the room on the right.",
+      "C.Walk through the living room, and the washing machine is in the room on the front.",
+      "D.There is no washing machine."
+    ],
+    "correct_options": "B",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0009",
+    "video_path": [
+      "015/015_0009.mp4"
+    ],
+    "question": "<015_0009.mp4>What is the person's order of doing laundry?",
+    "options": [
+      "A.Pour in the laundry detergent, Put the clothes in, Hang up the clothes",
+      "B.Pour in the laundry detergent, Hang up the clothes, Put the clothes in",
+      "C.Hang up the clothes, Put the clothes in, Pour in the laundry detergent",
+      "D.Put the clothes in, Pour in the laundry detergent, Hang up the clothes"
+    ],
+    "correct_options": "D",
+    "task_type": "procedure_planning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0008",
+    "video_path": [
+      "015/015_0008.mp4"
+    ],
+    "question": "<015_0008.mp4>What color is the bus this people take?",
+    "options": [
+      "A.Red",
+      "B.Green",
+      "C.Blue",
+      "D.Yellow"
+    ],
+    "correct_options": "B",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0008",
+    "video_path": [
+      "015/015_0008.mp4"
+    ],
+    "question": "<015_0008.mp4>How do I get to the bus stop from the gate?",
+    "options": [
+      "A.Turn right when you come out of the gate, turn right at the first intersection, then turn left.",
+      "B.Turn left when you come out of the gate, turn left at the first intersection, then turn left.",
+      "C.Turn right when you come out of the gate, turn left at the first intersection, then turn left.",
+      "D.Turn left when you come out of the gate, turn right at the first intersection, then turn left."
+    ],
+    "correct_options": "D",
+    "task_type": "route_reasoning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0008",
+    "video_path": [
+      "015/015_0008.mp4"
+    ],
+    "question": "<015_0008.mp4>How do I get to the gate from the classroom?",
+    "options": [
+      "A.Turn right when you come out of the classroom and go straight to the end. Turn right, turn left at the first corner, then go straight. The gate is on the right.",
+      "B.Turn left when you come out of the classroom and go straight to the end. Turn right, turn left at the first corner, then go straight. The gate is on the right.",
+      "C.Turn left when you come out of the classroom and go straight to the end. Turn left, turn left at the first corner, then go straight. The gate is on the right.",
+      "D.Turn right when you come out of the classroom and go straight to the end. Turn left, turn right at the first corner, then go straight. The gate is on the right."
+    ],
+    "correct_options": "A",
+    "task_type": "route_reasoning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0008",
+    "video_path": [
+      "015/015_0008.mp4"
+    ],
+    "question": "<015_0008.mp4>Which row is the person sitting in the classroom?",
+    "options": [
+      "A.One.",
+      "B.Two",
+      "C.Three",
+      "D.Four"
+    ],
+    "correct_options": "B",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0008",
+    "video_path": [
+      "015/015_0008.mp4"
+    ],
+    "question": "<015_0008.mp4>How do I get to the restroom from the classroom?",
+    "options": [
+      "A.Turn left, go straight, and the restroom is on the left.",
+      "B.Turn right, go straight, and the restroom is on the left.",
+      "C.Turn right, go straight, and the restroom is on the right.",
+      "D.Turn left, go straight, and the restroom is on the right."
+    ],
+    "correct_options": "C",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0007",
+    "video_path": [
+      "015/015_0007.mp4"
+    ],
+    "question": "<015_0007.mp4>Where is the person? in the 6:00 of the video?",
+    "options": [
+      "A.Living rooom",
+      "B.Classroom",
+      "C.Street.",
+      "D.Washroom"
+    ],
+    "correct_options": "C",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0007",
+    "video_path": [
+      "015/015_0007.mp4"
+    ],
+    "question": "<015_0007.mp4>What is the order of eating and shopping?",
+    "options": [
+      "A.Eating first, then shopping",
+      "B.Shopping first, then eating",
+      "C.Not sure",
+      "D.None"
+    ],
+    "correct_options": "B",
+    "task_type": "temporal_ordering",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0006",
+    "video_path": [
+      "015/015_0006.mp4"
+    ],
+    "question": "<015_0006.mp4>Which direction is the counter from the table?",
+    "options": [
+      "A.Turn around from the table, and you’ll face the counter.",
+      "B.Turn left from the table, and you’ll face the counter.",
+      "C.Turn right from the table, and you’ll face the counter.",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0005",
+    "video_path": [
+      "015/015_0005.mp4"
+    ],
+    "question": "<015_0005.mp4>What is the positional relationship between the bedroom and the living room?",
+    "options": [
+      "A.Go back from the bedroom and you’ll get to the living room.",
+      "B.Go straight from the bedroom and you’ll get to the living room.",
+      "C.Turn left from the bedroom and you’ll get to the living room.",
+      "D.Turn right from the bedroom and you’ll get to the living room."
+    ],
+    "correct_options": "D",
+    "task_type": "cross_view_spatial_reasoning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0005",
+    "video_path": [
+      "015/015_0005.mp4"
+    ],
+    "question": "<015_0005.mp4>Where is the computer?",
+    "options": [
+      "A.It's on the table in the living room.",
+      "B.It's on the table in the bedroom.",
+      "C.It's on the bed in the bedroom.",
+      "D.It's on the sofa in the living room."
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0004",
+    "video_path": [
+      "015/015_0004.mp4"
+    ],
+    "question": "<015_0004.mp4>What is the person's order of cooking?",
+    "options": [
+      "A.cut vegetables → scrambled eggs → stir-fry vegetables",
+      "B.stir-fry vegetables → cut vegetables → scrambled eggs",
+      "C.scrambled eggs → stir-fry vegetables → cut vegetables",
+      "D.scrambled eggs → cut vegetables → stir-fry vegetables"
+    ],
+    "correct_options": "D",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0004",
+    "video_path": [
+      "015/015_0004.mp4"
+    ],
+    "question": "<015_0004.mp4>Where is the water tap located relative to the stove?",
+    "options": [
+      "A.There is no water-filling area.",
+      "B.The water-filling area is on the right side of the stove.",
+      "C.The water-filling area is on the left side of the stove.",
+      "D.The water-filling area is on the back side of the stove."
+    ],
+    "correct_options": "B",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0004",
+    "video_path": [
+      "015/015_0004.mp4"
+    ],
+    "question": "<015_0004.mp4>When is the person cooking noodles?",
+    "options": [
+      "A.22:50",
+      "B.25:50",
+      "C.37:00",
+      "D.15:00"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0004",
+    "video_path": [
+      "015/015_0004.mp4"
+    ],
+    "question": "<015_0004.mp4>When is the person picking up a package",
+    "options": [
+      "A.22:50",
+      "B.25:50",
+      "C.37:00",
+      "D.15:00"
+    ],
+    "correct_options": "B",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0011",
+    "video_path": [
+      "015/015_0011.mp4"
+    ],
+    "question": "<015_0011.mp4>What is the order of this person's actions?",
+    "options": [
+      "A.Playing on the phone all the time.",
+      "B.Play on the phone first, then open the package.",
+      "C.Open the package first, then play on the phone.",
+      "D.Opening the package all the time"
+    ],
+    "correct_options": "C",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0012",
+    "video_path": [
+      "015/015_0012.mp4"
+    ],
+    "question": "<015_0012.mp4>What is the order of this person eating?",
+    "options": [
+      "A.Eat the biscuits first, then drink the milk.",
+      "B.Drink the milk first, then eat the biscuits.",
+      "C.Only eat biscuits.",
+      "D.Only drink milk."
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_62"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0012",
+    "video_path": [
+      "015/015_0002.mp4",
+      "015/015_0006.mp4",
+      "015/015_0011.mp4",
+      "015/015_0012.mp4",
+      "015/015_0013.mp4"
+    ],
+    "question": "<015_0012.mp4>Does this person have a habit of working on a computer?",
+    "options": [
+      "A.Yes",
+      "B.No",
+      "C.Not sure",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_34",
+      "ev_41",
+      "ev_60",
+      "ev_61"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0016",
+    "video_path": [
+      "015/015_0018.mp4",
+      "015/015_0016.mp4",
+      "015/015_0019.mp4"
+    ],
+    "question": "<015_0018.mp4>What is the means of transportation this person often uses?",
+    "options": [
+      "A.bus",
+      "B.car",
+      "C.electric bike.",
+      "D.taxi"
+    ],
+    "correct_options": "C",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0021",
+    "video_path": [
+      "015/015_0021.mp4"
+    ],
+    "question": "<015_0021.mp4>Where is this person in the video?",
+    "options": [
+      "A.in the restaurant",
+      "B.in the car",
+      "C.on the electric bike.",
+      "D.in the livingroom"
+    ],
+    "correct_options": "B",
+    "task_type": "self_localization",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0020",
+    "video_path": [
+      "015/015_0020.mp4"
+    ],
+    "question": "<015_0020.mp4>Where is this person in the 10:00 of video?",
+    "options": [
+      "A.in the car",
+      "B.in the classroom",
+      "C.on the electric bike.",
+      "D.in the livingroom"
+    ],
+    "correct_options": "A",
+    "task_type": "self_localization",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0019",
+    "video_path": [
+      "015/015_0019.mp4"
+    ],
+    "question": "<015_0019.mp4>Which way should I turn after entering this building to buy vegetables?",
+    "options": [
+      "A.go back",
+      "B.go straight",
+      "C.turn right",
+      "D.turn left"
+    ],
+    "correct_options": "D",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0019",
+    "video_path": [
+      "015/015_0019.mp4"
+    ],
+    "question": "<015_0019.mp4>What is the order of purchase?",
+    "options": [
+      "A.Buy meat first, then vegetables, and finally tableware.",
+      "B.Buy vegetables first, then meat, and finally tableware.",
+      "C.Buy tableware first, then meat, and finally vegetables.",
+      "D.Buy vegetables first, then tableware, and finally meat."
+    ],
+    "correct_options": "B",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0019",
+    "video_path": [
+      "015/015_0019.mp4"
+    ],
+    "question": "<015_0019.mp4>What is the order of purchase?",
+    "options": [
+      "A.Buy meat first, then vegetables, and finally tableware.",
+      "B.Buy vegetables first, then meat, and finally tableware.",
+      "C.Buy tableware first, then meat, and finally vegetables.",
+      "D.Buy vegetables first, then tableware, and finally meat."
+    ],
+    "correct_options": "B",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0019",
+    "video_path": [
+      "015/015_0019.mp4"
+    ],
+    "question": "<015_0019.mp4>What is the order of buying vegetables and picking up the package?",
+    "options": [
+      "A.Buy vegetables first, then pick up the package.",
+      "B.Buy the package first, then buy vegetables.",
+      "C.Only bought vegetables.",
+      "D.Only picked up the package."
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0019",
+    "video_path": [
+      "015/015_0019.mp4"
+    ],
+    "question": "<015_0019.mp4>What is the order of buying vegetables and picking up the package?",
+    "options": [
+      "A.Buy vegetables first, then pick up the package.",
+      "B.Buy the package first, then buy vegetables.",
+      "C.Only bought vegetables.",
+      "D.Only picked up the package."
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0014",
+    "video_path": [
+      "015/015_0014.mp4"
+    ],
+    "question": "<015_0014.mp4>Where is this person?",
+    "options": [
+      "A.in the car",
+      "B.in the livingroom",
+      "C.in the shop",
+      "D.in the restaurant"
+    ],
+    "correct_options": "D",
+    "task_type": "self_localization",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0015",
+    "video_path": [
+      "015/015_0015.mp4"
+    ],
+    "question": "<015_0015.mp4>Where is this person?",
+    "options": [
+      "A.in the car",
+      "B.in the livingroom",
+      "C.in the shop",
+      "D.in the restaurant"
+    ],
+    "correct_options": "C",
+    "task_type": "self_localization",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0014",
+    "video_path": [
+      "015/015_0014.mp4"
+    ],
+    "question": "<015_0014.mp4>What's the maximum number of cups on the dining table?",
+    "options": [
+      "A.one",
+      "B.two",
+      "C.three",
+      "D.four"
+    ],
+    "correct_options": "C",
+    "task_type": "object_counting_global",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0015",
+    "video_path": [
+      "015/015_0015.mp4"
+    ],
+    "question": "<015_0015.mp4>Which supermarket is this person shopping at?",
+    "options": [
+      "A.Walmart.",
+      "B.Costco",
+      "C.Sam's Club",
+      "D.IKEA"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0015",
+    "video_path": [
+      "015/015_0015.mp4"
+    ],
+    "question": "<015_0015.mp4>What's in the shopping cart at the end?",
+    "options": [
+      "A.Four items and one piece of clothing.",
+      "B.Four items",
+      "C.Two items and one piece of clothing.",
+      "D.Two items and one piece of clothing."
+    ],
+    "correct_options": "A",
+    "task_type": "object_counting_global",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0015",
+    "video_path": [
+      "015/015_0017.mp4"
+    ],
+    "question": "<015_0017.mp4>Where is this person?",
+    "options": [
+      "A.in the car",
+      "B.in the livingroom",
+      "C.in the shop",
+      "D.in the restaurant"
+    ],
+    "correct_options": "D",
+    "task_type": "self_localization",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0018",
+    "video_path": [
+      "015/015_0018.mp4"
+    ],
+    "question": "<015_0018.mp4>Which floor is the electric bike parked on?",
+    "options": [
+      "A.One",
+      "B.Two",
+      "C.Three",
+      "D.Four"
+    ],
+    "correct_options": "B",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "015",
+    "video_id": "015_0018",
+    "video_path": [
+      "015/015_0018.mp4"
+    ],
+    "question": "<015_0018.mp4>After riding the electric bike, which side this person park it on?",
+    "options": [
+      "A.left",
+      "B.right",
+      "C.Not sure",
+      "D.None"
+    ],
+    "correct_options": "B",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  }
+]

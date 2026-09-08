@@ -1,0 +1,1441 @@
+[
+  {
+    "sample_id": "011",
+    "video_id": "011_0001",
+    "video_path": [
+      "011/011_0001.mp4"
+    ],
+    "question": "<011_0001.mp4>where is the mirror",
+    "options": [
+      "A.in the office",
+      "B.in the classroom",
+      "C.in the stairwell",
+      "D.in the swimming pool"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0011_obj_mirror_1"
+    ],
+    "reasoning_chain": "Mirror is on the desk, which is in the office",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0001",
+    "video_path": [
+      "011/011_0001.mp4"
+    ],
+    "question": "<011_0001.mp4> When to start organizing the schoolbag",
+    "options": [
+      "A.0:34",
+      "B.0:53",
+      "C.1:10",
+      "D.5:50"
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_04"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Start organizing the schoolbag at 0:34",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0001",
+    "video_path": [
+      "011/011_0001.mp4"
+    ],
+    "question": "<011_0001.mp4> At 1:37 in this video, where is the person?",
+    "options": [
+      "A.In the office.",
+      "B.In the classroom.",
+      "C.In the stairwell.",
+      "D.In the corridor."
+    ],
+    "correct_options": "C",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_07"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Walk down the stairs in the stairwell from 1:32 to 2:42",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0001",
+    "video_path": [
+      "011/011_0001.mp4"
+    ],
+    "question": "<011_0001.mp4> In the video from 0:29 to 0:59, does the character take out the umbrella first or put on the backpack first?",
+    "options": [
+      "A.Take out the umbrella first.",
+      "B.Put on the backpack first.",
+      "C.None",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_03",
+      "ev_04"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person takes out the umbrella at 0:30 and puts on the backpack at about 0:50",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0001",
+    "video_path": [
+      "011/011_0001.mp4"
+    ],
+    "question": "<011_0001.mp4>What color is the rubbish bin beside the pillar?",
+    "options": [
+      "A.Green",
+      "B.Red",
+      "C.Blue",
+      "D.Black"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0011_obj_rubbish_bin_2"
+    ],
+    "reasoning_chain": "7:42 the rubbish bin beside the pillar is blue.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0001",
+    "video_path": [
+      "011/011_0001.mp4"
+    ],
+    "question": "<011_0001.mp4>How many umbrellas are there in the stairwell in building_1?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.4"
+    ],
+    "correct_options": "A",
+    "task_type": "object_counting_global",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0011_obj_umbrella_2"
+    ],
+    "reasoning_chain": "There is one umbrella in the stairwell in building_1.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0001",
+    "video_path": [
+      "011/011_0001.mp4"
+    ],
+    "question": "<011_0001.mp4>What is the order of the following actions performed by the user",
+    "options": [
+      "A.take out an umbrella -> grab a phone -> walk along the road -> walk upstairs",
+      "B.put an iPad into a schoolbag -> take out employee badges -> look into the mirror",
+      "C.walk out of the office -> grab an umbrella -> walk along the road -> walk into the classroom",
+      "D.walk into the classroom -> put on a backpack -> walk along the road -> walk into the office"
+    ],
+    "correct_options": "B",
+    "task_type": "route_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_01",
+      "ev_02",
+      "ev_03",
+      "ev_05",
+      "ev_06",
+      "ev_07",
+      "ev_08",
+      "ev_09"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The user first put an iPad into a schoolbag, then took out employee badges, and finally looked into the mirror.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0001",
+    "video_path": [
+      "011/011_0001.mp4"
+    ],
+    "question": "<011_0001.mp4> How to reach the yellow shared bicycles from the swimming pool?",
+    "options": [
+      "A.Through road_1 only.",
+      "B.Through road_2 only.",
+      "C.Through road_2 and road_3.",
+      "D.Through road_3 only."
+    ],
+    "correct_options": "A",
+    "task_type": "route_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "road_1",
+      "swimming_pool_1",
+      "0011_obj_bicycle_1"
+    ],
+    "reasoning_chain": "The swimming pool and the yellow shared bicycles are both adjacent to road_1.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0002",
+    "video_path": [
+      "011/011_0002.mp4"
+    ],
+    "question": "<011_0002.mp4> What is the user doing at 5:58?",
+    "options": [
+      "A.Looking at the laptop.",
+      "B.Talking with the teacher.",
+      "C.Talking on the phone.",
+      "D.Looking at the phone."
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_10",
+      "ev_11",
+      "ev_12"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The user looks at the laptop from 3:26 to 6:11, which includes 5:58.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0005",
+    "video_path": [
+      "011/011_0005.mp4"
+    ],
+    "question": "<011_0005.mp4> How many floors do you need to climb from the gray trash can to the public restroom?",
+    "options": [
+      "A.1.",
+      "B.2.",
+      "C.3.",
+      "D.4."
+    ],
+    "correct_options": "A",
+    "task_type": "route_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0005_obj_rubbish_bin_1",
+      "public_restroom_1"
+    ],
+    "reasoning_chain": "From the gray trash can on the 3rd floor, you need to climb 1 floor to reach the public restroom on the 4th floor.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0006",
+    "video_path": [
+      "011/011_0006.mp4"
+    ],
+    "question": "<011_0006.mp4> What is the correct route from elevator_1 to office_3?",
+    "options": [
+      "A.elevator_1 -> road_4 -> balcony_1 -> office_3",
+      "B.elevator_1 -> corridor_2 -> office_2 -> office_3",
+      "C.elevator_1 -> road_4 -> road_1 -> office_3",
+      "D.elevator_1 -> corridor_2 -> public_restroom_1 -> office_3"
+    ],
+    "correct_options": "B",
+    "task_type": "route_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "elevator_1",
+      "corridor_2",
+      "office_2",
+      "office_3"
+    ],
+    "reasoning_chain": "From elevator_1, walk through corridor_2 to office_2, then reach office_3.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0006",
+    "video_path": [
+      "011/011_0006.mp4"
+    ],
+    "question": "<011_0006.mp4> What is the user doing at 16:03?",
+    "options": [
+      "A.Brushing teeth.",
+      "B.Working on a laptop.",
+      "C.Talking on the phone.",
+      "D.Riding on a bicycle."
+    ],
+    "correct_options": "D",
+    "task_type": "temporal_ordering",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_20"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The user is riding on a bicycle from 15:08 to 17:09.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0006",
+    "video_path": [
+      "011/011_0006.mp4"
+    ],
+    "question": "<011_0006.mp4> Where is the user at 4:00?",
+    "options": [
+      "A.In office_1.",
+      "B.In office_2.",
+      "C.In building_2.",
+      "D.On road_4."
+    ],
+    "correct_options": "A",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_18"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The user is organizing clothes and blankets at 4:00 in office_1.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0007",
+    "video_path": [
+      "011/011_0007.mp4"
+    ],
+    "question": "<011_0007.mp4> Where is the user at 12:50?",
+    "options": [
+      "A.On road_1.",
+      "B.In office_2.",
+      "C.On road_7.",
+      "D.In shopping_mall_1."
+    ],
+    "correct_options": "C",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_26"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The user is looking at the board on road_7 from 11:58 to 12:54.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0007",
+    "video_path": [
+      "011/011_0007.mp4"
+    ],
+    "question": "<011_0007.mp4> What is the user doing at 17:36?",
+    "options": [
+      "A.Choosing clothes.",
+      "B.Talking with some staff.",
+      "C.Talking with a teacher.",
+      "D.Organizing clothes and blankets."
+    ],
+    "correct_options": "B",
+    "task_type": "temporal_ordering",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_27"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The user is talking with some staff from 17:26 to 20:35.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0007",
+    "video_path": [
+      "011/011_0007.mp4"
+    ],
+    "question": "<011_0007.mp4>How many entrances may the underground passage beneath road_7 have?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.0"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "underground_passage_1"
+    ],
+    "reasoning_chain": "There are at least 3 entrances of the underground passage beneath road_7 visible in the video.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0007",
+    "video_path": [
+      "011/011_0007.mp4"
+    ],
+    "question": "<011_0007.mp4>What is the correct route from office_1 to school_gate_1?",
+    "options": [
+      "A.office_1 -> road_1 -> road_5 -> road_6 -> school_gate_1",
+      "B.office_1 -> road_2 -> road_5 -> road_6 -> school_gate_1",
+      "C.office_1 -> road_2 -> road_3 -> road_6 -> school_gate_1",
+      "D.office_1 -> road_1 -> road_3 -> road_6 -> school_gate_1"
+    ],
+    "correct_options": "A",
+    "task_type": "route_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "office_1",
+      "school_gate_1",
+      "road_1",
+      "road_5",
+      "road_6"
+    ],
+    "reasoning_chain": "0:00 to 9:00 in this video shows the route from office_1 to school_gate_1 via road_1, road_5, and road_6.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0008",
+    "video_path": [
+      "011/011_0008.mp4"
+    ],
+    "question": "<011_0008.mp4> What is the user doing at 0:55?",
+    "options": [
+      "A.Using the phone.",
+      "B.Searching for clothes.",
+      "C.Organizing clothes.",
+      "D.Putting the phone into the bag."
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_29"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The user is searching for a route on the phone from 0:35 to 1:01.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0009",
+    "video_path": [
+      "011/011_0009.mp4"
+    ],
+    "question": "<011_0009.mp4> What is the user doing at 0:55?",
+    "options": [
+      "A.Using the phone.",
+      "B.Putting away rubbish.",
+      "C.Walking to transfer to another metro line.",
+      "D.Waiting for a train."
+    ],
+    "correct_options": "C",
+    "task_type": "temporal_ordering",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_32"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The user is walking to transfer to another metro line from 0:20 to 2:04.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0010",
+    "video_path": [
+      "011/011_0010.mp4"
+    ],
+    "question": "<011_0010.mp4> Where is the user at 9:00?",
+    "options": [
+      "A.On road_1.",
+      "B.Inside a car.",
+      "C.In building_4.",
+      "D.In shopping_mall_1."
+    ],
+    "correct_options": "B",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_34"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The user is talking inside a car from 0:00 to 10:10.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0012",
+    "video_path": [
+      "011/011_0012.mp4"
+    ],
+    "question": "<011_0012.mp4> What is the user doing at 0:50?",
+    "options": [
+      "A.Walking.",
+      "B.Putting away rubbish.",
+      "C.Taking a train.",
+      "D.Waiting for a train."
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_37"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The user is walking from 0:20 to 8:41.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0013",
+    "video_path": [
+      "011/011_0001.mp4"
+    ],
+    "question": "<011_0001.mp4>What is the order of the following actions performed by the user",
+    "options": [
+      "A.organizing a bag -> thowing away rubbish -> riding a bicycle -> examining bottled water",
+      "B.arrived at the supermarket -> examining the bottled water -> typing on ipad -> riding back to the office",
+      "C.walking out of the office -> scanning a QR code -> thowing away rubbish -> writing something on the paper",
+      "D.perchasing bottled water -> riding on the bike -> drink the water -> examining the ipad"
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_38",
+      "ev_39",
+      "ev_40",
+      "ev_41",
+      "ev_42"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The user first organized a bag, the thowed away rubbish, then rode a bicycle to the supermarket, and finally examined bottled water in the supermarket.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0015",
+    "video_path": [
+      "011/011_0015.mp4"
+    ],
+    "question": "<011_0015.mp4> Which object may be in the user's hand at 01:29 in this video?",
+    "options": [
+      "A.A phone.",
+      "B.A bag.",
+      "C.A toothbrush.",
+      "D.A cup."
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0015_obj_phone_1"
+    ],
+    "reasoning_chain": "01:24 the user grabs the phone from the desk and takes it to the balcony at 01:42.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0015",
+    "video_path": [
+      "011/011_0015.mp4"
+    ],
+    "question": "<011_0015.mp4> What color is the window in the center of the computer screen at 21:31?",
+    "options": [
+      "A.Black and orange.",
+      "B.Mainly white.",
+      "C.Transparent.",
+      "D.Green and red."
+    ],
+    "correct_options": "B",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0015_obj_screen_1"
+    ],
+    "reasoning_chain": "21:31 the window in the center of the screen is white, but contains a green button.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0015",
+    "video_path": [
+      "011/011_0015.mp4"
+    ],
+    "question": "<011_0015.mp4> Where is the phone at 10:00?",
+    "options": [
+      "A.On the desk.",
+      "B.In the cup.",
+      "C.On the balcony.",
+      "D.On the ground."
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0015_obj_phone_1"
+    ],
+    "reasoning_chain": "10:00 The phone is placed on the desk.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0016",
+    "video_path": [
+      "011/011_0016.mp4"
+    ],
+    "question": "<011_0016.mp4> What is the room on the user's right at 13:36?",
+    "options": [
+      "A.A bank.",
+      "B.An office.",
+      "C.A shared bicycle renting room.",
+      "D.A classroom"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "13:36 the board on the right reads 'ICBC', which is a bank.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0016",
+    "video_path": [
+      "011/011_0016.mp4"
+    ],
+    "question": "<011_0016.mp4> 04:30 Are the books on the left of the bag or on the right?",
+    "options": [
+      "A.On the left.",
+      "B.On the right.",
+      "C.None",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0016_obj_bag_1"
+    ],
+    "reasoning_chain": "04:30 The books are on the right of the bag.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0017",
+    "video_path": [
+      "011/011_0017.mp4"
+    ],
+    "question": "<011_0017.mp4> 7:00 What is the color of the stairs?",
+    "options": [
+      "A.Totally white.",
+      "B.Black and white.",
+      "C.Red and white.",
+      "D.Red and black"
+    ],
+    "correct_options": "B",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "7:00 The stairs are black and white.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0018",
+    "video_path": [
+      "011/011_0018.mp4"
+    ],
+    "question": "<011_0018.mp4> Which exit did the user take to leave the subway station?",
+    "options": [
+      "A.Exit A.",
+      "B.Exit B.",
+      "C.Exit C.",
+      "D.Exit D."
+    ],
+    "correct_options": "D",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "At 1:50, the sign above the exit reads 'Exit D'; at 1:44, you can still see the letter D on the wall to the right of this exit.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0018",
+    "video_path": [
+      "011/011_0018.mp4"
+    ],
+    "question": "<011_0018.mp4> Which floor is the user on at 9:03?",
+    "options": [
+      "A.On the 1st floor.",
+      "B.On the 3rd floor.",
+      "C.On the 5th floor.",
+      "D.On the 7th floor."
+    ],
+    "correct_options": "D",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "At 8:40, the user pressed button 7 in the elevator; at 9:01 the user stepped out of the elevator, which is on the 7th floor.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0019",
+    "video_path": [
+      "011/011_0019.mp4"
+    ],
+    "question": "<011_0019.mp4> What color is the wallet taken out by the user at 4:39?",
+    "options": [
+      "A.Gray.",
+      "B.Black.",
+      "C.White.",
+      "D.Blue."
+    ],
+    "correct_options": "B",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "At 4:39 the user takes out a wallet and placed it on the desk, and the wallet is black.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2026-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0019",
+    "video_path": [
+      "011/011_0019.mp4"
+    ],
+    "question": "<011_0019.mp4> How many suitcases are there in the living room?",
+    "options": [
+      "A.1.",
+      "B.2.",
+      "C.3.",
+      "D.4."
+    ],
+    "correct_options": "B",
+    "task_type": "object_counting_global",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0019_obj_suitcase_1"
+    ],
+    "reasoning_chain": "Except for 0019_obj_suitcase_1, there is another suitcase in the livingroom, which appears at 06:43. So there are 2 suitcases in total in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2026-1-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0019",
+    "video_path": [
+      "011/011_0019.mp4"
+    ],
+    "question": "<011_0019.mp4> 15:14 What might the user be processing on the computer?",
+    "options": [
+      "A.Some videos.",
+      "B.Some documents.",
+      "C.Some music.",
+      "D.Some PowerPoint presentations."
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0019_obj_laptop_computer_1"
+    ],
+    "reasoning_chain": "15:14 the files appears on the screen contains some videos.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2026-1-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0020",
+    "video_path": [
+      "011/011_0020.mp4"
+    ],
+    "question": "<011_0020.mp4> How to go from office_2 to the elevator?",
+    "options": [
+      "A.First turn right then turn left, and go straight on.",
+      "B.Go straight and turn right.",
+      "C.First turn left then go straight.",
+      "D.Just go straight in the corridor."
+    ],
+    "correct_options": "A",
+    "task_type": "route_reasoning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "office_2"
+    ],
+    "reasoning_chain": "From 4:07 to 4:26, the user walked out of office_2, the turn right and turn left and walked stright on, and reached the elevator.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2026-1-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0021",
+    "video_path": [
+      "011/011_0021.mp4"
+    ],
+    "question": "<011_0021.mp4> Where is the user at 1:17?",
+    "options": [
+      "A.In the bedroom.",
+      "B.In the study.",
+      "C.In the living room.",
+      "D.In the kitchen."
+    ],
+    "correct_options": "C",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_63"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "At 1:17 in this video, the user is combing hair in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2026-1-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0021",
+    "video_path": [
+      "011/011_0021.mp4"
+    ],
+    "question": "<011_0021.mp4> Where is the hairbrush after finishing organizing the suitcase?",
+    "options": [
+      "A.In the suitcase.",
+      "B.In the black bag.",
+      "C.On the desk.",
+      "D.In the restroom."
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_64",
+      "ev_66"
+    ],
+    "evidence_spatial": [
+      "living_room_1",
+      "0021_obj_suitcase_1",
+      "0021_obj_hairbrush_1"
+    ],
+    "reasoning_chain": "From ev_66 we can infer that the hairbrush is finally put in the suitcase.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2026-1-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0022",
+    "video_path": [
+      "011/011_0022.mp4"
+    ],
+    "question": "<011_0022.mp4> What is the correct order of the following actions?",
+    "options": [
+      "A.Organizing the suitcase -> taking some notes -> taking things out of the leather bag.",
+      "B.Taking things out of the leather bag -> reading some notes -> watching videos on the ipad.",
+      "C.Organizing the suitcase -> taking things out of the leather bag -> reading a book.",
+      "D.Looking into the mirror -> taking things out of the suitcase -> placing the suitcase on the ground."
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_69",
+      "ev_70"
+    ],
+    "evidence_spatial": [
+      "0022_obj_leather_bag_1",
+      "0022_obj_suitcase_1",
+      "0022_obj_ipad_1",
+      "0022_obj_notebook_1"
+    ],
+    "reasoning_chain": "First the user organizes the suitcase until 1:00, then starts to read a book and take notes from 3:27 to 8:24, and finally takes things out of the leather bag.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2026-1-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0022",
+    "video_path": [
+      "011/011_0022.mp4"
+    ],
+    "question": "<011_0022.mp4> What is the color of the rubbish bin in 1:00?",
+    "options": [
+      "A.Red",
+      "B.Yellow",
+      "C.Blue",
+      "D.Black"
+    ],
+    "correct_options": "D",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "01:00 the rubbish bin placed on the ground is black.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2026-1-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0023",
+    "video_path": [
+      "011/011_0023.mp4"
+    ],
+    "question": "<011_0023.mp4> What is the user doing at 24:00?",
+    "options": [
+      "A.Walking on road_2",
+      "B.Riding a bicycle.",
+      "C.Working in front of a computer.",
+      "D.Talking on the phone."
+    ],
+    "correct_options": "B",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_71"
+    ],
+    "evidence_spatial": [
+      "0023_obj_shared_bicycle_1"
+    ],
+    "reasoning_chain": "The user rode on the shared bicycle at 23:30, so we can infer that at 24:00 the user is riding a bicycle.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2026-1-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0023",
+    "video_path": [
+      "011/011_0022.mp4",
+      "011/011_0023.mp4"
+    ],
+    "question": "<011_0022.mp4><011_0023.mp4> What does the user prefer to listen to while working in these videos?",
+    "options": [
+      "A.Some music.",
+      "B.Recent news.",
+      "C.Radio broadcast.",
+      "D.Podcasts."
+    ],
+    "correct_options": "B",
+    "task_type": "personality_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "In both videos, the user is listening to music while working.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2026-1-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0024",
+    "video_path": [
+      "011/011_0024.mp4"
+    ],
+    "question": "<011_0024.mp4>What sentence is written on the cup at 1:38?",
+    "options": [
+      "A.Today's good mood is sponsored by coffee.",
+      "B.Sweet mood is sponsored by coffee.",
+      "C.Today's mood is sponsored by sweet coffee.",
+      "D.Today's sweet mood is sponsored by good coffee."
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0024_obj_cup_1"
+    ],
+    "reasoning_chain": "1:38 the sentence on the cup is: 'Today's good mood is sponsored by coffee.' ",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2026-1-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0024",
+    "video_path": [
+      "011/011_0024.mp4"
+    ],
+    "question": "<011_0024.mp4>Where is the user at 20:00?",
+    "options": [
+      "A.At schoolgate_2.",
+      "B.At schoolgate_3.",
+      "C.At schoolgate_1.",
+      "D.On road_1."
+    ],
+    "correct_options": "B",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_76"
+    ],
+    "evidence_spatial": [
+      "school_gate_3"
+    ],
+    "reasoning_chain": "The user is registering at school_gate_3 from 19:41 to 20:26.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2026-1-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0025",
+    "video_path": [
+      "011/011_0025.mp4"
+    ],
+    "question": "<011_0025.mp4>What type of music is played on the laptop from 3:00 to 3:30?",
+    "options": [
+      "A.Classical music.",
+      "B.Pop music.",
+      "C.Jazz music.",
+      "D.Rock music."
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0025_obj_laptop_computer_1"
+    ],
+    "reasoning_chain": "The music played on the laptop is classical music from 3:00 to 3:30.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2026-1-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0025",
+    "video_path": [
+      "011/011_0025.mp4"
+    ],
+    "question": "<011_0025.mp4>01:38 What is the color of the door connecting office_1 and balcony_1?",
+    "options": [
+      "A.Black and white",
+      "B.Red and white.",
+      "C.Black and blue.",
+      "D.Green and white."
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "office_1",
+      "balcony_1"
+    ],
+    "reasoning_chain": "At 01:38 in this video, we can see the door is black and white.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2026-1-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0054",
+    "video_path": [
+      "011/011_0054.mp4"
+    ],
+    "question": "<011_0054.mp4>07:04 Where is the user?",
+    "options": [
+      "A.In office_4.",
+      "B.On road_1.",
+      "C.On balcony_1.",
+      "D.In building_3."
+    ],
+    "correct_options": "B",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_80"
+    ],
+    "evidence_spatial": [
+      "road_1"
+    ],
+    "reasoning_chain": "At 07:04 in this video, we can see the user is on road_1.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2026-1-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0054",
+    "video_path": [
+      "011/011_0054.mp4"
+    ],
+    "question": "<011_0054.mp4>12:50 what is the color of the delivery van?",
+    "options": [
+      "A.Black.",
+      "B.Gray.",
+      "C.Red.",
+      "D.Green."
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "At 12:50 in this video, we can see the delivery van is red.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2026-1-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0054",
+    "video_path": [
+      "011/011_0054.mp4"
+    ],
+    "question": "<011_0054.mp4>Is office_4 above office_1 or beneath?",
+    "options": [
+      "A.Yes.",
+      "B.No.",
+      "C.Not mentioned.",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "cross_view_spatial_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "office_1",
+      "office_4"
+    ],
+    "reasoning_chain": "office_1 is on the 5th floor and office_4 is on the 6th floor.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2026-1-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0026",
+    "video_path": [
+      "011/011_0026.mp4"
+    ],
+    "question": "<011_0026.mp4>What is the correct order of the following actions?",
+    "options": [
+      "A.Organizing schoolbag -> washing hands -> eating bread -> working.",
+      "B.Washing hands -> eating bread -> listening to podcast -> working.",
+      "C.Organizing pencil case -> washing hands -> eating food -> organizing schoolbag.",
+      "D.Working -> washing hands -> eating bread -> organizing schoolbag."
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_82",
+      "ev_83",
+      "ev_84",
+      "ev_85"
+    ],
+    "evidence_spatial": [
+      "0026_obj_bag_1",
+      "0026_obj_bread_1",
+      "0026_obj_pencil_case_1"
+    ],
+    "reasoning_chain": "First the user organizes the schoolbag until 4:04, then washes hands from 5:57 to 6:20, then eats bread from 7:34 to 9:30, and finally works from 9:36 to the end.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2026-1-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0026",
+    "video_path": [
+      "011/011_0026.mp4"
+    ],
+    "question": "<011_0026.mp4>3:00 Where is the pencil case?",
+    "options": [
+      "A.On the balcony.",
+      "B.On the ground.",
+      "C.In the schoolbag.",
+      "D.On the desk."
+    ],
+    "correct_options": "D",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0026_obj_pencil_case_1"
+    ],
+    "reasoning_chain": "At 3:00 in this video, we can see the pencil case is on the desk.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2026-1-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "011",
+    "video_id": "011_0026",
+    "video_path": [
+      "011/011_0026.mp4"
+    ],
+    "question": "<011_0026.mp4>Where is the user at 6:00?",
+    "options": [
+      "A.On balcony_1.",
+      "B.In office_4.",
+      "C.In building_4.",
+      "D.At the entrance of building_1."
+    ],
+    "correct_options": "A",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_83"
+    ],
+    "evidence_spatial": [
+      "balcony_1"
+    ],
+    "reasoning_chain": "The user is washing hands on the balcony from 5:57 to 6:20.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2026-1-7",
+      "qc_status": "accepted"
+    }
+  }
+]

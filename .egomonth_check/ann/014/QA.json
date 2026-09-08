@@ -1,0 +1,841 @@
+[
+  {
+    "sample_id": "014",
+    "video_id": "014_0001",
+    "video_path": [
+      "014/014_0001.mp4"
+    ],
+    "question": "<014_0001.mp4>Which way should I go to get to the kitchen if I'm at the bedroom door right now?",
+    "options": [
+      "A.turn right",
+      "B.turn left",
+      "C.go straight",
+      "D.go back"
+    ],
+    "correct_options": "A",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_01"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person go out the bedroom and on his left is the kitchen",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0001",
+    "video_path": [
+      "014/014_0001.mp4"
+    ],
+    "question": "<014_0001.mp4>Where is the kitchen located relative to the bedroom?",
+    "options": [
+      "A.back",
+      "B.left",
+      "C.right",
+      "D.front"
+    ],
+    "correct_options": "B",
+    "task_type": "cross_view_spatial_reasoning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_01"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person go out the bedroom and on his left is the kitchen",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0001",
+    "video_path": [
+      "014/014_0001.mp4"
+    ],
+    "question": "<014_0001.mp4>Where is the person at in 00:43 in this video",
+    "options": [
+      "A.living room",
+      "B.kitchen",
+      "C.bathroom",
+      "D.bedroom"
+    ],
+    "correct_options": "D",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_02"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "This person is making the bed",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0001",
+    "video_path": [
+      "014/014_0001.mp4"
+    ],
+    "question": "<014_0001.mp4>Where is the person at in 00:43 in this video",
+    "options": [
+      "A.living room",
+      "B.kitchen",
+      "C.bathroom",
+      "D.bedroom"
+    ],
+    "correct_options": "D",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_02"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "This person is making the bed",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0001",
+    "video_path": [
+      "014/014_0001.mp4"
+    ],
+    "question": "<014_0001.mp4>Does the person in the video sometimes use mobile phone?",
+    "options": [
+      "A.No",
+      "B.Don't know",
+      "C.Yes",
+      "D.Not sure"
+    ],
+    "correct_options": "C",
+    "task_type": "habit_inference",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_03",
+      "ev_04"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "This person is using his mobile phone",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0001",
+    "video_path": [
+      "014/014_0001.mp4"
+    ],
+    "question": "<014_0001.mp4>Where is the balcony located?",
+    "options": [
+      "A.It's next to the living room.",
+      "B.It's next to the bedroom.",
+      "C.It's next to the kitchen.",
+      "D.It's next to the washroom."
+    ],
+    "correct_options": "B",
+    "task_type": "cross_view_spatial_reasoning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "This person is walking in the bedroom and next to him is the balcony",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0001",
+    "video_path": [
+      "014/014_0001.mp4"
+    ],
+    "question": "<014_0001.mp4>Does the person in this video love playing computer games",
+    "options": [
+      "A.Yes.",
+      "B.No.",
+      "C.Can't say.",
+      "D.Not sure."
+    ],
+    "correct_options": "A",
+    "task_type": "personality_inference",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_06",
+      "ev_07"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "This person is playing computer games",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0001",
+    "video_path": [
+      "014/014_0001.mp4"
+    ],
+    "question": "<014_0001.mp4>How many computers are there in total?",
+    "options": [
+      "A.One.",
+      "B.Two.",
+      "C.Three.",
+      "D.Four."
+    ],
+    "correct_options": "B",
+    "task_type": "object_counting_global",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_07"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "This person is playing computer games",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0001",
+    "video_path": [
+      "014/014_0001.mp4"
+    ],
+    "question": "<014_0001.mp4>The person is downstairs. Which direction should he go to get to the trash can?",
+    "options": [
+      "A.To the right.",
+      "B.To the front.",
+      "C.To the back.",
+      "D.To the left."
+    ],
+    "correct_options": "D",
+    "task_type": "object_counting_global",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_08"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "This person goes out to throw rubbish",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0003",
+    "video_path": [
+      "014/014_0003.mp4"
+    ],
+    "question": "<014_0003.mp4>Where is the orange?",
+    "options": [
+      "A.on the ground.",
+      "B.on the desk.",
+      "C.on the chair.",
+      "D.on the bed"
+    ],
+    "correct_options": "B",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_11"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "orange on the desk",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0001",
+    "video_path": [
+      "014/014_0001.mp4"
+    ],
+    "question": "<014_0001.mp4>The person is downstairs. Which direction should he go to get to the trash can?",
+    "options": [
+      "A.Go downstairs first, walk straight to the left, then go downstairs again. Turn right at the first intersection, and turn right once you exit the school gate.",
+      "B.Go downstairs first, walk straight to the left, then go downstairs again. Turn right at the first intersection, and turn left once you exit the school gate.",
+      "C.Go downstairs first, walk straight to the left, then go downstairs again. Turn left at the first intersection, and turn right once you exit the school gate.",
+      "D.Go downstairs first, walk straight to the left, then go downstairs again. Turn left at the first intersection, and turn left once you exit the school gate."
+    ],
+    "correct_options": "A",
+    "task_type": "route_reasoning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_08"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "This person goes out to throw rubbish",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0003",
+    "video_path": [
+      "014/014_0003.mp4"
+    ],
+    "question": "<014_0003.mp4>What color is the sofa in the bedroom?",
+    "options": [
+      "A.red.",
+      "B.yellow",
+      "C.green",
+      "D.blue"
+    ],
+    "correct_options": "D",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "There is a blue sofa in the bedroom",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0003",
+    "video_path": [
+      "014/014_0003.mp4"
+    ],
+    "question": "<014_0003.mp4>How do I get from the bedroom to the kitchen to wash my hands?",
+    "options": [
+      "A.Go out the door, turn right, and turn left.",
+      "B.Go out the door, turn right, and walk straight.",
+      "C.Go out the door, turn left, and walk straight.",
+      "D.Go out the door, walk straight."
+    ],
+    "correct_options": "B",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_14"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "walk from the bedroom to wash hands",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0003",
+    "video_path": [
+      "014/014_0003.mp4"
+    ],
+    "question": "<014_0003.mp4>What is the order of sweeping the floor and folding clothes?",
+    "options": [
+      "A.Sweep the floor first, then fold the clothes.",
+      "B.Fold the clothes first, then sweep the floor。",
+      "C.Sweep the floor and fold the clothes at the same time.",
+      "D.Didn't sweep the floor or fold the clothes."
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_10",
+      "ev_12"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0004",
+    "video_path": [
+      "014/014_0004.mp4"
+    ],
+    "question": "<014_0004.mp4>How do I get from my home to the teaching building?",
+    "options": [
+      "A.Go down three floors, then walk straight to the left.",
+      "B.Go down four floors, then walk straight to the left.",
+      "C.Go down four floors, then walk straight to the right.",
+      "D.Go down two floors, then walk straight to the right."
+    ],
+    "correct_options": "B",
+    "task_type": "route_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_21"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0004",
+    "video_path": [
+      "014/014_0004.mp4"
+    ],
+    "question": "<014_0004.mp4>How do I get from my home to the teaching building?",
+    "options": [
+      "A.Go down three floors, then walk straight to the left.",
+      "B.Go down four floors, then walk straight to the left.",
+      "C.Go down four floors, then walk straight to the right.",
+      "D.Go down two floors, then walk straight to the right."
+    ],
+    "correct_options": "B",
+    "task_type": "route_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_21"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0004",
+    "video_path": [
+      "014/014_0004.mp4"
+    ],
+    "question": "<014_0004.mp4>Where is the washing machine",
+    "options": [
+      "A.living room.",
+      "B.bedroom.",
+      "C.balcony.",
+      "D.washroom."
+    ],
+    "correct_options": "C",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_18"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0004",
+    "video_path": [
+      "014/014_0004.mp4",
+      "014/014_0003.mp4"
+    ],
+    "question": "<014_0004.mp4>Does the person in the video have a habit of washing hands?",
+    "options": [
+      "A.Not sure",
+      "B.Yes",
+      "C.No",
+      "D.None"
+    ],
+    "correct_options": "B",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_14",
+      "ev_20"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0004",
+    "video_path": [
+      "014/014_0004.mp4"
+    ],
+    "question": "<014_0004.mp4>Which floor is the room on in this building?",
+    "options": [
+      "A.one",
+      "B.two",
+      "C.three",
+      "D.four"
+    ],
+    "correct_options": "D",
+    "task_type": "cross_view_spatial_reasoning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_21"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0003",
+    "video_path": [
+      "014/014_0003.mp4"
+    ],
+    "question": "<014_0003.mp4>Where is the person in 20:00 in this video?",
+    "options": [
+      "A.bedroom",
+      "B.livingroom",
+      "C.balcony",
+      "D.outside"
+    ],
+    "correct_options": "A",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_13"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0006",
+    "video_path": [
+      "014/014_0006.mp4"
+    ],
+    "question": "<014_0006.mp4>How should this person get from his house to the bike parking area?",
+    "options": [
+      "A.Go down four floors, then turn left, then turn left and walk to the first intersection.",
+      "B.Go down four floors, then turn right, then turn right and walk to the first intersection.",
+      "C.Go down four floors, then turn left, then turn right and walk to the first intersection.",
+      "D.Go down four floors, then turn right, then turn left and walk to the first intersection."
+    ],
+    "correct_options": "C",
+    "task_type": "route_reasoning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_28"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0006",
+    "video_path": [
+      "014/014_0006.mp4"
+    ],
+    "question": "<014_0006.mp4>How many red lights did he meet on the way?",
+    "options": [
+      "A.One",
+      "B.Two",
+      "C.Three",
+      "D.Four"
+    ],
+    "correct_options": "B",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_28"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0006",
+    "video_path": [
+      "014/014_0006.mp4"
+    ],
+    "question": "<014_0006.mp4>At what minute in the video is he shopping in the supermarket?",
+    "options": [
+      "A.6:00",
+      "B.2:00",
+      "C.5:00",
+      "D.9:00"
+    ],
+    "correct_options": "D",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_29"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0006",
+    "video_path": [
+      "014/014_0006.mp4"
+    ],
+    "question": "<014_0006.mp4>At the 9:00 of the video, where is the person?",
+    "options": [
+      "A.supermarket",
+      "B.home",
+      "C.school",
+      "D.road"
+    ],
+    "correct_options": "A",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_29"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0005",
+    "video_path": [
+      "014/014_0005.mp4"
+    ],
+    "question": "<014_0005.mp4>How do I get to the express delivery station from Lawson?",
+    "options": [
+      "A.Go straight from Lawson, turn left, go straight, and the express delivery station is on the left.",
+      "B.Go straight from Lawson, turn right, go straight, and the express delivery station is on the right.",
+      "C.Go straight from Lawson, turn left, go straight, and the express delivery station is on the right.",
+      "D.Go straight from Lawson, turn right, go straight, and the express delivery station is on the left."
+    ],
+    "correct_options": "D",
+    "task_type": "route_reasoning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_26"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0005",
+    "video_path": [
+      "014/014_0005.mp4"
+    ],
+    "question": "<014_0005.mp4>What is the order of buying vegetables and picking up the package?",
+    "options": [
+      "A.Buy vegetables first, then pick up the package.",
+      "B.Pick up the package first, then buy vegetables.",
+      "C.Buy vegetables and pick up the package at the same time.",
+      "D.Didn't buy vegetables or pick up the package."
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_25",
+      "ev_27"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0005",
+    "video_path": [
+      "014/014_0005.mp4"
+    ],
+    "question": "<014_0005.mp4>What is the positional relationship between the fitness equipment and the playground?",
+    "options": [
+      "A.The fitness equipment is on the left side of the playground.",
+      "B.The fitness equipment is on the back of the playground.",
+      "C.The fitness equipment is on the right side of the playground.",
+      "D.The fitness equipment is on the front of the playground."
+    ],
+    "correct_options": "C",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0005",
+    "video_path": [
+      "014/014_0005.mp4"
+    ],
+    "question": "<014_0005.mp4>What is the positional relationship between the basketball court and the bike parking area?",
+    "options": [
+      "A.The basketball court is on the right of the bike parking area.",
+      "B.The basketball court is on the left of the bike parking area.",
+      "C.The basketball court is on the front of the bike parking area.",
+      "D.The basketball court is on the back of the bike parking area."
+    ],
+    "correct_options": "B",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0001",
+    "video_path": [
+      "014/014_0001.mp4",
+      "014/014_0004.mp4",
+      "014/014_0005.mp4",
+      "014/014_0006.mp4"
+    ],
+    "question": "<014_0001.mp4>Does this person have the habit of going out for a walk to exercise?",
+    "options": [
+      "A.Yes",
+      "B.No",
+      "C.Not sure",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "014",
+    "video_id": "014_0001",
+    "video_path": [
+      "014/014_0001.mp4",
+      "014/014_0003.mp4",
+      "014/014_0004.mp4"
+    ],
+    "question": "<014_0005.mp4>Is this person a tidy person?",
+    "options": [
+      "A.Yes",
+      "B.No",
+      "C.Not sure",
+      "D.None"
+    ],
+    "correct_options": "B",
+    "task_type": "personality_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_012",
+      "created_at": "2026-3-1",
+      "qc_status": "accepted"
+    }
+  }
+]

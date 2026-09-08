@@ -1,0 +1,2400 @@
+[
+  {
+    "sample_id": "019",
+    "video_id": "019_0001",
+    "video_path": [
+      "019/019_0001.mp4"
+    ],
+    "question": "<019_0001.mp4> What is the mode of transportation used for travel",
+    "options": [
+      "A.car",
+      "B.Train",
+      "C.bicycle",
+      "D.airplane"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_01"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The two wheeled tool with pedals appearing in the camera fully conforms to the characteristics of a bicycle",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0001",
+    "video_path": [
+      "019/019_0001.mp4"
+    ],
+    "question": "<019_0001.mp4> Where did put the handbag",
+    "options": [
+      "A.None",
+      "B.On the stool",
+      "C.on the ground",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0001_obj_handbag_01"
+    ],
+    "reasoning_chain": "4:17 Place the handbag on the table",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0001",
+    "video_path": [
+      "019/019_0001.mp4"
+    ],
+    "question": "<019_0001.mp4>What color pants do I wear",
+    "options": [
+      "A.black",
+      "B.white",
+      "C.pink",
+      "D.green"
+    ],
+    "correct_options": "B",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "5:00 can see the white pants.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0001",
+    "video_path": [
+      "019/019_0001.mp4"
+    ],
+    "question": "<019_0001.mp4> Where did put the handbag",
+    "options": [
+      "A.None",
+      "B.On the stool",
+      "C.on the ground",
+      "D.None"
+    ],
+    "correct_options": "B",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0001_obj_schoolbag_01"
+    ],
+    "reasoning_chain": "11:08 Place the schoolbag on the stool",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0001",
+    "video_path": [
+      "019/019_0001.mp4"
+    ],
+    "question": "<019_0001.mp4>What color is the watch strap",
+    "options": [
+      "A.yellow",
+      "B.white",
+      "C.pink",
+      "D.blue"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "5:01 can see the pink watch strap",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0001",
+    "video_path": [
+      "019/019_0001.mp4"
+    ],
+    "question": "<019_0001.mp4> What did you take out of your schoolbag",
+    "options": [
+      "A.book",
+      "B.Charger",
+      "C.Bluetooth earphones",
+      "D.bottle"
+    ],
+    "correct_options": "B",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_08"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "11:28 I took out the charger",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0001",
+    "video_path": [
+      "019/019_0001.mp4"
+    ],
+    "question": "<019_0001.mp4>What color is the charger cable ",
+    "options": [
+      "A.black",
+      "B.grey",
+      "C.golden",
+      "D.red"
+    ],
+    "correct_options": "D",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "11:34 can see that the color of the charger cable is red ",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0001",
+    "video_path": [
+      "019/019_0001.mp4"
+    ],
+    "question": "<019_0001.mp4> How many sheets of tissue were pulled out in total",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.4"
+    ],
+    "correct_options": "A",
+    "task_type": "object_counting_global",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_10"
+    ],
+    "evidence_spatial": [
+      "0001_obj_tissue_01"
+    ],
+    "reasoning_chain": " I pulled out a tissue in total",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0001",
+    "video_path": [
+      "019/019_0001.mp4"
+    ],
+    "question": "<019_0001.mp4> What is the order of the following actions performed by the user",
+    "options": [
+      "A.take out the charger->Open schoolbag  ->Charge the smartphone with a charger->Pull the zipper of the schoolbag",
+      "B.Open schoolbag -> take out the charger->Charge the smartphone with a charger->Pull the zipper of the schoolbag",
+      "C.Charge the smartphone with a charger->Open schoolbag  ->take out the charger->Pull the zipper of the schoolbag",
+      "D.Pull the zipper of the schoolbag-> take out the charger->Charge the smartphone with a charger->Open schoolbag"
+    ],
+    "correct_options": "B",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_07",
+      "ev_08",
+      "ev_09",
+      "ev_11"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "The user first opens the drawer of the chopsticks, then takes out a pair of chopsticks from the drawer where they are stored, and finally opens the packaging of chopsticks ",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0001",
+    "video_path": [
+      "019/019_0001.mp4"
+    ],
+    "question": "<019_0001.mp4> What is the order of the following actions performed by the user",
+    "options": [
+      "A.Open the drawer of the chopsticks -> Take out a pair of chopsticks from the drawer where they are stored->Open the packaging of chopsticks",
+      "B.Take out a pair of chopsticks from the drawer where they are stored->Open the drawer of the chopsticks ->Open the packaging of chopsticks",
+      "C.Open the packaging of chopsticks-> Take out a pair of chopsticks from the drawer where they are stored->Open the drawer of the chopsticks",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_12",
+      "ev_13",
+      "ev_14"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "The user first opens the drawer of the chopsticks, then takes out a pair of chopsticks from the drawer where they are stored, and finally opens the packaging of chopsticks ",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0001",
+    "video_path": [
+      "019/019_0001.mp4"
+    ],
+    "question": "<019_0001.mp4>The user planned to pick up milk tea  from milk tea shop,  checked the navigation before departure but did not confirm the store number. After arriving at the first store, it was found that it was not the target store. Later, when went to the second store of the same brand, it still did not match. Finally,  picked up milk tea at the third store. Considering the user's behavior and the fact that the user has repeatedly relied on navigation but ignored detailed information, please determine which of the following best reflects the user's travel habits ",
+    "options": [
+      "A.Prioritize navigation when traveling but do not verify specific information",
+      "B.Preference for selecting the nearest store",
+      "C.Habits of randomly selecting stores of the same brand",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "habit_inference",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_30",
+      "ev_37",
+      "ev_46"
+    ],
+    "evidence_spatial": [
+      "0001_obj_tissue_01"
+    ],
+    "reasoning_chain": "The user planned to pick up milk tea. After checking the navigation, went to three stores of the same brand, and only found the target store at the third one. After communicating with the staff, picked up the milk tea, and had repeatedly experienced the situation of 'relying on navigation but ignoring detailed information' before",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0001",
+    "video_path": [
+      "019/019_0001.mp4"
+    ],
+    "question": "<019_0001.mp4>What color is the charging cable for charging Bluetooth earphones ",
+    "options": [
+      "A.red",
+      "B.black",
+      "C.None",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_21",
+      "ev_22"
+    ],
+    "evidence_spatial": [
+      "0001_obj_Bluetooth_earphones_01"
+    ],
+    "reasoning_chain": "28:10The red charging cable is plugged into the charging port of the Bluetooth earphones",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0001",
+    "video_path": [
+      "019/019_0001.mp4"
+    ],
+    "question": "<019_0001.mp4>At which store did the user receive milk tea ",
+    "options": [
+      "A.the first one",
+      "B.The second one",
+      "C.The third one",
+      "D.None"
+    ],
+    "correct_options": "C",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_30",
+      "ev_37",
+      "ev_46"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "At first, the user did not get the milk tea, and  did not get it the second time. Finally, the user get it the third time",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0001",
+    "video_path": [
+      "019/019_0001.mp4"
+    ],
+    "question": "<019_0001.mp4> What did Ido when stopped bike at the bus stop",
+    "options": [
+      "A.drink milk tea",
+      "B.talk to someone",
+      "C.Use smartphone",
+      "D.None"
+    ],
+    "correct_options": "B",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_50"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "Stop next to the bus stop and talk to someone",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0001",
+    "video_path": [
+      "019/019_0001.mp4"
+    ],
+    "question": "<019_0001.mp4>What color chair did you sit on after getting on the bus ",
+    "options": [
+      "A.blue",
+      "B.red",
+      "C.yellow",
+      "D.None"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_58"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "After getting on the bus, I sat on a yellow chair",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0002",
+    "video_path": [
+      "019/019_0002.mp4"
+    ],
+    "question": "<019_0002.mp4> What did you take out of your schoolbag",
+    "options": [
+      "A.smartphone",
+      "B.Bluetooth earphones",
+      "C.charger",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_62"
+    ],
+    "evidence_spatial": [
+      "0001_obj_smartphone_01"
+    ],
+    "reasoning_chain": "took out smartphone from schoolbag",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0003",
+    "video_path": [
+      "019/019_0003.mp4"
+    ],
+    "question": "<019_0003.mp4> What is the starting time for walking to the dormitory building across the street",
+    "options": [
+      "A.00:03",
+      "B.00:48",
+      "C.00:59",
+      "D.01:12"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_67"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "00:03Start heading to the dormitory building",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0003",
+    "video_path": [
+      "019/019_0003.mp4"
+    ],
+    "question": "<019_0003.mp4>What was placed on the table ",
+    "options": [
+      "A.smartphone",
+      "B.Bluetooth earphones",
+      "C.schoolbag",
+      "D.documents"
+    ],
+    "correct_options": "D",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_68"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "01:02 Put documents on the table",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0003",
+    "video_path": [
+      "019/019_0003.mp4"
+    ],
+    "question": "<019_0003.mp4>What did you do with your smartphone ",
+    "options": [
+      "A.make a phone call",
+      "B.typing",
+      "C.Take a photo",
+      "D.None"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_69"
+    ],
+    "evidence_spatial": [
+      "0001_obj_smartphone_01"
+    ],
+    "reasoning_chain": "01:12 Take a photo with a smartphone",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0003",
+    "video_path": [
+      "019/019_0003.mp4"
+    ],
+    "question": "<019_0003.mp4>What car did you get on ",
+    "options": [
+      "A.automobile",
+      "B.coach",
+      "C.bicycle",
+      "D.None"
+    ],
+    "correct_options": "B",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_71"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "Get on the coach",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0003",
+    "video_path": [
+      "019/019_0003.mp4"
+    ],
+    "question": "<019_0003.mp4>where am I",
+    "options": [
+      "A.on coach",
+      "B.at home",
+      "C.at supermarket",
+      "D.At amusement park"
+    ],
+    "correct_options": "A",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_71",
+      "ev_72"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "Get on the coach  ,then find a seat on the coach and sit down",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0003",
+    "video_path": [
+      "019/019_0003.mp4"
+    ],
+    "question": "<019_0003.mp4>Did the user wear a seat belt",
+    "options": [
+      "A.yes",
+      "B.no",
+      "C.None",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_73"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "4:49 Fasten seat belt on the seat",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0003",
+    "video_path": [
+      "019/019_0003.mp4"
+    ],
+    "question": "<019_0003.mp4>What color are headphones",
+    "options": [
+      "A.black",
+      "B.green",
+      "C.pink",
+      "D.blue"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_75"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "06:00The headphones are pink in color",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0003",
+    "video_path": [
+      "019/019_0003.mp4"
+    ],
+    "question": "<019_0003.mp4>What is the sequence of events for ev_71-ev_76",
+    "options": [
+      "A.Get on the coach->find seat->Fasten seatbelt->Open schoolbag->Get smartphone->Using a smartphone",
+      "B.find seat->Get on the coach->Fasten seatbelt->Open schoolbag->Get smartphone->Using a smartphone",
+      "C.Open schoolbag->Get on the coach->Fasten seatbelt->find seat->Get smartphone->Using a smartphone",
+      "D.find seat->Using a smartphone->Fasten seatbelt->Open schoolbag->Get smartphone->Get on the coach"
+    ],
+    "correct_options": "C",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_71",
+      "ev_72",
+      "ev_73",
+      "ev_74",
+      "ev_75",
+      "ev_76"
+    ],
+    "evidence_spatial": [
+      "After getting on the car, sitting down, and fastening the seat belt, the person immediately opened their backpack to search, took out their headphones, and operated their smartphone."
+    ],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0003",
+    "video_path": [
+      "019/019_0003.mp4"
+    ],
+    "question": "<019_0003.mp4>How many times does the behavior involving 'using a smartphone' appear in video 019_0003",
+    "options": [
+      "A.one",
+      "B.two",
+      "C.three",
+      "D.zero"
+    ],
+    "correct_options": "B",
+    "task_type": "detail_retrieval",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_69",
+      "ev_76"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "Take a photo with a smartphone at 01:11 seconds in in video 019_0003, and use a smartphone at 06:16",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0004",
+    "video_path": [
+      "019/019_0004.mp4"
+    ],
+    "question": "<019_0004.mp4>What is the orientation of the electric bicycle parking spot relative to the charging socket",
+    "options": [
+      "A.Front of socket",
+      "B.Left side of socket",
+      "C.Right side of socket",
+      "D.Rear of socket"
+    ],
+    "correct_options": "B",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_84"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "Electric bicycle parking point relative to the charging socket socket",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0003,019_0004",
+    "video_path": [
+      "019/019_0003.mp4",
+      "019/019_0004.mp4"
+    ],
+    "question": "<019_0003.mp4>,<019_0004.mp4>How many times does the behavior related to 'walk' appear in videos 019_0003 and 019_0004?",
+    "options": [
+      "A.2",
+      "B.3",
+      "C.4",
+      "D.5"
+    ],
+    "correct_options": "B",
+    "task_type": "event_time",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_67",
+      "ev_70",
+      "ev_79"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "The first time I walked to the opposite dormitory building to deliver documents, the second time I walked to take a bus, and the third time I got off and walked to find an electric bike",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0004",
+    "video_path": [
+      "019/019_0004.mp4"
+    ],
+    "question": "<019_0004.mp4>Where am I after getting off the bus",
+    "options": [
+      "A.Inside the bus",
+      "B.outdoors",
+      "C.inside the dormitory",
+      "D.Teaching Building"
+    ],
+    "correct_options": "B",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_78"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "After getting off the car,  went outdoors",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0004",
+    "video_path": [
+      "019/019_0004.mp4"
+    ],
+    "question": "<019_0004.mp4>What is the sound that can be heard near an electric vehicle",
+    "options": [
+      "A.Electric vehicle unlocking sound",
+      "B.dormitory knocking sound",
+      "C.bus horn sound",
+      "D.mobile phone ringtone"
+    ],
+    "correct_options": "A",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_80"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "There is an electric vehicle unlocking sound when in contact with an electric vehicle",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0003,019_0004",
+    "video_path": [
+      "019/019_0003.mp4",
+      "019/019_0004.mp4"
+    ],
+    "question": "<019_0003.mp4>,<019_0004.mp4>How many modes of transportation have appeared in videos 019_0003 and 019_0004?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.4"
+    ],
+    "correct_options": "B",
+    "task_type": "object_counting_global",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_71",
+      "ev_81"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "Choose public transportation first, then electric vehicles",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0005",
+    "video_path": [
+      "019/019_0005.mp4"
+    ],
+    "question": "<019_0005.mp4>What is the placement of the firdge",
+    "options": [
+      "A.living room",
+      "B.dining room",
+      "C.bathroom",
+      "D.bedroom"
+    ],
+    "correct_options": "B",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_114"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "firdge in dining room",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0005",
+    "video_path": [
+      "019/019_0005.mp4"
+    ],
+    "question": "<019_0005.mp4>Where is the insulation bag located in the bathroom during cleaning",
+    "options": [
+      "A.In the sink",
+      "B.next to the faucet on the floor",
+      "C.on the shelf",
+      "D.next to the toilet"
+    ],
+    "correct_options": "A",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_117"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "Wash the insulation bag in the sink",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0005",
+    "video_path": [
+      "019/019_0005.mp4"
+    ],
+    "question": "<019_0005.mp4>What was the time when the refrigerator was opened",
+    "options": [
+      "A.05:20-05:25",
+      "B.05:30-05:35",
+      "C.05:40-05:45",
+      "D.05:50-05:55"
+    ],
+    "correct_options": "B",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_114"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "05:30-05:35Opened the fridge",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0005",
+    "video_path": [
+      "019/019_0005.mp4"
+    ],
+    "question": "<019_0005.mp4>What is the container for ice cubes",
+    "options": [
+      "A.cup",
+      "B.bowl",
+      "C.plate",
+      "D.basin"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_120"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "07:35 Take out a cup",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0005",
+    "video_path": [
+      "019/019_0005.mp4"
+    ],
+    "question": "<019_0005.mp4>What are the steps to put ice cubes in the fridge",
+    "options": [
+      "A.Put the ice cubes in the fridge->Open the fridge->Close fridge door",
+      "B.Close fridge door->Put the ice cubes in the fridge->Open the fridge",
+      "C.Open the fridge->Put the ice cubes in the fridge->Close fridge door",
+      "D.None"
+    ],
+    "correct_options": "C",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_115",
+      "ev_123",
+      "ev_124"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "Open the fridgr, put ice cubes in the fridge, and close the feidge",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0005",
+    "video_path": [
+      "019/019_0005.mp4"
+    ],
+    "question": "<019_0005.mp4>The character in the video is located in the dining room, with the target location being the kitchen. At this point, which direction do we need to turn in order to reach the living room",
+    "options": [
+      "A.Turn forward",
+      "B.Go straight to the left",
+      "C.Turn right",
+      "D.Turn backwards"
+    ],
+    "correct_options": "C",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_125"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0005",
+    "video_path": [
+      "019/019_0005.mp4"
+    ],
+    "question": "<019_0005.mp4>What are the steps for users to heat food",
+    "options": [
+      "A.Remove the air fryer->Put in the food->Turn off the air fryer->Start heating",
+      "B.Put in the food->Remove the air fryer->Turn off the air fryer->Start heating",
+      "C.Start heating->Put in the food->Turn off the air fryer->Remove the air fryer",
+      "D.Turn off the air fryer->Put in the food->Remove the air fryer->Start heating"
+    ],
+    "correct_options": "A",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_132",
+      "ev_133",
+      "ev_135"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "Take out an air fryer,Put the food in an air fryer and grill it",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0006",
+    "video_path": [
+      "019/019_0006.mp4"
+    ],
+    "question": "<019_0006.mp4>03:38-05:00The user washed their hands several times",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.4"
+    ],
+    "correct_options": "B",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_140",
+      "ev_144"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0006",
+    "video_path": [
+      "019/019_0006.mp4"
+    ],
+    "question": "<019_0006.mp4>Is the user eating instant noodles or mixed noodles",
+    "options": [
+      "A.instant noodles",
+      "B.mixed noodles",
+      "C.None",
+      "D.None"
+    ],
+    "correct_options": "B",
+    "task_type": "detail_retrieval",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_146"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "The user poured the water from the instant noodle cup,so it's mixed noodles",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0006",
+    "video_path": [
+      "019/019_0006.mp4"
+    ],
+    "question": "<019_0006.mp4>Where should I put my laptop",
+    "options": [
+      "A.living room",
+      "B.bed room",
+      "C.bathroom",
+      "D.dining room"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_150"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "Working with a laptop in the living room",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0006",
+    "video_path": [
+      "019/019_0006.mp4"
+    ],
+    "question": "<019_0006.mp4>What color is the handbag for holding A4 paper files",
+    "options": [
+      "A.black",
+      "B.blue",
+      "C.pink",
+      "D.yellow"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_153"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "The handbag for holding A4 paper documents is pink",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0007",
+    "video_path": [
+      "019/019_0007.mp4"
+    ],
+    "question": "<019_0007.mp4>When did the user put down their coat",
+    "options": [
+      "A.05:20-05:25",
+      "B.07:00-07:05",
+      "C.08:26-08:30",
+      "D.08:50-08:58"
+    ],
+    "correct_options": "none",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_172"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "The user picked up the coat",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0007",
+    "video_path": [
+      "019/019_0007.mp4"
+    ],
+    "question": "<019_0007.mp4>What type of paper did the user put into the printer",
+    "options": [
+      "A.A2",
+      "B.A3",
+      "C.A4",
+      "D.A5"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_173"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "The user put A4 paper into the printer",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0007",
+    "video_path": [
+      "019/019_0007.mp4"
+    ],
+    "question": "<019_0007.mp4>What did the user carry downstairs",
+    "options": [
+      "A.document",
+      "B.trash",
+      "C.schoolbag",
+      "D.key"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_174"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "The user goes downstairs with the file",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0007",
+    "video_path": [
+      "019/019_0007.mp4"
+    ],
+    "question": "<019_0007.mp4>The user sent files to several classmates",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.4"
+    ],
+    "correct_options": "C",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_177",
+      "ev_178",
+      "ev_179"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "The user sent files to three classmates",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0008",
+    "video_path": [
+      "019/019_0008.mp4"
+    ],
+    "question": "<019_0008.mp4>When do users stop brushing their teeth",
+    "options": [
+      "A.02:15",
+      "B.03:05",
+      "C.03:56",
+      "D.04:06"
+    ],
+    "correct_options": "D",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_184"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "I stopped brushing my teeth at 04:06",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0008",
+    "video_path": [
+      "019/019_0008.mp4"
+    ],
+    "question": "<019_0008.mp4>In balcony_01, start the washing machine first (08:49-08:50), and then take dry clothes from the clothes rack (09:20-09:47). What spatial features does balcony_01 have to efficiently complete these two consecutive home behaviors",
+    "options": [
+      "A.The laundry function area in the balcony adopts a compact and integrated spatial layout, with the washing machine and clothes rack located in a small and easily accessible area",
+      "B.The balcony has independent laundry compartments, with washing machines and drying racks physically separated in different sub areas",
+      "C.The washing machine on the balcony is placed by the window, and the clothes rack is installed at the entrance of the balcony, with a distance of more than 3 meters between the two",
+      "D.The balcony is designed as an open large space, with laundry facilities scattered in different corners of the balcony"
+    ],
+    "correct_options": "A",
+    "task_type": "cross_view_spatial_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_187",
+      "ev_188"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "The washing machine and clothes rack are integrated in a small and easily accessible area",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0009",
+    "video_path": [
+      "019/019_0009.mp4"
+    ],
+    "question": "<019_0009.mp4>Where is the user playing the guitar",
+    "options": [
+      "A.bedroom",
+      "B.living room",
+      "C.bathroom",
+      "D.music hoom"
+    ],
+    "correct_options": "D",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_195"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "Users playing guitar in the music room",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0010",
+    "video_path": [
+      "019/019_0010.mp4"
+    ],
+    "question": "<019_0010.mp4>What is the tool for opening cardboard boxes",
+    "options": [
+      "A.pocketknife",
+      "B.key",
+      "C.kitchen knife",
+      "D.needle"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_197"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "Open the delivery box with a pocketknife",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0010",
+    "video_path": [
+      "019/019_0010.mp4"
+    ],
+    "question": "<019_0010.mp4>Which spatial area is not included in 00:15-01:12",
+    "options": [
+      "A.dining room",
+      "B.living room",
+      "C.bedroom",
+      "D.outside the door"
+    ],
+    "correct_options": "C",
+    "task_type": "cross_view_spatial_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_198",
+      "ev_199",
+      "ev_200"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "00:15-01:12The user has never been to the bedroom",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0010",
+    "video_path": [
+      "019/019_0010.mp4"
+    ],
+    "question": "<019_0010.mp4> What is the number of events related to placing items at 00:15-01:12",
+    "options": [
+      "A.once",
+      "B.2 times",
+      "C.3 times",
+      "D.4 times"
+    ],
+    "correct_options": "C",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_198",
+      "ev_199",
+      "ev_200"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "00:15-01:12The user placed drinks, empty boxes, and A4 paper",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0010",
+    "video_path": [
+      "019/019_0010.mp4"
+    ],
+    "question": "<019_0010.mp4>The task process of 'opening the cabinet door, placing an empty cardboard box, and closing the cabinet door' requires a clear understanding of which key information is necessary for the successful execution of this task?",
+    "options": [
+      "A.Specific time for task execution",
+      "B.The specific location of the cabinet",
+      "C.Manufacturer information of cardboard boxes",
+      "D.Identity of personnel performing tasks"
+    ],
+    "correct_options": "B",
+    "task_type": "procedure_planning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_206"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "Knowing the specific location of the cabinet can complete the task process of 'opening the cabinet door, placing an empty cardboard box, and closing the cabinet door'",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0010",
+    "video_path": [
+      "019/019_0010.mp4"
+    ],
+    "question": "<019_0010.mp4>Which of the following inferences holds true in the spatial description of events during the period of 04:12-04:55",
+    "options": [
+      "A.The space for washing hands is in the same area as the space for placing empty cardboard boxes",
+      "B.The 'outside door' is an external extension area for placing empty cardboard boxes",
+      "C.The space for placing mineral water buckets includes space for placing empty cardboard boxes",
+      "D.The space for washing hands includes the area outside the door"
+    ],
+    "correct_options": "B",
+    "task_type": "cross_view_spatial_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_205",
+      "ev_206",
+      "ev_207"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "The space for placing empty cardboard boxes belongs to the outside of the door and is an external extension area",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0011",
+    "video_path": [
+      "019/019_0011.mp4"
+    ],
+    "question": "<019_0011.mp4>The order in which users wash up is",
+    "options": [
+      "A.wash face->brush teeth->wash hands",
+      "B.brush teeth->wash hands->wash face",
+      "C.wash hands->brush teeth->wash face",
+      "D.None"
+    ],
+    "correct_options": "C",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_213",
+      "ev_214",
+      "ev_215"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "The order for users to wash their hands is to wash them first, then brush their teeth, and finally wash their face",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0011",
+    "video_path": [
+      "019/019_0011.mp4"
+    ],
+    "question": "<019_0011.mp4>Is the bedroom light on or off when the user is wearing clothes",
+    "options": [
+      "A.Open",
+      "B.close",
+      "C.None",
+      "D.None"
+    ],
+    "correct_options": "B",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_217"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "04:58The bedroom light is turned off when the user is wearing clothes",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0011",
+    "video_path": [
+      "019/019_0011.mp4"
+    ],
+    "question": "<019_0011.mp4>What did the user take out of their schoolbag",
+    "options": [
+      "A.charger",
+      "B.water bottle",
+      "C.smartphone",
+      "D.book"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_223"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0011",
+    "video_path": [
+      "019/019_0011.mp4"
+    ],
+    "question": "<019_0011.mp4>How many photos do users need to crop in total",
+    "options": [
+      "A.4",
+      "B.7",
+      "C.8",
+      "D.9"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_226"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "19:40A total of 8 photos were printed",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0012",
+    "video_path": [
+      "019/019_0012.mp4"
+    ],
+    "question": "<019_0012.mp4>How many times did the user unpack the package in total",
+    "options": [
+      "A.5",
+      "B.6",
+      "C.7",
+      "D.8"
+    ],
+    "correct_options": "B",
+    "task_type": "event_time",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_227",
+      "ev_229",
+      "ev_232",
+      "ev_235",
+      "ev_237",
+      "ev_239"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "The user dismantled the package a total of 6 times",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0012",
+    "video_path": [
+      "019/019_0012.mp4"
+    ],
+    "question": "<019_0012.mp4>The cardboard box for garbage disposal is taken to the garbage disposal area, and then the user takes the elevator to home_01, and finally goes to bathhroom_01 to wash their hands. From the perspective of the building's top view, what is the correct description of the relative spatial position and layout rationality of the garbage disposal area, home_01, and bathhroom_01",
+    "options": [
+      "A.The garbage disposal area is located on the first floor of the building, home_01 is on the fifth floor of the building, and bathroom_01 is inside home_01. This layout conforms to the spatial logic of 'public area private residence residential functional area' in residential buildings",
+      "B.The garbage disposal area is located inside home_01, while bathroom_01 is next to the garbage disposal area. This layout is in line with the daily usage habits of residential buildings",
+      "C.The garbage disposal area, home_01, and bathroom_01 are all located outside the building and have no spatial affiliation with each other",
+      "D.Home_01 is located inside the garbage disposal area, while bathroom_01 is located outside the building. This layout complies with the design specifications for residential buildings"
+    ],
+    "correct_options": "A",
+    "task_type": "cross_view_spatial_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_242",
+      "ev_243",
+      "ev_244"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "The user first goes to the public area on the first floor to dispose of garbage, then takes the elevator home, and after returning home, goes to the bathroom to wash their hands",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0012",
+    "video_path": [
+      "019/019_0012.mp4"
+    ],
+    "question": "<019_0012.mp4>What tools did the user use for the cardboard box",
+    "options": [
+      "A.tape",
+      "B.knitting wool",
+      "C.rope",
+      "D.thin rope"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_248"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "Wrap the cardboard box with tape",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0013",
+    "video_path": [
+      "019/019_0013.mp4"
+    ],
+    "question": "<019_0013.mp4>Where does the user place things in the cabinet",
+    "options": [
+      "A.bathroom",
+      "B.dining room",
+      "C.living room",
+      "D.bedroom"
+    ],
+    "correct_options": "B",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_256"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "Users place items in the dining room cabinet",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0013",
+    "video_path": [
+      "019/019_0013.mp4"
+    ],
+    "question": "<019_0013.mp4>How do users complete the act of eating",
+    "options": [
+      "A.Take out the food->Put into the air fryer->Start the air fryer->Checking food midway->Take out food from the air fryer",
+      "B.Put into the air fryer->.Take out the food->Start the air fryer->Checking food midway->Take out food from the air fryer",
+      "C.Start the air fryer->Put into the air fryer->Take out the food->Checking food midway->Take out food from the air fryer",
+      "D.Checking food midway->Put into the air fryer->Start the air fryer->Take out the food->Take out food from the air fryer"
+    ],
+    "correct_options": "A",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_257",
+      "ev_258",
+      "ev_264",
+      "ev_267"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "Retrieve food from the fridge,Put the food into the air fryer and start heating it up,Check the food in the air fryer,Finally take out the food",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0013",
+    "video_path": [
+      "019/019_0013.mp4"
+    ],
+    "question": "<019_0013.mp4>What is the transportation mode chosen by the user to send materials to classmates",
+    "options": [
+      "A.bus",
+      "B.walk",
+      "C.bicycle",
+      "D.electric vehicle"
+    ],
+    "correct_options": "B",
+    "task_type": "detail_retrieval",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_272",
+      "ev_273"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0014",
+    "video_path": [
+      "019/019_0014.mp4"
+    ],
+    "question": "<019_0014.mp4>When did the user stop eating",
+    "options": [
+      "A.00:50",
+      "B.10:30",
+      "C.15:50",
+      "D.22:15"
+    ],
+    "correct_options": "D",
+    "task_type": "event_time",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_278",
+      "ev_279"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "Starting from 22:15, the user stopped eating and started playing with their phone continuously",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0015",
+    "video_path": [
+      "019/019_0015.mp4"
+    ],
+    "question": "<019_0015.mp4>How many times did the user play ukulele between 00:15-07:50",
+    "options": [
+      "A.2",
+      "B.3",
+      "C.4",
+      "D.5"
+    ],
+    "correct_options": "B",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_280",
+      "ev_282",
+      "ev_284"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "The user played ukulele a total of 3 times between 00:15-07:50",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0015",
+    "video_path": [
+      "019/019_0015.mp4"
+    ],
+    "question": "<019_0015.mp4>What is the order in which users make an ice drink",
+    "options": [
+      "A.Wash the cup->take out the drink->take out the ice cubes->put the ice cubes into the cup->pour the drink into the cup",
+      "B.take out the drink->Wash the cup->take out the ice cubes->put the ice cubes into the cup->pour the drink into the cup",
+      "C.put the ice cubes into the cup->take out the drink->take out the ice cubes->Wash the cup->pour the drink into the cup",
+      "D.take out the ice cubes->take out the drink->Wash the cup->put the ice cubes into the cup->pour the drink into the cup"
+    ],
+    "correct_options": "A",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_286",
+      "ev_288",
+      "ev_289",
+      "ev_290",
+      "ev_291",
+      "ev_292"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0015",
+    "video_path": [
+      "019/019_0015.mp4"
+    ],
+    "question": "<019_0015.mp4>What is the core spatial correlation between dining_room-01 and bedroom-01 in behaviors related to ukulele?",
+    "options": [
+      "A.The two rooms are completely independent and have no behavioral spatial association",
+      "B.The behavior is initiated in the restaurant, and in order to obtain information related to ukulele, it is necessary to go to the bedroom to form a spatial association of 'initiation extension'",
+      "C.All ukulele related behaviors only occur in the bedroom, and there are no related behaviors in the restaurant",
+      "D.The bedroom is the main space for ukulele performances, while the dining room is only used as a temporary passing space"
+    ],
+    "correct_options": "B",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_301",
+      "ev_302",
+      "ev_303"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "The user initiates from the restaurant and needs to go to the bedroom to obtain information related to the bullet ukulele, thus forming a spatial association of 'initiation extension'",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0016",
+    "video_path": [
+      "019/019_0016.mp4"
+    ],
+    "question": "<019_0016.mp4>What is the order of user travel",
+    "options": [
+      "A.start with the key->Find the electric vehicle->get on the electric vehicle->take the electric vehicle to depart",
+      "B.get on the electric vehicle->start with the key->Find the electric vehicle->take the electric vehicle to depart",
+      "C.Find the electric vehicle->start with the key->get on the electric vehicle->take the electric vehicle to depart",
+      "D.take the electric vehicle to depart->start with the key->get on the electric vehicle->Find the electric vehicle"
+    ],
+    "correct_options": "C",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_307",
+      "ev_308",
+      "ev_309",
+      "ev_310"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0017",
+    "video_path": [
+      "019/019_0017.mp4"
+    ],
+    "question": "<019_0017.mp4>What did the user do with their smartphone between 04:15-05:25",
+    "options": [
+      "A.Ordering food",
+      "B.play games",
+      "C.Reply to WeChat",
+      "D.watch short videos"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_312"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "user ordering food with a smartphone",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0017",
+    "video_path": [
+      "019/019_0017.mp4"
+    ],
+    "question": "<019_0017.mp4>What vegetables did the user add to the plastic bowl",
+    "options": [
+      "A.rape",
+      "B.celery",
+      "C.scallion",
+      "D.coriander"
+    ],
+    "correct_options": "D",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_315"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "user add cilantro and vinegar to a plastic bowl",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0017",
+    "video_path": [
+      "019/019_0017.mp4"
+    ],
+    "question": "<019_0017.mp4>How many times did the user buy something at the night market",
+    "options": [
+      "A.2",
+      "B.3",
+      "C.5",
+      "D.6"
+    ],
+    "correct_options": "B",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_312",
+      "ev_316",
+      "ev_317"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "The user bought a bowl of Wonton, sushi and a bowl of sugared water at the night market three times",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0018",
+    "video_path": [
+      "019/019_0018.mp4"
+    ],
+    "question": "<019_0018.mp4>What is the user doing standing in front of the mirror",
+    "options": [
+      "A.Organize hair",
+      "B.brush teeth",
+      "C.apply double eyelids",
+      "D.wipe face"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_325",
+      "ev_326"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "user apply double eyelid patches in front of the mirror",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0018",
+    "video_path": [
+      "019/019_0018.mp4"
+    ],
+    "question": "<019_0018.mp4>What is the time period during which users eat",
+    "options": [
+      "A.10:32-11:10",
+      "B.11:20-12:20",
+      "C.13:01-13:58",
+      "D.14:13-15:50"
+    ],
+    "correct_options": "none",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_332"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "The user did not eat during the entire video period",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0019",
+    "video_path": [
+      "019/019_0019.mp4"
+    ],
+    "question": "<019_0019.mp4>Which room is the user talking to their companion in",
+    "options": [
+      "A.bedroom",
+      "B.living room",
+      "C.bathroom",
+      "D.dining room"
+    ],
+    "correct_options": "A",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_336"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "User chatting with companions in the bedroom",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0019",
+    "video_path": [
+      "019/019_0010.mp4",
+      "019/019_0012.mp4",
+      "019/019_0018.mp4"
+    ],
+    "question": "<019_0010.mp4>,<019_0012.mp4>,<019_0018.mp4>Which of the following is a common habit of the user after unpacking the package",
+    "options": [
+      "A.Temporarily leave the delivery box at the door before organizing it",
+      "B.Wash hands",
+      "C.Immediately store items in the express delivery",
+      "D.Take photos to record the appearance of the express delivery"
+    ],
+    "correct_options": "B",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_197",
+      "ev_205",
+      "ev_227",
+      "ev_229",
+      "ev_244",
+      "ev_322",
+      "ev_323",
+      "ev_328"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "User wash hands after repeatedly unpacking packages",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0019",
+    "video_path": [
+      "019/019_0010.mp4",
+      "019/019_0014.mp4"
+    ],
+    "question": "<019_0010.mp4>,<019_0014.mp4>The most common behavior that this user experiences while using a smartphone is",
+    "options": [
+      "A.Eating food",
+      "B.Drink beverages",
+      "C.Walk around",
+      "D.Organize items"
+    ],
+    "correct_options": "A",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_211",
+      "ev_278"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "Users frequently associate their use of smartphones with eating behavior in multiple scenarios such as restaurants and living rooms",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0019",
+    "video_path": [
+      "019/019_0005.mp4",
+      "019/019_0011.mp4"
+    ],
+    "question": "<019_0005.mp4>,<019_0011.mp4>What is the first step that users usually take when using small appliances such as air fryers and printers",
+    "options": [
+      "A.Connect the power/turn on the switch",
+      "B.Check if the equipment is clean",
+      "C.Prepare to use materials (ingredients/paper)",
+      "D.Confirm if the placement is stable"
+    ],
+    "correct_options": "A",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_133",
+      "ev_224"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "When using an air fryer, users should first 'Plug in the power to the air fryer' before adding food; When using the printer, first 'Turn on the printer switch' before printing, and turning on the power/switch is the first and foremost step",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "019",
+    "video_id": "019_0024",
+    "video_path": [
+      "019/019_0024.mp4"
+    ],
+    "question": "<019_0024.mp4>What did the user take out of the backpack",
+    "options": [
+      "A.USB flash drive",
+      "B.mouse",
+      "C.phone",
+      "D.hard drive"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_351"
+    ],
+    "evidence_spatial": [
+      ""
+    ],
+    "reasoning_chain": "The user took out a USB flash drive from their backpack",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  }
+]

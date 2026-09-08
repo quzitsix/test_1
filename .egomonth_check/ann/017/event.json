@@ -1,0 +1,6737 @@
+[
+  {
+    "event_id": "ev_01",
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "start_time": "00:00:00",
+    "end_time": "00:02:00",
+    "description": "Organize the instructions on the table, put them in the box, and get up to pour water from the kettle to drink",
+    "place_id": "dorm_1",
+    "objects_involved": ["0003_obj_kettle_01","0003_obj_napkin_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_02",
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "start_time": "00:02:02",
+    "end_time": "00:05:46",
+    "description": "Put the tissues from the drawer into the wardrobe.",
+    "place_id": "dorm_1",
+    "objects_involved": ["0003_obj_drawer_01","0003_obj_wardrobe_01","0003_obj_bag_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  }, 
+  {
+    "event_id": "ev_03",
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "start_time": "00:05:59",
+    "end_time": "00:07:10",
+    "description": "Organize towel flowers.",
+    "place_id": "dorm_1",
+    "objects_involved": ["0003_obj_towel flowers_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  }, 
+  {
+    "event_id": "ev_04",
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "start_time": "00:08:00",
+    "end_time": "00:18:10",
+    "description": "Open the phone to search for recipes.",
+    "place_id": "dorm_1",
+    "objects_involved": ["0003_obj_mobile phone_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_05",
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "start_time": "00:18:10",
+    "end_time": "00:20:45",
+    "description": "Drink water and take out food from the fridge.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0003_obj_fridge_01","0003_obj_banana_01","0003_obj_pen_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_06",
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "start_time": "00:20:46",
+    "end_time": "00:26:27",
+    "description": "Take out bananas, milk, and blueberries from the refrigerator to make food.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0003_obj_Bottled milk_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_07",
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "start_time": "00:27:00",
+    "end_time": "00:37:07",
+    "description": "Eating while looking at your phone.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0003_obj_bed_01","0003_obj_quilt_01","0003_obj_chair_01","0003_obj_spoon_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_08",
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "start_time": "00:37:10",
+    "end_time": "00:41:12",
+    "description": "After washing the dishes, I opened my laptop, took a quick look at it, and then closed it.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0003_obj_dustbin_01","0003_obj_bowl_01","0003_obj_laptop_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_09",
+    "video_id": "017_0004",
+    "video_path": "017/017_0004",
+    "start_time": "00::00",
+    "end_time": "00:06:26",
+    "description": "Leave the rest area and go to the subway station.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0004_obj_thermos cup_01","0004_books_bowl_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_10",
+    "video_id": "017_0004",
+    "video_path": "017/017_0004",
+    "start_time": "00:06:30",
+    "end_time": "00:34:59",
+    "description": "take the subway",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0004_obj_ticket machine_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_11",
+    "video_id": "017_0004",
+    "video_path": "017/017_0004",
+    "start_time": "00:35:00",
+    "end_time": "00:40:41",
+    "description": "Leaving the subway station to reach the destination.",
+    "place_id": "subway station_1",
+    "objects_involved": ["0004_obj_fire extinguisher_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_12",
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "start_time": "00:00:00",
+    "end_time": "00:22:50",
+    "description": "Resting in the dormitory and looking at my phone.",
+    "place_id": "dorm_1",
+    "objects_involved": ["0005_obj_shoe_01","0005_obj_chooping board_01","0005_obj_rag_01","0004_obj_faucet_01","0004_obj_ceiling light_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_13",
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "start_time": "00:23:00",
+    "end_time": "00:28:49",
+    "description": "Go to the gym for exercise.",
+    "place_id": "dorm_1",
+    "objects_involved": ["0005_obj_window_01","0005_obj_treadmill_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_14",
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "start_time": "00:28:50",
+    "end_time": "01:09:49",
+    "description": "Returning to the dormitory to cook",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0005_obj_socket_01","0005_obj_oil bottle_01","0005_obj_pot_01","0005_obj_knife_01","0005_obj_spice box_01","0005_obj_scissors_01","0005_obj_blueberry_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_15",
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "start_time": "01:10:25",
+    "end_time": "00:12:26",
+    "description": "Take photos of the prepared food and share them with friends.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_16",
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "start_time": "01:12:27",
+    "end_time": "01:26:26",
+    "description": "The girl eats while looking at her phone",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_17",
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "start_time": "01:26:36",
+    "end_time": "01:33:59",
+    "description": "Clean the tableware after dinner.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0005_obj_dish soap_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_18",
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "start_time": "01:35:00",
+    "end_time": "01:52:58",
+    "description": "The girl made herself a bowl of mushroom tomato noodles.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0005_obj_mushroom_01","0005_obj_tomato_01","0005_obj_pot_01","0005_obj_scallion_01","0005_obj_noodles_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_19",
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "start_time": "01:53:19",
+    "end_time": "02:13:20",
+    "description": "Sitting at the table eating noodles.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0005_obj_chopsticks_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_20",
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "start_time": "02:13:30",
+    "end_time": "02:21:36",
+    "description": "Clean the utensils after finishing the noodles.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0005_obj_sink_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_21",
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "start_time": "02:22:00",
+    "end_time": "02:30:52",
+    "description": "Organize the kitchen.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0005_obj_pepper_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_22",
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "start_time": "02:30:53",
+    "end_time": "02:34:01",
+    "description": "Add seasoning to seasoning.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0005_obj_black pepper_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_23",
+    "video_id": "017_0006",
+    "video_path": "017/017_0006",
+    "start_time": "02:00:00",
+    "end_time": "02:02:25",
+    "description": "The girl finished buying things from the store and paid the bill.",
+    "place_id": "store_1",
+    "objects_involved": ["0006_obj_stroller_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_24",
+    "video_id": "017_0006",
+    "video_path": "017/017_0006",
+    "start_time": "00:02:26",
+    "end_time": "00:29:29",
+    "description": "The girl walked home from the store.",
+    "place_id": "beside_1",
+    "objects_involved": ["0006_obj_mineral water bottle_01","0006_obj_leather jacket_01","0006_obj_roadside bin_01","0006_obj_bench_01","0006_obj_traffic light_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_25",
+    "video_id": "017_0006",
+    "video_path": "017/017_0006",
+    "start_time": "00:30:00",
+    "end_time": "02:32:10",
+    "description": "The girl returned to the dormitory in the apartment building.",
+    "place_id": "aprtment building_1",
+    "objects_involved": ["0006_obj_warning sign_01","0006_obj_elevator floor buttons_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_26",
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "start_time": "00:00:00",
+    "end_time": "00:08:07",
+    "description": "Make banana sandwiches.",
+    "place_id": "kitcen_1",
+    "objects_involved": ["0007_obj_bread_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_27",
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "start_time": "00:08:30",
+    "end_time": "00:17:29",
+    "description": "Eating banana sandwiches.",
+    "place_id": "kitcen_1",
+    "objects_involved": ["0007_obj_slippers_01","0007_obj_pajama pants_01","0007_obj_trash bag_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_28",
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "start_time": "00:17:31",
+    "end_time": "00:22:21",
+    "description": "Stand up and tear open a piece of paper, then record it on the paper.",
+    "place_id": "kitcen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_29",
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "start_time": "00:22:22",
+    "end_time": "00:23:11",
+    "description": "Take out clothes from the wardrobe and put them on the bed.",
+    "place_id": "dorm_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_30",
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "start_time": "00:23:40",
+    "end_time": "00:44:45",
+    "description": "Preparation work for stir frying.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0007_obj_cucumber_01","0007_obj_pumpkin_01","0007_obj_egg_01","0007_bottle of vinegar","0007_obj_shrimp_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_31",
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "start_time": "00:44:45",
+    "end_time": "00:47:15",
+    "description": "Stir fry eggs .",
+    "place_id": "kitcen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_32",
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "start_time": "00:47:50",
+    "end_time": "00:50:51",
+    "description": "Stir-fried cucumber with eggs.",
+    "place_id": "kitcen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_33",
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "start_time": "00:51:19",
+    "end_time": "00:58:50",
+    "description": "Stir fried shrimp.",
+    "place_id": "kitcen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_34",
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "start_time": "00:51:19",
+    "end_time": "00:58:50",
+    "description": "Stir fried shrimp.",
+    "place_id": "kitcen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_34",
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "start_time": "00:59:00",
+    "end_time": "01:05:07",
+    "description": "Take a photo of the dish and share it with friends.",
+    "place_id": "kitcen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_34",
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "start_time": "00:59:00",
+    "end_time": "01:05:07",
+    "description": "Take a photo of the dish and share it with friends.",
+    "place_id": "kitcen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_35",
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "start_time": "01:05:10",
+    "end_time": "01:13:50",
+    "description": "The girl opened the video on her phone and started eating.",
+    "place_id": "kitcen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_36",
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "start_time": "01:05:10",
+    "end_time": "01:13:50",
+    "description": "Cleaning kitchenware and tableware.",
+    "place_id": "kitcen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_37",
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "start_time": "01:19:19",
+    "end_time": "01:21:30",
+    "description": "Pick up your bag and go out.",
+    "place_id": "apartment building_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_38",
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "start_time": "01:22:50",
+    "end_time": "01:48:56",
+    "description": "Step out of the apartment building and reach the supermarket.",
+    "place_id": "apartment building_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_39",
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "start_time": "01:22:50",
+    "end_time": "02:21:39",
+    "description": "Shopping at the supermarket.",
+    "place_id": "supermarket_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_40",
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "start_time": "02:21:40",
+    "end_time": "02:31:06",
+    "description": "End of shopping, queue for payment.",
+    "place_id": "supermarket_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_40",
+    "video_id": "017_0009",
+    "video_path": "017/017_0009",
+    "start_time": "00:00:00",
+    "end_time": "00:00:04",
+    "description": "pour milk in ketche.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0009_obj_potato_01","0009_obj_pot lid_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_41",
+    "video_id": "017_0009",
+    "video_path": "017/017_0009",
+    "start_time": "00:01:00",
+    "end_time": "00:01:40",
+    "description": "Digging something from the bag.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_42",
+    "video_id": "017_0009",
+    "video_path": "017/017_0009",
+    "start_time": "00:01:40",
+    "end_time": "00:01:49",
+    "description": "Sealed bag.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0009_obj_bracelet_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_43",
+    "video_id": "017_0009",
+    "video_path": "017/017_0009",
+    "start_time": "00:02:17",
+    "end_time": "00:03:48",
+    "description": "Wash blueberries.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_44",
+    "video_id": "017_0009",
+    "video_path": "017/017_0009",
+    "start_time": "00:05:26",
+    "end_time": "00:10:04",
+    "description": "Get bread from the fridge.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0009_obj_sneakers_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_45",
+    "video_id": "017_0009",
+    "video_path": "017/017_0009",
+    "start_time": "00:10:34",
+    "end_time": "00:26:00",
+    "description": "eat a meal.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0009_obj_salad dressing_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_46",
+    "video_id": "017_0010",
+    "video_path": "017/017_0010",
+    "start_time": "00:00:00",
+    "end_time": "00:01:15",
+    "description": "Wash spinach.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0010_obj_yogurt_01","0010_obj_watch_01","0010_obj_spinach_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_47",
+    "video_id": "017_0010",
+    "video_path": "017/017_0010",
+    "start_time": "00:01:50",
+    "end_time": "00:02:05",
+    "description": "Wash mushrooms",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_48",
+    "video_id": "017_0010",
+    "video_path": "017/017_0010",
+    "start_time": "00:02:10",
+    "end_time": "00:03:51",
+    "description": "cut vegetables.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_49",
+    "video_id": "017_0010",
+    "video_path": "017/017_0010",
+    "start_time": "00:03:38",
+    "end_time": "00:12:53",
+    "description": "fried dish.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_50",
+    "video_id": "017_0010",
+    "video_path": "017/017_0010",
+    "start_time": "00:04:09",
+    "end_time": "00:04:40",
+    "description": "Cutting scallions.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_51",
+    "video_id": "017_0010",
+    "video_path": "017/017_0010",
+    "start_time": "00:05:09",
+    "end_time": "00:13:40",
+    "description": "make noodles.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_52",
+    "video_id": "017_0010",
+    "video_path": "017/017_0010",
+    "start_time": "00:13:45",
+    "end_time": "00:28:29",
+    "description": "eat noodles.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_53",
+    "video_id": "017_0001",
+    "video_path": "017/017_0001",
+    "start_time": "00:00:00",
+    "end_time": "00:01:35",
+    "description": "Leaving the apartment building.",
+    "place_id": "apartment building_1",
+    "objects_involved": ["0001_obj_revolving door_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_54",
+    "video_id": "017_0001",
+    "video_path": "017/017_0001",
+    "start_time": "00:01:36",
+    "end_time": "00:04:04",
+    "description": "On the way to the supermarket.",
+    "place_id": "roadside_1",
+    "objects_involved": ["0001_obj_street light_01","0001_obj_billboard_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_55",
+    "video_id": "017_0001",
+    "video_path": "017/017_0001",
+    "start_time": "00:04:24",
+    "end_time": "00:05:34",
+    "description": "Take a shopping basket and stroll around the fruit area.",
+    "place_id": "apartment building_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_56",
+    "video_id": "017_0001",
+    "video_path": "017/017_0001",
+    "start_time": "00:05:40",
+    "end_time": "00:07:00",
+    "description": "Shopping in the vegetable area.",
+    "place_id": "apartment building_1",
+    "objects_involved": ["0001_obj_bean sprouts_01","0001_obj_shelf_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_57",
+    "video_id": "017_0001",
+    "video_path": "017/017_0001",
+    "start_time": "00:07:10",
+    "end_time": "00:08:44",
+    "description": "Shopping in the baking area.",
+    "place_id": "apartment building_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_58",
+    "video_id": "017_0001",
+    "video_path": "017/017_0001",
+    "start_time": "00:08:50",
+    "end_time": "00:13:20",
+    "description": "Shopping in other areas of the supermarket.",
+    "place_id": "apartment building_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_59",
+    "video_id": "017_0001",
+    "video_path": "017/017_0001",
+    "start_time": "00:13:21",
+    "end_time": "00:20:43",
+    "description": "After queuing up to pay, walk out of the supermarket.",
+    "place_id": "apartment building_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_60",
+    "video_id": "017_0001",
+    "video_path": "017/017_0001",
+    "start_time": "00:20:50",
+    "end_time": "00:26:41",
+    "description": "back to the dorm.",
+    "place_id": "dorm_1",
+    "objects_involved": ["0001_obj_dish_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_61",
+    "video_id": "017_0008",
+    "video_path": "017/017_0008",
+    "start_time": "00:00:00",
+    "end_time": "00:05:16",
+    "description": "Take out the chicken from the fridge, clean and cut it, and put it in a bowl.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0008_obj_chicken_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_61",
+    "video_id": "017_0008",
+    "video_path": "017/017_0008",
+    "start_time": "00:05:45",
+    "end_time": "00:09:29",
+    "description": "Prepare ingredients for cooking.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0008_obj_chicken_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_62",
+    "video_id": "017_0008",
+    "video_path": "017/017_0008",
+    "start_time": "00:09:30",
+    "end_time": "00:12:45",
+    "description": "Take out the pumpkin and prepare it for frying chicken.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_63",
+    "video_id": "017_0008",
+    "video_path": "017/017_0008",
+    "start_time": "00:13:00",
+    "end_time": "00:18:30",
+    "description": "Fry the chicken and put it on a plate.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_64",
+    "video_id": "017_0008",
+    "video_path": "017/017_0008",
+    "start_time": "00:19:50",
+    "end_time": "00:21:44",
+    "description": "Put the chicken back into the pot.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_65",
+    "video_id": "017_0008",
+    "video_path": "017/017_0008",
+    "start_time": "00:22:00",
+    "end_time": "00:34:00",
+    "description": "Cut vegetables, cut chicken.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_66",
+    "video_id": "017_0008",
+    "video_path": "017/017_0008",
+    "start_time": "00:29:53",
+    "end_time": "00:31:28",
+    "description": "Clean up the garbage.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0008_obj_power bank_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_67",
+    "video_id": "017_0008",
+    "video_path": "017/017_0008",
+    "start_time": "00:32:53",
+    "end_time": "00:37:54",
+    "description": "Take out the plastic wrap and wrap it around the pumpkin.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0008_obj_Cling film box_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_68",
+    "video_id": "017_0008",
+    "video_path": "017/017_0008",
+    "start_time": "00:38:40",
+    "end_time": "00:44:19",
+    "description": "Put the food in the bowl and prepare to eat.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_69",
+    "video_id": "017_0008",
+    "video_path": "017/017_0008",
+    "start_time": "00:45:00",
+    "end_time": "00:56:00",
+    "description": "dining.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_70",
+    "video_id": "017_0008",
+    "video_path": "017/017_0008",
+    "start_time": "00:56:30",
+    "end_time": "01:00:00",
+    "description": "Cleaning dishes, utensils, and kitchen utensils.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_71",
+    "video_id": "017_0011",
+    "video_path": "017/017_0011",
+    "start_time": "00:00:00",
+    "end_time": "00:04:40",
+    "description": "Go out of the dormitory to the supermarket.",
+    "place_id": "dorm_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+   {
+    "event_id": "ev_72",
+    "video_id": "017_0011",
+    "video_path": "017/017_0011",
+    "start_time": "00:04:50",
+    "end_time": "00:09:38",
+    "description": "Go out of the dormitory to the supermarket.",
+    "place_id": "roadside_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_73",
+    "video_id": "017_0011",
+    "video_path": "017/017_0011",
+    "start_time": "00:09:40",
+    "end_time": "00:12:03",
+    "description": "Take the shopping basket and select fruits in the fruit area.",
+    "place_id": "supermarket_1",
+    "objects_involved": ["0011_obj_apple_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_74",
+    "video_id": "017_0011",
+    "video_path": "017/017_0011",
+    "start_time": "00:12:04",
+    "end_time": "00:14:59",
+    "description": "Go to the supermarket baking area to purchase.",
+    "place_id": "supermarket_1",
+    "objects_involved": ["0011_obj_croissant_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_75",
+    "video_id": "017_0011",
+    "video_path": "017/017_0011",
+    "start_time": "00:15:00",
+    "end_time": "00:17:17",
+    "description": "Buy eggs.",
+    "place_id": "supermarket_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_76",
+    "video_id": "017_0011",
+    "video_path": "017/017_0011",
+    "start_time": "00:17:18",
+    "end_time": "00:18:45",
+    "description": "Purchase food in the frozen area.",
+    "place_id": "supermarket_1",
+    "objects_involved": ["0011_obj_Salmon fillet_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_77",
+    "video_id": "017_0011",
+    "video_path": "017/017_0011",
+    "start_time": "00:18:46",
+    "end_time": "00:21:40",
+    "description": "Complete shopping at the supermarket.",
+    "place_id": "supermarket_1",
+    "objects_involved": ["0011_obj_receipt printer_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_78",
+    "video_id": "017_0011",
+    "video_path": "017/017_0011",
+    "start_time": "00:21:45",
+    "end_time": "00:26:50",
+    "description": "Leave after making payment at the supermarket.",
+    "place_id": "supermarket_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_79",
+    "video_id": "017_0011",
+    "video_path": "017/017_0011",
+    "start_time": "00:26:55",
+    "end_time": "00:31:00",
+    "description": "On the way back to the apartment from the supermarket.",
+    "place_id": "roadside_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_80",
+    "video_id": "017_0011",
+    "video_path": "017/017_0011",
+    "start_time": "00:31:05",
+    "end_time": "00:32:55",
+    "description": "back to the dorm.",
+    "place_id": "dorm_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_81",
+    "video_id": "017_0012",
+    "video_path": "017/017_0011",
+    "start_time": "00:00:07",
+    "end_time": "00:00:32",
+    "description": "Boil water with an electric kettle.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0012_obj_electric kettle_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_82",
+    "video_id": "017_0012",
+    "video_path": "017/017_0011",
+    "start_time": "00:00:33",
+    "end_time": "00:01:14",
+    "description": "Take out food from the refrigerator and open it.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_83",
+    "video_id": "017_0012",
+    "video_path": "017/017_0012",
+    "start_time": "00:01:15",
+    "end_time": "00:05:39",
+    "description": "Fried bread.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_83",
+    "video_id": "017_0012",
+    "video_path": "017/017_0012",
+    "start_time": "00:05:50",
+    "end_time": "00:06:17",
+    "description": "Open the salad dressing.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_84",
+    "video_id": "017_0012",
+    "video_path": "017/017_0012",
+    "start_time": "00:07:57",
+    "end_time": "00:08:56",
+    "description": "Pour water and tie the bread bag tightly.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_85",
+    "video_id": "017_0012",
+    "video_path": "017/017_0012",
+    "start_time": "00:09:49",
+    "end_time": "00:11:57",
+    "description": "Go charge your phone.",
+    "place_id": "dorm_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_86",
+    "video_id": "017_0012",
+    "video_path": "017/017_0012",
+    "start_time": "00:12:13",
+    "end_time": "00:23:02",
+    "description": "Eat bread.",
+    "place_id": "dorm_1",
+    "objects_involved": ["0012_obj_ipad_01","0012_obj_ipad_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_87",
+    "video_id": "017_0012",
+    "video_path": "017/017_0012",
+    "start_time": "00:23:04",
+    "end_time": "00:24:10",
+    "description": "Clean up the kitchen.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_88",
+    "video_id": "017_0012",
+    "video_path": "017/017_0012",
+    "start_time": "00:23:04",
+    "end_time": "00:24:10",
+    "description": "play games.",
+    "place_id": "dorm_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_89",
+    "video_id": "017_0012",
+    "video_path": "017/017_0012",
+    "start_time": "00:30:40",
+    "end_time": "00:31:20",
+    "description": "wash the cups.",
+    "place_id": "dorm_1",
+    "objects_involved": ["0012_obj_pool_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_90",
+    "video_id": "017_0012",
+    "video_path": "017/017_0012",
+    "start_time": "00:31:21",
+    "end_time": "00:54:34",
+    "description": "Continue playing the game",
+    "place_id": "dorm_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_91",
+    "video_id": "017_0015",
+    "video_path": "017/017_0015",
+    "start_time": "00:00:00",
+    "end_time": "00:03:08",
+    "description": "Leaving the apartment with friends",
+    "place_id": "apartment building_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_92",
+    "video_id": "017_0015",
+    "video_path": "017/017_0015",
+    "start_time": "00:03:10",
+    "end_time": "00:08:12",
+    "description": "Walking on the road.",
+    "place_id": "roadside_1",
+    "objects_involved": ["0015_obj_phone strap_01","0015_obj_backpack_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_93",
+    "video_id": "017_0015",
+    "video_path": "017/017_0015",
+    "start_time": "00:08:12",
+    "end_time": "00:09:06",
+    "description": "Go to the station to buy tickets.",
+    "place_id": "station_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_94",
+    "video_id": "017_0015",
+    "video_path": "017/017_0015",
+    "start_time": "00:09:13",
+    "end_time": "00:12:49",
+    "description": "Enter the station and wait at the platform.",
+    "place_id": "station_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_95",
+    "video_id": "017_0015",
+    "video_path": "017/017_0015",
+    "start_time": "00:13:49",
+    "end_time": "00:20:14",
+    "description": "Standing in the train.",
+    "place_id": "train_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_96",
+    "video_id": "017_0015",
+    "video_path": "017/017_0015",
+    "start_time": "00:20:15",
+    "end_time": "00:29:00",
+    "description": "Sitting on a seat in the train.",
+    "place_id": "train_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_97",
+    "video_id": "017_0015",
+    "video_path": "017/017_0015",
+    "start_time": "00:29:01",
+    "end_time": "00:31:25",
+    "description": "Step out of the station.",
+    "place_id": "train_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_98",
+    "video_id": "017_0015",
+    "video_path": "017/017_0015",
+    "start_time": "00:31:58",
+    "end_time": "00:34:58",
+    "description": "Walking in the rain.",
+    "place_id": "train_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_99",
+    "video_id": "017_0015",
+    "video_path": "017/017_0015",
+    "start_time": "00:35:00",
+    "end_time": "00:39:38",
+    "description": "Return to college.",
+    "place_id": "college1_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_100",
+    "video_id": "017_0016",
+    "video_path": "017/017_0016",
+    "start_time": "00:00:00",
+    "end_time": "00:06:10",
+    "description": "Wash the cup with detergent.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0016_obj_turner_01","0016_obj_mug_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_101",
+    "video_id": "017_0016",
+    "video_path": "017/017_0016",
+    "start_time": "00:06:11",
+    "end_time": "00:07:55",
+    "description": "Wash the pot with a rag.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_102",
+    "video_id": "017_0016",
+    "video_path": "017/017_0016",
+    "start_time": "00:08:08",
+    "end_time": "00:09:19",
+    "description": "The girl looked at her laptop for a while, then checked her iPad, and then went to look at her phone.",
+    "place_id": "dorm_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_103",
+    "video_id": "017_0016",
+    "video_path": "017/017_0016",
+    "start_time": "00:09:25",
+    "end_time": "00:11:06",
+    "description": "Organize her wallet.",
+    "place_id": "dorm_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_104",
+    "video_id": "017_0016",
+    "video_path": "017/017_0016",
+    "start_time": "00:09:25",
+    "end_time": "00:11:06",
+    "description": "Organize her wallet.",
+    "place_id": "dorm_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_105",
+    "video_id": "017_0016",
+    "video_path": "017/017_0016",
+    "start_time": "00:17:10",
+    "end_time": "00:26:40",
+    "description": "Girl playing games while shopping on her phone.",
+    "place_id": "dorm_1",
+    "objects_involved": ["0016_obj_hat_01","0016_obj_cloth bag_01","0016_obj_wallet_01","0016_obj_banknote_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_106",
+    "video_id": "017_0013",
+    "video_path": "017/017_0013",
+    "start_time": "00:00:00",
+    "end_time": "00:00:20",
+    "description": "wash the dishes.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_107",
+    "video_id": "017_0013",
+    "video_path": "017/017_0013",
+    "start_time": "00:00:23",
+    "end_time": "00:02:12",
+    "description": "The girl checks the menu on her phone.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_108",
+    "video_id": "017_0013",
+    "video_path": "017/017_0013",
+    "start_time": "00:02:23",
+    "end_time": "00:03:05",
+    "description": "The girl put the chili on the cutting board.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_109",
+    "video_id": "017_0013",
+    "video_path": "017/017_0013",
+    "start_time": "00:03:20",
+    "end_time": "00:04:30",
+    "description": "Wash spinach.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_110",
+    "video_id": "017_0013",
+    "video_path": "017/017_0013",
+    "start_time": "00:04:31",
+    "end_time": "00:10:44",
+    "description": "peel potatoes.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_111",
+    "video_id": "017_0013",
+    "video_path": "017/017_0013",
+    "start_time": "00:10:53",
+    "end_time": "00:13:22",
+    "description": "Thawing chicken meat.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_112",
+    "video_id": "017_0013",
+    "video_path": "017/017_0013",
+    "start_time": "00:14:13",
+    "end_time": "00:14:19",
+    "description": "Pour oil into the pot.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_113",
+    "video_id": "017_0013",
+    "video_path": "017/017_0013",
+    "start_time": "00:16:36",
+    "end_time": "00:21:41",
+    "description": "Cut diced meat on the cutting board.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_114",
+    "video_id": "017_0013",
+    "video_path": "017/017_0013",
+    "start_time": "00:22:16",
+    "end_time": "00:23:14",
+    "description": "The Cutting garlic sprouts.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_115",
+    "video_id": "017_0013",
+    "video_path": "017/017_0013",
+    "start_time": "00:28:06",
+    "end_time": "00:31:35",
+    "description": "Add milk to cereal.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0013_obj_cereal_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_116",
+    "video_id": "017_0013",
+    "video_path": "017/017_0013",
+    "start_time": "00:36:01",
+    "end_time": "00:50:02",
+    "description": "Facing the door and having a meal.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_117",
+    "video_id": "017_0013",
+    "video_path": "017/017_0013",
+    "start_time": "00:50:16",
+    "end_time": "00:50:23",
+    "description": "wash dishes.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0013_obj_door_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_118",
+    "video_id": "017_0014",
+    "video_path": "017/017_0014",
+    "start_time": "00:00:00",
+    "end_time": "00:00:46",
+    "description": "Pick up the water cup and drink water.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_119",
+    "video_id": "017_0014",
+    "video_path": "017/017_0014",
+    "start_time": "00:01:01",
+    "end_time": "00:04:39",
+    "description": "Cut butter and bread with a small knife.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_120",
+    "video_id": "017_0014",
+    "video_path": "017/017_0014",
+    "start_time": "00:05:01",
+    "end_time": "00:09:09",
+    "description": "Cut bananas into sections and put them on bread.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_121",
+    "video_id": "017_0014",
+    "video_path": "017/017_0014",
+    "start_time": "00:09:10",
+    "end_time": "00:10:09",
+    "description": "Spread salad dressing on bread.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_122",
+    "video_id": "017_0014",
+    "video_path": "017/017_0014",
+    "start_time": "00:10:10",
+    "end_time": "00:13:03",
+    "description": "Take out the apple from the refrigerator and cut it into pieces.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_123",
+    "video_id": "017_0014",
+    "video_path": "017/017_0014",
+    "start_time": "00:13:19",
+    "end_time": "00:13:34",
+    "description": "Taking photos of food with a mobile phone.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_124",
+    "video_id": "017_0014",
+    "video_path": "017/017_0014",
+    "start_time": "00:13:40",
+    "end_time": "00:17:24",
+    "description": "The girl placed her plate on the table and looked at her phone.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_125",
+    "video_id": "017_0014",
+    "video_path": "017/017_0014",
+    "start_time": "00:17:25",
+    "end_time": "00:26:00",
+    "description": "The girl watched the iPad for a while and continued to check her phone.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_126",
+    "video_id": "017_0014",
+    "video_path": "017/017_0014",
+    "start_time": "00:26:08",
+    "end_time": "00:44:55",
+    "description": "The girl took off her slippers and sat cross legged on a chair.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_127",
+    "video_id": "017_0017",
+    "video_path": "017/017_0017",
+    "start_time": "00:00:00",
+    "end_time": "00:02:20",
+    "description": "Pour milk into the bowl.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0017_obj_milk_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_128",
+    "video_id": "017_0017",
+    "video_path": "017/017_0017",
+    "start_time": "00:02:24",
+    "end_time": "00:03:20",
+    "description": "Boil water with an electric kettle.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0017_obj_electric kettle_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_129",
+    "video_id": "017_0017",
+    "video_path": "017/017_0017",
+    "start_time": "00:03:50",
+    "end_time": "00:05:10",
+    "description": "Stir the milk with a spoon.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0017_obj_spoon_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_130",
+    "video_id": "017_0017",
+    "video_path": "017/017_0017",
+    "start_time": "00:00:00",
+    "end_time": "00:02:20",
+    "description": "Crack the eggs into the bowl.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0017_obj_eggs_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_131",
+    "video_id": "017_0017",
+    "video_path": "017/017_0017",
+    "start_time": "00:00:00",
+    "end_time": "00:02:20",
+    "description": "Take seasoning and stir.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0017_obj_spice box_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_132",
+    "video_id": "017_0017",
+    "video_path": "017/017_0017",
+    "start_time": "00:09:37",
+    "end_time": "00:10:12",
+    "description": "Use a mug to fetch water.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0017_obj_mug_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_133",
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "start_time": "00:00:00",
+    "end_time": "00:04:40",
+    "description": "Boil water in the pot.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0018_obj_pot_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_134",
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "start_time": "00:04:41",
+    "end_time": "00:06:45",
+    "description": "Boil instant noodles in a pot.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0018_obj_instant noodles_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_135",
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "start_time": "00:06:49",
+    "end_time": "00:08:50",
+    "description": "The girl looked at her phone for a while.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0018_obj_mobile phone_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_136",
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "start_time": "00:10:59",
+    "end_time": "00:15:58",
+    "description": "Boil instant noodles in a pot.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0018_obj_instant noodles_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_137",
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "start_time": "00:16:03",
+    "end_time": "00:17:55",
+    "description": "Enter the card number in the phone.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_138",
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "start_time": "00:18:11",
+    "end_time": "00:19:14",
+    "description": "Add jam to milk jelly.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0018_obj_jam_01","0018_obj_milk jelly_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_139",
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "start_time": "00:19:25",
+    "end_time": "00:28:15",
+    "description": "eat instant noodles.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0018_obj_instant noodles_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_140",
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "start_time": "00:30:48",
+    "end_time": "00:33:38",
+    "description": "Eating milk jelly.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0018_obj_milk jelly_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_141",
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "start_time": "00:33:48",
+    "end_time": "00:36:07",
+    "description": "Digging jam.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0018_obj_jam_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_142",
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "start_time": "00:36:12",
+    "end_time": "00:39:54",
+    "description": "Cleaning pots and bowls.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0018_pool__01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_143",
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "start_time": "00:04:41",
+    "end_time": "00:06:45",
+    "description": "Boil instant noodles in a pot.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0017_obj_instant noodles_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_144",
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "start_time": "00:00:00",
+    "end_time": "00:00:52",
+    "description": "Look at the whiteboard recording.",
+    "place_id": "dorm_1",
+    "objects_involved": ["0042_obj_whiteboard_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_145",
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "start_time": "00:01:00",
+    "end_time": "00:05:49",
+    "description": "Take the elevator out.",
+    "place_id": "apartment building_1",
+    "objects_involved": ["0042_obj_elevator_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_146",
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "start_time": "00:05:50",
+    "end_time": "00:09:46",
+    "description": "On the way to the supermarket.",
+    "place_id": "roadside_1",
+    "objects_involved": ["0042_obj_bench_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_147",
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "start_time": "00:09:50",
+    "end_time": "00:17:22",
+    "description": "Shopping at the supermarket.",
+    "place_id": "supermarket_1",
+    "objects_involved": ["0042_obj_banana_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_148",
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "start_time": "00:13:44",
+    "end_time": "00:15:20",
+    "description": "Buying ROCHES wine at the supermarket.",
+    "place_id": "supermarket_1",
+    "objects_involved": ["0042_obj_ROCHES wine_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_149",
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "start_time": "00:16:18",
+    "end_time": "00:17:23",
+    "description": "Check out at the checkout counter.",
+    "place_id": "supermarket_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_150",
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "start_time": "00:17:30",
+    "end_time": "00:22:50",
+    "description": "Go to the next supermarket.",
+    "place_id": "supermarket_1",
+    "objects_involved": ["0042_obj_seasoning_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_151",
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "start_time": "00:22:51",
+    "end_time": "00:26:15",
+    "description": "On the way to the next supermarket.",
+    "place_id": "roadside_1",
+    "objects_involved": ["0042_obj_seasoning_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_152",
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "start_time": "00:26:17",
+    "end_time": "00:35:00",
+    "description": "Shopping at the supermarket.",
+    "place_id": "supermarket_1",
+    "objects_involved": ["0042_obj_pork chop_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_153",
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "start_time": "00:35:35",
+    "end_time": "00:35:51",
+    "description": "Buy Chipotle Paste at the Supermarket.",
+    "place_id": "supermarket_1",
+    "objects_involved": ["0042_obj_Chipotle Paste_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_154",
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "start_time": "00:36:30",
+    "end_time": "00:39:00",
+    "description": "Buy ice cream at the Supermarket.",
+    "place_id": "supermarket_1",
+    "objects_involved": ["0042_obj_ice cream_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_155",
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "start_time": "00:39:15",
+    "end_time": "00:44:44",
+    "description": "Queuing up for checkout at the supermarket",
+    "place_id": "checkout counter_1",
+    "objects_involved": ["0042_obj_cash register_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_156",
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "start_time": "00:45:00",
+    "end_time": "00:51:10",
+    "description": "On the way back to the dormitory after shopping",
+    "place_id": "roadside_1",
+    "objects_involved": ["0042_obj_baby stroller_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_157",
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "start_time": "00:51:11",
+    "end_time": "00:56:20",
+    "description": "Organizing items in the dormitory",
+    "place_id": "dorm_1",
+    "objects_involved": ["0042_obj_facial tissue_01","0042_obj_marker_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_158",
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "start_time": "00:56:20",
+    "end_time": "00:57:05",
+    "description": "Open the laptop",
+    "place_id": "dorm_1",
+    "objects_involved": ["0042_obj_laptop_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_159",
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "start_time": "00:57:10",
+    "end_time": "01:07:00",
+    "description": "cooking the instant noodles",
+    "place_id": "dorm_1",
+    "objects_involved": ["0042_obj_instant noodles_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_160",
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "start_time": "01:07:01",
+    "end_time": "01:09:30",
+    "description": "Eating noodles while watching dramas",
+    "place_id": "dorm_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_161",
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "start_time": "01:09:36",
+    "end_time": "01:38:37",
+    "description": "The girl is eating noodles",
+    "place_id": "dorm_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_162",
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "start_time": "00:00:00",
+    "end_time": "00:03:30",
+    "description": "Retrieve ingredients from the refrigerator and wash vegetables in the sink",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0048_obj_sink_01","0048_obj_paper box_01","0048_obj_pot_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_163",
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "start_time": "00:03:31",
+    "end_time": "00:07:00",
+    "description": "Boil vegetables with water",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0048_obj_tomato_01","0048_obj_mushroom_01","0048_obj_mug_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_164",
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "start_time": "00:07:01",
+    "end_time": "00:08:00",
+    "description": "Add seasoning to the pot",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0048_obj_spice box_01","0048_obj_spoon_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_165",
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "start_time": "00:08:00",
+    "end_time": "00:11:00",
+    "description": "Boiling noodles in a pot",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0048_obj_noodles_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_166",
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "start_time": "00:11:01",
+    "end_time": "00:12:15",
+    "description": "View mobile phone information",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0048_obj_mobile phone_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_167",
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "start_time": "00:12:30",
+    "end_time": "00:13:00",
+    "description": "Cooking noodles for seasoning",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0048_obj_spice box_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_168",
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "start_time": "00:13:50",
+    "end_time": "00:15:40",
+    "description": "The girl selects videos on her phone",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0048_obj_mobile phone_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_169",
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "start_time": "00:16:00",
+    "end_time": "00:28:40",
+    "description": "The girl eats noodles",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_170",
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "start_time": "00:28:45",
+    "end_time": "00:39:30",
+    "description": "The girl is chatting on her phone",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0048_obj_whiteboard marker_01","0048_obj_whiteboard_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_171",
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "start_time": "00:39:01",
+    "end_time": "00:40:30",
+    "description": "Add seasoning to the pot",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0048_obj_pot_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_172",
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "start_time": "00:00:01",
+    "end_time": "00:02:19",
+    "description": "cook rice",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0049_obj_water_01","0049_obj_pot_01","0049_obj_rice_01","0049_obj_plate_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_173",
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "start_time": "00:02:29",
+    "end_time": "00:03:05",
+    "description": "Thawing pork",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0049_obj_pork_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_174",
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "start_time": "00:02:47",
+    "end_time": "00:05:30",
+    "description": "Tear cabbage by hand",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0049_obj_cabbage_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_175",
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "start_time": "00:07:35",
+    "end_time": "00:09:30",
+    "description": "Cut the meat into small pieces",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0049_obj_scissors_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_176",
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "start_time": "00:09:45",
+    "end_time": "00:10:55",
+    "description": "Marinate the meat",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0049_obj_pork_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_177",
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "start_time": "00:15:35",
+    "end_time": "00:17:05",
+    "description": "Put the rice into a bowl",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0049_obj_pork_01","0049_obj_bowl_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_178",
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "start_time": "00:17:15",
+    "end_time": "00:23:04",
+    "description": "Stir-fried cabbage",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0049_obj_cabbage_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_179",
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "start_time": "00:23:10",
+    "end_time": "00:25:18",
+    "description": "Stir fried egg mixture",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0049_obj_egg liquid_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_180",
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "start_time": "00:25:38",
+    "end_time": "00:32:50",
+    "description": "stir-fried pork",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0049_obj_pork_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_181",
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "start_time": "00:34:10",
+    "end_time": "00:55:14",
+    "description": "eat a meal",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0049_obj_ipad_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_182",
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "start_time": "00:55:14",
+    "end_time": "00:60:46",
+    "description": "Clean up the kitchen",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0049_obj_pot_01","0049_obj_dish soap_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_183",
+    "video_id": "017_0050",
+    "video_path": "017/017_0050",
+    "start_time": "00:00:01",
+    "end_time": "00:07:59",
+    "description": "Open the delivery box and take out the new pot inside",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0050_obj_air fryer_01","0050_obj_scissors_01","0050_obj_turner_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_184",
+    "video_id": "017_0050",
+    "video_path": "017/017_0050",
+    "start_time": "00:08:44",
+    "end_time": "00:15:14",
+    "description": "Take out the clothes from the cardboard boxe",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0050_obj_jeans_01","0050_obj_cardboard box_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_185",
+    "video_id": "017_0050",
+    "video_path": "017/017_0050",
+    "start_time": "00:12:50",
+    "end_time": "00:14:50",
+    "description": "Organize garbage",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_186",
+    "video_id": "017_0051",
+    "video_path": "017/017_0051",
+    "start_time": "00:00:01",
+    "end_time": "00:01:54",
+    "description": "peel a potato",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0050_obj_potato_01","0050_obj_peeler_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_187",
+    "video_id": "017_0051",
+    "video_path": "017/017_0051",
+    "start_time": "00:02:20",
+    "end_time": "00:05:32",
+    "description": "Cut potato strips",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0050_obj_knife_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_188",
+    "video_id": "017_0051",
+    "video_path": "017/017_0051",
+    "start_time": "00:05:33",
+    "end_time": "00:08:11",
+    "description": "Chat on mobile phone",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0050_obj_mobile phone_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_188",
+    "video_id": "017_0051",
+    "video_path": "017/017_0051",
+    "start_time": "00:08:13",
+    "end_time": "00:08:38",
+    "description": "Cleaning potato chips",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_189",
+    "video_id": "017_0051",
+    "video_path": "017/017_0051",
+    "start_time": "00:09:03",
+    "end_time": "00:10:43",
+    "description": "Put the potato chips into the air fryer and add the seasoning.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_190",
+    "video_id": "017_0051",
+    "video_path": "017/017_0051",
+    "start_time": "00:10:44",
+    "end_time": "00:11:17",
+    "description": "The girl brought instant noodles to the table and chatted with friends on her phone.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0050_obj_instant noodles_01","0050_obj_pot_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_191",
+    "video_id": "017_0051",
+    "video_path": "017/017_0051",
+    "start_time": "00:11:26",
+    "end_time": "00:31:50",
+    "description": "The girl is eating noodles.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0050_obj_instant noodles_01","0050_obj_pot_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_192",
+    "video_id": "017_0051",
+    "video_path": "017/017_0051",
+    "start_time": "00:33:29",
+    "end_time": "00:35:30",
+    "description": "The girl put the fries on the plate and brought them to the table.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0050_obj_plate_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_193",
+    "video_id": "017_0051",
+    "video_path": "017/017_0051",
+    "start_time": "00:35:35",
+    "end_time": "01:08:06",
+    "description": "The girl eats while looking at her phone.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_194",
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "start_time": "00:00:00",
+    "end_time": "01:02:46",
+    "description": "Add oil, rice, and water to the pot and start boiling.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0019_obj_rice_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_195",
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "start_time": "00:02:47",
+    "end_time": "00:06:40",
+    "description": "Cut the ingredients and put them in the pot.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0019_obj_scissors_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_196",
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "start_time": "00:07:00",
+    "end_time": "00:08:56",
+    "description": "Cut the salmon into pieces and clean them.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0019_obj_knife_01","0019_obj_chopping board_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_197",
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "start_time": "00:09:14",
+    "end_time": "00:09:56",
+    "description": "Add seasoning to salmon.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0019_obj_salmon_01","0019_obj_spice box_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_198",
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "start_time": "00:10:00",
+    "end_time": "00:12:52",
+    "description": "Cleaning spinach.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0019_obj_pool_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_199",
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "start_time": "00:12:55",
+    "end_time": "00:14:41",
+    "description": "Stir the ingredients in the pot.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0019_obj_pot_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_200",
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "start_time": "00:15:00",
+    "end_time": "00:20:46",
+    "description": "Stir fry spinach in a pot.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0019_obj_spinach_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_201",
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "start_time": "00:21:06",
+    "end_time": "00:26:21",
+    "description": "Processing salmon.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_202",
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "start_time": "00:26:26",
+    "end_time": "00:27:15",
+    "description": "Cleaning dishes",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0019_obj_bowl_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_203",
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "start_time": "00:28:42",
+    "end_time": "00:30:42",
+    "description": "Salmon out of the pot.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_204",
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "start_time": "00:30:50",
+    "end_time": "00:33:10",
+    "description": "The girl took photos of the prepared food and uploaded them.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0019_obj_mobile phone_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_205",
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "start_time": "00:34:00",
+    "end_time": "00:41:46",
+    "description": "The girl sat at the desk eating while looking at her phone.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0019_obj_desk_01","0019_obj_spoon_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_206",
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "start_time": "00:42:00",
+    "end_time": "00:43:20",
+    "description": "Cleaning pots and bowls.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0019_obj_pot_01","0019_obj_bowl_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_207",
+    "video_id": "017_0022",
+    "video_path": "017/017_0022",
+    "start_time": "00:00:00",
+    "end_time": "00:02:03",
+    "description": "From the dormitory to the elevator entrance.",
+    "place_id": "corridor_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_208",
+    "video_id": "017_0022",
+    "video_path": "017/017_0022",
+    "start_time": "00:02:18",
+    "end_time": "00:02:45",
+    "description": "Open the door to the gym with the access card.",
+    "place_id": "corridor_1",
+    "objects_involved": ["0022_obj_access card _01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_209",
+    "video_id": "017_0022",
+    "video_path": "017/017_0022",
+    "start_time": "00:02:46",
+    "end_time": "00:08:00",
+    "description": "Running on a treadmill.",
+    "place_id": "gym_1",
+    "objects_involved": ["0022_obj_treadmill_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_210",
+    "video_id": "017_0022",
+    "video_path": "017/017_0022",
+    "start_time": "00:08:01",
+    "end_time": "00:29:33",
+    "description": "Chatting while running on the treadmill.",
+    "place_id": "gym_1",
+    "objects_involved": ["0022_obj_treadmill_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_211",
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "start_time": "00:00:00",
+    "end_time": "00:02:15",
+    "description": "The girl walked out of the apartment building.",
+    "place_id": "apapartment building_1",
+    "objects_involved": ["0052_obj_handbag_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_212",
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "start_time": "00:02:16",
+    "end_time": "00:05:10",
+    "description": "Chatting with friends while walking.",
+    "place_id": "roadside_1",
+    "objects_involved": ["0052_obj_handbag_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_213",
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "start_time": "00:05:11",
+    "end_time": "00:06:55",
+    "description": "The girl bought mushrooms and beans in the vegetable section of the supermarket.",
+    "place_id": "supermarket_1",
+    "objects_involved": ["0052_obj_mushroom_01","0052_obj_green beans_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_214",
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "start_time": "00:06:56",
+    "end_time": "00:09:57",
+    "description": "Buy bread in the baking area.",
+    "place_id": "supermarket_1",
+    "objects_involved": ["0052_obj_bread_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_215",
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "start_time": "00:11:14",
+    "end_time": "00:14:22",
+    "description": "Buy chicken thigh fillets in the frozen area.",
+    "place_id": "supermarket_1",
+    "objects_involved": ["0052_obj_chicken thigh fillets_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_216",
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "start_time": "00:14:23",
+    "end_time": "00:17:00",
+    "description": "Buy flour.",
+    "place_id": "supermarket_1",
+    "objects_involved": ["0052_obj_flour_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_217",
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "start_time": "00:17:01",
+    "end_time": "00:17:52",
+    "description": "Buy toast bread.",
+    "place_id": "supermarket_1",
+    "objects_involved": ["0052_obj_toast_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_218",
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "start_time": "00:17:53",
+    "end_time": "00:19:08",
+    "description": "Buy noodles.",
+    "place_id": "supermarket_1",
+    "objects_involved": ["0052_obj_noodles_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_219",
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "start_time": "00:19:09",
+    "end_time": "00:20:08",
+    "description": "Buy tomato sauce.",
+    "place_id": "supermarket_1",
+    "objects_involved": ["0052_obj_tomato sauce_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_220",
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "start_time": "00:20:09",
+    "end_time": "00:23:44",
+    "description": "Buy milk.",
+    "place_id": "supermarket_1",
+    "objects_involved": ["0052_obj_milk_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_221",
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "start_time": "00:23:45",
+    "end_time": "00:27:10",
+    "description": "Go to the checkout counter for automatic checkout.",
+    "place_id": "supermarket_1",
+    "objects_involved": ["0052_obj_bank card_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_222",
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "start_time": "00:27:11",
+    "end_time": "00:29:01",
+    "description": "Put the purchased goods into your handbag.",
+    "place_id": "supermarket_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_223",
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "start_time": "00:29:23",
+    "end_time": "00:33:40",
+    "description": "On the way to the second supermarket.",
+    "place_id": "roadside_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_224",
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "start_time": "00:33:41",
+    "end_time": "00:35:10",
+    "description": "Buy dumpling wrappers.",
+    "place_id": "supermarket_2",
+    "objects_involved": ["0052_obj_dumpling wrapper_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_225",
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "start_time": "00:35:11",
+    "end_time": "00:36:26",
+    "description": "Shopping in the frozen area of the supermarket.",
+    "place_id": "supermarket_2",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_226",
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "start_time": "00:36:30",
+    "end_time": "00:39:30",
+    "description": "Continue shopping at the supermarket.",
+    "place_id": "supermarket_2",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_227",
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "start_time": "00:39:45",
+    "end_time": "00:40:27",
+    "description": "Check out at the supermarket.",
+    "place_id": "supermarket_2",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_228",
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "start_time": "00:40:37",
+    "end_time": "00:44:09",
+    "description": "On the way back to the apartment.",
+    "place_id": "roadside_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_229",
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "start_time": "00:44:10",
+    "end_time": "00:50:51",
+    "description": "The girl returned to her dormitory and sorted out the goods she had bought.",
+    "place_id": "dorm_1",
+    "objects_involved": ["0052_obj_drawer_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_230",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:00:00",
+    "end_time": "00:02:42",
+    "description": "Put water into the pot and cook noodles.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0052_obj_pot_01","0052_obj_noodles_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_231",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:02:43",
+    "end_time": "00:03:21",
+    "description": "Take out the meatballs from the refrigerator and put them in a bowl.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0043_obj_bowl_01","0043_obj_meatball_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_232",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:04:56",
+    "end_time": "00:05:08",
+    "description": "Add water from the electric kettle to the thermos.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0043_obj_electric kettle_01","0043_obj_thermos cup_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_233",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:05:20",
+    "end_time": "00:05:55",
+    "description": "Organize laptop bag.",
+    "place_id": "dorm_1",
+    "objects_involved": ["0043_obj_laptop_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_234",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:06:21",
+    "end_time": "00:07:10",
+    "description": "Add ketchup to the meatballs and scoop out the noodles into a bowl.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0043_obj_ketchup_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_235",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:07:12",
+    "end_time": "00:10:21",
+    "description": "Drain the water from the pot and bowl, add seasoning to the noodles, and mix well.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0043_obj_mobile phone_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_236",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:10:32",
+    "end_time": "00:17:10",
+    "description": "Put the food on the desk and take photos, then watch the drama while eating.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0043_obj_mobile phone_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_237",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:017:20",
+    "end_time": "00:18:25",
+    "description": "After cleaning dishes, check your phone.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0043_obj_bowl_01","0043_obj_meatball_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_238",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:18:26",
+    "end_time": "00:23:08",
+    "description": "Take out the meat from the refrigerator to thaw, then peel and cut the potatoes into pieces.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0043_obj_meat_01","0043_obj_potato bag_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_239",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:23:10",
+    "end_time": "00:27:02",
+    "description": "Cut the thawed meat into small pieces and clean the scissors.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0043_obj_scissors_01","0043_obj_Air fryer mat paper_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_240",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:27:10",
+    "end_time": "00:28:21",
+    "description": "cook rice.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0043_obj_garlic sprouts_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_241",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:28:23",
+    "end_time": "00:31:05",
+    "description": "Tear the cabbage by hand and add seasoning to the meat in the middle.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0043_obj_spice box_01","0043_obj_cabbage_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_242",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:31:44",
+    "end_time": "00:33:06",
+    "description": "Clean the torn cabbage and clean the cutting tools",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0043_obj_knife_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_243",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:33:23",
+    "end_time": "00:39:19",
+    "description": "Cook the rice and transfer it to a bowl, while adding scallions to the meat..",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0043_obj_scallion_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_244",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:39:30",
+    "end_time": "00:39:57",
+    "description": "Put the meat in an air fryer and grill it.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0043_obj_air fryer_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_245",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:40:10",
+    "end_time": "00:44:40",
+    "description": "The girl put scallion and garlic sprouts in the pot, washed a bowl, and then checked her phone.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0043_obj_bowl_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_246",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:44:41",
+    "end_time": "00:47:08",
+    "description": "The girl is packing up and preparing to go downstairs.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_247",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:47:10",
+    "end_time": "00:51:30",
+    "description": "The girl picked up the express package after throwing away the garbage.",
+    "place_id": "apapartment building_1",
+    "objects_involved": ["0043_obj_express parcel_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_248",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:51:42",
+    "end_time": "00:52:41",
+    "description": "Go back to the dormitory and take a look at the meat in the air fryer.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0043_obj_air fryer_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_249",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:52:50",
+    "end_time": "00:59:50",
+    "description": "Open the delivery box and take out the camera inside.",
+    "place_id": "dorm_1",
+    "objects_involved": ["0043_obj_camera lens_01","0043_obj_camera_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_250",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "00:0:43",
+    "end_time": "01:08:50",
+    "description": "After checking the camera instructions, the girl opened the camera and took a trial shot.",
+    "place_id": "dorm_1",
+    "objects_involved": ["0043_obj_camera_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_251",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "01:08:45",
+    "end_time": "01:12:58",
+    "description": "Stir fry cabbage in the pot and remove the grilled meat from the air fryer.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0043_obj_cabbage_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_252",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "01:13:01",
+    "end_time": "01:15:42",
+    "description": "The girl registered a camera on her phone and took out the camera battery to charge it.",
+    "place_id": "dorm_1",
+    "objects_involved": ["0043_obj_camera_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_253",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "01:16:10",
+    "end_time": "01:41:38",
+    "description": "Eating and watching dramas.",
+    "place_id": "dorm_1",
+    "objects_involved": ["0043_obj_bowl_01","0043_obj_mobile phone_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_254",
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "start_time": "01:41:51",
+    "end_time": "01:47:59",
+    "description": "Check the camera lens and take a trial shot.",
+    "place_id": "dorm_1",
+    "objects_involved": ["0043_obj_camera lens_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_255",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:00:01",
+    "end_time": "00:06:10",
+    "description": "Check the camera lens and take a trial shot.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0044_obj_potato_01","0044_obj_bowl_01","0044_obj_chopping board_01","0044_obj_peeler_01", "0044_obj_chopsticks_01","0044_obj_plate_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_256",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:06:19",
+    "end_time": "00:10:00",
+    "description": "Take out the chicken from the refrigerator and thaw it.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0044_obj_chicken_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_257",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:10:07",
+    "end_time": "00:15:57",
+    "description": "Add water to the bowl, cut potato strips and soak them in the bowl.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_258",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:16:25",
+    "end_time": "00:20:10",
+    "description": "A girl uses her phone to read chicken recipes, cuts ginger and marinates chicken.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0044_obj_ginger_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_259",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:20:21",
+    "end_time": "00:21:27",
+    "description": "Add water to the pot and start cooking rice and garlic sprouts.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0044_obj_garlic sprouts_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_260",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:21:49",
+    "end_time": "00:23:54",
+    "description": "Add seasoning to the chicken and stir evenly.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0044_obj_oyster sauce_01","0044_obj_clip_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_261",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:23:55",
+    "end_time": "00:24:21",
+    "description": "Wash potato chunks, wash chopping board.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0044_obj_chopping board_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_262",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:24:43",
+    "end_time": "00:24:55",
+    "description": "Stir rice.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0044_obj_rice_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_263",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:25:02",
+    "end_time": "00:25:59",
+    "description": "Put potatoes in the air fryer mat.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0044_obj_air fryer mat_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_264",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:26:05",
+    "end_time": "00:27:06",
+    "description": "Add chicken to potatoes and remove ginger.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0044_obj_ginger_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_265",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:27:17",
+    "end_time": "00:28:28",
+    "description": "Cut garlic sprouts and put them in the chicken.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_266",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:28:29",
+    "end_time": "00:29:10",
+    "description": "Pack kitchen utensils.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0044_obj_Tray clamp_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_267",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:29:18",
+    "end_time": "00:31:27",
+    "description": "Stir the rice and serve it in a bowl.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_268",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:31:38",
+    "end_time": "00:32:01",
+    "description": "Put potatoes and chicken into the air fryer and start grilling.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_269",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:32:10",
+    "end_time": "00:39:10",
+    "description": "The girl took off her coat and looked at her phone.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_270",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:39:23",
+    "end_time": "00:39:57",
+    "description": "Open the tablet and laptop.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0044_obj_laptop_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_271",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:40:37",
+    "end_time": "00:41:23",
+    "description": "Flip over the potatoes and continue grilling the chicken.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_272",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:41:24",
+    "end_time": "00:43:00",
+    "description": "Pour the rice into the bowl and wash the pot.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_273",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:43:14",
+    "end_time": "00:49:43",
+    "description": "Watching videos on iPad.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_274",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:50:20",
+    "end_time": "00:51:06",
+    "description": "The girl takes out potatoes and chicken, takes photos and uploads them.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_275",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "00:51:14",
+    "end_time": "01:08:38",
+    "description": "Eating, watching dramas.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_276",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "01:08:45",
+    "end_time": "01:09:59",
+    "description": "Put the potato chips in the bowl into the air fryer, add seasoning and grill.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_277",
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "start_time": "01:10:12",
+    "end_time": "01:11:36",
+    "description": "Clean up the dishes.",
+    "place_id": "kitchen_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_278",
+    "video_id": "017_0023",
+    "video_path": "017/017_0023",
+    "start_time": "00:00:12",
+    "end_time": "00:07:40",
+    "description": "Girl backpacks out of apartment.",
+    "place_id": "apapartment building_1",
+    "objects_involved": ["0023_obj_backpack_01","0023_obj_elevator button_01","0023_obj_revolving door_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_279",
+    "video_id": "017_0023",
+    "video_path": "017/017_0023",
+    "start_time": "00:07:41",
+    "end_time": "00:09:43",
+    "description": "The girl is on her way to the subway station.",
+    "place_id": "roadside_1",
+    "objects_involved": ["0023_obj_Pedestrian signage_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_280",
+    "video_id": "017_0023",
+    "video_path": "017/017_0023",
+    "start_time": "00:10:27",
+    "end_time": "00:15:25",
+    "description": "Entering the subway station.",
+    "place_id": "station_1",
+    "objects_involved": ["0023_obj_stairs_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_281",
+    "video_id": "017_0023",
+    "video_path": "017/017_0023",
+    "start_time": "00:15:26",
+    "end_time": "00:32:01",
+    "description": "take the subway.",
+    "place_id": "subway car_1",
+    "objects_involved": ["0023_obj_watch_01","0023_obj_Support pole_01","0023_obj_hat_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_282",
+    "video_id": "017_0023",
+    "video_path": "017/017_0023",
+    "start_time": "00:15:26",
+    "end_time": "00:32:01",
+    "description": "Exit the subway station.",
+    "place_id": "subway car_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_283",
+    "video_id": "017_0023",
+    "video_path": "017/017_0023",
+    "start_time": "00:34:30",
+    "end_time": "00:43:01",
+    "description": "On the way to university.",
+    "place_id": "roadside_1",
+    "objects_involved": ["0023_obj_police_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_284",
+    "video_id": "017_0023",
+    "video_path": "017/017_0023",
+    "start_time": "00:34:30",
+    "end_time": "00:43:01",
+    "description": "On the way to the classroom.",
+    "place_id": "university_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_285",
+    "video_id": "017_0024",
+    "video_path": "017/017_0024",
+    "start_time": "00:00:00",
+    "end_time": "00:07:50",
+    "description": "Walking on the road.",
+    "place_id": "roadside_1",
+    "objects_involved": ["0024_obj_Travel Bus_01","0024_obj_bench_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_286",
+    "video_id": "017_0024",
+    "video_path": "017/017_0024",
+    "start_time": "00:00:00",
+    "end_time": "00:07:50",
+    "description": "Passing through shared bicycle parking spots on the road.",
+    "place_id": "roadside_1",
+    "objects_involved": ["0024_obj_shared bicycle_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_287",
+    "video_id": "017_0024",
+    "video_path": "017/017_0024",
+    "start_time": "00:09:17",
+    "end_time": "00:11:10",
+    "description": "Crossing the traffic light intersection.",
+    "place_id": "roadside_1",
+    "objects_involved": ["0024_obj_Traffic lights_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_288",
+    "video_id": "017_0024",
+    "video_path": "017/017_0024",
+    "start_time": "00:11:11",
+    "end_time": "00:14:36",
+    "description": "Early restaurant entrance.",
+    "place_id": "roadside_1",
+    "objects_involved": ["0024_obj_Traffic lights_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_289",
+    "video_id": "017_0024",
+    "video_path": "017/017_0024",
+    "start_time": "00:13:20",
+    "end_time": "00:19:55",
+    "description": "The girl saw construction on the roadside.",
+    "place_id": "roadside_1",
+    "objects_involved": ["0024_obj_enclosure_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_290",
+    "video_id": "017_0024",
+    "video_path": "017/017_0024",
+    "start_time": "00:19:56",
+    "end_time": "00:20:56",
+    "description": "The girl is making a phone call on the roadside.",
+    "place_id": "roadside_1",
+    "objects_involved": ["0024_obj_red lantern_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_291",
+    "video_id": "017_0025",
+    "video_path": "017/017_0025",
+    "start_time": "00:00:34",
+    "end_time": "00:03:08",
+    "description": "Heat up the pot and pour in oil.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0025_obj_pot_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_292",
+    "video_id": "017_0025",
+    "video_path": "017/017_0025",
+    "start_time": "00:03:10",
+    "end_time": "00:05:16",
+    "description": "Thaw the meatballs with water.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0025_obj_meatballs_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_293",
+    "video_id": "017_0025",
+    "video_path": "017/017_0025",
+    "start_time": "00:05:17",
+    "end_time": "00:08:45",
+    "description": "Cut the meat into pieces.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0025_obj_meat_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_294",
+    "video_id": "017_0025",
+    "video_path": "017/017_0025",
+    "start_time": "00:08:13",
+    "end_time": "00:10:27",
+    "description": "Cut garlic sprouts and add them to the pot.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0025_obj_scissors_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_295",
+    "video_id": "017_0025",
+    "video_path": "017/017_0025",
+    "start_time": "00:10:28",
+    "end_time": "00:11:58",
+    "description": "Cut the chili into small pieces and put them in the pot.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0025_obj_pepper_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_296",
+    "video_id": "017_0025",
+    "video_path": "017/017_0025",
+    "start_time": "00:11:59",
+    "end_time": "00:13:40",
+    "description": "Cleaning knife, cutting board.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0025_obj_pool_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_297",
+    "video_id": "017_0025",
+    "video_path": "017/017_0025",
+    "start_time": "00:13:45",
+    "end_time": "00:16:17",
+    "description": "Stir fry with a spoon.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0025_obj_spoon_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_298",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "00:00:00",
+    "end_time": "00:00:31",
+    "description": "Pour milk onto the bread and fry it in an air fryer.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0045_obj_air fryer liner_01","0045_obj_bread_01","0045_obj_milk can_01","0045_obj_mug_01","0045_obj_bracelet_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_299",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "00:03:40",
+    "end_time": "00:10:17",
+    "description": "The girl took out meatballs from the fridge and dipped them in tomato sauce seasoning to eat.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0045_obj_fridge_01","0045_obj_ketchup_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_300",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "00:10:18",
+    "end_time": "00:15:10",
+    "description": "The girl took out the chicken from the fridge and thawed it.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0045_obj_chicken_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_301",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "00:15:11",
+    "end_time": "00:16:11",
+    "description": "Add water and garlic sprouts to cook rice.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0045_obj_garlic sprouts_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_302",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "00:20:48",
+    "end_time": "00:22:44",
+    "description": "Cut the thawed chicken into small pieces.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0045_obj_knife_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_303",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "00:23:01",
+    "end_time": "00:25:20",
+    "description": "Add flour to the chicken and stir.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0045_obj_flour_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_304",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "00:27:01",
+    "end_time": "00:28:05",
+    "description": "Serve rice.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0045_obj_bowl_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_305",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "00:28:06",
+    "end_time": "00:30:48",
+    "description": "Put the mixed chicken into the pot.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0045_obj_chopsticks_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_306",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "00:31:30",
+    "end_time": "00:39:25",
+    "description": "stir-fried chicken.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_307",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "00:40:52",
+    "end_time": "00:41:50",
+    "description": "scrambled eggs.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_308",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "00:41:52",
+    "end_time": "00:42:57",
+    "description": "Stir fry dishes in the pot.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_309",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "00:41:52",
+    "end_time": "01:29:28",
+    "description": "Eating and watching dramas.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_310",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "01:29:49",
+    "end_time": "01:35:29",
+    "description": "Open the delivery box and take out the health products inside to eat.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0045_obj_health products_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_311",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "01:36:05",
+    "end_time": "01:46:40",
+    "description": "Organize items and garbage in the room.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0045_obj_garbage_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_312",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "01:48:50",
+    "end_time": "01:53:06",
+    "description": "Organize the desktop and clean kitchen utensils.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0045_obj_mug_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_313",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "01:53:19",
+    "end_time": "02:05:14",
+    "description": "Take potatoes, peel them, and slice them into potato slices.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0045_obj_potatoes_01","0045_obj_peeler_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_314",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "02:05:16",
+    "end_time": "02:15:50",
+    "description": "Cut potato slices and steam them in a pot until cooked.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0045_obj_potatoes_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_315",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "02:17:10",
+    "end_time": "02:21:55",
+    "description": "The girl steamed the potato skins, picked them up with chopsticks, and cleaned the cutting board.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0045_obj_cutting board_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_316",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "02:21:43",
+    "end_time": "02:36:13",
+    "description": "Crush the steamed potatoes.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_317",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "02:37:45",
+    "end_time": "02:42:40",
+    "description": "Washing pots, washing steaming racks.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0045_obj_steamer rack_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_318",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "02:43:08",
+    "end_time": "02:48:50",
+    "description": "Use a machine to make mashed potatoes.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_319",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "02:50:10",
+    "end_time": "03:01:46",
+    "description": "Rub potato balls by hand, brush them with oil, and heat them up in an air fryer.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0045_obj_air fryer_01","0045_obj_plastic gloves_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_320",
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "start_time": "03:02:07",
+    "end_time": "03:08:33",
+    "description": "Cleaning kitchenware.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0045_obj_bowl_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_321",
+    "video_id": "017_0026",
+    "video_path": "017/017_0026",
+    "start_time": "00:00:00",
+    "end_time": "00:03:00",
+    "description": "Take the elevator downstairs from the dormitory.",
+    "place_id": "apartment building_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_322",
+    "video_id": "017_0026",
+    "video_path": "017/017_0026",
+    "start_time": "00:03:01",
+    "end_time": "00:11:11",
+    "description": "The girl was chatting with her friends in the lounge area of the apartment lobby.",
+    "place_id": "apartment building_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_323",
+    "video_id": "017_0026",
+    "video_path": "017/017_0026",
+    "start_time": "00:11:12",
+    "end_time": "00:15:58",
+    "description": "Go to the subway station with friends.",
+    "place_id": "roadside_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_324",
+    "video_id": "017_0026",
+    "video_path": "017/017_0026",
+    "start_time": "00:16:00",
+    "end_time": "00:18:00",
+    "description": "Waiting at the subway station.",
+    "place_id": "subway station_1",
+    "objects_involved": ["0026_obj_traffic sign_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_325",
+    "video_id": "017_0026",
+    "video_path": "017/017_0026",
+    "start_time": "00:18:01",
+    "end_time": "00:42:24",
+    "description": "take the subway.",
+    "place_id": "subway car_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_326",
+    "video_id": "017_0026",
+    "video_path": "017/017_0026",
+    "start_time": "00:42:25",
+    "end_time": "00:54:33",
+    "description": "Exit the subway station.",
+    "place_id": "subway car_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_327",
+    "video_id": "017_0027",
+    "video_path": "017/017_0027",
+    "start_time": "00:00:00",
+    "end_time": "00:03:30",
+    "description": "Heat the pot and add butter and bread.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0027_obj_butter_01","0027_obj_bread_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_328",
+    "video_id": "017_0027",
+    "video_path": "017/017_0027",
+    "start_time": "00:04:12",
+    "end_time": "00:06:33",
+    "description": "Spread jam on bread.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0027_obj_jam_01","0027_obj_bread_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_329",
+    "video_id": "017_0027",
+    "video_path": "017/017_0027",
+    "start_time": "00:06:34",
+    "end_time": "00:19:41",
+    "description": "enjoy a meal.",
+    "place_id": "dorm_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_330",
+    "video_id": "017_0027",
+    "video_path": "017/017_0027",
+    "start_time": "00:19:42",
+    "end_time": "00:30:00",
+    "description": "Playing games on iPad while eating yogurt.",
+    "place_id": "dorm_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_331",
+    "video_id": "017_0020",
+    "video_path": "017/017_0020",
+    "start_time": "00:00:01",
+    "end_time": "00:07:39",
+    "description": "Pour flour, eggs, and other ingredients into a plastic self sealing bag and mix well.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0020_obj_Plastic self sealing bag_01","0020_obj_pot_01","0020_obj_egg_01","0020_obj_clip_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_332",
+    "video_id": "017_0020",
+    "video_path": "017/017_0020",
+    "start_time": "00:07:46",
+    "end_time": "00:13:55",
+    "description": "Spread cakes in the pot.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0020_obj_spoon_01","0020_obj_Pie_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_333",
+    "video_id": "017_0020",
+    "video_path": "017/017_0020",
+    "start_time": "00:13:56",
+    "end_time": "00:21:00",
+    "description": "Take out the first cake and continue spreading it in the pot.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0020_obj_spoon_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_334",
+    "video_id": "017_0020",
+    "video_path": "017/017_0020",
+    "start_time": "00:21:53",
+    "end_time": "00:27:49",
+    "description": "Leave the dormitory and go downstairs to pick up the package.",
+    "place_id": "apapartment building_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_335",
+    "video_id": "017_0020",
+    "video_path": "017/017_0020",
+    "start_time": "00:27:59",
+    "end_time": "00:32:40",
+    "description": "Return to the dormitory and unpack the package.",
+    "place_id": "dorm_1",
+    "objects_involved": ["0020_obj_package_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_336",
+    "video_id": "017_0021",
+    "video_path": "017/017_0021",
+    "start_time": "00:00:00",
+    "end_time": "00:03:20",
+    "description": "Take out the ingredients from the refrigerator, cut the meat into small pieces and put them in a bowl, add seasonings.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0021_obj_meat_01","0021_obj_egg_01","0021_obj_pot_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_337",
+    "video_id": "017_0021",
+    "video_path": "017/017_0021",
+    "start_time": "00:03:32",
+    "end_time": "00:07:07",
+    "description": "Cooking pumpkin rice in a pot.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0021_obj_pumpkin_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_338",
+    "video_id": "017_0021",
+    "video_path": "017/017_0021",
+    "start_time": "00:09:12",
+    "end_time": "00:12:20",
+    "description": "Wash mushrooms, cut mushroom slices.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0021_obj_mushroom_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_339",
+    "video_id": "017_0021",
+    "video_path": "017/017_0021",
+    "start_time": "00:12:21",
+    "end_time": "00:21:02",
+    "description": "Boil pumpkin rice and serve it in a bowl.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_340",
+    "video_id": "017_0021",
+    "video_path": "017/017_0021",
+    "start_time": "00:21:10",
+    "end_time": "00:25:24",
+    "description": "Stir-fried meat.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_341",
+    "video_id": "017_0021",
+    "video_path": "017/017_0021",
+    "start_time": "00:25:26",
+    "end_time": "00:32:24",
+    "description": "Stir fried mushrooms.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0021_obj_mushroom_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_342",
+    "video_id": "017_0021",
+    "video_path": "017/017_0021",
+    "start_time": "00:34:09",
+    "end_time": "00:44:05",
+    "description": "Eating and watching dramas.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0021_obj_mushroom_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_343",
+    "video_id": "017_0021",
+    "video_path": "017/017_0021",
+    "start_time": "00:44:06",
+    "end_time": "00:46:00",
+    "description": "wash the dishes.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_344",
+    "video_id": "017_0021",
+    "video_path": "017/017_0021",
+    "start_time": "00:46:05",
+    "end_time": "00:47:01",
+    "description": "Drink yogurt.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0021_obj_yogurt_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_345",
+    "video_id": "017_0002",
+    "video_path": "017/017_0002",
+    "start_time": "00:00:31",
+    "end_time": "00:03:08",
+    "description": "Wash vegetables in the sink.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0002_obj_vegetables_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_346",
+    "video_id": "017_0002",
+    "video_path": "017/017_0002",
+    "start_time": "00:03:10",
+    "end_time": "00:07:31",
+    "description": "Boil water in the pot.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0002_obj_shrimp_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_347",
+    "video_id": "017_0002",
+    "video_path": "017/017_0002",
+    "start_time": "00:07:37",
+    "end_time": "00:15:20",
+    "description": "cook noodles.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0002_obj_noodles_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_348",
+    "video_id": "017_0033",
+    "video_path": "017/017_0033",
+    "start_time": "00:00:00",
+    "end_time": "00:02:35",
+    "description": "Get out of the dormitory and go to the gym.",
+    "place_id": "apapartment building_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_349",
+    "video_id": "017_0033",
+    "video_path": "017/017_0033",
+    "start_time": "00:02:36",
+    "end_time": "00:47:57",
+    "description": "Exercising on a treadmill.",
+    "place_id": "gym_1",
+    "objects_involved": ["0033_obj_treadmill_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_350",
+    "video_id": "017_0033",
+    "video_path": "017/017_0033",
+    "start_time": "00:48:00",
+    "end_time": "00:52:00",
+    "description": "Exercising on a treadmill.",
+    "place_id": "apapartment building_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_351",
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "start_time": "00:00:00",
+    "end_time": "00:04:58",
+    "description": "Take out the chicken from the refrigerator and cut it into pieces.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0028_obj_fridge_01","0028_obj_electric kettle_01","0028_obj_chicken_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_352",
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "start_time": "00:04:59",
+    "end_time": "00:06:08",
+    "description": " Add seasoning to the chicken and stir.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0028_obj_spice box_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_353",
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "start_time": "00:06:19",
+    "end_time": "00:07:50",
+    "description": " Add garlic sprouts to the pot and cook rice.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0028_obj_garlic sprouts_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_354",
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "start_time": "00:08:00",
+    "end_time": "00:10:50",
+    "description": " Mixing flour and seasonings into chicken.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0028_obj_flour_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_355",
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "start_time": "00:11:02",
+    "end_time": "00:13:30",
+    "description": " Cut cucumber and beat egg mixture.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0028_obj_cucumber_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_356",
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "start_time": "00:14:10",
+    "end_time": "00:19:30",
+    "description": " fiddling with the phone.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0028_obj_mobile phone_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_357",
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "start_time": "00:19:31",
+    "end_time": "00:27:06",
+    "description": "Stir the rice in the pot and transfer the cooked rice to a bowl.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_358",
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "start_time": "00:27:10",
+    "end_time": "00:28:45",
+    "description": "scrambled eggs.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_359",
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "start_time": "00:28:52",
+    "end_time": "00:30:05",
+    "description": "Stir fried cucumber slices.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_360",
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "start_time": "00:30:45",
+    "end_time": "00:32:10",
+    "description": "Stir fried cucumber and egg.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_361",
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "start_time": "00:32:15",
+    "end_time": "00:43:02",
+    "description": "Stir fried chicken.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_362",
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "start_time": "00:43:51",
+    "end_time": "00:49:00",
+    "description": "Cleaning kitchenware.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_363",
+    "video_id": "017_0029",
+    "video_path": "017/017_0029",
+    "start_time": "00:00:01",
+    "end_time": "00:03:53",
+    "description": "Cleaning kitchenware.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0029_obj_dish soap_01","0029_obj_garlic sprouts_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_364",
+    "video_id": "017_0029",
+    "video_path": "017/017_0029",
+    "start_time": "00:04:12",
+    "end_time": "00:06:05",
+    "description": "Pour milk into the pot and boil it.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0029_obj_pot_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_365",
+    "video_id": "017_0029",
+    "video_path": "017/017_0029",
+    "start_time": "00:06:25",
+    "end_time": "00:09:18",
+    "description": "Add eggs and flour to the milk and stir.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0029_obj_flour_01","0029_obj_spoon_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_366",
+    "video_id": "017_0029",
+    "video_path": "017/017_0029",
+    "start_time": "00:09:22",
+    "end_time": "00:13:39",
+    "description": "Stir the milk in the pot separately with chopsticks and a turner.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0029_obj_turner_01","0029_obj_chopsticks_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_367",
+    "video_id": "017_0029",
+    "video_path": "017/017_0029",
+    "start_time": "00:13:55",
+    "end_time": "00:16:53",
+    "description": "Take out the milk with a spoon and put it in a fresh-keeping box..",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0029_obj_fresh-keeping box_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_368",
+    "video_id": "017_0029",
+    "video_path": "017/017_0029",
+    "start_time": "00:18:47",
+    "end_time": "00:23:20",
+    "description": "Cleaning kitchenware.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_369",
+    "video_id": "017_0030",
+    "video_path": "017/017_0030",
+    "start_time": "00:00:01",
+    "end_time": "00:11:00",
+    "description": "Organize kitchen items.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0030_obj_pot lid_01","0030_obj_rice bag_01","0030_obj_electric kettle_01","0030_obj_rice bucket_01","0030_obj_ginger_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_370",
+    "video_id": "017_0030",
+    "video_path": "017/017_0030",
+    "start_time": "00:11:03",
+    "end_time": "00:17:59",
+    "description": "fiddling with the phone",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_371",
+    "video_id": "017_0031",
+    "video_path": "017/017_0031",
+    "start_time": "00:00:01",
+    "end_time": "00:02:53",
+    "description": "Carry your bags out of the dormitory and step out of the apartment.",
+    "place_id": "apapartment building_1",
+    "objects_involved": ["0031_obj_handbag_01","0031_obj_camera_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_372",
+    "video_id": "017_0031",
+    "video_path": "017/017_0031",
+    "start_time": "00:02:54",
+    "end_time": "00:05:19",
+    "description": "On the way to the supermarket.",
+    "place_id": "roadside_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_373",
+    "video_id": "017_0031",
+    "video_path": "017/017_0031",
+    "start_time": "00:05:21",
+    "end_time": "00:08:05",
+    "description": "Buying vegetables at the supermarket.",
+    "place_id": "supermarket_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_374",
+    "video_id": "017_0031",
+    "video_path": "017/017_0031",
+    "start_time": "00:08:06",
+    "end_time": "00:12:08",
+    "description": "Buy bread at the supermarket.",
+    "place_id": "supermarket_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_375",
+    "video_id": "017_0032",
+    "video_path": "017/017_0032",
+    "start_time": "00:00:01",
+    "end_time": "00:09:40",
+    "description": "Fry toast with butter and video chat with friends halfway through.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0032_obj_butter_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_376",
+    "video_id": "017_0032",
+    "video_path": "017/017_0032",
+    "start_time": "00:09:50",
+    "end_time": "00:13:00",
+    "description": "Put jam and salad dressing on the fried toast.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0032_obj_salad dressing_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_377",
+    "video_id": "017_0032",
+    "video_path": "017/017_0032",
+    "start_time": "00:13:13",
+    "end_time": "00:23:48",
+    "description": "Eating breakfast while scheduling a game with friends.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0032_obj_yogurt_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_378",
+    "video_id": "017_0032",
+    "video_path": "017/017_0032",
+    "start_time": "00:23:49",
+    "end_time": "00:25:28",
+    "description": "The girl is having a video chat with her family.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0032_obj_mobile phone_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_379",
+    "video_id": "017_0032",
+    "video_path": "017/017_0032",
+    "start_time": "00:26:05",
+    "end_time": "00:32:07",
+    "description": "The girl was having dinner while video chatting with her friends.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_380",
+    "video_id": "017_0034",
+    "video_path": "017/017_0034",
+    "start_time": "00:00:01",
+    "end_time": "00:03:35",
+    "description": "Boiling rice.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0034_obj_rice_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_381",
+    "video_id": "017_0034",
+    "video_path": "017/017_0034",
+    "start_time": "00:03:36",
+    "end_time": "00:05:44",
+    "description": "Retrieve food from the refrigerator.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0034_obj_chicken_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_382",
+    "video_id": "017_0034",
+    "video_path": "017/017_0034",
+    "start_time": "00:05:53",
+    "end_time": "00:13:38",
+    "description": "Put the seasoning into the chicken and stir.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0034_obj_chicken_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_383",
+    "video_id": "017_0034",
+    "video_path": "017/017_0034",
+    "start_time": "00:13:55",
+    "end_time": "00:18:59",
+    "description": "Boil the rice and take it out of the pot.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0034_obj_rice_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_384",
+    "video_id": "017_0034",
+    "video_path": "017/017_0034",
+    "start_time": "00:19:02",
+    "end_time": "00:25:29",
+    "description": "Roasted chicken meat.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0034_obj_chicken_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_385",
+    "video_id": "017_0034",
+    "video_path": "017/017_0034",
+    "start_time": "00:25:30",
+    "end_time": "00:33:00",
+    "description": "Scrambled eggs with tomatoes.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0034_obj_tomatoe_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_386",
+    "video_id": "017_0034",
+    "video_path": "017/017_0034",
+    "start_time": "00:33:21",
+    "end_time": "00:35:48",
+    "description": "Cleaning the kitchen.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0034_obj_rag_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_387",
+    "video_id": "017_0034",
+    "video_path": "017/017_0034",
+    "start_time": "00:36:57",
+    "end_time": "00:54:14",
+    "description": "Start dining.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0034_obj_Apple Disk_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_388",
+    "video_id": "017_0035",
+    "video_path": "017/017_0035",
+    "start_time": "00:00:57",
+    "end_time": "00:04:08",
+    "description": "Step out of the apartment building.",
+    "place_id": "apapartment building_1",
+    "objects_involved": ["0034_obj_elevator_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_389",
+    "video_id": "017_0035",
+    "video_path": "017/017_0035",
+    "start_time": "00:04:10",
+    "end_time": "00:09:12",
+    "description": "On the way to the subway station.",
+    "place_id": "roadside_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_390",
+    "video_id": "017_0035",
+    "video_path": "017/017_0035",
+    "start_time": "00:09:13",
+    "end_time": "00:29:40",
+    "description": "take the subway.",
+    "place_id": "subway car_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_391",
+    "video_id": "017_0035",
+    "video_path": "017/017_0035",
+    "start_time": "00:29:41",
+    "end_time": "00:42:00",
+    "description": "On the way to university.",
+    "place_id": "roadside_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_391",
+    "video_id": "017_0035",
+    "video_path": "017/017_0035",
+    "start_time": "00:42:14",
+    "end_time": "00:43:25",
+    "description": "Coming to University.",
+    "place_id": "university_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_392",
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "start_time": "00:00:01",
+    "end_time": "00:04:31",
+    "description": "Open the delivery box, take out the package, and take out the MacBook.",
+    "place_id": "dorm_1",
+    "objects_involved": ["0038_obj_MacBook_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_393",
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "start_time": "00:04:42",
+    "end_time": "00:08:31",
+    "description": "Open MacBook and perform a new system installation.",
+    "place_id": "dorm_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_394",
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "start_time": "00:09:30",
+    "end_time": "00:13:40",
+    "description": "Open the old MacBook and prepare for PC to Mac data migration.",
+    "place_id": "dorm_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_395",
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "start_time": "00:13:51",
+    "end_time": "00:24:20",
+    "description": "PC to Mac data migration in progress.",
+    "place_id": "dorm_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_396",
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "start_time": "00:25:05",
+    "end_time": "00:26:51",
+    "description": "Retrieve ingredients from the refrigerator.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0038_obj_fridge_01","0038_obj_tomato_01", "0038_obj_mushroom_01","0038_obj_cucumber_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_397",
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "start_time": "00:27:17",
+    "end_time": "00:29:10",
+    "description": "cook rice.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0038_obj_rice_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_398",
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "start_time": "00:29:18",
+    "end_time": "00:36:01",
+    "description": "Preparation before stir frying.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0038_obj_fish pieces_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_399",
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "start_time": "00:36:12",
+    "end_time": "00:42:54",
+    "description": "Watching MacBook installation progress while cooking rice.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_400",
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "start_time": "00:44:26",
+    "end_time": "00:45:48",
+    "description": "Take out the cooked rice.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_401",
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "start_time": "00:45:57",
+    "end_time": "00:51:19",
+    "description": "Stir fried mushrooms, cucumbers, and eggs.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0038_obj_egg_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_402",
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "start_time": "00:51:20",
+    "end_time": "01:00:50",
+    "description": "Burn fish chunks and serve them out.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0038_obj_fish pieces_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_403",
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "start_time": "01:01:32",
+    "end_time": "01:09:25",
+    "description": "Preparing to eat, checking the computer status, and checking the phone.",
+    "place_id": "dorm_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_404",
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "start_time": "01:11:01",
+    "end_time": "01:20:49",
+    "description": "Eating.",
+    "place_id": "dorm_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_405",
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "start_time": "01:21:00",
+    "end_time": "01:34:00",
+    "description": "Check the computer, check the phone.",
+    "place_id": "dorm_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_406",
+    "video_id": "017_0036",
+    "video_path": "017/017_0036",
+    "start_time": "00:00:20",
+    "end_time": "00:03:33",
+    "description": "Boiling rice.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_407",
+    "video_id": "017_0036",
+    "video_path": "017/017_0036",
+    "start_time": "00:03:34",
+    "end_time": "00:39:08",
+    "description": "cook dishes.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_408",
+    "video_id": "017_0037",
+    "video_path": "017/017_0037",
+    "start_time": "00:00:15",
+    "end_time": "00:10:21",
+    "description": "Make sandwiches.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_409",
+    "video_id": "017_0037",
+    "video_path": "017/017_0037",
+    "start_time": "00:10:37",
+    "end_time": "00:27:00",
+    "description": "Eating a sandwich while looking at your phone.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_410",
+    "video_id": "017_0039",
+    "video_path": "017/017_0039",
+    "start_time": "00:00:01",
+    "end_time": "00:04:06",
+    "description": "Eating a sandwich while looking at your phone.",
+    "place_id": "kitchen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_411",
+    "video_id": "017_0039",
+    "video_path": "017/017_0039",
+    "start_time": "00:04:07",
+    "end_time": "00:10:30",
+    "description": "Boil noodles in a pot and add various vegetables.",
+    "place_id": "kitchen_1",
+    "objects_involved": ["0039_obj_noodles_01","0039_obj_garlic sprouts_01","0039_obj_pepper_01","0039_obj_spinach_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_412",
+    "video_id": "017_0039",
+    "video_path": "017/017_0039",
+    "start_time": "00:04:07",
+    "end_time": "00:16:35",
+    "description": "Make plans with friends to go out and leave the apartment.",
+    "place_id": "apartment building_1",
+    "objects_involved": ["0039_obj_hat_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_413",
+    "video_id": "017_0039",
+    "video_path": "017/017_0039",
+    "start_time": "00:16:36",
+    "end_time": "00:22:50",
+    "description": "Going out to the subway station on a rainy day.",
+    "place_id": "roadside_1",
+    "objects_involved": ["0039_obj_umbrella_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_414",
+    "video_id": "017_0039",
+    "video_path": "017/017_0039",
+    "start_time": "00:16:36",
+    "end_time": "00:22:50",
+    "description": "Going out to the subway station on a rainy day.",
+    "place_id": "subway car_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_415",
+    "video_id": "017_0039",
+    "video_path": "017/017_0039",
+    "start_time": "00:42:57",
+    "end_time": "00:46:55",
+    "description": "Transfer to another subway train.",
+    "place_id": "subway car_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_416",
+    "video_id": "017_0039",
+    "video_path": "017/017_0039",
+    "start_time": "00:52:45",
+    "end_time": "00:55:20",
+    "description": "Get off the subway, get out of the subway station.",
+    "place_id": "subway car_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_417",
+    "video_id": "017_0046",
+    "video_path": "017/017_0046",
+    "start_time": "00:00:00",
+    "end_time": "00:05:20",
+    "description": "Thaw meat from the refrigerator, cut potatoes into pieces and add seasonings.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0046_obj_meat_01","0046_obj_potato_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_418",
+    "video_id": "017_0046",
+    "video_path": "017/017_0046",
+    "start_time": "00:06:35",
+    "end_time": "00:12:10",
+    "description": "Cut the meat into pieces, pat it apart and put it in a bowl.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0046_obj_knife_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_419",
+    "video_id": "017_0046",
+    "video_path": "017/017_0046",
+    "start_time": "00:12:20",
+    "end_time": "00:16:31",
+    "description": "Add seasoning to meat for marinating.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0046_obj_ginger_01","0046_obj_flour_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_420",
+    "video_id": "017_0046",
+    "video_path": "017/017_0046",
+    "start_time": "00:17:03",
+    "end_time": "00:25:01",
+    "description": "Stir-fried tomato and scrambled eggs.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0046_obj_egg_01","0046_obj_tomato_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_421",
+    "video_id": "017_0046",
+    "video_path": "017/017_0046",
+    "start_time": "00:26:13",
+    "end_time": "00:36:50",
+    "description": "Stir-fried meat.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+   {
+    "event_id": "ev_422",
+    "video_id": "017_0046",
+    "video_path": "017/017_0046",
+    "start_time": "00:38:24",
+    "end_time": "01:04:00",
+    "description": "Eating while looking at your phone.",
+    "place_id": "dorm_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_423",
+    "video_id": "017_0046",
+    "video_path": "017/017_0046",
+    "start_time": "01:04:03",
+    "end_time": "01:09:25",
+    "description": "Clean up the kitchen after dinner.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_424",
+    "video_id": "017_0041",
+    "video_path": "017/017_0041",
+    "start_time": "00:00:01",
+    "end_time": "00:05:25",
+    "description": "Start cooking rice.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0041_obj_milk tea_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_425",
+    "video_id": "017_0041",
+    "video_path": "017/017_0041",
+    "start_time": "00:05:43",
+    "end_time": "00:10:05",
+    "description": "Take ingredients and cut mushrooms.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0041_obj_egg_01","0041_obj_mushroom_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_426",
+    "video_id": "017_0041",
+    "video_path": "017/017_0041",
+    "start_time": "00:10:37",
+    "end_time": "00:19:15",
+    "description": "Continue to add water to the pot to cook rice, and after cooking, take it out.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_427",
+    "video_id": "017_0041",
+    "video_path": "017/017_0041",
+    "start_time": "00:19:20",
+    "end_time": "00:25:15",
+    "description": "Pour oil, stir fry eggs, mushrooms, tomatoes and serve.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_428",
+    "video_id": "017_0041",
+    "video_path": "017/017_0041",
+    "start_time": "00:25:39",
+    "end_time": "00:48:25",
+    "description": "Take photos of the food and start eating.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_429",
+    "video_id": "017_0041",
+    "video_path": "017/017_0041",
+    "start_time": "00:48:26",
+    "end_time": "00:56:22",
+    "description": "Clean the kitchen and tidy up the room.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_430",
+    "video_id": "017_0041",
+    "video_path": "017/017_0041",
+    "start_time": "00:58:44",
+    "end_time": "01:04:47",
+    "description": "Wash up in the bathroom.",
+    "place_id": "toilet_1",
+    "objects_involved": ["0041_obj_contact lens_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_431",
+    "video_id": "017_0047",
+    "video_path": "017/017_0047",
+    "start_time": "00:00:04",
+    "end_time": "00:13:00",
+    "description": "shopping at the supermarket.",
+    "place_id": "supermarket_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_432",
+    "video_id": "017_0047",
+    "video_path": "017/017_0047",
+    "start_time": "00:00:04",
+    "end_time": "00:13:00",
+    "description": "On the way back to the apartment from the supermarket.",
+    "place_id": "roadside_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_433",
+    "video_id": "017_0047",
+    "video_path": "017/017_0047",
+    "start_time": "00:18:10",
+    "end_time": "00:20:27",
+    "description": "Return to the dormitory.",
+    "place_id": "apapartment building_1",
+    "objects_involved": ["0047_obj_revolving door_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_434",
+    "video_id": "017_0047",
+    "video_path": "017/017_0047",
+    "start_time": "00:20:28",
+    "end_time": "00:32:16",
+    "description": "Open the envelope.",
+    "place_id": "dorm_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_435",
+    "video_id": "017_0047",
+    "video_path": "017/017_0047",
+    "start_time": "00:36:40",
+    "end_time": "00:52:07",
+    "description": "Making Crispy Potato Cake.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0047_obj_shredded potatoes_01","0047_obj_flour_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_436",
+    "video_id": "017_0047",
+    "video_path": "017/017_0047",
+    "start_time": "00:52:43",
+    "end_time": "00:58:44",
+    "description": "Butter fried bread.",
+    "place_id": "kicthen_1",
+    "objects_involved": [""],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_437",
+    "video_id": "017_0047",
+    "video_path": "017/017_0047",
+    "start_time": "01:00:00",
+    "end_time": "01:26:38",
+    "description": "Watch dramas while dining.",
+    "place_id": "dorm_1",
+    "objects_involved": ["0047_obj_ketchup_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_438",
+    "video_id": "017_0053",
+    "video_path": "017/017_0053",
+    "start_time": "00:00:01",
+    "end_time": "00:01:38",
+    "description": "Put the dishes that need to be cleaned into the sink.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0053_obj_pool_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_439",
+    "video_id": "017_0053",
+    "video_path": "017/017_0053",
+    "start_time": "00:01:40",
+    "end_time": "00:07:56",
+    "description": "Prepare the ingredients for making the cake.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0053_obj_cream cheese_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_440",
+    "video_id": "017_0053",
+    "video_path": "017/017_0053",
+    "start_time": "00:08:27",
+    "end_time": "00:20:16",
+    "description": "make a cake.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0053_obj_egg beater_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_441",
+    "video_id": "017_0053",
+    "video_path": "017/017_0053",
+    "start_time": "00:20:30",
+    "end_time": "00:26:05",
+    "description": "Clean the kitchen.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0053_obj_rag_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_442",
+    "video_id": "017_0053",
+    "video_path": "017/017_0053",
+    "start_time": "00:26:46",
+    "end_time": "00:39:20",
+    "description": "Cut potato strips.",
+    "place_id": "kicthen_1",
+    "objects_involved": ["0053_obj_potato sticks_01"],
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-24",
+      "qc_status": "accepted"
+    }
+  }
+]

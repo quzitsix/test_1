@@ -1,0 +1,5148 @@
+[
+  {
+    "sample_id": "003",
+    "video_id": "003_0001",
+    "video_path": [
+      "003/003_0001.mp4"
+    ],
+    "question": "<003_0001.mp4>where is the fire extinguisher",
+    "options": [
+      "A.living_room",
+      "B.bathroom",
+      "C.None",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "vid_obj_0001_01"
+    ],
+    "reasoning_chain": "Fire extinguisher in the living room",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_09",
+      "created_at": "2025-11-15T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0001",
+    "video_path": [
+      "003/003_0001.mp4"
+    ],
+    "question": "<003_0001.mp4> When to stop brushing your teeth",
+    "options": [
+      "A.2:34",
+      "B.00:47",
+      "C.3:00",
+      "D.None"
+    ],
+    "correct_options": "C",
+    "task_type": "temporal_ordering",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_01"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Stop brushing your teeth and washing your face at 3:00.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_09",
+      "created_at": "2025-11-15T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0001",
+    "video_path": [
+      "003/003_0001.mp4"
+    ],
+    "question": "<003_0001.mp4>What color is the mineral water bottle on the bedside table?",
+    "options": [
+      "A.Green",
+      "B.Red",
+      "C.Blue",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "4:10 the mineral water bottle on the bedside table is green.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_09",
+      "created_at": "2025-11-15T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0001",
+    "video_path": [
+      "003/003_0001.mp4"
+    ],
+    "question": "<003_0001.mp4>What did I do before leaving home?",
+    "options": [
+      "A.Turned off the TV",
+      "B.Picked up the keys",
+      "C.do the laundry",
+      "D.None"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_02"
+    ],
+    "evidence_spatial": [
+      "vid_obj_0001_06"
+    ],
+    "reasoning_chain": "Before leaving home, I did the laundry.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_09",
+      "created_at": "2025-11-15T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0001",
+    "video_path": [
+      "003/003_0001.mp4"
+    ],
+    "question": "<003_0001.mp4>How many rooms are there in total?",
+    "options": [
+      "A.2",
+      "B.3",
+      "C.4",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "object_counting_global",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "bathroom_1",
+      "living_room_1"
+    ],
+    "reasoning_chain": "There are two rooms in total: bathroom and living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_09",
+      "created_at": "2025-11-15T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0001",
+    "video_path": [
+      "003/003_0001.mp4"
+    ],
+    "question": "<003_0001.mp4>What did I do after throwing away the trash?",
+    "options": [
+      "A.Organizing shoes",
+      "B.do the laundry",
+      "C.Brushing teeth and washing face",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_03",
+      "ev_04"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "After throwing away the trash, I organized shoes.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_09",
+      "created_at": "2025-11-15T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0001",
+    "video_path": [
+      "003/003_0001.mp4"
+    ],
+    "question": "<003_0001.mp4>where is the fan",
+    "options": [
+      "A.living_room",
+      "B.bathroom",
+      "C.None",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "vid_obj_0001_11"
+    ],
+    "reasoning_chain": "Fan in the living room",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_09",
+      "created_at": "2025-11-15T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0001",
+    "video_path": [
+      "003/003_0001.mp4"
+    ],
+    "question": "<003_0001.mp4>What is the order of the following actions performed by the user",
+    "options": [
+      "A.organizing shoes -> organizing sofa -> slicing bread -> toasting bread -> blowing fan",
+      "B.slicing bread -> toasting bread -> blowing fan -> organizing shoes -> organizing sofa",
+      "C.blowing fan -> toasting bread -> slicing bread -> organizing sofa -> organizing shoes",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "route_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_04",
+      "ev_05",
+      "ev_06",
+      "ev_07",
+      "ev_08"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The user first organized shoes, then organized the sofa, sliced bread, toasted bread, and finally blew the fan.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_09",
+      "created_at": "2025-11-15T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0002",
+    "video_path": [
+      "003/003_0002.mp4"
+    ],
+    "question": "When did the person turn off the fan in <003_0002.mp4>?",
+    "options": [
+      "A.02:13-02:16",
+      "B.00:50-01:50",
+      "C.03:23-03:55",
+      "D.01:00-02:00"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_11"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person turned off the fan at 02:13-02:16.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0002",
+    "video_path": [
+      "003/003_0002.mp4"
+    ],
+    "question": "Where is the mirror located in <003_0002.mp4>?",
+    "options": [
+      "A.Above the table in the living room",
+      "B.Next to the entrance door in the living room",
+      "C.Next the bed",
+      "D.In the bathroom"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0001_obj_mirror_01"
+    ],
+    "reasoning_chain": "The mirror is located above the table in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0002",
+    "video_path": [
+      "003/003_0002.mp4"
+    ],
+    "question": "How many events occurred in total in <003_0002.mp4>?",
+    "options": [
+      "A.3",
+      "B.2",
+      "C.4",
+      "D.1"
+    ],
+    "correct_options": "A",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_10",
+      "ev_11",
+      "ev_12"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "There are three events in total: Using the mirror, Turning off the fan, and Waiting for the elevator.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0003",
+    "video_path": [
+      "003/003_0003.mp4"
+    ],
+    "question": "<003_0003.mp4>When did the person watch the projector?",
+    "options": [
+      "A.1:30-2:55",
+      "B.0:54-1:07",
+      "C.2:45-3:00",
+      "D.1:20-1:30"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_13"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person watched the projector from 1:30 to 2:55.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-12-08T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0003",
+    "video_path": [
+      "003/003_0003.mp4"
+    ],
+    "question": "<003_0003.mp4>Where is the projector located?",
+    "options": [
+      "A.On the sofa in the living room",
+      "B.Next to the sofa in the living room",
+      "C.Next to the wardrobe in the living room",
+      "D.Behind the TV in the living room"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0003_obj_projector_01"
+    ],
+    "reasoning_chain": "The projector is located on the sofa in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-12-08T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0003",
+    "video_path": [
+      "003/003_0003.mp4"
+    ],
+    "question": "<003_0003.mp4>Where is the router located?",
+    "options": [
+      "A.Behind the TV in the living room",
+      "B.On the table next to the TV in the living room",
+      "C.Next to the bed in the living room",
+      "D.On the sofa in the living room"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0003_obj_router_01"
+    ],
+    "reasoning_chain": "The router is located behind the TV in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-12-08T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0003",
+    "video_path": [
+      "003/003_0003.mp4"
+    ],
+    "question": "<003_0003.mp4>How many events occurred in total?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.0"
+    ],
+    "correct_options": "A",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_13"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "There is one event: Watching the projector.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0003",
+    "video_path": [
+      "003/003_0003.mp4"
+    ],
+    "question": "<003_0003.mp4>How many objects are mentioned in total?",
+    "options": [
+      "A.7",
+      "B.6",
+      "C.8",
+      "D.5"
+    ],
+    "correct_options": "A",
+    "task_type": "object_counting_global",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0003_obj_projector_01",
+      "0003_obj_handbag_01",
+      "0003_obj_floorlamp_01",
+      "0003_obj_wardrobe_01",
+      "0003_obj_tv_01",
+      "0003_obj_router_01",
+      "0003_obj_microwave_01"
+    ],
+    "reasoning_chain": "There are seven objects: projector, handbag, floor lamp, wardrobe, TV, router, and microwave oven.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0004",
+    "video_path": [
+      "003/003_0004.mp4"
+    ],
+    "question": "<003_0004.mp4>When did the person start peeling the pomegranate?",
+    "options": [
+      "A.5:39-7:24",
+      "B.4:22-5:21",
+      "C.3:58-4:06",
+      "D.17:33-18:16"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_18"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person started peeling the pomegranate from 5:39 to 7:24.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0004",
+    "video_path": [
+      "003/003_0004.mp4"
+    ],
+    "question": "<003_0004.mp4>Where is the pomegranate located?",
+    "options": [
+      "A.On the table in the living room",
+      "B.Next to the entrance door in the living room",
+      "C.Next to the bed in the living room",
+      "D.Behind the TV in the living room"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0004_obj_pomegranate_01"
+    ],
+    "reasoning_chain": "The pomegranate is located on the table in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0004",
+    "video_path": [
+      "003/003_0004.mp4"
+    ],
+    "question": "<003_0004.mp4>What happened after taking fruit from the refrigerator?",
+    "options": [
+      "A.Peeling fruit by the sink",
+      "B.Wearing socks while sitting on the sofa",
+      "C.Watching the projector while using the phone",
+      "D.Washing hands at the sink"
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_16",
+      "ev_17"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "After taking fruit from the refrigerator, the person peeled fruit by the sink.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0004",
+    "video_path": [
+      "003/003_0004.mp4"
+    ],
+    "question": "<003_0004.mp4>How many events occurred in total?",
+    "options": [
+      "A.10",
+      "B.9",
+      "C.11",
+      "D.8"
+    ],
+    "correct_options": "A",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_14",
+      "ev_15",
+      "ev_16",
+      "ev_17",
+      "ev_18",
+      "ev_19",
+      "ev_20",
+      "ev_21",
+      "ev_22",
+      "ev_23"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "There are ten events in total: Watching the projector while using the phone, Wearing socks, Taking fruit, Peeling fruit, Peeling pomegranate, Washing hands, Cleaning up, Continuing to watch projector, Turning right, Waiting for elevator.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0004",
+    "video_path": [
+      "003/003_0004.mp4"
+    ],
+    "question": "<003_0004.mp4>How many objects are mentioned in total?",
+    "options": [
+      "A.7",
+      "B.6",
+      "C.8",
+      "D.5"
+    ],
+    "correct_options": "A",
+    "task_type": "object_counting_global",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0004_obj_mirror_01",
+      "0004_obj_refrigerator_01",
+      "0004_obj_wardrobe_01",
+      "0004_obj_tv_01",
+      "0004_obj_router_01",
+      "0004_obj_sink_01",
+      "0004_obj_pomegranate_01"
+    ],
+    "reasoning_chain": "There are seven objects: mirror, refrigerator, wardrobe, TV, router, sink, pomegranate.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0004",
+    "video_path": [
+      "003/003_0004.mp4"
+    ],
+    "question": "<003_0004.mp4>What are the steps for preparing fruit?",
+    "options": [
+      "A.Taking fruit from refrigerator -> Peeling fruit by the sink -> Peeling pomegranate -> Washing hands -> Cleaning up",
+      "B.Peeling pomegranate -> Taking fruit from refrigerator -> Washing hands -> Cleaning up",
+      "C.Washing hands -> Taking fruit from refrigerator -> Peeling fruit -> Cleaning up",
+      "D.Cleaning up -> Peeling fruit -> Taking fruit from refrigerator -> Washing hands"
+    ],
+    "correct_options": "A",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_16",
+      "ev_17",
+      "ev_18",
+      "ev_19",
+      "ev_20"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The steps are: Taking fruit from refrigerator, Peeling fruit by the sink, Peeling pomegranate, Washing hands, Cleaning up.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0004",
+    "video_path": [
+      "003/003_0004.mp4"
+    ],
+    "question": "<003_0004.mp4>What is the location of the sink?",
+    "options": [
+      "A.Next to the stove in the living room",
+      "B.On the table in the living room",
+      "C.Next to the entrance door in the living room",
+      "D.Behind the TV in the living room"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0004_obj_sink_01"
+    ],
+    "reasoning_chain": "The sink is located next to the stove in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0004",
+    "video_path": [
+      "003/003_0001.mp4",
+      "003/003_0002.mp4",
+      "003/003_0003.mp4",
+      "003/003_0004.mp4"
+    ],
+    "question": "<003_0001.mp4><003_0002.mp4><003_0003.mp4><003_0004.mp4>What is the typical sequence of activities in the living room?",
+    "options": [
+      "A.Watching projector -> Doing laundry -> Organizing -> Preparing food -> Watching projector again",
+      "B.Preparing food -> Watching projector -> Organizing -> Doing laundry -> Watching projector",
+      "C.Organizing -> Doing laundry -> Preparing food -> Watching projector -> Watching projector again",
+      "D.Watching projector -> Preparing food -> Organizing -> Doing laundry -> Watching projector again"
+    ],
+    "correct_options": "C",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_02",
+      "ev_04",
+      "ev_05",
+      "ev_07",
+      "ev_08",
+      "ev_13",
+      "ev_14",
+      "ev_16",
+      "ev_17",
+      "ev_18",
+      "ev_21"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Across videos, the typical sequence is organizing, doing laundry, preparing food, watching projector, watching projector again.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0005",
+    "video_path": [
+      "003/003_0005.mp4"
+    ],
+    "question": "<003_0005.mp4>When did the person pick up takeout from the delivery cabinet?",
+    "options": [
+      "A.6:31-6:43",
+      "B.4:42-5:36",
+      "C.8:32-9:05",
+      "D.12:54-29:49"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_28"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person picked up takeout from 6:31 to 6:43.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T13:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0005",
+    "video_path": [
+      "003/003_0005.mp4"
+    ],
+    "question": "<003_0005.mp4>Where is the takeout locker located?",
+    "options": [
+      "A.In the lobby on the first floor",
+      "B.Next to the entrance door in the living room",
+      "C.In the garbage room",
+      "D.On the table in the living room"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0005_obj_takeoutlocker_01"
+    ],
+    "reasoning_chain": "The takeout locker is located in the lobby on the first floor.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T13:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0005",
+    "video_path": [
+      "003/003_0005.mp4"
+    ],
+    "question": "<003_0005.mp4>What happened after waiting for the elevator in the lobby?",
+    "options": [
+      "A.Exit the elevator and go to the garbage room",
+      "B.Picking up takeout from the delivery cabinet",
+      "C.Turning right after going out",
+      "D.Eating takeout"
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_25",
+      "ev_26"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "After waiting for the elevator in the lobby, the person exited the elevator and went to the garbage room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T13:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0005",
+    "video_path": [
+      "003/003_0005.mp4"
+    ],
+    "question": "<003_0005.mp4>How many events occurred in total?",
+    "options": [
+      "A.7",
+      "B.6",
+      "C.8",
+      "D.5"
+    ],
+    "correct_options": "A",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_24",
+      "ev_25",
+      "ev_26",
+      "ev_27",
+      "ev_28",
+      "ev_29",
+      "ev_30"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "There are seven events in total: Turning right after going out, Waiting for the elevator in the lobby, Going to the garbage room, Waiting for the elevator again, Picking up takeout, Returning home, Eating takeout.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T13:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0005",
+    "video_path": [
+      "003/003_0005.mp4"
+    ],
+    "question": "<003_0005.mp4>How many objects are mentioned in total?",
+    "options": [
+      "A.6",
+      "B.5",
+      "C.7",
+      "D.4"
+    ],
+    "correct_options": "A",
+    "task_type": "object_counting_global",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0005_obj_mirror_01",
+      "0005_obj_refrigerator_01",
+      "0005_obj_floorlamp_01",
+      "0005_obj_sofa_01",
+      "0005_obj_largetrashcan_01",
+      "0005_obj_takeoutlocker_01"
+    ],
+    "reasoning_chain": "There are six objects: mirror, refrigerator, floor lamp, sofa, large trash can, takeout locker.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T13:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0005",
+    "video_path": [
+      "003/003_0005.mp4"
+    ],
+    "question": "<003_0005.mp4>What are the steps for going out to throw trash?",
+    "options": [
+      "A.Turn right after going out -> Wait for elevator in lobby -> Exit elevator, turn right twice, go up stairs, turn left to garbage room",
+      "B.Wait for elevator -> Turn right -> Go to garbage room",
+      "C.Exit elevator -> Turn left three times to home",
+      "D.Pick up takeout -> Eat takeout"
+    ],
+    "correct_options": "A",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_24",
+      "ev_25",
+      "ev_26"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The steps are: Turn right after going out, wait for elevator in lobby, exit elevator, turn right twice, go up stairs, turn left to garbage room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T13:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0005",
+    "video_path": [
+      "003/003_0005.mp4"
+    ],
+    "question": "<003_0005.mp4>What is the location of the large trash can?",
+    "options": [
+      "A.In the garbage room",
+      "B.In the lobby on the first floor",
+      "C.Next to the sofa in the living room",
+      "D.On the table in the living room"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0005_obj_largetrashcan_01"
+    ],
+    "reasoning_chain": "The large trash can is located in the garbage room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T13:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0005",
+    "video_path": [
+      "003/003_0001.mp4",
+      "003/003_0002.mp4",
+      "003/003_0003.mp4",
+      "003/003_0004.mp4",
+      "003/003_0005.mp4"
+    ],
+    "question": "<003_0001.mp4><003_0002.mp4><003_0003.mp4><003_0004.mp4><003_0005.mp4>What is the typical route for going out and returning home?",
+    "options": [
+      "A.Go out, turn right, wait for elevator, go to lobby, pick up items, return home by turning left three times",
+      "B.Go out, turn left, wait for elevator, go to garbage room, pick up takeout, return home",
+      "C.Go out, turn right, wait for elevator, go to garbage room, pick up takeout, return home by turning left three times",
+      "D.Go out, turn right, wait for elevator, go to lobby, throw trash, pick up takeout, return home by turning left three times"
+    ],
+    "correct_options": "D",
+    "task_type": "route_reasoning",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_24",
+      "ev_25",
+      "ev_26",
+      "ev_27",
+      "ev_28",
+      "ev_29",
+      "ev_30"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Across videos, the typical route is: Go out, turn right, wait for elevator, go to lobby, throw trash, wait for elevator again, pick up takeout, return home by turning left three times.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-08T13:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0006",
+    "video_path": [
+      "003/003_0006.mp4"
+    ],
+    "question": "<003_0006.mp4>When did the person start exercising while watching the projector?",
+    "options": [
+      "A.0:11-28:13",
+      "B.0:04-0:10",
+      "C.0:10-0:11",
+      "D.28:13-30:00"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_31"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person exercised while watching the projector from 0:11 to 28:13.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-09T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0006",
+    "video_path": [
+      "003/003_0006.mp4"
+    ],
+    "question": "<003_0006.mp4>Where is the refrigerator located?",
+    "options": [
+      "A.Next to the entrance door in the living room",
+      "B.Next to the TV in the living room",
+      "C.Next to the wardrobe in the living room",
+      "D.In the lobby on the first floor"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0006_obj_refrigerator_01"
+    ],
+    "reasoning_chain": "The refrigerator is located next to the entrance door in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-09T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0006",
+    "video_path": [
+      "003/003_0006.mp4"
+    ],
+    "question": "<003_0006.mp4>How many events occurred in total?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.0"
+    ],
+    "correct_options": "A",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_31"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "There is one event: Exercising while watching the projector.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-09T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0006",
+    "video_path": [
+      "003/003_0006.mp4"
+    ],
+    "question": "<003_0006.mp4>How many objects are mentioned in total?",
+    "options": [
+      "A.3",
+      "B.2",
+      "C.4",
+      "D.1"
+    ],
+    "correct_options": "A",
+    "task_type": "object_counting_global",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0006_obj_wardrobe_01",
+      "0006_obj_tv_01",
+      "0006_obj_refrigerator_01"
+    ],
+    "reasoning_chain": "There are three objects: wardrobe, TV, refrigerator.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-09T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0007",
+    "video_path": [
+      "003/003_0007.mp4"
+    ],
+    "question": "<003_0007.mp4>When did the person start picking up takeout from the delivery cabinet?",
+    "options": [
+      "A.08:33",
+      "B.09:20",
+      "C.11:42",
+      "D.12:00"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_34"
+    ],
+    "evidence_spatial": [
+      "lobby_2"
+    ],
+    "reasoning_chain": "The event of picking up takeout starts at 08:33.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-09T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0007",
+    "video_path": [
+      "003/003_0007.mp4"
+    ],
+    "question": "<003_0007.mp4>Where was the sofa located in the living room?",
+    "options": [
+      "A.Next to the floor lamp",
+      "B.Next to the bed",
+      "C.In the center",
+      "D.Next to the entrance door"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0007_obj_sofa_01",
+      "living_room_1"
+    ],
+    "reasoning_chain": "The sofa is next to the floor lamp in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-09T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0007",
+    "video_path": [
+      "003/003_0007.mp4"
+    ],
+    "question": "<003_0007.mp4>At 00:46, where was the person?",
+    "options": [
+      "A.Living room",
+      "B.Lobby",
+      "C.Garbage room",
+      "D.Corridor"
+    ],
+    "correct_options": "A",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "At 00:46, objects like bed and table are in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-09T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0007",
+    "video_path": [
+      "003/003_0007.mp4"
+    ],
+    "question": "<003_0007.mp4>How many turns did the person make while going to the garbage room?",
+    "options": [
+      "A.3",
+      "B.2",
+      "C.4",
+      "D.1"
+    ],
+    "correct_options": "A",
+    "task_type": "event_counting",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_33"
+    ],
+    "evidence_spatial": [
+      "garbage_room_1"
+    ],
+    "reasoning_chain": "The person turned right, then right again, then left, totaling 3 turns.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-09T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0007",
+    "video_path": [
+      "003/003_0007.mp4"
+    ],
+    "question": "<003_0007.mp4>On which floor is the lobby where the takeout locker is located?",
+    "options": [
+      "A.1st floor",
+      "B.38th floor",
+      "C.Ground floor",
+      "D.2nd floor"
+    ],
+    "correct_options": "A",
+    "task_type": "cross_view_spatial_reasoning",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "lobby_2",
+      "0007_obj_takeoutlocker_01"
+    ],
+    "reasoning_chain": "The lobby with the takeout locker is on the 1st floor.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-09T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0007",
+    "video_path": [
+      "003/003_0007.mp4"
+    ],
+    "question": "<003_0007.mp4>What were the steps the person took to pick up the takeout?",
+    "options": [
+      "A.Go to the lobby -> Open the locker -> Take the takeout",
+      "B.Go to the garbage room -> Open the locker -> Take the takeout",
+      "C.Go to the living room -> Open the locker -> Take the takeout",
+      "D.Go to the corridor -> Open the locker -> Take the takeout"
+    ],
+    "correct_options": "A",
+    "task_type": "procedure_planning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_34"
+    ],
+    "evidence_spatial": [
+      "lobby_2",
+      "0007_obj_takeoutlocker_01"
+    ],
+    "reasoning_chain": "The person went to the lobby on the first floor to pick up takeout from the locker.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-09T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0007",
+    "video_path": [
+      "003/003_0007.mp4"
+    ],
+    "question": "<003_0007.mp4>What is the person's habit regarding the direction they turn after going out?",
+    "options": [
+      "A.Always turns left",
+      "B.Always turns right",
+      "C.Depends on the destination",
+      "D.No consistent habit"
+    ],
+    "correct_options": "C",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_32",
+      "ev_22",
+      "ev_24"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "In different videos, the person turns left or right depending on the path to the destination.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-09T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0008",
+    "video_path": [
+      "003/003_0008.mp4"
+    ],
+    "question": "<003_0008.mp4>When did the person start filling water at the sink?",
+    "options": [
+      "A.06:33",
+      "B.07:30",
+      "C.08:25",
+      "D.10:29"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_38"
+    ],
+    "evidence_spatial": [
+      "living_room_1",
+      "0008_obj_sink_01"
+    ],
+    "reasoning_chain": "The event of filling water at the sink starts at 06:33.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0008",
+    "video_path": [
+      "003/003_0008.mp4"
+    ],
+    "question": "<003_0008.mp4>Where was the refrigerator located in the living room?",
+    "options": [
+      "A.Next to the entrance door",
+      "B.Next to the bed",
+      "C.In the center",
+      "D.Next to the stove"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0008_obj_refrigerator_01",
+      "living_room_1"
+    ],
+    "reasoning_chain": "The refrigerator is next to the entrance door in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0008",
+    "video_path": [
+      "003/003_0008.mp4"
+    ],
+    "question": "<003_0008.mp4>At 11:42, where was the person?",
+    "options": [
+      "A.Living room",
+      "B.Lobby",
+      "C.Garbage room",
+      "D.Corridor"
+    ],
+    "correct_options": "A",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "living_room_1",
+      "0008_obj_sofa_01"
+    ],
+    "reasoning_chain": "At 11:42, the sofa object appears in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0008",
+    "video_path": [
+      "003/003_0008.mp4"
+    ],
+    "question": "<003_0008.mp4>How many cooking-related events occurred in this video?",
+    "options": [
+      "A.4",
+      "B.5",
+      "C.6",
+      "D.3"
+    ],
+    "correct_options": "C",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_38",
+      "ev_39",
+      "ev_40",
+      "ev_42",
+      "ev_43",
+      "ev_45"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "Cooking-related events include: filling water, boiling water, unpacking noodles, washing vegetables, cooking noodles, and adding ingredients.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0008",
+    "video_path": [
+      "003/003_0008.mp4"
+    ],
+    "question": "<003_0008.mp4>What were the main steps for making instant noodles?",
+    "options": [
+      "A.Boil water -> Unpack noodles -> Wash vegetables -> Cook noodles -> Add ingredients",
+      "B.Unpack noodles -> Boil water -> Cook noodles -> Wash vegetables -> Add ingredients",
+      "C.Wash vegetables -> Boil water -> Unpack noodles -> Cook noodles -> Add ingredients",
+      "D.Fill water -> Unpack noodles -> Wash vegetables -> Cook noodles -> Boil water"
+    ],
+    "correct_options": "A",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_38",
+      "ev_39",
+      "ev_40",
+      "ev_42",
+      "ev_43",
+      "ev_45"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "The person first boiled water (07:30-08:18), then unpacked noodles (08:25-10:00), washed vegetables (11:17-12:00), cooked noodles (12:29-14:30), and finally added ingredients (17:30-23:00).",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0008",
+    "video_path": [
+      "003/003_0008.mp4"
+    ],
+    "question": "<003_0008.mp4>At what time did the person put vegetables in the refrigerator?",
+    "options": [
+      "A.10:29",
+      "B.11:17",
+      "C.08:25",
+      "D.12:29"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_41"
+    ],
+    "evidence_spatial": [
+      "0008_obj_refrigerator_01",
+      "0008_obj_vegetables_01"
+    ],
+    "reasoning_chain": "The person put vegetables in the refrigerator at 10:29-10:40.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0008",
+    "video_path": [
+      "003/003_0008.mp4"
+    ],
+    "question": "<003_0008.mp4>Which event happened first: unpacking instant noodles or washing vegetables?",
+    "options": [
+      "A.Unpacking instant noodles",
+      "B.Washing vegetables",
+      "C.They happened at the same time",
+      "D.Neither occurred"
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_40",
+      "ev_42"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "Unpacking instant noodles occurred at 08:25-10:00, while washing vegetables occurred at 11:17-12:00.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0008",
+    "video_path": [
+      "003/003_0008.mp4"
+    ],
+    "question": "<003_0008.mp4>Based on multiple videos, what is the person's habit when cooking?",
+    "options": [
+      "A.Always orders takeout instead of cooking",
+      "B.Prepares all ingredients before starting to cook",
+      "C.Alternates between eating out and cooking at home",
+      "D.Only cooks simple instant meals"
+    ],
+    "correct_options": "C",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_28",
+      "ev_34",
+      "ev_38",
+      "ev_39",
+      "ev_40",
+      "ev_43"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Across videos 003_0005, 003_0007, and 003_0008, the person sometimes picks up takeout and sometimes cooks at home, showing a habit of alternating between the two.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0010",
+    "video_path": [
+      "003/003_0010.mp4"
+    ],
+    "question": "<003_0010.mp4>When did the person start washing fruit?",
+    "options": [
+      "A.01:10",
+      "B.01:25",
+      "C.02:10",
+      "D.03:25"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_53"
+    ],
+    "evidence_spatial": [
+      "living_room_1",
+      "0010_obj_sink_01"
+    ],
+    "reasoning_chain": "The event of washing fruit starts at 01:10.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0010",
+    "video_path": [
+      "003/003_0010.mp4"
+    ],
+    "question": "<003_0010.mp4>Where was the mobile phone located in the living room?",
+    "options": [
+      "A.On the table",
+      "B.Next to the bed",
+      "C.In the center",
+      "D.Next to the entrance door"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0010_obj_mobilephone_01",
+      "living_room_1"
+    ],
+    "reasoning_chain": "The mobile phone is on the table in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0010",
+    "video_path": [
+      "003/003_0010.mp4"
+    ],
+    "question": "<003_0010.mp4>What were the main steps for preparing fruit?",
+    "options": [
+      "A.Wash fruit -> Cut fruit",
+      "B.Cut fruit -> Wash fruit",
+      "C.Wash fruit -> Use phone",
+      "D.Cut fruit -> Use phone"
+    ],
+    "correct_options": "A",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_53",
+      "ev_54"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "The person first washed the fruit at the sink (01:10-01:25), then cut the fruit (01:25-02:10).",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0010",
+    "video_path": [
+      "003/003_0010.mp4"
+    ],
+    "question": "<003_0010.mp4>Which event happened first: washing fruit or cutting fruit?",
+    "options": [
+      "A.Washing fruit",
+      "B.Cutting fruit",
+      "C.They happened at the same time",
+      "D.Neither occurred"
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_53",
+      "ev_54"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "Washing fruit occurred from 01:10-01:25, while cutting fruit occurred from 01:25-02:10.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0010",
+    "video_path": [
+      "003/003_0010.mp4",
+      "003/003_0009.mp4",
+      "003/003_0007.mp4"
+    ],
+    "question": "<003_0010.mp4><003_0009.mp4><003_0007.mp4>Based on multiple videos, what is the person's habit regarding using the phone?",
+    "options": [
+      "A.Uses it briefly for calls",
+      "B.Uses it for long periods while relaxing",
+      "C.Never uses it at home",
+      "D.Only uses it outside"
+    ],
+    "correct_options": "B",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_55",
+      "ev_52",
+      "ev_36"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Across videos like 003_0010 (03:25-30:19), 003_0009 (15:20-25:19), and 003_0007 (12:00-26:00), the person often uses the phone or watches projector for extended periods while eating or relaxing.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0011",
+    "video_path": [
+      "003/003_0011.mp4"
+    ],
+    "question": "<003_0011.mp4>When did the person start peeling the pomelo?",
+    "options": [
+      "A.03:58",
+      "B.07:20",
+      "C.08:40",
+      "D.10:20"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_58"
+    ],
+    "evidence_spatial": [
+      "living_room_1",
+      "0011_obj_pomelo_01"
+    ],
+    "reasoning_chain": "The event of peeling the pomelo starts at 03:58.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0011",
+    "video_path": [
+      "003/003_0011.mp4"
+    ],
+    "question": "<003_0011.mp4>Where was the pomelo located in the living room?",
+    "options": [
+      "A.On the table",
+      "B.Next to the bed",
+      "C.In the center",
+      "D.Next to the entrance door"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0011_obj_pomelo_01",
+      "living_room_1"
+    ],
+    "reasoning_chain": "The pomelo is on the table in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0011",
+    "video_path": [
+      "003/003_0011.mp4"
+    ],
+    "question": "<003_0011.mp4>At 01:10, where was the person?",
+    "options": [
+      "A.Living room",
+      "B.Lobby",
+      "C.Garbage room",
+      "D.Corridor"
+    ],
+    "correct_options": "A",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "living_room_1",
+      "0011_obj_bed_01"
+    ],
+    "reasoning_chain": "At 01:10, objects like bed and table are in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0011",
+    "video_path": [
+      "003/003_0011.mp4"
+    ],
+    "question": "<003_0011.mp4>How many times did the person use the phone in this video?",
+    "options": [
+      "A.2",
+      "B.1",
+      "C.3",
+      "D.0"
+    ],
+    "correct_options": "A",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_60",
+      "ev_61"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "The person used the phone from 10:20-13:50 and 18:00-20:00, totaling 2 times.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0011",
+    "video_path": [
+      "003/003_0011.mp4"
+    ],
+    "question": "<003_0011.mp4>What were the main steps for peeling the pomelo?",
+    "options": [
+      "A.Take pomelo -> Peel -> Eat",
+      "B.Take pomelo -> Wash -> Peel",
+      "C.Take pomelo -> Cut -> Peel",
+      "D.Take pomelo -> Boil -> Peel"
+    ],
+    "correct_options": "A",
+    "task_type": "procedure_planning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_58"
+    ],
+    "evidence_spatial": [
+      "living_room_1",
+      "0011_obj_pomelo_01"
+    ],
+    "reasoning_chain": "The person took the pomelo from the table and peeled it over time from 03:58-07:20.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0011",
+    "video_path": [
+      "003/003_0011.mp4"
+    ],
+    "question": "<003_0011.mp4>Which event happened first: closing the window or peeling the pomelo?",
+    "options": [
+      "A.Closing the window",
+      "B.Peeling the pomelo",
+      "C.They happened at the same time",
+      "D.Neither occurred"
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_57",
+      "ev_58"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "Closing the window occurred from 03:07-03:20, while peeling the pomelo started at 03:58.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0011",
+    "video_path": [
+      "003/003_0011.mp4"
+    ],
+    "question": "<003_0011.mp4>At what time did the person start tidying up the bed sheets?",
+    "options": [
+      "A.08:40",
+      "B.09:20",
+      "C.10:20",
+      "D.18:00"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_59"
+    ],
+    "evidence_spatial": [
+      "0011_obj_bed_01",
+      "living_room_1"
+    ],
+    "reasoning_chain": "The person started tidying up the bed sheets at 08:40-09:20.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0012",
+    "video_path": [
+      "003/003_0012.mp4"
+    ],
+    "question": "<003_0012.mp4>When did the person start using the phone for the first time?",
+    "options": [
+      "A.00:30",
+      "B.03:00",
+      "C.05:00",
+      "D.06:39"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence": [
+      "ev_63"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The event ev_63 indicates the person started using the phone at 00:30.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0012",
+    "video_path": [
+      "003/003_0012.mp4"
+    ],
+    "question": "<003_0012.mp4>Where was the fan located?",
+    "options": [
+      "A.On the table",
+      "B.Next to the bed",
+      "C.Next to the entrance door",
+      "D.In the center of the room"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence": [
+      "0012_obj_fan_01"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "The object 0012_obj_fan_01 is described as being on the table in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0012",
+    "video_path": [
+      "003/003_0012.mp4"
+    ],
+    "question": "<003_0012.mp4>What activity occurred between 03:00 and 04:00?",
+    "options": [
+      "A.Using the phone",
+      "B.Tidying up miscellaneous items",
+      "C.Watching the projector",
+      "D.Peeling a pomelo"
+    ],
+    "correct_options": "B",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence": [
+      "ev_64"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The event ev_64 describes tidying up miscellaneous items from 03:00 to 04:00.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0013",
+    "video_path": [
+      "003/003_0013.mp4"
+    ],
+    "question": "<003_0013.mp4>When did the person start putting on socks?",
+    "options": [
+      "A.01:10",
+      "B.02:00",
+      "C.03:00",
+      "D.25:52"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence": [
+      "ev_66"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The event ev_66 indicates the person started putting on socks at 01:10.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0013",
+    "video_path": [
+      "003/003_0013.mp4"
+    ],
+    "question": "<003_0013.mp4>Where was the wardrobe located?",
+    "options": [
+      "A.Next to the bed",
+      "B.Next to the entrance door",
+      "C.On the table",
+      "D.In the center of the room"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence": [
+      "0013_obj_wardrobe_01"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "The object 0013_obj_wardrobe_01 is described as being next to the bed in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0013",
+    "video_path": [
+      "003/003_0013.mp4"
+    ],
+    "question": "<003_0013.mp4>What was the order of activities after 01:50?",
+    "options": [
+      "A.Putting on socks then using the phone",
+      "B.Using the phone then putting on socks",
+      "C.Tidying up then using the phone",
+      "D.Using the phone then tidying up"
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence": [
+      "ev_66",
+      "ev_67"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The event ev_66 (putting on socks) ends at 01:50, followed by ev_67 (using the phone) starting at 02:00.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0014",
+    "video_path": [
+      "003/003_0014.mp4"
+    ],
+    "question": "<003_0014.mp4>Where was the chair located?",
+    "options": [
+      "A.Next to the table",
+      "B.Next to the bed",
+      "C.Next to the entrance door",
+      "D.In the center of the room"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence": [
+      "0014_obj_chair_01"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "The object 0014_obj_chair_01 is described as being next to the table in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0014",
+    "video_path": [
+      "003/003_0014.mp4"
+    ],
+    "question": "<003_0014.mp4>When did the person start sitting on the chair using the phone?",
+    "options": [
+      "A.04:03",
+      "B.05:20",
+      "C.06:10",
+      "D.02:40"
+    ],
+    "correct_options": "C",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence": [
+      "ev_71"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The event ev_71 indicates the person started sitting on the chair using the phone at 06:10.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0014",
+    "video_path": [
+      "003/003_0014.mp4"
+    ],
+    "question": "<003_0014.mp4>What was the order of activities involving using the phone?",
+    "options": [
+      "A.Sitting on the bed then sitting on the chair",
+      "B.Sitting on the chair then sitting on the bed",
+      "C.Drinking water then sitting on the bed",
+      "D.Putting on socks then sitting on the chair"
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence": [
+      "ev_69",
+      "ev_71"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The event ev_69 (sitting on the bed using the phone) occurs from 04:03-05:10, followed by ev_71 (sitting on the chair using the phone) from 06:10-25:15.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0014",
+    "video_path": [
+      "003/003_0014.mp4"
+    ],
+    "question": "<003_0014.mp4>Where was the fan located?",
+    "options": [
+      "A.On the table",
+      "B.Next to the bed",
+      "C.Next to the entrance door",
+      "D.In the center of the room"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence": [
+      "0014_obj_fan_01"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "The object 0014_obj_fan_01 is described as being on the table in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0014",
+    "video_path": [
+      "003/003_0014.mp4"
+    ],
+    "question": "<003_0014.mp4>What is the spatial relation between the bed and the wardrobe?",
+    "options": [
+      "A.Next to each other",
+      "B.Opposite sides of the room",
+      "C.One on top of the other",
+      "D.Far apart"
+    ],
+    "correct_options": "A",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence": [
+      "0014_obj_bed_01",
+      "0014_obj_wardrobe_01"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "Both the bed and wardrobe are described as being next to the bed in the living room, indicating they are next to each other.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0014",
+    "video_path": [
+      "003/003_0014.mp4"
+    ],
+    "question": "<003_0014.mp4>How many times did the person use the phone in this video?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.4"
+    ],
+    "correct_options": "B",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence": [
+      "ev_69",
+      "ev_71"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The events ev_69 and ev_71 both involve using the phone, occurring twice in the video.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0014",
+    "video_path": [
+      "003/003_0010.mp4",
+      "003/003_0011.mp4",
+      "003/003_0012.mp4",
+      "003/003_0013.mp4",
+      "003/003_0014.mp4"
+    ],
+    "question": "<003_0010.mp4><003_0011.mp4><003_0012.mp4><003_0013.mp4><003_0014.mp4>What is the person's habit regarding using the phone?",
+    "options": [
+      "A.Uses it briefly for calls",
+      "B.Uses it for extended periods while relaxing or sitting",
+      "C.Uses it only when moving",
+      "D.Rarely uses it"
+    ],
+    "correct_options": "B",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence": [
+      "ev_55",
+      "ev_60",
+      "ev_61",
+      "ev_62",
+      "ev_63",
+      "ev_65",
+      "ev_67",
+      "ev_69",
+      "ev_71"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Across videos 003_0010 (03:25-30:19), 003_0011 (10:20-13:50, 18:00-20:00, 20:22-29:33), 003_0012 (00:30-01:12, 05:00-06:39), 003_0013 (02:00-25:52), and 003_0014 (04:03-05:10, 06:10-25:15), the person often uses the phone for extended periods while relaxing or sitting.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0015",
+    "video_path": [
+      "003/003_0015.mp4"
+    ],
+    "question": "<003_0015.mp4>Where was the sink located?",
+    "options": [
+      "A.Next to the stove",
+      "B.Next to the bed",
+      "C.Next to the entrance door",
+      "D.In the center of the room"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence": [
+      "0015_obj_sink_01"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "The object 0015_obj_sink_01 is described as being next to the stove in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0015",
+    "video_path": [
+      "003/003_0015.mp4"
+    ],
+    "question": "<003_0015.mp4>When did the person start cooking instant noodles?",
+    "options": [
+      "A.10:00",
+      "B.15:00",
+      "C.18:00",
+      "D.26:59"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence": [
+      "ev_75"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The event ev_75 indicates the person started cooking instant noodles at 10:00.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0015",
+    "video_path": [
+      "003/003_0015.mp4"
+    ],
+    "question": "<003_0015.mp4>What was the order of activities involving the sink?",
+    "options": [
+      "A.Filling water then washing vegetables",
+      "B.Washing vegetables then filling water",
+      "C.Cooking instant noodles then filling water",
+      "D.Sitting on the chair then washing vegetables"
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence": [
+      "ev_72",
+      "ev_74"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The event ev_72 (filling water) occurs from 00:30-01:20, followed by ev_74 (washing vegetables) from 01:40-03:00.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0015",
+    "video_path": [
+      "003/003_0015.mp4"
+    ],
+    "question": "<003_0015.mp4>Where was the fan located?",
+    "options": [
+      "A.Next to the bed",
+      "B.On the table",
+      "C.Next to the entrance door",
+      "D.In the center of the room"
+    ],
+    "correct_options": "B",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence": [
+      "0015_obj_fan_01"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "The object 0015_obj_fan_01 is described as being on the table in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0015",
+    "video_path": [
+      "003/003_0015.mp4"
+    ],
+    "question": "<003_0015.mp4>What is the spatial relation between the bed and the wardrobe?",
+    "options": [
+      "A.Next to each other",
+      "B.Opposite sides of the room",
+      "C.One on top of the other",
+      "D.Far apart"
+    ],
+    "correct_options": "A",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence": [
+      "0015_obj_bed_01",
+      "0015_obj_wardrobe_01"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "Both the bed and wardrobe are described as being next to the bed in the living room, indicating they are next to each other.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0015",
+    "video_path": [
+      "003/003_0015.mp4"
+    ],
+    "question": "<003_0015.mp4>How many times did the person interact with the refrigerator?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.4"
+    ],
+    "correct_options": "A",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence": [
+      "ev_73"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The event ev_73 involves taking vegetables and fruits from the refrigerator, occurring once in the video.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0015",
+    "video_path": [
+      "003/003_0008.mp4",
+      "003/003_0015.mp4"
+    ],
+    "question": "<003_0008.mp4><003_0015.mp4>What is the person's habit regarding cooking instant noodles?",
+    "options": [
+      "A.Uses it as a quick meal option",
+      "B.Rarely cooks it, preferring other foods",
+      "C.Cooks it only when alone",
+      "D.Cooks it frequently with added seasonings"
+    ],
+    "correct_options": "D",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence": [
+      "ev_45",
+      "ev_75"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "In 003_0008 (17:30-23:00), the person cooks instant noodles with added seasonings, and in 003_0015 (10:00-15:00), the person cooks instant noodles again, indicating a habit of cooking it frequently with seasonings.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0016",
+    "video_path": [
+      "003/003_0016.mp4"
+    ],
+    "question": "<003_0016.mp4>At what time did the person wash their hands?",
+    "options": [
+      "A.05:20",
+      "B.07:30",
+      "C.08:00",
+      "D.10:00"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence": [
+      "ev_77"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "ev_77 shows hand washing at 05:20.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0016",
+    "video_path": [
+      "003/003_0016.mp4"
+    ],
+    "question": "<003_0016.mp4>Where is the sofa placed in the living room?",
+    "options": [
+      "A.Next to the bed and table",
+      "B.In the center of the room",
+      "C.Next to the stove",
+      "D.By the entrance door"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence": [
+      "0016_obj_sofa_01"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "0016_obj_sofa_01 is described as next to the bed and table.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0016",
+    "video_path": [
+      "003/003_0016.mp4"
+    ],
+    "question": "<003_0016.mp4>What did the person do between 08:00 and 09:30?",
+    "options": [
+      "A.Making the bed",
+      "B.Drinking water",
+      "C.Washing hands",
+      "D.Using the phone"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence": [
+      "ev_79"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "ev_79 covers making the bed from 08:00 to 09:30.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0016",
+    "video_path": [
+      "003/003_0016.mp4"
+    ],
+    "question": "<003_0016.mp4>How many times did the person use the phone in this video?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.4"
+    ],
+    "correct_options": "B",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence": [
+      "ev_80",
+      "ev_81"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "ev_80 and ev_81 both involve phone use, so twice.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0016",
+    "video_path": [
+      "003/003_0016.mp4"
+    ],
+    "question": "<003_0016.mp4>What is the spatial relation between the wardrobe and the bed?",
+    "options": [
+      "A.Wardrobe is next to the bed",
+      "B.Wardrobe is by the entrance",
+      "C.Wardrobe is on the table",
+      "D.Wardrobe is in the center"
+    ],
+    "correct_options": "A",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence": [
+      "0016_obj_wardrobe_01",
+      "0016_obj_bed_01"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "Both objects are described as next to the bed.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0016",
+    "video_path": [
+      "003/003_0016.mp4"
+    ],
+    "question": "<003_0016.mp4>Which object did the person interact with to wash hands?",
+    "options": [
+      "A.Sink",
+      "B.Bed",
+      "C.Sofa",
+      "D.Chair"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence": [
+      "ev_77",
+      "0016_obj_sink_01"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "Hand washing event involves the sink.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0016",
+    "video_path": [
+      "003/003_0016.mp4"
+    ],
+    "question": "<003_0016.mp4>What was the sequence of activities after 07:40?",
+    "options": [
+      "A.Making the bed, then using the phone on the bed, then on the sofa",
+      "B.Using the phone on the sofa, then making the bed",
+      "C.Washing hands, then making the bed",
+      "D.Drinking water, then using the phone on the bed"
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence": [
+      "ev_79",
+      "ev_80",
+      "ev_81"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "After 07:40: making the bed (08:00-09:30), using phone on bed (10:00-30:00), then on sofa (31:48-41:00).",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0011",
+    "video_path": [
+      "003/003_0011.mp4",
+      "003/003_0016.mp4"
+    ],
+    "question": "<003_0011.mp4><003_0016.mp4>What can be inferred about the person's preference for using the phone?",
+    "options": [
+      "A.Prefers to use the phone while sitting or lying down",
+      "B.Uses the phone only while standing",
+      "C.Rarely uses the phone",
+      "D.Uses the phone only outdoors"
+    ],
+    "correct_options": "A",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence": [
+      "ev_60",
+      "ev_61",
+      "ev_80",
+      "ev_81"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "In both 003_0011 and 003_0016, the person uses the phone for long periods while sitting or lying down.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0017",
+    "video_path": [
+      "003/003_0017.mp4"
+    ],
+    "question": "<003_0017.mp4>At what time did the person start filling water at the sink?",
+    "options": [
+      "A.17:10",
+      "B.01:00",
+      "C.10:00",
+      "D.01:10"
+    ],
+    "correct_options": "D",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence": [
+      "ev_82"
+    ],
+    "evidence_spatial": [
+      "living_room_1",
+      "0017_obj_sink_01"
+    ],
+    "reasoning_chain": "ev_82 shows filling water at the sink at 00:10.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0017",
+    "video_path": [
+      "003/003_0017.mp4"
+    ],
+    "question": "<003_0017.mp4>Where is the refrigerator located in the living room?",
+    "options": [
+      "A.Next to the entrance door",
+      "B.Next to the stove",
+      "C.In the center of the room",
+      "D.Next to the bed"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence": [
+      "0017_obj_refrigerator_01"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "0017_obj_refrigerator_01 is next to the entrance door in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0017",
+    "video_path": [
+      "003/003_0017.mp4"
+    ],
+    "question": "<003_0017.mp4>At 17:10, what was the person doing?",
+    "options": [
+      "A.Washing dishes",
+      "B.Cooking instant noodles",
+      "C.Sweeping the floor",
+      "D.Stirring instant noodles"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence": [
+      "ev_88"
+    ],
+    "evidence_spatial": [
+      "living_room_1",
+      "0017_obj_sink_01"
+    ],
+    "reasoning_chain": "ev_88 covers washing dishes at 17:10.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0017",
+    "video_path": [
+      "003/003_0017.mp4"
+    ],
+    "question": "<003_0017.mp4>How many events involved the sink in this video?",
+    "options": [
+      "A.2",
+      "B.3",
+      "C.4",
+      "D.5"
+    ],
+    "correct_options": "B",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence": [
+      "ev_82",
+      "ev_84",
+      "ev_88"
+    ],
+    "evidence_spatial": [
+      "0017_obj_sink_01"
+    ],
+    "reasoning_chain": "ev_82 (filling water), ev_84 (washing/cutting vegetables), ev_88 (washing dishes) all involve the sink.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0017",
+    "video_path": [
+      "003/003_0017.mp4"
+    ],
+    "question": "<003_0017.mp4>What is the spatial relation between the sofa and the table?",
+    "options": [
+      "A.Sofa is next to the table",
+      "B.Sofa is in the center of the room",
+      "C.Sofa is next to the stove",
+      "D.Sofa is by the entrance door"
+    ],
+    "correct_options": "A",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence": [
+      "0017_obj_sofa_01",
+      "0017_obj_table_01"
+    ],
+    "evidence_spatial": [
+      "living_room_1"
+    ],
+    "reasoning_chain": "0017_obj_sofa_01 and 0017_obj_table_01 are both described as next to each other in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0017",
+    "video_path": [
+      "003/003_0017.mp4"
+    ],
+    "question": "<003_0017.mp4>What were the main steps for cooking instant noodles?",
+    "options": [
+      "A.Adding vegetables -> Cooking noodles -> Stirring noodles",
+      "B.Beating eggs -> Adding vegetables -> Cooking noodles -> Stirring noodles",
+      "C.Unpacking noodles -> Adding seasoning -> Cooking noodles -> Stirring noodles",
+      "D.Adding vegetables -> Beating eggs -> Unpacking noodles -> Adding seasoning -> Cooking noodles -> Stirring noodles"
+    ],
+    "correct_options": "D",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence": [
+      "ev_86",
+      "ev_87",
+      "ev_89"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "ev_86 (adding vegetables, beating eggs, unpacking noodles), ev_87 (adding seasoning, cooking noodles), ev_89 (stirring noodles).",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0017",
+    "video_path": [
+      "003/003_0017.mp4"
+    ],
+    "question": "<003_0017.mp4>Which event happened first: taking vegetables and eggs from the refrigerator or washing and cutting vegetables?",
+    "options": [
+      "A.Taking vegetables and eggs from the refrigerator",
+      "B.Washing and cutting vegetables",
+      "C.Adding seasoning packets",
+      "D.Stirring instant noodles"
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence": [
+      "ev_83",
+      "ev_84"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "ev_83 (taking vegetables and eggs) occurs before ev_84 (washing and cutting vegetables).",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0017",
+    "video_path": [
+      "003/003_0008.mp4",
+      "003/003_0015.mp4",
+      "003/003_0017.mp4"
+    ],
+    "question": "<003_0008.mp4><003_0015.mp4><003_0017.mp4>What can be inferred about the person's cooking habits regarding instant noodles?",
+    "options": [
+      "A.Prefers to add vegetables and eggs when cooking instant noodles",
+      "B.Only cooks instant noodles without any additions",
+      "C.Rarely cooks instant noodles",
+      "D.Prefers to eat out instead of cooking"
+    ],
+    "correct_options": "A",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence": [
+      "ev_45",
+      "ev_75",
+      "ev_86",
+      "ev_87"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Across 003_0008, 003_0015, and 003_0017, the person consistently adds vegetables and eggs when cooking instant noodles.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0018",
+    "video_path": [
+      "003/003_0018.mp4"
+    ],
+    "question": "<003_0018.mp4>At what time did the person wash hands at the sink?",
+    "options": [
+      "A.01:00-02:30",
+      "B.06:53-11:10",
+      "C.11:55-35:15",
+      "D.00:10-00:30"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence": [
+      "ev_91"
+    ],
+    "evidence_spatial": [
+      "living_room_1",
+      "0018_obj_sink_01"
+    ],
+    "reasoning_chain": "ev_91 shows washing hands at the sink at 01:00-02:30.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0018",
+    "video_path": [
+      "003/003_0018.mp4"
+    ],
+    "question": "<003_0018.mp4>How many distinct locations are involved in the events of this video?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.4"
+    ],
+    "correct_options": "B",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence": [
+      "ev_91",
+      "ev_92",
+      "ev_93"
+    ],
+    "evidence_spatial": [
+      "living_room_1",
+      "lobby_2"
+    ],
+    "reasoning_chain": "Events occur in living_room_1 and lobby_2.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0018",
+    "video_path": [
+      "003/003_0018.mp4"
+    ],
+    "question": "<003_0018.mp4>What is the correct sequence of main activities in this video?",
+    "options": [
+      "A.Going out to throw away trash -> Washing hands -> Using the phone on the bed",
+      "B.Using the phone on the bed -> Washing hands -> Going out to throw away trash",
+      "C.Washing hands -> Going out to throw away trash -> Using the phone on the bed",
+      "D.Washing hands -> Using the phone on the bed -> Going out to throw away trash"
+    ],
+    "correct_options": "C",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence": [
+      "ev_91",
+      "ev_92",
+      "ev_93"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The order is: washing hands (1:00-2:30), going out to throw away trash (6:53-11:10), using the phone on the bed (11:55-35:15).",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-14T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0019",
+    "video_path": [
+      "003/003_0019.mp4"
+    ],
+    "question": "<003_0019.mp4> During which time period did the person tidy up clothes?",
+    "options": [
+      "A.13:32-15:12",
+      "B.02:32-06:00",
+      "C.20:25-23:05",
+      "D.08:00-09:30"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_95"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The event 'Tidying up clothes' occurs from 13:32 to 15:12.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-29T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0019",
+    "video_path": [
+      "003/003_0019.mp4"
+    ],
+    "question": "<003_0019.mp4> What is the correct chronological sequence of the following activities performed by the person?",
+    "options": [
+      "A.Filling water at the sink -> Tidying up clothes -> Sitting on the bed using the phone",
+      "B.Tidying up clothes -> Filling water at the sink -> Sitting on the bed using the phone",
+      "C.Sitting on the bed using the phone -> Tidying up clothes -> Filling water at the sink",
+      "D.Filling water at the sink -> Sitting on the bed using the phone -> Tidying up clothes"
+    ],
+    "correct_options": "A",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_94",
+      "ev_95",
+      "ev_96"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person fills water at 02:32, tidies clothes at 13:32, and uses the phone on the bed at 20:25.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-29T10:05:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0019",
+    "video_path": [
+      "003/003_0019.mp4"
+    ],
+    "question": "<003_0019.mp4> How many times did the person use the sink in this video?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.0"
+    ],
+    "correct_options": "A",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_94"
+    ],
+    "evidence_spatial": [
+      "0019_obj_sink_01"
+    ],
+    "reasoning_chain": "The person used the sink once to fill water (ev_94).",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-29T10:10:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0019",
+    "video_path": [
+      "003/003_0011.mp4",
+      "003/003_0012.mp4",
+      "003/003_0013.mp4",
+      "003/003_0014.mp4",
+      "003/003_0015.mp4",
+      "003/003_0016.mp4",
+      "003/003_0018.mp4",
+      "003/003_0019.mp4"
+    ],
+    "question": "<003_0011.mp4><003_0012.mp4><003_0013.mp4><003_0014.mp4><003_0015.mp4><003_0016.mp4><003_0018.mp4><003_0019.mp4> Based on the activities observed across these videos, what is a prominent leisure habit of this person?",
+    "options": [
+      "A.The person frequently uses the phone for extended periods in various locations such as the bed, chair, and sofa",
+      "B.The person spends most of their leisure time reading books in the study",
+      "C.The person primarily watches TV while eating meals at the table",
+      "D.The person exercises regularly in the living room every evening"
+    ],
+    "correct_options": "A",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_60",
+      "ev_61",
+      "ev_63",
+      "ev_65",
+      "ev_67",
+      "ev_69",
+      "ev_71",
+      "ev_76",
+      "ev_80",
+      "ev_81",
+      "ev_93",
+      "ev_96"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person is observed using the phone in multiple videos (0011, 0012, 0013, 0014, 0015, 0016, 0018, 0019) for long durations and in different locations.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-29T10:15:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0021",
+    "video_path": [
+      "003/003_0021.mp4"
+    ],
+    "question": "<003_0021.mp4> Where is the sink located in the living room?",
+    "options": [
+      "A.Next to the stove",
+      "B.Next to the entrance door",
+      "C.On the table",
+      "D.In the center of the room"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0021_obj_sink_01"
+    ],
+    "reasoning_chain": "The sink is located next to the stove in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-29T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0021",
+    "video_path": [
+      "003/003_0021.mp4"
+    ],
+    "question": "<003_0021.mp4> How many times did the person interact with the sink in this video?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.0",
+      "D.3"
+    ],
+    "correct_options": "A",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_97"
+    ],
+    "evidence_spatial": [
+      "0021_obj_sink_01"
+    ],
+    "reasoning_chain": "The person interacted with the sink once to peel a pomelo (ev_97).",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-29T11:05:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0022",
+    "video_path": [
+      "003/003_0022.mp4"
+    ],
+    "question": "<003_0022.mp4> Where is the sofa located in the living room?",
+    "options": [
+      "A.Next to the bed and table",
+      "B.Next to the entrance door",
+      "C.On the table",
+      "D.In the center of the room"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0022_obj_sofa_01"
+    ],
+    "reasoning_chain": "The sofa is located next to the bed and table in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-29T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0022",
+    "video_path": [
+      "003/003_0022.mp4"
+    ],
+    "question": "<003_0022.mp4> How many times did the person interact with the sink in this video?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.0",
+      "D.3"
+    ],
+    "correct_options": "A",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_98"
+    ],
+    "evidence_spatial": [
+      "0022_obj_sink_01"
+    ],
+    "reasoning_chain": "The person interacted with the sink once to clean it (ev_98).",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-29T12:05:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0022",
+    "video_path": [
+      "003/003_0022.mp4"
+    ],
+    "question": "<003_0022.mp4> What is the correct chronological order of the following activities performed by the person?",
+    "options": [
+      "A.Cleaning the sink -> Using the phone -> Sitting on the sofa playing games",
+      "B.Using the phone -> Cleaning the sink -> Sitting on the sofa playing games",
+      "C.Sitting on the sofa playing games -> Cleaning the sink -> Using the phone",
+      "D.Cleaning the sink -> Sitting on the sofa playing games -> Using the phone"
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_98",
+      "ev_99",
+      "ev_100"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person cleaned the sink from 00:10-03:35, used the phone from 05:15-09:15, and played games on the sofa from 09:15-17:11.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-29T12:10:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0023",
+    "video_path": [
+      "003/003_0023.mp4"
+    ],
+    "question": "<003_0023.mp4>Where is the sink located?",
+    "options": [
+      "A.Next to the stove in the living room",
+      "B.On the table in the living room",
+      "C.Next to the bed in the living room",
+      "D.In the center of the living room"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0023_obj_sink_01"
+    ],
+    "reasoning_chain": "The sink is located next to the stove in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-29T12:15:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0023",
+    "video_path": [
+      "003/003_0023.mp4"
+    ],
+    "question": "<003_0023.mp4>What are the steps involved in peeling the pomelo?",
+    "options": [
+      "A.Wash the pomelo -> Peel the skin -> Separate segments -> Eat",
+      "B.Peel the skin -> Wash the pomelo -> Separate segments -> Eat",
+      "C.Wash the pomelo -> Separate segments -> Peel the skin -> Eat",
+      "D.Eat -> Wash the pomelo -> Peel the skin -> Separate segments"
+    ],
+    "correct_options": "A",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_102"
+    ],
+    "evidence_spatial": [
+      "0023_obj_sink_01"
+    ],
+    "reasoning_chain": "The event involves peeling a pomelo at the sink from 08:44-17:49, following the logical steps of washing, peeling, separating, and eating.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-29T12:20:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0023",
+    "video_path": [
+      "003/003_0023.mp4"
+    ],
+    "question": "<003_0023.mp4>How many events occur in the living room?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.0"
+    ],
+    "correct_options": "B",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_102",
+      "ev_103"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Events ev_102 (peeling pomelo) and ev_103 (eating) occur in the living room, while ev_101 is in the lobby.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-29T12:25:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0023",
+    "video_path": [
+      "003/003_0017.mp4",
+      "003/003_0023.mp4"
+    ],
+    "question": "<003_0017.mp4><003_0023.mp4>Where does the person typically eat meals?",
+    "options": [
+      "A.Living room",
+      "B.Lobby",
+      "C.Bedroom",
+      "D.Kitchen"
+    ],
+    "correct_options": "A",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_90",
+      "ev_103"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "In 003_0017, the person eats at the table in the living room, and in 003_0023, eating occurs in the living room, indicating a habit of eating in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-29T12:30:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0024",
+    "video_path": [
+      "003/003_0024.mp4"
+    ],
+    "question": "<003_0024.mp4>Where is the fan located?",
+    "options": [
+      "A.On the table",
+      "B.Next to the bed",
+      "C.In the center of the living room",
+      "D.Next to the wardrobe"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0024_obj_fan_01"
+    ],
+    "reasoning_chain": "The fan is located on the table in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-29T13:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0024",
+    "video_path": [
+      "003/003_0024.mp4"
+    ],
+    "question": "<003_0024.mp4>When did the person start tidying up clothes and miscellaneous items?",
+    "options": [
+      "A.07:50",
+      "B.12:50",
+      "C.14:52",
+      "D.04:30"
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_106"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The event of tidying up clothes starts at 07:50.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-29T13:05:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0024",
+    "video_path": [
+      "003/003_0024.mp4"
+    ],
+    "question": "<003_0024.mp4>Which objects are located next to the bed?",
+    "options": [
+      "A.Sofa, table, and wardrobe",
+      "B.Fan and sofa",
+      "C.Table and fan",
+      "D.Wardrobe only"
+    ],
+    "correct_options": "A",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0024_obj_bed_01",
+      "0024_obj_sofa_01",
+      "0024_obj_table_01",
+      "0024_obj_wardrobe_01"
+    ],
+    "reasoning_chain": "The sofa is next to the bed and table, the table is next to the bed, and the wardrobe is next to the bed.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-29T13:10:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0025",
+    "video_path": [
+      "003/003_0025.mp4"
+    ],
+    "question": "<003_0025.mp4>When did the person use the phone?",
+    "options": [
+      "A.0:00-11:44",
+      "B.12:00-13:00",
+      "C.5:00-6:00",
+      "D.10:00-12:00"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_108"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person used the phone from 0:00 to 11:44.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-29T00:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0026",
+    "video_path": [
+      "003/003_0026.mp4"
+    ],
+    "question": "<003_0026.mp4>When did the person clean the toilet?",
+    "options": [
+      "A.10:05-13:50",
+      "B.04:17-10:00",
+      "C.15:34-23:54",
+      "D.00:38-01:43"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_111"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person cleaned the toilet from 10:05 to 13:50.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30T00:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0026",
+    "video_path": [
+      "003/003_0026.mp4"
+    ],
+    "question": "<003_0026.mp4>What was the sequence of activities the person performed while brushing teeth and making breakfast from 04:17 to 10:00?",
+    "options": [
+      "A.Brushing teeth and making breakfast simultaneously",
+      "B.Brushing teeth first, then making breakfast",
+      "C.Making breakfast first, then brushing teeth",
+      "D.Only brushing teeth"
+    ],
+    "correct_options": "A",
+    "task_type": "procedure_planning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_110"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The description indicates brushing teeth while making breakfast, meaning simultaneously.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30T00:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0026",
+    "video_path": [
+      "003/003_0026.mp4"
+    ],
+    "question": "<003_0026.mp4>How many pieces of furniture are in the living room?",
+    "options": [
+      "A.4",
+      "B.3",
+      "C.5",
+      "D.6"
+    ],
+    "correct_options": "A",
+    "task_type": "object_counting_global",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0026_obj_wardrobe_01",
+      "0026_obj_bed_01",
+      "0026_obj_sofa_01",
+      "0026_obj_table_01"
+    ],
+    "reasoning_chain": "Furniture items: wardrobe, bed, sofa, table.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30T00:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0026",
+    "video_path": [
+      "003/003_0026.mp4"
+    ],
+    "question": "<003_0026.mp4>What is the description of the toilet's location?",
+    "options": [
+      "A.In the bathroom",
+      "B.In the living room",
+      "C.Next to the bed",
+      "D.On the table"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0026_obj_toilet_01"
+    ],
+    "reasoning_chain": "The toilet is located in the bathroom.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30T00:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0026",
+    "video_path": [
+      "003/003_0026.mp4",
+      "003/003_0016.mp4"
+    ],
+    "question": "<003_0026.mp4><003_0016.mp4>What is the person's habit regarding making the bed?",
+    "options": [
+      "A.Makes the bed regularly",
+      "B.Never makes the bed",
+      "C.Makes the bed only when guests come",
+      "D.Makes the bed at night only"
+    ],
+    "correct_options": "A",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_79",
+      "ev_109"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "In both videos, the person is shown making the bed, indicating a regular habit.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30T00:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0027",
+    "video_path": [
+      "003/003_0027.mp4"
+    ],
+    "question": "<003_0027.mp4>Where is the bed located?",
+    "options": [
+      "A.In the center of the living room",
+      "B.Next to the bed and table in the living room",
+      "C.On the table in the living room",
+      "D.Next to the stove in the living room"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0027_obj_bed_01"
+    ],
+    "reasoning_chain": "The bed is in the center of the living room at 12:19.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30T00:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0027",
+    "video_path": [
+      "003/003_0027.mp4"
+    ],
+    "question": "<003_0027.mp4>How many activities does the person perform at the sink?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.0"
+    ],
+    "correct_options": "B",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_115",
+      "ev_116"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person unpacks packages and cleans utensils at the sink.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30T00:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0027",
+    "video_path": [
+      "003/003_0027.mp4"
+    ],
+    "question": "<003_0027.mp4>What objects are next to the bed?",
+    "options": [
+      "A.Sofa and table",
+      "B.Fan",
+      "C.Sink",
+      "D.Elevator"
+    ],
+    "correct_options": "A",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0027_obj_bed_01",
+      "0027_obj_sofa_01",
+      "0027_obj_table_01"
+    ],
+    "reasoning_chain": "The sofa and table are next to the bed in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30T00:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0027",
+    "video_path": [
+      "003/003_0001.mp4",
+      "003/003_0005.mp4",
+      "003/003_0018.mp4",
+      "003/003_0027.mp4"
+    ],
+    "question": "<003_0001.mp4><003_0005.mp4><003_0018.mp4><003_0027.mp4>When does the person usually use the elevator for errands?",
+    "options": [
+      "A.Morning",
+      "B.Afternoon",
+      "C.Evening",
+      "D.Night"
+    ],
+    "correct_options": "A",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_03",
+      "ev_26",
+      "ev_33",
+      "ev_113"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Across multiple videos, the person uses the elevator in the morning for errands like throwing trash.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30T00:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0028",
+    "video_path": [
+      "003/003_0028.mp4"
+    ],
+    "question": "<003_0028.mp4>Where is the sofa located?",
+    "options": [
+      "A.Next to the bed and table in the living room",
+      "B.In the elevator",
+      "C.On the table in the living room",
+      "D.Next to the entrance door in the living room"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0028_obj_sofa_01"
+    ],
+    "reasoning_chain": "The sofa is located next to the bed and table in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0028",
+    "video_path": [
+      "003/003_0028.mp4"
+    ],
+    "question": "<003_0028.mp4>How many events occur in the video?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.4"
+    ],
+    "correct_options": "C",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_117",
+      "ev_118",
+      "ev_119"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The video contains three events: riding an electric bike home, taking the elevator upstairs, and sitting on the sofa using the phone.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0029",
+    "video_path": [
+      "003/003_0029.mp4"
+    ],
+    "question": "<003_0029.mp4>When did the person start unpacking packages?",
+    "options": [
+      "A.0:00",
+      "B.10:00",
+      "C.17:23",
+      "D.9:30"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_120"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The unpacking packages event starts at 0:00.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0029",
+    "video_path": [
+      "003/003_0029.mp4"
+    ],
+    "question": "<003_0029.mp4>Did the person organize shoes before or after unpacking packages?",
+    "options": [
+      "A.Before",
+      "B.After",
+      "C.At the same time",
+      "D.Neither occurred"
+    ],
+    "correct_options": "B",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_120",
+      "ev_121"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Unpacking packages from 0:00-9:30, organizing shoes from 10:00-14:20, so organizing shoes after unpacking packages.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0030",
+    "video_path": [
+      "003/003_0030.mp4"
+    ],
+    "question": "<003_0030.mp4>When did the person make the bed?",
+    "options": [
+      "A.13:20-15:30",
+      "B.16:00-23:00",
+      "C.24:16-26:30",
+      "D.28:26-30:56"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_125"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person made the bed from 13:20 to 15:30.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0030",
+    "video_path": [
+      "003/003_0030.mp4"
+    ],
+    "question": "<003_0030.mp4>How many times did the person pick up packages in this video?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.0"
+    ],
+    "correct_options": "A",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_124"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person picked up packages once from 5:40 to 9:31.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0030",
+    "video_path": [
+      "003/003_0030.mp4"
+    ],
+    "question": "<003_0030.mp4>At 14:00, where was the person?",
+    "options": [
+      "A.lobby",
+      "B.living_room",
+      "C.outdoor",
+      "D.bathroom"
+    ],
+    "correct_options": "B",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_125"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "At 14:00, the person was making the bed in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0030",
+    "video_path": [
+      "003/003_0024.mp4",
+      "003/003_0025.mp4",
+      "003/003_0028.mp4",
+      "003/003_0029.mp4",
+      "003/003_0030.mp4"
+    ],
+    "question": "<003_0024.mp4><003_0025.mp4><003_0028.mp4><003_0029.mp4><003_0030.mp4>What is the person's habit regarding using the phone?",
+    "options": [
+      "A.Uses phone while commuting",
+      "B.Uses phone in living room",
+      "C.Uses phone outdoors",
+      "D.Uses phone in bathroom"
+    ],
+    "correct_options": "B",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_107",
+      "ev_108",
+      "ev_119",
+      "ev_122",
+      "ev_127"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Across multiple videos, the person frequently uses the phone in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0031",
+    "video_path": [
+      "003/003_0031.mp4"
+    ],
+    "question": "<003_0031.mp4>When did the person start drinking water?",
+    "options": [
+      "A.02:00",
+      "B.04:11",
+      "C.10:02",
+      "D.02:30"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_129"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The event of drinking water starts at 02:00.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0031",
+    "video_path": [
+      "003/003_0031.mp4"
+    ],
+    "question": "<003_0031.mp4>How many times did the person sit on the sofa in this video?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.0",
+      "D.3"
+    ],
+    "correct_options": "A",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_130"
+    ],
+    "evidence_spatial": [
+      "0031_obj_sofa_01"
+    ],
+    "reasoning_chain": "There is one event where the person sits on the sofa using the phone.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0032",
+    "video_path": [
+      "003/003_0032.mp4"
+    ],
+    "question": "<003_0032.mp4>Where is the iPad located?",
+    "options": [
+      "A.On the table in the living room",
+      "B.On the sofa",
+      "C.On the bed",
+      "D.On the floor"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0032_obj_ipad_01"
+    ],
+    "reasoning_chain": "The iPad is located on the table in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0033",
+    "video_path": [
+      "003/003_0033.mp4"
+    ],
+    "question": "<003_0033.mp4>Where is the iPad located in the video?",
+    "options": [
+      "A.On the table",
+      "B.Next to the bed",
+      "C.On the floor",
+      "D.In the bathroom"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0033_obj_ipad_01"
+    ],
+    "reasoning_chain": "The iPad is located on the table in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0033",
+    "video_path": [
+      "003/003_0033.mp4"
+    ],
+    "question": "<003_0033.mp4>How many times did the person play on the iPad in this video?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.0"
+    ],
+    "correct_options": "B",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_132",
+      "ev_134"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person played on the iPad twice: first from 00:00-11:30 while tidying up, and second from 15:30-21:12 playing games.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30T13:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0033",
+    "video_path": [
+      "003/003_0033.mp4"
+    ],
+    "question": "<003_0033.mp4>What object was visible on the table at 02:42?",
+    "options": [
+      "A.iPad",
+      "B.Phone",
+      "C.Book",
+      "D.Cup"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0033_obj_ipad_01"
+    ],
+    "reasoning_chain": "At 02:42, the iPad was recorded on the table in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-30T14:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0034",
+    "video_path": [
+      "003/003_0034.mp4"
+    ],
+    "question": "<003_0034.mp4>Where is the bed located?",
+    "options": [
+      "A.In the living room",
+      "B.In the lobby",
+      "C.Outside",
+      "D.In the bathroom"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0034_obj_bed_01"
+    ],
+    "reasoning_chain": "The bed is located in the center of the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-05T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0034",
+    "video_path": [
+      "003/003_0034.mp4"
+    ],
+    "question": "<003_0034.mp4>How many times did the person tidy the bed?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.0"
+    ],
+    "correct_options": "B",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_137",
+      "ev_138"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person tidied the bed twice: once from 11:24-14:00 and again from 18:00-21:04.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-05T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0034",
+    "video_path": [
+      "003/003_0034.mp4"
+    ],
+    "question": "<003_0034.mp4>What is the position of the sofa relative to the bed?",
+    "options": [
+      "A.Next to it",
+      "B.Opposite",
+      "C.Far away",
+      "D.On top"
+    ],
+    "correct_options": "A",
+    "task_type": "spatial_relation",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0034_obj_sofa_01",
+      "0034_obj_bed_01"
+    ],
+    "reasoning_chain": "The sofa is next to the bed and table in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-05T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0028",
+    "video_path": [
+      "003/003_0028.mp4",
+      "003/003_0030.mp4",
+      "003/003_0034.mp4"
+    ],
+    "question": "<003_0028.mp4><003_0030.mp4><003_0034.mp4>What is the person's typical mode of transportation when returning home?",
+    "options": [
+      "A.Walking",
+      "B.Riding an electric bike",
+      "C.Driving a car",
+      "D.Taking public transport"
+    ],
+    "correct_options": "B",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_117",
+      "ev_123",
+      "ev_135"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Across multiple videos, the person consistently rides an electric bike home.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-05T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0035",
+    "video_path": [
+      "003/003_0035.mp4"
+    ],
+    "question": "<003_0035.mp4>Where is the refrigerator located?",
+    "options": [
+      "A.Next to the entrance door in the living room",
+      "B.On the table in the living room",
+      "C.In the center of the living room",
+      "D.Next to the stove in the living room"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0035_obj_refrigerator_01"
+    ],
+    "reasoning_chain": "The refrigerator is located next to the entrance door in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-05T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0035",
+    "video_path": [
+      "003/003_0035.mp4"
+    ],
+    "question": "<003_0035.mp4>How many objects are in the living room at 00:17?",
+    "options": [
+      "A.6",
+      "B.5",
+      "C.7",
+      "D.4"
+    ],
+    "correct_options": "A",
+    "task_type": "object_counting_global",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0035_obj_bed_01",
+      "0035_obj_fan_01",
+      "0035_obj_table_01",
+      "0035_obj_sofa_01",
+      "0035_obj_wardrobe_01",
+      "0035_obj_refrigerator_01"
+    ],
+    "reasoning_chain": "At 00:17, there are bed, fan, table, sofa, wardrobe, and refrigerator in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-05T11:05:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0035",
+    "video_path": [
+      "003/003_0035.mp4"
+    ],
+    "question": "<003_0035.mp4>What are the steps involved in organizing the refrigerator?",
+    "options": [
+      "A.Open the refrigerator -> Arrange items inside -> Close the refrigerator",
+      "B.Close the refrigerator -> Arrange items inside -> Open the refrigerator",
+      "C.Arrange items inside -> Open the refrigerator -> Close the refrigerator",
+      "D.Open the refrigerator -> Close the refrigerator -> Arrange items inside"
+    ],
+    "correct_options": "A",
+    "task_type": "procedure_planning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_140"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The event of organizing the refrigerator involves opening it, arranging items, and closing it.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-05T11:10:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0035",
+    "video_path": [
+      "003/003_0032.mp4",
+      "003/003_0033.mp4",
+      "003/003_0035.mp4"
+    ],
+    "question": "<003_0032.mp4><003_0033.mp4><003_0035.mp4>What is the person's typical activity with the iPad?",
+    "options": [
+      "A.Working",
+      "B.Playing games",
+      "C.Watching videos",
+      "D.Reading"
+    ],
+    "correct_options": "B",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_131",
+      "ev_132",
+      "ev_134",
+      "ev_144"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Across multiple videos, the person is consistently playing games on the iPad.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-05T11:15:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0036",
+    "video_path": [
+      "003/003_0036.mp4"
+    ],
+    "question": "<003_0036.mp4> Where is the bed located?",
+    "options": [
+      "A.In the center of the living room",
+      "B.On the table in the living room",
+      "C.Next to the bed in the living room",
+      "D.In the elevator"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0036_obj_bed_01"
+    ],
+    "reasoning_chain": "The bed is located in the center of the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-05T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0036",
+    "video_path": [
+      "003/003_0036.mp4"
+    ],
+    "question": "<003_0036.mp4> How many objects are present in the living room?",
+    "options": [
+      "A.3",
+      "B.4",
+      "C.5",
+      "D.2"
+    ],
+    "correct_options": "B",
+    "task_type": "object_counting_global",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0036_obj_bed_01",
+      "0036_obj_fan_01",
+      "0036_obj_table_01",
+      "0036_obj_sofa_01"
+    ],
+    "reasoning_chain": "The objects in the living room are bed, fan, table, and sofa, totaling 4.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-05T12:05:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0037",
+    "video_path": [
+      "003/003_0037.mp4"
+    ],
+    "question": "<003_0037.mp4> Where is the sofa located?",
+    "options": [
+      "A.Next to the bed and table in the living room",
+      "B.In the center of the living room",
+      "C.Next to the bed in the living room",
+      "D.On the table in the living room"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0037_obj_sofa_01"
+    ],
+    "reasoning_chain": "The sofa is located next to the bed and table in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-05T12:10:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0037",
+    "video_path": [
+      "003/003_0037.mp4"
+    ],
+    "question": "<003_0037.mp4> How many times does the person watch the projector?",
+    "options": [
+      "A.3",
+      "B.2",
+      "C.1",
+      "D.4"
+    ],
+    "correct_options": "A",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_147",
+      "ev_148",
+      "ev_149"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "There are three events of watching the projector: 02:40-09:30, 10:00-16:29, and 17:30-26:06.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-05T12:15:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0037",
+    "video_path": [
+      "003/003_0037.mp4"
+    ],
+    "question": "<003_0037.mp4> How many objects are present in the living room?",
+    "options": [
+      "A.3",
+      "B.4",
+      "C.2",
+      "D.1"
+    ],
+    "correct_options": "A",
+    "task_type": "object_counting_global",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0037_obj_bed_01",
+      "0037_obj_sofa_01",
+      "0037_obj_table_01"
+    ],
+    "reasoning_chain": "The objects in the living room are bed, sofa, and table, totaling 3.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-05T12:20:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0038",
+    "video_path": [
+      "003/003_0038.mp4"
+    ],
+    "question": "<003_0038.mp4>When did making breakfast start?",
+    "options": [
+      "A.02:10",
+      "B.11:10",
+      "C.11:40",
+      "D.29:28"
+    ],
+    "correct_options": "A",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_150"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Making breakfast started at 02:10.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-05T12:30:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0038",
+    "video_path": [
+      "003/003_0038.mp4"
+    ],
+    "question": "<003_0038.mp4>How many objects are annotated in the living room?",
+    "options": [
+      "A.2",
+      "B.3",
+      "C.4",
+      "D.5"
+    ],
+    "correct_options": "C",
+    "task_type": "object_counting_global",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0038_obj_refrigerator_01",
+      "0038_obj_sink_01",
+      "0038_obj_pot_01",
+      "0038_obj_table_01"
+    ],
+    "reasoning_chain": "The objects are refrigerator, sink, pot, and table, totaling 4.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-05T12:30:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0039",
+    "video_path": [
+      "003/003_0039.mp4"
+    ],
+    "question": "<003_0039.mp4>Where is the refrigerator located?",
+    "options": [
+      "A.Next to the entrance door in the living room",
+      "B.On the stove in the living room",
+      "C.Next to the bed in the living room",
+      "D.In the elevator"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0039_obj_refrigerator_01"
+    ],
+    "reasoning_chain": "The refrigerator is located next to the entrance door in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-05T13:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0040",
+    "video_path": [
+      "003/003_0040.mp4"
+    ],
+    "question": "<003_0040.mp4>Where is the sofa located?",
+    "options": [
+      "A.living_room",
+      "B.bathroom",
+      "C.kitchen",
+      "D.balcony"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0040_obj_sofa_01"
+    ],
+    "reasoning_chain": "The sofa is in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-06T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0040",
+    "video_path": [
+      "003/003_0040.mp4"
+    ],
+    "question": "<003_0040.mp4>How many times does the person take the elevator in this video?",
+    "options": [
+      "A.0",
+      "B.1",
+      "C.2",
+      "D.3"
+    ],
+    "correct_options": "B",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_154"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person takes the elevator once, from 04:06 to 05:51.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-06T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0041",
+    "video_path": [
+      "003/003_0041.mp4"
+    ],
+    "question": "<003_0041.mp4>Where is the refrigerator located?",
+    "options": [
+      "A.Next to the entrance door in the living room",
+      "B.In the bathroom",
+      "C.On the table",
+      "D.In the elevator"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0041_obj_refrigerator_01"
+    ],
+    "reasoning_chain": "The refrigerator is located next to the entrance door in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-06T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0041",
+    "video_path": [
+      "003/003_0041.mp4"
+    ],
+    "question": "<003_0041.mp4>What steps did the person take to unpack packages and organize the refrigerator?",
+    "options": [
+      "A.Open packages -> take out items -> put in refrigerator -> organize",
+      "B.Put in refrigerator -> open packages -> organize -> take out items",
+      "C.Organize -> open packages -> take out items -> put in refrigerator",
+      "D.Take out items -> organize -> open packages -> put in refrigerator"
+    ],
+    "correct_options": "A",
+    "task_type": "procedure_planning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_156"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person unpacked packages and organized the refrigerator by opening packages, taking out items, putting them in the refrigerator, and organizing.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-06T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0042",
+    "video_path": [
+      "003/003_0042.mp4"
+    ],
+    "question": "<003_0042.mp4>Where is the curtain located?",
+    "options": [
+      "A.Next to the window in the living room",
+      "B.In the elevator",
+      "C.In the bathroom",
+      "D.On the table"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0042_obj_curtain_01"
+    ],
+    "reasoning_chain": "The curtain is located next to the window in the living room at 00:15.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-06T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0042",
+    "video_path": [
+      "003/003_0042.mp4"
+    ],
+    "question": "<003_0042.mp4>What are the steps involved in taking the elevator downstairs?",
+    "options": [
+      "A.Enter elevator -> Press button -> Exit elevator",
+      "B.Press button -> Enter elevator -> Exit elevator",
+      "C.Exit elevator -> Enter elevator -> Press button",
+      "D.Press button -> Exit elevator -> Enter elevator"
+    ],
+    "correct_options": "A",
+    "task_type": "procedure_planning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_158"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The event of taking the elevator downstairs involves entering the elevator, pressing the button, and exiting when it reaches the bottom.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-06T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0043",
+    "video_path": [
+      "003/003_0043.mp4"
+    ],
+    "question": "<003_0043.mp4>Where is the bed located in the video?",
+    "options": [
+      "A.In the center of the living room",
+      "B.Next to the window",
+      "C.By the entrance door",
+      "D.In the bathroom"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0043_obj_bed_01"
+    ],
+    "reasoning_chain": "The bed is located in the center of the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-06T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0043",
+    "video_path": [
+      "003/003_0043.mp4"
+    ],
+    "question": "<003_0043.mp4>How many times does the person use the elevator in the video?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.0",
+      "D.3"
+    ],
+    "correct_options": "A",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_161"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person uses the elevator once during the event of waiting for and taking the elevator to the 38th floor.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-06T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0043",
+    "video_path": [
+      "003/003_0043.mp4"
+    ],
+    "question": "<003_0043.mp4>What are the steps involved in making the bed?",
+    "options": [
+      "A.Straighten the sheets -> fluff the pillows -> arrange the blankets",
+      "B.Arrange the blankets -> straighten the sheets -> fluff the pillows",
+      "C.Fluff the pillows -> arrange the blankets -> straighten the sheets",
+      "D.Straighten the sheets -> arrange the blankets -> fluff the pillows"
+    ],
+    "correct_options": "A",
+    "task_type": "procedure_planning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_162"
+    ],
+    "evidence_spatial": [
+      "0043_obj_bed_01"
+    ],
+    "reasoning_chain": "Making the bed typically involves straightening the sheets first, then fluffing the pillows, and finally arranging the blankets.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-06T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0044",
+    "video_path": [
+      "003/003_0044.mp4"
+    ],
+    "question": "<003_0044.mp4>Where is the sink located?",
+    "options": [
+      "A.Next to the stove in the living room",
+      "B.In the bathroom",
+      "C.On the table in the living room",
+      "D.In the elevator"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0044_obj_sink_01"
+    ],
+    "reasoning_chain": "The sink is annotated as being next to the stove in the living room.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-06T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0044",
+    "video_path": [
+      "003/003_0044.mp4"
+    ],
+    "question": "<003_0044.mp4>What are the steps the person took to wash fruits?",
+    "options": [
+      "A.Take fruits from refrigerator -> Wash fruits at sink -> Dry fruits",
+      "B.Wash fruits at sink -> Take fruits from refrigerator -> Dry fruits",
+      "C.Dry fruits -> Wash fruits at sink -> Take fruits from refrigerator",
+      "D.Take fruits from refrigerator -> Dry fruits -> Wash fruits at sink"
+    ],
+    "correct_options": "A",
+    "task_type": "procedure_planning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_164"
+    ],
+    "evidence_spatial": [
+      "0044_obj_sink_01"
+    ],
+    "reasoning_chain": "Washing fruits typically involves retrieving the fruits first, then washing them at the sink, and finally drying them.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-06T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0045",
+    "video_path": [
+      "003/003_0045.mp4"
+    ],
+    "question": "<003_0045.mp4>Where is the table located in this video?",
+    "options": [
+      "A.Next to the bed in the living room",
+      "B.In the lobby",
+      "C.In the bathroom",
+      "D.Outside"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0045_obj_table_01"
+    ],
+    "reasoning_chain": "The table is located next to the bed in the living room as per the object annotation.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-06T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0045",
+    "video_path": [
+      "003/003_0045.mp4"
+    ],
+    "question": "<003_0045.mp4>What are the typical steps involved in eating fruits while watching the projector?",
+    "options": [
+      "A.Retrieve fruits -> Wash at sink -> Eat at table",
+      "B.Eat directly -> Wash later -> Watch projector",
+      "C.Wash fruits -> Watch projector -> Eat",
+      "D.Retrieve fruits -> Eat at table -> Wash sink"
+    ],
+    "correct_options": "A",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_168"
+    ],
+    "evidence_spatial": [
+      "0045_obj_sink_01",
+      "0045_obj_table_01"
+    ],
+    "reasoning_chain": "The event involves eating fruits while watching the projector, with sink and table present, suggesting washing before eating.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-06T12:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "003",
+    "video_id": "003_0045",
+    "video_path": [
+      "003/003_0043.mp4",
+      "003/003_0044.mp4",
+      "003/003_0045.mp4"
+    ],
+    "question": "<003_0043.mp4><003_0044.mp4><003_0045.mp4>What is the person's typical transportation routine when returning home?",
+    "options": [
+      "A.Take taxi",
+      "B.Take elevator downstairs then ride bike",
+      "C.Walk home",
+      "D.Ride electric bike home then take elevator upstairs"
+    ],
+    "correct_options": "D",
+    "task_type": "habit_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_160",
+      "ev_135",
+      "ev_166"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "Across multiple videos, the person consistently rides an electric bike home and then takes the elevator to go upstairs.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2026-01-06T12:00:00",
+      "qc_status": "accepted"
+    }
+  }
+]

@@ -1,0 +1,1390 @@
+[
+  {
+    "event_id": "ev_01",
+    "video_id": "002_0001",
+    "video_path": "002/002_0001",
+    "start_time": "0:00",
+    "end_time": "0:14",
+    "description": "drink water",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+        "0001_obj_bottle_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_02",
+    "video_id": "002_0001",
+    "video_path": "002/002_0001",
+    "start_time": "0:14",
+    "end_time": "1:52",
+    "description": "walk",
+    "place_id": "corridor_01",
+    "objects_involved": [
+        "0001_obj_bike_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_03",
+    "video_id": "002_0001",
+    "video_path": "002/002_0001",
+    "start_time": "1:52",
+    "end_time": "2:22",
+    "description": "catch the water",
+    "place_id": "waterroom_01",
+    "objects_involved": [
+        "0001_obj_bottle_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_04",
+    "video_id": "002_0001",
+    "video_path": "002/002_0001",
+    "start_time": "2:22",
+    "end_time": "3:51",
+    "description": "walk",
+    "place_id": "corridor_01",
+    "objects_involved": [
+        "0001_obj_bike_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_05",
+    "video_id": "002_0001",
+    "video_path": "002/002_0001",
+    "start_time": "3:58",
+    "end_time": "6:46",
+    "description": "brushteeth",
+    "place_id": "bathroom_01",
+    "objects_involved": [
+        "0001_obj_brush_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_06",
+    "video_id": "002_0001",
+    "video_path": "002/002_0001",
+    "start_time": "6:46",
+    "end_time": "8:34",
+    "description": "washface",
+    "place_id": "bathroom_01",
+    "objects_involved": [
+        "0001_obj_towel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_01",
+    "video_id": "002_0002",
+    "video_path": "002/002_0002",
+    "start_time": "0:00",
+    "end_time": "2:20",
+    "description": "pouring liquid",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+        "0002_obj_liquid_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_02",
+    "video_id": "002_0002",
+    "video_path": "002/002_0002",
+    "start_time": "2:20",
+    "end_time": "5:17",
+    "description": "walk towards outside",
+    "place_id": "corridor_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_03",
+    "video_id": "002_0002",
+    "video_path": "002/002_0002",
+    "start_time": "5:17",
+    "end_time": "6:17",
+    "description": "walk outside",
+    "place_id": "corridor_01",
+    "objects_involved": [
+      "0002_obj_bikes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_04",
+    "video_id": "002_0002",
+    "video_path": "002/002_0002",
+    "start_time": "6:17",
+    "end_time": "14:09",
+    "description": "have breakfast",
+    "place_id": "canteen_01",
+    "objects_involved": [
+      "0002_obj_omelette_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_05",
+    "video_id": "002_0002",
+    "video_path": "002/002_0002",
+    "start_time": "14:09",
+    "end_time": "15:32",
+    "description": "walk outside",
+    "place_id": "corridor_01",
+    "objects_involved": [
+      "0002_obj_bikes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_06",
+    "video_id": "002_0002",
+    "video_path": "002/002_0002",
+    "start_time": "15:32",
+    "end_time": "16:34",
+    "description": "walk towards inside",
+    "place_id": "corridor_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_07",
+    "video_id": "002_0002",
+    "video_path": "002/002_0002",
+    "start_time": "16:34",
+    "end_time": "19:06",
+    "description": "comb hair",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0002_obj_mirror_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_08",
+    "video_id": "002_0002",
+    "video_path": "002/002_0002",
+    "start_time": "19:06",
+    "end_time": "20:01",
+    "description": "use the computer",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0002_obj_computer_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_01",
+    "video_id": "002_0003",
+    "video_path": "002/002_0003",
+    "start_time": "0:00",
+    "end_time": "3:18",
+    "description": "dump the garbage",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+        "0003_obj_garbage bag_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_02",
+    "video_id": "002_0003",
+    "video_path": "002/002_0003",
+    "start_time": "3:18",
+    "end_time": "4:09",
+    "description": "drink water",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+        "0003_obj_bottle_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_03",
+    "video_id": "002_0003",
+    "video_path": "002/002_0003",
+    "start_time": "4:09",
+    "end_time": "8:11",
+    "description": "Play with a tablet PC",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+        "0003_obj_key_03"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_04",
+    "video_id": "002_0003",
+    "video_path": "002/002_0003",
+    "start_time": "8:11",
+    "end_time": "10:26",
+    "description": "walk",
+    "place_id": "corridor_01",
+    "objects_involved": [
+        "0003_obj_bottle_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_05",
+    "video_id": "002_0001",
+    "video_path": "002/002_0001",
+    "start_time": "10:26",
+    "end_time": "10:38",
+    "description": "catch the water",
+    "place_id": "waterroom_01",
+    "objects_involved": [
+        "0003_obj_bottle_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_06",
+    "video_id": "002_0003",
+    "video_path": "002/002_0003",
+    "start_time": "10:38",
+    "end_time": "12:19",
+    "description": "walk",
+    "place_id": "corridor_01",
+    "objects_involved": [
+        "0003_obj_bottle_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_07",
+    "video_id": "002_0003",
+    "video_path": "002/002_0003",
+    "start_time": "12:19",
+    "end_time": "13:30",
+    "description": "wash the clothes",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+        "0003_obj_washing machine_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_08",
+    "video_id": "002_0003",
+    "video_path": "002/002_0003",
+    "start_time": "13:30",
+    "end_time": "16:11",
+    "description": "weightlifting",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+        "0003_obj_dumbbell_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_09",
+    "video_id": "002_0003",
+    "video_path": "002/002_0003",
+    "start_time": "16:11",
+    "end_time": "18:18",
+    "description": "Play with a tablet PC",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+        "0003_obj_tablet PC_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_10",
+    "video_id": "002_0002",
+    "video_path": "002/002_0003",
+    "start_time": "18:18",
+    "end_time": "20:01",
+    "description": "use the computer",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0003_obj_computer_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_11",
+    "video_id": "002_0002",
+    "video_path": "002/002_0003",
+    "start_time": "20:01",
+    "end_time": "21:47",
+    "description": "hang clothes out",
+    "place_id": "balcony_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_01",
+    "video_id": "002_0004",
+    "video_path": "002/002_0004",
+    "start_time": "0:00",
+    "end_time": "1:23",
+    "description": "unwrap the packing",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+        "0004_obj_packing_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_02",
+    "video_id": "002_0004",
+    "video_path": "002/002_0004",
+    "start_time": "1:23",
+    "end_time": "2:55",
+    "description": "walk",
+    "place_id": "corridor_01",
+    "objects_involved": [
+        "0004_obj_packing_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_03",
+    "video_id": "002_0004",
+    "video_path": "002/002_0004",
+    "start_time": "2:55",
+    "end_time": "3:10",
+    "description": "catch the water",
+    "place_id": "waterroom_01",
+    "objects_involved": [
+        "0004_obj_packing_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_04",
+    "video_id": "002_0004",
+    "video_path": "002/002_0004",
+    "start_time": "3:10",
+    "end_time": "4:57",
+    "description": "walk",
+    "place_id": "corridor_01",
+    "objects_involved": [
+        "0004_obj_packing_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_05",
+    "video_id": "002_0004",
+    "video_path": "002/002_0004",
+    "start_time": "4:57",
+    "end_time": "9:10",
+    "description": "Play with a tablet PC",
+    "place_id": "corridor_01",
+    "objects_involved": [
+        "0004_obj_tablet PC_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_05",
+    "video_id": "002_0004",
+    "video_path": "002/002_0004",
+    "start_time": "9:10",
+    "end_time": "16:30",
+    "description": "eat noodles",
+    "place_id": "corridor_01",
+    "objects_involved": [
+        "0004_obj_tablet PC_01","0004_obj_packing_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_06",
+    "video_id": "002_0004",
+    "video_path": "002/002_0004",
+    "start_time": "16:30",
+    "end_time": "19:46",
+    "description": "hang clothes out",
+    "place_id": "balcony_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_07",
+    "video_id": "002_0004",
+    "video_path": "002/002_0004",
+    "start_time": "19:46",
+    "end_time": "21:54",
+    "description": "Play with a tablet PC",
+    "place_id": "corridor_01",
+    "objects_involved": [
+        "0004_obj_tablet PC_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_01",
+    "video_id": "002_0005",
+    "video_path": "002/002_0005",
+    "start_time": "0:00",
+    "end_time": "3:47",
+    "description": "brush teeth and wash the face",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+        "0005_obj_brush_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_02",
+    "video_id": "002_0005",
+    "video_path": "002/002_0005",
+    "start_time": "3:47",
+    "end_time": "4:42",
+    "description": "hang clothes out",
+    "place_id": "balcony_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_03",
+    "video_id": "002_0005",
+    "video_path": "002/002_0005",
+    "start_time": "4:42",
+    "end_time": "6:27",
+    "description": "walk",
+    "place_id": "corridor_01",
+    "objects_involved": [
+      "0005_obj_bottle_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_04",
+    "video_id": "002_0005",
+    "video_path": "002/002_0005",
+    "start_time": "6:27",
+    "end_time": "6:46",
+    "description": "catch the water",
+    "place_id": "waterroom_01",
+    "objects_involved": [
+      "0005_obj_bottle_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_05",
+    "video_id": "002_0005",
+    "video_path": "002/002_0005",
+    "start_time": "6:46",
+    "end_time": "8:30",
+    "description": "walk",
+    "place_id": "corridor_01",
+    "objects_involved": [
+        "0005_obj_bottle_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_06",
+    "video_id": "002_0005",
+    "video_path": "002/002_0005",
+    "start_time": "8:30",
+    "end_time": "11:15",
+    "description": "shave",
+    "place_id": "dormitory_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_01",
+    "video_id": "002_0006",
+    "video_path": "002/002_0006",
+    "start_time": "0:00",
+    "end_time": "0:58",
+    "description": "walk towards outside",
+    "place_id": "corridor_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_02",
+    "video_id": "002_0006",
+    "video_path": "002/002_0006",
+    "start_time": "0:58",
+    "end_time": "2:10",
+    "description": "walk outside",
+    "place_id": "corridor_01",
+    "objects_involved": [
+      "0006_obj_bikes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_03",
+    "video_id": "002_0002",
+    "video_path": "002/002_0002",
+    "start_time": "2:10",
+    "end_time": "8:51",
+    "description": "have breakfast",
+    "place_id": "canteen_01",
+    "objects_involved": [
+      "0006_obj_omelette_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_01",
+    "video_id": "002_0007",
+    "video_path": "002/002_0007",
+    "start_time": "0:00",
+    "end_time": "2:48",
+    "description": "hang clothes out",
+    "place_id": "balcony_01",
+    "objects_involved": [
+        "0007_obj_clothes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_02",
+    "video_id": "002_0007",
+    "video_path": "002/002_0007",
+    "start_time": "2:48",
+    "end_time": "3:04",
+    "description": "drink water",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+        "0007_obj_bottle_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_03",
+    "video_id": "002_0007",
+    "video_path": "002/002_0007",
+    "start_time": "3:04",
+    "end_time": "4:35",
+    "description": "walk",
+    "place_id": "corridor_01",
+    "objects_involved": [
+        "0007_obj_bottle_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_04",
+    "video_id": "002_0007",
+    "video_path": "002/002_0007",
+    "start_time": "4:35",
+    "end_time": "4:46",
+    "description": "getting water",
+    "place_id": "waterroom_01",
+    "objects_involved": [
+        "0007_obj_bottle_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_05",
+    "video_id": "002_0007",
+    "video_path": "002/002_0007",
+    "start_time": "4:35",
+    "end_time": "6:21",
+    "description": "walk",
+    "place_id": "corridor_01",
+    "objects_involved": [
+        "0007_obj_bottle_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_06",
+    "video_id": "002_0007",
+    "video_path": "002/002_0007",
+    "start_time": "6:21",
+    "end_time": "10:44",
+    "description": "sweep the floor",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+        "0007_obj_bottle_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_07",
+    "video_id": "002_0007",
+    "video_path": "002/002_0007",
+    "start_time": "10:44",
+    "end_time": "14:06",
+    "description": "Play with a tablet computer",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+        "0007_obj_tablet computer_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_08",
+    "video_id": "002_0007",
+    "video_path": "002/002_0007",
+    "start_time": "14:06",
+    "end_time": "16:09",
+    "description": "pick up clothes",
+    "place_id": "balcony_01",
+    "objects_involved": [
+        "0007_obj_clothes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_07",
+    "video_id": "002_0007",
+    "video_path": "002/002_0007",
+    "start_time": "16:09",
+    "end_time": "25:23",
+    "description": "Play with a tablet computer",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+        "0007_obj_tablet computer_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_08",
+    "video_id": "002_0007",
+    "video_path": "002/002_0007",
+    "start_time": "25:23",
+    "end_time": "27:37",
+    "description": "walk towards outside",
+    "place_id": "corridor_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_09",
+    "video_id": "002_0007",
+    "video_path": "002/002_0007",
+    "start_time": "27:37",
+    "end_time": "31:25",
+    "description": "have lunch",
+    "place_id": "canteen_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_01",
+    "video_id": "002_0008",
+    "video_path": "002/002_0008",
+    "start_time": "0:00",
+    "end_time": "4:14",
+    "description": "quarter-deck",
+    "place_id": "dormitory_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_02",
+    "video_id": "002_0008",
+    "video_path": "002/002_0008",
+    "start_time": "4:14",
+    "end_time": "6:14",
+    "description": "Play on the tablet",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0008_obj_tablet_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_03",
+    "video_id": "002_0008",
+    "video_path": "002/002_0008",
+    "start_time": "6:14",
+    "end_time": "11:00",
+    "description": "Repairing clothes",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0008_obj_tablet_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_04",
+    "video_id": "002_0008",
+    "video_path": "002/002_0008",
+    "start_time": "11:00",
+    "end_time": "19:00",
+    "description": "Chatting",
+    "place_id": "dormitory_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_05",
+    "video_id": "002_0008",
+    "video_path": "002/002_0008",
+    "start_time": "19:00",
+    "end_time": "23:06",
+    "description": "Play on the tablet",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0008_obj_tablet_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_01",
+    "video_id": "002_0009",
+    "video_path": "002/002_0009",
+    "start_time": "0:00",
+    "end_time": "1:37",
+    "description": "walk",
+    "place_id": "corridor_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_02",
+    "video_id": "002_0009",
+    "video_path": "002/002_0009",
+    "start_time": "1:37",
+    "end_time": "1:51",
+    "description": "getting water",
+    "place_id": "waterroom_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_03",
+    "video_id": "002_0009",
+    "video_path": "002/002_0009",
+    "start_time": "1:51",
+    "end_time": "3:42",
+    "description": "walk",
+    "place_id": "corridor_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_04",
+    "video_id": "002_0009",
+    "video_path": "002/002_0009",
+    "start_time": "3:42",
+    "end_time": "6:31",
+    "description": "Clean the glasses",
+    "place_id": "dormitory_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_05",
+    "video_id": "002_0009",
+    "video_path": "002/002_0009",
+    "start_time": "6:31",
+    "end_time": "9:11",
+    "description": "Go to outside",
+    "place_id": "corridor_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_06",
+    "video_id": "002_0009",
+    "video_path": "002/002_0009",
+    "start_time": "9:11",
+    "end_time": "15:47",
+    "description": "Have breakfast",
+    "place_id": "canteen_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_07",
+    "video_id": "002_0009",
+    "video_path": "002/002_0009",
+    "start_time": "15:47",
+    "end_time": "18:27",
+    "description": "Go back to the dormitory",
+    "place_id": "corridor_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_08",
+    "video_id": "002_0009",
+    "video_path": "002/002_0009",
+    "start_time": "18:27",
+    "end_time": "20:08",
+    "description": "hang clothes out",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0009_obj_towel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_09",
+    "video_id": "002_0009",
+    "video_path": "002/002_0009",
+    "start_time": "20:08",
+    "end_time": "23:59",
+    "description": "play with tablet PC",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0009_obj_tablet_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_01",
+    "video_id": "002_0010",
+    "video_path": "002/002_0010",
+    "start_time": "0:00",
+    "end_time": "3:39",
+    "description": "throw clothes",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0010_obj_clothes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_02",
+    "video_id": "002_0010",
+    "video_path": "002/002_0010",
+    "start_time": "3:39",
+    "end_time": "7:43",
+    "description": "sweep the floor",
+    "place_id": ["dormitory_01", "balcony_01"],
+    "objects_involved": [
+      "0010_obj_broom_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_03",
+    "video_id": "002_0010",
+    "video_path": "002/002_0010",
+    "start_time": "11:00",
+    "end_time": "13:20",
+    "description": "take medicine",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0010_obj_bottle_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_04",
+    "video_id": "002_0010",
+    "video_path": "002/002_0010",
+    "start_time": "13:20",
+    "end_time": "14:53",
+    "description": "walk",
+    "place_id": "corridor_01",
+    "objects_involved": [
+      "0010_obj_bottle_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_05",
+    "video_id": "002_0010",
+    "video_path": "002/002_0010",
+    "start_time": "14:53",
+    "end_time": "15:08",
+    "description": "getting water",
+    "place_id": "waterroom_01",
+    "objects_involved": [
+      "0010_obj_bottle_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_06",
+    "video_id": "002_0010",
+    "video_path": "002/002_0010",
+    "start_time": "15:08",
+    "end_time": "17:20",
+    "description": "walk",
+    "place_id": "corridor_01",
+    "objects_involved": [
+      "0010_obj_bottle_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_07",
+    "video_id": "002_0010",
+    "video_path": "002/002_0010",
+    "start_time": "17:20",
+    "end_time": "19:32",
+    "description": "play with a tablet PC",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0010_obj_tablet PC_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_08",
+    "video_id": "002_0010",
+    "video_path": "002/002_0010",
+    "start_time": "19:32",
+    "end_time": "22:23",
+    "description": "make the bed",
+    "place_id": "dormitory_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_09",
+    "video_id": "002_0010",
+    "video_path": "002/002_0010",
+    "start_time": "22:23",
+    "end_time": "28:17",
+    "description": "play with a tablet PC",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0010_obj_tablet PC_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_10",
+    "video_id": "002_0010",
+    "video_path": "002/002_0010",
+    "start_time": "28:17",
+    "end_time": "31:42",
+    "description": "hang clothes out",
+    "place_id": "balcony_01",
+    "objects_involved": [
+      "0010_obj_clothes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_01",
+    "video_id": "002_0011",
+    "video_path": "002/002_0011",
+    "start_time": "0:00",
+    "end_time": "1:05",
+    "description": "Clean the phone case",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0011_obj_phonecase_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_02",
+    "video_id": "002_0011",
+    "video_path": "002/002_0011",
+    "start_time": "1:05",
+    "end_time": "2:40",
+    "description": "drink",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0011_obj_bottle_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_03",
+    "video_id": "002_0011",
+    "video_path": "002/002_0011",
+    "start_time": "2:40",
+    "end_time": "3:41",
+    "description": "walk",
+    "place_id": "dormitory_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_01",
+    "video_id": "002_0012",
+    "video_path": "002/002_0012",
+    "start_time": "0:00",
+    "end_time": "9:23",
+    "description": "Play with tablet PC",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0012_obj_tablet PC_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_02",
+    "video_id": "002_0012",
+    "video_path": "002/002_0012",
+    "start_time": "9:23",
+    "end_time": "12:46",
+    "description": "Play with computer",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0012_obj_computer_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_03",
+    "video_id": "002_0012",
+    "video_path": "002/002_0012",
+    "start_time": "12:46",
+    "end_time": "16:00",
+    "description": "pick up clothes",
+    "place_id": "balcony_01",
+    "objects_involved": [
+      "0012_obj_clothes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_04",
+    "video_id": "002_0012",
+    "video_path": "002/002_0012",
+    "start_time": "16:00",
+    "end_time": "20:15",
+    "description": "pack up",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0012_obj_trunk_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_02",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  }
+]

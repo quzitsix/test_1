@@ -1,0 +1,257 @@
+[
+  {
+    "place_id": "restaurant_01",
+    "video_id": "019_0001",
+    "video_path": "019/019_0001",
+    "category": "restaurant",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+{
+    "place_id": "dormitory_building_01",
+    "video_id": "019_0003",
+    "video_path": "019/019_0003",
+    "category": "dormitory building",
+    "floor_index": " 1",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+},
+{
+    "place_id": "dining_hall_01",
+    "video_id": "019_0004",
+    "video_path": "019/019_0004",
+    "category": "dining hall",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "workstation_01",
+    "video_id": "019_0004",
+    "video_path": "019/019_0004",
+    "category": "workstation",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "home_01",
+    "video_id": "019_0005",
+    "video_path": "019/019_0005",
+    "category": "home",
+    "floor_index": "5 ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "dining_room_01",
+    "video_id": "019_0005",
+    "video_path": "019/019_0005",
+    "category": "dining room",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "bathroom_01",
+    "video_id": "019_0005",
+    "video_path": "019/019_0005",
+    "category": "bathroom",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "living_room_01",
+    "video_id": "019_0006",
+    "video_path": "019/019_0006" ,
+    "category": "living room",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "bed_room_01",
+    "video_id": "019_0006",
+    "video_path": "019/019_0006" ,
+    "category": "bed room",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "balcony_01",
+    "video_id": "019_0006",
+    "video_path": "019/019_0006" ,
+    "category": "balcony",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+{
+    "place_id": "dormitory_building_02",
+    "video_id": "019_0007",
+    "video_path": "019/019_0007",
+    "category": "dormitory building",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+},
+{
+    "place_id": "dormitory_building_03",
+    "video_id": "019_0007",
+    "video_path": "019/019_0007",
+    "category": "dormitory building",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "music_hoom_01",
+    "video_id": "019_0009",
+    "video_path": "019/019_0009",
+    "category": "music hoom",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "bed_room_02",
+    "video_id": "019_0011",
+    "video_path": "019/019_0011",
+    "category": "bed room",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "night_market_01",
+    "video_id": "019_0017",
+    "video_path": "019/019_0017",
+    "category": "night market",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "bed_room_03",
+    "video_id": "019_0013",
+    "video_path": "019/019_0019",
+    "category": "bed room",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "home_02",
+    "video_id": "019_0025",
+    "video_path": "019/019_0025",
+    "category": "home",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  }
+]

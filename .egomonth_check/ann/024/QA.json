@@ -1,0 +1,449 @@
+[
+  {
+    "sample_id": "024",
+    "video_id": "024_0001",
+    "video_path": [
+      "024/024_0001.mp4"
+    ],
+    "question": "<024_0001.mp4>How many steamed buns did this person eat for breakfast",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.4"
+    ],
+    "correct_options": "B",
+    "task_type": "object_counting_global",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_05"
+    ],
+    "evidence_spatial": [
+      "0001_obj_steamedstuffedbun_01"
+    ],
+    "reasoning_chain": "This person ordered two steamed buns",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-21T20:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "024",
+    "video_id": "024_0001",
+    "video_path": [
+      "024/024_0001.mp4"
+    ],
+    "question": "<024_0001.mp4>At what point in the video was this person in the canteen",
+    "options": [
+      "A.00:59",
+      "B.07:14",
+      "C.12:32",
+      "D.19:14"
+    ],
+    "correct_options": "B",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "This person was in the canteen at 07:14",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-21T20:15:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "024",
+    "video_id": "024_0001",
+    "video_path": [
+      "024/024_0001.mp4"
+    ],
+    "question": "<024_0001.mp4> What is this person doing after getting coffee",
+    "options": [
+      "A.Riding an electric bike",
+      "B.Listening to music",
+      "C.Chatting with others",
+      "D.Browse TikTok"
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_06",
+      "ev_07"
+    ],
+    "evidence_spatial": [
+      "0001_obj_ebike_01"
+    ],
+    "reasoning_chain": "The person took the coffee and rode away on his bike",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-22T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "024",
+    "video_id": "024_0003",
+    "video_path": [
+      "024/024_0003.mp4"
+    ],
+    "question": "<024_0003.mp4> Where is the laptop placed in this video",
+    "options": [
+      "A.On the left of the ipad",
+      "B.Behind the mouse",
+      "C.Behind the keyboard",
+      "D.On the right of the ipad"
+    ],
+    "correct_options": "C",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0003_obj_mechanicalkeyboard_01",
+      "0003_obj_laptop_01",
+      "0003_obj_ipad_01",
+      "0003_obj_mouse_01"
+    ],
+    "reasoning_chain": "The laptop is behind the keyboard",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-22T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "024",
+    "video_id": "024_0001",
+    "video_path": [
+      "024/024_0001.mp4"
+    ],
+    "question": "<024_0001.mp4> When did this person first ride an electric bike",
+    "options": [
+      "A.00:21",
+      "B.02:03",
+      "C.04:36",
+      "D.05:14"
+    ],
+    "correct_options": "B",
+    "task_type": "event_time",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_02"
+    ],
+    "evidence_spatial": [
+      "0001_obj_ebike_01"
+    ],
+    "reasoning_chain": "This person rode an electric bike for the first time at 02:03",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-23T22:30:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "024",
+    "video_id": "024_0001",
+    "video_path": [
+      "024/024_0001.mp4"
+    ],
+    "question": "<024_0001.mp4>How many times did this person ride the electric bike in the first video",
+    "options": [
+      "A.0",
+      "B.1",
+      "C.2",
+      "D.3"
+    ],
+    "correct_options": "C",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_02",
+      "ev_07"
+    ],
+    "evidence_spatial": [
+      "0001_obj_ebike_01"
+    ],
+    "reasoning_chain": "This person rode an electric bike twice in the first video.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-23T22:30:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "024",
+    "video_id": "024_0004",
+    "video_path": [
+      "024/024_0004.mp4"
+    ],
+    "question": "<024_0004.mp4> Where is the pancake placed in this video",
+    "options": [
+      "A.On the left of the grid shelf",
+      "B.Behind the stand",
+      "C.Behind the action camera",
+      "D.On the right of the laptop"
+    ],
+    "correct_options": "B",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0003_obj_laptop_01",
+      "0003_obj_actioncamera_01",
+      "0004_obj_stand_01",
+      "0004_obj_pancake_01",
+      "0004_obj_gridshelf_01"
+    ],
+    "reasoning_chain": "The pencake was placed behind the stand",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T10:30:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "024",
+    "video_id": "024_0001",
+    "video_path": [
+      "024/024_0001.mp4"
+    ],
+    "question": "<024_0001.mp4>Which order is correct",
+    "options": [
+      "A.Eat breakfast->Stand in line->Coding",
+      "B.Eat breakfast->Get coffee->Stand in line",
+      "C.Get coffee->Eat breakfast->Stand in line",
+      "D.Stand in line->Eat breakfast->Get coffee"
+    ],
+    "correct_options": "D",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_03",
+      "ev_05",
+      "ev_06"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The whole process involved first standing in line,having breakfast, and then getting coffee",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "024",
+    "video_id": "024_0002",
+    "video_path": [
+      "024/024_0002.mp4"
+    ],
+    "question": "<024_0002.mp4>At the very beginning of the video, where is this person",
+    "options": [
+      "A.washroom",
+      "B.library",
+      "C.classroom",
+      "D.dormitory"
+    ],
+    "correct_options": "D",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "The desk at the beginning of the video is decorated in a dormitory style",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "024",
+    "video_id": "024_0001",
+    "video_path": [
+      "024/024_0001.mp4"
+    ],
+    "question": "<024_0001.mp4>What major might this person be studying",
+    "options": [
+      "A.Computer Science",
+      "B.Business Administration",
+      "C.Clinical Medicine",
+      "D.British Literature"
+    ],
+    "correct_options": "A",
+    "task_type": "personality_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_09",
+      "ev_10"
+    ],
+    "evidence_spatial": [
+      "0001_obj_ipad_01",
+      "0001_obj_keyboard_01",
+      "0001_obj_mouse_01",
+      "0003_obj_mechanicalkeyboard_01",
+      "0003_obj_laptop_01",
+      "0003_obj_ipad_01",
+      "0003_obj_mouse_01",
+      "0003_obj_stylus_01"
+    ],
+    "reasoning_chain": "The teacher was explaining the LSM algorithm in class, and this person was writing code. Furthermore, this person was watching convolution tutorial videos in their dorm room",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "024",
+    "video_id": "024_0001",
+    "video_path": [
+      "024/024_0001.mp4"
+    ],
+    "question": "<024_0001.mp4>Does this person like to use phone",
+    "options": [
+      "A.This person never lets his phone out of his hand",
+      "B.This person can't help but check their phone frequently",
+      "C.This person only uses phone when necessary",
+      "D.This person never uses phone."
+    ],
+    "correct_options": "C",
+    "task_type": "personality_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "This person didn't use cellphone while eating or studying, only when handling tasks.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "024",
+    "video_id": "024_0006",
+    "video_path": [
+      "024/024_0006.mp4"
+    ],
+    "question": "<024_0006.mp4>What is the woman in the China Post Courier Station doing",
+    "options": [
+      "A.Sweep the floor of courier station",
+      "B.Find her own package",
+      "C.Scrolling through TikTok",
+      "D.Receive express delivery from this person"
+    ],
+    "correct_options": "D",
+    "task_type": "temporal_ordering",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_21"
+    ],
+    "evidence_spatial": [
+      "0006_obj_parcel_02"
+    ],
+    "reasoning_chain": "This person handed the black package to the female staff member inside",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "024",
+    "video_id": "024_0002",
+    "video_path": [
+      "024/024_0002.mp4"
+    ],
+    "question": "<024_0002.mp4>What is this person's iPad username",
+    "options": [
+      "A.zhaotianci",
+      "B.liuzhigang",
+      "C.wangzehao",
+      "D.zhoujiacheng"
+    ],
+    "correct_options": "D",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0001_obj_ipad_01"
+    ],
+    "reasoning_chain": "At 01:02, the iPad displayed zhoujiacheng",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "024",
+    "video_id": "024_0002",
+    "video_path": [
+      "024/024_0002.mp4"
+    ],
+    "question": "<024_0002.mp4>What software did this person use for programming",
+    "options": [
+      "A.vscode",
+      "B.trae",
+      "C.cursor",
+      "D.pycharm"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0001_obj_ipad_01",
+      "0001_obj_keyboard_01",
+      "0001_obj_mouse_01"
+    ],
+    "reasoning_chain": "At 12:14, this person clicked on vscode",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "024",
+    "video_id": "024_0001",
+    "video_path": [
+      "024/024_0001.mp4"
+    ],
+    "question": "<024_0001.mp4>What brand of coffee did this person drink",
+    "options": [
+      "A.Starbucks",
+      "B.Luckin Coffee",
+      "C.Cotti Coffee",
+      "D.Manner Coffee"
+    ],
+    "correct_options": "C",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_06"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The coffee shop sign reads Cotti Coffee",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-24T11:00:00",
+      "qc_status": "accepted"
+    }
+  }
+]

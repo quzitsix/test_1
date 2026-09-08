@@ -1,0 +1,1345 @@
+[
+  {
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "object_category": "packstation",
+    "object_id": "0001_obj_packstation_01",
+    "time": "00:47",
+    "location": {
+      "place_id": "outdoor_1",
+      "place_type": "outdoor",
+      "description": "On the right-hand side of the ground"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "object_category": "ebike",
+    "object_id": "0001_obj_ebike_01",
+    "time": "01:14",
+    "location": {
+      "place_id": "outdoor_1",
+      "place_type": "outdoor",
+      "description": "On the ground directly in front"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "object_category": "tissue",
+    "object_id": "0001_obj_tissue_01",
+    "time": "01:24",
+    "location": {
+      "place_id": "outdoor_1",
+      "place_type": "outdoor",
+      "description": "In hand"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "object_category": "deliverytruck",
+    "object_id": "0001_obj_deliverytruck_01",
+    "time": "02:17",
+    "location": {
+      "place_id": "outdoor_1",
+      "place_type": "outdoor",
+      "description": "On the road ahead"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "object_category": "cellphone",
+    "object_id": "0001_obj_cellphone_01",
+    "time": "04:37",
+    "location": {
+      "place_id": "outdoor_1",
+      "place_type": "outdoor",
+      "description": "In hand"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "object_category": "stroller",
+    "object_id": "0001_obj_stroller_01",
+    "time": "05:00",
+    "location": {
+      "place_id": "canteen_1",
+      "place_type": "canteen",
+      "description": "On the floor"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "object_category": "A-framesign",
+    "object_id": "0001_obj_A-framesign_01",
+    "time": "05:00",
+    "location": {
+      "place_id": "canteen_1",
+      "place_type": "canteen",
+      "description": "On the floor and behind the stroller"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "object_category": "paymentterminal",
+    "object_id": "0001_obj_paymentterminal_01",
+    "time": "05:36",
+    "location": {
+      "place_id": "canteen_1",
+      "place_type": "canteen",
+      "description": "Attached to the glass of the bar counter"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "object_category": "steamedstuffedbun",
+    "object_id": "0001_obj_steamedstuffedbun_01",
+    "time": "05:42",
+    "location": {
+      "place_id": "canteen_1",
+      "place_type": "canteen",
+      "description": "On the plate"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "object_category": "chopsticks",
+    "object_id": "0001_obj_chopsticks_01",
+    "time": "06:07",
+    "location": {
+      "place_id": "canteen_1",
+      "place_type": "canteen",
+      "description": "In hand"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "object_category": "coffeepackagingbag",
+    "object_id": "0001_obj_coffeepackagingbag_01",
+    "time": "09:12",
+    "location": {
+      "place_id": "coffeeshop_1",
+      "place_type": "coffeeshop",
+      "description": "On the bar"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "object_category": "self-servicecoffeemachine",
+    "object_id": "0001_obj_self-servicecoffeemachine_01",
+    "time": "12:58",
+    "location": {
+      "place_id": "corridor_1",
+      "place_type": "corridor",
+      "description": "On the far right of the ground"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "object_category": "vendingmachine",
+    "object_id": "0001_obj_self-vendingmachine_01",
+    "time": "12:58",
+    "location": {
+      "place_id": "corridor_1",
+      "place_type": "corridor",
+      "description": "On the ground to the left of the self-service coffee machine"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "object_category": "sharedchargingstation",
+    "object_id": "0001_obj_sharedchargingstation_01",
+    "time": "12:58",
+    "location": {
+      "place_id": "corridor_1",
+      "place_type": "corridor",
+      "description": "On the ground to the left of the vending machine"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "object_category": "umbrella",
+    "object_id": "0001_obj_umbrella_01",
+    "time": "13:23",
+    "location": {
+      "place_id": "corridor_1",
+      "place_type": "corridor",
+      "description": "Leaning against the outer wall of the classroom door"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "object_category": "coffeebottle",
+    "object_id": "0001_obj_coffeebottle_01",
+    "time": "14:25",
+    "location": {
+      "place_id": "classroom_1",
+      "place_type": "classroom",
+      "description": "On the classroom desk"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "object_category": "straw",
+    "object_id": "0001_obj_straw_01",
+    "time": "14:30",
+    "location": {
+      "place_id": "classroom_1",
+      "place_type": "classroom",
+      "description": "On the classroom desk"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "object_category": "ipad",
+    "object_id": "0001_obj_ipad_01",
+    "time": "15:29",
+    "location": {
+      "place_id": "classroom_1",
+      "place_type": "classroom",
+      "description": "On the table directly in front"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "object_category": "keyboard",
+    "object_id": "0001_obj_keyboard_01",
+    "time": "15:29",
+    "location": {
+      "place_id": "classroom_1",
+      "place_type": "classroom",
+      "description": "On the classroom desk and in front of the iPad"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "object_category": "mouse",
+    "object_id": "0001_obj_mouse_01",
+    "time": "15:29",
+    "location": {
+      "place_id": "classroom_1",
+      "place_type": "classroom",
+      "description": "On the classroom desk and on the right side of the iPad"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0003",
+    "video_path": "024/024_0003",
+    "object_category": "mechanicalkeyboard",
+    "object_id": "0003_obj_mechanicalkeyboard_01",
+    "time": "00:21",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "At the very front of the table"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0003",
+    "video_path": "024/024_0003",
+    "object_category": "laptop",
+    "object_id": "0003_obj_laptop_01",
+    "time": "00:21",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "On the table and behind the keyboard"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0003",
+    "video_path": "024/024_0003",
+    "object_category": "ipad",
+    "object_id": "0003_obj_ipad_01",
+    "time": "00:21",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Leaning against the laptop"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0003",
+    "video_path": "024/024_0003",
+    "object_category": "mirror",
+    "object_id": "0003_obj_mirror_01",
+    "time": "00:21",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "On the right side of the table and behind the mouse"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0003",
+    "video_path": "024/024_0003",
+    "object_category": "actioncamera",
+    "object_id": "0003_obj_actioncamera_01",
+    "time": "00:21",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Between the laptop and the mirror"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0003",
+    "video_path": "024/024_0003",
+    "object_category": "mouse",
+    "object_id": "0003_obj_mouse_01",
+    "time": "00:21",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "On the right side of the table"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0003",
+    "video_path": "024/024_0003",
+    "object_category": "bottle",
+    "object_id": "0003_obj_bottle_01",
+    "time": "00:21",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "On the left side of the table"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0003",
+    "video_path": "024/024_0003",
+    "object_category": "stylus",
+    "object_id": "0003_obj_stylus_01",
+    "time": "00:43",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "On the right hand"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0003",
+    "video_path": "024/024_0003",
+    "object_category": "powderpacket",
+    "object_id": "0003_obj_powderpacket_01",
+    "time": "07:36",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "On the left hand"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0003",
+    "video_path": "024/024_0003",
+    "object_category": "tissue",
+    "object_id": "0003_obj_tissue_01",
+    "time": "10:44",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Stick to the upper right side of the table"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0003",
+    "video_path": "024/024_0003",
+    "object_category": "headband",
+    "object_id": "0003_obj_headband_01",
+    "time": "10:44",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Hang on the right wall of the table"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0003",
+    "video_path": "024/024_0003",
+    "object_category": "toothbrush",
+    "object_id": "0003_obj_toothbrush_01",
+    "time": "10:44",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Hanging on the right side of the headband"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0004",
+    "video_path": "024/024_0004",
+    "object_category": "shelf",
+    "object_id": "0004_obj_shelf_01",
+    "time": "00:20",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Above the toothbrush"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0004",
+    "video_path": "024/024_0004",
+    "object_category": "stand",
+    "object_id": "0004_obj_stand_01",
+    "time": "00:20",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Left side of the bottle"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0004",
+    "video_path": "024/024_0004",
+    "object_category": "pancake",
+    "object_id": "0004_obj_pancake_01",
+    "time": "00:20",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Behind the stand"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0004",
+    "video_path": "024/024_0004",
+    "object_category": "gridshelf",
+    "object_id": "0004_obj_gridshelf_01",
+    "time": "00:20",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Left side of the stand"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0004",
+    "video_path": "024/024_0004",
+    "object_category": "beadedbracelet",
+    "object_id": "0004_obj_beadedbracelet_01",
+    "time": "00:20",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Hanging on the grid shelf"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0004",
+    "video_path": "024/024_0004",
+    "object_category": "waterdispenser",
+    "object_id": "0004_obj_waterdispenser_01",
+    "time": "06:16",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "At the end of the dormitory corridor"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0004",
+    "video_path": "024/024_0004",
+    "object_category": "fan",
+    "object_id": "0004_obj_fan_01",
+    "time": "06:42",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "On the ceiling"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0004",
+    "video_path": "024/024_0004",
+    "object_category": "cosmetic",
+    "object_id": "0004_obj_cosmetic_01",
+    "time": "06:48",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "At the very top of the table shelf"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0005",
+    "video_path": "024/024_0005",
+    "object_category": "powerbank",
+    "object_id": "0005_obj_powerbank_01",
+    "time": "00:34",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "The far right side of the table in front of this person"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0005",
+    "video_path": "024/024_0005",
+    "object_category": "kerosenelamp",
+    "object_id": "0005_obj_kerosenelamp_01",
+    "time": "00:34",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "On the left side of the power bank"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0005",
+    "video_path": "024/024_0005",
+    "object_category": "earphonecase",
+    "object_id": "0005_obj_earphonecase_01",
+    "time": "00:34",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "On the left side of the kerosene lamp"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0005",
+    "video_path": "024/024_0005",
+    "object_category": "mouse",
+    "object_id": "0005_obj_mouse_01",
+    "time": "00:34",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "On the left side of the earphone case"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0005",
+    "video_path": "024/024_0005",
+    "object_category": "cellphone",
+    "object_id": "0005_obj_cellphone_01",
+    "time": "00:34",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "On the left side of the mouse"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0005",
+    "video_path": "024/024_0005",
+    "object_category": "watch",
+    "object_id": "0005_obj_watch_01",
+    "time": "00:34",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Behind the mouse"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0005",
+    "video_path": "024/024_0005",
+    "object_category": "tissue",
+    "object_id": "0005_obj_tissue_01",
+    "time": "00:34",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Behind the watch"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0005",
+    "video_path": "024/024_0005",
+    "object_category": "actioncamera",
+    "object_id": "0005_obj_actioncamera_01",
+    "time": "00:34",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "On the left side of the watch"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0005",
+    "video_path": "024/024_0005",
+    "object_category": "headphones",
+    "object_id": "0005_obj_headphones_01",
+    "time": "00:34",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Hang on the wall"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0005",
+    "video_path": "024/024_0005",
+    "object_category": "shelf",
+    "object_id": "0005_obj_shelf_01",
+    "time": "00:34",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Above the headphones"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0005",
+    "video_path": "024/024_0005",
+    "object_category": "comb",
+    "object_id": "0005_obj_comb_01",
+    "time": "00:34",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Inside the shelf"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0005",
+    "video_path": "024/024_0005",
+    "object_category": "hairdryer",
+    "object_id": "0005_obj_hairdryer_01",
+    "time": "00:34",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Inside the shelf"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0006",
+    "video_path": "024/024_0006",
+    "object_category": "turnstile",
+    "object_id": "0006_obj_turnstile_01",
+    "time": "00:53",
+    "location": {
+      "place_id": "corridor_2",
+      "place_type": "corridor",
+      "description": "On the floor"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0006",
+    "video_path": "024/024_0006",
+    "object_category": "cellphone",
+    "object_id": "0006_obj_cellphone_01",
+    "time": "01:45",
+    "location": {
+      "place_id": "outdoor_1",
+      "place_type": "outdoor",
+      "description": "In hand"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0006",
+    "video_path": "024/024_0006",
+    "object_category": "ebike",
+    "object_id": "0006_obj_ebike_01",
+    "time": "01:41",
+    "location": {
+      "place_id": "outdoor_1",
+      "place_type": "outdoor",
+      "description": "On the ground"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0006",
+    "video_path": "024/024_0006",
+    "object_category": "raincoat",
+    "object_id": "0006_obj_raincoat_01",
+    "time": "04:13",
+    "location": {
+      "place_id": "courierstation_1",
+      "place_type": "courierstation",
+      "description": "Hanging on the front wall"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0006",
+    "video_path": "024/024_0006",
+    "object_category": "strawhat",
+    "object_id": "0006_obj_strawhat_01",
+    "time": "04:13",
+    "location": {
+      "place_id": "courierstation_1",
+      "place_type": "courierstation",
+      "description": "Hanging on the right wall"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0006",
+    "video_path": "024/024_0006",
+    "object_category": "waterdispenser",
+    "object_id": "0006_obj_waterdispenser_01",
+    "time": "04:20",
+    "location": {
+      "place_id": "courierstation_1",
+      "place_type": "courierstation",
+      "description": "On the left side of the table on the left"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0006",
+    "video_path": "024/024_0006",
+    "object_category": "waterbottle",
+    "object_id": "0006_obj_waterbottle_01",
+    "time": "04:20",
+    "location": {
+      "place_id": "courierstation_1",
+      "place_type": "courierstation",
+      "description": "On the left table and to the right of the water dispenser"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0006",
+    "video_path": "024/024_0006",
+    "object_category": "computer",
+    "object_id": "0006_obj_computer_01",
+    "time": "04:20",
+    "location": {
+      "place_id": "courierstation_1",
+      "place_type": "courierstation",
+      "description": "On the left table and to the right of the water bottle"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0006",
+    "video_path": "024/024_0006",
+    "object_category": "parcel",
+    "object_id": "0006_obj_parcel_01",
+    "time": "04:56",
+    "location": {
+      "place_id": "courierstation_1",
+      "place_type": "courierstation",
+      "description": "In hand"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0006",
+    "video_path": "024/024_0006",
+    "object_category": "parcel",
+    "object_id": "0006_obj_parcel_02",
+    "time": "05:00",
+    "location": {
+      "place_id": "courierstation_1",
+      "place_type": "courierstation",
+      "description": "In hand"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0006",
+    "video_path": "024/024_0006",
+    "object_category": "mechanicalkeyboard",
+    "object_id": "0006_obj_mechanicalkeyboard_01",
+    "time": "18:57",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "At the very front of the table"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0006",
+    "video_path": "024/024_0006",
+    "object_category": "stand",
+    "object_id": "0006_obj_stand_01",
+    "time": "18:57",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Behind the mechanical keyboard"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0007",
+    "video_path": "024/024_0007",
+    "object_category": "mechanicalkeyboard",
+    "object_id": "0007_obj_mechanicalkeyboard_01",
+    "time": "00:21",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "At the very front of the table"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0007",
+    "video_path": "024/024_0007",
+    "object_category": "laptop",
+    "object_id": "0007_obj_laptop_01",
+    "time": "00:21",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "On the table and behind the keyboard"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0007",
+    "video_path": "024/024_0007",
+    "object_category": "ipad",
+    "object_id": "0007_obj_ipad_01",
+    "time": "00:21",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Leaning against the wall on the right"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0007",
+    "video_path": "024/024_0007",
+    "object_category": "actioncamera",
+    "object_id": "0007_obj_actioncamera_01",
+    "time": "00:21",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "On the left side of the mechanical keyboard"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0007",
+    "video_path": "024/024_0007",
+    "object_category": "mouse",
+    "object_id": "0007_obj_mouse_01",
+    "time": "00:21",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "On the right side of the table"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0007",
+    "video_path": "024/024_0007",
+    "object_category": "bottle",
+    "object_id": "0007_obj_bottle_01",
+    "time": "00:21",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Behind the action camera"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0007",
+    "video_path": "024/024_0007",
+    "object_category": "earphonecase",
+    "object_id": "0007_obj_earphonecase_01",
+    "time": "00:21",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Between laptop and mouse"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0007",
+    "video_path": "024/024_0007",
+    "object_category": "charger",
+    "object_id": "0007_obj_charger_01",
+    "time": "00:21",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "On the right side of the laptop"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0007",
+    "video_path": "024/024_0007",
+    "object_category": "watch",
+    "object_id": "0007_obj_watch_01",
+    "time": "00:21",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "On the right side of the charger"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0008",
+    "video_path": "024/024_0008",
+    "object_category": "socks",
+    "object_id": "0008_obj_socks_01",
+    "time": "12:27",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "In the basin"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0008",
+    "video_path": "024/024_0008",
+    "object_category": "basin",
+    "object_id": "0008_obj_basin_01",
+    "time": "12:27",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "On the ground"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0008",
+    "video_path": "024/024_0008",
+    "object_category": "laundrydetergent",
+    "object_id": "0008_obj_laundrydetergent_01",
+    "time": "13:24",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "In hand"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0008",
+    "video_path": "024/024_0008",
+    "object_category": "handwashingfluid",
+    "object_id": "0008_obj_handwashingfluid_01",
+    "time": "14:10",
+    "location": {
+      "place_id": "washroom_1",
+      "place_type": "washroom",
+      "description": "In the center of the washbasin"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0008",
+    "video_path": "024/024_0008",
+    "object_category": "tap",
+    "object_id": "0008_obj_tap_01",
+    "time": "14:10",
+    "location": {
+      "place_id": "washroom_1",
+      "place_type": "washroom",
+      "description": "On the sink"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "024_0008",
+    "video_path": "024/024_0008",
+    "object_category": "multi-clipclothesrack",
+    "object_id": "0008_obj_multi-clipclothesrack_01",
+    "time": "19:43",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "tangled with some hanging clothes"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-10",
+      "qc_status": "accepted"
+    }
+  }
+ ]

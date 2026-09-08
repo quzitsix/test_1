@@ -1,0 +1,93 @@
+[
+  {
+    "place_id": "Nanjing University_01",
+    "video_id": "009_0001",
+    "video_path": "009/009_0001",
+    "category": "University",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor":false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "school_canteen_01",
+    "video_id": "009_0001",
+    "video_path": "009/009_0001",
+    "category": "canteen",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor":false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "library_01",
+    "video_id": "009_0001",
+    "video_path": "009/009_0001",
+    "category": "library",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor":false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+ {
+    "place_id": "dormitory_01",
+    "video_id": "009_0006",
+    "video_path": "009/009_0006",
+    "category": "dormitory",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor":false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  }, 
+ {
+    "place_id": "courier_station_01",
+    "video_id": "009_0009",
+    "video_path": "009/009_0009",
+    "category": "courier station",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor":false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+   {
+    "place_id": "classroom_01",
+    "video_id": "009_0015",
+    "video_path": "009/009_0015",
+    "category": "classroom",
+    "floor_index": " ",
+    "adjacent_places": [   ],
+    "parent_place_id": " ",
+       "is_outdoor":false,
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  }
+     
+]

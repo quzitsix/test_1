@@ -1,0 +1,462 @@
+[
+  {
+    "place_id": "dormitory_01",
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "category": "dormitory",
+    "floor_index": "2",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "dormitory_01",
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "category": "dormitory",
+    "floor_index": "2",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "balcony_01",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "category": "balcony",
+    "floor_index": "2",
+    "adjacent_place": [
+      {
+        "place_id": "dormitory_01",
+        "description": "Connected by a glass door"
+      }
+    ],
+    "parent_place_id": "dormitory_01",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "corridor_01",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "category": "corridor",
+    "floor_index": "2",
+    "adjacent_place": [
+      {
+        "place_id": "dormitory_01",
+        "description": "Connected by a door"
+      }
+    ],
+    "parent_place_id": "building_01",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "building_01",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "category": "building",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "football_field_01",
+        "description": "Opposite the football field"
+      },
+      {
+        "place_id": " volleyball_court_01",
+        "description": "Opposite the volleyball court"
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "football_field_01",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "category": "football field",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "building_01",
+        "description": "Opposite the building"
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "volleyball_court_01",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "category": "volleyball court",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "building_01",
+        "description": "Opposite the building"
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "canteen_01",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "category": "canteen",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "garbage_station_01",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "category": "garbage station",
+    "floor_index": "2",
+    "adjacent_place": [
+      {
+        "place_id": "corridor_01",
+        "description": "Connected to the corridor through the iron gate"
+      }
+    ],
+    "parent_place_id": "building_01",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "staircase_01",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "category": "staircase",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "garbage_station_01",
+        "description": "Connected to the garbage station through the iron gate"
+      }
+    ],
+    "parent_place_id": "building_01",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "street_01",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "category": "street",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "canteen_01",
+        "description": "In front of the canteen entrance"
+      },
+      {
+        "place_id": "building_01",
+        "description": "Opposite the building"
+      },
+      {
+        "place_id": "food_takeout_locker_01",
+        "description": "Next to the food takeout locker"
+      },
+      {
+        "place_id": "street_02",
+        "description": "Intersects with Street 2 at the location of the cafeteria"
+      }
+    ],
+    "parent_place_id": "school_01",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "food_takeout_locker_01",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "category": "food takeout locker",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "street_01",
+        "description": "Next to Street 1"
+      }
+    ],
+    "parent_place_id": "school_01",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "street_02",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "category": "street",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "canteen_01",
+        "description": "In front of the canteen entrance"
+      },
+      {
+        "place_id": "street_01",
+        "description": "Intersects with Street 1 at the location of the cafeteria"
+      }
+    ],
+    "parent_place_id": "school_01",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "school_01",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "category": "school",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "supermarket_01",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "category": "supermarket",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "street_02",
+        "description": "Next to Street 2"
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "express_station_01",
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "category": "express_station",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "street_02",
+        "description": "Next to Street 2"
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "elevator_01",
+    "video_id": "020_0012",
+    "video_path": "020/020_0012",
+    "category": "elevator",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "dormitory_01",
+        "description": "inside the dormitory building"
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "street_03",
+    "video_id": "020_0012",
+    "video_path": "020/020_0012",
+    "category": "street",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "dormitory_01",
+        "description": "the street that comes out of this dormitory building"
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "science and technology innovation building_01",
+    "video_id": "020_0012",
+    "video_path": "020/020_0012",
+    "category": "building",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "",
+        "description": ""
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "gym_01",
+    "video_id": "020_0017",
+    "video_path": "020/020_0017",
+    "category": "building",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "",
+        "description": ""
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-1-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "museum_01",
+    "video_id": "020_0021",
+    "video_path": "020/020_0021",
+    "category": "building",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "",
+        "description": ""
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-1-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "street_04",
+    "video_id": "020_0023",
+    "video_path": "020/020_0023",
+    "category": "street",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "",
+        "description": ""
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-1-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "badminton court_01",
+    "video_id": "020_0054",
+    "video_path": "020/020_0054",
+    "category": "badminton court",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "",
+        "description": ""
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2026-1-21",
+      "qc_status": "accepted"
+    }
+  }
+]

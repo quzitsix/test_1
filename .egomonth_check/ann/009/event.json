@@ -1,0 +1,1060 @@
+[
+  
+      {
+      "event_id": "ev_01",
+      "video_id": "009_0001",
+      "video_path":"009/009_0001", 
+      "start_time": "00:01",
+      "end_time": "10:20",
+      "description": "Eating in the cafeteria",
+      "place_id": "school_canteen_01",
+      
+      "objects_involved": [ ],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+     {
+      "event_id": "ev_02",
+      "video_id": "009_0001",
+      "video_path":"009/009_0001", 
+      "start_time": "11:08",
+      "end_time": "16:30",
+      "description": "Riding an electric bike to the library",
+      "place_id": "Nanjing University_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_03",
+      "video_id": "009_0001",
+      "video_path":"009/009_0001", 
+      "start_time": "20:25",
+      "end_time": "22:10",
+      "description": "Take a water cup to fetch water",
+      "place_id": "library_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_04",
+      "video_id": "009_0001",
+      "video_path":"009/009_0001", 
+      "start_time": "22:30",
+      "end_time": "01:28:30",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_05",
+      "video_id": "009_0002",
+      "video_path":"009/009_0002", 
+      "start_time": "00:01",
+      "end_time": "07:00",
+      "description": "Riding an electric bike to the library",
+      "place_id": "Nanjing University_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+     {
+      "event_id": "ev_06",
+      "video_id": "009_0002",
+      "video_path":"009/009_0002", 
+      "start_time": "08:01",
+      "end_time": "09:19",
+      "description": "Find a seat in the library",
+      "place_id": "library_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_07",
+      "video_id": "009_0002",
+      "video_path":"009/009_0002", 
+      "start_time": "11:34",
+      "end_time": "01:23:57",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_08",
+      "video_id": "009_0003",
+      "video_path":"009/009_0003", 
+      "start_time": "00:01",
+      "end_time": "01:18:08",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_09",
+      "video_id": "009_0004",
+      "video_path":"009/009_0004", 
+      "start_time": "00:01",
+      "end_time": "01:42",
+      "description": "Preparation Before Learning",
+      "place_id": "library_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_10",
+      "video_id": "009_0004",
+      "video_path":"009/009_0004", 
+      "start_time": "01:42",
+      "end_time": "03:22",
+      "description": "fetch water",
+      "place_id": "library_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+   {
+      "event_id": "ev_11",
+      "video_id": "009_0004",
+      "video_path":"009/009_0004", 
+      "start_time": "04:50",
+      "end_time": "01:29:30",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+   {
+      "event_id": "ev_12",
+      "video_id": "009_0005",
+      "video_path":"009/009_0005", 
+      "start_time": "00:01",
+      "end_time": "01:28:03",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_13",
+      "video_id": "009_0006",
+      "video_path":"009/009_0006", 
+      "start_time": "00:01",
+      "end_time": "00:30",
+      "description": "Clean up dormitory garbage",
+      "place_id": "dormitory_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+{
+      "event_id": "ev_14",
+      "video_id": "009_0006",
+      "video_path":"009/009_0006", 
+      "start_time": "00:30",
+      "end_time": "00:50",
+      "description": "Clean up dormitory garbage",
+      "place_id": "dormitory_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_15",
+      "video_id": "009_0006",
+      "video_path":"009/009_0006", 
+      "start_time": "01:27",
+      "end_time": "02:05",
+      "description": "Tidy up the desk",
+      "place_id": "dormitory_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_16",
+      "video_id": "009_0006",
+      "video_path":"009/009_0006", 
+      "start_time": "02:09",
+      "end_time": "02:44",
+      "description": "Cover the garbage bin with a garbage bag",
+      "place_id": "dormitory_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+   {
+      "event_id": "ev_17",
+      "video_id": "009_0006",
+      "video_path":"009/009_0006", 
+      "start_time": "06:06",
+      "end_time": "26:22",
+      "description": "read a book",
+      "place_id": "dormitory_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },  
+    {
+      "event_id": "ev_18",
+      "video_id": "009_0007",
+      "video_path":"009/009_0007", 
+      "start_time": "00:01",
+      "end_time": "40:49",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+     {
+      "event_id": "ev_19",
+      "video_id": "009_0008",
+      "video_path":"009/009_0008", 
+      "start_time": "00:01",
+      "end_time": "35:20",
+      "description": "Studying",
+      "place_id": "",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+     {
+      "event_id": "ev_20",
+      "video_id": "009_0009",
+      "video_path":"009/009_0009", 
+      "start_time": "00:01",
+      "end_time": "38:35",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_21",
+      "video_id": "009_0009",
+      "video_path":"009/009_0009", 
+      "start_time": "38:01",
+      "end_time": "41:55",
+      "description": "Ride a bike to pick up the package",
+      "place_id": "Nanjing University_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+   {
+      "event_id": "ev_22",
+      "video_id": "009_0009",
+      "video_path":"009/009_0009", 
+      "start_time": "42:00",
+      "end_time": "42:43",
+      "description": "pick up the package",
+      "place_id": "courier_station_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_23",
+      "video_id": "009_0009",
+      "video_path":"009/009_0009", 
+      "start_time": "42:00",
+      "end_time": "49:09",
+      "description": "Cycling back to the dormitory",
+      "place_id": "Nanjing University_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_24",
+      "video_id": "009_0010",
+      "video_path":"009/009_0010", 
+      "start_time": "00:01",
+      "end_time": "07:51",
+      "description": "Cycling to the library",
+      "place_id": "Nanjing University_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+   {
+      "event_id": "ev_25",
+      "video_id": "009_0010",
+      "video_path":"009/009_0010", 
+      "start_time": "07:53",
+      "end_time": "09:51",
+      "description": "Charging electric vehicles",
+      "place_id": "Nanjing University_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },   
+    {
+      "event_id": "ev_26",
+      "video_id": "009_0010",
+      "video_path":"009/009_0010", 
+      "start_time": "07:53",
+      "end_time": "09:51",
+      "description": "Charging electric vehicles",
+      "place_id": "Nanjing University_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },   
+    {
+      "event_id": "ev_27",
+      "video_id": "009_0010",
+      "video_path":"009/009_0010", 
+      "start_time": "10:00",
+      "end_time": "11:40",
+      "description": "Walk to the library",
+      "place_id": "Nanjing University_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+      {
+      "event_id": "ev_28",
+      "video_id": "009_0012",
+      "video_path":"009/009_0012", 
+      "start_time": "00:01",
+      "end_time": "01:52",
+      "description": "Go downstairs and throw away the garbage",
+      "place_id": "Nanjing University_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+      {
+      "event_id": "ev_29",
+      "video_id": "009_0012",
+      "video_path":"009/009_0012", 
+      "start_time": "02:01",
+      "end_time": "07:00",
+      "description": "Riding an electric bike to the library",
+      "place_id": "Nanjing University_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+      {
+      "event_id": "ev_30",
+      "video_id": "009_0012",
+      "video_path":"009/009_0012", 
+      "start_time": "10:01",
+      "end_time": "01:18:45",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+     {
+      "event_id": "ev_31",
+      "video_id": "009_0013",
+      "video_path":"009/009_0013", 
+      "start_time": "00:01",
+      "end_time": "01:13:42",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_32",
+      "video_id": "009_0014",
+      "video_path":"009/009_0014", 
+      "start_time": "00:01",
+      "end_time": "09:40",
+      "description": "read a book",
+      "place_id": "dormitory_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+{
+      "event_id": "ev_33",
+      "video_id": "009_0014",
+      "video_path":"009/009_0014", 
+      "start_time": "10:33",
+      "end_time": "11:47",
+      "description": "Brushing shoes in the dormitory",
+      "place_id": "dormitory_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_34",
+      "video_id": "009_0014",
+      "video_path":"009/009_0014", 
+      "start_time": "11:48",
+      "end_time": "12:47",
+      "description": "Brushing shoes in the dormitory",
+      "place_id": "dormitory_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_35",
+      "video_id": "009_0014",
+      "video_path":"009/009_0014", 
+      "start_time": "12:48",
+      "end_time": "15:47",
+      "description": "Brushing shoes in the dormitory",
+      "place_id": "dormitory_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_36",
+      "video_id": "009_0015",
+      "video_path":"009/009_0015", 
+      "start_time": "00:01",
+      "end_time": "16:33",
+      "description": "Studying in the classroom",
+      "place_id": "classroom_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+   {
+      "event_id": "ev_37",
+      "video_id": "009_0016",
+      "video_path":"009/009_0016", 
+      "start_time": "00:01",
+      "end_time": "07:06",
+      "description": "Clean up the dormitory",
+      "place_id": "dormitory_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_38",
+      "video_id": "009_0017",
+      "video_path":"009/009_0017", 
+      "start_time": "00:01",
+      "end_time": "03:12",
+      "description": "watch anime",
+      "place_id": "dormitory_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_39",
+      "video_id": "009_0017",
+      "video_path":"009/009_0017", 
+      "start_time": "03:18",
+      "end_time": "39:53",
+      "description": "do handicrafts",
+      "place_id": "dormitory_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+   {
+      "event_id": "ev_40",
+      "video_id": "009_0018",
+      "video_path":"009/009_0018", 
+      "start_time": "00:01",
+      "end_time": "17:46",
+      "description": "cooking",
+      "place_id": "dormitory_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_41",
+      "video_id": "009_0019",
+      "video_path":"009/009_0019", 
+      "start_time": "00:01",
+      "end_time": "00:30",
+      "description": "Put the clothes hanger in the cabinet",
+      "place_id": "dormitory_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_42",
+      "video_id": "009_0019",
+      "video_path":"009/009_0019", 
+      "start_time": "01:32",
+      "end_time": "01:47",
+      "description": "Wear a watch",
+      "place_id": "dormitory_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_43",
+      "video_id": "009_0019",
+      "video_path":"009/009_0019", 
+      "start_time": "03:10",
+      "end_time": "21:24",
+      "description": "Draw and write on the notebook again",
+      "place_id": "dormitory_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_44",
+      "video_id": "009_0020",
+      "video_path":"009/009_0020", 
+      "start_time": "00:01",
+      "end_time": "07:51",
+      "description": "Walk to the teaching building",
+      "place_id": "Nanjing University_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+     {
+      "event_id": "ev_45",
+      "video_id": "009_0020",
+      "video_path":"009/009_0020", 
+      "start_time": "07:58",
+      "end_time": "09:34",
+      "description": "Find a classroom in the teaching building",
+      "place_id": "Nanjing University_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+     {
+      "event_id": "ev_46",
+      "video_id": "009_0021",
+      "video_path":"009/009_0021", 
+      "start_time": "00:01",
+      "end_time": "31:26",
+      "description": "Studying in the classroom",
+      "place_id": "Nanjing University_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_47",
+      "video_id": "009_0022",
+      "video_path":"009/009_0022", 
+      "start_time": "00:01",
+      "end_time": "34:59",
+      "description": "Drawing with a tablet",
+      "place_id": "dormitory_01",
+      "objects_involved": [ ],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_48",
+      "video_id": "009_0023",
+      "video_path":"009/009_0023", 
+      "start_time": "00:01",
+      "end_time": "26:07",
+      "description": "Writing and drawing on a notebook",
+      "place_id": "dormitory_01",
+      "objects_involved": ["0023_obj_notebook_01 "],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_49",
+      "video_id": "009_0024",
+      "video_path":"009/009_0024", 
+      "start_time": "00:01",
+      "end_time": "03:28",
+      "description": "Clean up the dormitory",
+      "place_id": "dormitory_01",
+      "objects_involved": [" "],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_50",
+      "video_id": "009_0024",
+      "video_path":"009/009_0024", 
+      "start_time": "05:37",
+      "end_time": "43:45",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      "objects_involved": [" "],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+{
+      "event_id": "ev_51",
+      "video_id": "009_0025",
+      "video_path":"009/009_0025", 
+      "start_time": "00:01",
+      "end_time": "09:20",
+      "description": "Walk to the library",
+      "place_id": "Nanjing University_01",
+      "objects_involved": [" "],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+{
+      "event_id": "ev_52",
+      "video_id": "009_0026",
+      "video_path":"009/009_0026", 
+      "start_time": "00:01",
+      "end_time": "16:27",
+      "description": "Organize the dormitory and study in the dormitory",
+      "place_id": "Nanjing University_01",
+      "objects_involved": [" "],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_53",
+      "video_id": "009_0027",
+      "video_path":"009/009_0027", 
+      "start_time": "00:01",
+      "end_time": "00:35",
+      "description": "Retrieve items from the staircase cabinet",
+      "place_id": "dormitory_01",
+      "objects_involved": [" "],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+ {
+      "event_id": "ev_54",
+      "video_id": "009_0027",
+      "video_path":"009/009_0027", 
+      "start_time": "00:01",
+      "end_time": "00:35",
+      "description": "Retrieve items from the staircase cabinet",
+      "place_id": "dormitory_01",
+      "objects_involved": [" "],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+{
+      "event_id": "ev_55",
+      "video_id": "009_0027",
+      "video_path":"009/009_0027", 
+      "start_time": "01:17",
+      "end_time": "01:57",
+      "description": "fetch water",
+      "place_id": "dormitory_01",
+      "objects_involved": [" "],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+{
+      "event_id": "ev_56",
+      "video_id": "009_0027",
+      "video_path":"009/009_0027", 
+      "start_time": "03:17",
+      "end_time": "33:27",
+      "description": "Learning on a tablet while soaking your feet",
+      "place_id": "dormitory_01",
+      "objects_involved": [" "],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_57",
+      "video_id": "009_0027",
+      "video_path":"009/009_0027", 
+      "start_time": "33:30",
+      "end_time": "38:27",
+      "description": "Using a smartphone",
+      "place_id": "dormitory_01",
+      "objects_involved": [" 0027_obj_smartphone_01"],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+{
+      "event_id": "ev_58",
+      "video_id": "009_0027",
+      "video_path":"009/009_0027", 
+      "start_time": "38:50",
+      "end_time": "38:49",
+      "description": "Pour water to rinse the basin",
+      "place_id": "dormitory_01",
+      "objects_involved": [""],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+{
+      "event_id": "ev_59",
+      "video_id": "009_0027",
+      "video_path":"009/009_0027", 
+      "start_time": "40:26",
+      "end_time": "54:58",
+      "description": "Using smartphones and computers",
+      "place_id": "dormitory_01",
+      "objects_involved": [""],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_60",
+      "video_id": "009_0028",
+      "video_path":"009/009_0028", 
+      "start_time": "00:01",
+      "end_time": "08:00",
+      "description": "Using a smartphone",
+      "place_id": "dormitory_01",
+      "objects_involved": [""],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+{
+      "event_id": "ev_61",
+      "video_id": "009_0028",
+      "video_path":"009/009_0028", 
+      "start_time": "08:01",
+      "end_time": "20:37",
+      "description": "Write and draw on a notebook",
+      "place_id": "dormitory_01",
+      "objects_involved": [""],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+{
+      "event_id": "ev_62",
+      "video_id": "009_0029",
+      "video_path":"009/009_0029", 
+      "start_time": "00:01",
+      "end_time": "06:00",
+      "description": "Clean up the dormitory",
+      "place_id": "dormitory_01",
+      "objects_involved": [""],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+{
+      "event_id": "ev_63",
+      "video_id": "009_0029",
+      "video_path":"009/009_0029", 
+      "start_time": "07:01",
+      "end_time": "11:50",
+      "description": "Check the account book",
+      "place_id": "dormitory_01",
+      "objects_involved": [""],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+{
+      "event_id": "ev_64",
+      "video_id": "009_0029",
+      "video_path":"009/009_0029", 
+      "start_time": "14:30",
+      "end_time": "28:49",
+      "description": "Nail art stickers",
+      "place_id": "dormitory_01",
+      "objects_involved": [""],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+{
+      "event_id": "ev_65",
+      "video_id": "009_0030",
+      "video_path":"009/009_0030", 
+      "start_time": "00:01",
+      "end_time": "37:11",
+      "description": "Drawing on mobile phones in the dormitory",
+      "place_id": "dormitory_01",
+      "objects_involved": [""],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+{
+      "event_id": "ev_66",
+      "video_id": "009_0031",
+      "video_path":"009/009_0031", 
+      "start_time": "00:01",
+      "end_time": "37:11",
+      "description": "Cooking with a small pot in the dormitory",
+      "place_id": "dormitory_01",
+      "objects_involved": ["0065_obj_small_pot_01"],
+      
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }
+
+]

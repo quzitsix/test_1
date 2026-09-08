@@ -1,0 +1,3530 @@
+[
+  {
+    "event_id": "ev_001",
+    "video_id": "013_0055",
+    "video_path": "013/013_0055",
+    "start_time": "0:00",
+    "end_time": "2:08",
+    "description": "The overall process of preparing raw meat",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0055_obj_meat_01",
+      "0055_obj_knife_01",
+      "0055_obj_cutting board_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_002",
+    "video_id": "013_0055",
+    "video_path": "013/013_0055",
+    "start_time": "0:00",
+    "end_time": "0:10",
+    "description": "The user washes hands before touching the meat",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_003",
+    "video_id": "013_0055",
+    "video_path": "013/013_0055",
+    "start_time": "0:17",
+    "end_time": "2:03",
+    "description": "The entire phase of cutting meat",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0055_obj_meat_01",
+      "0055_obj_knife_01",
+      "0055_obj_cutting board_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_004",
+    "video_id": "013_0055",
+    "video_path": "013/013_0055",
+    "start_time": "0:17",
+    "end_time": "1:50",
+    "description": "The user slices the raw meat into smaller pieces",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0055_obj_meat_01",
+      "0055_obj_knife_01",
+      "0055_obj_cutting board_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_005",
+    "video_id": "013_0055",
+    "video_path": "013/013_0055",
+    "start_time": "1:50",
+    "end_time": "2:03",
+    "description": "The user organizes the sliced meat on the board",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0055_obj_meat_01",
+      "0055_obj_cutting board_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_006",
+    "video_id": "013_0055",
+    "video_path": "013/013_0055",
+    "start_time": "2:04",
+    "end_time": "2:08",
+    "description": "The user washes hands again after handling raw meat",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_007",
+    "video_id": "013_0056",
+    "video_path": "013/013_0056",
+    "start_time": "0:27",
+    "end_time": "2:04",
+    "description": "The user is packing up clothes",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0056_obj_clothes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_008",
+    "video_id": "013_0056",
+    "video_path": "013/013_0056",
+    "start_time": "2:10",
+    "end_time": "7:14",
+    "description": "The user prepares items before leaving",
+    "place_id": "living_room_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_009",
+    "video_id": "013_0056",
+    "video_path": "013/013_0056",
+    "start_time": "8:10",
+    "end_time": "10:20",
+    "description": "The user leaves the room and takes out the trash",
+    "place_id": "parking_lot_1",
+    "objects_involved": [
+      "0056_obj_trash_bag_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_010",
+    "video_id": "013_0056",
+    "video_path": "013/013_0056",
+    "start_time": "10:30",
+    "end_time": "11:12",
+    "description": "The user starts the electric scooter",
+    "place_id": "parking_lot_1",
+    "objects_involved": [
+      "0056_obj_scooter_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_011",
+    "video_id": "013_0057",
+    "video_path": "013/013_0057",
+    "start_time": "0:00",
+    "end_time": "1:37",
+    "description": "The user is packing up clothes",
+    "place_id": "living_room_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_012",
+    "video_id": "013_0057",
+    "video_path": "013/013_0057",
+    "start_time": "4:18",
+    "end_time": "9:30",
+    "description": "The user is washing dishes",
+    "place_id": "kitchen_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_013",
+    "video_id": "013_0057",
+    "video_path": "013/013_0057",
+    "start_time": "12:42",
+    "end_time": "25:00",
+    "description": "The user is preparing ingredients for cooking",
+    "place_id": "kitchen_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_014",
+    "video_id": "013_0057",
+    "video_path": "013/013_0057",
+    "start_time": "25:23",
+    "end_time": "69:33",
+    "description": "The user is cooking cola chicken wings",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0057_obj_chicken_wings_01",
+      "0057_obj_cola_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_015",
+    "video_id": "013_0057",
+    "video_path": "013/013_0057",
+    "start_time": "73:17",
+    "end_time": "84:46",
+    "description": "The user is ironing clothes",
+    "place_id": "living_room_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_016",
+    "video_id": "013_0058",
+    "video_path": "013/013_0058",
+    "start_time": "0:00",
+    "end_time": "16:58",
+    "description": "The user is listening to music based on the background sound",
+    "place_id": "living_room_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_017",
+    "video_id": "013_0058",
+    "video_path": "013/013_0058",
+    "start_time": "1:23",
+    "end_time": "15:11",
+    "description": "The user is washing vegetables",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0057_obj_vegetables_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_018",
+    "video_id": "013_0058",
+    "video_path": "013/013_0058",
+    "start_time": "15:51",
+    "end_time": "16:58",
+    "description": "The user is tidying up the trash at home",
+    "place_id": "living_room_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_019",
+    "video_id": "013_0059",
+    "video_path": "013/013_0059",
+    "start_time": "0:41",
+    "end_time": "2:20",
+    "description": "The user is washing dishes in the sink",
+    "place_id": "kitchen_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_020",
+    "video_id": "013_0059",
+    "video_path": "013/013_0059",
+    "start_time": "2:22",
+    "end_time": "4:50",
+    "description": "The user is steaming rice using a rice cooker",
+    "place_id": "kitchen_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_021",
+    "video_id": "013_0059",
+    "video_path": "013/013_0059",
+    "start_time": "5:30",
+    "end_time": "9:40",
+    "description": "The user is cutting a coconut",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0059_obj_coconut_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_022",
+    "video_id": "013_0059",
+    "video_path": "013/013_0059",
+    "start_time": "11:30",
+    "end_time": "24:22",
+    "description": "The user is cooking a meal",
+    "place_id": "kitchen_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "courier_station_1",
+    "video_id": "013_0060",
+    "video_path": "013/013_0060",
+    "category": "courier_station",
+    "floor_index": 1,
+    "adjacent_places": [],
+    "parent_place_id": "",
+    "child_place_ids": [],
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_023",
+    "video_id": "013_0060",
+    "video_path": "013/013_0060",
+    "start_time": "0:00",
+    "end_time": "0:40",
+    "description": "The user is picking up the takeout",
+    "place_id": "courier_station_1",
+    "objects_involved": [
+      "0060_obj_takeout_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_024",
+    "video_id": "013_0060",
+    "video_path": "013/013_0060",
+    "start_time": "3:08",
+    "end_time": "4:40",
+    "description": "The user goes downstairs to throw away trash",
+    "place_id": "courier_station_1",
+    "objects_involved": [
+      "0060_obj_trash_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_025",
+    "video_id": "013_0060",
+    "video_path": "013/013_0060",
+    "start_time": "5:52",
+    "end_time": "12:43",
+    "description": "The user is picking up parcels at the station",
+    "place_id": "courier_station_1",
+    "objects_involved": [
+      "0060_obj_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_026",
+    "video_id": "013_0005",
+    "video_path": "013/013_0005",
+    "start_time": "0:00",
+    "end_time": "8:12",
+    "description": "The user is preparing food ingredients in the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0005_obj_knife_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_027",
+    "video_id": "013_0005",
+    "video_path": "013/013_0005",
+    "start_time": "0:00",
+    "end_time": "8:12",
+    "description": "The audio of a podcast is playing in the background",
+    "place_id": "kitchen_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_028",
+    "video_id": "013_0006",
+    "video_path": "013/013_0006",
+    "start_time": "0:00",
+    "end_time": "2:40",
+    "description": "The user is using a steamer pot to cook food",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0006_obj_steamer_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_029",
+    "video_id": "013_0006",
+    "video_path": "013/013_0006",
+    "start_time": "0:00",
+    "end_time": "5:02",
+    "description": "Background audio of a podcast is playing",
+    "place_id": "kitchen_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_030",
+    "video_id": "013_0006",
+    "video_path": "013/013_0006",
+    "start_time": "3:00",
+    "end_time": "4:31",
+    "description": "The user is tidying up the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_031",
+    "video_id": "013_0008",
+    "video_path": "013/013_0008",
+    "start_time": "0:00",
+    "end_time": "15:11",
+    "description": "The user is packing cooked food",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0008_obj_lunch_box_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_032",
+    "video_id": "013_0008",
+    "video_path": "013/013_0008",
+    "start_time": "16:10",
+    "end_time": "18:24",
+    "description": "The user packs personal belongings and takes away the trash before leaving",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0008_obj_trash_bag_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_033",
+    "video_id": "013_0008",
+    "video_path": "013/013_0008",
+    "start_time": "0:00",
+    "end_time": "18:24",
+    "description": "A podcast is playing in the background throughout the process",
+    "place_id": "kitchen_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_034",
+    "video_id": "013_0015",
+    "video_path": "013/013_0015",
+    "start_time": "0:00",
+    "end_time": "7:30",
+    "description": "The user is unpacking parcels",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "00015_obj_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_035",
+    "video_id": "013_0015",
+    "video_path": "013/013_0015",
+    "start_time": "7:45",
+    "end_time": "11:00",
+    "description": "The user is cleaning the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_036",
+    "video_id": "013_0015",
+    "video_path": "013/013_0015",
+    "start_time": "12:10",
+    "end_time": "25:00",
+    "description": "The user is washing dishes",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "00015_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_037",
+    "video_id": "013_0017",
+    "video_path": "013/013_0017",
+    "start_time": "0:00",
+    "end_time": "12:39",
+    "description": "The user is preparing food ingredients in the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "00017_obj_knife_01",
+      "00017_obj_board_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_038",
+    "video_id": "013_0018",
+    "video_path": "013/013_0018",
+    "start_time": "0:00",
+    "end_time": "13:18",
+    "description": "The user is preparing food ingredients in the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0018_obj_knife_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_039",
+    "video_id": "013_0018",
+    "video_path": "013/013_0018",
+    "start_time": "13:30",
+    "end_time": "14:25",
+    "description": "The user is steaming the prepared ingredients",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0018_obj_steamer_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_040",
+    "video_id": "013_0019",
+    "video_path": "013/013_0019",
+    "start_time": "0:00",
+    "end_time": "7:00",
+    "description": "The user is unpacking parcels in the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0019_obj_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_041",
+    "video_id": "013_0019",
+    "video_path": "013/013_0019",
+    "start_time": "9:30",
+    "end_time": "21:30",
+    "description": "The user is washing dishes in the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0019_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_042",
+    "video_id": "013_0019",
+    "video_path": "013/013_0019",
+    "start_time": "25:25",
+    "end_time": "43:28",
+    "description": "The user is preparing food ingredients in the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0019_obj_knife_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_043",
+    "video_id": "013_0020",
+    "video_path": "013/013_0020",
+    "start_time": "0:00",
+    "end_time": "2:21",
+    "description": "The user is tidying up the kitchen area",
+    "place_id": "kitchen_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_044",
+    "video_id": "013_0020",
+    "video_path": "013/013_0020",
+    "start_time": "2:30",
+    "end_time": "4:45",
+    "description": "The user is washing and steaming rice",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_045",
+    "video_id": "013_0020",
+    "video_path": "013/013_0020",
+    "start_time": "5:50",
+    "end_time": "6:40",
+    "description": "The user is washing the pot and spoon",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0020_obj_pot_01",
+      "0020_obj_spoon_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_046",
+    "video_id": "013_0021",
+    "video_path": "013/013_0021",
+    "start_time": "0:18",
+    "end_time": "0:35",
+    "description": "The user opens the door and picks up the takeout",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0021_obj_takeout_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_047",
+    "video_id": "013_0021",
+    "video_path": "013/013_0021",
+    "start_time": "1:28",
+    "end_time": "4:29",
+    "description": "The user is cooking in the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_048",
+    "video_id": "013_0024",
+    "video_path": "013/013_0024",
+    "start_time": "0:00",
+    "end_time": "5:00",
+    "description": "The user is washing dishes in the kitchen sink",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0024_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_049",
+    "video_id": "013_0024",
+    "video_path": "013/013_0024",
+    "start_time": "5:10",
+    "end_time": "14:00",
+    "description": "The user is washing and cutting scallions",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0024_obj_scallions_01",
+      "0024_obj_scissors_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_050",
+    "video_id": "013_0025",
+    "video_path": "013/013_0025",
+    "start_time": "4:39",
+    "end_time": "15:33",
+    "description": "The user is cutting carrots",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0025_obj_carrot_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_051",
+    "video_id": "013_0025",
+    "video_path": "013/013_0025",
+    "start_time": "15:49",
+    "end_time": "22:20",
+    "description": "The user is cutting yam",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0025_obj_yam_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_052",
+    "video_id": "013_0025",
+    "video_path": "013/013_0025",
+    "start_time": "22:27",
+    "end_time": "23:12",
+    "description": "The user is washing meat",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0025_obj_meat_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_053",
+    "video_id": "013_0025",
+    "video_path": "013/013_0025",
+    "start_time": "0:00",
+    "end_time": "23:12",
+    "description": "The overall process of preparing ingredients",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0025_obj_carrot_01",
+      "0025_obj_yam_01",
+      "0025_obj_meat_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_054",
+    "video_id": "013_0026",
+    "video_path": "013/013_0026",
+    "start_time": "0:00",
+    "end_time": "12:00",
+    "description": "The user is preparing food ingredients",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0026_obj_vegetables_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_055",
+    "video_id": "013_0026",
+    "video_path": "013/013_0026",
+    "start_time": "12:40",
+    "end_time": "18:02",
+    "description": "The user is washing dishes in the sink",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0026_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_056",
+    "video_id": "013_0026",
+    "video_path": "013/013_0026",
+    "start_time": "19:01",
+    "end_time": "22:53",
+    "description": "The user is storing the ingredients",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_057",
+    "video_id": "013_0030",
+    "video_path": "013/013_0030",
+    "start_time": "0:00",
+    "end_time": "1:00",
+    "description": "The user is clearing up dishes after a meal",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0030_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_058",
+    "video_id": "013_0030",
+    "video_path": "013/013_0030",
+    "start_time": "1:12",
+    "end_time": "9:33",
+    "description": "The user is washing dishes and a pot",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0030_obj_dishes_01",
+      "0030_obj_pot_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_059",
+    "video_id": "013_0030",
+    "video_path": "013/013_0030",
+    "start_time": "10:51",
+    "end_time": "11:32",
+    "description": "The user is cleaning up the kitchen area",
+    "place_id": "kitchen_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_060",
+    "video_id": "013_0030",
+    "video_path": "013/013_0030",
+    "start_time": "12:07",
+    "end_time": "14:01",
+    "description": "The user is unpacking a parcel that contains a duvet cover",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0030_obj_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_061",
+    "video_id": "013_0030",
+    "video_path": "013/013_0030",
+    "start_time": "14:27",
+    "end_time": "16:44",
+    "description": "The user is in the bathroom",
+    "place_id": "bathroom_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_062",
+    "video_id": "013_0031",
+    "video_path": "013/013_0031",
+    "start_time": "0:00",
+    "end_time": "1:36",
+    "description": "The user is taking ingredients out of the refrigerator",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0031_obj_ingredients_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_063",
+    "video_id": "013_0031",
+    "video_path": "013/013_0031",
+    "start_time": "2:49",
+    "end_time": "17:00",
+    "description": "The user is washing dishes in the sink",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0031_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_064",
+    "video_id": "013_0031",
+    "video_path": "013/013_0031",
+    "start_time": "21:30",
+    "end_time": "23:46",
+    "description": "The user is washing rice and steaming it",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0031_obj_cooker_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_065",
+    "video_id": "013_0032",
+    "video_path": "013/013_0032",
+    "start_time": "0:00",
+    "end_time": "7:29",
+    "description": "The user is processing carrots",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0032_obj_carrot_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_066",
+    "video_id": "013_0032",
+    "video_path": "013/013_0032",
+    "start_time": "8:13",
+    "end_time": "12:59",
+    "description": "The user is processing zucchini",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0032_obj_zucchini_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_067",
+    "video_id": "013_0032",
+    "video_path": "013/013_0032",
+    "start_time": "16:25",
+    "end_time": "17:47",
+    "description": "The user is cleaning the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_068",
+    "video_id": "013_0032",
+    "video_path": "013/013_0032",
+    "start_time": "18:28",
+    "end_time": "19:35",
+    "description": "The user is watching content on a tablet",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0032_obj_tablet_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_069",
+    "video_id": "013_0033",
+    "video_path": "013/013_0033",
+    "start_time": "1:54",
+    "end_time": "3:42",
+    "description": "The user is cooking a meal",
+    "place_id": "kitchen_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_070",
+    "video_id": "013_0033",
+    "video_path": "013/013_0033",
+    "start_time": "4:48",
+    "end_time": "11:53",
+    "description": "The user is washing dishes",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0033_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_071",
+    "video_id": "013_0033",
+    "video_path": "013/013_0033",
+    "start_time": "18:20",
+    "end_time": "19:49",
+    "description": "The user is cutting fingernails",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0033_obj_nail_clippers_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_072",
+    "video_id": "013_0033",
+    "video_path": "013/013_0033",
+    "start_time": "20:25",
+    "end_time": "20:45",
+    "description": "The user is boiling water",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0033_obj_kettle_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_073",
+    "video_id": "013_0033",
+    "video_path": "013/013_0033",
+    "start_time": "21:00",
+    "end_time": "21:26",
+    "description": "The user is watching content on a tablet",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0033_obj_tablet_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_074",
+    "video_id": "013_0035",
+    "video_path": "013/013_0035",
+    "start_time": "0:00",
+    "end_time": "5:34",
+    "description": "The user is cooking a meal",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0035_obj_pot_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_075",
+    "video_id": "013_0035",
+    "video_path": "013/013_0035",
+    "start_time": "6:04",
+    "end_time": "16:19",
+    "description": "The user is sweeping and mopping the floor",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0035_obj_mop_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_076",
+    "video_id": "013_0035",
+    "video_path": "013/013_0035",
+    "start_time": "20:28",
+    "end_time": "33:08",
+    "description": "The user is organizing clothes",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0035_obj_clothes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_077",
+    "video_id": "013_0035",
+    "video_path": "013/013_0035",
+    "start_time": "34:10",
+    "end_time": "42:30",
+    "description": "The user is washing the kitchenware",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0035_obj_kitchenware_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_078",
+    "video_id": "013_0036",
+    "video_path": "013/013_0036",
+    "start_time": "0:00",
+    "end_time": "1:55",
+    "description": "The user is preparing a meal without using a cooking pot",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0036_obj_food_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_079",
+    "video_id": "013_0036",
+    "video_path": "013/013_0036",
+    "start_time": "2:14",
+    "end_time": "13:43",
+    "description": "The user is organizing clothes on the bed",
+    "place_id": "bedroom_1",
+    "objects_involved": [
+      "0036_obj_clothes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_080",
+    "video_id": "013_0037",
+    "video_path": "013/013_0037",
+    "start_time": "0:00",
+    "end_time": "1:36",
+    "description": "The user is going downstairs while carrying several bottles",
+    "place_id": "stairwell_1",
+    "objects_involved": [
+      "0037_obj_bottles_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_081",
+    "video_id": "013_0037",
+    "video_path": "013/013_0037",
+    "start_time": "2:29",
+    "end_time": "8:55",
+    "description": "The user is picking up parcels at the courier station",
+    "place_id": "courier_station_1",
+    "objects_involved": [
+      "0037_obj_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_082",
+    "video_id": "013_0038",
+    "video_path": "013/013_0038",
+    "start_time": "0:00",
+    "end_time": "3:20",
+    "description": "The user is eating a banana",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0038_obj_banana_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_083",
+    "video_id": "013_0038",
+    "video_path": "013/013_0038",
+    "start_time": "3:30",
+    "end_time": "5:10",
+    "description": "The user is unpacking a parcel",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0038_obj_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_084",
+    "video_id": "013_0038",
+    "video_path": "013/013_0038",
+    "start_time": "7:27",
+    "end_time": "33:30",
+    "description": "The user is preparing food ingredients",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0038_obj_ingredients_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_085",
+    "video_id": "013_0038",
+    "video_path": "013/013_0038",
+    "start_time": "34:15",
+    "end_time": "40:13",
+    "description": "The user is watching a tablet",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0038_obj_tablet_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_086",
+    "video_id": "013_0038",
+    "video_path": "013/013_0038",
+    "start_time": "40:27",
+    "end_time": "45:43",
+    "description": "The user is cooking a meal",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0038_obj_pot_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_087",
+    "video_id": "013_0038",
+    "video_path": "013/013_0038",
+    "start_time": "50:20",
+    "end_time": "58:16",
+    "description": "The user is washing dishes",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0038_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_088",
+    "video_id": "013_0039",
+    "video_path": "013/013_0039",
+    "start_time": "0:00",
+    "end_time": "12:37",
+    "description": "The user is cooking a meal",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0039_obj_pot_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_089",
+    "video_id": "013_0039",
+    "video_path": "013/013_0039",
+    "start_time": "14:22",
+    "end_time": "20:16",
+    "description": "The user is washing dishes",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0039_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_090",
+    "video_id": "013_0039",
+    "video_path": "013/013_0039",
+    "start_time": "26:07",
+    "end_time": "29:27",
+    "description": "The user goes outside to throw away the trash",
+    "place_id": "outdoor_1",
+    "objects_involved": [
+      "0039_obj_trash_bag_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_091",
+    "video_id": "013_0041",
+    "video_path": "013/013_0041",
+    "start_time": "0:00",
+    "end_time": "4:00",
+    "description": "The user is cutting a pumpkin",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0041_obj_pumpkin_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_092",
+    "video_id": "013_0041",
+    "video_path": "013/013_0041",
+    "start_time": "4:38",
+    "end_time": "8:37",
+    "description": "The user is steaming the pumpkin",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0041_obj_pumpkin_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_093",
+    "video_id": "013_0041",
+    "video_path": "013/013_0041",
+    "start_time": "8:51",
+    "end_time": "11:10",
+    "description": "The user is washing vegetables",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0041_obj_vegetables_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_094",
+    "video_id": "013_0041",
+    "video_path": "013/013_0041",
+    "start_time": "11:30",
+    "end_time": "17:30",
+    "description": "The user is tidying up the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_095",
+    "video_id": "013_0044",
+    "video_path": "013/013_0044",
+    "start_time": "0:00",
+    "end_time": "3:00",
+    "description": "The user is packing things needed for going out",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0044_obj_bag_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_096",
+    "video_id": "013_0044",
+    "video_path": "013/013_0044",
+    "start_time": "1:00",
+    "end_time": "2:20",
+    "description": "The user is cooking a meal",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0044_obj_pot_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_097",
+    "video_id": "013_0044",
+    "video_path": "013/013_0044",
+    "start_time": "6:25",
+    "end_time": "8:05",
+    "description": "The user goes out to throw away the trash",
+    "place_id": "outdoor_1",
+    "objects_involved": [
+      "0044_obj_trash_bag_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_098",
+    "video_id": "013_0044",
+    "video_path": "013/013_0044",
+    "start_time": "9:30",
+    "end_time": "10:29",
+    "description": "The user is riding an electric bike",
+    "place_id": "outdoor_1",
+    "objects_involved": [
+      "0044_obj_ebike_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_099",
+    "video_id": "013_0045",
+    "video_path": "013/013_0045",
+    "start_time": "0:00",
+    "end_time": "10:37",
+    "description": "The audio of a podcast is playing continuously in the background",
+    "place_id": "living_room_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_100",
+    "video_id": "013_0045",
+    "video_path": "013/013_0045",
+    "start_time": "0:00",
+    "end_time": "0:30",
+    "description": "The user is pouring water",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0045_obj_cup_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_101",
+    "video_id": "013_0045",
+    "video_path": "013/013_0045",
+    "start_time": "0:39",
+    "end_time": "5:32",
+    "description": "The user is tidying up the table in the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0045_obj_table_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_102",
+    "video_id": "013_0045",
+    "video_path": "013/013_0045",
+    "start_time": "5:53",
+    "end_time": "11:37",
+    "description": "The user is operating a computer",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0045_obj_computer_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_103",
+    "video_id": "013_0046",
+    "video_path": "013/013_0046",
+    "start_time": "0:00",
+    "end_time": "7:13",
+    "description": "The user is operating a computer",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0046_obj_computer_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_104",
+    "video_id": "013_0046",
+    "video_path": "013/013_0046",
+    "start_time": "7:16",
+    "end_time": "7:30",
+    "description": "The user picks up the takeout",
+    "place_id": "entrance_1",
+    "objects_involved": [
+      "0046_obj_pizza_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_105",
+    "video_id": "013_0046",
+    "video_path": "013/013_0046",
+    "start_time": "7:52",
+    "end_time": "23:41",
+    "description": "The user is eating pizza while operating the computer",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0046_obj_computer_01",
+      "0046_obj_pizza_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_106",
+    "video_id": "013_0047",
+    "video_path": "013/013_0047",
+    "start_time": "0:00",
+    "end_time": "2:13",
+    "description": "The user goes out to throw away the trash",
+    "place_id": "outdoor_1",
+    "objects_involved": [
+      "0047_obj_trash_bag_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_107",
+    "video_id": "013_0047",
+    "video_path": "013/013_0047",
+    "start_time": "2:13",
+    "end_time": "16:45",
+    "description": "The user picks up parcels at the courier station",
+    "place_id": "courier_station_1",
+    "objects_involved": [
+      "0047_obj_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_108",
+    "video_id": "013_0048",
+    "video_path": "013/013_0048",
+    "start_time": "0:00",
+    "end_time": "12:37",
+    "description": "The user is unpacking parcels",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0048_obj_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_109",
+    "video_id": "013_0048",
+    "video_path": "013/013_0048",
+    "start_time": "12:45",
+    "end_time": "20:00",
+    "description": "The user is cleaning the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0048_obj_broom_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_110",
+    "video_id": "013_0048",
+    "video_path": "013/013_0048",
+    "start_time": "23:20",
+    "end_time": "24:55",
+    "description": "The user goes out to throw away the trash",
+    "place_id": "outdoor_1",
+    "objects_involved": [
+      "0048_obj_trash_bag_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_111",
+    "video_id": "013_0048",
+    "video_path": "013/013_0048",
+    "start_time": "25:33",
+    "end_time": "27:53",
+    "description": "The user picks up new parcels",
+    "place_id": "courier_station_1",
+    "objects_involved": [
+      "0048_obj_new_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_112",
+    "video_id": "013_0048",
+    "video_path": "013/013_0048",
+    "start_time": "28:31",
+    "end_time": "31:59",
+    "description": "The user is going back home",
+    "place_id": "outdoor_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_113",
+    "video_id": "013_0049",
+    "video_path": "013/013_0049",
+    "start_time": "0:00",
+    "end_time": "6:00",
+    "description": "The user is unpacking gift boxes",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0049_obj_box_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_114",
+    "video_id": "013_0049",
+    "video_path": "013/013_0049",
+    "start_time": "7:37",
+    "end_time": "17:46",
+    "description": "The user is tidying up the table in the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_115",
+    "video_id": "013_0049",
+    "video_path": "013/013_0049",
+    "start_time": "27:01",
+    "end_time": "58:38",
+    "description": "The user is ironing two pieces of clothing",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0049_obj_clothes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_116",
+    "video_id": "013_0050",
+    "video_path": "013/013_0050",
+    "start_time": "0:00",
+    "end_time": "3:34",
+    "description": "The user is picking up a parcel at the courier station",
+    "place_id": "courier_station_1",
+    "objects_involved": [
+      "0050_obj_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_117",
+    "video_id": "013_0050",
+    "video_path": "013/013_0050",
+    "start_time": "3:35",
+    "end_time": "8:30",
+    "description": "The user is carrying the parcel back home",
+    "place_id": "stairwell_1",
+    "objects_involved": [
+      "0050_obj_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_118",
+    "video_id": "013_0051",
+    "video_path": "013/013_0051",
+    "start_time": "0:00",
+    "end_time": "27:00",
+    "description": "The user is assembling a clothes hanger stand in the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0051_obj_stand_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_119",
+    "video_id": "013_0052",
+    "video_path": "013/013_0052",
+    "start_time": "0:00",
+    "end_time": "8:45",
+    "description": "The user is washing dishes",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0052_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_120",
+    "video_id": "013_0052",
+    "video_path": "013/013_0052",
+    "start_time": "9:15",
+    "end_time": "17:00",
+    "description": "The user is cooking a meal",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0052_obj_pot_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_121",
+    "video_id": "013_0052",
+    "video_path": "013/013_0052",
+    "start_time": "18:10",
+    "end_time": "20:30",
+    "description": "The user is taking ingredients out of the refrigerator",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0052_obj_refrigerator_01",
+      "0052_obj_ingredients_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_122",
+    "video_id": "013_0052",
+    "video_path": "013/013_0052",
+    "start_time": "21:00",
+    "end_time": "22:45",
+    "description": "The user resumes cooking the meal",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0052_obj_pot_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_123",
+    "video_id": "013_0053",
+    "video_path": "013/013_0053",
+    "start_time": "0:00",
+    "end_time": "6:00",
+    "description": "The user is unpacking parcels in the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0053_obj_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_124",
+    "video_id": "013_0053",
+    "video_path": "013/013_0053",
+    "start_time": "8:00",
+    "end_time": "55:10",
+    "description": "The user is preparing food ingredients",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0053_obj_ingredients_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_125",
+    "video_id": "013_0053",
+    "video_path": "013/013_0053",
+    "start_time": "56:30",
+    "end_time": "90:00",
+    "description": "The user is cooking a meal",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0053_obj_pot_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_126",
+    "video_id": "013_0053",
+    "video_path": "013/013_0053",
+    "start_time": "92:30",
+    "end_time": "97:20",
+    "description": "The user is processing chicken wings",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0053_obj_chicken_wings_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_127",
+    "video_id": "013_0054",
+    "video_path": "013/013_0054",
+    "start_time": "0:00",
+    "end_time": "3:00",
+    "description": "The user is sweeping the floor in the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0054_obj_broom_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_128",
+    "video_id": "013_0054",
+    "video_path": "013/013_0054",
+    "start_time": "5:17",
+    "end_time": "7:06",
+    "description": "The user goes out to throw away the trash",
+    "place_id": "outdoor_1",
+    "objects_involved": [
+      "0054_obj_trash_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_129",
+    "video_id": "013_0054",
+    "video_path": "013/013_0054",
+    "start_time": "8:04",
+    "end_time": "9:15",
+    "description": "The user picks up a parcel at the courier station",
+    "place_id": "courier_station_1",
+    "objects_involved": [
+      "0054_obj_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_130",
+    "video_id": "013_0061",
+    "video_path": "013/013_0061",
+    "start_time": "0:00",
+    "end_time": "5:30",
+    "description": "The user is preparing ingredients",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0061_obj_ingredients_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_131",
+    "video_id": "013_0061",
+    "video_path": "013/013_0061",
+    "start_time": "5:35",
+    "end_time": "40:39",
+    "description": "The user is cooking a meal",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0061_obj_pot_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_132",
+    "video_id": "013_0061",
+    "video_path": "013/013_0061",
+    "start_time": "44:27",
+    "end_time": "57:46",
+    "description": "The user is washing dishes",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0061_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_133",
+    "video_id": "013_0061",
+    "video_path": "013/013_0061",
+    "start_time": "58:00",
+    "end_time": "65:00",
+    "description": "The user is tidying up the kitchen counter",
+    "place_id": "kitchen_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_134",
+    "video_id": "013_0062",
+    "video_path": "013/013_0062",
+    "start_time": "0:00",
+    "end_time": "33:00",
+    "description": "The audio of a podcast plays throughout the video",
+    "place_id": "",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_135",
+    "video_id": "013_0062",
+    "video_path": "013/013_0062",
+    "start_time": "0:00",
+    "end_time": "14:00",
+    "description": "The user is washing dishes in the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0062_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_136",
+    "video_id": "013_0062",
+    "video_path": "013/013_0062",
+    "start_time": "16:30",
+    "end_time": "25:04",
+    "description": "The user is organizing kitchen supplies",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0062_obj_supplies_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_137",
+    "video_id": "013_0062",
+    "video_path": "013/013_0062",
+    "start_time": "26:38",
+    "end_time": "29:14",
+    "description": "The user is sweeping the floor in the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0062_obj_broom_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_138",
+    "video_id": "013_0063",
+    "video_path": "013/013_0063",
+    "start_time": "0:00",
+    "end_time": "3:29",
+    "description": "The user goes outside to throw away the trash",
+    "place_id": "outdoor_1",
+    "objects_involved": [
+      "0063_obj_trash_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_139",
+    "video_id": "013_0063",
+    "video_path": "013/013_0063",
+    "start_time": "5:00",
+    "end_time": "11:50",
+    "description": "The user is busy with various tasks inside the house",
+    "place_id": "living_room_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_140",
+    "video_id": "013_0064",
+    "video_path": "013/013_0064",
+    "start_time": "0:00",
+    "end_time": "19:00",
+    "description": "Music plays continuously in the background",
+    "place_id": "",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_141",
+    "video_id": "013_0064",
+    "video_path": "013/013_0064",
+    "start_time": "0:00",
+    "end_time": "7:18",
+    "description": "The user is organizing clothes",
+    "place_id": "bedroom_1",
+    "objects_involved": [
+      "0064_obj_clothes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_142",
+    "video_id": "013_0064",
+    "video_path": "013/013_0064",
+    "start_time": "13:48",
+    "end_time": "15:06",
+    "description": "The user is combing their hair",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0064_obj_comb_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_143",
+    "video_id": "013_0064",
+    "video_path": "013/013_0064",
+    "start_time": "16:40",
+    "end_time": "18:00",
+    "description": "The user is tidying the desk",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0064_obj_desk_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_144",
+    "video_id": "013_0066",
+    "video_path": "013/013_0066",
+    "start_time": "0:00",
+    "end_time": "6:50",
+    "description": "The user is going upstairs back home",
+    "place_id": "stairwell_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_145",
+    "video_id": "013_0066",
+    "video_path": "013/013_0066",
+    "start_time": "9:10",
+    "end_time": "32:48",
+    "description": "The user is washing dishes in the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0066_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_146",
+    "video_id": "013_0066",
+    "video_path": "013/013_0066",
+    "start_time": "33:08",
+    "end_time": "36:53",
+    "description": "The user is sweeping the floor in the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0066_obj_broom_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_147",
+    "video_id": "013_0066",
+    "video_path": "013/013_0066",
+    "start_time": "38:40",
+    "end_time": "40:00",
+    "description": "The user is washing strawberries",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0066_obj_strawberries_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_148",
+    "video_id": "013_0067",
+    "video_path": "013/013_0067",
+    "start_time": "0:00",
+    "end_time": "3:28",
+    "description": "The user is going downstairs to throw away the trash",
+    "place_id": "stairwell_1",
+    "objects_involved": [
+      "0067_obj_trash_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_149",
+    "video_id": "013_0067",
+    "video_path": "013/013_0067",
+    "start_time": "4:10",
+    "end_time": "9:06",
+    "description": "The user is picking up parcels at the courier station",
+    "place_id": "courier_station_1",
+    "objects_involved": [
+      "0067_obj_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_150",
+    "video_id": "013_0067",
+    "video_path": "013/013_0067",
+    "start_time": "10:00",
+    "end_time": "13:14",
+    "description": "The user is going back home",
+    "place_id": "stairwell_1",
+    "objects_involved": [
+      "0067_obj_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_151",
+    "video_id": "013_0068",
+    "video_path": "013/013_0068",
+    "start_time": "0:00",
+    "end_time": "27:00",
+    "description": "The user is preparing various ingredients for a meal",
+    "place_id": "kitchen_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_152",
+    "video_id": "013_0068",
+    "video_path": "013/013_0068",
+    "start_time": "0:00",
+    "end_time": "3:16",
+    "description": "The user is boiling meat",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0068_obj_meat_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_153",
+    "video_id": "013_0068",
+    "video_path": "013/013_0068",
+    "start_time": "3:20",
+    "end_time": "5:45",
+    "description": "The user is processing ginger",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0068_obj_ginger_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_154",
+    "video_id": "013_0068",
+    "video_path": "013/013_0068",
+    "start_time": "5:51",
+    "end_time": "8:46",
+    "description": "The user is steaming rice",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0068_obj_rice_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_155",
+    "video_id": "013_0068",
+    "video_path": "013/013_0068",
+    "start_time": "9:18",
+    "end_time": "18:14",
+    "description": "The user is cutting peppers of four different colors",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0068_obj_peppers_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_156",
+    "video_id": "013_0068",
+    "video_path": "013/013_0068",
+    "start_time": "18:51",
+    "end_time": "23:00",
+    "description": "The user is processing yam",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0068_obj_yam_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_157",
+    "video_id": "013_0068",
+    "video_path": "013/013_0068",
+    "start_time": "23:15",
+    "end_time": "27:00",
+    "description": "The user is cutting meat",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0068_obj_meat_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_158",
+    "video_id": "013_0069",
+    "video_path": "013/013_0069",
+    "start_time": "0:00",
+    "end_time": "11:00",
+    "description": "The user is stir-frying a dish",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0069_obj_wok_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_159",
+    "video_id": "013_0069",
+    "video_path": "013/013_0069",
+    "start_time": "11:52",
+    "end_time": "16:06",
+    "description": "The user is stewing meat",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0069_obj_stewpot_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_160",
+    "video_id": "013_0070",
+    "video_path": "013/013_0070",
+    "start_time": "0:00",
+    "end_time": "5:30",
+    "description": "The user is stir-frying vegetables",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0070_obj_veg_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_161",
+    "video_id": "013_0070",
+    "video_path": "013/013_0070",
+    "start_time": "5:35",
+    "end_time": "10:45",
+    "description": "The user is stir-frying meat",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0070_obj_meat_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_162",
+    "video_id": "013_0071",
+    "video_path": "013/013_0071",
+    "start_time": "0:00",
+    "end_time": "12:38",
+    "description": "The user is washing dishes in the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0071_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_163",
+    "video_id": "013_0071",
+    "video_path": "013/013_0071",
+    "start_time": "14:16",
+    "end_time": "20:31",
+    "description": "The user is unpacking parcels in the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0071_obj_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_164",
+    "video_id": "013_0071",
+    "video_path": "013/013_0071",
+    "start_time": "20:40",
+    "end_time": "21:35",
+    "description": "The user is sweeping the floor in the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0071_obj_broom_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_165",
+    "video_id": "013_0071",
+    "video_path": "013/013_0071",
+    "start_time": "0:00",
+    "end_time": "23:16",
+    "description": "The audio of a podcast plays throughout the video",
+    "place_id": "",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_166",
+    "video_id": "013_0072",
+    "video_path": "013/013_0072",
+    "start_time": "0:00",
+    "end_time": "30:00",
+    "description": "The user is cooking a meal",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0072_obj_pot_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_167",
+    "video_id": "013_0072",
+    "video_path": "013/013_0072",
+    "start_time": "31:00",
+    "end_time": "44:57",
+    "description": "The user is washing dishes",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0072_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_168",
+    "video_id": "013_0072",
+    "video_path": "013/013_0072",
+    "start_time": "50:03",
+    "end_time": "55:48",
+    "description": "The user is boiling milk",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0072_obj_milk_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_169",
+    "video_id": "013_0072",
+    "video_path": "013/013_0072",
+    "start_time": "59:08",
+    "end_time": "62:14",
+    "description": "The user is washing the pot",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0072_obj_pot_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_170",
+    "video_id": "013_0072",
+    "video_path": "013/013_0072",
+    "start_time": "62:53",
+    "end_time": "64:24",
+    "description": "The user is organizing clothes",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0072_obj_clothes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_171",
+    "video_id": "013_0073",
+    "video_path": "013/013_0073",
+    "start_time": "0:00",
+    "end_time": "18:00",
+    "description": "The user is washing dishes in the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0073_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_172",
+    "video_id": "013_0073",
+    "video_path": "013/013_0073",
+    "start_time": "20:23",
+    "end_time": "24:36",
+    "description": "The user is steaming rice using a cooker",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0073_obj_rice_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_173",
+    "video_id": "013_0073",
+    "video_path": "013/013_0073",
+    "start_time": "26:26",
+    "end_time": "27:43",
+    "description": "The user is preparing to cut meat on a cutting board",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0073_obj_meat_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_174",
+    "video_id": "013_0074",
+    "video_path": "013/013_0074",
+    "start_time": "0:00",
+    "end_time": "10:00",
+    "description": "The user is washing dishes in the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0074_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_175",
+    "video_id": "013_0074",
+    "video_path": "013/013_0074",
+    "start_time": "11:11",
+    "end_time": "11:54",
+    "description": "The user is serving rice into a bowl",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0074_obj_rice_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_176",
+    "video_id": "013_0074",
+    "video_path": "013/013_0074",
+    "start_time": "13:45",
+    "end_time": "15:40",
+    "description": "The user goes out to throw away the trash",
+    "place_id": "outdoor_1",
+    "objects_involved": [
+      "0074_obj_trash_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_177",
+    "video_id": "013_0074",
+    "video_path": "013/013_0074",
+    "start_time": "15:50",
+    "end_time": "17:30",
+    "description": "The user is going back home via the stairwell",
+    "place_id": "stairwell_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_178",
+    "video_id": "013_0076",
+    "video_path": "013/013_0076",
+    "start_time": "0:00",
+    "end_time": "3:10",
+    "description": "The user is unpacking parcels",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0076_obj_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_179",
+    "video_id": "013_0076",
+    "video_path": "013/013_0076",
+    "start_time": "5:08",
+    "end_time": "7:20",
+    "description": "The user is washing strawberries",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0076_obj_strawberries_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_180",
+    "video_id": "013_0076",
+    "video_path": "013/013_0076",
+    "start_time": "7:44",
+    "end_time": "13:17",
+    "description": "The user is making a milkshake",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0076_obj_blender_01",
+      "0076_obj_strawberries_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_181",
+    "video_id": "013_0076",
+    "video_path": "013/013_0076",
+    "start_time": "15:02",
+    "end_time": "19:13",
+    "description": "The user is boiling meat",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0076_obj_meat_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_182",
+    "video_id": "013_0076",
+    "video_path": "013/013_0076",
+    "start_time": "19:14",
+    "end_time": "26:40",
+    "description": "The user is washing dishes",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0076_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_183",
+    "video_id": "013_0076",
+    "video_path": "013/013_0076",
+    "start_time": "32:27",
+    "end_time": "42:17",
+    "description": "The user is stir-frying a dish",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0076_obj_wok_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_184",
+    "video_id": "013_0076",
+    "video_path": "013/013_0076",
+    "start_time": "42:23",
+    "end_time": "43:04",
+    "description": "The user is washing the pot",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0076_obj_wok_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_185",
+    "video_id": "013_0076",
+    "video_path": "013/013_0076",
+    "start_time": "51:41",
+    "end_time": "61:05",
+    "description": "The user continues preparing a meal",
+    "place_id": "kitchen_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_186",
+    "video_id": "013_0077",
+    "video_path": "013/013_0077",
+    "start_time": "0:00",
+    "end_time": "15:30",
+    "description": "The user is washing dishes in the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0077_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_187",
+    "video_id": "013_0077",
+    "video_path": "013/013_0077",
+    "start_time": "21:58",
+    "end_time": "27:09",
+    "description": "The user is washing a pot in the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0077_obj_pot_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_188",
+    "video_id": "013_0077",
+    "video_path": "013/013_0077",
+    "start_time": "28:39",
+    "end_time": "31:00",
+    "description": "The user is processing a radish",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0077_obj_radish_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_189",
+    "video_id": "013_0078",
+    "video_path": "013/013_0078",
+    "start_time": "0:00",
+    "end_time": "2:48",
+    "description": "The user is washing dishes and a pot in the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0078_obj_pot_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_190",
+    "video_id": "013_0078",
+    "video_path": "013/013_0078",
+    "start_time": "5:14",
+    "end_time": "14:04",
+    "description": "The user is ironing trousers on a table in the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0078_obj_pants_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_191",
+    "video_id": "013_0078",
+    "video_path": "013/013_0078",
+    "start_time": "17:29",
+    "end_time": "18:58",
+    "description": "The user is going downstairs to throw away the trash",
+    "place_id": "outdoor_1",
+    "objects_involved": [
+      "0078_obj_trash_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_192",
+    "video_id": "013_0078",
+    "video_path": "013/013_0078",
+    "start_time": "19:25",
+    "end_time": "22:31",
+    "description": "The user is going upstairs back home",
+    "place_id": "stairwell_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_193",
+    "video_id": "013_0079",
+    "video_path": "013/013_0079",
+    "start_time": "0:00",
+    "end_time": "3:45",
+    "description": "The user is collecting trash inside the house",
+    "place_id": "living_room_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_194",
+    "video_id": "013_0079",
+    "video_path": "013/013_0079",
+    "start_time": "3:47",
+    "end_time": "5:20",
+    "description": "The user goes out to throw away the trash",
+    "place_id": "outdoor_1",
+    "objects_involved": [
+      "0079_obj_trash_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_195",
+    "video_id": "013_0079",
+    "video_path": "013/013_0079",
+    "start_time": "6:52",
+    "end_time": "12:11",
+    "description": "The user picks up a parcel from the courier station",
+    "place_id": "outdoor_1",
+    "objects_involved": [
+      "0079_obj_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_196",
+    "video_id": "013_0079",
+    "video_path": "013/013_0079",
+    "start_time": "12:22",
+    "end_time": "15:24",
+    "description": "The user is going back home",
+    "place_id": "stairwell_1",
+    "objects_involved": [
+      "0079_obj_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_197",
+    "video_id": "013_0080",
+    "video_path": "013/013_0080",
+    "start_time": "0:54",
+    "end_time": "6:57",
+    "description": "The user is cleaning the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0080_obj_tool_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_198",
+    "video_id": "013_0080",
+    "video_path": "013/013_0080",
+    "start_time": "7:00",
+    "end_time": "11:16",
+    "description": "The user is unpacking parcels in the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0080_obj_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_199",
+    "video_id": "013_0081",
+    "video_path": "013/013_0081",
+    "start_time": "0:00",
+    "end_time": "11:22",
+    "description": "The user is preparing ingredients in the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0081_obj_ingredients_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_200",
+    "video_id": "013_0081",
+    "video_path": "013/013_0081",
+    "start_time": "12:06",
+    "end_time": "16:47",
+    "description": "The user is washing dishes in the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0081_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_201",
+    "video_id": "013_0081",
+    "video_path": "013/013_0081",
+    "start_time": "20:09",
+    "end_time": "25:11",
+    "description": "The user is playing on the computer in the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0081_obj_pc_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_202",
+    "video_id": "013_0082",
+    "video_path": "013/013_0082",
+    "start_time": "0:00",
+    "end_time": "2:23",
+    "description": "The user is playing on a tablet in the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0082_obj_tablet_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_203",
+    "video_id": "013_0082",
+    "video_path": "013/013_0082",
+    "start_time": "2:42",
+    "end_time": "3:30",
+    "description": "The user is organizing clothes in the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0082_obj_clothes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_204",
+    "video_id": "013_0082",
+    "video_path": "013/013_0082",
+    "start_time": "6:15",
+    "end_time": "26:01",
+    "description": "The user is washing dishes in the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0082_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_205",
+    "video_id": "013_0082",
+    "video_path": "013/013_0082",
+    "start_time": "27:40",
+    "end_time": "28:58",
+    "description": "The user is unpacking parcels in the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0082_obj_parcel_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_206",
+    "video_id": "013_0083",
+    "video_path": "013/013_0083",
+    "start_time": "0:00",
+    "end_time": "6:04",
+    "description": "The user is preparing ingredients in the kitchen",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0083_obj_ingredients_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_207",
+    "video_id": "013_0083",
+    "video_path": "013/013_0083",
+    "start_time": "9:18",
+    "end_time": "23:05",
+    "description": "The user is organizing items in the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0083_obj_items_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_208",
+    "video_id": "013_0085",
+    "video_path": "013/013_0085",
+    "start_time": "0:00",
+    "end_time": "7:19",
+    "description": "The user is washing dishes in the kitchen sink",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0085_obj_dishes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_209",
+    "video_id": "013_0085",
+    "video_path": "013/013_0085",
+    "start_time": "8:23",
+    "end_time": "11:17",
+    "description": "The user is washing a pot in the kitchen sink",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0085_obj_pot_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_210",
+    "video_id": "013_0085",
+    "video_path": "013/013_0085",
+    "start_time": "11:43",
+    "end_time": "16:16",
+    "description": "The user is cleaning the kitchen sink itself",
+    "place_id": "kitchen_1",
+    "objects_involved": [
+      "0085_obj_sink_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2026-02-28",
+      "qc_status": "accepted"
+    }
+  }
+] 

@@ -1,0 +1,2196 @@
+[
+  {
+    "video_id": "019_0001",
+    "video_path": "019/019_0001",
+    "object_category": "handbag",
+    "object_id": "0001_obj_handbag_01",
+    "time": "04:18",
+    "location": {
+      "place_id": "restaurant_01",
+      "place_type": "restaurant",
+      "description": "on the yellow table in the restaurant"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+ {
+    "video_id": "019_0001",
+    "video_path": "019/019_0001",
+    "object_category": "tissue",
+    "object_id": "0001_obj_tissue_01",
+    "time": "04:33",
+    "location": {
+      "place_id": "restaurant_01",
+      "place_type": "restaurant",
+      "description": "on the yellow table in the restaurant"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+{
+    "video_id": "019_0001",
+    "video_path": "019/019_0001",
+    "object_category": "smartphone",
+    "object_id": "0001_obj_smartphone_01",
+    "time": "05:51",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+ },
+{
+    "video_id": "019_0001",
+    "video_path": "019/019_0001",
+    "object_category": "schoolbag",
+    "object_id": "0001_obj_schoolbag_01",
+    "time": "11:08",
+    "location": {
+      "place_id": "restaurant_01",
+      "place_type": "restaurant",
+      "description": "On a white stool"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+},
+{
+    "video_id": "019_0001",
+    "video_path": "019/019_0001",
+    "object_category": "storage box",
+    "object_id": "0001_obj_storage_box_01",
+    "time": "11:26",
+    "location": {
+      "place_id": "restaurant_01_",
+      "place_type": "restaurant",
+      "description": "on the yellow table in the restaurant"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+},
+{
+    "video_id": "019_0001",
+    "video_path": "019/019_0001",
+    "object_category": "Charger",
+    "object_id": "0001_obj_Charger_01",
+    "time": "11:38",
+    "location": {
+      "place_id": "0001_obj_schoolbag_01",
+      "place_type": "schoolbag",
+      "description": "In the largest compartment of the schoolbag"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+},
+{
+    "video_id": "019_0001",
+    "video_path": "019/019_0001",
+    "object_category": "tissue",
+    "object_id": "0001_obj_tissue_02",
+    "time": "11:42",
+    "location": {
+      "place_id": "restaurant_01",
+      "place_type": "restaurant",
+      "description": "on the yellow table in the restaurant"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+},
+{
+    "video_id": "019_0001",
+    "video_path": "019/019_0001",
+    "object_category": "condiment bottle",
+    "object_id": "0001_obj_condiment_bottle_01_",
+    "time": "11:54",
+    "location": {
+      "place_id": "restaurant_01",
+      "place_type": "restaurant",
+      "description": "On black storage box on the yellow table"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+},
+{
+    "video_id": "019_0001",
+    "video_path": "019/019_0001",
+    "object_category": "Bluetooth earphones",
+    "object_id": "0001_obj_Bluetooth_earphones_01",
+    "time": "27:59",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+},
+{
+    "video_id": "019_0002",
+    "video_path": "019/019_0002",
+    "object_category": "schoolbag",
+    "object_id": "0001_obj_schoolbag_01",
+    "time": "00:15",
+    "location": {
+      "place_id": "restaurant_01",
+      "place_type": "restaurant",
+      "description": "On a white stool"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0002",
+    "video_path": "019/019_0002",
+    "object_category": "smartphone",
+    "object_id": "0001_obj_smartphone_01",
+    "time": "00:15",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+{
+    "video_id": "019_0003",
+    "video_path": "019/019_0003",
+    "object_category": "schoolbag",
+    "object_id": "0001_obj_schoolbag_01",
+    "time": "00:15",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+
+{
+    "video_id": "019_0003",
+    "video_path": "019/019_0003",
+    "object_category": "headphones",
+    "object_id": "0003_obj_headphones_01",
+    "time": "06:00",
+    "location": {
+      "place_id": "0001_obj_schoolbag_01",
+      "place_type": "schoolbag",
+      "description": "In the largest compartment of the schoolbag"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-7",
+      "qc_status": "accepted"
+    }
+},
+{
+    "video_id": "019_0004",
+    "video_path": "019/019_0004",
+    "object_category": "electric bike",
+    "object_id": "0004_obj_electric_bike_01",
+    "time": "01:13",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0004",
+    "video_path": "019/019_0004",
+    "object_category": "key",
+    "object_id": "0004_obj_key_01",
+    "time": "02:50",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+ {
+    "video_id": "019_0004",
+    "video_path": "019/019_0004",
+    "object_category": "Charger",
+    "object_id": "0004_obj_Charger_02",
+    "time": "03:41",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+{
+    "video_id": "019_0004",
+    "video_path": "019/019_0004",
+    "object_category": "cardboard box",
+    "object_id": "0004_obj_cardboard_box_01",
+    "time": "05:14",
+    "location": {
+      "place_id": "dining_hall_01",
+      "place_type": "dining hall",
+      "description": "The cardboard box is located below the store counter (right ordering table), on the ground near the wall"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0004",
+    "video_path": "019/019_0004",
+    "object_category": "fire extinguisher",
+    "object_id": "0004_obj_fire_extinguisher_01",
+    "time": "05:23",
+    "location": {
+      "place_id": "dining_hall_01",
+      "place_type": "dining hall",
+      "description": "Below the metal cabinet on the wall of the fire hydrant, near the ground "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0004",
+    "video_path": "019/019_0004",
+    "object_category": "Warning sign",
+    "object_id": "0004_obj_Warning_sign_01",
+    "time": "05:23",
+    "location": {
+      "place_id": "dining_hall_01",
+      "place_type": "dining hall",
+      "description": " Next to the fire extinguisher"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+ {
+    "video_id": "019_0004",
+    "video_path": "019/019_0004",
+    "object_category": "potted plant",
+    "object_id": "0004_obj_potted_plant_01",
+    "time": "05:23",
+    "location": {
+      "place_id": "dining_hall_01",
+      "place_type": "dining hall",
+      "description": " The potted plant is located in the corner area on the left side of the screen, on the ground between the white wall and the store counter, next to the wall"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  } ,
+ {
+    "video_id": "019_0004",
+    "video_path": "019/019_0004",
+    "object_category": "sofa",
+    "object_id": "0004_obj_sofa_01",
+    "time": "23:55",
+    "location": {
+      "place_id": "workstation_01",
+      "place_type": "workstation",
+      "description": " Behind the desk where files are stacked, in front of the cabinet with a glass door in the storage cabinet"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  } ,
+  {
+    "video_id": "019_0004",
+    "video_path": "019/019_0004",
+    "object_category": "trophy",
+    "object_id": "0004_obj_trophy_01",
+    "time": "23:55",
+    "location": {
+      "place_id": "workstation_01",
+      "place_type": "workstation",
+      "description": " The trophy is on top of the storage cabinet"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0004",
+    "video_path": "019/019_0004",
+    "object_category": "desktop computer",
+    "object_id": "0004_obj_desktop_computer_01",
+    "time": "25:40",
+    "location": {
+      "place_id": "workstation_01",
+      "place_type": "workstation",
+      "description": " On the right side of the office desk printer"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0004",
+    "video_path": "019/019_0004",
+    "object_category": "printer",
+    "object_id": "0004_obj_printer_01",
+    "time": "25:41",
+    "location": {
+      "place_id": "workstation_01",
+      "place_type": "workstation",
+      "description": "On the left side of the desktop computer "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+ {
+    "video_id": "019_0005",
+    "video_path": "019/019_0005",
+    "object_category": "glasses",
+    "object_id": "0005_obj_glasses_01",
+    "time": "00:09",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": "At the dining table "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0005",
+    "video_path": "019/019_0005",
+    "object_category": "sunglasses",
+    "object_id": "0005_obj_sunglasses_01",
+    "time": "00:11",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": "At the dining table "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  } ,
+  {
+    "video_id": "019_0005",
+    "video_path": "019/019_0005",
+    "object_category": "bottle",
+    "object_id": "0005_obj_bottle_01",
+    "time": "00:12",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": "At the dining table "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+ {
+    "video_id": "019_0005",
+    "video_path": "019/019_0005",
+    "object_category": "Drawing ruler",
+    "object_id": "0005_obj_Drawing_ruler_01",
+    "time": "01:09",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": "At the dining table "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0005",
+    "video_path": "019/019_0005",
+    "object_category": "dining table",
+    "object_id": "0005_obj_dining_table_01",
+    "time": "02:46",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": "In the dining room "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0005",
+    "video_path": "019/019_0005",
+    "object_category": "smartphone",
+    "object_id": "0001_obj_smartphone_01",
+    "time": "05:18",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+{
+    "video_id": "019_0005",
+    "video_path": "019/019_0005",
+    "object_category": "handbag",
+    "object_id": "0001_obj_handbag_01",
+    "time": "06:40",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+{
+    "video_id": "019_0005",
+    "video_path": "019/019_0005",
+    "object_category": "fridge",
+    "object_id": "0005_obj_fridge_01",
+    "time": "05:40",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " On the ground at the dining room"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0005",
+    "video_path": "019/019_0005",
+    "object_category": "shovel",
+    "object_id": "0005_obj_shovel_01",
+    "time": "07:31",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " On top of fridge "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+ {
+    "video_id": "019_0005",
+    "video_path": "019/019_0005",
+    "object_category": "cup",
+    "object_id": "0005_obj_cup_01",
+    "time": "07:36",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " On the storage rack "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    } 
+  },
+  {
+    "video_id": "019_0005",
+    "video_path": "019/019_0005",
+    "object_category": "condiment bottle",
+    "object_id": "0005_obj_condiment_bottle_02",
+    "time": "08:15",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " On top of fridge "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0005",
+    "video_path": "019/019_0005",
+    "object_category": "garbage can",
+    "object_id": "0005_obj_garbage_can_01",
+    "time": "09:07",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " On the floor next to the dining table "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0005",
+    "video_path": "019/019_0005",
+    "object_category": "smartphone",
+    "object_id": "0001_obj_smartphone_01",
+    "time": "11:14",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0005",
+    "video_path": "019/019_0005",
+    "object_category": "electric kettle",
+    "object_id": "0005_obj_electric_kettle_01",
+    "time": "12:22",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": "On the stool next to the dining table "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0005",
+    "video_path": "019/019_0005",
+    "object_category": "air fryer",
+    "object_id": "0005_obj_air_fryer_01",
+    "time": "12:52",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": "On the stool next to the dining table "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0005",
+    "video_path": "019/019_0005",
+    "object_category": "laptop",
+    "object_id": "0005_obj_laptop_01",
+    "time": "20:41",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": "On the dining table "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0006",
+    "video_path": "019/019_0006",
+    "object_category": "desk lamp",
+    "object_id": "0006_obj_desk_lamp_01",
+    "time": "4:00",
+    "location": {
+      "place_id": "bed_room_01",
+      "place_type": "bed room",
+      "description": "On the table "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0006",
+    "video_path": "019/019_0006",
+    "object_category": "table",
+    "object_id": "0006_obj_table_01",
+    "time": "4:01",
+    "location": {
+      "place_id": "bed_room_01",
+      "place_type": "bed room",
+      "description": " in the bedroom"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0006",
+    "video_path": "019/019_0006",
+    "object_category": "bottle",
+    "object_id": "0006_obj_bottle_02",
+    "time": "4:01",
+    "location": {
+      "place_id": "bed_room_01",
+      "place_type": "bed room",
+      "description": "On the table "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0006",
+    "video_path": "019/019_0006",
+    "object_category": "dining table",
+    "object_id": "0005_obj_dining_table_01",
+    "time": "04:05",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": "In the dining room "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0006",
+    "video_path": "019/019_0006",
+    "object_category": "shoes",
+    "object_id": "0006_obj_shoes_01",
+    "time": "4:36",
+    "location": {
+      "place_id": "bed_room_01",
+      "place_type": "bed room",
+      "description": " in the bedroom ground "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0006",
+    "video_path": "019/019_0006",
+    "object_category": "storage rack",
+    "object_id": "0006_obj_storage_rack_01",
+    "time": "5:13",
+    "location": {
+      "place_id": "bed_room_01",
+      "place_type": "bed room",
+      "description": " On the table "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0006",
+    "video_path": "019/019_0006",
+    "object_category": "printer",
+    "object_id": "0006_obj_printer_02",
+    "time": "10:50",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living room",
+      "description": " On the TV cabinet in the living room "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0006",
+    "video_path": "019/019_0006",
+    "object_category": "air conditioner",
+    "object_id": "0006_obj_air_conditioner_01",
+    "time": "14:04",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living room",
+      "description": "The wall in the living room  "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0006",
+    "video_path": "019/019_0006",
+    "object_category": "laptop",
+    "object_id": "0006_obj_laptop_02",
+    "time": "15:04",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living room",
+      "description": " On the TV cabinet in the living room "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0006",
+    "video_path": "019/019_0006",
+    "object_category": "stapler",
+    "object_id": "0006_obj_stapler_01",
+    "time": "19:33",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living room",
+      "description": " On the TV cabinet in the living room "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0007",
+    "video_path": "019/019_0007",
+    "object_category": "laptop",
+    "object_id": "0006_obj_laptop_02",
+    "time": "04:25",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living room",
+      "description": " On the TV cabinet in the living room "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0007",
+    "video_path": "019/019_0007",
+    "object_category": "foam box",
+    "object_id": "0007_obj_foam_box_01",
+    "time": "04:41",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " On the top of the dining room cabinet "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0007",
+    "video_path": "019/019_0007",
+    "object_category": "stapler",
+    "object_id": "0007_obj_stapler_02",
+    "time": "07:24",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": "On the dining table "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0007",
+    "video_path": "019/019_0007",
+    "object_category": "stool",
+    "object_id": "0007_obj_stool_01",
+    "time": "11:01",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living room",
+      "description": "On the floor of the living room "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0007",
+    "video_path": "019/019_0007",
+    "object_category": "Bucket water bucket",
+    "object_id": "0007_obj_Bucket_water_bucket_01",
+    "time": "24:04",
+    "location": {
+      "place_id": "dormitory_building_03",
+      "place_type": "dormitory_building",
+      "description": "The hallway is close to the entrance of the dormitory "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0007",
+    "video_path": "019/019_0007",
+    "object_category": "Bucket water bucket",
+    "object_id": "0007_obj_Bucket_water_bucket_02",
+    "time": "24:05",
+    "location": {
+      "place_id": "dormitory_building_03",
+      "place_type": "dormitory_building",
+      "description": "The hallway is close to the entrance of the dormitory "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0008",
+    "video_path": "019/019_0008",
+    "object_category": "cup",
+    "object_id": "0008_obj_cup_02",
+    "time": "00:42",
+    "location": {
+      "place_id": "bathroom_01",
+      "place_type": "bathroom",
+      "description": "On the glass shelf above the washbasin "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0008",
+    "video_path": "019/019_0008",
+    "object_category": "towel",
+    "object_id": "0008_obj_towel_01",
+    "time": "02:05",
+    "location": {
+      "place_id": "bathroom_01",
+      "place_type": "bathroom",
+      "description": "Hang the towel on the doorknob "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0008",
+    "video_path": "019/019_0008",
+    "object_category": "laptop",
+    "object_id": "0006_obj_laptop_02",
+    "time": "04:23",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living room",
+      "description": " On the TV cabinet in the living room "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0008",
+    "video_path": "019/019_0008",
+    "object_category": "smartphone",
+    "object_id": "0001_obj_smartphone_01",
+    "time": "08:20",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0008",
+    "video_path": "019/019_0008",
+    "object_category": "washing machine",
+    "object_id": "0008_obj_washing_machine_01",
+    "time": "08:48",
+    "location": {
+      "place_id": "balcony_01",
+      "place_type": "balcony",
+      "description": "The washing machine is located on the balcony against the wall "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0009",
+    "video_path": "019/019_0009",
+    "object_category": "drum set",
+    "object_id": "0009_obj_drum_set_01",
+    "time": "00:01",
+    "location": {
+      "place_id": "music_hoom_01",
+      "place_type": "music hoom",
+      "description": "In the music room by the corner of the wall "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0009",
+    "video_path": "019/019_0009",
+    "object_category": "whiteboard",
+    "object_id": "0009_obj_whiteboard_01",
+    "time": "00:02",
+    "location": {
+      "place_id": "music_hoom_01",
+      "place_type": "music hoom",
+      "description": "Beside the drum set "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0009",
+    "video_path": "019/019_0009",
+    "object_category": "guitar",
+    "object_id": "0009_obj_guitar_01",
+    "time": "00:31",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": " "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0010",
+    "video_path": "019/019_0010",
+    "object_category": "pocketknife",
+    "object_id": "0010_obj_pocketknife_01",
+    "time": "00:10",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+{
+    "video_id": "019_0010",
+    "video_path": "019/019_0010",
+    "object_category": "mop",
+    "object_id": "0010_obj_mop_01",
+    "time": "00:10",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " Leaning against the refrigerator"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0010",
+    "video_path": "019/019_0010",
+    "object_category": "fridge",
+    "object_id": "0005_obj_fridge_01",
+    "time": "00:20",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " On the ground at the dining room"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0010",
+    "video_path": "019/019_0010",
+    "object_category": "cardboard box",
+    "object_id": "0010_obj_cardboard_box_02",
+    "time": "00:24",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": " On the ground at the entrance"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0010",
+    "video_path": "019/019_0010",
+    "object_category": "cardboard box",
+    "object_id": "0010_obj_cardboard_box_03",
+    "time": "00:24",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": " On the ground at the entrance"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0010",
+    "video_path": "019/019_0010",
+    "object_category": "cardboard box",
+    "object_id": "0010_obj_cardboard_box_04",
+    "time": "02:28",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " On the ground at the dining room"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0010",
+    "video_path": "019/019_0010",
+    "object_category": "cardboard box",
+    "object_id": "0010_obj_cardboard_box_05",
+    "time": "04:06",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": "On the ground at the entrance  "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0011",
+    "video_path": "019/019_0011",
+    "object_category": "washing machine",
+    "object_id": "0008_obj_washing_machine_01",
+    "time": "00:20",
+    "location": {
+      "place_id": "balcony_01",
+      "place_type": "balcony",
+      "description": "The washing machine is located on the balcony against the wall "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0011",
+    "video_path": "019/019_0011",
+    "object_category": "cup",
+    "object_id": "0008_obj_cup_02",
+    "time": "00:48",
+    "location": {
+      "place_id": "bathroom_01",
+      "place_type": "bathroom",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0011",
+    "video_path": "019/019_0011",
+    "object_category": "towel",
+    "object_id": "0008_obj_towel_01",
+    "time": "03:10",
+    "location": {
+      "place_id": "bathroom_01",
+      "place_type": "bathroom",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0011",
+    "video_path": "019/019_0011",
+    "object_category": "pot",
+    "object_id": "0011_obj_pot_01",
+    "time": "03:57",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living room",
+      "description": "The second to last layer of the storage rack "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0011",
+    "video_path": "019/019_0011",
+    "object_category": "photo frame",
+    "object_id": "0011_obj_photo_frame_01",
+    "time": "04:06",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": "On the dining table "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0011",
+    "video_path": "019/019_0011",
+    "object_category": "stapler",
+    "object_id": "0006_obj_stapler_01",
+    "time": "04:42",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living room",
+      "description": " On the TV cabinet in the living room "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0011",
+    "video_path": "019/019_0011",
+    "object_category": "mop",
+    "object_id": "0010_obj_mop_01",
+    "time": "06:12",
+    "location": {
+      "place_id": "bathroom_01",
+      "place_type": "bathroom",
+      "description": " in the bathroom"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0011",
+    "video_path": "019/019_0011",
+    "object_category": "water heater",
+    "object_id": "0011_obj_water_heater_01",
+    "time": "07:37",
+    "location": {
+      "place_id": "bathroom_01",
+      "place_type": "bathroom",
+      "description": "On the wall of the bathroom "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0011",
+    "video_path": "019/019_0011",
+    "object_category": "smartphone",
+    "object_id": "0001_obj_smartphone_01",
+    "time": "08:00",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0011",
+    "video_path": "019/019_0011",
+    "object_category": "ukulele",
+    "object_id": "0011_obj_ukulele_01",
+    "time": "10:58",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " On the chair at the dining table"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0011",
+    "video_path": "019/019_0011",
+    "object_category": "smartphone",
+    "object_id": "0011_obj_smartphone_02",
+    "time": "15:43",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": " "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0011",
+    "video_path": "019/019_0011",
+    "object_category": "printer",
+    "object_id": "0011_obj_printer_03",
+    "time": "18:40",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living room",
+      "description": " On the TV cabinet in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0011",
+    "video_path": "019/019_0011",
+    "object_category": "Drawing ruler",
+    "object_id": "0005_obj_Drawing_ruler_01",
+    "time": "19:06",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": "At the dining table "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+{
+    "video_id": "019_0012",
+    "video_path": "019/019_0012",
+    "object_category": "pocketknife",
+    "object_id": "0010_obj_pocketknife_01",
+    "time": "00:31",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0012",
+    "video_path": "019/019_0012",
+    "object_category": "fridge",
+    "object_id": "0005_obj_fridge_01",
+    "time": "02:59",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " On the ground at the dining room"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0012",
+    "video_path": "019/019_0012",
+    "object_category": "pocketknife",
+    "object_id": "0010_obj_pocketknife_01",
+    "time": "03:15",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0012",
+    "video_path": "019/019_0012",
+    "object_category": "smartphone",
+    "object_id": "0001_obj_smartphone_01",
+    "time": "05:32",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0012",
+    "video_path": "019/019_0012",
+    "object_category": "pocketknife",
+    "object_id": "0010_obj_pocketknife_01",
+    "time": "05:54",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": " "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0012",
+    "video_path": "019/019_0012",
+    "object_category": "washing machine",
+    "object_id": "0008_obj_washing_machine_01",
+    "time": "08:36",
+    "location": {
+      "place_id": "balcony_01",
+      "place_type": "balcony",
+      "description": "The washing machine is located on the balcony against the wall "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0012",
+    "video_path": "019/019_0012",
+    "object_category": "Charger",
+    "object_id": "0001_obj_Charger_01",
+    "time": "13:49",
+    "location": {
+      "place_id": "0001_obj_schoolbag_01",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0012",
+    "video_path": "019/019_0012",
+    "object_category": "cardboard box",
+    "object_id": "0010_obj_cardboard_box_02",
+    "time": "16:40",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": " "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0012",
+    "video_path": "019/019_0012",
+    "object_category": "cardboard box",
+    "object_id": "0010_obj_cardboard_box_03",
+    "time": "16:40",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": " "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0012",
+    "video_path": "019/019_0012",
+    "object_category": "transparent tape",
+    "object_id": "0012_obj_transparent_tape_01",
+    "time": "24:53",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": "Transparent tape behind the door"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0012",
+    "video_path": "019/019_0012",
+    "object_category": "smartphone",
+    "object_id": "0011_obj_smartphone_02",
+    "time": "27:35",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": " "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+    },
+    {
+    "video_id": "019_0013",
+    "video_path": "019/019_0013",
+    "object_category": "fridge",
+    "object_id": "0005_obj_fridge_01",
+    "time": "04:11",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " On the ground at the dining room"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0013",
+    "video_path": "019/019_0013",
+    "object_category": "air fryer",
+    "object_id": "0005_obj_air_fryer_01",
+    "time": "05:03",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": "On the stool next to the dining table "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0013",
+    "video_path": "019/019_0013",
+    "object_category": "ukulele",
+    "object_id": "0011_obj_ukulele_01",
+    "time": "05:39",
+    "location": {
+      "place_id": "bed_room_01",
+      "place_type": "bed room",
+      "description": " "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0013",
+    "video_path": "019/019_0013",
+    "object_category": "smartphone",
+    "object_id": "0001_obj_smartphone_01",
+    "time": "08:29",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0014",
+    "video_path": "019/019_0014",
+    "object_category": "garbage can",
+    "object_id": "0005_obj_garbage_can_01",
+    "time": "00:44",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " On the floor next to the dining table "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0015",
+    "video_path": "019/019_0015",
+    "object_category": "ukulele",
+    "object_id": "0011_obj_ukulele_01",
+    "time": "01:57",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0015",
+    "video_path": "019/019_0015",
+    "object_category": "tablet",
+    "object_id": "0015_obj_tablet_01",
+    "time": "01:43",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": "On the dining table "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0015",
+    "video_path": "019/019_0015",
+    "object_category": "board game",
+    "object_id": "0015_obj_board_game_01",
+    "time": "01:51",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": "On the dining table "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0015",
+    "video_path": "019/019_0015",
+    "object_category": "nail clipper",
+    "object_id": "0015_obj_nail_clipper_01",
+    "time": "04:39",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": "On the dining table "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0015",
+    "video_path": "019/019_0015",
+    "object_category": "fridge",
+    "object_id": "0005_obj_fridge_01",
+    "time": "08:13",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " On the ground at the dining room"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0015",
+    "video_path": "019/019_0015",
+    "object_category": "cup",
+    "object_id": "0015_obj_cup_03",
+    "time": "11:00",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": "On the dining table "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0015",
+    "video_path": "019/019_0015",
+    "object_category": "ukulele",
+    "object_id": "0011_obj_ukulele_01",
+    "time": "17:01",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0015",
+    "video_path": "019/019_0015",
+    "object_category": "smartphone",
+    "object_id": "0001_obj_smartphone_01",
+    "time": "19:28",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0015",
+    "video_path": "019/019_0015",
+    "object_category": "laptop",
+    "object_id": "0006_obj_laptop_02",
+    "time": "27:41",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living room",
+      "description": " On the TV cabinet in the living room "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0015",
+    "video_path": "019/019_0015",
+    "object_category": "printer",
+    "object_id": "0006_obj_printer_02",
+    "time": "29:09",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living room",
+      "description": " On the TV cabinet in the living room "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0015",
+    "video_path": "019/019_0015",
+    "object_category": "ukulele",
+    "object_id": "0011_obj_ukulele_01",
+    "time": "33:55",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0016",
+    "video_path": "019/019_0016",
+    "object_category": "schoolbag",
+    "object_id": "0001_obj_schoolbag_01",
+    "time": "00:08",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living room",
+      "description": "On the stool"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0016",
+    "video_path": "019/019_0016",
+    "object_category": "key",
+    "object_id": "0004_obj_key_01",
+    "time": "02:33",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0016",
+    "video_path": "019/019_0016",
+    "object_category": "electric bike",
+    "object_id": "0004_obj_electric_bike_01",
+    "time": "07:38",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0017",
+    "video_path": "019/019_0017",
+    "object_category": "smartphone",
+    "object_id": "0001_obj_smartphone_01",
+    "time": "05:23",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0017",
+    "video_path": "019/019_0017",
+    "object_category": "plastic bowl",
+    "object_id": "0017_obj_plastic_bowl_01",
+    "time": "07:16",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": " "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0018",
+    "video_path": "019/019_0018",
+    "object_category": "shampoo",
+    "object_id": "0018_obj_shampoo_01",
+    "time": "01:56",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": " "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0018",
+    "video_path": "019/019_0018",
+    "object_category": "smartphone",
+    "object_id": "0001_obj_smartphone_01",
+    "time": "12:54",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0018",
+    "video_path": "019/019_0018",
+    "object_category": "ukulele",
+    "object_id": "0011_obj_ukulele_01",
+    "time": "14:12",
+    "location": {
+      "place_id": "dining_room_01",
+      "place_type": "dining room",
+      "description": " "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0018",
+    "video_path": "019/019_0018",
+    "object_category": "double eyelid",
+    "object_id": "0018_obj_double_eyelid_01",
+    "time": "01:09",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": " "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0018",
+    "video_path": "019/019_0018",
+    "object_category": "mirror",
+    "object_id": "0018_obj_mirror_01",
+    "time": "04:58",
+    "location": {
+      "place_id": "bathroom_01",
+      "place_type": "bathroom",
+      "description": " "
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0019",
+    "video_path": "019/019_0019",
+    "object_category": "smartphone",
+    "object_id": "0001_obj_smartphone_01",
+    "time": "00:02",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0024",
+    "video_path": "019/019_0024",
+    "object_category": "fridge",
+    "object_id": "0005_obj_fridge_01",
+    "time": "01:09",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0025",
+    "video_path": "019/019_0025",
+    "object_category": "laptop",
+    "object_id": "0006_obj_laptop_02",
+    "time": "20:09",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0028",
+    "video_path": "019/019_0028",
+    "object_category": "cup",
+    "object_id": "0008_obj_cup_02",
+    "time": "01:21",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0028",
+    "video_path": "019/019_0028",
+    "object_category": "towel",
+    "object_id": "0008_obj_towel_01",
+    "time": "02:03",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0029",
+    "video_path": "019/019_0029",
+    "object_category": "stapler",
+    "object_id": "0007_obj_stapler_02",
+    "time": "00:07",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0029",
+    "video_path": "019/019_0029",
+    "object_category": "smartphone",
+    "object_id": "0001_obj_smartphone_01",
+    "time": "04:02",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "019_0030",
+    "video_path": "019/019_0030",
+    "object_category": "laptop",
+    "object_id": "0006_obj_laptop_02",
+    "time": "12:05",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  }
+  ]

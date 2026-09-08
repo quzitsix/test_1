@@ -1,0 +1,278 @@
+[
+  {
+    "place_id": "outdoor_1",
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "category": "outdoor",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "canteen_1",
+        "description": "The canteen is on the roadside"
+      },
+	  {
+        "place_id": "coffeeshop_1",
+        "description": "The coffee shop is on the roadside"
+      },
+	  {
+        "place_id": "corridor_1",
+        "description": "The teaching building is on the roadside and the corridor is on the first floor of the teaching building"
+      },
+	  {
+        "place_id": "courierstation_1",
+        "description": "The courier station is on the roadside"
+      },
+	  {
+        "place_id": "courierstation_2",
+        "description": "The courier station is on the roadside"
+      },
+	  {
+        "place_id": "corridor_2",
+        "description": "The dormitory building is on the roadside and the corridor is on the first floor dormitory building"
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "canteen_1",
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "category": "canteen",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "outdoor_1",
+        "description": "The canteen is on the roadside"
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "coffeeshop_1",
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "category": "coffeeshop",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "outdoor_1",
+        "description": "The coffee shop is on the roadside"
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "corridor_1",
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "category": "corridor",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "classroom_1",
+        "description": "The classroom is connected to the corridor on the first floor of the teaching building"
+      },
+	  {
+        "place_id": "outdoor_1",
+        "description": "The teaching building is on the roadside and the corridor is on the first floor of the teaching building."
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "classroom_1",
+    "video_id": "024_0001",
+    "video_path": "024/024_0001",
+    "category": "classroom",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "corridor_1",
+        "description": "The classroom is connected to the corridor on the first floor of the teaching building"
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "dormitory_1",
+    "video_id": "024_0003",
+    "video_path": "024/024_0003",
+    "category": "dormitory",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "corridor_3",
+        "description": "The dormitory is connected to the corridor in floor three"
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-05",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "courierstation_1",
+    "video_id": "024_0006",
+    "video_path": "024/024_0006",
+    "category": "courierstation",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "outdoor_1",
+        "description": "The courier station is on the roadside"
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "courierstation_2",
+    "video_id": "024_0006",
+    "video_path": "024/024_0006",
+    "category": "courierstation",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "outdoor_1",
+        "description": "The courier station is on the roadside"
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "corridor_2",
+    "video_id": "024_0006",
+    "video_path": "024/024_0006",
+    "category": "corridor",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "stairs_1",
+        "description": "The stairs are connected to the corridor in floor one"
+      },
+	  {
+        "place_id": "outdoor_1",
+        "description": "The dormitory building is on the roadside and the corridor is on the first floor dormitory building"
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "stairs_1",
+    "video_id": "024_0006",
+    "video_path": "024/024_0006",
+    "category": "stairs",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "corridor_2",
+        "description": "The stairs are connected to the corridor in floor one"
+      },
+	  {
+        "place_id": "corridor_3",
+        "description": "The stairs are connected to the corridor in floor three"
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "corridor_3",
+    "video_id": "024_0006",
+    "video_path": "024/024_0006",
+    "category": "corridor",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "washroom_1",
+        "description": "The public washroom is connected to the corridor in floor three"
+      },
+	  {
+        "place_id": "dormitory_1",
+        "description": "The dormitory is connected to the corridor in floor three"
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-09",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "washroom_1",
+    "video_id": "024_0008",
+    "video_path": "024/024_0008",
+    "category": "washroom",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "corridor_3",
+        "description": "The public washroom is connected to the corridor in floor three"
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-01-10",
+      "qc_status": "accepted"
+    }
+  }
+]

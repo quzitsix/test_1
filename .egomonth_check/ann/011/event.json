@@ -1,0 +1,1441 @@
+[
+  {
+    "event_id": "ev_01",
+    "video_id": "011_0001",
+    "video_path": "011/011_0001",
+    "start_time": "0:07",
+    "end_time": "0:09",
+    "description": "Put an iPad into a schoolbag",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0001_obj_bags_2"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_02",
+    "video_id": "011_0001",
+    "video_path": "011/011_0001",
+    "start_time": "0:13",
+    "end_time": "0:26",
+    "description": "Take employee badges out of a leather bag",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0001_obj_bags_3",
+      "0001_obj_badge_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_03",
+    "video_id": "011_0001",
+    "video_path": "011/011_0001",
+    "start_time": "0:29",
+    "end_time": "0:30",
+    "description": "Take an umbrella out of a leather bag",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0001_obj_bags_3",
+      "0001_obj_umbrella_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_04",
+    "video_id": "011_0001",
+    "video_path": "011/011_0001",
+    "start_time": "0:34",
+    "end_time": "0:53",
+    "description": "Organize the schoolbag and carry it",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0001_obj_bags_2"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_05",
+    "video_id": "011_0001",
+    "video_path": "011/011_0001",
+    "start_time": "0:57",
+    "end_time": "1:01",
+    "description": "Grab a phone on the desk",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0001_obj_phone_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_06",
+    "video_id": "011_0001",
+    "video_path": "011/011_0001",
+    "start_time": "1:15",
+    "end_time": "1:18",
+    "description": "Look into the mirror",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0001_obj_mirror_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_07",
+    "video_id": "011_0001",
+    "video_path": "011/011_0001",
+    "start_time": "1:32",
+    "end_time": "2:42",
+    "description": "Walk down the stairs from office to exit the building",
+    "place_id": "stairwell_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_09",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_08",
+    "video_id": "011_0001",
+    "video_path": "011/011_0001",
+    "start_time": "2:46",
+    "end_time": "6:10",
+    "description": "Walk along the road from building_1 to building_2",
+    "place_id": "road_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_09",
+    "video_id": "011_0001",
+    "video_path": "011/011_0001",
+    "start_time": "7:08",
+    "end_time": "7:38",
+    "description": "Walk upstairs from the second floor to the third floor of building_2",
+    "place_id": "stairwell_2",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-06",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_10",
+    "video_id": "011_0002",
+    "video_path": "011/011_0002",
+    "start_time": "0:01",
+    "end_time": "3:06",
+    "description": "Looking at the mobile phone while listening to a class",
+    "place_id": "classrooms_2",
+    "objects_involved": [
+      "0002_obj_phone_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_11",
+    "video_id": "011_0002",
+    "video_path": "011/011_0002",
+    "start_time": "3:01",
+    "end_time": "3:22",
+    "description": "Talking to the teacher",
+    "place_id": "classrooms_2",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_12",
+    "video_id": "011_0002",
+    "video_path": "011/011_0002",
+    "start_time": "3:26",
+    "end_time": "6:11",
+    "description": "Looking at the laptop computer and typing on the keyboard",
+    "place_id": "classrooms_2",
+    "objects_involved": [
+      "0002_obj_laptop_computer_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_13",
+    "video_id": "011_0003",
+    "video_path": "011/011_0003",
+    "start_time": "0:01",
+    "end_time": "25:01",
+    "description": "Working in front of the computer screens and the laptop",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0003_obj_screen_1",
+      "0003_obj_laptop_computer_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_13",
+    "video_id": "011_0004",
+    "video_path": "011/011_0004",
+    "start_time": "0:01",
+    "end_time": "19:45",
+    "description": "Writing on the notebook and paper",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0004_obj_notebook_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_14",
+    "video_id": "011_0005",
+    "video_path": "011/011_0005",
+    "start_time": "0:01",
+    "end_time": "2:54",
+    "description": "Brushing teeth on the balcony, and went to the office halfway through.",
+    "place_id": "balcony_1",
+    "objects_involved": [
+      "0005_obj_cup_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_15",
+    "video_id": "011_0005",
+    "video_path": "011/011_0005",
+    "start_time": "4:47",
+    "end_time": "4:50",
+    "description": "Thowing away rubbish into the rubbish bin",
+    "place_id": "stairwell_1",
+    "objects_involved": [
+      "0005_obj_rubbish_bin_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_16",
+    "video_id": "011_0005",
+    "video_path": "011/011_0005",
+    "start_time": "5:10",
+    "end_time": "5:15",
+    "description": "Going to the public restroom",
+    "place_id": "public_restroom_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_17",
+    "video_id": "011_0006",
+    "video_path": "011/011_0006",
+    "start_time": "1:04",
+    "end_time": "2:00",
+    "description": "Looking in the mirror on the desk",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0006_obj_mirror_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_18",
+    "video_id": "011_0006",
+    "video_path": "011/011_0006",
+    "start_time": "3:52",
+    "end_time": "5:58",
+    "description": "Organize clothes and blankets",
+    "place_id": "office_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_19",
+    "video_id": "011_0006",
+    "video_path": "011/011_0006",
+    "start_time": "7:55",
+    "end_time": "10:37",
+    "description": "Organize the schoolbag",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0006_obj_bags_2"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_20",
+    "video_id": "011_0006",
+    "video_path": "011/011_0006",
+    "start_time": "14:51",
+    "end_time": "15:08",
+    "description": "Scan the QR code on the bicycle and ride on it",
+    "place_id": "road_2",
+    "objects_involved": [
+      "0006_obj_bicycle_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_21",
+    "video_id": "011_0006",
+    "video_path": "011/011_0006",
+    "start_time": "15:08",
+    "end_time": "17:09",
+    "description": "Ride along road_1 and turn left onto road_4 to building_3",
+    "place_id": "road_4",
+    "objects_involved": [
+      "0006_obj_bicycle_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_22",
+    "video_id": "011_0006",
+    "video_path": "011/011_0006",
+    "start_time": "18:00",
+    "end_time": "18:59",
+    "description": "Wait for the elevator and take it to a certain floor",
+    "place_id": "elevator_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_23",
+    "video_id": "011_0006",
+    "video_path": "011/011_0006",
+    "start_time": "23:00",
+    "end_time": "23:12",
+    "description": "Put a laptop computer on the desk",
+    "place_id": "office_3",
+    "objects_involved": [
+      "0006_obj_laptop_computer_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_24",
+    "video_id": "011_0006",
+    "video_path": "011/011_0006",
+    "start_time": "24:00",
+    "end_time": "33:50",
+    "description": "Working on the laptop",
+    "place_id": "office_3",
+    "objects_involved": [
+      "0006_obj_laptop_computer_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_25",
+    "video_id": "011_0007",
+    "video_path": "011/011_0007",
+    "start_time": "00:24",
+    "end_time": "00:26",
+    "description": "Organize the schoolbag",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0007_obj_bags_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_26",
+    "video_id": "011_0007",
+    "video_path": "011/011_0007",
+    "start_time": "11:58",
+    "end_time": "12:54",
+    "description": "Looking at the board",
+    "place_id": "road_7",
+    "objects_involved": [
+      "0007_obj_board_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_27",
+    "video_id": "011_0007",
+    "video_path": "011/011_0007",
+    "start_time": "17:26",
+    "end_time": "20:35",
+    "description": "Talk to the staff by the roadside and receive a gift",
+    "place_id": "road_7",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_28",
+    "video_id": "011_0007",
+    "video_path": "011/011_0007",
+    "start_time": "22:12",
+    "end_time": "23:35",
+    "description": "Choose clothes in the clothes store",
+    "place_id": "clothes_store_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_29",
+    "video_id": "011_0008",
+    "video_path": "011/011_0008",
+    "start_time": "0:35",
+    "end_time": "1:01",
+    "description": "Searching the navigation app on the phone for a route",
+    "place_id": "metro_station_hall_1",
+    "objects_involved": [
+      "0008_obj_phone_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_30",
+    "video_id": "011_0008",
+    "video_path": "011/011_0008",
+    "start_time": "1:29",
+    "end_time": "1:31",
+    "description": "Running to the platform beneath the metro station hall to catch the metro",
+    "place_id": "metro_station_hall_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_31",
+    "video_id": "011_0009",
+    "video_path": "011/011_0009",
+    "start_time": "0:20",
+    "end_time": "0:33",
+    "description": "Searching the navigation app on the phone for a route",
+    "place_id": "metro_station_hall_2",
+    "objects_involved": [
+      "0009_obj_phone_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_32",
+    "video_id": "011_0009",
+    "video_path": "011/011_0009",
+    "start_time": "0:20",
+    "end_time": "2:04",
+    "description": "Walking to transfer to another metro line",
+    "place_id": "metro_station_hall_2",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_33",
+    "video_id": "011_0009",
+    "video_path": "011/011_0009",
+    "start_time": "2:10",
+    "end_time": "3:58",
+    "description": "Rest against the wall to wait for the train",
+    "place_id": "metro_station_hall_2",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_34",
+    "video_id": "011_0110",
+    "video_path": "011/011_0110",
+    "start_time": "0:00",
+    "end_time": "10:10",
+    "description": "Talking with someone inside a car",
+    "place_id": "car_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_35",
+    "video_id": "011_0110",
+    "video_path": "011/011_0110",
+    "start_time": "10:10",
+    "end_time": "10:49",
+    "description": "Get off from the car and going into the building",
+    "place_id": "building_4",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_36",
+    "video_id": "011_0111",
+    "video_path": "011/011_0111",
+    "start_time": "0:00",
+    "end_time": "16:48",
+    "description": "Listening to a presentation and looking at the ipad",
+    "place_id": "meeting_room_1",
+    "objects_involved": [
+      "0111_obj_ipad_1",
+      "0111_obj_phone_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+
+  {
+    "event_id": "ev_37",
+    "video_id": "011_0112",
+    "video_path": "011/011_0112",
+    "start_time": "0:00",
+    "end_time": "8:41",
+    "description": "Walking from office_1 to building_3 while talking to someone",
+    "place_id": "office_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+
+  {
+    "event_id": "ev_38",
+    "video_id": "011_0113",
+    "video_path": "011/011_0113",
+    "start_time": "0:24",
+    "end_time": "0:58",
+    "description": "Organizing the bag",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0113_obj_bag_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+
+  {
+    "event_id": "ev_39",
+    "video_id": "011_0113",
+    "video_path": "011/011_0113",
+    "start_time": "2:16",
+    "end_time": "2:21",
+    "description": "Thowing away rubbish into the rubbish bin",
+    "place_id": "stairwell_1",
+    "objects_involved": [
+      "0113_obj_rubbish_bin_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+
+  {
+    "event_id": "ev_40",
+    "video_id": "011_0113",
+    "video_path": "011/011_0113",
+    "start_time": "5:05",
+    "end_time": "5:28",
+    "description": "Scan the QR code on the bicycle and ride on it",
+    "place_id": "road_1",
+    "objects_involved": [
+      "0113_obj_shared_bicycle_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+
+  {
+    "event_id": "ev_41",
+    "video_id": "011_0113",
+    "video_path": "011/011_0113",
+    "start_time": "5:30",
+    "end_time": "11:00",
+    "description": "Ride from road_1 to the supermarket",
+    "place_id": "road_1",
+    "objects_involved": [
+      "0113_obj_shared_bicycle_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+
+  {
+    "event_id": "ev_42",
+    "video_id": "011_0113",
+    "video_path": "011/011_0113",
+    "start_time": "11:46",
+    "end_time": "12:06",
+    "description": "Examining the bottled water in the supermarket",
+    "place_id": "supermarket_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+
+  {
+    "event_id": "ev_43",
+    "video_id": "011_0113",
+    "video_path": "011/011_0113",
+    "start_time": "14:25",
+    "end_time": "19:34",
+    "description": "Writing on paper and typing on an ipad",
+    "place_id": "building_5",
+    "objects_involved": [
+      "0113_obj_ipad_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  
+  {
+    "event_id": "ev_44",
+    "video_id": "011_0115", 
+    "video_path": "011/011_0115",
+    "start_time": "02:00",
+    "end_time": "04:00",
+    "description": "Brushing tooth on the balcony while watching videos on the phone",
+    "place_id": "balcony_1",
+    "objects_involved": [
+      "0114_obj_phone_1",
+      "0114_obj_cup_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+
+  {
+    "event_id": "ev_45",
+    "video_id": "011_0115",
+    "video_path": "011/011_0115",
+    "start_time": "08:05",
+    "end_time": "09:20",
+    "description": "Doing makeup",
+    "place_id": "office_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+
+  {
+    "event_id": "ev_46",
+    "video_id": "011_0115",
+    "video_path": "011/011_0115",
+    "start_time": "10:21",
+    "end_time": "11:43",
+    "description": "Typing on the phone",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0114_obj_phone_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+
+  {
+    "event_id": "ev_47",
+    "video_id": "011_0115",
+    "video_path": "011/011_0115",
+    "start_time": "12:53",
+    "end_time": "15:25",
+    "description": "Combing hair",
+    "place_id": "office_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+
+  {
+    "event_id": "ev_48",
+    "video_id": "011_0115",
+    "video_path": "011/011_0115",
+    "start_time": "20:40",
+    "end_time": "23:47",
+    "description": "Working in front of the computer screens while talking to someone on the phone",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0115_obj_screen_1",
+      "0115_obj_phone_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+
+  {
+    "event_id": "ev_49",
+    "video_id": "011_0115",
+    "video_path": "011/011_0115",
+    "start_time": "20:40",
+    "end_time": "23:47",
+    "description": "Working in front of the computer screens while talking to someone on the phone",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0115_obj_screen_1",
+      "0115_obj_phone_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+
+  {
+    "event_id": "ev_50",
+    "video_id": "011_0116",
+    "video_path": "011/011_0116",
+    "start_time": "03:25",
+    "end_time": "04:33",
+    "description": "Organizing the bag",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0116_obj_bag_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+
+  {
+    "event_id": "ev_51",
+    "video_id": "011_0116",
+    "video_path": "011/011_0116",
+    "start_time": "08:06",
+    "end_time": "15:06",
+    "description": "Riding the bicycle",
+    "place_id": "road_1",
+    "objects_involved": [
+      "0116_obj_bicycle_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_01",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_52",
+    "video_id": "011_0117",
+    "video_path": "011/011_0117",
+    "start_time": "00:00",
+    "end_time": "08:57",
+    "description": "Walk from stairwell_1 to building_2 while talking on the phone",
+    "place_id": "stairwell_1",
+    "objects_involved": [
+      "0117_obj_phone_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_53",
+    "video_id": "011_0118",
+    "video_path": "011/011_0118",
+    "start_time": "1:53",
+    "end_time": "1:57",
+    "description": "Exiting the subway turnstiles",
+    "place_id": "metro_station_hall_3",
+    "objects_involved": ["0118_obj_transtiles_1"],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_54",
+    "video_id": "011_0118",
+    "video_path": "011/011_0118",
+    "start_time": "7:53",
+    "end_time": "8:18",
+    "description": "Enters the entrance of building_6 and calls for the elevator",
+    "place_id": "building_6",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_55",
+    "video_id": "011_0119",
+    "video_path": "011/011_0119",
+    "start_time": "0:10",
+    "end_time": "4:38",
+    "description": "Organizing bed and clothes",
+    "place_id": "bedroom_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_56",
+    "video_id": "011_0119",
+    "video_path": "011/011_0119",
+    "start_time": "5:51",
+    "end_time": "5:54",
+    "description": "Looking into the mirror",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0119_obj_mirror_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_57",
+    "video_id": "011_0119",
+    "video_path": "011/011_0119",
+    "start_time": "7:46",
+    "end_time": "8:50",
+    "description": "Organizing the bed",
+    "place_id": "bedroom_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_58",
+    "video_id": "011_0119",
+    "video_path": "011/011_0119",
+    "start_time": "9:40",
+    "end_time": "10:01",
+    "description": "Organizing the suitcase",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0119_obj_suitcase_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_59",
+    "video_id": "011_0119",
+    "video_path": "011/011_0119",
+    "start_time": "10:41",
+    "end_time": "15:24",
+    "description": "Working on the laptop computer",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0119_obj_laptop_computer_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_60",
+    "video_id": "011_0020",
+    "video_path": "011/011_0020",
+    "start_time": "1:18",
+    "end_time": "2:22",
+    "description": "Organizing the schoolbag",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0020_obj_schoolbag_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_61",
+    "video_id": "011_0020",
+    "video_path": "011/011_0020",
+    "start_time": "4:10",
+    "end_time": "14:00",
+    "description": "Walking from office_2 to office_1 while talking on the phone",
+    "place_id": "office_2",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_62",
+    "video_id": "011_0020",
+    "video_path": "011/011_0020",
+    "start_time": "15:22",
+    "end_time": "24:21",
+    "description": "Working in front of the computer screens",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0020_obj_screen_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_63",
+    "video_id": "011_0021",
+    "video_path": "011/011_0021",
+    "start_time": "0:00",
+    "end_time": "1:43",
+    "description": "Combing hair in the living room",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0021_obj_hairbrush_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_64",
+    "video_id": "011_0021",
+    "video_path": "011/011_0021",
+    "start_time": "6:21",
+    "end_time": "12:05",
+    "description": "Organizing the suitcase",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0021_obj_suitcase_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_65",
+    "video_id": "011_0021",
+    "video_path": "011/011_0021",
+    "start_time": "6:35",
+    "end_time": "6:41",
+    "description": "Looking into the mirror",
+    "place_id": "restroom_1",
+    "objects_involved": [
+      "0021_obj_mirror_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_66",
+    "video_id": "011_0021",
+    "video_path": "011/011_0021",
+    "start_time": "8:39",
+    "end_time": "9:31",
+    "description": "Putting the hairbrush into a white bag, then put the bag into the suitcase",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0021_obj_hairbrush_1",
+      "0021_obj_suitcase_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_67",
+    "video_id": "011_0021",
+    "video_path": "011/011_0021",
+    "start_time": "14:26",
+    "end_time": "14:30",
+    "description": "Use a cup to fetch some water from the water dispenser",
+    "place_id": "living_room_1",
+    "objects_involved": [
+      "0021_obj_cup_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_68",
+    "video_id": "011_0021",
+    "video_path": "011/011_0021",
+    "start_time": "15:04",
+    "end_time": "16:02",
+    "description": "Organizing the bed",
+    "place_id": "bedroom_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_69",
+    "video_id": "011_0022",
+    "video_path": "011/011_0022",
+    "start_time": "3:47",
+    "end_time": "8:24",
+    "description": "Reading the book and taking some notes",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0022_obj_book_1",
+      "0022_obj_notebook_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_70",
+    "video_id": "011_0022",
+    "video_path": "011/011_0022",
+    "start_time": "9:15",
+    "end_time": "11:10",
+    "description": "Taking items out of the bag and placing them on the desk",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0022_obj_bag_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_71",
+    "video_id": "011_0023",
+    "video_path": "011/011_0023",
+    "start_time": "18:16",
+    "end_time": "18:50",
+    "description": "Organizing the bag and the folder.",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0023_obj_bag_1",
+      "0023_obj_folder_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_72",
+    "video_id": "011_0023",
+    "video_path": "011/011_0023",
+    "start_time": "23:15",
+    "end_time": "23:30",
+    "description": "Scan the QR code on the bicycle and ride on it",
+    "place_id": "road_2",
+    "objects_involved": [
+      "0023_obj_bicycle_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_73",
+    "video_id": "011_0023",
+    "video_path": "011/011_0023",
+    "start_time": "00:01",
+    "end_time": "17:55",
+    "description": "Working in front of the computer screens.",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0023_obj_screen_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_74",
+    "video_id": "011_0024",
+    "video_path": "011/011_0024",
+    "start_time": "06:01",
+    "end_time": "17:55",
+    "description": "Riding the bicycle along road_2 to the schoolgate.",
+    "place_id": "road_2",
+    "objects_involved": [
+      "0024_obj_bicycle_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_75",
+    "video_id": "011_0024",
+    "video_path": "011/011_0024",
+    "start_time": "12:00",
+    "end_time": "19:08",
+    "description": "Talking to someone in the car, while the car is driving from schoolgate_2 to schoolgate_3.",
+    "place_id": "car_2",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_76",
+    "video_id": "011_0024",
+    "video_path": "011/011_0024",
+    "start_time": "19:41",
+    "end_time": "20:26",
+    "description": "Registering at the school gate.",
+    "place_id": "school_gate_3",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_77",
+    "video_id": "011_0025",
+    "video_path": "011/011_0025",
+    "start_time": "1:49",
+    "end_time": "2:30",
+    "description": "Washing the cups on the balcony.",
+    "place_id": "balcony_1",
+    "objects_involved": [
+      "0025_obj_cup_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_78",
+    "video_id": "011_0025",
+    "video_path": "011/011_0025",
+    "start_time": "4:40",
+    "end_time": "24:47",
+    "description": "Working in front of the computer screens and the laptop",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0025_obj_laptop_computer_1",
+      "0025_obj_screen_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_79",
+    "video_id": "011_0054",
+    "video_path": "011/011_0054",
+    "start_time": "00:09",
+    "end_time": "00:15",
+    "description": "Putting on the watch",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0054_obj_watch_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_80",
+    "video_id": "011_0054",
+    "video_path": "011/011_0054",
+    "start_time": "07:00",
+    "end_time": "13:39",
+    "description": "Walking from building_1 to building_3",
+    "place_id": "road_1",
+    "objects_involved": [
+      "0054_obj_bicycle_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_81",
+    "video_id": "011_0054",
+    "video_path": "011/011_0054",
+    "start_time": "15:52",
+    "end_time": "23:38",
+    "description": "Attending a meeting in the meeting room.",
+    "place_id": "meeting_room_2",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_82",
+    "video_id": "011_0026",
+    "video_path": "011/011_0026",
+    "start_time": "1:31",
+    "end_time": "4:04",
+    "description": "Organizing the schoolbag.",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0026_obj_schoolbag_1",
+      "0026_obj_pencil_case_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_83",
+    "video_id": "011_0026",
+    "video_path": "011/011_0026",
+    "start_time": "5:57",
+    "end_time": "6:20",
+    "description": "Washing hands on the balcony.",
+    "place_id": "balcony_1",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_84",
+    "video_id": "011_0026",
+    "video_path": "011/011_0026",
+    "start_time": "7:34",
+    "end_time": "9:30",
+    "description": "Eating bread while listening to podcast.",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0026_obj_bread_1" 
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_85",
+    "video_id": "011_0026",
+    "video_path": "011/011_0026",
+    "start_time": "9:36",
+    "end_time": "13:02",
+    "description": "Working in front of the computer screens.",
+    "place_id": "office_1",
+    "objects_involved": [
+      "0026_obj_screen_1"
+    ],
+    "meta": {
+      "annotator_id": "worker_1",
+      "created_at": "2026-1-7",
+      "qc_status": "accepted"
+    }
+  }
+
+
+
+
+
+  
+]

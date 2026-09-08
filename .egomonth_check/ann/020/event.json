@@ -1,0 +1,997 @@
+[
+  {
+    "event_id": "ev_01",
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "start_time": "0:00",
+    "end_time": "0:16",
+    "description": "Use a knife to open the box.",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0001_obj_box_01",
+      "0001_obj_knife_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_02",
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "start_time": "0:16",
+    "end_time": "4:00",
+    "description": "Get and check the contents of the parcel.",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0001_obj_box_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_03",
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "start_time": "4:00",
+    "end_time": "4:45",
+    "description": "Assemble the display monitor.",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0001_obj_display_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_04",
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "start_time": "4:45",
+    "end_time": "5:00",
+    "description": "Place the assembled monitor on the desk.",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0001_obj_display_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_05",
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "start_time": "5:25",
+    "end_time": "6:30",
+    "description": "Inspect the accessories",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0001_obj_display_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_06",
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "start_time": "6:56",
+    "end_time": "6:58",
+    "description": "Open the drawer",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0001_obj_drawer_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_08",
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "start_time": "7:20",
+    "end_time": "7:54",
+    "description": "Plug in the display's power supply",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0001_obj_display_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_09",
+    "video_id": "020_0001",
+    "video_path": "020/020_0001",
+    "start_time": "9:37",
+    "end_time": "9:40",
+    "description": "Connect the monitor to the computer",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0001_obj_display_01",
+      "0001_obj_computer_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_10",
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "start_time": "0:08",
+    "end_time": "0:10",
+    "description": "Connect the keyboard power supply",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0002_obj_keyboard_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_11",
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "start_time": "0:10",
+    "end_time": "0:18",
+    "description": "Enter the computer password using the keyboard",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0002_obj_mouse_01",
+      "0002_obj_computer_01",
+      "0001_obj_display_01",
+      "0002_obj_keyboard_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_12",
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "start_time": "0:18",
+    "end_time": "0:22",
+    "description": "take the black wireless headphones",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0002_obj_headphones_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_13",
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "start_time": "1:35",
+    "end_time": "1:40",
+    "description": "use mobile phone ",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0002_obj_mobile_phone_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_14",
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "start_time": "4:13",
+    "end_time": "4:31",
+    "description": "pick up the drinks",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0002_obj_drinks_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_15",
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "start_time": "4:50",
+    "end_time": "4:55",
+    "description": "take out the trash cans",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0001_obj_trash_can_01",
+      "0001_obj_trash_can_02"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_16",
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "start_time": "6:53",
+    "end_time": "6:56",
+    "description": "pick up the cup and drink some water",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0002_obj_cup_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_17",
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "start_time": "8:06",
+    "end_time": "8:09",
+    "description": "open the left drawer and close it",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0002_obj_drawer_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_18",
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "start_time": "13:30",
+    "end_time": "13:35",
+    "description": "pick up the mobile phone ",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0002_obj_mobile_phone_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_19",
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "start_time": "24:13",
+    "end_time": "24:36",
+    "description": "pick up the drinks",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0002_obj_drinks_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_20",
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "start_time": "32:30",
+    "end_time": "32:51",
+    "description": "pick up the mobile phone ",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0002_obj_mobile_phone_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_21",
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "start_time": "37:45",
+    "end_time": "37:51",
+    "description": "pick up the cup and drink some water",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0002_obj_cup_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_22",
+    "video_id": "020_0002",
+    "video_path": "020/020_0002",
+    "start_time": "2:25",
+    "end_time": "38:50",
+    "description": "Read documents on a computer.",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0002_obj_computer_01",
+      "0001_obj_display_01",
+      "0002_obj_keyboard_01",
+      "0002_obj_mouse_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_23",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "start_time": "0:01",
+    "end_time": "1:00",
+    "description": "wear shoes",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0003_obj_shoes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_24",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "start_time": "1:05",
+    "end_time": "1:26",
+    "description": "Sort out the garbage",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0003_obj_trash_can_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_25",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "start_time": "2:18",
+    "end_time": "3:36",
+    "description": "Clean the floor and sort out the garbage",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0003_obj_besom_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_26",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "start_time": "4:10",
+    "end_time": "4:41",
+    "description": "Go to the garbage dump and throw the garbage away.",
+    "place_id": "garbage_station_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_27",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "start_time": "4:44",
+    "end_time": "5:07",
+    "description": "Take the safety exit staircase to go downstairs",
+    "place_id": "staircase_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_28",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "start_time": "5:41",
+    "end_time": "11:37",
+    "description": "Take the food from the takeout locker",
+    "place_id": "street_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_29",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "start_time": "11:52",
+    "end_time": "15:34",
+    "description": "Call a friend and tell them that the takeout order was lost.",
+    "place_id": "food_takeout_locker_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_30",
+    "video_id": "020_0003",
+    "video_path": "020/020_0003",
+    "start_time": "20:12",
+    "end_time": "21:30",
+    "description": "Headed to the supermarket to buy a bottle of beverage",
+    "place_id": "supermarket_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_31",
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "start_time": "0:01",
+    "end_time": "1:30",
+    "description": "put on shoes",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0011_obj_shoes_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_32",
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "start_time": "1:37",
+    "end_time": "2:00",
+    "description": "Sort out the garbage",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0011_obj_garbage_can_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_33",
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "start_time": "2:04",
+    "end_time": "2:16",
+    "description": "Opened the cabinet and took out a black piece of clothing.",
+    "place_id": "dormitory_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_34",
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "start_time": "2:04",
+    "end_time": "2:16",
+    "description": "Opened the cabinet and took out a black piece of clothing.",
+    "place_id": "dormitory_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_35",
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "start_time": "12:00",
+    "end_time": "22:11",
+    "description": "Having meals in the cafeteria",
+    "place_id": "canteen_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_36",
+    "video_id": "020_0011",
+    "video_path": "020/020_0011",
+    "start_time": "24:41",
+    "end_time": "25:00",
+    "description": "Go to the courier center to pick up the package",
+    "place_id": "express_station_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_37",
+    "video_id": "020_0012",
+    "video_path": "020/020_0012",
+    "start_time": "00:14",
+    "end_time": "00:25",
+    "description": "put on a coat",
+    "place_id": "dormitory_01",
+    "objects_involved": [
+      "0012_obj_coat_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_38",
+    "video_id": "020_0012",
+    "video_path": "020/020_0012",
+    "start_time": "02:08",
+    "end_time": "02:18",
+    "description": "take the elevator",
+    "place_id": "elevator_01",
+    "objects_involved": [
+      "0012_obj_coat_01"
+    ],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_39",
+    "video_id": "020_0012",
+    "video_path": "020/020_0012",
+    "start_time": "02:50",
+    "end_time": "04:18",
+    "description": "walk to the shared bicycle parking lot",
+    "place_id": "street_03",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_40",
+    "video_id": "020_0012",
+    "video_path": "020/020_0012",
+    "start_time": "04:50",
+    "end_time": "08:47",
+    "description": "cycling",
+    "place_id": "street_03",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_41",
+    "video_id": "020_0012",
+    "video_path": "020/020_0012",
+    "start_time": "12:03",
+    "end_time": "32:02",
+    "description": "attending a job fair",
+    "place_id": "science and technology innovation building_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_42",
+    "video_id": "020_0012",
+    "video_path": "020/020_0012",
+    "start_time": "15:40",
+    "end_time": "16:24",
+    "description": "signing in at the registration desk",
+    "place_id": "science and technology innovation building_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_43",
+    "video_id": "020_0013",
+    "video_path": "020/020_0013",
+    "start_time": "00:35",
+    "end_time": "10:47",
+    "description": "walk back to the dormitory building from the science and technology innovation building",
+    "place_id": "science and technology innovation building_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-1-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_44",
+    "video_id": "020_0014",
+    "video_path": "020/020_0014",
+    "start_time": "04:00",
+    "end_time": "06:00",
+    "description": "dish up",
+    "place_id": "canteen_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-1-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_45",
+    "video_id": "020_0014",
+    "video_path": "020/020_0014",
+    "start_time": "06:40",
+    "end_time": "27:10",
+    "description": "eat a meal",
+    "place_id": "canteen_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-1-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_46",
+    "video_id": "020_0014",
+    "video_path": "020/020_0014",
+    "start_time": "30:00",
+    "end_time": "32:30",
+    "description": "pick up the delivery",
+    "place_id": "express_station_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-1-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_47",
+    "video_id": "020_0016",
+    "video_path": "020/020_0016",
+    "start_time": "06:30",
+    "end_time": "07:50",
+    "description": "buying water",
+    "place_id": "supermarket_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-1-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_48",
+    "video_id": "020_0017",
+    "video_path": "020/020_0017",
+    "start_time": "05:43",
+    "end_time": "07:50",
+    "description": "working out",
+    "place_id": "gym_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-1-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_49",
+    "video_id": "020_0019",
+    "video_path": "020/020_0019",
+    "start_time": "03:30",
+    "end_time": "05:15",
+    "description": "ordering in the canteen",
+    "place_id": "canteen_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-1-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_50",
+    "video_id": "020_0020",
+    "video_path": "020/020_0020",
+    "start_time": "08:00",
+    "end_time": "05:15",
+    "description": "order barbecue",
+    "place_id": "canteen_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-1-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_51",
+    "video_id": "020_0021",
+    "video_path": "020/020_0021",
+    "start_time": "00:01",
+    "end_time": "08:50",
+    "description": "queue",
+    "place_id": "museum_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-1-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_52",
+    "video_id": "020_0021",
+    "video_path": "020/020_0021",
+    "start_time": "11:01",
+    "end_time": "20:50",
+    "description": "visit the museum",
+    "place_id": "museum_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2025-1-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_53",
+    "video_id": "020_0030",
+    "video_path": "020/020_0030",
+    "start_time": "09:31",
+    "end_time": "11:30",
+    "description": "wash clothes",
+    "place_id": "dormitory_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2026-1-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_54",
+    "video_id": "020_0034",
+    "video_path": "020/020_0034",
+    "start_time": "19:22",
+    "end_time": "19:55",
+    "description": "add seasoning to dumplings",
+    "place_id": "canteen_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2026-1-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_55",
+    "video_id": "020_0034",
+    "video_path": "020/020_0034",
+    "start_time": "32:50",
+    "end_time": "42:27",
+    "description": "unpack the package",
+    "place_id": "dormitory_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2026-1-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_56",
+    "video_id": "020_0038",
+    "video_path": "020/020_0038",
+    "start_time": "25:05",
+    "end_time": "26:25",
+    "description": "boiling instant noodles",
+    "place_id": "dormitory_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2026-1-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_57",
+    "video_id": "020_0040",
+    "video_path": "020/020_0040",
+    "start_time": "04:35",
+    "end_time": "11:35",
+    "description": "storage",
+    "place_id": "dormitory_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2026-1-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_58",
+    "video_id": "020_0041",
+    "video_path": "020/020_0041",
+    "start_time": "08:30",
+    "end_time": "10:30",
+    "description": "buy bread",
+    "place_id": "canteen_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2026-1-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_59",
+    "video_id": "020_0043",
+    "video_path": "020/020_0043",
+    "start_time": "00:00",
+    "end_time": "06:28",
+    "description": "watching video",
+    "place_id": "dormitory_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2026-1-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_60",
+    "video_id": "020_0044",
+    "video_path": "020/020_0044",
+    "start_time": "06:38",
+    "end_time": "59:09",
+    "description": "lying in bed watching videos",
+    "place_id": "dormitory_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2026-1-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_61",
+    "video_id": "020_0044",
+    "video_path": "020/020_0044",
+    "start_time": "1:01:30",
+    "end_time": "1:02:01",
+    "description": "take the washed clothes",
+    "place_id": "dormitory_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2026-1-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_62",
+    "video_id": "020_0051",
+    "video_path": "020/020_0051",
+    "start_time": "03:02",
+    "end_time": "03:32",
+    "description": "buy ice cream",
+    "place_id": "supermarket_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2026-1-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "event_id": "ev_62",
+    "video_id": "020_0054",
+    "video_path": "020/020_0054",
+    "start_time": "10:40",
+    "end_time": "13:55",
+    "description": "play badminton",
+    "place_id": "badminton court_01",
+    "objects_involved": [],
+    "meta": {
+      "annotator_id": "worker_04",
+      "created_at": "2026-1-21",
+      "qc_status": "accepted"
+    }
+  }
+]

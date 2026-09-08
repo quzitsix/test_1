@@ -1,0 +1,763 @@
+[
+  {
+    "sample_id": "018",
+    "video_id": "018_0001",
+    "video_path": [
+      "018/018_0001.mp4"
+    ],
+    "question": "<018_0001.mp4>How many basins are under the sink",
+    "options": [
+      "A.0",
+      "B.1",
+      "C.2",
+      "D.3"
+    ],
+    "correct_options": "C",
+    "task_type": "object_counting_global",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0001_obj_basins_01"
+    ],
+    "reasoning_chain": "There are two basins under the sink",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-05T20:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0001",
+    "video_path": [
+      "018/018_0001.mp4"
+    ],
+    "question": "<018_0001.mp4> When did the other person in the dormitory bedroom appear",
+    "options": [
+      "A.00:59",
+      "B.00:14",
+      "C.01:32",
+      "D.01:56"
+    ],
+    "correct_options": "A",
+    "task_type": "temporal_ordering",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "A person's lower body appears at 00:59",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-05T20:15:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0001",
+    "video_path": [
+      "018/018_0001.mp4"
+    ],
+    "question": "<018_0001.mp4> At 13:44, where is this person",
+    "options": [
+      "A.washroom",
+      "B.bedroom",
+      "C.canteen",
+      "D.courier station"
+    ],
+    "correct_options": "D",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "There were many shelves full of packages in front of this person",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-07T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0001",
+    "video_path": [
+      "018/018_0001.mp4"
+    ],
+    "question": "<018_0001.mp4> What did this person do before looking for a seat between 24:47 and 26:01 in this video",
+    "options": [
+      "A.Handwashing",
+      "B.Walk around the coffee shop",
+      "C.Take a bite of food",
+      "D.Browse TikTok"
+    ],
+    "correct_options": "B",
+    "task_type": "temporal_ordering",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_13",
+      "ev_14"
+    ],
+    "evidence_spatial": [
+      "0001_obj_cellphone_01"
+    ],
+    "reasoning_chain": "The person walked around the coffee shop before looking for a seat",
+    "task_specific": {
+      "video_id": "018_0001",
+      "events_involved": [
+        {
+          "event_id": "ev_13",
+          "description": "Walking around the coffee shop"
+        },
+        {
+          "event_id": "ev_14",
+          "description": "Choose a seat"
+        }
+      ],
+      "ordering_relation": "ev_13_before_ev_14"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-07T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0001",
+    "video_path": [
+      "018/018_0001.mp4"
+    ],
+    "question": "<018_0001.mp4> Where is the red pen placed in this video",
+    "options": [
+      "A.On the desk",
+      "B.On the road",
+      "C.On the floor",
+      "D.On the cabinet"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0001_obj_redpen_01"
+    ],
+    "reasoning_chain": "The red pen was placed on the desk",
+    "task_specific": {
+      "object_category": "redpen",
+      "object_id": "0001_obj_redpen_01",
+      "location": {
+        "place_id": "bedroom_1",
+        "place_type": "bedroom",
+        "description": "On the desk"
+      }
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-07T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0001",
+    "video_path": [
+      "018/018_0001.mp4"
+    ],
+    "question": "<018_0001.mp4> In this video, which floor of the dormitory building is the person's bedroom located on",
+    "options": [
+      "A.First floor",
+      "B.Second floor",
+      "C.Third floor",
+      "D.Fourth floor"
+    ],
+    "correct_options": "B",
+    "task_type": "cross_view_spatial_reasoning",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person went downstairs, walked down only a short flight of stairs, and then exited through the main entrance on the first floor",
+    "task_specific": {
+      "source_place_id": "corridor_2",
+      "target_place_id": "bedroom_1",
+      "spatial_relation": "One floor above"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-07T10:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0001",
+    "video_path": [
+      "018/018_0001.mp4"
+    ],
+    "question": "<018_0001.mp4> Which way do I go at the first intersection on the way from the dormitory building to the courier station",
+    "options": [
+      "A.go straight",
+      "B.turn left",
+      "C.turn right",
+      "D.None"
+    ],
+    "correct_options": "B",
+    "task_type": "direction_judgement",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_05"
+    ],
+    "evidence_spatial": [
+      "0001_obj_sharedbicycle_01"
+    ],
+    "reasoning_chain": "Turn left at the first intersection while riding bike",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-07T22:15:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0001",
+    "video_path": [
+      "018/018_0001.mp4"
+    ],
+    "question": "<018_0001.mp4> From the text on the parcel shelf at 13:37, we can deduce which school this is",
+    "options": [
+      "A.Hohai University",
+      "B.Wuhan University",
+      "C.Southeast University",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "The shelf has the logo of Hohai University",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-07T22:15:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0001",
+    "video_path": [
+      "018/018_0001.mp4"
+    ],
+    "question": "<018_0001.mp4> What time did this person enter the canteen",
+    "options": [
+      "A.18:59",
+      "B.21:12",
+      "C.22:36",
+      "D.19:14"
+    ],
+    "correct_options": "B",
+    "task_type": "temporal_ordering",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "This person entered the canteen at 21:12",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-07T22:30:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0001",
+    "video_path": [
+      "018/018_0001.mp4"
+    ],
+    "question": "<018_0001.mp4>How many times did the waiter add seasoning when this person ordered",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.4"
+    ],
+    "correct_options": "D",
+    "task_type": "event_counting",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_12"
+    ],
+    "evidence_spatial": [
+      "0001_obj_condimentbottles_01"
+    ],
+    "reasoning_chain": "The waiter added the condiments twice initially, and then added them twice more at the customer's request",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-07T22:30:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0001",
+    "video_path": [
+      "018/018_0001.mp4"
+    ],
+    "question": "<018_0001.mp4> Where is the potted plants placed in this video",
+    "options": [
+      "A.On the shelf",
+      "B.On the desk",
+      "C.On the floor",
+      "D.On the cabinet"
+    ],
+    "correct_options": "A",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [
+      "ev_14"
+    ],
+    "evidence_spatial": [
+      "0001_obj_pottedplants_01"
+    ],
+    "reasoning_chain": "The potted plants was placed on the shelf in canteen",
+    "task_specific": {
+      "object_category": "pottedplants",
+      "object_id": "0001_obj_pottedplants_01",
+      "location": {
+        "place_id": "canteen_1",
+        "place_type": "canteen",
+        "description": "On the shelf behind"
+      }
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-07T10:30:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0001",
+    "video_path": [
+      "018/018_0001.mp4"
+    ],
+    "question": "<018_0001.mp4>How many times did this person ride the bike throughout the entire video",
+    "options": [
+      "A.0",
+      "B.1",
+      "C.2",
+      "D.3"
+    ],
+    "correct_options": "C",
+    "task_type": "event_counting",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_05",
+      "ev_09"
+    ],
+    "evidence_spatial": [
+      "0001_obj_sharedbicycle_01"
+    ],
+    "reasoning_chain": "The whole process involved first riding a shared bike from the dormitory to the courier station, and then riding to the canteen",
+    "task_specific": {
+      "count_target": "Number of times cycling",
+      "instance_events": [
+        {
+          "event_id": "ev_05"
+        },
+        {
+          "event_id": "ev_09"
+        }
+      ]
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-07T22:50:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0001",
+    "video_path": [
+      "018/018_0001.mp4"
+    ],
+    "question": "<018_0001.mp4>Which of the following locations appears in the correct order",
+    "options": [
+      "A.corridor_1->corridor_2->courier station->bedroom->canteen",
+      "B.bedroom->corridor_1->corridor_2->courier station->canteen",
+      "C.courier station->corridor_1->canteen->corridor_2->bedroom",
+      "D.canteen->corridor_1->corridor_2->courier station->bedroom"
+    ],
+    "correct_options": "B",
+    "task_type": "procedure_planning",
+    "memory_span": "within_video",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "The whole process involved first riding a shared bike from the dormitory to the courier station, and then riding to the canteen",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-07T23:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0002",
+    "video_path": [
+      "018/018_0002.mp4"
+    ],
+    "question": "<018_0002.mp4>Which of the following items is NOT on the canteen table",
+    "options": [
+      "A.bottle",
+      "B.paper bag",
+      "C.chopsticks",
+      "D.disposable gloves"
+    ],
+    "correct_options": "C",
+    "task_type": "object_location",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0001_obj_bottle_01",
+      "0002_obj_paperbags_01",
+      "0001_obj_disposablegloves_01"
+    ],
+    "reasoning_chain": "There are no chopsticks on the table",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-09T15:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0002",
+    "video_path": [
+      "018/018_0002.mp4"
+    ],
+    "question": "<018_0002.mp4>How many times has this person gone to the coffee shop",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.4"
+    ],
+    "correct_options": "B",
+    "task_type": "event_counting",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_13",
+      "ev_16"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The coffee wasn't ready when this person first went there,so this person went to collect coffee again later",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-09T15:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0002",
+    "video_path": [
+      "018/018_0002.mp4"
+    ],
+    "question": "<018_0002.mp4>What hair color do this person like in anime characters",
+    "options": [
+      "A.pink",
+      "B.white",
+      "C.blue",
+      "D.yellow"
+    ],
+    "correct_options": "A",
+    "task_type": "personality_inference",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_16",
+      "ev_19"
+    ],
+    "evidence_spatial": [
+      "0001_obj_cellphone_01",
+      "0002_obj_paperbags_01"
+    ],
+    "reasoning_chain": "The anime character on the coffee bag has pink hair, and furthermore, all the emojis this person uses in WeChat chats are related to pink-haired anime characters",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-09T15:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0002",
+    "video_path": [
+      "018/018_0002.mp4"
+    ],
+    "question": "<018_0002.mp4>What is the order number for the coffee this person ordered",
+    "options": [
+      "A.731",
+      "B.625",
+      "C.912",
+      "D.898"
+    ],
+    "correct_options": "D",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0002_obj_paperbags_01"
+    ],
+    "reasoning_chain": "The receipt on the coffee bag shows 898",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-09T15:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0003",
+    "video_path": [
+      "018/018_0003.mp4"
+    ],
+    "question": "<018_0003.mp4>What is the license plate number of the electric vehicle that appears on the right at 11:36",
+    "options": [
+      "A.XF306",
+      "B.KT487",
+      "C.DC924",
+      "D.MR076"
+    ],
+    "correct_options": "A",
+    "task_type": "detail_retrieval",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0003_obj_ebike_01"
+    ],
+    "reasoning_chain": "The license plate number of the electric vehicle is XF306",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-11T08:30:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0003",
+    "video_path": [
+      "018/018_0003.mp4"
+    ],
+    "question": "<018_0003.mp4> What did this person do before heading to the classroom after leaving the dormitory",
+    "options": [
+      "A.Make a phone call",
+      "B.Obtain Hong Kong and Macau travel permit at the police station",
+      "C.Walking around the coffee shop",
+      "D.Browse TikTok"
+    ],
+    "correct_options": "B",
+    "task_type": "temporal_ordering",
+    "memory_span": "within_video",
+    "evidence_temporal": [
+      "ev_24",
+      "ev_28"
+    ],
+    "evidence_spatial": [],
+    "reasoning_chain": "The person obtained Hong Kong and Macau travel permit at the police station before heading to the classroom",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-11T08:30:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0003",
+    "video_path": [
+      "018/018_0003.mp4"
+    ],
+    "question": "<018_0003.mp4>At the very beginning of the video, where is this person",
+    "options": [
+      "A.washroom",
+      "B.bedroom",
+      "C.classroom",
+      "D.courier station"
+    ],
+    "correct_options": "B",
+    "task_type": "self_localization",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "The video begins with a bed and a large number of personal belongings scattered haphazardly",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-11T09:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0003",
+    "video_path": [
+      "018/018_0003.mp4"
+    ],
+    "question": "<018_0003.mp4>How many desks are there in a row of classroom in teachingbuilding_1",
+    "options": [
+      "A.8",
+      "B.9",
+      "C.10",
+      "D.11"
+    ],
+    "correct_options": "C",
+    "task_type": "object_counting_global",
+    "memory_span": "short_clip",
+    "evidence_temporal": [],
+    "evidence_spatial": [],
+    "reasoning_chain": "The classroom is divided into three sections: left, center, and right. There are three tables on the left, four tables in the center, and three tables on the right, for a total of ten tables",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-11T09:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0004",
+    "video_path": [
+      "018/018_0004.mp4"
+    ],
+    "question": "<018_0004.mp4>How many times did this person exit the turnstile in total?",
+    "options": [
+      "A.1",
+      "B.2",
+      "C.3",
+      "D.4"
+    ],
+    "correct_options": "C",
+    "task_type": "event_counting",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [],
+    "evidence_spatial": [
+      "0001_obj_turnstile_01"
+    ],
+    "reasoning_chain": "This person exited the turnstile once each in videos 1, 3, and 4.",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-13T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0004",
+    "video_path": [
+      "018/018_0004.mp4"
+    ],
+    "question": "<018_0004.mp4>What are this student's study habit",
+    "options": [
+      "A.Spend all her time studying",
+      "B.Balance work and rest",
+      "C.Never study",
+      "D.It cannot be inferred from the video"
+    ],
+    "correct_options": "B",
+    "task_type": "personality_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_15",
+      "ev_28"
+    ],
+    "evidence_spatial": [
+      "0001_obj_cellphone_01"
+    ],
+    "reasoning_chain": "This student watches in-depth interviews while eating and also uses her phone for leisure while studying in the classroom",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-13T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0004",
+    "video_path": [
+      "018/018_0004.mp4"
+    ],
+    "question": "<018_0004.mp4>What are this student's eating habit",
+    "options": [
+      "A.She eats a simple diet",
+      "B.This person eats a lot",
+      "C.None",
+      "D.None"
+    ],
+    "correct_options": "A",
+    "task_type": "personality_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_15",
+      "ev_34"
+    ],
+    "evidence_spatial": [
+      "0002_obj_friedchickenwings_01",
+      "0002_obj_crispyfriedpork_01",
+      "0004_obj_soyegg_01",
+      "0004_obj_soymilk_01"
+    ],
+    "reasoning_chain": "This person ate a small portion of fried food for their main meal, and had no carbohydrates for breakfast",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-13T11:00:00",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "sample_id": "018",
+    "video_id": "018_0004",
+    "video_path": [
+      "018/018_0004.mp4"
+    ],
+    "question": "<018_0004.mp4>What are this student's habit of filling water",
+    "options": [
+      "A.only warm water",
+      "B.only hot water",
+      "C.warm water first, then hot water",
+      "D.hot water first, then warm water"
+    ],
+    "correct_options": "C",
+    "task_type": "personality_inference",
+    "memory_span": "cross_videos",
+    "evidence_temporal": [
+      "ev_03",
+      "ev_36"
+    ],
+    "evidence_spatial": [
+      "0001_obj_bottle_01",
+      "0001_obj_waterdispenser_01",
+      "0004_obj_waterdispenser_01"
+    ],
+    "reasoning_chain": "This person always gets warm water first, then hot water",
+    "task_specific": {},
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-12-13T11:00:00",
+      "qc_status": "accepted"
+    }
+  }
+]

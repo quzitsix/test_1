@@ -1,0 +1,647 @@
+[
+  {
+    "place_id": "dormitory_1",
+    "video_id": "023_0001",
+    "video_path": "023/023_0001",
+    "category": "dormitory",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "bedroom_1",
+    "video_id": "023_0001",
+    "video_path": "023/023_0001",
+    "category": "bedroom",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "dormitory_1",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "supermarket_1",
+    "video_id": "023_0001",
+    "video_path": "023/023_0001",
+    "category": "supermarket",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "canteen_1",
+    "video_id": "023_0001",
+    "video_path": "023/023_0001",
+    "category": "canteen",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "balcony_1",
+    "video_id": "023_0002",
+    "video_path": "023/023_0002",
+    "category": "balcony",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "bedroom_1",
+        "description": "The balcony is adjacent to the bedroom."
+      }
+    ],
+    "parent_place_id": "dormitory_1",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "bathroom_1",
+    "video_id": "023_0002",
+    "video_path": "023/023_0002",
+    "category": "bathroom",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "balcony_1",
+        "description": "The bathroom and the bedroom are connected by the balcony."
+      }
+    ],
+    "parent_place_id": "dormitory_1",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "playground_1",
+    "video_id": "023_0002",
+    "video_path": "023/023_0002",
+    "category": "playground",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "road_1",
+    "video_id": "023_0002",
+    "video_path": "023/023_0002",
+    "category": "road",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "canteen_2",
+    "video_id": "023_0003",
+    "video_path": "023/023_0003",
+    "category": "canteen",
+    "floor_index": "",
+    "adjacent_place": ["supermarket_1"],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "teaching_building_1",
+    "video_id": "023_0003",
+    "video_path": "023/023_0003",
+    "category": "teaching_building",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "corridor_1",
+    "video_id": "023_0003",
+    "video_path": "023/023_0003",
+    "category": "corridor",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "teaching_building_1",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "self-study_area_1",
+    "video_id": "023_0003",
+    "video_path": "023/023_0003",
+    "category": "self-study_area",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "corridor_1",
+        "description": "The study area is located on both sides of the corridor_1."
+      }
+    ],
+    "parent_place_id": "teaching_building_1",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "corridor_2",
+    "video_id": "023_0003",
+    "video_path": "023/023_0003",
+    "category": "corridor",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "self-study_area_1",
+        "description": "The study area and the toilet are connected by the corridor_2."
+      }
+    ],
+    "parent_place_id": "teaching_building_1",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "toilet_1",
+    "video_id": "023_0003",
+    "video_path": "023/023_0003",
+    "category": "toilet",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "corridor_2",
+        "description": "The toilet and the study area are connected by the corridor_2."
+      }
+    ],
+    "parent_place_id": "teaching_building_1",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "drinking_area_1",
+    "video_id": "023_0003",
+    "video_path": "023/023_0003",
+    "category": "drinking_area",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "toilet_1",
+        "description": "The drinking area is adjacent to the toilet."
+      }
+    ],
+    "parent_place_id": "teaching_building_1",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "hotel_1",
+    "video_id": "023_0005",
+    "video_path": "023/023_0005",
+    "category": "hotel",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "elevator_1",
+    "video_id": "023_0005",
+    "video_path": "023/023_0005",
+    "category": "elevator",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "hotel_1",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "road_2",
+    "video_id": "023_0005",
+    "video_path": "023/023_0005",
+    "category": "road",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "hotel_1",
+        "description": "The hotel and the subway station are connected by this road."
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "subway_station_1",
+    "video_id": "023_0005",
+    "video_path": "023/023_0005",
+    "category": "subway_station",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "road_2",
+        "description": "The hotel and the subway station are connected by this road."
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "laboratory_1",
+    "video_id": "023_0006",
+    "video_path": "023/023_0006",
+    "category": "laboratory",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "workbench_area_1",
+    "video_id": "023_0006",
+    "video_path": "023/023_0006",
+    "category": "workbench_area",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "laboratory_1",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "breakfast_shop_1",
+    "video_id": "023_0007",
+    "video_path": "023/023_0007",
+    "category": "breakfast_shop",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "restaurant_1",
+    "video_id": "023_0008",
+    "video_path": "023/023_0008",
+    "category": "restaurant",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "road_3",
+    "video_id": "023_0009",
+    "video_path": "023/023_0009",
+    "category": "road",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "bridge_1",
+    "video_id": "023_0011",
+    "video_path": "023/023_0011",
+    "category": "bridge",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "canteen_3",
+    "video_id": "023_0011",
+    "video_path": "023/023_0011",
+    "category": "canteen",
+    "floor_index": "",
+    "adjacent_place": [
+      {
+        "place_id": "canteen_1",
+        "description": "The canteen_3 is located one floor below canteen_1."
+      }
+    ],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "Burger_King_1",
+    "video_id": "023_0014",
+    "video_path": "023/023_0014",
+    "category": "Burger_King",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "canteen_4",
+    "video_id": "023_0021",
+    "video_path": "023/023_0021",
+    "category": "canteen",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "teaching_building_2",
+    "video_id": "023_0022",
+    "video_path": "023/023_0022",
+    "category": "teaching_building",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "classroom_tb1_1",
+    "video_id": "023_0023",
+    "video_path": "023/023_0023",
+    "category": "classroom",
+    "floor_index": "2",
+    "adjacent_place": [],
+    "parent_place_id": "teaching_building_1",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "road_4",
+    "video_id": "023_0030",
+    "video_path": "023/023_0030",
+    "category": "road",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "public_electric_vehicle_parking_area_1",
+    "video_id": "023_0032",
+    "video_path": "023/023_0032",
+    "category": "public electric vehicle parking area",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "canteen_5",
+    "video_id": "023_0035",
+    "video_path": "023/023_0035",
+    "category": "canteen",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "canteen_6",
+    "video_id": "023_0035",
+    "video_path": "023/023_0035",
+    "category": "canteen",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "bridge_2",
+    "video_id": "023_0036",
+    "video_path": "023/023_0036",
+    "category": "bridge",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "stadium_1",
+    "video_id": "023_0036",
+    "video_path": "023/023_0036",
+    "category": "stadium",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-25",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "classroom_tb2_1",
+    "video_id": "023_0038",
+    "video_path": "023/023_0038",
+    "category": "classroom",
+    "floor_index": "2",
+    "adjacent_place": [],
+    "parent_place_id": "teaching_building_2",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-26",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "classroom_tb1_2",
+    "video_id": "023_0048",
+    "video_path": "023/023_0048",
+    "category": "classroom",
+    "floor_index": "3",
+    "adjacent_place": [],
+    "parent_place_id": "teaching_building_1",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "park_1",
+    "video_id": "023_0049",
+    "video_path": "023/023_0049",
+    "category": "park",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-03-01",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "classroom_tb2_2",
+    "video_id": "023_0050",
+    "video_path": "023/023_0050",
+    "category": "classroom",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "teaching_building_2",
+    "is_outdoor": false,
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-03-01",
+      "qc_status": "accepted"
+    }
+  }
+]

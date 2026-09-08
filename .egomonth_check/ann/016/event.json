@@ -1,0 +1,1715 @@
+[
+    {
+        "event_id": "ev_01",
+        "video_id": "016_0001",
+        "video_path": "016/016_0001",
+        "start_time": "0:05",
+        "end_time": "0:34",
+        "description": "show off her clothes",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0001_obj_trousers_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_02",
+        "video_id": "016_0001",
+        "video_path": "016/016_0001",
+        "start_time": "0:34",
+        "end_time": "0:41",
+        "description": "put her clothes on the table",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0001_obj_trousers_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_03",
+        "video_id": "016_0001",
+        "video_path": "016/003_0001",
+        "start_time": "00:46",
+        "end_time": "06:00",
+        "description": "organize her clothes",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0001_obj_trousers_01",
+            "0001_obj_trousers_02"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_04",
+        "video_id": "016_0001",
+        "video_path": "016/016_0001",
+        "start_time": "06:36",
+        "end_time": "06:46",
+        "description": "hang her clothes on a pole with a hanger",
+        "place_id": "storeroom_1",
+        "objects_involved": [
+            "0001_obj_hoodie_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_05",
+        "video_id": "016_0001",
+        "video_path": "016/016_0001",
+        "start_time": "07:49",
+        "end_time": "08:15",
+        "description": "fiddling with the phone",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0001_obj_mobile phone_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_06",
+        "video_id": "016_0002",
+        "video_path": "016/016_0002",
+        "start_time": "02:14",
+        "end_time": "03:15",
+        "description": "put on socks",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0002_obj_socks_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_07",
+        "video_id": "016_0002",
+        "video_path": "016/016_0002",
+        "start_time": "04:10",
+        "end_time": "04:21",
+        "description": "take cookies",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0002_obj_cookies_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_08",
+        "video_id": "016_0002",
+        "video_path": "016/016_0002",
+        "start_time": "04:56",
+        "end_time": "05:12",
+        "description": "change garbage bag",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0002_obj_garbage bag_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_09",
+        "video_id": "016_0002",
+        "video_path": "016/016_0002",
+        "start_time": "06:42",
+        "end_time": "06:50",
+        "description": "pick up the package",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0002_obj_garbage bag_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_10",
+        "video_id": "016_0002",
+        "video_path": "016/016_0002",
+        "start_time": "16:39",
+        "end_time": "16:41",
+        "description": "turn on the light",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_11",
+        "video_id": "016_0002",
+        "video_path": "016/016_0002",
+        "start_time": "16:42",
+        "end_time": "19:50",
+        "description": "trim vegetables for cooking",
+        "place_id": "kitchen_1",
+        "objects_involved": [
+            "0002_obj_vegetable_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_12",
+        "video_id": "016_0002",
+        "video_path": "016/016_0002",
+        "start_time": "20:32",
+        "end_time": "21:09",
+        "description": "wash vegetables",
+        "place_id": "kitchen_1",
+        "objects_involved": [
+            "0002_obj_vegetable_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_13",
+        "video_id": "016_0002",
+        "video_path": "016/016_0002",
+        "start_time": "21:32",
+        "end_time": "21:39",
+        "description": "retrieve ingredients from the refrigerator",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0002_obj_refrigerator_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_14",
+        "video_id": "016_0002",
+        "video_path": "016/016_0002",
+        "start_time": "30:30",
+        "end_time": "40:05",
+        "description": "eat a meal",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0002_obj_vegetable_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_15",
+        "video_id": "016_0002",
+        "video_path": "016/016_0002",
+        "start_time": "40:05",
+        "end_time": "40:05",
+        "description": "answer the phone",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0001_obj_mobile phone_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_16",
+        "video_id": "016_0002",
+        "video_path": "016/016_0002",
+        "start_time": "16:45",
+        "end_time": "27:50",
+        "description": "cooking",
+        "place_id": "kitchen_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_17",
+        "video_id": "016_0003",
+        "video_path": "016/016_0003",
+        "start_time": "00:15",
+        "end_time": "03:40",
+        "description": "watch videos",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_18",
+        "video_id": "016_0004",
+        "video_path": "016/016_0004",
+        "start_time": "00:01",
+        "end_time": "01:40",
+        "description": "binge watch",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_19",
+        "video_id": "016_0004",
+        "video_path": "016/016_0004",
+        "start_time": "03:20",
+        "end_time": "03:53",
+        "description": "put things in the bag",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_19",
+        "video_id": "016_0004",
+        "video_path": "016/016_0004",
+        "start_time": "03:55",
+        "end_time": "04:00",
+        "description": "wear headphones",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0004_obj_earphones_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-8",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_20",
+        "video_id": "016_0005",
+        "video_path": "016/016_0005",
+        "start_time": "00:23",
+        "end_time": "00:39",
+        "description": "reply to messages",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0001_obj_mobile phone_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-9",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_21",
+        "video_id": "016_0006",
+        "video_path": "016/016_0006",
+        "start_time": "00:44",
+        "end_time": "01:27",
+        "description": "wait for the elevator",
+        "place_id": "corridor_1",
+        "objects_involved": [
+            "0006_obj_elevator_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-9",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_22",
+        "video_id": "016_0007",
+        "video_path": "016/016_0007",
+        "start_time": "00:04",
+        "end_time": "00:06",
+        "description": "wash hands",
+        "place_id": "kitchen_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-9",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_23",
+        "video_id": "016_0007",
+        "video_path": "016/016_0007",
+        "start_time": "01:19",
+        "end_time": "03:08",
+        "description": "wash rice",
+        "place_id": "kitchen_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-9",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_24",
+        "video_id": "016_0007",
+        "video_path": "016/016_0007",
+        "start_time": "06:11",
+        "end_time": "06:14",
+        "description": "change garbage bag",
+        "place_id": "kitchen_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-9",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_25",
+        "video_id": "016_0007",
+        "video_path": "016/016_0007",
+        "start_time": "08:09",
+        "end_time": "09:06",
+        "description": "cut tofu",
+        "place_id": "kitchen_1",
+        "objects_involved": [
+            "0007_obj_chopping board_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-9",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_26",
+        "video_id": "016_0007",
+        "video_path": "016/016_0007",
+        "start_time": "14:19",
+        "end_time": "15:45",
+        "description": "cut eggplant",
+        "place_id": "kitchen_1",
+        "objects_involved": [
+            "0007_obj_chopping board_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-9",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_27",
+        "video_id": "016_0007",
+        "video_path": "016/016_0007",
+        "start_time": "16:30",
+        "end_time": "17:00",
+        "description": "peel garlic",
+        "place_id": "kitchen_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-9",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_28",
+        "video_id": "016_0007",
+        "video_path": "016/016_0007",
+        "start_time": "23:20",
+        "end_time": "26:40",
+        "description": "flip the tofu over",
+        "place_id": "kitchen_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-9",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_29",
+        "video_id": "016_0007",
+        "video_path": "016/016_0007",
+        "start_time": "37:37",
+        "end_time": "38:47",
+        "description": "wash the pot",
+        "place_id": "kitchen_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-9",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_30",
+        "video_id": "016_0008",
+        "video_path": "016/016_0008",
+        "start_time": "00:34",
+        "end_time": "00:37",
+        "description": "wear glasses",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0008_obj_glasses_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-9",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_31",
+        "video_id": "016_0008",
+        "video_path": "016/016_0008",
+        "start_time": "02:40",
+        "end_time": "02:43",
+        "description": "wear leopard print headband",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0008_obj_leopard print headband_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-9",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_32",
+        "video_id": "016_0009",
+        "video_path": "016/016_0009",
+        "start_time": "00:00",
+        "end_time": "01:05",
+        "description": "pour medicine into the medicine box",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0009_obj_medicine box_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-11",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_33",
+        "video_id": "016_0009",
+        "video_path": "016/016_0009",
+        "start_time": "08:09",
+        "end_time": "08:11",
+        "description": "fetch water",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0009_obj_water dispenser_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-11",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_34",
+        "video_id": "016_0009",
+        "video_path": "016/016_0009",
+        "start_time": "08:38",
+        "end_time": "18:36",
+        "description": "fiddling with the phone",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-11",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_35",
+        "video_id": "016_0010",
+        "video_path": "016/016_0010",
+        "start_time": "00:25",
+        "end_time": "02:08",
+        "description": "wash the dishes",
+        "place_id": "kitchen_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-13",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_36",
+        "video_id": "016_0010",
+        "video_path": "016/016_0010",
+        "start_time": "02:10",
+        "end_time": "42:58",
+        "description": "cooking",
+        "place_id": "kitchen_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-13",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_37",
+        "video_id": "016_0010",
+        "video_path": "016/016_0010",
+        "start_time": "40:18",
+        "end_time": "40:25",
+        "description": "retrieve oyster sauce from the refrigerator",
+        "place_id": "kitchen_1",
+        "objects_involved": [
+            "0010_obj_oyster sauce_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-13",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_38",
+        "video_id": "016_0011",
+        "video_path": "016/016_0011",
+        "start_time": "00:52",
+        "end_time": "01:20",
+        "description": "pour the oil from the bowl into the pot",
+        "place_id": "kitchen_1",
+        "objects_involved": [
+            "0011_obj_pot_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-13",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_39",
+        "video_id": "016_0011",
+        "video_path": "016/016_0011",
+        "start_time": "01:40",
+        "end_time": "01:50",
+        "description": "wash vegetables",
+        "place_id": "kitchen_1",
+        "objects_involved": [
+            "0011_obj_greens_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-13",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_40",
+        "video_id": "016_0011",
+        "video_path": "016/016_0011",
+        "start_time": "03:00",
+        "end_time": "05:26",
+        "description": "stir fried greens",
+        "place_id": "kitchen_1",
+        "objects_involved": [
+            "0011_obj_greens_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-13",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_41",
+        "video_id": "016_0012",
+        "video_path": "016/016_0012",
+        "start_time": "00:00",
+        "end_time": "00:30",
+        "description": "open a box of kiwifruit",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0012_obj_kiwi fruit_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-13",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_42",
+        "video_id": "016_0013",
+        "video_path": "016/016_0013",
+        "start_time": "00:22",
+        "end_time": "01:07",
+        "description": "fetch water",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0013_obj_water dispenser_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-13",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_43",
+        "video_id": "016_0013",
+        "video_path": "016/016_0013",
+        "start_time": "02:15",
+        "end_time": "02:20",
+        "description": "dismantling kiwifruit",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-13",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_44",
+        "video_id": "016_0013",
+        "video_path": "016/016_0013",
+        "start_time": "03:30",
+        "end_time": "04:23",
+        "description": "put the kiwi fruit in the refrigerator",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-13",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_45",
+        "video_id": "016_0013",
+        "video_path": "016/016_0013",
+        "start_time": "05:00",
+        "end_time": "07:40",
+        "description": "tidy up the room",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-13",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_46",
+        "video_id": "016_0013",
+        "video_path": "016/016_0013",
+        "start_time": "07:44",
+        "end_time": "08:20",
+        "description": "watering potted plants",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-13",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_47",
+        "video_id": "016_0014",
+        "video_path": "016/016_0014",
+        "start_time": "01:05",
+        "end_time": "01:36",
+        "description": "go to the storage room to get a storage box with clothes",
+        "place_id": "storeroom_1",
+        "objects_involved": [
+            "0014_obj_storage box_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-14",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_48",
+        "video_id": "016_0014",
+        "video_path": "016/016_0014",
+        "start_time": "03:55",
+        "end_time": "04:26",
+        "description": "go to the storage room to get a storage box",
+        "place_id": "storeroom_1",
+        "objects_involved": [
+            "0014_obj_storage box_02"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-14",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_49",
+        "video_id": "016_0015",
+        "video_path": "016/016_0015",
+        "start_time": "00:06",
+        "end_time": "01:14",
+        "description": "sunbathing bed sheets",
+        "place_id": "balcony_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-14",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_50",
+        "video_id": "016_0015",
+        "video_path": "016/016_0015",
+        "start_time": "04:50",
+        "end_time": "05:00",
+        "description": "helping my boyfriend organize his bag",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-14",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_51",
+        "video_id": "016_0015",
+        "video_path": "016/016_0015",
+        "start_time": "07:15",
+        "end_time": "07:24",
+        "description": "sorting out hats hanging on door handles",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-14",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_52",
+        "video_id": "016_0016",
+        "video_path": "016/016_0016",
+        "start_time": "00:15",
+        "end_time": "00:51",
+        "description": "search for headphones",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0016_obj_earphones_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-14",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_53",
+        "video_id": "016_0016",
+        "video_path": "016/016_0016",
+        "start_time": "01:25",
+        "end_time": "01:45",
+        "description": "change shoes",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-14",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_54",
+        "video_id": "016_0016",
+        "video_path": "016/016_0016",
+        "start_time": "02:15",
+        "end_time": "02:55",
+        "description": "take the elevator",
+        "place_id": "",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-14",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_55",
+        "video_id": "016_0016",
+        "video_path": "016/016_0016",
+        "start_time": "05:00",
+        "end_time": "02:55",
+        "description": "take the elevator",
+        "place_id": "",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-14",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_56",
+        "video_id": "016_0016",
+        "video_path": "016/016_0016",
+        "start_time": "16:50",
+        "end_time": "17:00",
+        "description": "navigation",
+        "place_id": "",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-14",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_57",
+        "video_id": "016_0016",
+        "video_path": "016/016_0016",
+        "start_time": "20:27",
+        "end_time": "20:50",
+        "description": "passing through tunnel",
+        "place_id": "",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-14",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_58",
+        "video_id": "016_0016",
+        "video_path": "016/016_0016",
+        "start_time": "25:30",
+        "end_time": "25:32",
+        "description": "encountering a dead end",
+        "place_id": "",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-14",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_59",
+        "video_id": "016_0017",
+        "video_path": "016/016_0017",
+        "start_time": "00:10",
+        "end_time": "00:13",
+        "description": "get a stool",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0017_obj_small stool_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-16",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_60",
+        "video_id": "016_0017",
+        "video_path": "016/016_0017",
+        "start_time": "00:25",
+        "end_time": "05:30",
+        "description": "unpack the package",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0017_obj_knife_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-16",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_61",
+        "video_id": "016_0017",
+        "video_path": "016/016_0017",
+        "start_time": "05:50",
+        "end_time": "08:50",
+        "description": "assemble water dispenser",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0017_obj_water dispenser_01",
+            "0017_obj_hose_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-16",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_62",
+        "video_id": "016_0017",
+        "video_path": "016/016_0017",
+        "start_time": "10:35",
+        "end_time": "10:55",
+        "description": "tear off the label on the water dispenser",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0017_obj_water dispenser_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-16",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_63",
+        "video_id": "016_0017",
+        "video_path": "016/016_0017",
+        "start_time": "15:20",
+        "end_time": "15:23",
+        "description": "bring hot water to warm up kitchen utensils",
+        "place_id": "kitchen_1",
+        "objects_involved": [
+            "0017_obj_steamer_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-16",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_64",
+        "video_id": "016_0017",
+        "video_path": "016/016_0017",
+        "start_time": "16:36",
+        "end_time": "17:00",
+        "description": "took a cotton towel from the toilet",
+        "place_id": "toilet_1",
+        "objects_involved": [
+            "0017_obj_water dispenser_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-16",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_65",
+        "video_id": "016_0018",
+        "video_path": "016/016_0018",
+        "start_time": "00:00",
+        "end_time": "00:43",
+        "description": "move the express delivery in from the door",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-16",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_66",
+        "video_id": "016_0018",
+        "video_path": "016/016_0018",
+        "start_time": "03:18",
+        "end_time": "03:38",
+        "description": "step on the small stool to get the helmet",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0018_obj_helmet_01",
+            "0018_obj_small stool_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-16",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_67",
+        "video_id": "016_0018",
+        "video_path": "016/016_0018",
+        "start_time": "06:30",
+        "end_time": "06:50",
+        "description": "put things in her bag",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0018_obj_a bag of blankets_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-16",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_68",
+        "video_id": "016_0018",
+        "video_path": "016/016_0018",
+        "start_time": "14:49",
+        "end_time": "15:35",
+        "description": "take the elevator",
+        "place_id": "",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-16",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_69",
+        "video_id": "016_0019",
+        "video_path": "016/016_0019",
+        "start_time": "00:05",
+        "end_time": "08:35",
+        "description": "eating pizza",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0019_obj_pizza_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-17",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_70",
+        "video_id": "016_0019",
+        "video_path": "016/016_0019",
+        "start_time": "09:05",
+        "end_time": "09:20",
+        "description": "take the laptop",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0019_obj_laptop_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-17",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_71",
+        "video_id": "016_0020",
+        "video_path": "016/016_0020",
+        "start_time": "00:44",
+        "end_time": "00:47",
+        "description": "flip the laptop over one side",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0020_obj_laptop_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-17",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_72",
+        "video_id": "016_0021",
+        "video_path": "016/016_0021",
+        "start_time": "06:50",
+        "end_time": "08:27",
+        "description": "feed her boyfriend pizza",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0021_obj_pizza_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-17",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_73",
+        "video_id": "016_0021",
+        "video_path": "016/016_0021",
+        "start_time": "10:05",
+        "end_time": "10:57",
+        "description": "assemble screws",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-17",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_74",
+        "video_id": "016_0021",
+        "video_path": "016/016_0021",
+        "start_time": "13:05",
+        "end_time": "13:50",
+        "description": "wipe the table",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0021_obj_table_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-17",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_75",
+        "video_id": "016_0021",
+        "video_path": "016/016_0021",
+        "start_time": "16:58",
+        "end_time": "28:30",
+        "description": "unpack the package",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0021_obj_facial mask_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-17",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_76",
+        "video_id": "016_0021",
+        "video_path": "016/016_0021",
+        "start_time": "25:57",
+        "end_time": "29:00",
+        "description": "drink water",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0021_obj_water cup_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-17",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_77",
+        "video_id": "016_0021",
+        "video_path": "016/016_0021",
+        "start_time": "34:00",
+        "end_time": "35:00",
+        "description": "search for new storage boxes in different rooms",
+        "place_id": "",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-17",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_78",
+        "video_id": "016_0022",
+        "video_path": "016/016_0022",
+        "start_time": "04:00",
+        "end_time": "10:06",
+        "description": "check the functions of beauty lamps on the mobile phone",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-18",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_79",
+        "video_id": "016_0023",
+        "video_path": "016/016_0023",
+        "start_time": "00:35",
+        "end_time": "01:33",
+        "description": "unsealing a new laptop",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0023_obj_laptop_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-18",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_80",
+        "video_id": "016_0023",
+        "video_path": "016/016_0023",
+        "start_time": "05:20",
+        "end_time": "08:20",
+        "description": "operate the computer",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0023_obj_laptop_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-18",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_81",
+        "video_id": "016_0024",
+        "video_path": "016/016_0024",
+        "start_time": "00:29",
+        "end_time": "00:32",
+        "description": "open the drawer and close it",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-18",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_82",
+        "video_id": "016_0024",
+        "video_path": "016/016_0024",
+        "start_time": "00:38",
+        "end_time": "00:45",
+        "description": "fetch water",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0024_obj_cup_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-18",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_83",
+        "video_id": "016_0025",
+        "video_path": "016/016_0025",
+        "start_time": "00:02",
+        "end_time": "00:25",
+        "description": "open a box of beverages",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0025_obj_a box of beverages_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_84",
+        "video_id": "016_0025",
+        "video_path": "016/016_0025",
+        "start_time": "01:00",
+        "end_time": "06:00",
+        "description": "organize and store her snack cart",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0025_obj_snack cart_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_85",
+        "video_id": "016_0025",
+        "video_path": "016/016_0025",
+        "start_time": "10:05",
+        "end_time": "10:09",
+        "description": "take a photo of the consumption order",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0025_obj_consumption receipts_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_86",
+        "video_id": "016_0025",
+        "video_path": "016/016_0025",
+        "start_time": "12:30",
+        "end_time": "12:50",
+        "description": "cut open the packaging",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0025_obj_scissors_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_87",
+        "video_id": "016_0025",
+        "video_path": "016/016_0025",
+        "start_time": "13:28",
+        "end_time": "14:30",
+        "description": "tighten the screw",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_88",
+        "video_id": "016_0025",
+        "video_path": "016/016_0025",
+        "start_time": "17:00",
+        "end_time": "18:00",
+        "description": "pack up discarded cardboard boxes and bags",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_89",
+        "video_id": "016_0025",
+        "video_path": "016/016_0025",
+        "start_time": "20:20",
+        "end_time": "20:50",
+        "description": "message back on the phone",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_90",
+        "video_id": "016_0025",
+        "video_path": "016/016_0025",
+        "start_time": "22:20",
+        "end_time": "22:25",
+        "description": "sit on the stool",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_91",
+        "video_id": "016_0025",
+        "video_path": "016/016_0025",
+        "start_time": "26:30",
+        "end_time": "26:35",
+        "description": "her boyfriend sat over",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0025_obj_stool_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_92",
+        "video_id": "016_0025",
+        "video_path": "016/016_0025",
+        "start_time": "23:06",
+        "end_time": "47:09",
+        "description": "sitting and chatting with my boyfriend",
+        "place_id": "living room_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_93",
+        "video_id": "016_0026",
+        "video_path": "016/016_0026",
+        "start_time": "01:00",
+        "end_time": "21:09",
+        "description": "makeup",
+        "place_id": "toilet_1",
+        "objects_involved": [],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_94",
+        "video_id": "016_0026",
+        "video_path": "016/016_0026",
+        "start_time": "07:20",
+        "end_time": "08:17",
+        "description": "apply powder puff",
+        "place_id": "toilet_1",
+        "objects_involved": [
+            "0026_obj_powder_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_95",
+        "video_id": "016_0026",
+        "video_path": "016/016_0026",
+        "start_time": "04:40",
+        "end_time": "07:15",
+        "description": "paint eye shadow powder blusher",
+        "place_id": "toilet_1",
+        "objects_involved": [
+            "0026_obj_eyeshadow palette_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_96",
+        "video_id": "016_0026",
+        "video_path": "016/016_0026",
+        "start_time": "09:50",
+        "end_time": "11:56",
+        "description": "paint shadow",
+        "place_id": "toilet_1",
+        "objects_involved": [
+            "0026_obj_eyeshadow palette_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_97",
+        "video_id": "016_0026",
+        "video_path": "016/016_0026",
+        "start_time": "13:00",
+        "end_time": "13:40",
+        "description": "paint highlights",
+        "place_id": "toilet_1",
+        "objects_involved": [
+            "0026_obj_highlight_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_98",
+        "video_id": "016_0026",
+        "video_path": "016/016_0026",
+        "start_time": "18:45",
+        "end_time": "19:42",
+        "description": "apply lipstick",
+        "place_id": "toilet_1",
+        "objects_involved": [
+            "0026_obj_lipstick_01",
+            "0026_obj_lipstick_02",
+            "0026_obj_lipstick_03"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_99",
+        "video_id": "016_0026",
+        "video_path": "016/016_0026",
+        "start_time": "21:39",
+        "end_time": "21:49",
+        "description": "put the makeup box back from the bedroom to the living room",
+        "place_id": "toilet_1",
+        "objects_involved": [
+            "0026_obj_cosmetic box_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_100",
+        "video_id": "016_0026",
+        "video_path": "016/016_0026",
+        "start_time": "22:08",
+        "end_time": "21:49",
+        "description": "fetch water",
+        "place_id": "",
+        "objects_involved": [
+            "0026_obj_cup_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_101",
+        "video_id": "016_0026",
+        "video_path": "016/016_0026",
+        "start_time": "00:50",
+        "end_time": "01:00",
+        "description": "wash powder puff",
+        "place_id": "toilet_1",
+        "objects_involved": [
+            "0026_obj_powder puff_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_102",
+        "video_id": "016_0027",
+        "video_path": "016/016_0027",
+        "start_time": "00:28",
+        "end_time": "49:22",
+        "description": "operate the computer",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0027_obj_laptop_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_103",
+        "video_id": "016_0027",
+        "video_path": "016/016_0027",
+        "start_time": "03:01",
+        "end_time": "04:41",
+        "description": "watching tutorials on mobile phones",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0027_obj_mobile_phone_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    },
+    {
+        "event_id": "ev_104",
+        "video_id": "016_0027",
+        "video_path": "016/016_0027",
+        "start_time": "06:20",
+        "end_time": "06:30",
+        "description": "follow the video and try sliding the computer touch screen herself",
+        "place_id": "living room_1",
+        "objects_involved": [
+            "0027_obj_laptop_01",
+            "0027_obj_mobile_phone_01"
+        ],
+        "meta": {
+            "annotator_id": "worker_04",
+            "created_at": "2025-12-19",
+            "qc_status": "accepted"
+        }
+    }
+]

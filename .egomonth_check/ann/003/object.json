@@ -1,0 +1,3742 @@
+[
+  {
+    "video_id": "003_0001",
+    "video_path": "003/003_0001",
+    "object_category": "fire extinguisher",
+    "object_id": "0001_obj_extinguisher_01",
+    "time": "00:17",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "The small compartment in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_09",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0001",
+    "video_path": "003/003_0001",
+    "object_category": "sofa",
+    "object_id": "0001_obj_sofa_01",
+    "time": "00:45",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the  table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_09",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0001",
+    "video_path": "003/003_0001",
+    "object_category": "TV",
+    "object_id": "0001_obj_tv_01",
+    "time": "00:47",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_09",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0001",
+    "video_path": "003/003_0001",
+    "object_category": "Micro-wave oven",
+    "object_id": "0001_obj_microwave_01",
+    "time": "01:49",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Above the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_09",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0001",
+    "video_path": "003/003_0001",
+    "object_category": "Hair dryer",
+    "object_id": "0001_obj_hairdryer_01",
+    "time": "03:44",
+    "location": {
+      "place_id": "bathroom_1",
+      "place_type": "bathroom",
+      "description": "Next to the tap in the bathroom"
+    },
+    "meta": {
+      "annotator_id": "worker_09",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0001",
+    "video_path": "003/003_0001",
+    "object_category": "washing machine",
+    "object_id": "0001_obj_washingmachine_01",
+    "time": "03:50",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Directly opposite the bathroom door"
+    },
+    "meta": {
+      "annotator_id": "worker_09",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0001",
+    "video_path": "003/003_0001",
+    "object_category": "trash can",
+    "object_id": "0001_obj_trashcan_01",
+    "time": "12:23",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the sofa in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_09",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0001",
+    "video_path": "003/003_0001",
+    "object_category": "shoe rack",
+    "object_id": "0001_obj_shoerack_01",
+    "time": "12:40",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Near the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_09",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0001",
+    "video_path": "003/003_0001",
+    "object_category": "Blue Doll",
+    "object_id": "0001_obj_bluedoll_01",
+    "time": "14:03",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Behind the sofa in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_09",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0001",
+    "video_path": "003/003_0001",
+    "object_category": "bread",
+    "object_id": "0001_obj_bread_01",
+    "time": "18:03",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_09",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0001",
+    "video_path": "003/003_0001",
+    "object_category": "fan",
+    "object_id": "0001_obj_fan_01",
+    "time": "22:23",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next the bed"
+    },
+    "meta": {
+      "annotator_id": "worker_09",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0002",
+    "video_path": "003/003_0002",
+    "object_category": "mirror",
+    "object_id": "0001_obj_mirror_01",
+    "time": "00:06",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Above the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0002",
+    "video_path": "003/003_0002",
+    "object_category": "refrigerator",
+    "object_id": "0001_obj_refrigerator_01",
+    "time": "00:26",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0002",
+    "video_path": "003/003_0002",
+    "object_category": "fan",
+    "object_id": "0002_obj_fan_01",
+    "time": "02:13",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next the bed"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0002",
+    "video_path": "003/003_0002",
+    "object_category": "elevator",
+    "object_id": "0001_obj_elevator_01",
+    "time": "03:43",
+    "location": {
+      "place_id": "elevator_1",
+      "place_type": "elevator",
+      "description": "Inside the elevator on the 38th floor"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0003",
+    "video_path": "003/003_0003",
+    "object_category": "projector",
+    "object_id": "0003_obj_projector_01",
+    "time": "00:54",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the sofa in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0003",
+    "video_path": "003/003_0003",
+    "object_category": "handbag",
+    "object_id": "0003_obj_handbag_01",
+    "time": "00:54",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the sofa in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0003",
+    "video_path": "003/003_0003",
+    "object_category": "floor lamp",
+    "object_id": "0003_obj_floorlamp_01",
+    "time": "01:07",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the sofa in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0003",
+    "video_path": "003/003_0003",
+    "object_category": "wardrobe",
+    "object_id": "0003_obj_wardrobe_01",
+    "time": "01:20",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0003",
+    "video_path": "003/003_0003",
+    "object_category": "TV",
+    "object_id": "0003_obj_tv_01",
+    "time": "01:20",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the wardrobe in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0003",
+    "video_path": "003/003_0003",
+    "object_category": "router",
+    "object_id": "0003_obj_router_01",
+    "time": "02:45",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Behind the TV in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0003",
+    "video_path": "003/003_0003",
+    "object_category": "microwave oven",
+    "object_id": "0003_obj_microwave_01",
+    "time": "02:45",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table next to the TV in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0004",
+    "video_path": "003/003_0004",
+    "object_category": "mirror",
+    "object_id": "0004_obj_mirror_01",
+    "time": "00:05",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0004",
+    "video_path": "003/003_0004",
+    "object_category": "refrigerator",
+    "object_id": "0004_obj_refrigerator_01",
+    "time": "00:08",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0004",
+    "video_path": "003/003_0004",
+    "object_category": "wardrobe",
+    "object_id": "0004_obj_wardrobe_01",
+    "time": "00:11",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0004",
+    "video_path": "003/003_0004",
+    "object_category": "TV",
+    "object_id": "0004_obj_tv_01",
+    "time": "00:11",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the wardrobe in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0004",
+    "video_path": "003/003_0004",
+    "object_category": "router",
+    "object_id": "0004_obj_router_01",
+    "time": "00:11",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Behind the TV in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0004",
+    "video_path": "003/003_0004",
+    "object_category": "sink",
+    "object_id": "0004_obj_sink_01",
+    "time": "04:07",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0004",
+    "video_path": "003/003_0004",
+    "object_category": "pomegranate",
+    "object_id": "0004_obj_pomegranate_01",
+    "time": "05:39",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0005",
+    "video_path": "003/003_0005",
+    "object_category": "mirror",
+    "object_id": "0005_obj_mirror_01",
+    "time": "00:11",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0005",
+    "video_path": "003/003_0005",
+    "object_category": "refrigerator",
+    "object_id": "0005_obj_refrigerator_01",
+    "time": "00:32",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0005",
+    "video_path": "003/003_0005",
+    "object_category": "floor lamp",
+    "object_id": "0005_obj_floorlamp_01",
+    "time": "00:37",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the sofa in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0005",
+    "video_path": "003/003_0005",
+    "object_category": "sofa",
+    "object_id": "0005_obj_sofa_01",
+    "time": "00:37",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the floor lamp in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0005",
+    "video_path": "003/003_0005",
+    "object_category": "large trash can",
+    "object_id": "0005_obj_largetrashcan_01",
+    "time": "03:52",
+    "location": {
+      "place_id": "garbage_room_1",
+      "place_type": "garbage_room",
+      "description": "In the garbage room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0005",
+    "video_path": "003/003_0005",
+    "object_category": "takeout locker",
+    "object_id": "0005_obj_takeoutlocker_01",
+    "time": "06:31",
+    "location": {
+      "place_id": "lobby_2",
+      "place_type": "lobby",
+      "description": "In the lobby on the first floor"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0006",
+    "video_path": "003/003_0006",
+    "object_category": "wardrobe",
+    "object_id": "0006_obj_wardrobe_01",
+    "time": "00:04",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the TV in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0006",
+    "video_path": "003/003_0006",
+    "object_category": "TV",
+    "object_id": "0006_obj_tv_01",
+    "time": "00:04",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the wardrobe in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0006",
+    "video_path": "003/003_0006",
+    "object_category": "refrigerator",
+    "object_id": "0006_obj_refrigerator_01",
+    "time": "00:10",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0007",
+    "video_path": "003/003_0007",
+    "object_category": "refrigerator",
+    "object_id": "0007_obj_refrigerator_01",
+    "time": "00:24",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0007",
+    "video_path": "003/003_0007",
+    "object_category": "wardrobe",
+    "object_id": "0007_obj_wardrobe_01",
+    "time": "00:43",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0007",
+    "video_path": "003/003_0007",
+    "object_category": "table",
+    "object_id": "0007_obj_table_01",
+    "time": "00:46",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0007",
+    "video_path": "003/003_0007",
+    "object_category": "bed",
+    "object_id": "0007_obj_bed_01",
+    "time": "00:46",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0007",
+    "video_path": "003/003_0007",
+    "object_category": "takeout locker",
+    "object_id": "0007_obj_takeoutlocker_01",
+    "time": "08:50",
+    "location": {
+      "place_id": "lobby_2",
+      "place_type": "lobby",
+      "description": "In the lobby on the first floor"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0007",
+    "video_path": "003/003_0007",
+    "object_category": "sofa",
+    "object_id": "0007_obj_sofa_01",
+    "time": "11:42",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the floor lamp in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0008",
+    "video_path": "003/003_0008",
+    "object_category": "refrigerator",
+    "object_id": "0008_obj_refrigerator_01",
+    "time": "00:44",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0008",
+    "video_path": "003/003_0008",
+    "object_category": "wardrobe",
+    "object_id": "0008_obj_wardrobe_01",
+    "time": "00:06",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0008",
+    "video_path": "003/003_0008",
+    "object_category": "table",
+    "object_id": "0008_obj_table_01",
+    "time": "00:10",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0008",
+    "video_path": "003/003_0008",
+    "object_category": "bed",
+    "object_id": "0008_obj_bed_01",
+    "time": "00:10",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0008",
+    "video_path": "003/003_0008",
+    "object_category": "takeout locker",
+    "object_id": "0008_obj_takeoutlocker_01",
+    "time": "06:50",
+    "location": {
+      "place_id": "lobby_2",
+      "place_type": "lobby",
+      "description": "In the lobby on the first floor"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0008",
+    "video_path": "003/003_0008",
+    "object_category": "sofa",
+    "object_id": "0008_obj_sofa_01",
+    "time": "11:42",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the floor lamp in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0008",
+    "video_path": "003/003_0008",
+    "object_category": "sink",
+    "object_id": "0008_obj_sink_01",
+    "time": "06:07",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0009",
+    "video_path": "003/003_0009",
+    "object_category": "refrigerator",
+    "object_id": "0009_obj_refrigerator_01",
+    "time": "00:24",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0009",
+    "video_path": "003/003_0009",
+    "object_category": "wardrobe",
+    "object_id": "0009_obj_wardrobe_01",
+    "time": "00:43",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0009",
+    "video_path": "003/003_0009",
+    "object_category": "table",
+    "object_id": "0009_obj_table_01",
+    "time": "00:46",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0009",
+    "video_path": "003/003_0009",
+    "object_category": "bed",
+    "object_id": "0009_obj_bed_01",
+    "time": "00:46",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0009",
+    "video_path": "003/003_0009",
+    "object_category": "takeout locker",
+    "object_id": "0009_obj_takeoutlocker_01",
+    "time": "08:50",
+    "location": {
+      "place_id": "lobby_2",
+      "place_type": "lobby",
+      "description": "In the lobby on the first floor"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0009",
+    "video_path": "003/003_0009",
+    "object_category": "sofa",
+    "object_id": "0009_obj_sofa_01",
+    "time": "11:42",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the floor lamp in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0009",
+    "video_path": "003/003_0009",
+    "object_category": "sink",
+    "object_id": "0009_obj_sink_01",
+    "time": "06:07",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0010",
+    "video_path": "003/003_0010",
+    "object_category": "mobile phone",
+    "object_id": "0010_obj_mobilephone_01",
+    "time": "00:01",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0010",
+    "video_path": "003/003_0010",
+    "object_category": "refrigerator",
+    "object_id": "0010_obj_refrigerator_01",
+    "time": "00:51",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0010",
+    "video_path": "003/003_0010",
+    "object_category": "wardrobe",
+    "object_id": "0010_obj_wardrobe_01",
+    "time": "00:43",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0010",
+    "video_path": "003/003_0010",
+    "object_category": "table",
+    "object_id": "0010_obj_table_01",
+    "time": "00:43",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0010",
+    "video_path": "003/003_0010",
+    "object_category": "bed",
+    "object_id": "0010_obj_bed_01",
+    "time": "00:43",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0010",
+    "video_path": "003/003_0010",
+    "object_category": "sink",
+    "object_id": "0010_obj_sink_01",
+    "time": "01:10",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0011",
+    "video_path": "003/003_0011",
+    "object_category": "refrigerator",
+    "object_id": "0011_obj_refrigerator_01",
+    "time": "01:20",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0011",
+    "video_path": "003/003_0011",
+    "object_category": "wardrobe",
+    "object_id": "0011_obj_wardrobe_01",
+    "time": "01:10",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0011",
+    "video_path": "003/003_0011",
+    "object_category": "table",
+    "object_id": "0011_obj_table_01",
+    "time": "01:10",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0011",
+    "video_path": "003/003_0011",
+    "object_category": "bed",
+    "object_id": "0011_obj_bed_01",
+    "time": "01:10",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0011",
+    "video_path": "003/003_0011",
+    "object_category": "sink",
+    "object_id": "0011_obj_sink_01",
+    "time": "01:25",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0011",
+    "video_path": "003/003_0011",
+    "object_category": "pomelo",
+    "object_id": "0011_obj_pomelo_01",
+    "time": "03:58",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0012",
+    "video_path": "003/003_0012",
+    "object_category": "refrigerator",
+    "object_id": "0012_obj_refrigerator_01",
+    "time": "00:03",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0012",
+    "video_path": "003/003_0012",
+    "object_category": "wardrobe",
+    "object_id": "0012_obj_wardrobe_01",
+    "time": "00:01",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0012",
+    "video_path": "003/003_0012",
+    "object_category": "table",
+    "object_id": "0012_obj_table_01",
+    "time": "00:02",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0012",
+    "video_path": "003/003_0012",
+    "object_category": "bed",
+    "object_id": "0012_obj_bed_01",
+    "time": "00:01",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0012",
+    "video_path": "003/003_0012",
+    "object_category": "sink",
+    "object_id": "0012_obj_sink_01",
+    "time": "01:25",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0012",
+    "video_path": "003/003_0012",
+    "object_category": "fan",
+    "object_id": "0012_obj_fan_01",
+    "time": "00:05",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0013",
+    "video_path": "003/003_0013",
+    "object_category": "refrigerator",
+    "object_id": "0013_obj_refrigerator_01",
+    "time": "01:03",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0013",
+    "video_path": "003/003_0013",
+    "object_category": "wardrobe",
+    "object_id": "0013_obj_wardrobe_01",
+    "time": "00:04",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0013",
+    "video_path": "003/003_0013",
+    "object_category": "table",
+    "object_id": "0013_obj_table_01",
+    "time": "00:04",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0013",
+    "video_path": "003/003_0013",
+    "object_category": "bed",
+    "object_id": "0013_obj_bed_01",
+    "time": "00:04",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0013",
+    "video_path": "003/003_0013",
+    "object_category": "fan",
+    "object_id": "0013_obj_fan_01",
+    "time": "00:05",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0015",
+    "video_path": "003/003_0015",
+    "object_category": "refrigerator",
+    "object_id": "0015_obj_refrigerator_01",
+    "time": "00:13",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0014",
+    "video_path": "003/003_0014",
+    "object_category": "wardrobe",
+    "object_id": "0014_obj_wardrobe_01",
+    "time": "00:45",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0014",
+    "video_path": "003/003_0014",
+    "object_category": "table",
+    "object_id": "0014_obj_table_01",
+    "time": "00:45",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0014",
+    "video_path": "003/003_0014",
+    "object_category": "bed",
+    "object_id": "0014_obj_bed_01",
+    "time": "00:45",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0014",
+    "video_path": "003/003_0014",
+    "object_category": "fan",
+    "object_id": "0014_obj_fan_01",
+    "time": "00:45",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0014",
+    "video_path": "003/003_0014",
+    "object_category": "chair",
+    "object_id": "0014_obj_chair_01",
+    "time": "05:20",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0015",
+    "video_path": "003/003_0015",
+    "object_category": "refrigerator",
+    "object_id": "0015_obj_refrigerator_01",
+    "time": "00:59",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0015",
+    "video_path": "003/003_0015",
+    "object_category": "sink",
+    "object_id": "0015_obj_sink_01",
+    "time": "00:13",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0015",
+    "video_path": "003/003_0015",
+    "object_category": "wardrobe",
+    "object_id": "0015_obj_wardrobe_01",
+    "time": "00:59",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0015",
+    "video_path": "003/003_0015",
+    "object_category": "table",
+    "object_id": "0015_obj_table_01",
+    "time": "00:59",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0015",
+    "video_path": "003/003_0015",
+    "object_category": "bed",
+    "object_id": "0015_obj_bed_01",
+    "time": "00:59",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0015",
+    "video_path": "003/003_0015",
+    "object_category": "fan",
+    "object_id": "0015_obj_fan_01",
+    "time": "00:59",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0015",
+    "video_path": "003/003_0015",
+    "object_category": "chair",
+    "object_id": "0015_obj_chair_01",
+    "time": "00:59",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0016",
+    "video_path": "003/003_0016",
+    "object_category": "refrigerator",
+    "object_id": "0016_obj_refrigerator_01",
+    "time": "00:29",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0016",
+    "video_path": "003/003_0016",
+    "object_category": "sink",
+    "object_id": "0016_obj_sink_01",
+    "time": "00:03",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0016",
+    "video_path": "003/003_0016",
+    "object_category": "wardrobe",
+    "object_id": "0016_obj_wardrobe_01",
+    "time": "02:47",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0016",
+    "video_path": "003/003_0016",
+    "object_category": "table",
+    "object_id": "0016_obj_table_01",
+    "time": "00:29",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0016",
+    "video_path": "003/003_0016",
+    "object_category": "bed",
+    "object_id": "0016_obj_bed_01",
+    "time": "00:29",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0016",
+    "video_path": "003/003_0016",
+    "object_category": "fan",
+    "object_id": "0016_obj_fan_01",
+    "time": "00:29",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0016",
+    "video_path": "003/003_0016",
+    "object_category": "chair",
+    "object_id": "0016_obj_chair_01",
+    "time": "00:29",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0016",
+    "video_path": "003/003_0016",
+    "object_category": "sofa",
+    "object_id": "0016_obj_sofa_01",
+    "time": "00:29",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed and table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0017",
+    "video_path": "003/003_0017",
+    "object_category": "refrigerator",
+    "object_id": "0017_obj_refrigerator_01",
+    "time": "00:04",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0017",
+    "video_path": "003/003_0017",
+    "object_category": "sink",
+    "object_id": "0017_obj_sink_01",
+    "time": "00:01",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0017",
+    "video_path": "003/003_0017",
+    "object_category": "wardrobe",
+    "object_id": "0017_obj_wardrobe_01",
+    "time": "00:04",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0017",
+    "video_path": "003/003_0017",
+    "object_category": "table",
+    "object_id": "0017_obj_table_01",
+    "time": "00:04",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0017",
+    "video_path": "003/003_0017",
+    "object_category": "bed",
+    "object_id": "0017_obj_bed_01",
+    "time": "00:04",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0017",
+    "video_path": "003/003_0017",
+    "object_category": "fan",
+    "object_id": "0017_obj_fan_01",
+    "time": "00:04",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0017",
+    "video_path": "003/003_0017",
+    "object_category": "chair",
+    "object_id": "0017_obj_chair_01",
+    "time": "00:04",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0017",
+    "video_path": "003/003_0017",
+    "object_category": "sofa",
+    "object_id": "0017_obj_sofa_01",
+    "time": "00:04",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed and table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0018",
+    "video_path": "003/003_0018",
+    "object_category": "refrigerator",
+    "object_id": "0018_obj_refrigerator_01",
+    "time": "00:06",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0018",
+    "video_path": "003/003_0018",
+    "object_category": "sink",
+    "object_id": "0018_obj_sink_01",
+    "time": "00:03",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0018",
+    "video_path": "003/003_0018",
+    "object_category": "wardrobe",
+    "object_id": "0018_obj_wardrobe_01",
+    "time": "00:06",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0018",
+    "video_path": "003/003_0018",
+    "object_category": "table",
+    "object_id": "0018_obj_table_01",
+    "time": "00:06",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0018",
+    "video_path": "003/003_0018",
+    "object_category": "bed",
+    "object_id": "0018_obj_bed_01",
+    "time": "00:06",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0018",
+    "video_path": "003/003_0018",
+    "object_category": "fan",
+    "object_id": "0018_obj_fan_01",
+    "time": "00:06",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0018",
+    "video_path": "003/003_0018",
+    "object_category": "chair",
+    "object_id": "0018_obj_chair_01",
+    "time": "00:53",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0018",
+    "video_path": "003/003_0018",
+    "object_category": "sofa",
+    "object_id": "0018_obj_sofa_01",
+    "time": "00:06",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed and table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0019",
+    "video_path": "003/003_0019",
+    "object_category": "refrigerator",
+    "object_id": "0019_obj_refrigerator_01",
+    "time": "01:16",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0019",
+    "video_path": "003/003_0019",
+    "object_category": "sink",
+    "object_id": "0019_obj_sink_01",
+    "time": "02:48",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0019",
+    "video_path": "003/003_0019",
+    "object_category": "wardrobe",
+    "object_id": "0019_obj_wardrobe_01",
+    "time": "01:16",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0019",
+    "video_path": "003/003_0019",
+    "object_category": "table",
+    "object_id": "0019_obj_table_01",
+    "time": "01:16",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0018",
+    "video_path": "003/003_0018",
+    "object_category": "bed",
+    "object_id": "0018_obj_bed_01",
+    "time": "01:26",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0019",
+    "video_path": "003/003_0019",
+    "object_category": "fan",
+    "object_id": "0019_obj_fan_01",
+    "time": "01:31",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0018",
+    "video_path": "003/003_0018",
+    "object_category": "chair",
+    "object_id": "0018_obj_chair_01",
+    "time": "00:53",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0019",
+    "video_path": "003/003_0019",
+    "object_category": "sofa",
+    "object_id": "0019_obj_sofa_01",
+    "time": "01:31",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed and table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0020",
+    "video_path": "003/003_0020",
+    "object_category": "wardrobe",
+    "object_id": "0020_obj_wardrobe_01",
+    "time": "00:13",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0020",
+    "video_path": "003/003_0020",
+    "object_category": "refrigerator",
+    "object_id": "0020_obj_refrigerator_01",
+    "time": "00:25",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0020",
+    "video_path": "003/003_0020",
+    "object_category": "bed",
+    "object_id": "0020_obj_bed_01",
+    "time": "00:26",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0021",
+    "video_path": "003/003_0021",
+    "object_category": "wardrobe",
+    "object_id": "0021_obj_wardrobe_01",
+    "time": "00:32",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0021",
+    "video_path": "003/003_0021",
+    "object_category": "bed",
+    "object_id": "0021_obj_bed_01",
+    "time": "00:32",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0021",
+    "video_path": "003/003_0021",
+    "object_category": "sofa",
+    "object_id": "0021_obj_sofa_01",
+    "time": "00:32",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed and table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0021",
+    "video_path": "003/003_0021",
+    "object_category": "fan",
+    "object_id": "0021_obj_fan_01",
+    "time": "00:32",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0021",
+    "video_path": "003/003_0021",
+    "object_category": "sink",
+    "object_id": "0021_obj_sink_01",
+    "time": "00:59",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0022",
+    "video_path": "003/003_0022",
+    "object_category": "sink",
+    "object_id": "0022_obj_sink_01",
+    "time": "01:21",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0022",
+    "video_path": "003/003_0022",
+    "object_category": "sofa",
+    "object_id": "0022_obj_sofa_01",
+    "time": "04:35",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed and table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0023",
+    "video_path": "003/003_0023",
+    "object_category": "wardrobe",
+    "object_id": "0023_obj_wardrobe_01",
+    "time": "04:37",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0023",
+    "video_path": "003/003_0023",
+    "object_category": "bed",
+    "object_id": "0023_obj_bed_01",
+    "time": "04:37",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0023",
+    "video_path": "003/003_0023",
+    "object_category": "fan",
+    "object_id": "0023_obj_fan_01",
+    "time": "04:37",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0023",
+    "video_path": "003/003_0023",
+    "object_category": "sofa",
+    "object_id": "0023_obj_sofa_01",
+    "time": "04:37",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed and table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0023",
+    "video_path": "003/003_0023",
+    "object_category": "table",
+    "object_id": "0023_obj_table_01",
+    "time": "04:37",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0023",
+    "video_path": "003/003_0023",
+    "object_category": "sink",
+    "object_id": "0023_obj_sink_01",
+    "time": "08:44",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0024",
+    "video_path": "003/003_0024",
+    "object_category": "sofa",
+    "object_id": "0024_obj_sofa_01",
+    "time": "07:25",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed and table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0024",
+    "video_path": "003/003_0024",
+    "object_category": "fan",
+    "object_id": "0024_obj_fan_01",
+    "time": "07:25",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0024",
+    "video_path": "003/003_0024",
+    "object_category": "bed",
+    "object_id": "0024_obj_bed_01",
+    "time": "07:25",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0024",
+    "video_path": "003/003_0024",
+    "object_category": "table",
+    "object_id": "0024_obj_table_01",
+    "time": "07:25",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0024",
+    "video_path": "003/003_0024",
+    "object_category": "wardrobe",
+    "object_id": "0024_obj_wardrobe_01",
+    "time": "07:37",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0026",
+    "video_path": "003/003_0026",
+    "object_category": "wardrobe",
+    "object_id": "0026_obj_wardrobe_01",
+    "time": "00:00",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0026",
+    "video_path": "003/003_0026",
+    "object_category": "bed",
+    "object_id": "0026_obj_bed_01",
+    "time": "00:00",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0026",
+    "video_path": "003/003_0026",
+    "object_category": "sofa",
+    "object_id": "0026_obj_sofa_01",
+    "time": "00:00",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed and table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0026",
+    "video_path": "003/003_0026",
+    "object_category": "fan",
+    "object_id": "0026_obj_fan_01",
+    "time": "00:00",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "next the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0026",
+    "video_path": "003/003_0026",
+    "object_category": "table",
+    "object_id": "0026_obj_table_01",
+    "time": "00:00",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0026",
+    "video_path": "003/003_0026",
+    "object_category": "refrigerator",
+    "object_id": "0026_obj_refrigerator_01",
+    "time": "02:25",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0026",
+    "video_path": "003/003_0026",
+    "object_category": "sink",
+    "object_id": "0026_obj_sink_01",
+    "time": "03:05",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0026",
+    "video_path": "003/003_0026",
+    "object_category": "toilet",
+    "object_id": "0026_obj_toilet_01",
+    "time": "10:05",
+    "location": {
+      "place_id": "bathroom_1",
+      "place_type": "bathroom",
+      "description": "In the bathroom"
+    },
+    "meta": {
+      "annotator_id": "worker_13",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0027",
+    "video_path": "003/003_0027",
+    "object_category": "elevator",
+    "object_id": "0027_obj_elevator_01",
+    "time": "01:20",
+    "location": {
+      "place_id": "elevator_1",
+      "place_type": "elevator",
+      "description": "In the elevator"
+    },
+    "meta": {
+      "annotator_id": "worker_14",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0027",
+    "video_path": "003/003_0027",
+    "object_category": "sofa",
+    "object_id": "0027_obj_sofa_01",
+    "time": "12:19",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed and table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0027",
+    "video_path": "003/003_0027",
+    "object_category": "bed",
+    "object_id": "0027_obj_bed_01",
+    "time": "12:19",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0027",
+    "video_path": "003/003_0027",
+    "object_category": "fan",
+    "object_id": "0027_obj_fan_01",
+    "time": "12:19",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0027",
+    "video_path": "003/003_0027",
+    "object_category": "sink",
+    "object_id": "0027_obj_sink_01",
+    "time": "16:38",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0028",
+    "video_path": "003/003_0028",
+    "object_category": "elevator",
+    "object_id": "0028_obj_elevator_01",
+    "time": "08:07",
+    "location": {
+      "place_id": "elevator_1",
+      "place_type": "elevator",
+      "description": "In the elevator"
+    },
+    "meta": {
+      "annotator_id": "worker_14",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0028",
+    "video_path": "003/003_0028",
+    "object_category": "sofa",
+    "object_id": "0028_obj_sofa_01",
+    "time": "10:55",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed and table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0029",
+    "video_path": "003/003_0029",
+    "object_category": "table",
+    "object_id": "0029_obj_table_01",
+    "time": "10:19",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0029",
+    "video_path": "003/003_0029",
+    "object_category": "sofa",
+    "object_id": "0029_obj_sofa_01",
+    "time": "10:19",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed and table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0030",
+    "video_path": "003/003_0030",
+    "object_category": "table",
+    "object_id": "0030_obj_table_01",
+    "time": "11:29",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0030",
+    "video_path": "003/003_0030",
+    "object_category": "bed",
+    "object_id": "0030_obj_bed_01",
+    "time": "11:29",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0030",
+    "video_path": "003/003_0030",
+    "object_category": "sofa",
+    "object_id": "0030_obj_sofa_01",
+    "time": "11:29",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed and table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0030",
+    "video_path": "003/003_0030",
+    "object_category": "fan",
+    "object_id": "0030_obj_fan_01",
+    "time": "11:29",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0031",
+    "video_path": "003/003_0031",
+    "object_category": "sink",
+    "object_id": "0031_obj_sink_01",
+    "time": "02:48",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0031",
+    "video_path": "003/003_0031",
+    "object_category": "sofa",
+    "object_id": "0031_obj_sofa_01",
+    "time": "03:51",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed and table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0031",
+    "video_path": "003/003_0031",
+    "object_category": "bed",
+    "object_id": "0031_obj_bed_01",
+    "time": "03:51",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0031",
+    "video_path": "003/003_0031",
+    "object_category": "fan",
+    "object_id": "0031_obj_fan_01",
+    "time": "03:51",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0032",
+    "video_path": "003/003_0032",
+    "object_category": "ipad",
+    "object_id": "0032_obj_ipad_01",
+    "time": "00:10",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0033",
+    "video_path": "003/003_0033",
+    "object_category": "table",
+    "object_id": "0033_obj_table_01",
+    "time": "00:10",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0033",
+    "video_path": "003/003_0033",
+    "object_category": "ipad",
+    "object_id": "0033_obj_ipad_01",
+    "time": "02:42",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0034",
+    "video_path": "003/003_0034",
+    "object_category": "elevator",
+    "object_id": "0034_obj_elevator_01",
+    "time": "07:45",
+    "location": {
+      "place_id": "lobby_2",
+      "place_type": "lobby",
+      "description": "In the elevator"
+    },
+    "meta": {
+      "annotator_id": "worker_14",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0034",
+    "video_path": "003/003_0034",
+    "object_category": "fan",
+    "object_id": "0034_obj_fan_01",
+    "time": "09:40",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0034",
+    "video_path": "003/003_0034",
+    "object_category": "sofa",
+    "object_id": "0034_obj_sofa_01",
+    "time": "09:40",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed and table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0034",
+    "video_path": "003/003_0034",
+    "object_category": "bed",
+    "object_id": "0034_obj_bed_01",
+    "time": "09:40",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0034",
+    "video_path": "003/003_0034",
+    "object_category": "table",
+    "object_id": "0034_obj_table_01",
+    "time": "09:41",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0035",
+    "video_path": "003/003_0035",
+    "object_category": "bed",
+    "object_id": "0035_obj_bed_01",
+    "time": "00:17",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0035",
+    "video_path": "003/003_0035",
+    "object_category": "fan",
+    "object_id": "0035_obj_fan_01",
+    "time": "00:17",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0035",
+    "video_path": "003/003_0035",
+    "object_category": "table",
+    "object_id": "0035_obj_table_01",
+    "time": "00:17",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0035",
+    "video_path": "003/003_0035",
+    "object_category": "sofa",
+    "object_id": "0035_obj_sofa_01",
+    "time": "00:17",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed and table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0035",
+    "video_path": "003/003_0035",
+    "object_category": "wardrobe",
+    "object_id": "0035_obj_wardrobe_01",
+    "time": "00:17",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0035",
+    "video_path": "003/003_0035",
+    "object_category": "refrigerator",
+    "object_id": "0035_obj_refrigerator_01",
+    "time": "00:17",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0035",
+    "video_path": "003/003_0035",
+    "object_category": "sink",
+    "object_id": "0035_obj_sink_01",
+    "time": "14:29",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0035",
+    "video_path": "003/003_0035",
+    "object_category": "ipad",
+    "object_id": "0035_obj_ipad_01",
+    "time": "17:47",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0036",
+    "video_path": "003/003_0036",
+    "object_category": "bed",
+    "object_id": "0036_obj_bed_01",
+    "time": "00:00",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0036",
+    "video_path": "003/003_0036",
+    "object_category": "fan",
+    "object_id": "0036_obj_fan_01",
+    "time": "00:00",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0036",
+    "video_path": "003/003_0036",
+    "object_category": "table",
+    "object_id": "0036_obj_table_01",
+    "time": "00:00",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0036",
+    "video_path": "003/003_0036",
+    "object_category": "sofa",
+    "object_id": "0036_obj_sofa_01",
+    "time": "00:00",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed and table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0036",
+    "video_path": "003/003_0036",
+    "object_category": "elevator",
+    "object_id": "0036_obj_elevator_01",
+    "time": "03:20",
+    "location": {
+      "place_id": "elevator_1",
+      "place_type": "elevator",
+      "description": "In the elevator"
+    },
+    "meta": {
+      "annotator_id": "worker_14",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0037",
+    "video_path": "003/003_0037",
+    "object_category": "bed",
+    "object_id": "0037_obj_bed_01",
+    "time": "00:10",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0037",
+    "video_path": "003/003_0037",
+    "object_category": "sofa",
+    "object_id": "0037_obj_sofa_01",
+    "time": "00:10",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed and table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0037",
+    "video_path": "003/003_0037",
+    "object_category": "table",
+    "object_id": "0037_obj_table_01",
+    "time": "00:10",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0038",
+    "video_path": "003/003_0038",
+    "object_category": "refrigerator",
+    "object_id": "0038_obj_refrigerator_01",
+    "time": "00:05",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0038",
+    "video_path": "003/003_0038",
+    "object_category": "sink",
+    "object_id": "0038_obj_sink_01",
+    "time": "00:23",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0038",
+    "video_path": "003/003_0038",
+    "object_category": "pot",
+    "object_id": "0038_obj_pot_01",
+    "time": "00:44",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0038",
+    "video_path": "003/003_0038",
+    "object_category": "table",
+    "object_id": "0038_obj_table_01",
+    "time": "11:10",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0039",
+    "video_path": "003/003_0039",
+    "object_category": "refrigerator",
+    "object_id": "0039_obj_refrigerator_01",
+    "time": "00:00",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0039",
+    "video_path": "003/003_0039",
+    "object_category": "sofa",
+    "object_id": "0039_obj_sofa_01",
+    "time": "00:00",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed and table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0039",
+    "video_path": "003/003_0039",
+    "object_category": "table",
+    "object_id": "0039_obj_table_01",
+    "time": "00:00",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0039",
+    "video_path": "003/003_0039",
+    "object_category": "sink",
+    "object_id": "0039_obj_sink_01",
+    "time": "01:29",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0039",
+    "video_path": "003/003_0039",
+    "object_category": "pot",
+    "object_id": "0039_obj_pot_01",
+    "time": "01:35",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "On the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0040",
+    "video_path": "003/003_0040",
+    "object_category": "sofa",
+    "object_id": "0040_obj_sofa_01",
+    "time": "00:28",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed and table in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_10",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0040",
+    "video_path": "003/003_0040",
+    "object_category": "table",
+    "object_id": "0040_obj_table_01",
+    "time": "00:28",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0040",
+    "video_path": "003/003_0040",
+    "object_category": "elevator",
+    "object_id": "0040_obj_elevator_01",
+    "time": "03:06",
+    "location": {
+      "place_id": "elevator_1",
+      "place_type": "elevator",
+      "description": "In the elevator"
+    },
+    "meta": {
+      "annotator_id": "worker_14",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0041",
+    "video_path": "003/003_0041",
+    "object_category": "refrigerator",
+    "object_id": "0041_obj_refrigerator_01",
+    "time": "01:16",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0041",
+    "video_path": "003/003_0041",
+    "object_category": "toilet",
+    "object_id": "0041_obj_toilet_01",
+    "time": "06:55",
+    "location": {
+      "place_id": "bathroom_1",
+      "place_type": "bathroom",
+      "description": "In the bathroom"
+    },
+    "meta": {
+      "annotator_id": "worker_13",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0041",
+    "video_path": "003/003_0041",
+    "object_category": "ipad",
+    "object_id": "0041_obj_ipad_01",
+    "time": "06:55",
+    "location": {
+      "place_id": "bathroom_1",
+      "place_type": "bathroom",
+      "description": "The person in the video is holding an iPad."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0042",
+    "video_path": "003/003_0042",
+    "object_category": "curtain",
+    "object_id": "0042_obj_curtain_01",
+    "time": "00:15",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the window in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_15",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0042",
+    "video_path": "003/003_0042",
+    "object_category": "elevator",
+    "object_id": "0042_obj_elevator_01",
+    "time": "01:18",
+    "location": {
+      "place_id": "elevator_1",
+      "place_type": "elevator",
+      "description": "In the elevator"
+    },
+    "meta": {
+      "annotator_id": "worker_14",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0043",
+    "video_path": "003/003_0043",
+    "object_category": "elevator",
+    "object_id": "0043_obj_elevator_01",
+    "time": "09:28",
+    "location": {
+      "place_id": "elevator_1",
+      "place_type": "elevator",
+      "description": "In the elevator"
+    },
+    "meta": {
+      "annotator_id": "worker_14",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0043",
+    "video_path": "003/003_0043",
+    "object_category": "bed",
+    "object_id": "0043_obj_bed_01",
+    "time": "14:43",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "In the center of the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0043",
+    "video_path": "003/003_0043",
+    "object_category": "refrigerator",
+    "object_id": "0043_obj_refrigerator_01",
+    "time": "16:17",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the entrance door in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0044",
+    "video_path": "003/003_0044",
+    "object_category": "sink",
+    "object_id": "0044_obj_sink_01",
+    "time": "00:34",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0045",
+    "video_path": "003/003_0045",
+    "object_category": "elevator",
+    "object_id": "0045_obj_elevator_01",
+    "time": "04:33",
+    "location": {
+      "place_id": "lobby_2",
+      "place_type": "elevator",
+      "description": "In the elevator"
+    },
+    "meta": {
+      "annotator_id": "worker_14",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0045",
+    "video_path": "003/003_0045",
+    "object_category": "sink",
+    "object_id": "0045_obj_sink_01",
+    "time": "11:08",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the stove in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "003_0045",
+    "video_path": "003/003_0045",
+    "object_category": "table",
+    "object_id": "0045_obj_table_01",
+    "time": "13:47",
+    "location": {
+      "place_id": "living_room_1",
+      "place_type": "living_room",
+      "description": "Next to the bed in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_11",
+      "created_at": "2025-11-16",
+      "qc_status": "accepted"
+    }
+  }
+]

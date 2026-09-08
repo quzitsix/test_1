@@ -1,0 +1,19 @@
+{
+  "schema": "meowbench.suite/1",
+  "name": "relocate-v1",
+  "n_items": 14,
+  "n_envs": 2,
+  "axes": {
+    "A12_unanswerable": 2,
+    "A5_binding_post_move": 6,
+    "A5_binding_same_scene": 6
+  },
+  "items_sha256": "cc36b4a2327d73974e5479c411587e130c06680a22c532f9dc2ee0d21fe4450f",
+  "envs_sha256": "90d923efbcfbd3aa8bb49a6bf9ec921cd76e25edd6a3631dfae8306fe9c7b135",
+  "suite_sha": "ad79929fa279f4f1919a714ab8f758975c3382b7b1714fdacfb6b95666b0ef36",
+  "seed": 20260908,
+  "generator": "scripts/make_relocate_fixture.py",
+  "move_after_session": 3,
+  "n_sessions": 6,
+  "note": "Scene-change binding probe. A household is filmed in an old home (sessions 1-3, where object ownership is rendered as text) and then in a new home (sessions 4-6, which never restate ownership). A5_binding_same_scene and A5_binding_post_move carry identical gold and identical evidence and are matched on evidence distance; they differ only in whether a complete change of visual context intervened, which is what isolates a binding failure from ordinary forgetting. A12_unanswerable items ask about objects that were never filmed, so gain cannot be manufactured by guessing more freely. Facts are rendered as legible text, so this measures whether a memory carries a binding across a context shift, NOT whether a model can perceive one; the oracle track should be near ceiling and a collapsed oracle means the measurement chain is broken. Never cite a score here as a household-understanding claim."
+}

@@ -1,0 +1,7380 @@
+[
+  {
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "object_category": "cup",
+    "object_id": "0003_obj_cup_01",
+    "time": "00:00:26",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "dorm",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "object_category": "napkin",
+    "object_id": "0003_obj_napkin_01",
+    "time": "00:00:40",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "dorm",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "object_category": "pencil case",
+    "object_id": "0003_obj_pencil case_01",
+    "time": "00:00:42",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "dorm",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "object_category": "kettle",
+    "object_id": "0003_obj_kettle_01",
+    "time": "00:01:38",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "dorm",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "object_category": "drawer",
+    "object_id": "0003_obj_drawer_01",
+    "time": "00:02:28",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "dorm",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "object_category": "wardrobe",
+    "object_id": "0003_obj_wardrobe_01",
+    "time": "00:03:11",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "dorm",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "object_category": "hair dryer",
+    "object_id": "0003_obj_hair dryer_01",
+    "time": "00:04:50",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "dorm",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "object_category": "towel flowers",
+    "object_id": "0003_obj_bag_01",
+    "time": "00:04:50",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "dorm",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "object_category": "mobile phone",
+    "object_id": "0003_obj_mobile phone_01",
+    "time": "00:04:50",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "dorm",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "object_category": "fridge",
+    "object_id": "0003_obj_fridge_01",
+    "time": "00:20:28",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "dorm",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "object_category": "banana",
+    "object_id": "0003_obj_banana_01",
+    "time": "00:20:28",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "dorm",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "object_category": "pen",
+    "object_id": "0003_obj_pen_01",
+    "time": "00:18:41",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "dorm",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "object_category": "Bottled milk",
+    "object_id": "0003_obj_Bottled milk_01",
+    "time": "00:22:21",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "object_category": "bed",
+    "object_id": "0003_obj_bed_01",
+    "time": "00:27:02",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "object_category": "quilt",
+    "object_id": "0003_obj_quilt_01",
+    "time": "00:22:22",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "object_category": "chair",
+    "object_id": "0003_obj_chair_01",
+    "time": "00:22:54",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "object_category": "spoon",
+    "object_id": "0003_obj_spoon_01",
+    "time": "00:37:19",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "object_category": "bowl",
+    "object_id": "0003_obj_bowl_01",
+    "time": "00:37:37",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "object_category": "laptop",
+    "object_id": "0003_obj_laptop_01",
+    "time": "00:37:37",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0003",
+    "video_path": "017/017_0003",
+    "object_category": "dustbin",
+    "object_id": "0003_obj_dustbin_01",
+    "time": "00:40:04",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-6",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0004",
+    "video_path": "017/017_0004",
+    "object_category": "thermos cup",
+    "object_id": "0004_obj_thermos cup_01",
+    "time": "00:00:20",
+    "location": {
+      "place_id": "rest corner_1",
+      "place_type": "room",
+      "description": "The Rest corner next to the subway station"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0004",
+    "video_path": "017/017_0004",
+    "object_category": "books",
+    "object_id": "0004_obj_books_01",
+    "time": "00:00:22",
+    "location": {
+      "place_id": "rest corner_1",
+      "place_type": "room",
+      "description": "The Rest corner next to the subway station"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0004",
+    "video_path": "017/017_0004",
+    "object_category": "ticket machine",
+    "object_id": "0004_obj_ticket machine_01",
+    "time": "00:08:12",
+    "location": {
+      "place_id": "subway station_1",
+      "place_type": "traffic",
+      "description": "The place to store the automatic ticket vending machine at the subway station"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0004",
+    "video_path": "017/017_0004",
+    "object_category": "fire extinguisher",
+    "object_id": "0004_obj_fire extinguisher_01",
+    "time": "00:40:09",
+    "location": {
+      "place_id": "room",
+      "place_type": "room",
+      "description": "A place for communication"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-7",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "shoe",
+    "object_id": "0005_obj_shoe_01",
+    "time": "00:14:21",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "chopping board",
+    "object_id": "0005_obj_chopping board_01",
+    "time": "00:16:26",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "rag",
+    "object_id": "0005_obj_rag_01",
+    "time": "00:20:04",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "faucet",
+    "object_id": "0005_obj_faucet_01",
+    "time": "00:20:06",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "ceiling light",
+    "object_id": "0005_obj_ceiling light_01",
+    "time": "00:22:46",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "window",
+    "object_id": "0005_obj_window_01",
+    "time": "00:21:28",
+    "location": {
+      "place_id": "gym_1",
+      "place_type": "room",
+      "description": "Places for fitness and exercise."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "treadmill",
+    "object_id": "0005_obj_treadmill_01",
+    "time": "00:27:19",
+    "location": {
+      "place_id": "gym_1",
+      "place_type": "room",
+      "description": "Places for fitness and exercise."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "socket",
+    "object_id": "0005_obj_socket_01",
+    "time": "00:29:23",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "oil bottle",
+    "object_id": "0005_obj_oil bottle_01",
+    "time": "00:29:41",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "pot",
+    "object_id": "0005_obj_pot_01",
+    "time": "00:32:20",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "knife",
+    "object_id": "0005_obj_knife_01",
+    "time": "00:34:01",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "spice box",
+    "object_id": "0005_obj_spice box_01",
+    "time": "00:44:09",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "blueberry",
+    "object_id": "0005_obj_blueberry_01",
+    "time": "01:09:42",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "dish soap",
+    "object_id": "0005_obj_dish soap_01",
+    "time": "01:30:14",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "mushroom",
+    "object_id": "0005_obj_mushroom_01",
+    "time": "01:37:01",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }    
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "tomato",
+    "object_id": "0005_obj_tomato_01",
+    "time": "01:37:15",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "scallion",
+    "object_id": "0005_obj_scallion_01",
+    "time": "01:39:53",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "noodles",
+    "object_id": "0005_obj_noodles_01",
+    "time": "01:49:09",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "ginger",
+    "object_id": "0005_obj_ginger_01",
+    "time": "02:23:52",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "instant noodles",
+    "object_id": "0005_obj_instant noodles_01",
+    "time": "02:23:13",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "chopsticks",
+    "object_id": "0005_obj_chopsticks_01",
+    "time": "01:53:33",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "pepper",
+    "object_id": "0005_obj_pepper_01",
+    "time": "01:09:42",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "black pepper",
+    "object_id": "0005_obj_black pepper_01",
+    "time": "02:30:56",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0005",
+    "video_path": "017/017_0005",
+    "object_category": "sink",
+    "object_id": "0005_obj_sink_01",
+    "time": "02:15:42",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0006",
+    "video_path": "017/017_0006",
+    "object_category": "stroller",
+    "object_id": "0006_obj_stroller_01",
+    "time": "00:00:07",
+    "location": {
+      "place_id": "store_1",
+      "place_type": "room",
+      "description": "a convenience store."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0006",
+    "video_path": "017/017_0006",
+    "object_category": "handbag",
+    "object_id": "0006_obj_handbag_01",
+    "time": "00:01:14",
+    "location": {
+      "place_id": "store_1",
+      "place_type": "room",
+      "description": "a convenience store."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0006",
+    "video_path": "017/017_0006",
+    "object_category": "mineral water bottle",
+    "object_id": "0006_obj_mineral water bottle_01",
+    "time": "00:03:35",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "outdoor",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0006",
+    "video_path": "017/017_0006",
+    "object_category": "car",
+    "object_id": "0006_obj_mineral water bottle_01",
+    "time": "00:13:04",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "outdoor",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0006",
+    "video_path": "017/017_0006",
+    "object_category": "traffic light",
+    "object_id": "0006_obj_traffic light_01",
+    "time": "00:13:17",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "outdoor",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0006",
+    "video_path": "017/017_0006",
+    "object_category": "bench",
+    "object_id": "0006_obj_bench_01",
+    "time": "00:07:38",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "outdoor",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0006",
+    "video_path": "017/017_0006",
+    "object_category": "roadside bin",
+    "object_id": "0006_obj_roadside bin_01",
+    "time": "00:19:22",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "outdoor",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0006",
+    "video_path": "017/017_0006",
+    "object_category": "leather jacket",
+    "object_id": "0006_obj_leather jacket_01",
+    "time": "00:04:33",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "outdoor",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0006",
+    "video_path": "017/017_0006",
+    "object_category": "warning sign",
+    "object_id": "0006_obj_warning sign_01",
+    "time": "00:31:08",
+    "location": {
+      "place_id": "apartment building_1",
+      "place_type": "bulding",
+      "description": "Buildings for students to live in."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0006",
+    "video_path": "017/017_0006",
+    "object_category": "elevator floor buttons",
+    "object_id": "0006_obj_elevator floor buttons_01",
+    "time": "00:31:08",
+    "location": {
+      "place_id": "elevator_1",
+      "place_type": "taffic",
+      "description": "Transportation on the floor."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },{
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "object_category": "bread",
+    "object_id": "0005_obj_bread_01",
+    "time": "00:33:00",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-8",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "object_category": "slippers",
+    "object_id": "0007_obj_slippers_01",
+    "time": "00:09:18",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "object_category": "pajama pants",
+    "object_id": "0007_obj_pajama pants_01",
+    "time": "00:13:25",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "object_category": "trash bag",
+    "object_id": "0007_obj_trash bag_01",
+    "time": "00:18:37",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "object_category": "cucumber",
+    "object_id": "0007_obj_cucumber_01",
+    "time": "00:31:59",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "object_category": "pumpkin",
+    "object_id": "0007_obj_pumpkin_01",
+    "time": "00:32:29",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "object_category": "egg",
+    "object_id": "0007_obj_egg_01",
+    "time": "00:31:59",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "object_category": "shrimp",
+    "object_id": "0007_obj_shrimp_01",
+    "time": "00:37:48",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "object_category": "bottle of vinegar",
+    "object_id": "0007_bottle of vinegar",
+    "time": "00:39:35",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "object_category": "battery",
+    "object_id": "0007_obj_battery_01",
+    "time": "01:49:28",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "object_category": "shopping basket",
+    "object_id": "0007_obj_shopping basket_01",
+    "time": "01:49:37",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "object_category": "shampoo",
+    "object_id": "0007_obj_shampoo_01",
+    "time": "01:50:18",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "object_category": "sanitary napkin",
+    "object_id": "0007_obj_sanitary napkin_01",
+    "time": "01:51:30",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "object_category": "drink",
+    "object_id": "0007_obj_drink_01",
+    "time": "02:03:59",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "object_category": "wine glass",
+    "object_id": "0007_obj_wine glass_01",
+    "time": "02:06:59",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "object_category": "lunch box",
+    "object_id": "0007_obj_lunch box_01",
+    "time": "02:10:31",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0007",
+    "video_path": "017/017_0007",
+    "object_category": "hanger",
+    "object_id": "0007_obj_hanger_01",
+    "time": "02:10:31",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0009",
+    "video_path": "017/017_0009",
+    "object_category": "potato",
+    "object_id": "0009_obj_potato_01",
+    "time": "00:00:07",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0009",
+    "video_path": "017/017_0009",
+    "object_category": "pot lid",
+    "object_id": "0009_obj_pot lid_01",
+    "time": "00:00:16",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0009",
+    "video_path": "017/017_0009",
+    "object_category": "bracelet",
+    "object_id": "0009_obj_bracelet_01",
+    "time": "00:01:45",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0009",
+    "video_path": "017/017_0009",
+    "object_category": "sneakers",
+    "object_id": "0009_obj_sneakers_01",
+    "time": "00:05:22",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0009",
+    "video_path": "017/017_0009",
+    "object_category": "salad dressing",
+    "object_id": "0009_obj_salad dressing_01",
+    "time": "00:08:16",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0009",
+    "video_path": "017/017_0009",
+    "object_category": "grasses",
+    "object_id": "0009_obj_grasses_01",
+    "time": "00:08:47",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0010",
+    "video_path": "017/017_0010",
+    "object_category": "spinach",
+    "object_id": "0010_obj_spinach_01",
+    "time": "00:00:03",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0010",
+    "video_path": "017/017_0010",
+    "object_category": "watch",
+    "object_id": "0010_obj_watch_01",
+    "time": "00:00:03",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0010",
+    "video_path": "017/017_0010",
+    "object_category": "yogurt",
+    "object_id": "0010_obj_yogurt_01",
+    "time": "00:01:19",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0010",
+    "video_path": "017/017_0010",
+    "object_category": "mouse",
+    "object_id": "0010_obj_mouse_01",
+    "time": "00:14:01",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0001",
+    "video_path": "017/017_0001",
+    "object_category": "revolving door",
+    "object_id": "0001_obj_revolving door_01",
+    "time": "00:01:26",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0001",
+    "video_path": "017/017_0001",
+    "object_category": "street light",
+    "object_id": "0001_obj_street light_01",
+    "time": "00:01:36",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "outdoor",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0001",
+    "video_path": "017/017_0001",
+    "object_category": "billboard",
+    "object_id": "0001_obj_billboard_01",
+    "time": "00:03:03",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "outdoor",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0001",
+    "video_path": "017/017_0001",
+    "object_category": "shopping cart",
+    "object_id": "0001_obj_shopping cart_01",
+    "time": "00:01:48",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0001",
+    "video_path": "017/017_0001",
+    "object_category": "shelf",
+    "object_id": "0001_obj_shelf_01",
+    "time": "00:04:30",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0001",
+    "video_path": "017/017_0001",
+    "object_category": "shopping bag",
+    "object_id": "0001_obj_shopping bag_01",
+    "time": "00:19:38",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0001",
+    "video_path": "017/017_0001",
+    "object_category": "bean sprouts",
+    "object_id": "0001_obj_bean sprouts_01",
+    "time": "00:06:22",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0008",
+    "video_path": "017/017_0008",
+    "object_category": "ketchup",
+    "object_id": "0008_obj_ketchup_01",
+    "time": "00:05:53",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "dorm",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0008",
+    "video_path": "017/017_0008",
+    "object_category": "chicken",
+    "object_id": "0008_obj_chicken_01",
+    "time": "00:13:05",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "dorm",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0008",
+    "video_path": "017/017_0008",
+    "object_category": "Cling film box",
+    "object_id": "0008_obj_Cling film box_01",
+    "time": "00:34:55",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "dorm",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0008",
+    "video_path": "017/017_0008",
+    "object_category": "power bank",
+    "object_id": "0008_obj_power bank_01",
+    "time": "00:30:27",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "dorm",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0008",
+    "video_path": "017/017_0008",
+    "object_category": "dish",
+    "object_id": "0008_obj_dish_01",
+    "time": "00:01:30",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "dorm",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-9",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0011",
+    "video_path": "017/017_0011",
+    "object_category": "apple",
+    "object_id": "0011_obj_apple_01",
+    "time": "00:10:42",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0011",
+    "video_path": "017/017_0011",
+    "object_category": "croissant",
+    "object_id": "0011_obj_croissant_01",
+    "time": "00:13:44",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0011",
+    "video_path": "017/017_0011",
+    "object_category": "Salmon fillet",
+    "object_id": "0011_obj_Salmon fillet_01",
+    "time": "00:17:48",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0011",
+    "video_path": "017/017_0011",
+    "object_category": "receipt printer",
+    "object_id": "0011_obj_receipt printer_01",
+    "time": "00:23:31",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0012",
+    "video_path": "017/017_0012",
+    "object_category": "electric kettle",
+    "object_id": "0012_obj_electric kettle_01",
+    "time": "00:00:03",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0012",
+    "video_path": "017/017_0012",
+    "object_category": "thermos cup",
+    "object_id": "0012_obj_thermos cup_01",
+    "time": "00:08:54",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0012",
+    "video_path": "017/017_0012",
+    "object_category": "data cable",
+    "object_id": "0012_obj_data cable_01",
+    "time": "00:11:54",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0012",
+    "video_path": "017/017_0012",
+    "object_category": "ipad",
+    "object_id": "0012_obj_ipad_01",
+    "time": "00:11:54",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0012",
+    "video_path": "017/017_0012",
+    "object_category": "pool",
+    "object_id": "0012_obj_pool_01",
+    "time": "00:30:42",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0015",
+    "video_path": "017/017_0015",
+    "object_category": "wireless earphones",
+    "object_id": "0012_obj_wireless earphones_01",
+    "time": "00:19:49",
+    "location": {
+      "place_id": "station_1",
+      "place_type": "traffic",
+      "description": "subway station."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0015",
+    "video_path": "017/017_0015",
+    "object_category": "phone strap",
+    "object_id": "0015_obj_phone strap_01",
+    "time": "00:01:50",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "outdoor",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0015",
+    "video_path": "017/017_0015",
+    "object_category": "backpack",
+    "object_id": "0015_obj_backpack_01",
+    "time": "00:03:22",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "outdoor",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-10",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0015",
+    "video_path": "017/017_0015",
+    "object_category": "ring",
+    "object_id": "0015_obj_ring_01",
+    "time": "00:03:22",
+    "location": {
+      "place_id": "train_1",
+      "place_type": "traffic",
+      "description": "subway station."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0015",
+    "video_path": "017/017_0015",
+    "object_category": "gold necklace",
+    "object_id": "0015_obj_gold necklace_01",
+    "time": "00:29:05",
+    "location": {
+      "place_id": "train_1",
+      "place_type": "taffic",
+      "description": "subway station."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0016",
+    "video_path": "017/017_0016",
+    "object_category": "turner",
+    "object_id": "0016_obj_turner_01",
+    "time": "00:00:19",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0016",
+    "video_path": "017/017_0016",
+    "object_category": "mug",
+    "object_id": "0016_obj_mug_01",
+    "time": "00:03:45",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0016",
+    "video_path": "017/017_0016",
+    "object_category": "hat",
+    "object_id": "0016_obj_hat_01",
+    "time": "00:09:21",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0016",
+    "video_path": "017/017_0016",
+    "object_category": "cloth bag",
+    "object_id": "0016_obj_cloth bag_01",
+    "time": "00:09:21",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0016",
+    "video_path": "017/017_0016",
+    "object_category": "wallet",
+    "object_id": "0016_obj_wallet_01",
+    "time": "00:09:21",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0016",
+    "video_path": "017/017_0016",
+    "object_category": "banknote",
+    "object_id": "0016_obj_banknote_01",
+    "time": "00:09:31",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0016",
+    "video_path": "017/017_0016",
+    "object_category": "stylus",
+    "object_id": "0016_obj_stylus_01",
+    "time": "00:21:18",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0013",
+    "video_path": "017/017_0013",
+    "object_category": "cereal",
+    "object_id": "0013_obj_cereal_01",
+    "time": "00:29:15",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0013",
+    "video_path": "017/017_0013",
+    "object_category": "door",
+    "object_id": "0013_obj_door_01",
+    "time": "00:36:01",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0013",
+    "video_path": "017/017_0013",
+    "object_category": "door",
+    "object_id": "0013_obj_door_01",
+    "time": "00:36:01",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0017",
+    "video_path": "017/017_0017",
+    "object_category": "milk",
+    "object_id": "0017_obj_milk_01",
+    "time": "00:00:19",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0017",
+    "video_path": "017/017_0017",
+    "object_category": "electric kettle",
+    "object_id": "0017_obj_electric kettle_01",
+    "time": "00:02:47",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0017",
+    "video_path": "017/017_0017",
+    "object_category": "spoon",
+    "object_id": "0017_obj_spoon_01",
+    "time": "00:03:50",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0017",
+    "video_path": "017/017_0017",
+    "object_category": "eggs",
+    "object_id": "0017_obj_eggs_01",
+    "time": "00:05:24",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0017",
+    "video_path": "017/017_0017",
+    "object_category": "spice box",
+    "object_id": "0017_obj_spice box_01",
+    "time": "00:07:06",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0017",
+    "video_path": "017/017_0017",
+    "object_category": "mug",
+    "object_id": "0017_obj_mug_01",
+    "time": "00:10:11",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0017",
+    "video_path": "017/017_0017",
+    "object_category": "bowl",
+    "object_id": "0017_obj_bowl_01",
+    "time": "00:02:47",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "object_category": "pot",
+    "object_id": "0018_obj_pot_01",
+    "time": "00:00:20",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "object_category": "instant noodles",
+    "object_id": "0018_obj_instant noodles_01",
+    "time": "00:04:45",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "object_category": "cup",
+    "object_id": "0018_obj_cup_01",
+    "time": "00:06:59",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "object_category": "chopsticks",
+    "object_id": "0018_obj_chopsticks_01",
+    "time": "00:15:11",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "object_category": "mobile phone",
+    "object_id": "0018_obj_mobile phone_01",
+    "time": "00:16:25",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "object_category": "Milk jelly",
+    "object_id": "0018_obj_Milk jelly_01",
+    "time": "00:18:32",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "object_category": "spoon",
+    "object_id": "0018_obj_spoon_01",
+    "time": "00:20:03",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "object_category": "bowl",
+    "object_id": "0018_obj_bowl_01",
+    "time": "00:31:05",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "object_category": "jam",
+    "object_id": "0018_obj_jam_01",
+    "time": "00:31:05",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0018",
+    "video_path": "017/017_0018",
+    "object_category": "pool",
+    "object_id": "0018_obj_pool_01",
+    "time": "00:36:35",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "object_category": "whiteboard",
+    "object_id": "0042_obj_whiteboard_01",
+    "time": "00:00:01",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-12",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "object_category": "elevator",
+    "object_id": "0042_obj_elevator_01",
+    "time": "00:01:00",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "taffic",
+      "description": "Transportation on the floor."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "object_category": "bench",
+    "object_id": "0042_obj_bench_01",
+    "time": "00:01:00",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "outdoor",
+      "description": "A place for pedestrians to walk.."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "object_category": "banana",
+    "object_id": "0042_obj_banana_01",
+    "time": "00:09:50",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "object_category": "backpack",
+    "object_id": "0042_obj_backpack_01",
+    "time": "00:15:40",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "object_category": "ROCHES wine",
+    "object_id": "0042_obj_ROCHES wine_01",
+    "time": "00:13:44",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "object_category": "minivan",
+    "object_id": "0042_obj_minivan_01",
+    "time": "00:22:51",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "outdoor",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "object_category": "pork chop",
+    "object_id": "0042_obj_pork chop_01",
+    "time": "00:26:17",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "object_category": "chipotle paste",
+    "object_id": "0042_obj_chipotle paste_01",
+    "time": "00:35:35",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "object_category": "ice cream",
+    "object_id": "0042_obj_ice cream_01",
+    "time": "00:36:30",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "object_category": "cash register",
+    "object_id": "0042_obj_cash register_01",
+    "time": "00:39:15",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "object_category": "baby stroller",
+    "object_id": "0042_obj_baby stroller_01",
+    "time": "00:45:00",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "outdoor",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "object_category": "facial tissue",
+    "object_id": "0042_obj_facial tissue_01",
+    "time": "00:51:11",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "object_category": "marker",
+    "object_id": "0042_obj_marker_01",
+    "time": "00:54:32",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "object_category": "instant noodles",
+    "object_id": "0042_obj_instant noodles_01",
+    "time": "00:57:10",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "object_category": "seasoning",
+    "object_id": "0042_obj_seasoning_01",
+    "time": "00:20:18",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0042",
+    "video_path": "017/017_0042",
+    "object_category": "laptop",
+    "object_id": "0042_obj_laptop_01",
+    "time": "00:56:20",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "object_category": "clip",
+    "object_id": "0048_obj_clip_01",
+    "time": "00:08:53",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "object_category": "pot",
+    "object_id": "0048_obj_pot_01",
+    "time": "00:00:07",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "object_category": "paper box",
+    "object_id": "0048_obj_paper box_01",
+    "time": "00:00:07",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "object_category": "tomato",
+    "object_id": "0048_obj_tomato_01",
+    "time": "00:02:10",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "object_category": "mushroom",
+    "object_id": "0048_obj_mushroom_01",
+    "time": "00:02:16",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "object_category": "plastic box",
+    "object_id": "0048_obj_plastic box_01",
+    "time": "00:03:18",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "object_category": "mug",
+    "object_id": "0048_obj_mug_01",
+    "time": "00:03:39",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "object_category": "spice box",
+    "object_id": "0048_obj_spice box_01",
+    "time": "00:07:36",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "object_category": "spoon",
+    "object_id": "0048_obj_spoon_01",
+    "time": "00:03:39",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "object_category": "card holder",
+    "object_id": "0048_obj_card holder_01",
+    "time": "00:13:11",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "object_category": "whiteboard",
+    "object_id": "0048_obj_whiteboard_01",
+    "time": "00:36:30",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "object_category": "whiteboard marker",
+    "object_id": "0048_obj_whiteboard marker_01",
+    "time": "00:039:19",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "object_category": "mobile phone",
+    "object_id": "0048_obj_mobile phone_01",
+    "time": "00:30:11",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "object_category": "noodles",
+    "object_id": "0048_obj_noodles_01",
+    "time": "00:18:36",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0048",
+    "video_path": "017/017_0048",
+    "object_category": "sink",
+    "object_id": "0048_obj_sink_01",
+    "time": "00:02:06",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "object_category": "rice",
+    "object_id": "0049_obj_rice_01",
+    "time": "00:01:16",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "object_category": "plate",
+    "object_id": "0049_obj_plate_01",
+    "time": "00:01:26",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "object_category": "water",
+    "object_id": "0049_obj_water_01",
+    "time": "00:01:31",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "object_category": "pork",
+    "object_id": "0049_obj_pork_01",
+    "time": "00:02:31",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "object_category": "cabbage",
+    "object_id": "0049_obj_cabbage_01",
+    "time": "00:02:49",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "object_category": "pepper",
+    "object_id": "0049_obj_pepper_01",
+    "time": "00:11:40",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "object_category": "ginger",
+    "object_id": "0049_obj_ginger_01",
+    "time": "00:10:20",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "object_category": "scissors",
+    "object_id": "0049_obj_scissors_01",
+    "time": "00:07:26",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "object_category": "spoon",
+    "object_id": "0049_obj_spoon_01",
+    "time": "00:15:39",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "object_category": "mug",
+    "object_id": "0049_obj_mug_01",
+    "time": "00:33:15",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "object_category": "ipad",
+    "object_id": "0049_obj_ipad_01",
+    "time": "00:34:07",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "object_category": "dish soap",
+    "object_id": "0049_obj_dish soap_01",
+    "time": "00:56:09",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "object_category": "pot",
+    "object_id": "0049_obj_pot_01",
+    "time": "00:56:17",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "object_category": "bowl",
+    "object_id": "0049_obj_bowl_01",
+    "time": "00:15:36",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0049",
+    "video_path": "017/017_0049",
+    "object_category": "egg liquid",
+    "object_id": "0049_obj_egg liquid_01",
+    "time": "00:15:36",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0050",
+    "video_path": "017/017_0050",
+    "object_category": "pot",
+    "object_id": "0050_obj_pot_01",
+    "time": "00:00:18",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0050",
+    "video_path": "017/017_0050",
+    "object_category": "turner",
+    "object_id": "0050_obj_turner_01",
+    "time": "00:00:43",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0050",
+    "video_path": "017/017_0050",
+    "object_category": "scissors",
+    "object_id": "0050_obj_scissors_01",
+    "time": "00:01:21",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0050",
+    "video_path": "017/017_0050",
+    "object_category": "air fryer",
+    "object_id": "0050_obj_air fryer_01",
+    "time": "00:07:29",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0050",
+    "video_path": "017/017_0050",
+    "object_category": "jeans",
+    "object_id": "0050_obj_jeans_01",
+    "time": "00:09:13",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0050",
+    "video_path": "017/017_0050",
+    "object_category": "cardboard box",
+    "object_id": "0050_obj_cardboard box_01",
+    "time": "00:13:14",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0051",
+    "video_path": "017/017_0051",
+    "object_category": "potato",
+    "object_id": "0050_obj_potato_01",
+    "time": "00:00:19",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0051",
+    "video_path": "017/017_0051",
+    "object_category": "peeler",
+    "object_id": "0050_obj_peeler_01",
+    "time": "00:00:40",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0051",
+    "video_path": "017/017_0051",
+    "object_category": "knife",
+    "object_id": "0050_obj_knife_01",
+    "time": "00:02:51",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0051",
+    "video_path": "017/017_0051",
+    "object_category": "mobile phone",
+    "object_id": "0050_obj_mobile phone_01",
+    "time": "00:05:33",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0051",
+    "video_path": "017/017_0051",
+    "object_category": "air fryer",
+    "object_id": "0050_obj_air fryer_01",
+    "time": "00:09:03",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0051",
+    "video_path": "017/017_0051",
+    "object_category": "pot",
+    "object_id": "0050_obj_pot_01",
+    "time": "00:10:32",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0051",
+    "video_path": "017/017_0051",
+    "object_category": "instant noodles",
+    "object_id": "0050_obj_instant noodles_01",
+    "time": "00:10:32",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0051",
+    "video_path": "017/017_0051",
+    "object_category": "plate",
+    "object_id": "0050_obj_plate_01",
+    "time": "00:33:56",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0051",
+    "video_path": "017/017_0051",
+    "object_category": "milk tea",
+    "object_id": "0050_obj_milk tea_01",
+    "time": "00:16:35",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-13",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "object_category": "rice",
+    "object_id": "0019_obj_rice_01",
+    "time": "00:02:03",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "object_category": "scissors",
+    "object_id": "0019_obj_scissors_01",
+    "time": "00:06:05",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "object_category": "kniffe",
+    "object_id": "0019_obj_knife_01",
+    "time": "00:03:21",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "object_category": "salmon",
+    "object_id": "0019_obj_salmon_01",
+    "time": "00:07:20",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "object_category": "spice box",
+    "object_id": "0019_obj_spice box_01",
+    "time": "00:19:14",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "object_category": "pool",
+    "object_id": "0019_obj_pool_01",
+    "time": "00:10:31",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "object_category": "pot",
+    "object_id": "0019_obj_pot_01",
+    "time": "00:12:58",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "object_category": "spinach",
+    "object_id": "0019_obj_spinach_01",
+    "time": "00:18:29",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "object_category": "bowl",
+    "object_id": "0019_obj_bowl_01",
+    "time": "00:26:54",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "object_category": "mobile phone",
+    "object_id": "0019_obj_mobile phone_01",
+    "time": "00:28:43",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "object_category": "spoon",
+    "object_id": "0019_obj_spoon_01",
+    "time": "00:32:09",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "object_category": "desk",
+    "object_id": "0019_obj_desk_01",
+    "time": "00:02:03",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0019",
+    "video_path": "017/017_0019",
+    "object_category": "chopping board",
+    "object_id": "0019_obj_chopping board_01",
+    "time": "00:07:01",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0022",
+    "video_path": "017/017_0022",
+    "object_category": "access card",
+    "object_id": "0022_obj_access card _01",
+    "time": "00:02:19",
+    "location": {
+      "place_id": "corridor_1",
+      "place_type": "bulding",
+      "description": "corridor_1"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0022",
+    "video_path": "017/017_0022",
+    "object_category": "treadmill",
+    "object_id": "0022_obj_treadmill_01",
+    "time": "00:03:07",
+    "location": {
+      "place_id": "gym_1",
+      "place_type": "bulding",
+      "description": "Places for fitness and exercise"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "object_category": "handbag",
+    "object_id": "0052_obj_handbag_01",
+    "time": "00:00:33",
+    "location": {
+      "place_id": "apartment building_1",
+      "place_type": "bulding",
+      "description": "Buildings for students to live in."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "object_category": "mushroom",
+    "object_id": "0052_obj_mushroom_01",
+    "time": "00:06:20",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "object_category": "bread",
+    "object_id": "0052_obj_bread_01",
+    "time": "00:07:55",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "object_category": "chicken thigh fillets",
+    "object_id": "0052_obj_chicken thigh fillets_01",
+    "time": "00:11:46",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "object_category": "ketchup",
+    "object_id": "0052_obj_ketchup_01",
+    "time": "00:19:43",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "object_category": "milk",
+    "object_id": "0052_obj_milk_01",
+    "time": "00:22:19",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "object_category": "green beans",
+    "object_id": "0052_obj_green beans_01",
+    "time": "00:06:49",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "object_category": "flour",
+    "object_id": "0052_obj_flour_01",
+    "time": "00:15:43",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "object_category": "toast",
+    "object_id": "0052_obj_toast_01",
+    "time": "00:07:55",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "object_category": "noodles",
+    "object_id": "0052_obj_noodles_01",
+    "time": "00:18:36",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "object_category": "dumpling wrapper",
+    "object_id": "0052_obj_dumpling wrapper_01",
+    "time": "00:34:43",
+    "location": {
+      "place_id": "supermarket_2",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "object_category": "bank card",
+    "object_id": "0052_obj_bank card_01",
+    "time": "00:26:50",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0052",
+    "video_path": "017/017_0052",
+    "object_category": "drawer",
+    "object_id": "0052_obj_drawer_01",
+    "time": "00:49:33",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "Shopping places."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "pot",
+    "object_id": "0043_obj_pot_01",
+    "time": "00:01:25",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "noodles",
+    "object_id": "0043_obj_noodles_01",
+    "time": "00:01:39",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "bowl",
+    "object_id": "0043_obj_bowl_01",
+    "time": "00:01:59",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "meatball",
+    "object_id": "0043_obj_meatball_01",
+    "time": "00:02:55",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "Air fryer mat paper",
+    "object_id": "0043_obj_Air fryer mat paper_01",
+    "time": "00:04:09",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "electric kettle",
+    "object_id": "0043_obj_electric kettle_01",
+    "time": "00:04:24",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "thermos cup",
+    "object_id": "0043_obj_thermos cup_01",
+    "time": "00:01:39",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "laptop",
+    "object_id": "0043_obj_laptop_01",
+    "time": "00:05:24",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "ketchup",
+    "object_id": "0043_obj_ketchup_01",
+    "time": "00:06:21",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "chopsticks",
+    "object_id": "0043_obj_chopsticks_01",
+    "time": "00:07:45",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "mobile phone",
+    "object_id": "0043_obj_mobile phone_01",
+    "time": "00:11:35",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "cabbage",
+    "object_id": "0043_obj_cabbage_01",
+    "time": "00:18:26",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "potato bag",
+    "object_id": "0043_obj_potato bag_01",
+    "time": "00:19:17",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "knife",
+    "object_id": "0043_obj_knife_01",
+    "time": "00:21:15",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "scissors",
+    "object_id": "0043_obj_scissors_01",
+    "time": "00:24:50",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "meat",
+    "object_id": "0043_obj_meat_01",
+    "time": "00:23:50",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "spice box",
+    "object_id": "0043_obj_spice box_01",
+    "time": "00:30:15",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "scallion",
+    "object_id": "0043_obj_scallion_01",
+    "time": "00:33:44",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "garlic sprouts",
+    "object_id": "0043_obj_garlic sprouts_01",
+    "time": "00:41:02",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "camera",
+    "object_id": "0043_obj_camera_01",
+    "time": "01:04:54",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "air fryer",
+    "object_id": "0043_obj_air fryer_01",
+    "time": "00:01:39",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "coat",
+    "object_id": "0043_obj_coat_01",
+    "time": "00:01:39",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "express parcel",
+    "object_id": "0043_obj_express parcel_01",
+    "time": "00:49:48",
+    "location": {
+      "place_id": "apartment building_1",
+      "place_type": "bulding",
+      "description": "Buildings for students to live in."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0043",
+    "video_path": "017/017_0043",
+    "object_category": "camera lens",
+    "object_id": "0043_obj_camera lens_01",
+    "time": "01:42:55",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "object_category": "mug",
+    "object_id": "0044_obj_mug_01",
+    "time": "00:00:49",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "object_category": "knife",
+    "object_id": "0044_obj_knife_01",
+    "time": "00:01:54",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "object_category": "plate",
+    "object_id": "0044_obj_plate_01",
+    "time": "00:02:41",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "object_category": "chopsticks",
+    "object_id": "0044_obj_chopsticks_01",
+    "time": "00:03:37",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "object_category": "peeler",
+    "object_id": "0044_obj_peeler_01",
+    "time": "00:04:54",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "object_category": "chopping board",
+    "object_id": "0044_obj_chopping board_01",
+    "time": "00:05:59",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "object_category": "potato",
+    "object_id": "0044_obj_potato_01",
+    "time": "00:07:06",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "object_category": "bowl",
+    "object_id": "0044_obj_bowl_01",
+    "time": "00:10:18",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "object_category": "ginger",
+    "object_id": "0044_obj_ginger_01",
+    "time": "00:17:09",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "object_category": "chicken",
+    "object_id": "0044_obj_chicken_01",
+    "time": "00:06:20",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "object_category": "clip",
+    "object_id": "0044_obj_clip_01",
+    "time": "00:22:41",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "object_category": "garlic sprouts",
+    "object_id": "0044_obj_garlic sprouts_01",
+    "time": "00:27:22",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "object_category": "rice",
+    "object_id": "0044_obj_rice_01",
+    "time": "00:29:39",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "object_category": "spoon",
+    "object_id": "0044_obj_spoon_01",
+    "time": "00:29:47",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },  
+  {
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "object_category": "Tray clamp",
+    "object_id": "0044_obj_Tray clamp_01",
+    "time": "00:29:55",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "object_category": "oyster sauce",
+    "object_id": "0044_obj_oyster sauce_01",
+    "time": "00:21:49",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0044",
+    "video_path": "017/017_0044",
+    "object_category": "rag",
+    "object_id": "0044_obj_rag_01",
+    "time": "00:06:41",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0023",
+    "video_path": "017/017_0023",
+    "object_category": "backpack",
+    "object_id": "0023_obj_backpack_01",
+    "time": "00:01:40",
+    "location": {
+      "place_id": "apartment building_1",
+      "place_type": "bulding",
+      "description": "Buildings for students to live in."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0023",
+    "video_path": "017/017_0023",
+    "object_category": "elevator button",
+    "object_id": "0023_obj_elevator button_01",
+    "time": "00:02:58",
+    "location": {
+      "place_id": "apartment building_1",
+      "place_type": "bulding",
+      "description": "Buildings for students to live in."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0023",
+    "video_path": "017/017_0023",
+    "object_category": "revolving door",
+    "object_id": "0023_obj_revolving door_01",
+    "time": "00:07:01",
+    "location": {
+      "place_id": "apartment building_1",
+      "place_type": "bulding",
+      "description": "Buildings for students to live in."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0023",
+    "video_path": "017/017_0023",
+    "object_category": "Pedestrian signage",
+    "object_id": "0023_obj_Pedestrian signage_01",
+    "time": "00:07:48",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "outdoor",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0023",
+    "video_path": "017/017_0023",
+    "object_category": "stairs",
+    "object_id": "0023_obj_stairs_01",
+    "time": "00:11:04",
+    "location": {
+      "place_id": "station_1",
+      "place_type": "taffic",
+      "description": "subway station."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0023",
+    "video_path": "017/017_0023",
+    "object_category": "watch",
+    "object_id": "0023_obj_watch_01",
+    "time": "00:15:21",
+    "location": {
+      "place_id": "subway car_1",
+      "place_type": "taffic",
+      "description": "In the subway carriage."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0023",
+    "video_path": "017/017_0023",
+    "object_category": "Support pole",
+    "object_id": "0023_obj_Support pole_01",
+    "time": "00:21:58",
+    "location": {
+      "place_id": "subway car_1",
+      "place_type": "taffic",
+      "description": "In the subway carriage."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0023",
+    "video_path": "017/017_0023",
+    "object_category": "hat",
+    "object_id": "0023_obj_hat_01",
+    "time": "00:27:23",
+    "location": {
+      "place_id": "subway car_1",
+      "place_type": "taffic",
+      "description": "In the subway carriage."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0023",
+    "video_path": "017/017_0023",
+    "object_category": "police",
+    "object_id": "0023_obj_police_01",
+    "time": "00:36:03",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "taffic",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0024",
+    "video_path": "017/017_0024",
+    "object_category": "Travel Bus",
+    "object_id": "0024_obj_Travel Bus_01",
+    "time": "00:00:30",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "taffic",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0024",
+    "video_path": "017/017_0024",
+    "object_category": "bench",
+    "object_id": "0024_obj_bench_01",
+    "time": "00:06:48",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "taffic",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0024",
+    "video_path": "017/017_0024",
+    "object_category": "shared bicycle",
+    "object_id": "0024_obj_shared bicycle_01",
+    "time": "00:07:53",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "taffic",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0024",
+    "video_path": "017/017_0024",
+    "object_category": "Traffic lights",
+    "object_id": "0024_obj_Traffic lights_01",
+    "time": "00:11:02",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "taffic",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0024",
+    "video_path": "017/017_0024",
+    "object_category": "red lantern",
+    "object_id": "0024_obj_red lantern_01",
+    "time": "00:20:01",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "taffic",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0024",
+    "video_path": "017/017_0024",
+    "object_category": "enclosure",
+    "object_id": "0024_obj_enclosure_01",
+    "time": "00:14:57",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "taffic",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0024",
+    "video_path": "017/017_0024",
+    "object_category": "wall painting",
+    "object_id": "0024_obj_wall painting_01",
+    "time": "00:13:34",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "taffic",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-17",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0025",
+    "video_path": "017/017_0025",
+    "object_category": "pot",
+    "object_id": "0025_obj_pot_01",
+    "time": "00:00:34",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0025",
+    "video_path": "017/017_0025",
+    "object_category": "meatball",
+    "object_id": "0025_obj_meatball_01",
+    "time": "00:03:46",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0025",
+    "video_path": "017/017_0025",
+    "object_category": "meat",
+    "object_id": "0025_obj_meat_01",
+    "time": "00:05:18",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0025",
+    "video_path": "017/017_0025",
+    "object_category": "scissors",
+    "object_id": "0025_obj_scissors_01",
+    "time": "00:09:11",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0025",
+    "video_path": "017/017_0025",
+    "object_category": "pepper",
+    "object_id": "0025_obj_pepper_01",
+    "time": "00:10:36",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0025",
+    "video_path": "017/017_0025",
+    "object_category": "pool",
+    "object_id": "0025_obj_pool_01",
+    "time": "00:12:37",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0025",
+    "video_path": "017/017_0025",
+    "object_category": "spoon",
+    "object_id": "0025_obj_spoon_01",
+    "time": "00:14:22",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0025",
+    "video_path": "017/017_0025",
+    "object_category": "spoon",
+    "object_id": "0025_obj_spoon_01",
+    "time": "00:14:22",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "A place for pedestrians to walk."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "air fryer liner",
+    "object_id": "0045_obj_air fryer liner_01",
+    "time": "00:00:50",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "bread",
+    "object_id": "0045_obj_bread_01",
+    "time": "00:01:32",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "milk can",
+    "object_id": "0045_obj_milk can_01",
+    "time": "00:02:16",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "mug",
+    "object_id": "0045_obj_mug_01",
+    "time": "00:02:36",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "bracelet",
+    "object_id": "0045_obj_bracelet_01",
+    "time": "00:00:22",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "fridge",
+    "object_id": "0045_obj_fridge_01",
+    "time": "00:01:51",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "knife",
+    "object_id": "0045_obj_knife_01",
+    "time": "00:01:37",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "Tray clamp",
+    "object_id": "0045_obj_Tray clamp_01",
+    "time": "00:04:21",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "door handle",
+    "object_id": "0045_obj_door handle_01",
+    "time": "00:07:43",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "ketchup",
+    "object_id": "0045_obj_ketchup_01",
+    "time": "00:08:26",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "ketchup",
+    "object_id": "0045_obj_ketchup_01",
+    "time": "00:08:26",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "chicken",
+    "object_id": "0045_obj_chicken_01",
+    "time": "00:10:39",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "egg",
+    "object_id": "0045_obj_egg_01",
+    "time": "00:25:20",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "chopsticks",
+    "object_id": "0045_obj_chopsticks_01",
+    "time": "00:29:47",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "chopsticks",
+    "object_id": "0045_obj_chopsticks_01",
+    "time": "00:29:47",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "meatball",
+    "object_id": "0045_obj_meatball_01",
+    "time": "00:03:44",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "spoon",
+    "object_id": "0045_obj_spoon_01",
+    "time": "00:23:02",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "thermos cup",
+    "object_id": "0045_obj_thermos cup_01",
+    "time": "01:43:50",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "potato",
+    "object_id": "0045_obj_potato_01",
+    "time": "01:55:38",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "garlic sprouts",
+    "object_id": "0045_obj_garlic sprouts_01",
+    "time": "00:16:03",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "flour",
+    "object_id": "0045_obj_flour_01",
+    "time": "00:24:59",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "peeler",
+    "object_id": "0045_obj_peeler_01",
+    "time": "01:57:57",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "steamer rack",
+    "object_id": "0045_obj_steamer rack_01",
+    "time": "02:38:45",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "plastic gloves",
+    "object_id": "0045_obj_plastic gloves_01",
+    "time": "02:54:57",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "air fryer",
+    "object_id": "0045_obj_air fryer_01",
+    "time": "02:59:30",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "bowl",
+    "object_id": "0045_obj_bowl_01",
+    "time": "00:54:45",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "health products",
+    "object_id": "0045_obj_health products_01",
+    "time": "01:36:03",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0045",
+    "video_path": "017/017_0045",
+    "object_category": "garbage",
+    "object_id": "0045_obj_garbage_01",
+    "time": "01:47:09",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-18",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0026",
+    "video_path": "017/017_0026",
+    "object_category": "traffic sign",
+    "object_id": "0026_obj_traffic sign_01",
+    "time": "00:17:07",
+    "location": {
+      "place_id": "subway station_1",
+      "place_type": "taffic",
+      "description": "The place to store the automatic ticket vending machine at the subway station."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0027",
+    "video_path": "017/017_0027",
+    "object_category": "butter",
+    "object_id": "0027_obj_butter_01",
+    "time": "00:00:49",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0027",
+    "video_path": "017/017_0027",
+    "object_category": "bread",
+    "object_id": "0027_obj_bread_01",
+    "time": "00:00:49",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0027",
+    "video_path": "017/017_0027",
+    "object_category": "jam",
+    "object_id": "0027_obj_jam_01",
+    "time": "00:05:19",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0027",
+    "video_path": "017/017_0027",
+    "object_category": "ipad",
+    "object_id": "0027_obj_ipad_01",
+    "time": "00:19:44",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0020",
+    "video_path": "017/017_0020",
+    "object_category": "Plastic self sealing bag",
+    "object_id": "0020_obj_Plastic self sealing bag_01",
+    "time": "00:00:35",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0020",
+    "video_path": "017/017_0020",
+    "object_category": "spice box",
+    "object_id": "0020_obj_spice box_01",
+    "time": "00:00:37",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0020",
+    "video_path": "017/017_0020",
+    "object_category": "pot",
+    "object_id": "0020_obj_pot_01",
+    "time": "00:00:40",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0020",
+    "video_path": "017/017_0020",
+    "object_category": "egg",
+    "object_id": "0020_obj_egg_01",
+    "time": "00:01:08",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0020",
+    "video_path": "017/017_0020",
+    "object_category": "clip",
+    "object_id": "0020_obj_clip_01",
+    "time": "00:01:03",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0020",
+    "video_path": "017/017_0020",
+    "object_category": "spoon",
+    "object_id": "0020_obj_spoon_01",
+    "time": "00:10:22",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0020",
+    "video_path": "017/017_0020",
+    "object_category": "pie",
+    "object_id": "0020_obj_Pie_01",
+    "time": "00:20:57",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0020",
+    "video_path": "017/017_0020",
+    "object_category": "package",
+    "object_id": "0020_obj_package_01",
+    "time": "00:28:26",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0021",
+    "video_path": "017/017_0021",
+    "object_category": "meat",
+    "object_id": "0021_obj_meat_01",
+    "time": "00:00:21",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0021",
+    "video_path": "017/017_0021",
+    "object_category": "egg",
+    "object_id": "0021_obj_egg_01",
+    "time": "00:00:21",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0021",
+    "video_path": "017/017_0021",
+    "object_category": "egg",
+    "object_id": "0021_obj_egg_01",
+    "time": "00:00:21",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0021",
+    "video_path": "017/017_0021",
+    "object_category": "pot",
+    "object_id": "0021_obj_pot_01",
+    "time": "00:01:03",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0021",
+    "video_path": "017/017_0021",
+    "object_category": "pumpkin",
+    "object_id": "0021_obj_pumpkin_01",
+    "time": "00:03:30",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0021",
+    "video_path": "017/017_0021",
+    "object_category": "knife",
+    "object_id": "0021_obj_knife_01",
+    "time": "00:05:13",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0021",
+    "video_path": "017/017_0021",
+    "object_category": "mushroom",
+    "object_id": "0021_obj_mushroom_01",
+    "time": "00:09:08",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0021",
+    "video_path": "017/017_0021",
+    "object_category": "yogurt",
+    "object_id": "0021_obj_yogurt_01",
+    "time": "00:46:16",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-19",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0002",
+    "video_path": "017/017_0002",
+    "object_category": "vegetable",
+    "object_id": "0002_obj_vegetable_01",
+    "time": "00:02:38",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0002",
+    "video_path": "017/017_0002",
+    "object_category": "shrimp",
+    "object_id": "0002_obj_shrimp_01",
+    "time": "00:03:52",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0002",
+    "video_path": "017/017_0002",
+    "object_category": "noodles",
+    "object_id": "0002_obj_noodles_01",
+    "time": "00:08:57",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0033",
+    "video_path": "017/017_0033",
+    "object_category": "treadmill",
+    "object_id": "0033_obj_treadmill_01",
+    "time": "00:02:41",
+    "location": {
+      "place_id": "gym_1",
+      "place_type": "room",
+      "description": "Places for fitness and exercise."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "object_category": "chicken",
+    "object_id": "0028_obj_chicken_01",
+    "time": "00:00:44",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "object_category": "electric kettle",
+    "object_id": "0028_obj_electric kettle_01",
+    "time": "00:02:51",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "object_category": "fridge",
+    "object_id": "0028_obj_fridge_01",
+    "time": "00:01:18",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "object_category": "pot",
+    "object_id": "0028_obj_pot_01",
+    "time": "00:00:38",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "object_category": "spice box",
+    "object_id": "0028_obj_spice box_01",
+    "time": "00:05:06",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "object_category": "garlic sprouts",
+    "object_id": "0028_obj_garlic sprouts_01",
+    "time": "00:07:12",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+
+  {
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "object_category": "flour",
+    "object_id": "0028_obj_flour_01",
+    "time": "00:10:41",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "object_category": "cucumber",
+    "object_id": "0028_obj_cucumber_01",
+    "time": "00:11:45",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "object_category": "knife",
+    "object_id": "0028_obj_knife_01",
+    "time": "00:11:51",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "object_category": "mobile phone",
+    "object_id": "0028_obj_mobile phone_01",
+    "time": "00:14:11",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "object_category": "scissors",
+    "object_id": "0028_obj_scissors_01",
+    "time": "00:29:19",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0028",
+    "video_path": "017/017_0028",
+    "object_category": "chopsticks",
+    "object_id": "0028_obj_chopsticks_01",
+    "time": "00:35:41",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0029",
+    "video_path": "017/017_0029",
+    "object_category": "pot",
+    "object_id": "0029_obj_pot_01",
+    "time": "00:01:49",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0029",
+    "video_path": "017/017_0029",
+    "object_category": "garlic sprouts",
+    "object_id": "0029_obj_garlic sprouts_01",
+    "time": "00:00:05",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0029",
+    "video_path": "017/017_0029",
+    "object_category": "dish soap",
+    "object_id": "0029_obj_dish soap_01",
+    "time": "00:00:33",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0029",
+    "video_path": "017/017_0029",
+    "object_category": "egg",
+    "object_id": "0029_obj_egg_01",
+    "time": "00:04:27",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0029",
+    "video_path": "017/017_0029",
+    "object_category": "flour",
+    "object_id": "0029_obj_flour_01",
+    "time": "00:07:22",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0029",
+    "video_path": "017/017_0029",
+    "object_category": "chopsticks",
+    "object_id": "0029_obj_chopsticks_01",
+    "time": "00:09:22",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0029",
+    "video_path": "017/017_0029",
+    "object_category": "turner",
+    "object_id": "0029_obj_turner_01",
+    "time": "00:04:27",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0029",
+    "video_path": "017/017_0029",
+    "object_category": "spoon",
+    "object_id": "0029_obj_spoon_01",
+    "time": "00:07:34",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0029",
+    "video_path": "017/017_0029",
+    "object_category": "soup spoon",
+    "object_id": "0029_obj_soup spoon_01",
+    "time": "00:13:55",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0029",
+    "video_path": "017/017_0029",
+    "object_category": "fresh-keeping box",
+    "object_id": "0029_obj_fresh-keeping box_01",
+    "time": "00:16:42",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0030",
+    "video_path": "017/017_0030",
+    "object_category": "pot lid",
+    "object_id": "0030_obj_pot lid_01",
+    "time": "00:00:48",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0030",
+    "video_path": "017/017_0030",
+    "object_category": "electric kettle",
+    "object_id": "0030_obj_electric kettle_01",
+    "time": "00:00:10",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0030",
+    "video_path": "017/017_0030",
+    "object_category": "rice bag",
+    "object_id": "0030_obj_rice bag_01",
+    "time": "00:01:45",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0030",
+    "video_path": "017/017_0030",
+    "object_category": "rice bucket",
+    "object_id": "0030_obj_rice bucket_01",
+    "time": "00:02:19",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0030",
+    "video_path": "017/017_0030",
+    "object_category": "ginger",
+    "object_id": "0030_obj_ginger_01",
+    "time": "00:09:32",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0030",
+    "video_path": "017/017_0030",
+    "object_category": "paper box",
+    "object_id": "0030_obj_paper box_01",
+    "time": "00:10:12",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0031",
+    "video_path": "017/017_0031",
+    "object_category": "handbag",
+    "object_id": "0031_obj_handbag_01",
+    "time": "00:00:23",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0031",
+    "video_path": "017/017_0031",
+    "object_category": "camera",
+    "object_id": "0031_obj_camera_01",
+    "time": "00:02:37",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0032",
+    "video_path": "017/017_0032",
+    "object_category": "garlic sprouts",
+    "object_id": "0032_obj_garlic sprouts_01",
+    "time": "00:00:29",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+   {
+    "video_id": "017_0032",
+    "video_path": "017/017_0032",
+    "object_category": "toast",
+    "object_id": "0032_obj_toast_01",
+    "time": "00:01:06",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0032",
+    "video_path": "017/017_0032",
+    "object_category": "butter",
+    "object_id": "0032_obj_butter_01",
+    "time": "00:02:12",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0032",
+    "video_path": "017/017_0032",
+    "object_category": "salad dressing",
+    "object_id": "0032_obj_salad dressing_01",
+    "time": "00:11:43",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0032",
+    "video_path": "017/017_0032",
+    "object_category": "yogurt",
+    "object_id": "0032_obj_yogurt_01",
+    "time": "00:15:23",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0032",
+    "video_path": "017/017_0032",
+    "object_category": "mobile phone",
+    "object_id": "0032_obj_mobile phone_01",
+    "time": "00:23:49",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-20",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0034",
+    "video_path": "017/017_0034",
+    "object_category": "rice",
+    "object_id": "0034_obj_rice_01",
+    "time": "00:02:13",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0034",
+    "video_path": "017/017_0034",
+    "object_category": "chicken",
+    "object_id": "0034_obj_chicken_01",
+    "time": "00:05:53",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0034",
+    "video_path": "017/017_0034",
+    "object_category": "tomato",
+    "object_id": "0034_obj_tomato_01",
+    "time": "00:27:34",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0034",
+    "video_path": "017/017_0034",
+    "object_category": "Apple Disk",
+    "object_id": "0034_obj_Apple Disk_01",
+    "time": "00:51:28",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0034",
+    "video_path": "017/017_0034",
+    "object_category": "rag",
+    "object_id": "0034_obj_rag_01",
+    "time": "00:34:37",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0035",
+    "video_path": "017/017_0035",
+    "object_category": "elevator",
+    "object_id": "0035_obj_elevator_01",
+    "time": "00:01:37",
+    "location": {
+      "place_id": "apartment building_1",
+      "place_type": "taffic",
+      "description": "Buildings for students to live in."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "object_category": "express box",
+    "object_id": "0038_obj_express box_01",
+    "time": "00:00:52",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "object_category": "MacBook",
+    "object_id": "0038_obj_MacBook_01",
+    "time": "00:02:01",
+    "location": {
+      "place_id": "dorm_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "object_category": "fridge",
+    "object_id": "0038_obj_fridge_01",
+    "time": "00:02:01",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "object_category": "tomato",
+    "object_id": "0038_obj_tomato_01",
+    "time": "00:25:47",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "object_category": "mushroom",
+    "object_id": "0038_obj_mushroom_01",
+    "time": "00:25:59",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "object_category": "cucumber",
+    "object_id": "0038_obj_cucumber_01",
+    "time": "00:26:07",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "object_category": "rice",
+    "object_id": "0038_obj_rice_01",
+    "time": "00:27:49",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "object_category": "fish pieces",
+    "object_id": "0038_obj_fish pieces_01",
+    "time": "00:29:18",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "object_category": "egg",
+    "object_id": "0038_obj_egg_01",
+    "time": "00:25:59",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "object_category": "knife",
+    "object_id": "0038_obj_knife_01",
+    "time": "00:35:44",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0038",
+    "video_path": "017/017_0038",
+    "object_category": "milk can",
+    "object_id": "0038_obj_milk can_01",
+    "time": "00:28:30",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0036",
+    "video_path": "017/017_0036",
+    "object_category": "toast",
+    "object_id": "0036_obj_toast_01",
+    "time": "00:00:53",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0036",
+    "video_path": "017/017_0036",
+    "object_category": "rice",
+    "object_id": "0036_obj_rice_01",
+    "time": "00:00:53",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0037",
+    "video_path": "017/017_0037",
+    "object_category": "toast",
+    "object_id": "0037_obj_toast_01",
+    "time": "00:00:42",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0037",
+    "video_path": "017/017_0037",
+    "object_category": "sandwich",
+    "object_id": "0037_obj_sandwich_01",
+    "time": "00:10:37",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0039",
+    "video_path": "017/017_0039",
+    "object_category": "shrimp",
+    "object_id": "0039_obj_shrimp_01",
+    "time": "00:00:50",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0039",
+    "video_path": "017/017_0039",
+    "object_category": "mushroom",
+    "object_id": "0039_obj_mushroom_01",
+    "time": "00:03:45",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0039",
+    "video_path": "017/017_0039",
+    "object_category": "spinach",
+    "object_id": "0039_obj_spinach_01",
+    "time": "00:01:54",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0039",
+    "video_path": "017/017_0039",
+    "object_category": "pepper",
+    "object_id": "0039_obj_pepper_01",
+    "time": "00:06:14",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0039",
+    "video_path": "017/017_0039",
+    "object_category": "garlic sprouts",
+    "object_id": "0039_obj_garlic sprouts_01",
+    "time": "00:06:50",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0039",
+    "video_path": "017/017_0039",
+    "object_category": "noodles",
+    "object_id": "0039_obj_noodles_01",
+    "time": "00:08:03",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0039",
+    "video_path": "017/017_0039",
+    "object_category": "hat",
+    "object_id": "0039_obj_hat_01",
+    "time": "00:12:32",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0039",
+    "video_path": "017/017_0039",
+    "object_category": "umbrella",
+    "object_id": "0039_obj_umbrella_01",
+    "time": "00:17:08",
+    "location": {
+      "place_id": "roadside_1",
+      "place_type": "outdoor",
+      "description": "A place for pedestrians to walk"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0046",
+    "video_path": "017/017_0046",
+    "object_category": "meat",
+    "object_id": "0046_obj_meat_01",
+    "time": "00:00:36",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0046",
+    "video_path": "017/017_0046",
+    "object_category": "tomato",
+    "object_id": "0046_obj_tomato_01",
+    "time": "00:01:00",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0046",
+    "video_path": "017/017_0046",
+    "object_category": "knife",
+    "object_id": "0046_obj_knife_01",
+    "time": "00:07:55",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0046",
+    "video_path": "017/017_0046",
+    "object_category": "potato",
+    "object_id": "0046_obj_potato_01",
+    "time": "00:01:11",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0046",
+    "video_path": "017/017_0046",
+    "object_category": "pot",
+    "object_id": "0046_obj_pot_01",
+    "time": "00:01:11",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0046",
+    "video_path": "017/017_0046",
+    "object_category": "egg",
+    "object_id": "0046_obj_egg_01",
+    "time": "00:01:11",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0046",
+    "video_path": "017/017_0046",
+    "object_category": "ginger",
+    "object_id": "0046_obj_ginger_01",
+    "time": "00:13:08",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0046",
+    "video_path": "017/017_0046",
+    "object_category": "plate",
+    "object_id": "0046_obj_plate_01",
+    "time": "00:05:10",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0046",
+    "video_path": "017/017_0046",
+    "object_category": "flour",
+    "object_id": "0046_obj_flour_01",
+    "time": "00:05:10",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-22",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0041",
+    "video_path": "017/017_0041",
+    "object_category": "egg",
+    "object_id": "0041_obj_egg_01",
+    "time": "00:00:25",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0041",
+    "video_path": "017/017_0041",
+    "object_category": "mushroom",
+    "object_id": "0041_obj_mushroom_01",
+    "time": "00:00:25",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0041",
+    "video_path": "017/017_0041",
+    "object_category": "tomato",
+    "object_id": "0041_obj_tomato_01",
+    "time": "00:00:34",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0041",
+    "video_path": "017/017_0041",
+    "object_category": "milk tea",
+    "object_id": "0041_obj_milk tea_01",
+    "time": "00:03:42",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0041",
+    "video_path": "017/017_0041",
+    "object_category": "contact lens",
+    "object_id": "0041_obj_contact lens_01",
+    "time": "01:02:30",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0047",
+    "video_path": "017/017_0047",
+    "object_category": "revolving door",
+    "object_id": "0047_obj_revolving door_01",
+    "time": "00:18:10",
+    "location": {
+      "place_id": "apartment building_1",
+      "place_type": "room",
+      "description": "Buildings for students to live in."
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0047",
+    "video_path": "017/017_0047",
+    "object_category": "shredded potatoes",
+    "object_id": "0047_obj_shredded potatoes_01",
+    "time": "00:37:27",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0047",
+    "video_path": "017/017_0047",
+    "object_category": "flour",
+    "object_id": "0047_obj_flour_01",
+    "time": "00:37:44",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0047",
+    "video_path": "017/017_0047",
+    "object_category": "ketchup",
+    "object_id": "0047_obj_ketchup_01",
+    "time": "01:06:22",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0053",
+    "video_path": "017/017_0053",
+    "object_category": "pool",
+    "object_id": "0053_obj_pool_01",
+    "time": "00:01:12",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0053",
+    "video_path": "017/017_0053",
+    "object_category": "cream cheese",
+    "object_id": "0053_obj_cream cheese_01",
+    "time": "00:02:28",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0053",
+    "video_path": "017/017_0053",
+    "object_category": "egg beater",
+    "object_id": "0053_obj_egg beater_01",
+    "time": "00:13:26",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0053",
+    "video_path": "017/017_0053",
+    "object_category": "rag",
+    "object_id": "0053_obj_rag_01",
+    "time": "00:22:15",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "017_0053",
+    "video_path": "017/017_0053",
+    "object_category": "potato sticks",
+    "object_id": "0053_obj_potato sticks_01",
+    "time": "00:37:43",
+    "location": {
+      "place_id": "kitchen_1",
+      "place_type": "room",
+      "description": "An area in the dormitory"
+    },
+    "meta": {
+      "annotator_id": "worker_06",
+      "created_at": "2025-12-24",
+      "qc_status": "accepted"
+    }
+  }
+]

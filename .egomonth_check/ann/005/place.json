@@ -1,0 +1,589 @@
+[
+  {
+    "place_id": "street1",
+    "video_id": "005_0001",
+    "video_path": "005/005_0001",
+    "category": "street",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Public street area",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "park1",
+    "video_id": "005_0001",
+    "video_path": "005/005_0001",
+    "category": "park",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Public park area",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "Living1",
+    "video_id": "005_0001",
+    "video_path": "005/005_0001",
+    "category": "living_room",
+    "floor_index": "1",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "description": "Indoor living room on first floor",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "Room1",
+    "video_id": "005_0001",
+    "video_path": "005/005_0001",
+    "category": "room",
+    "floor_index": "1",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "description": "Indoor room on first floor",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "Living2",
+    "video_id": "005_0001",
+    "video_path": "005/005_0001",
+    "category": "living_room",
+    "floor_index": "2",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "description": "Indoor living room on second floor",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "street2",
+    "video_id": "005_0001",
+    "video_path": "005/005_0001",
+    "category": "street",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "There is a gas station on the road",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "street3",
+    "video_id": "005_0001",
+    "video_path": "005/005_0001",
+    "category": "street",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "There is Xinglong Convenience Store at the corner",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "street4",
+    "video_id": "005_0001",
+    "video_path": "005/005_0001",
+    "category": "street",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Connected to Community 1",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "street5",
+    "video_id": "005_0001",
+    "video_path": "005/005_0001",
+    "category": "street",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Connected to Community 1",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "street6",
+    "video_id": "005_0001",
+    "video_path": "005/005_0001",
+    "category": "street",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Connected to Community 1",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "street7",
+    "video_id": "005_0001",
+    "video_path": "005/005_0001",
+    "category": "street",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Connected to Community 1",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "street8",
+    "video_id": "005_0001",
+    "video_path": "005/005_0001",
+    "category": "street",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "There is Xiangxiong Tire Supermarket nearby",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "street9",
+    "video_id": "005_0001",
+    "video_path": "005/005_0001",
+    "category": "street",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Public street area",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "street10",
+    "video_id": "005_0001",
+    "video_path": "005/005_0001",
+    "category": "street",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Public street area",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-07",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "community1",
+    "video_id": "005_0001",
+    "video_path": "005/005_0001",
+    "category": "community",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Residential community",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-07",
+      "qc_status": "accepted"
+      }
+  },
+  {
+    "place_id": "stair1",
+    "video_id": "005_0001",
+    "video_path": "005/005_0001",
+    "category": "stair",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "description": "",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+     }
+  },
+  {
+    "place_id": "street11",
+    "video_id": "005_0002",
+    "video_path": "005/005_0002",
+    "category": "street",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Public street area",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+   }
+  },
+  {
+    "place_id": "street12",
+    "video_id": "005_0002",
+    "video_path": "005/005_0002",
+    "category": "street",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Public street area",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+   
+   
+    }
+  },
+  {
+    "place_id": "market1",
+    "video_id": "005_0003",
+    "video_path": "005/005_0003",
+    "category": "market",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Public market area",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+   }
+  },
+  {
+    "place_id": "street13",
+    "video_id": "005_0004",
+    "video_path": "005/005_0004",
+    "category": "street",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Public street area",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+   
+    }
+  },
+  {
+    
+    "place_id": "bridge1",
+    "video_id": "005_0005",
+    "video_path": "005/005_0005",
+    "category": "bridge",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Stone bridge in the park",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "stair2",
+    "video_id": "005_0006",
+    "video_path": "005/005_0006",
+    "category": "stair",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "description": "Staircase in teaching building",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "street14",
+    "video_id": "005_0006",
+    "video_path": "005/005_0006",
+    "category": "street",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Street in front of teaching building",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "park2",
+    "video_id": "005_0006",
+    "video_path": "005/005_0006",
+    "category": "park",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Park next to street",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "street15",
+    "video_id": "005_0006",
+    "video_path": "005/005_0006",
+    "category": "street",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Street ",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "dormitory1",
+    "video_id": "005_0006",
+    "video_path": "005/005_0006",
+    "category": "dormitory",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "description": "",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "room2",
+    "video_id": "005_0006",
+    "video_path": "005/005_0006",
+    "category": "room",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "description": "Room 1 in dormitory 1",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "hall1",
+    "video_id": "005_0006",
+    "video_path": "005/005_0006",
+    "category": "hall",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "description": "Hall in teaching building",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+   
+    "place_id": "pavilion1",
+    "video_id": "005_0008",
+    "video_path": "005/005_0008",
+    "category": "pavilion",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Public pavilion area",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "teaching_building1",
+    "video_id": "005_0008",
+    "video_path": "005/005_0008",
+    "category": "teaching_building",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "description": "",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+   
+    "place_id": "store1",
+    "video_id": "005_0009",
+    "video_path": "005/005_0009",
+    "category": "store",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+     "place_id": "courier_station1",
+    "video_id": "005_0009",
+    "video_path": "005/005_0009",
+    "category": "courier_station",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Public courier station area",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+      
+    "place_id": "classroom1",
+    "video_id": "005_0011",
+    "video_path": "005/005_0011",
+    "category": "classroom",
+    "floor_index": "5",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "description": "Classroom on the fifth floor of teaching building",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    
+    "place_id": "pavilion1",
+    "video_id": "005_0012",
+    "video_path": "005/005_0012",
+    "category": "pavilion",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Pavilion in the park",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "place_id": "teaching_building1",
+    "video_id": "005_0012",
+    "video_path": "005/005_0012",
+    "category": "teaching_building",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": false,
+    "description": "",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  },
+  {
+   
+    "place_id": "playground1",
+    "video_id": "005_0014",
+    "video_path": "005/005_0014",
+    "category": "playground",
+    "floor_index": "",
+    "adjacent_place": [],
+    "parent_place_id": "",
+    "is_outdoor": true,
+    "description": "Public playground area",
+    "meta": {
+      "annotator_id": "worker_03",
+      "created_at": "2025-12-08",
+      "qc_status": "accepted"
+    }
+  }
+]
+  
+    

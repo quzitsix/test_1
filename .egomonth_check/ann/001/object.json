@@ -1,0 +1,1124 @@
+[
+  {
+    "video_id": "001_0001",
+    "video_path": "001/001_0001",
+    "object_category": "",
+    "object_id": "0001_obj_trash_can_01",
+    "time": "06:27",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": "The trash can is on the left side of the fire extinguisher"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0001",
+    "video_path": "001/001_0001",
+    "object_category": "",
+    "object_id": "0001_obj_fire_extinguisher_01",
+    "time": "06:28",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": "The fire extinguisher is on the right side of the trash can"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0002",
+    "video_path": "001/001_0002",
+    "object_category": "",
+    "object_id": "0002_obj_television_01",
+    "time": "00:20",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living_room",
+      "description": "TV in the living room"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0002",
+    "video_path": "001/001_0002",
+    "object_category": "",
+    "object_id": "0002_obj_potted_plant_01",
+    "time": "00:23",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living_room",
+      "description": "Potted plant next to the TV"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0002",
+    "video_path": "001/001_0002",
+    "object_category": "",
+    "object_id": "0002_obj_Photo_frame_01",
+    "time": "02:37",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living_room",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0002",
+    "video_path": "001/001_0002",
+    "object_category": "",
+    "object_id": "0002_obj_medal_01",
+    "time": "02:37",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living_room",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0002",
+    "video_path": "001/001_0002",
+    "object_category": "",
+    "object_id": "0002_obj_alcohol_01",
+    "time": "02:37",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living_room",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0002",
+    "video_path": "001/001_0002",
+    "object_category": "",
+    "object_id": "0002_obj_hydrogen_peroxide_solution_01",
+    "time": "02:37",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living_room",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+{
+    "video_id": "001_0002",
+    "video_path": "001/001_0002",
+    "object_category": "",
+    "object_id": "0002_obj_paper_cup_01",
+    "time": "02:37",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living_room",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0002",
+    "video_path": "001/001_0002",
+    "object_category": "",
+    "object_id": "0002_obj_red_wine_01",
+    "time": "02:37",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living_room",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0002",
+    "video_path": "001/001_0002",
+    "object_category": "",
+    "object_id": "0002_obj_goblet_01",
+    "time": "02:37",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living_room",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0002",
+    "video_path": "001/001_0002",
+    "object_category": "",
+    "object_id": "0002_obj_bamboo_basket_01",
+    "time": "02:37",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living_room",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0002",
+    "video_path": "001/001_0002",
+    "object_category": "",
+    "object_id": "0002_obj_magic_cube_01",
+    "time": "02:37",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living_room",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0002",
+    "video_path": "001/001_0002",
+    "object_category": "",
+    "object_id": "0002_obj_tea_01",
+    "time": "02:37",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living_room",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0002",
+    "video_path": "001/001_0002",
+    "object_category": "",
+    "object_id": "0002_obj_fluid_bear_01",
+    "time": "02:37",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living_room",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0002",
+    "video_path": "001/001_0002",
+    "object_category": "",
+    "object_id": "0002_obj_red_bag_01",
+    "time": "02:37",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living_room",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0002",
+    "video_path": "001/001_0002",
+    "object_category": "",
+    "object_id": "0002_obj_Baijiu_01",
+    "time": "02:37",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living_room",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0002",
+    "video_path": "001/001_0002",
+    "object_category": "",
+    "object_id": "0002_obj_foreign_wine_01",
+    "time": "02:37",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living_room",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0002",
+    "video_path": "001/001_0002",
+    "object_category": "",
+    "object_id": "0002_obj_Zilai_Bucket_01",
+    "time": "02:47",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living_room",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0002",
+    "video_path": "001/001_0002",
+    "object_category": "",
+    "object_id": "0002_obj_photo_frame_02",
+    "time": "02:47",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living_room",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0002",
+    "video_path": "001/001_0002",
+    "object_category": "",
+    "object_id": "0002_obj_router_02",
+    "time": "02:47",
+    "location": {
+      "place_id": "living_room_01",
+      "place_type": "living_room",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0002",
+    "video_path": "001/001_0002",
+    "object_category": "",
+    "object_id": "0002_obj_smartphone_02",
+    "time": "08:11",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0003",
+    "video_path": "001/001_0003",
+    "object_category": "",
+    "object_id": "0003_obj_sofa_01",
+    "time": "12:40",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0003",
+    "video_path": "001/001_0003",
+    "object_category": "",
+    "object_id": "0003_obj_coffee_table_01",
+    "time": "12:40",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0003",
+    "video_path": "001/001_0003",
+    "object_category": "",
+    "object_id": "0003_obj_laptop_01",
+    "time": "13:06",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0004",
+    "video_path": "001/001_0004",
+    "object_category": "",
+    "object_id": "0004_obj_elevator_01",
+    "time": "00:04",
+    "location": {
+      "place_id": "residential_complex_01",
+      "place_type": "residential_complex",
+      "description": "can see elevator at 00:04"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0004",
+    "video_path": "001/001_0004",
+    "object_category": "",
+    "object_id": "0004_obj_light_sign_01",
+    "time": "04:18",
+    "location": {
+      "place_id": "residential_complex_01",
+      "place_type": "residential_complex",
+      "description": "can see light sign at 04:18"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+},
+{
+    "video_id": "001_0005",
+    "video_path": "001/001_0005",
+    "object_category": "",
+    "object_id": "0005_obj_refrigerator_01",
+    "time": "12:50",
+    "location": {
+      "place_id": "dining_hall_01",
+      "place_type": "dining_hall",
+      "description": "can see refrigerator at 12:50"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+},
+{
+    "video_id": "001_0007",
+    "video_path": "001/001_0007",
+    "object_category": "",
+    "object_id": "0007_obj_freezer_01",
+    "time": "02:02",
+    "location": {
+      "place_id": "supermarket_01",
+      "place_type": "supermarket",
+      "description": "The freezer is located at the entrance of the supermarket"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+},
+{
+    "video_id": "001_0008",
+    "video_path": "001/001_0008",
+    "object_category": "",
+    "object_id": "0008_obj_laptop_01",
+    "time": "04:43",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0009",
+    "video_path": "001/001_0009",
+    "object_category": "",
+    "object_id": "0009_obj_food_delivery_locker_01",
+    "time": "18:51",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": "Turn right outside the university gate"
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0011",
+    "video_path": "001/001_0011",
+    "object_category": "",
+    "object_id": "0011_obj_laptop_01",
+    "time": "01:31",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0012",
+    "video_path": "001/001_0012",
+    "object_category": "",
+    "object_id": "0012_obj_professional_camera_01",
+    "time": "09:43",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0012",
+    "video_path": "001/001_0012",
+    "object_category": "",
+    "object_id": "0012_obj_camera_01",
+    "time": "10:31",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0012",
+    "video_path": "001/001_0012",
+    "object_category": "",
+    "object_id": "0012_obj_air_conditioner_remote_control_01",
+    "time": "11:33",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0012",
+    "video_path": "001/001_0012",
+    "object_category": "",
+    "object_id": "0012_obj_keyboard_01",
+    "time": "11:35",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0012",
+    "video_path": "001/001_0012",
+    "object_category": "",
+    "object_id": "0012_obj_Drone_Box_01",
+    "time": "11:38",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0012",
+    "video_path": "001/001_0012",
+    "object_category": "",
+    "object_id": "0012_obj_Drone_Box_02",
+    "time": "11:38",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0012",
+    "video_path": "001/001_0012",
+    "object_category": "",
+    "object_id": "0012_Recording_earphones_01",
+    "time": "11:47",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0012",
+    "video_path": "001/001_0012",
+    "object_category": "",
+    "object_id": "0012_chassis_01",
+    "time": "14:47",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0012",
+    "video_path": "001/001_0012",
+    "object_category": "",
+    "object_id": "0012_chassis_02",
+    "time": "14:47",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0012",
+    "video_path": "001/001_0012",
+    "object_category": "",
+    "object_id": "0012_water_dispenser_01",
+    "time": "14:54",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+ {
+    "video_id": "001_0012",
+    "video_path": "001/001_0012",
+    "object_category": "",
+    "object_id": "0012_three-color_light_01",
+    "time": "15:32",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  }, 
+  {
+    "video_id": "001_0012",
+    "video_path": "001/001_0012",
+    "object_category": "",
+    "object_id": "0012_tripod_01",
+    "time": "21:43",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0023",
+    "video_path": "001/001_0023",
+    "object_category": "",
+    "object_id": "0023_obj_laptop_01",
+    "time": "01:31",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0029",
+    "video_path": "001/001_0029",
+    "object_category": "",
+    "object_id": "0002_obj_smartphone_02",
+    "time": "08:11",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0030",
+    "video_path": "001/001_0030",
+    "object_category": "",
+    "object_id": "0002_obj_smartphone_02",
+    "time": "28:12",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0031",
+    "video_path": "001/001_0031",
+    "object_category": "",
+    "object_id": "0002_obj_smartphone_02",
+    "time": "05:49",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0035",
+    "video_path": "001/001_0035",
+    "object_category": "",
+    "object_id": "0002_obj_smartphone_02",
+    "time": "09:49",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0041",
+    "video_path": "001/001_0041",
+    "object_category": "",
+    "object_id": "0002_obj_smartphone_02",
+    "time": "23:57",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0042",
+    "video_path": "001/001_0042",
+    "object_category": "",
+    "object_id": "0002_obj_smartphone_02",
+    "time": "22:19",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0052",
+    "video_path": "001/001_0052",
+    "object_category": "plush toy",
+    "object_id": "0052_obj_plush_toy_01",
+    "time": "05:31",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0052",
+    "video_path": "001/001_0052",
+    "object_category": "wooden fish",
+    "object_id": "0052_obj_wooden_fish_01",
+    "time": "09:20",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0052",
+    "video_path": "001/001_0052",
+    "object_category": "solid air freshener",
+    "object_id": "0052_obj_solid_air_freshener_01",
+    "time": "13:53",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0059",
+    "video_path": "001/001_0059",
+    "object_category": "bag",
+    "object_id": "0059_obj_bag_01",
+    "time": "00:27",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0059",
+    "video_path": "001/001_0059",
+    "object_category": "blind box",
+    "object_id": "0059_obj_blind_box_01",
+    "time": "02:27",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0059",
+    "video_path": "001/001_0059",
+    "object_category": "Little lamb doll",
+    "object_id": "0059_obj_Little_lamb_doll_01",
+    "time": "04:45",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0061",
+    "video_path": "001/001_0061",
+    "object_category": "hammer",
+    "object_id": "0061_obj_hammer_01",
+    "time": "00:41",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+{
+    "video_id": "001_0062",
+    "video_path": "001/001_0062",
+    "object_category": "plaster_doll",
+    "object_id": "0062_obj_plaster_doll_01",
+    "time": "00:11",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0063",
+    "video_path": "001/001_0063",
+    "object_category": "plaster_doll",
+    "object_id": "0062_obj_plaster_doll_01",
+    "time": "00:11",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0064",
+    "video_path": "001/001_0064",
+    "object_category": "pomelo",
+    "object_id": "0064_obj_pomelo_01",
+    "time": "19:24",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0066",
+    "video_path": "001/001_0066",
+    "object_category": "broom",
+    "object_id": "0064_obj_broom_01",
+    "time": "01:00",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0066",
+    "video_path": "001/001_0066",
+    "object_category": "mop",
+    "object_id": "0064_obj_mop_01",
+    "time": "14:50",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0067",
+    "video_path": "001/001_0067",
+    "object_category": "broom",
+    "object_id": "0064_obj_broom_01",
+    "time": "01:00",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0068",
+    "video_path": "001/001_0068",
+    "object_category": "mop",
+    "object_id": "0064_obj_mop_01",
+    "time": "14:50",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "001_0072",
+    "video_path": "001/001_0072",
+    "object_category": "badminton",
+    "object_id": "0072_obj_badminton_01",
+    "time": "12:56",
+    "location": {
+      "place_id": "",
+      "place_type": "",
+      "description": ""
+    },
+    "meta": {
+      "annotator_id": "worker_05",
+      "created_at": "2025-12-5",
+      "qc_status": "accepted"
+    }
+  }
+]

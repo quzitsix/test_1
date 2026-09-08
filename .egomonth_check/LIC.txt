@@ -1,0 +1,23 @@
+EgoMonth Research-Only Data Use Agreement
+
+This repository and the associated EgoMonth dataset files are provided only for research use. They are not released under a Creative Commons license, and access to the dataset does not grant a general right to redistribute, re-host, mirror, sublicense, sell, or otherwise share the dataset files or derived copies.
+
+By accessing or using EgoMonth, you agree to the following terms:
+
+1. Permitted use is limited to academic and non-commercial research, including benchmark evaluation, diagnostic analysis, reproducibility studies, and research on long-term egocentric video understanding.
+
+2. You may not use EgoMonth for commercial purposes, product development, commercial decision-making, advertising, user profiling, surveillance, biometric identification, sensitive-attribute inference, legal or clinical decision-making, or any attempt to identify, contact, track, or target participants or bystanders.
+
+3. You may not redistribute, re-host, mirror, publish, sublicense, sell, transfer, or otherwise provide access to the dataset files or derived copies to any third party. Collaborators must obtain access through the official gated access process.
+
+4. You must handle the data securely and limit access to authorized members of your research team who have a legitimate research need and who agree to these terms.
+
+5. You must not attempt to reverse anonymization, recover masked or blurred information, identify participants or bystanders, infer sensitive personal attributes, or combine the dataset with external information for identification or profiling.
+
+6. Publications, reports, and released code may describe methods, aggregate results, and benchmark findings, but must not include raw videos, extracted frames, personally identifying information, or other content that would enable identification or redistribution of the dataset.
+
+7. Full raw-video access, where applicable, requires additional controlled research-access approval. Approval for sample files does not imply approval for the full raw-video corpus.
+
+8. Access may be denied or revoked if these terms are violated or if continued access is determined to create privacy, safety, ethical, or legal risk.
+
+If you cannot comply with these terms, do not access or use EgoMonth.

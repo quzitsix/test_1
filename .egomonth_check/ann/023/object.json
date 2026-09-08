@@ -1,0 +1,1005 @@
+[
+  {
+    "video_id": "023_0001",
+    "video_path": "023/023_0001",
+    "object_category": "Laptop",
+    "object_id": "0001_obj_laptop_01",
+    "time": "00:13",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "The laptop is on the desk in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0001",
+    "video_path": "023/023_0001",
+    "object_category": "desk",
+    "object_id": "0001_obj_desk_01",
+    "time": "00:00",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "The desk is in the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0001",
+    "video_path": "023/023_0001",
+    "object_category": "mobile phone",
+    "object_id": "0001_obj_mobile_phone_01",
+    "time": "00:00",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "The mobile phone is carried with the photographer."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0001",
+    "video_path": "023/023_0001",
+    "object_category": "shelve",
+    "object_id": "0001_obj_shelve_01",
+    "time": "00:00",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "The shelve is above the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0001",
+    "video_path": "023/023_0001",
+    "object_category": "Double-sided adhesive tape",
+    "object_id": "0001_obj_adhesive_tape_01",
+    "time": "07:56",
+    "location": {
+      "place_id": "supermarket_1",
+      "place_type": "supermarket",
+      "description": "The photographer bought double-sided adhesive tape in the supermarket."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0001",
+    "video_path": "023/023_0001",
+    "object_category": "bowl",
+    "object_id": "0001_obj_bowl_01",
+    "time": "18:19",
+    "location": {
+      "place_id": "canteen_1",
+      "place_type": "canteen",
+      "description": "The bowl is used to hold the food."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-11",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0006",
+    "video_path": "023/023_0006",
+    "object_category": "Mask",
+    "object_id": "0006_obj_mask_01",
+    "time": "00:00",
+    "location": {
+      "place_id": "laboratory_1",
+      "place_type": "laboratory",
+      "description": "The photographer received a mask in the laboratory."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0006",
+    "video_path": "023/023_0006",
+    "object_category": "Gloves",
+    "object_id": "0006_obj_gloves_01",
+    "time": "00:00",
+    "location": {
+      "place_id": "laboratory_1",
+      "place_type": "laboratory",
+      "description": "The photographer received gloves in the laboratory."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0006",
+    "video_path": "023/023_0006",
+    "object_category": "The reagent with a black cap",
+    "object_id": "0006_obj_reagent_black_cap_01",
+    "time": "04:13",
+    "location": {
+      "place_id": "workbench_1",
+      "place_type": "workbench",
+      "description": "The photographer put the reagent with a black cap on the workbench."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0006",
+    "video_path": "023/023_0006",
+    "object_category": "The reagent with a blue cap",
+    "object_id": "0006_obj_reagent_blue_cap_01",
+    "time": "04:13",
+    "location": {
+      "place_id": "workbench_1",
+      "place_type": "workbench",
+      "description": "The photographer put the reagent with a blue cap on the workbench."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0006",
+    "video_path": "023/023_0006",
+    "object_category": "workbench",
+    "object_id": "0006_obj_workbench_01",
+    "time": "04:11",
+    "location": {
+      "place_id": "workbench_area_1",
+      "place_type": "workbench_area",
+      "description": "There are several workbenches in the workbench area."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0006",
+    "video_path": "023/023_0006",
+    "object_category": "table",
+    "object_id": "0006_obj_table_01",
+    "time": "16:03",
+    "location": {
+      "place_id": "laboratory_1",
+      "place_type": "laboratory",
+      "description": "The table is in the laboratory."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0006",
+    "video_path": "023/023_0006",
+    "object_category": "table",
+    "object_id": "0006_obj_table_02",
+    "time": "16:03",
+    "location": {
+      "place_id": "laboratory_1",
+      "place_type": "laboratory",
+      "description": "The table is in the laboratory."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0006",
+    "video_path": "023/023_0006",
+    "object_category": "table",
+    "object_id": "0006_obj_table_03",
+    "time": "16:03",
+    "location": {
+      "place_id": "laboratory_1",
+      "place_type": "laboratory",
+      "description": "The table is in the laboratory."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0006",
+    "video_path": "023/023_0006",
+    "object_category": "table",
+    "object_id": "0006_obj_table_04",
+    "time": "16:03",
+    "location": {
+      "place_id": "laboratory_1",
+      "place_type": "laboratory",
+      "description": "The table is in the laboratory."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0006",
+    "video_path": "023/023_0006",
+    "object_category": "table",
+    "object_id": "0006_obj_table_05",
+    "time": "16:03",
+    "location": {
+      "place_id": "laboratory_1",
+      "place_type": "laboratory",
+      "description": "The table is in the laboratory."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0006",
+    "video_path": "023/023_0006",
+    "object_category": "table",
+    "object_id": "0006_obj_table_06",
+    "time": "16:03",
+    "location": {
+      "place_id": "laboratory_1",
+      "place_type": "laboratory",
+      "description": "The table is in the laboratory."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0006",
+    "video_path": "023/023_0006",
+    "object_category": "table",
+    "object_id": "0006_obj_table_07",
+    "time": "16:03",
+    "location": {
+      "place_id": "laboratory_1",
+      "place_type": "laboratory",
+      "description": "The table is in the laboratory."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0006",
+    "video_path": "023/023_0006",
+    "object_category": "table",
+    "object_id": "0006_obj_table_08",
+    "time": "16:03",
+    "location": {
+      "place_id": "laboratory_1",
+      "place_type": "laboratory",
+      "description": "The table is in the laboratory."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-14",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0007",
+    "video_path": "023/023_0007",
+    "object_category": "two cups of soy milk",
+    "object_id": "0007_obj_soy_milk_01",
+    "time": "00:32",
+    "location": {
+      "place_id": "breakfast_shop_1",
+      "place_type": "breakfast_shop",
+      "description": "The soy milk is filled in the breakfast shop."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0007",
+    "video_path": "023/023_0007",
+    "object_category": "a bowl of noodles",
+    "object_id": "0007_obj_noodle_01",
+    "time": "00:59",
+    "location": {
+      "place_id": "breakfast_shop_1",
+      "place_type": "breakfast_shop",
+      "description": "The noodle is on a table of the breakfast shop."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0007",
+    "video_path": "023/023_0007",
+    "object_category": "Deep-Fried Dough Stick",
+    "object_id": "0007_obj_dough_stick_01",
+    "time": "01:00",
+    "location": {
+      "place_id": "breakfast_shop_1",
+      "place_type": "breakfast_shop",
+      "description": "The dough stick is on a table of the breakfast shop."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0008",
+    "video_path": "023/023_0008",
+    "object_category": "Tissues",
+    "object_id": "0008_obj_tissues_01",
+    "time": "05:25",
+    "location": {
+      "place_id": "restaurant_1",
+      "place_type": "restaurant",
+      "description": "The tissues are asked when eating in a restaurant."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0008",
+    "video_path": "023/023_0008",
+    "object_category": "mobile phone",
+    "object_id": "0008_obj_mobile_phone_01",
+    "time": "00:00",
+    "location": {
+      "place_id": "restaurant_1",
+      "place_type": "restaurant",
+      "description": "The mobile phone was held at the beginning of the video."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0008",
+    "video_path": "023/023_0008",
+    "object_category": "bowl",
+    "object_id": "0008_obj_bowl_01",
+    "time": "01:38",
+    "location": {
+      "place_id": "restaurant_1",
+      "place_type": "restaurant",
+      "description": "The bowl was placed on the table by the waiter."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-15",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0010",
+    "video_path": "023/023_0010",
+    "object_category": "clock",
+    "object_id": "0010_obj_clock_01",
+    "time": "10:21",
+    "location": {
+      "place_id": "laboratory_1",
+      "place_type": "laboratory",
+      "description": "The clock was hung on the wall of the laboratory."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0012",
+    "video_path": "023/023_0012",
+    "object_category": "Washing_machine",
+    "object_id": "0012_obj_washing_machine_01",
+    "time": "00:03",
+    "location": {
+      "place_id": "balcony_1",
+      "place_type": "balcony",
+      "description": "The washing machine is placed in the balcony."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0012",
+    "video_path": "023/023_0012",
+    "object_category": "sink",
+    "object_id": "0012_obj_sink_01",
+    "time": "00:06",
+    "location": {
+      "place_id": "balcony_1",
+      "place_type": "balcony",
+      "description": "The sink is placed in the balcony."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0012",
+    "video_path": "023/023_0012",
+    "object_category": "shower_head",
+    "object_id": "0012_obj_shower_head_01",
+    "time": "00:16",
+    "location": {
+      "place_id": "bathroom_1",
+      "place_type": "bathroom",
+      "description": "The shower head is placed in the bathroom."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0012",
+    "video_path": "023/023_0012",
+    "object_category": "mirror",
+    "object_id": "0012_obj_mirror_01",
+    "time": "00:48",
+    "location": {
+      "place_id": "balcony_1",
+      "place_type": "balcony",
+      "description": "The mirror is hung on the wall in the balcony."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0012",
+    "video_path": "023/023_0012",
+    "object_category": "shower_head",
+    "object_id": "0012_obj_shower_head_01",
+    "time": "00:16",
+    "location": {
+      "place_id": "bathroom_1",
+      "place_type": "bathroom",
+      "description": "The shower head is placed in the bathroom."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0013",
+    "video_path": "023/023_0013",
+    "object_category": "black_trash_can",
+    "object_id": "0013_obj_black_trash_can_01",
+    "time": "04:33",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "The black trash can is placed at the entrance of the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0013",
+    "video_path": "023/023_0013",
+    "object_category": "red_trash_can",
+    "object_id": "0013_obj_red_trash_can_01",
+    "time": "04:33",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "The red trash can is placed at the entrance of the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0013",
+    "video_path": "023/023_0013",
+    "object_category": "blue_trash_can",
+    "object_id": "0013_obj_blue_trash_can_01",
+    "time": "04:33",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "The blue trash can is placed at the entrance of the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0013",
+    "video_path": "023/023_0013",
+    "object_category": "green_trash_can",
+    "object_id": "0013_obj_green_trash_can_01",
+    "time": "04:33",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "The green trash can is placed at the entrance of the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-16",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0022",
+    "video_path": "023/023_0022",
+    "object_category": "trash_can",
+    "object_id": "0022_obj_trash_can_01",
+    "time": "00:08",
+    "location": {
+      "place_id": "bedroom_1",
+      "place_type": "bedroom",
+      "description": "The trash can is placed in the bedroom next to the chair photographer sat."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0024",
+    "video_path": "023/023_0024",
+    "object_category": "shelf4delivery",
+    "object_id": "0024_obj_shelf4delivery_01",
+    "time": "03:30",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "The shelf used for food delivery is located at the entrance of the dormitory."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-21",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0028",
+    "video_path": "023/023_0028",
+    "object_category": "clothes",
+    "object_id": "0028_obj_clothes_01",
+    "time": "03:14",
+    "location": {
+      "place_id": "balcony_1",
+      "place_type": "balcony",
+      "description": "The clothes was taken out from the washing machine in the balcony."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0028",
+    "video_path": "023/023_0028",
+    "object_category": "clothesline",
+    "object_id": "0028_obj_clothesline_01",
+    "time": "03:42",
+    "location": {
+      "place_id": "balcony_1",
+      "place_type": "balcony",
+      "description": "Use the clothesline to hang clothes on the balcony."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0028",
+    "video_path": "023/023_0028",
+    "object_category": "clothes",
+    "object_id": "0028_obj_clothes_02",
+    "time": "04:02",
+    "location": {
+      "place_id": "balcony_1",
+      "place_type": "balcony",
+      "description": "The second clothes was taken out from the washing machine in the balcony."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0028",
+    "video_path": "023/023_0028",
+    "object_category": "clothes",
+    "object_id": "0028_obj_clothes_03",
+    "time": "04:33",
+    "location": {
+      "place_id": "balcony_1",
+      "place_type": "balcony",
+      "description": "The third clothes was taken out from the washing machine in the balcony."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0028",
+    "video_path": "023/023_0028",
+    "object_category": "clothes",
+    "object_id": "0028_obj_clothes_04",
+    "time": "05:08",
+    "location": {
+      "place_id": "balcony_1",
+      "place_type": "balcony",
+      "description": "The fourth clothes was taken out from the washing machine in the balcony."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0028",
+    "video_path": "023/023_0028",
+    "object_category": "towel",
+    "object_id": "0028_obj_towel_01",
+    "time": "05:54",
+    "location": {
+      "place_id": "balcony_1",
+      "place_type": "balcony",
+      "description": "The towel was taken out from the washing machine in the balcony."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-23",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0028",
+    "video_path": "023/023_0031",
+    "object_category": "water dispenser",
+    "object_id": "0031_obj_water_dispenser_01",
+    "time": "01:32",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "Turn left from the bedroom door to reach the water dispenser."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0033",
+    "video_path": "023/023_0033",
+    "object_category": "sink",
+    "object_id": "0033_obj_sink_01",
+    "time": "10:42",
+    "location": {
+      "place_id": "canteen_2",
+      "place_type": "canteen",
+      "description": "The sink is located outside the canteen, right next to it."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0034",
+    "video_path": "023/023_0034",
+    "object_category": "lamp",
+    "object_id": "0034_obj_lamp_01",
+    "time": "03:15",
+    "location": {
+      "place_id": "bedroom_1",
+      "place_type": "bedroom",
+      "description": "The lamp is placed on the desk, on the right side of the laptop."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-24",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0037",
+    "video_path": "023/023_0037",
+    "object_category": "self-service vending machine",
+    "object_id": "0037_obj_vending_machine_01",
+    "time": "03:28",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "The vending machine is located on the first floor of the dormitory building, facing the dormitory entrance."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-25",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0037",
+    "video_path": "023/023_0037",
+    "object_category": "drink",
+    "object_id": "0037_obj_drink_01",
+    "time": "04:19",
+    "location": {
+      "place_id": "dormitory_1",
+      "place_type": "dormitory",
+      "description": "The drink was bought from the vending machine."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-25",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0038",
+    "video_path": "023/023_0038",
+    "object_category": "self-service vending machine",
+    "object_id": "0038_obj_vending_machine_01",
+    "time": "01:40",
+    "location": {
+      "place_id": "teaching_building_2",
+      "place_type": "teaching building",
+      "description": "The vending machine is located near the entrance on the first floor of the teaching building."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-26",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0039",
+    "video_path": "023/023_0039",
+    "object_category": "backpack",
+    "object_id": "0039_obj_backpack_01",
+    "time": "05:37",
+    "location": {
+      "place_id": "bedroom_1",
+      "place_type": "bedroom",
+      "description": "The photographer carried the schoolbag in the bedroom."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-26",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0041",
+    "video_path": "023/023_0041",
+    "object_category": "potato chips",
+    "object_id": "0041_obj_potato_chips_01",
+    "time": "12:58",
+    "location": {
+      "place_id": "Burger_King_1",
+      "place_type": "Burger King",
+      "description": "The photographer took out a box of potato chips in Burger King."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0041",
+    "video_path": "023/023_0041",
+    "object_category": "potato chips",
+    "object_id": "0041_obj_potato_chips_02",
+    "time": "13:03",
+    "location": {
+      "place_id": "Burger_King_1",
+      "place_type": "Burger King",
+      "description": "The photographer took out another box of potato chips in Burger King."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0041",
+    "video_path": "023/023_0041",
+    "object_category": "tissues",
+    "object_id": "0041_obj_tissue_01",
+    "time": "13:28",
+    "location": {
+      "place_id": "Burger_King_1",
+      "place_type": "Burger King",
+      "description": "The photographer took out tissues in Burger King."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0041",
+    "video_path": "023/023_0041",
+    "object_category": "burger",
+    "object_id": "0041_obj_burger_01",
+    "time": "13:30",
+    "location": {
+      "place_id": "Burger_King_1",
+      "place_type": "Burger King",
+      "description": "The photographer took out a burger in Burger King."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0041",
+    "video_path": "023/023_0041",
+    "object_category": "ketchup",
+    "object_id": "0041_obj_ketchup_01",
+    "time": "13:36",
+    "location": {
+      "place_id": "Burger_King_1",
+      "place_type": "Burger King",
+      "description": "The photographer took out a package of ketchup in Burger King."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0043",
+    "video_path": "023/023_0043",
+    "object_category": "signboards",
+    "object_id": "0043_obj_signboards_01",
+    "time": "01:31",
+    "location": {
+      "place_id": "teaching_building_1",
+      "place_type": "teaching building",
+      "description": "The red signboards are on the first floor under the corridor bridge of the teaching building."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-27",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0046",
+    "video_path": "023/023_0046",
+    "object_category": "mop",
+    "object_id": "0046_obj_mop_01",
+    "time": "06:30",
+    "location": {
+      "place_id": "balcony_1",
+      "place_type": "balcony",
+      "description": "The mop is placed in the balcony next to the sink."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0047",
+    "video_path": "023/023_0047",
+    "object_category": "blue signboard",
+    "object_id": "0047_obj_blue_signboard_01",
+    "time": "03:56",
+    "location": {
+      "place_id": "road_1",
+      "place_type": "road",
+      "description": "The blue signboard is on the opposite side of the road."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-28",
+      "qc_status": "accepted"
+    }
+  },
+  {
+    "video_id": "023_0047",
+    "video_path": "023/023_0047",
+    "object_category": "red signboard",
+    "object_id": "0047_obj_red_signboard_01",
+    "time": "03:56",
+    "location": {
+      "place_id": "road_1",
+      "place_type": "road",
+      "description": "The red signboard is on the opposite side of the road."
+    },
+    "meta": {
+      "annotator_id": "worker_12",
+      "created_at": "2025-02-28",
+      "qc_status": "accepted"
+    }
+  }
+]

@@ -1,0 +1,820 @@
+[
+  
+      {
+      "event_id": "ev_01",
+      "video_id": "021_0001",
+      "video_path":"021/021_0001", 
+      "start_time": "00:01",
+      "end_time": "24:28",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+     {
+      "event_id": "ev_02",
+      "video_id": "021_0002",
+      "video_path":"021/021_0002", 
+      "start_time": "00:01",
+      "end_time": "30:56",
+      "description": "Working in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }, 
+    {
+      "event_id": "ev_03",
+      "video_id": "021_0003",
+      "video_path":"021/021_0003", 
+      "start_time": "00:01",
+      "end_time": "06:56",
+      "description": "Working in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_04",
+      "video_id": "021_0004",
+      "video_path":"021/021_0004", 
+      "start_time": "00:01",
+      "end_time": "32:08",
+      "description": "Playing games in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },  
+    {
+      "event_id": "ev_05",
+      "video_id": "021_0005",
+      "video_path":"021/021_0005", 
+      "start_time": "00:01",
+      "end_time": "09:18",
+      "description": "Playing games in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },  
+{
+      "event_id": "ev_06",
+      "video_id": "021_0006",
+      "video_path":"021/021_0006", 
+      "start_time": "00:01",
+      "end_time": "18:15",
+      "description": "Playing games in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },  
+{
+      "event_id": "ev_07",
+      "video_id": "021_0007",
+      "video_path":"021/021_0007", 
+      "start_time": "00:01",
+      "end_time": "30:57",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ "0001_obj_keyboard_01"],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_08",
+      "video_id": "021_0008",
+      "video_path":"021/021_0008", 
+      "start_time": "00:01",
+      "end_time": "30:57",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ "0001_obj_keyboard_01"],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+     {
+      "event_id": "ev_09",
+      "video_id": "021_0009",
+      "video_path":"021/021_0009", 
+      "start_time": "00:01",
+      "end_time": "01:11",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ "0001_obj_keyboard_01"],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_10",
+      "video_id": "021_0010",
+      "video_path":"021/021_0010", 
+      "start_time": "00:01",
+      "end_time": "07:13",
+      "description": "Eating while watching videos",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ "0001_obj_desktop_computer_01"],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_11",
+      "video_id": "021_0011",
+      "video_path":"021/021_0011", 
+      "start_time": "00:01",
+      "end_time": "20:15",
+      "description": "Eating while watching videos",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ "0001_obj_desktop_computer_01"],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_12",
+      "video_id": "021_0012",
+      "video_path":"021/021_0012", 
+      "start_time": "00:01",
+      "end_time": "24:01",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_13",
+      "video_id": "021_0013",
+      "video_path":"021/021_0013", 
+      "start_time": "00:01",
+      "end_time": "24:38",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_14",
+      "video_id": "021_0014",
+      "video_path":"021/021_0014", 
+      "start_time": "00:01",
+      "end_time": "31:39",
+      "description": "Brushing videos on the computer",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ "0001_obj_desktop_computer_01"],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_15",
+      "video_id": "021_0015",
+      "video_path":"021/021_0015", 
+      "start_time": "00:01",
+      "end_time": "04:53",
+      "description": "Brushing videos on the computer",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ "0001_obj_desktop_computer_01"],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_16",
+      "video_id": "021_0016",
+      "video_path":"021/021_0016", 
+      "start_time": "00:01",
+      "end_time": "20:06",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      
+      "objects_involved": [ "0016_obj_tablet_01"],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_17",
+      "video_id": "021_0017",
+      "video_path":"021/021_0017", 
+      "start_time": "00:01",
+      "end_time": "19:45",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_18",
+      "video_id": "021_0018",
+      "video_path":"021/021_0018", 
+      "start_time": "00:01",
+      "end_time": "20:08",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_19",
+      "video_id": "021_0019",
+      "video_path":"021/021_0019", 
+      "start_time": "00:01",
+      "end_time": "28:31",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+     {
+      "event_id": "ev_20",
+      "video_id": "021_0020",
+      "video_path":"021/021_0020", 
+      "start_time": "00:01",
+      "end_time": "27:39",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_21",
+      "video_id": "021_0021",
+      "video_path":"021/021_0021", 
+      "start_time": "00:01",
+      "end_time": "02:25",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_22",
+      "video_id": "021_0022",
+      "video_path":"021/021_0022", 
+      "start_time": "00:01",
+      "end_time": "32:00",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_23",
+      "video_id": "021_0023",
+      "video_path":"021/021_0023", 
+      "start_time": "00:01",
+      "end_time": "02:07",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+     {
+      "event_id": "ev_24",
+      "video_id": "021_0024",
+      "video_path":"021/021_0024", 
+      "start_time": "00:01",
+      "end_time": "12:58",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_25",
+      "video_id": "021_0025",
+      "video_path":"021/021_0025", 
+      "start_time": "00:01",
+      "end_time": "21:49",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_26",
+      "video_id": "021_0026",
+      "video_path":"021/021_0026", 
+      "start_time": "00:01",
+      "end_time": "25:44",
+      "description": "Studying while doing homework in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ "0001_obj_desktop_computer_01"],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_27",
+      "video_id": "021_0027",
+      "video_path":"021/021_0027", 
+      "start_time": "00:01",
+      "end_time": "12:01",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ "0001_obj_desktop_computer_01"],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_28",
+      "video_id": "021_0028",
+      "video_path":"021/021_0028", 
+      "start_time": "00:01",
+      "end_time": "14:03",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ "0001_obj_desktop_computer_01"],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_29",
+      "video_id": "021_0029",
+      "video_path":"021/021_0029", 
+      "start_time": "00:01",
+      "end_time": "08:17",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ "0001_obj_desktop_computer_01"],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+{
+      "event_id": "ev_30",
+      "video_id": "021_0030",
+      "video_path":"021/021_0030", 
+      "start_time": "00:01",
+      "end_time": "20:01",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_31",
+      "video_id": "021_0031",
+      "video_path":"021/021_0031", 
+      "start_time": "00:01",
+      "end_time": "20:15",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+{
+      "event_id": "ev_32",
+      "video_id": "021_0032",
+      "video_path":"021/021_0032", 
+      "start_time": "00:01",
+      "end_time": "18:36",
+      "description": "Studying in the library",
+      "place_id": "library_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+{
+      "event_id": "ev_33",
+      "video_id": "021_0033",
+      "video_path":"021/021_0033", 
+      "start_time": "00:01",
+      "end_time": "06:09",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_34",
+      "video_id": "021_0034",
+      "video_path":"021/021_0034", 
+      "start_time": "00:01",
+      "end_time": "19:25",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_35",
+      "video_id": "021_0035",
+      "video_path":"021/021_0035", 
+      "start_time": "00:01",
+      "end_time": "19:25",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_36",
+      "video_id": "021_0036",
+      "video_path":"021/021_0036", 
+      "start_time": "00:01",
+      "end_time": "23:41",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+{
+      "event_id": "ev_37",
+      "video_id": "021_0037",
+      "video_path":"021/021_0037", 
+      "start_time": "00:01",
+      "end_time": "20:15",
+      "description": "Playing games in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+{
+      "event_id": "ev_38",
+      "video_id": "021_0038",
+      "video_path":"021/021_0038", 
+      "start_time": "00:01",
+      "end_time": "20:15",
+      "description": "Playing games in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_39",
+      "video_id": "021_0039",
+      "video_path":"021/021_0039", 
+      "start_time": "00:01",
+      "end_time": "19:31",
+      "description": "Playing games in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_40",
+      "video_id": "021_0040",
+      "video_path":"021/021_0040", 
+      "start_time": "00:01",
+      "end_time": "20:15",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+{
+      "event_id": "ev_41",
+      "video_id": "021_0041",
+      "video_path":"021/021_0041", 
+      "start_time": "00:01",
+      "end_time": "13:54",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+{
+      "event_id": "ev_42",
+      "video_id": "021_0042",
+      "video_path":"021/021_0042", 
+      "start_time": "00:01",
+      "end_time": "20:15",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_43",
+      "video_id": "021_0043",
+      "video_path":"021/021_0043", 
+      "start_time": "00:01",
+      "end_time": "03:24",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_44",
+      "video_id": "021_0044",
+      "video_path":"021/021_0044", 
+      "start_time": "00:01",
+      "end_time": "16:57",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_45",
+      "video_id": "021_0045",
+      "video_path":"021/021_0045", 
+      "start_time": "00:01",
+      "end_time": "20:15",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+     {
+      "event_id": "ev_46",
+      "video_id": "021_0046",
+      "video_path":"021/021_0046", 
+      "start_time": "00:01",
+      "end_time": "11:34",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_47",
+      "video_id": "021_0047",
+      "video_path":"021/021_0047", 
+      "start_time": "00:01",
+      "end_time": "20:15",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_48",
+      "video_id": "021_0048",
+      "video_path":"021/021_0048", 
+      "start_time": "00:01",
+      "end_time": "08:48",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_49",
+      "video_id": "021_0049",
+      "video_path":"021/021_0049", 
+      "start_time": "00:01",
+      "end_time": "22:06",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_50",
+      "video_id": "021_0050",
+      "video_path":"021/021_0050", 
+      "start_time": "00:01",
+      "end_time": "08:59",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    },
+    {
+      "event_id": "ev_51",
+      "video_id": "021_0051",
+      "video_path":"021/021_0051", 
+      "start_time": "00:01",
+      "end_time": "15:04",
+      "description": "Studying in the dormitory",
+      "place_id": "dormitory_01",
+      
+      "objects_involved": [ ""],
+      "meta": {
+          "annotator_id": "worker_05",
+          "created_at": "2025-12-5",
+          "qc_status": "accepted"
+      }
+    }
+    
+]
