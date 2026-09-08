@@ -43,6 +43,7 @@ class HFVLMAdapter(AdapterBase):
         system_id: str | None = None,
         n_frames: int = 8,
         max_side: int = 768,
+        max_oracle_frames: int = 32,
         max_new_tokens: int = 512,
         note_max_new_tokens: int = 900,
         temperature: float = 0.0,
@@ -59,6 +60,7 @@ class HFVLMAdapter(AdapterBase):
         self.context_mode = context_mode
         self._n_frames = n_frames
         self._max_side = max_side
+        self._max_oracle_frames = max_oracle_frames
         self._max_new_tokens = max_new_tokens
         self._note_max_new_tokens = note_max_new_tokens
         self._temperature = temperature
@@ -106,6 +108,20 @@ class HFVLMAdapter(AdapterBase):
             self._session_paths.append(path)
             return {"frames": 0, "deferred": True}
 
+        # One unusable session must not cost the run. A corrupt video, a decode
+        # error, or an OOM on a single clip is recoverable: that session simply
+        # contributes nothing to memory, which the harness already surfaces as
+        # `sessions_without_frames`. Letting the exception escape would exit the
+        # adapter (see AdapterBase.run), and the *next* environment's questions
+        # would then all be recorded as crashes — on a two-environment suite,
+        # half the run lost to one bad file.
+        try:
+            return self._ingest_session(msg, path)
+        except Exception as exc:  # noqa: BLE001 - deliberately broad; see above
+            logger.exception("ingest of %s failed; continuing without it", msg["session_id"])
+            return {"frames": 0, "note_chars": 0, "error": f"{type(exc).__name__}: {exc}"}
+
+    def _ingest_session(self, msg: dict[str, Any], path: str) -> dict[str, Any]:
         frames = sample_frames(path, n_frames=self._n_frames, max_side=self._max_side)
         if not frames:
             logger.warning("no frames decoded from %s", path)
@@ -160,6 +176,16 @@ class HFVLMAdapter(AdapterBase):
         with 28 questions at 8 frames that is 672 decodes instead of 24. The
         cache is cleared in `on_env_begin`, so no environment can see another's
         frames.
+
+        The total is capped, because oracle attaches every session's frames to
+        *one* prompt: cost grows as sessions x frames, so an 8-session
+        environment at 8 frames is ~19k visual tokens before any text. Left
+        uncapped this OOMs mid-run on the track that defines the ceiling. When
+        the cap bites, frames are thinned evenly across the whole environment
+        rather than truncated, so late sessions are still represented — dropping
+        the tail would quietly turn the ceiling into "an early-sessions
+        baseline" — and the reduction is logged, since a silently thinned
+        oracle would understate the headroom it exists to measure.
         """
         if self._oracle_frames is None:
             frames: list[Any] = []
@@ -172,6 +198,15 @@ class HFVLMAdapter(AdapterBase):
                 )
             logger.info("oracle: cached %d frame(s) from %d session(s)",
                         len(frames), len(self._session_paths))
+            if len(frames) > self._max_oracle_frames:
+                kept = _thin_evenly(frames, self._max_oracle_frames)
+                logger.warning(
+                    "oracle: %d frame(s) exceeds --max-oracle-frames=%d; thinning "
+                    "evenly to %d. The ceiling is measured on a subsample, so it "
+                    "understates the true headroom.",
+                    len(frames), self._max_oracle_frames, len(kept),
+                )
+                frames = kept
             self._oracle_frames = frames
         return self._oracle_frames
 
@@ -293,6 +328,20 @@ class HFVLMAdapter(AdapterBase):
         return (decoded[0] if decoded else "").strip()
 
 
+def _thin_evenly(items: list[Any], keep: int) -> list[Any]:
+    """Keep `keep` items spread across the whole list, preserving order.
+
+    Even spacing rather than truncation: the oracle track's frames arrive in
+    session order, so slicing the front would drop the most recent sessions
+    entirely and turn the long-context ceiling into an early-sessions baseline.
+    Several probe questions ask specifically about the *most recent* session.
+    """
+    if keep >= len(items) or keep <= 0:
+        return items
+    step = len(items) / keep
+    return [items[min(int(i * step), len(items) - 1)] for i in range(keep)]
+
+
 def _assert_images_reached_the_model(inputs: Any, n_images: int) -> None:
     """Fail loudly when frames were sampled but no pixels were encoded.
 
@@ -412,6 +461,13 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--model-path", required=True, help="local directory or HF repo id")
     parser.add_argument("--n-frames", type=int, default=8)
     parser.add_argument("--max-side", type=int, default=768)
+    parser.add_argument(
+        "--max-oracle-frames",
+        type=int,
+        default=32,
+        help="cap on frames attached to one oracle prompt (sessions x n-frames); "
+        "beyond this, frames are thinned evenly and the reduction is logged",
+    )
     parser.add_argument("--max-new-tokens", type=int, default=512)
     parser.add_argument("--note-max-new-tokens", type=int, default=900)
     parser.add_argument("--temperature", type=float, default=0.0)
@@ -432,6 +488,7 @@ def main(argv: list[str] | None = None) -> int:
         system_id=args.system_id,
         n_frames=args.n_frames,
         max_side=args.max_side,
+        max_oracle_frames=args.max_oracle_frames,
         max_new_tokens=args.max_new_tokens,
         note_max_new_tokens=args.note_max_new_tokens,
         temperature=args.temperature,

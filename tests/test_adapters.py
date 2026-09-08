@@ -408,3 +408,63 @@ def test_hf_vlm_refuses_to_answer_when_frames_were_dropped() -> None:
         _assert_images_reached_the_model({"input_ids": _Tensor(50)}, 3)
     with pytest.raises(RuntimeError, match="no pixel"):
         _assert_images_reached_the_model({"pixel_values": _Tensor(0)}, 3)
+
+
+def test_hf_vlm_survives_one_unusable_session() -> None:
+    """A failing session must cost that session, not the run.
+
+    `AdapterBase.run` exits the process when an `ingest` handler raises, so an
+    escaping exception ends the subprocess and every question in the *next*
+    environment is recorded as a crash. On the two-environment probe suite a
+    single corrupt file or one OOM would have cost half the run, so the adapter
+    absorbs recoverable per-session failures itself. The session contributes
+    nothing to memory, which the report already surfaces as
+    `sessions_without_frames`.
+    """
+    from unittest.mock import patch
+
+    from meowbench.adapters.hf_vlm import HFVLMAdapter
+
+    class _NoWeights(HFVLMAdapter):
+        def __init__(self) -> None:  # bypass the real model load
+            self.context_mode = "memory"
+            self._n_frames = 4
+            self._max_side = 768
+            self._note_max_new_tokens = 50
+            self._max_new_tokens = 50
+            self._notes = []
+            self._session_paths = []
+            self._oracle_frames = None
+            self._max_oracle_frames = 32
+
+    adapter = _NoWeights()
+    with patch(
+        "meowbench.adapters.hf_vlm.sample_frames", side_effect=RuntimeError("CUDA OOM")
+    ):
+        stats = adapter.ingest({"session_id": "s1", "video_path": "/nope.mp4"})
+    assert stats["frames"] == 0
+    assert "CUDA OOM" in stats["error"]
+
+    with patch.object(_NoWeights, "_ingest_session", return_value={"frames": 4}):
+        assert adapter.ingest({"session_id": "s2", "video_path": "/ok.mp4"})["frames"] == 4
+
+
+def test_hf_vlm_thins_oracle_frames_across_all_sessions() -> None:
+    """Over-budget oracle frames must be thinned, not truncated.
+
+    Oracle attaches every session's frames to one prompt, so cost grows as
+    sessions x frames — roughly 19k visual tokens for 8 sessions at 8 frames,
+    before any text. Capping avoids an OOM on the track that defines the
+    ceiling; thinning *evenly* keeps the recent sessions that several probe
+    questions ask about, whereas slicing the front would silently turn the
+    ceiling into an early-sessions baseline.
+    """
+    from meowbench.adapters.hf_vlm import _thin_evenly
+
+    frames = list(range(24))  # 3 sessions x 8 frames, in session order
+    kept = _thin_evenly(frames, 6)
+    assert len(kept) == 6
+    assert kept == sorted(kept), "order must be preserved"
+    assert max(kept) >= 16, "the most recent session must still be represented"
+    # Under budget is a no-op.
+    assert _thin_evenly(frames, 32) is frames
