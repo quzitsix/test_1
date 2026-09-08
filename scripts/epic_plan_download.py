@@ -25,17 +25,50 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-BASE = "https://data.bris.ac.uk/datasets/2g1n6qdydwa9u22shpxqzp0t8m"
+#: The two generations live in different data.bris datasets, with different
+#: path layouts. Verified live: P04_101 is 1587 MiB under the extension, and
+#: P01_01 is 5929 MiB under EPIC-55 at videos/train/P01/.
+EXT_BASE = "https://data.bris.ac.uk/datasets/2g1n6qdydwa9u22shpxqzp0t8m"
+E55_BASE = "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d"
+
+#: Kept under the old name so the diagnostic script's import still works.
+BASE = EXT_BASE
 
 #: Measured mean over EPIC extension videos. Used only when --probe-sizes is
-#: off; the spread is wide enough (45 MiB to 10.46 GiB) that the estimate is
+#: off; the spread is wide enough (0.25 GiB to 11.7 GiB) that the estimate is
 #: labelled as such wherever it is printed.
 MEAN_GIB = 1.74
 
 
-def video_url(video_id: str) -> str:
+def is_extension_video(video_id: str) -> bool:
+    """Is this an EPIC-100 extension video (three-digit id, from 100 up)?
+
+    EPIC_100_train.csv mixes two generations: EPIC-55 videos are `P01_01`
+    (two digits) and the extension's are `P04_101`. They are hosted in
+    different data.bris datasets under different path layouts, so the id
+    decides the URL.
+    """
+    parts = video_id.split("_")
+    return len(parts) == 2 and parts[1].isdigit() and int(parts[1]) >= 100
+
+
+def video_urls(video_id: str) -> list[str]:
+    """Candidate URLs for a video, most likely first.
+
+    EPIC-55 does not say in the id whether a video is in the train or test
+    split, so both are offered and the caller takes the first that answers.
+    """
     participant = video_id.split("_")[0]
-    return f"{BASE}/{participant}/videos/{video_id}.MP4"
+    if is_extension_video(video_id):
+        return [f"{EXT_BASE}/{participant}/videos/{video_id}.MP4"]
+    return [
+        f"{E55_BASE}/videos/train/{participant}/{video_id}.MP4",
+        f"{E55_BASE}/videos/test/{participant}/{video_id}.MP4",
+    ]
+
+
+def video_url(video_id: str) -> str:
+    return video_urls(video_id)[0]
 
 
 def probe_size(video_id: str, timeout: int = 25) -> float | None:
@@ -47,44 +80,31 @@ def probe_size(video_id: str, timeout: int = 25) -> float | None:
     them first: a 25 GiB plan filled up with 404s and covered 46% of what it
     should have.
     """
-    try:
-        out = subprocess.run(
-            ["curl", "-sIL", "--max-time", str(timeout), video_url(video_id)],
-            capture_output=True, text=True, timeout=timeout + 10,
-        ).stdout
-    except (subprocess.TimeoutExpired, OSError):
-        return None
+    for url in video_urls(video_id):
+        try:
+            out = subprocess.run(
+                ["curl", "-sIL", "--max-time", str(timeout), url],
+                capture_output=True, text=True, timeout=timeout + 10,
+            ).stdout
+        except (subprocess.TimeoutExpired, OSError):
+            continue
 
-    status = None
-    size = None
-    for line in out.splitlines():
-        lowered = line.lower()
-        if lowered.startswith("http/"):
-            parts = line.split()
-            if len(parts) > 1 and parts[1].isdigit():
-                status = int(parts[1])  # last status wins, after redirects
-        elif lowered.startswith("content-length:"):
-            try:
-                size = int(line.split(":", 1)[1].strip())
-            except ValueError:
-                continue
-    if status is None or status >= 400 or not size:
-        return None
-    return size / 2**30
-
-
-def is_extension_video(video_id: str) -> bool:
-    """Is this an EPIC-100 extension video, i.e. actually at this URL?
-
-    EPIC_100_train.csv mixes two generations of id: EPIC-55 videos are
-    `P01_01` (two digits) and the extension's are `P04_101` (three, from 100
-    up). Only the latter live under `<participant>/videos/` on data.bris —
-    every two-digit id 404s there. Filtering them out is not cosmetic: they are
-    a third of the candidate sessions, and without this the planner spends its
-    whole budget on them.
-    """
-    parts = video_id.split("_")
-    return len(parts) == 2 and parts[1].isdigit() and int(parts[1]) >= 100
+        status = None
+        size = None
+        for line in out.splitlines():
+            lowered = line.lower()
+            if lowered.startswith("http/"):
+                parts = line.split()
+                if len(parts) > 1 and parts[1].isdigit():
+                    status = int(parts[1])  # last status wins, after redirects
+            elif lowered.startswith("content-length:"):
+                try:
+                    size = int(line.split(":", 1)[1].strip())
+                except ValueError:
+                    continue
+        if status is not None and status < 400 and size:
+            return size / 2**30
+    return None
 
 
 def load(path: Path) -> list[dict]:
@@ -167,24 +187,9 @@ def main() -> int:
         return 2
 
     candidates = load(path)
-    total_before = len(candidates)
-
-    # An item whose sessions are not all downloadable can never be asked, so
-    # drop it before planning rather than letting it distort the budget. The
-    # EPIC-55 ids in EPIC_100_train.csv are a third of the sessions here.
-    candidates = [
-        c for c in candidates if all(is_extension_video(s) for s in c["sessions"])
-    ]
-    dropped = total_before - len(candidates)
-    if dropped:
-        print(
-            f"dropped {dropped}/{total_before} candidate(s) that need EPIC-55 "
-            f"videos (two-digit ids are not on this host)"
-        )
-    if not candidates:
-        print("error: no candidate is fully covered by extension videos", file=sys.stderr)
-        return 2
-
+    n_e55 = sum(
+        1 for c in candidates if any(not is_extension_video(s) for s in c["sessions"])
+    )
     all_sessions = sorted({s for c in candidates for s in c["sessions"]})
     per_participant: dict[str, int] = defaultdict(int)
     for c in candidates:
@@ -194,6 +199,12 @@ def main() -> int:
     print(f"sessions involved: {len(all_sessions)}")
     print(f"participants:      {len(per_participant)}")
     print(f"budget:            {args.target:.0f} GiB")
+    if n_e55:
+        print(
+            f"note: {n_e55} candidate(s) need EPIC-55 videos (two-digit ids). Those "
+            f"are hosted separately and are UNSPLIT, so they run 4-12 GiB each "
+            f"against ~1.6 GiB for an extension video."
+        )
 
     sizes: dict[str, float] = {}
     if args.probe_sizes:
@@ -246,25 +257,25 @@ def main() -> int:
         print(f"  {participant}: {len(by_p[participant]):>2} video(s) -> "
               f"{got:>3} candidate(s)")
 
+    print()
+    print(f"efficiency: {len(covered) / max(spent, 0.01):.2f} item(s) per GiB")
     if args.out:
         Path(args.out).write_text("\n".join(chosen) + "\n", encoding="utf-8")
-        print(f"\nwrote {args.out}")
+        print(f"wrote {args.out}")
 
     print()
     print("Download exactly these, resumable, in the background:")
     print()
-    print("  cat <<'IDS' > /data/quzitsix/epic/wanted.txt")
-    for session in chosen[:12]:
-        print(f"  {session}")
-    if len(chosen) > 12:
-        print(f"  ... and {len(chosen) - 12} more (use --out to write the full list)")
-    print("  IDS")
-    print()
     print("  nohup bash -c 'while read v; do")
-    print("    p=${v%%_*}")
-    print(f"    curl -L -C - --retry 5 -o /data/quzitsix/epic/videos/$v.MP4 \\")
-    print(f"      \"{BASE}/$p/videos/$v.MP4\"")
-    print("  done < /data/quzitsix/epic/wanted.txt' > ~/epic-dl.log 2>&1 &")
+    print("    p=${v%%_*}; n=${v#*_}")
+    print("    if [ ${#n} -ge 3 ]; then")
+    print(f"      u=\"{EXT_BASE}/$p/videos/$v.MP4\"")
+    print("    else")
+    print(f"      u=\"{E55_BASE}/videos/train/$p/$v.MP4\"")
+    print("    fi")
+    print("    curl -L -C - --retry 5 -o /data/quzitsix/epic/videos/$v.MP4 \"$u\"")
+    print(f"  done < {args.out or '/data/quzitsix/epic/wanted.txt'}' \\")
+    print("    > ~/epic-dl.log 2>&1 &")
     return 0
 
 
