@@ -164,12 +164,13 @@ def extract_mcq_letter(pred: object, *, options: dict[str, str] | None = None) -
         return None
 
     token = fuzzy_matching(text)
-    if len(token) == 1 and token.upper() in "ABCDE":
+    allowed = options if options is not None else "ABCDE"
+    if len(token) == 1 and token.upper() in allowed:
         return token.upper()
 
     for pattern in _LETTER_PATTERNS:
         match = pattern.search(text)
-        if match:
+        if match and match.group(1).upper() in allowed:
             return match.group(1).upper()
 
     if options:
@@ -196,7 +197,8 @@ def extract_mcq_letter(pred: object, *, options: dict[str, str] | None = None) -
                 return best_key.upper()
         # Last resort: a reworded refusal maps to the abstention option. Checked
         # after containment so an explicit option always wins over a hedge.
-        if "E" in options and _ABSTENTION.search(text):
+        from meowbench.schema import UNANSWERABLE_TEXT
+        if options.get("E") == UNANSWERABLE_TEXT and _ABSTENTION.search(text):
             return "E"
     return None
 

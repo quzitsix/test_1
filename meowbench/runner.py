@@ -275,7 +275,7 @@ class Runner:
             env_run.n_records = ack.get("n_records")
             # A track that defers decoding (oracle) reports its frame count at
             # ingest_end instead of per session.
-            deferred_frames = ack.get("frames")
+            deferred_frames = ack.get("frames", (ack.get("stats") or {}).get("frames"))
             if not total_frames and isinstance(deferred_frames, int):
                 total_frames = deferred_frames
             env_run.total_frames = total_frames

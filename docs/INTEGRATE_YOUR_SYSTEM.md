@@ -1,5 +1,12 @@
 # How to plug your own system into MEOWBench
 
+> 2026-09-11: use [the current Chinese protocol](PROTOCOL.md) for native `mcq`
+> (2–5 original options, no forced E) and [the real-video runbook](REAL_VIDEO_RUNBOOK.md)
+> for multi-model server runs. The older text below describes the original
+> `mcq5` profile. File revocation is not a complete sandbox, and carrying model
+> state is a valid memory-system design; the note-only policy is specific to our
+> HF/API baseline. Oracle is a budgeted reference, not a guaranteed ceiling.
+
 MEOWBench never looks inside the system it evaluates. It starts your process
 once, talks JSONL over stdin/stdout, and controls one thing: **whether you are
 given the video, and for how long**. That is the whole contract.

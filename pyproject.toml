@@ -56,6 +56,9 @@ meowbench = "meowbench.cli:main"
 [tool.setuptools.packages.find]
 include = ["meowbench*"]
 
+[tool.setuptools.package-data]
+meowbench = ["review.html"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 # Protocol tests spawn subprocesses; a hang must fail rather than block CI.

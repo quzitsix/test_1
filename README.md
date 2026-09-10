@@ -1,5 +1,16 @@
 # MEOWBench
 
+## 真实视频入口（2026-09-11）
+
+已接入 **SuperMemory-VQA 原始四选一问答**，从真实录制构建纯视觉子集，支持本地 HF 权重、图像 API 与外部论文架构的统一 JSONL 接口。
+
+- [Linux 完整操作：计划、按需下载、视频准备、多模型三轨运行](docs/REAL_VIDEO_RUNBOOK.md)
+- [中文输入输出协议与适配器约定](docs/PROTOCOL.md)
+- [HTML 原题预览](docs/real_video_preview.html)（下载后用浏览器打开；这里尚未附带服务器视频）
+- [两模型配置样例](configs/experiments/supermemory_qwen.yaml)
+
+本入口保留原题、选项与答案；默认小计划为纯视觉、可回答题，不代表完整官方基准。服务器生成的 HTML 可播放真实片段并叠加预测。合成 `fixtures/probe` 继续仅用于管线正对照。
+
 A model-agnostic benchmark for **household long-term spatial memory**: can a system
 watch a home over many sessions, then answer questions about where things are,
 how they changed, and what the people who live there habitually do?

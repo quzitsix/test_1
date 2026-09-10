@@ -123,12 +123,13 @@ def score_prediction(
             cross_session=row.cross_session,
         )
 
-    if row.answer_format is AnswerFormat.MCQ5:
+    if row.answer_format in {AnswerFormat.MCQ, AnswerFormat.MCQ5}:
         letter = extract_mcq_letter(
             row.answer if row.answer is not None else row.answer_text,
             options=row.options,
         )
-        abstained = letter == "E"
+        abstention = "E" if row.answer_format is AnswerFormat.MCQ5 else row.abstention_option
+        abstained = letter is not None and letter == abstention
         if letter is None:
             # Committed to nothing legible. That is wrong, not an error: the
             # system did reply, it just did not choose an option.

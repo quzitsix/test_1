@@ -64,6 +64,7 @@ class OpenAICompatAdapter(AdapterBase):
         system_id: str | None = None,
         n_frames: int = 8,
         max_side: int = 768,
+        max_oracle_frames: int = 32,
         temperature: float = 0.0,
         max_tokens: int = 512,
         note_max_tokens: int = 900,
@@ -76,6 +77,9 @@ class OpenAICompatAdapter(AdapterBase):
         self._model = model
         self._n_frames = n_frames
         self._max_side = max_side
+        self._max_oracle_frames = max_oracle_frames
+        if max_oracle_frames < 1:
+            raise ValueError("max_oracle_frames must be positive")
         self._temperature = temperature
         self._max_tokens = max_tokens
         self._note_max_tokens = note_max_tokens
@@ -91,6 +95,7 @@ class OpenAICompatAdapter(AdapterBase):
         )
         self._notes: list[str] = []
         self._session_paths: list[str] = []
+        self._oracle_cache: list[dict[str, Any]] | None = None
         self._tokens = {"in": 0, "out": 0}
 
     # -- lifecycle -----------------------------------------------------------
@@ -98,6 +103,7 @@ class OpenAICompatAdapter(AdapterBase):
     def on_env_begin(self, env_id: str, n_sessions: int) -> None:
         self._notes.clear()
         self._session_paths.clear()
+        self._oracle_cache = None
 
     def ingest(self, msg: dict[str, Any]) -> dict[str, Any]:
         path = msg.get("video_path")
@@ -105,8 +111,8 @@ class OpenAICompatAdapter(AdapterBase):
             return {"frames": 0, "note_chars": 0}
 
         if self.context_mode == "oracle":
-            # Nothing to do now: frames are read at query time, while the media
-            # is still available. Remember where they are.
+            # Decode at ingest_end, while media is available, so the runner can
+            # record frame counts before querying. Keep the resulting cache.
             self._session_paths.append(path)
             return {"frames": 0, "deferred": True}
 
@@ -132,6 +138,9 @@ class OpenAICompatAdapter(AdapterBase):
         return {"frames": len(frames), "note_chars": len(note)}
 
     def on_ingest_end(self) -> dict[str, Any]:
+        if self.context_mode == "oracle":
+            parts = self._oracle_parts()
+            return {"n_records": len(parts), "memory_bytes": 0, "frames": len(parts)}
         return {
             "n_records": len(self._notes),
             "memory_bytes": sum(len(n.encode("utf-8")) for n in self._notes),
@@ -142,11 +151,7 @@ class OpenAICompatAdapter(AdapterBase):
         content: list[dict[str, Any]] = []
 
         if self.context_mode == "oracle":
-            for path in self._session_paths:
-                for frame in sample_frames(
-                    path, n_frames=self._n_frames, max_side=self._max_side
-                ):
-                    content.append(_image_part(frame.image))
+            content.extend(self._oracle_parts())
         elif self.context_mode == "memory" and self._notes:
             content.append(
                 {
@@ -164,6 +169,21 @@ class OpenAICompatAdapter(AdapterBase):
         reply = parse_reply(msg, text)
         reply["tokens"] = dict(self._tokens)
         return reply
+
+    def _oracle_parts(self) -> list[dict[str, Any]]:
+        if self._oracle_cache is None:
+            parts = []
+            for path in self._session_paths:
+                frames = sample_frames(path, n_frames=self._n_frames, max_side=self._max_side)
+                if not frames:
+                    raise ValueError(f"Oracle session decoded zero frames: {path}")
+                parts.extend(_image_part(frame.image) for frame in frames)
+            if len(parts) > self._max_oracle_frames:
+                n, cap = len(parts), self._max_oracle_frames
+                logger.warning("oracle: thinning %d frames to configured cap %d", n, cap)
+                parts = [parts[min(int(i*n/cap), n-1)] for i in range(cap)]
+            self._oracle_cache = parts
+        return self._oracle_cache
 
     # -- transport -----------------------------------------------------------
 
@@ -246,6 +266,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--api-key", default=None, help="defaults to $OPENAI_API_KEY")
     parser.add_argument("--n-frames", type=int, default=8, help="frames sampled per session")
     parser.add_argument("--max-side", type=int, default=768)
+    parser.add_argument("--max-oracle-frames", type=int, default=32)
     parser.add_argument("--temperature", type=float, default=0.0)
     parser.add_argument("--max-tokens", type=int, default=512)
     parser.add_argument("--note-max-tokens", type=int, default=900)
@@ -263,6 +284,7 @@ def main(argv: list[str] | None = None) -> int:
         system_id=args.system_id,
         n_frames=args.n_frames,
         max_side=args.max_side,
+        max_oracle_frames=args.max_oracle_frames,
         temperature=args.temperature,
         max_tokens=args.max_tokens,
         note_max_tokens=args.note_max_tokens,

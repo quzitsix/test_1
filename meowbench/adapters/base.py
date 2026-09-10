@@ -30,7 +30,7 @@ def build_prompt(msg: dict[str, Any]) -> str:
     """
     fmt = msg["answer_format"]
     question = msg["question"]
-    if fmt == "mcq5":
+    if fmt in {"mcq", "mcq5"}:
         options = msg.get("options") or {}
         lines = "\n".join(f"{letter}. {text}" for letter, text in sorted(options.items()))
         return (

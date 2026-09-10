@@ -110,6 +110,7 @@ class PredictionRow(BaseModel):
     aliases: list[str] = Field(default_factory=list)
     evidence: Evidence | None = None
     is_unanswerable: bool = False
+    abstention_option: str | None = None
     cross_session: bool | None = None
 
     system: SystemInfo
@@ -157,6 +158,7 @@ class PredictionRow(BaseModel):
             aliases=list(item.aliases),
             evidence=item.evidence,
             is_unanswerable=item.is_unanswerable,
+            abstention_option=item.abstention_option,
             cross_session=item.certificate.cross_session if item.certificate else None,
             system=system,
             env_run=env_run,

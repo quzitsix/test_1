@@ -228,6 +228,22 @@ def _check_queries(proc: AdapterProcess, results: list[CheckResult]) -> None:
         )
     )
 
+    native = QueryMsg(
+        item_id="conf_native_mcq",
+        question="Select an original option.",
+        answer_format=AnswerFormat.MCQ,
+        options={"A": "Unknown", "B": "sink", "C": "drawer", "D": "shelf"},
+    )
+    try:
+        reply = proc.query(native)
+        results.append(CheckResult(
+            "accepts native mcq options (no forced E)",
+            reply.item_id == native.item_id and (reply.answer or "").strip().upper() in native.options,
+            "Native banks use answer_format=mcq; return one of the supplied letters.",
+        ))
+    except (ProtocolError, AdapterTimeout) as exc:
+        results.append(CheckResult("accepts native mcq options (no forced E)", False, str(exc)))
+
     open_query = QueryMsg(
         item_id="conf_open",
         question="Describe where the mug usually lives.",

@@ -26,6 +26,7 @@ from pydantic import BaseModel, ConfigDict, Field, field_validator, model_valida
 
 
 class AnswerFormat(str, Enum):
+    MCQ = "mcq"  # Native 2–5 option banks; preserve wording and option order.
     MCQ5 = "mcq5"
     OPEN = "open"
     NUMERIC = "numeric"
@@ -208,6 +209,7 @@ class Item(BaseModel):
     bias_score: float | None = Field(default=None, ge=0.0, le=1.0)
 
     is_unanswerable: bool = False
+    abstention_option: str | None = None  # Audit/scoring only; not sent in QueryMsg.
     source_env_id: str | None = None  # donor env, for unanswerable controls
 
     @field_validator("item_id", "env_id", "axis")
@@ -235,6 +237,19 @@ class Item(BaseModel):
                 raise ValueError("unanswerable items must have answer 'E'")
             if not self.is_unanswerable and self.answer == "E":
                 raise ValueError("answer 'E' requires is_unanswerable=True")
+        elif fmt is AnswerFormat.MCQ:
+            if not self.options or not 2 <= len(self.options) <= 5:
+                raise ValueError("mcq requires 2–5 original options")
+            if tuple(self.options) != MCQ_LETTERS[:len(self.options)]:
+                raise ValueError("mcq options must use consecutive letters starting at A")
+            if any(not text.strip() for text in self.options.values()):
+                raise ValueError("mcq options must not be blank")
+            if self.answer not in self.options:
+                raise ValueError("mcq answer must identify a supplied option")
+            if self.abstention_option is not None and self.abstention_option not in self.options:
+                raise ValueError("abstention_option must identify a supplied option")
+            if self.is_unanswerable != (self.answer == self.abstention_option):
+                raise ValueError("is_unanswerable must agree with the abstention option")
         elif fmt is AnswerFormat.OPEN:
             if not (self.answer_text or "").strip():
                 raise ValueError("open items require answer_text")

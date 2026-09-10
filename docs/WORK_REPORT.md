@@ -1,5 +1,9 @@
 # MEOWBench 工作报告 —— 评测框架的使用说明
 
+> 2026-09-11：真实视频原题入口、多模型服务器运行和 HTML 展示已经补齐，
+> 以 [最新操作文档](REAL_VIDEO_RUNBOOK.md) 与 [接口协议](PROTOCOL.md) 为准。
+> 下文保留为此前实验记录，不代表已经跑过 SuperMemory 的服务器模型实验。
+
 日期 2026-09-08 · 仓库 `quzitsix/test_1` · 53 个提交 · 329 tests
 
 ---

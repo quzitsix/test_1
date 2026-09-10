@@ -468,3 +468,22 @@ def test_hf_vlm_thins_oracle_frames_across_all_sessions() -> None:
     assert max(kept) >= 16, "the most recent session must still be represented"
     # Under budget is a no-op.
     assert _thin_evenly(frames, 32) is frames
+
+
+@pytest.mark.parametrize("mode", [ContextMode.BLIND, ContextMode.MEMORY, ContextMode.ORACLE])
+def test_native_mcq_roundtrip_and_oracle_frame_accounting(tmp_path, suite, mode):
+    envs, originals = suite
+    native = []
+    for original in originals:
+        data = original.model_dump(mode="json")
+        data.update(answer_format="mcq", options={"A":"sink", "B":"Unknown", "C":"shelf", "D":"table"},
+                    answer="A", is_unanswerable=False, abstention_option="B")
+        native.append(Item.model_validate(data))
+    with FakeServer(responder=lambda payload: "A") as server:
+        rows = run_with(tmp_path, envs, native, server, mode, n_frames=2)
+        for request in server.requests:
+            assert "gold_answer" not in json.dumps(request)
+    assert all(r.answer == "A" and r.abstention_option == "B" for r in rows)
+    if mode is not ContextMode.BLIND:
+        assert all(r.env_run.total_frames == 4 for r in rows)
+        assert all(r.env_run.sessions_without_frames == 0 for r in rows)

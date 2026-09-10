@@ -90,7 +90,7 @@ class EchoSystem:
         digest = hashlib.sha256(msg["question"].encode("utf-8")).digest()
         fmt = msg["answer_format"]
         out: dict[str, object] = {"raw": f"echo_stub{'/' + note if note else ''}"}
-        if fmt == "mcq5":
+        if fmt in {"mcq", "mcq5"}:
             letters = sorted(msg.get("options") or {"A": ""})
             out["answer"] = letters[digest[0] % len(letters)]
         elif fmt == "numeric":

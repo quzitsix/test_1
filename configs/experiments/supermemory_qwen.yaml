@@ -1,0 +1,34 @@
+# Linux server; choose GPUs you are currently allowed to use.
+suite: /data/quzitsix/meow-releases/supermemory-pilot-v1
+runs_dir: runs
+scratch_dir: /data/quzitsix/meow-scratch
+workers: 2
+tracks: [blind, memory, oracle]
+models:
+  - id: qwen3-vl-2b
+    backend: hf
+    model_path: /data/quzitsix/models/Qwen3-VL-2B-Instruct
+    gpu: '0'
+    n_frames: 4
+    max_side: 768
+    max_oracle_frames: 96
+  - id: qwen3-vl-8b
+    backend: hf
+    model_path: /data/quzitsix/models/Qwen3-VL-8B-Instruct
+    gpu: '1'
+    n_frames: 4
+    max_side: 768
+    max_oracle_frames: 96
+# Each model runs its three tracks sequentially; models run in parallel.
+# Supported alternatives (replace models above):
+# - id: hosted-vlm
+#   backend: openai
+#   model: the-endpoint-model-name
+#   base_url: http://127.0.0.1:8000/v1
+#   n_frames: 4
+#   max_side: 768
+#   Authentication comes from OPENAI_API_KEY, not this YAML file.
+# - id: paper-memory-system
+#   backend: external
+#   command: [/path/to/other/env/bin/python, /path/to/adapter.py,
+#             --context-mode, '{context_mode}']
