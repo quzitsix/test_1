@@ -334,8 +334,101 @@ class TTTAdapter(AdapterBase):
         return {"answer": choice, "raw": f"{choice}  ({detail})"}
 
 
+class LoRAVideoAdapter(AdapterBase):
+    """Thin protocol bridge; all perception/training lives in ttt-frame.
+
+    --backend lora is a separate generative self-distillation baseline, not an
+    alternative name for the CLIP/LaCT mechanism above. Gold items are never
+    passed to the learner. The harness retains responsibility for video revocation.
+    """
+
+    def __init__(self, config, *, context_mode="memory", system_id=None,
+                 read_base=False, metrics_path=None, engine=None):
+        if context_mode not in {"memory", "blind"}:
+            raise ValueError("LoRA supports memory/blind; use hf_vlm for the video oracle")
+        super().__init__(system_id or f"video-lora-{'base-read' if read_base else context_mode}")
+        self.context_mode = context_mode
+        self.read_base = read_base
+        self.metrics_path = metrics_path
+        self._env_id = None
+        if engine is None:
+            try:
+                from ttt_frame.videoqa import VideoTTTMemory
+                engine = VideoTTTMemory(config)
+            except ImportError as exc:
+                raise ImportError('install the sibling repo: pip install -e "../TTT_frame[video]"') from exc
+        self.engine = engine
+
+    def capabilities(self):
+        return {"context_mode": self.context_mode, "accepts": ["video_path"],
+                "memory_kind": "lora_self_distillation", "read_base": self.read_base}
+
+    def on_env_begin(self, env_id, n_sessions):
+        self.engine.reset()
+        self._env_id = env_id
+
+    def ingest(self, msg):
+        if self.context_mode == "blind":
+            return {"frames": 0, "optimizer_steps": 0}
+        path = msg.get("video_path")
+        if not path:
+            raise ValueError("LoRA video memory requires a video_path during ingestion")
+        # Only media enters the learner: not item_ids, questions, options or gold.
+        return self.engine.ingest_video(path)
+
+    def on_ingest_end(self):
+        summary = self.engine.finish_ingest()
+        if self.metrics_path:
+            import json
+            from pathlib import Path
+
+            target = Path(self.metrics_path)
+            target.parent.mkdir(parents=True, exist_ok=True)
+            with target.open("a", encoding="utf-8") as stream:
+                stream.write(json.dumps({"env_id": self._env_id, **summary}) + "\n")
+        return summary
+
+    def answer(self, msg):
+        import time
+        from meowbench.adapters.base import build_prompt, parse_reply
+
+        started = time.perf_counter()
+        answer = self.engine.answer(build_prompt(msg), use_memory=not self.read_base)
+        return {**parse_reply(msg, answer),
+                "latency_ms": (time.perf_counter() - started) * 1000}
+
+    def on_env_end(self):
+        self.engine.reset()
+
+
+def _lora_main(argv):
+    from ttt_frame.videoqa import add_video_arguments, config_from_args
+
+    parser = common_args("Video self-distillation into LoRA, followed by parameter-only QA")
+    parser.add_argument("--backend", choices=("lora",), default="lora")
+    parser.add_argument("--read-base", action="store_true",
+                        help="same ingestion/training budget, but disable LoRA during answering")
+    parser.add_argument("--metrics-path", help="optional JSONL of numeric ingestion diagnostics")
+    add_video_arguments(parser)
+    args = parser.parse_args(argv)
+    configure_logging(args.log_level)
+    return LoRAVideoAdapter(
+        config_from_args(args), context_mode=args.context_mode, system_id=args.system_id,
+        read_base=args.read_base, metrics_path=args.metrics_path,
+    ).run()
+
+
 def main(argv: list[str] | None = None) -> int:
+    import argparse
+
+    selector = argparse.ArgumentParser(add_help=False)
+    selector.add_argument("--backend", choices=("lact", "lora"), default="lact")
+    selected, _ = selector.parse_known_args(argv)
+    if selected.backend == "lora":
+        return _lora_main(argv)
     parser = common_args(__doc__ or "")
+    parser.add_argument("--backend", choices=("lact", "lora"), default="lact",
+                        help="lora enables generative VideoQA; use --backend lora --help")
     parser.add_argument(
         "--model-path",
         default="openai/clip-vit-base-patch32",
