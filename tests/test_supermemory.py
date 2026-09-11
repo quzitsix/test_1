@@ -130,7 +130,7 @@ def video(path):
         for pkt in s.encode(): c.mux(pkt)
 
 
-def test_preparation_physically_removes_future_and_preserves_raw(tmp_path):
+def test_preparation_physically_removes_future_and_preserves_raw(tmp_path, capsys):
     import hashlib
     import numpy as np
     src=tmp_path/(V1+'.mp4');video(src)
@@ -138,6 +138,9 @@ def test_preparation_physically_removes_future_and_preserves_raw(tmp_path):
     plan=make_plan(write_rows(tmp_path,[row()]))
     out=tmp_path/'suite'
     suite=prepare_suite(plan,tmp_path,out,chunk_seconds=1,sample_fps=2,max_side=128)
+    output=capsys.readouterr().out
+    assert 'clip 1/2' in output and 'clip 2/2' in output
+    assert output.count('START')==2 and output.count('DONE')==2
     assert len(suite.items)==1
     item=suite.items[0]
     assert item.question==row()['question'] and list(item.options.values())==row()['choices']
@@ -165,6 +168,43 @@ def test_truncated_window_is_not_silently_padded_to_look_complete(tmp_path):
     with pytest.raises(ValueError,match='ended before'):
         render_window(src,tmp_path/'bad.mp4',start=0,end=8,fps=2,max_side=128)
     assert not (tmp_path/'bad.mp4').exists()
+
+
+@pytest.mark.parametrize('start,end,fps,channel', [
+    (0, 1.9, 2, 0), (2.1, 3.9, 2, 2), (0, .05, 30, 0),
+])
+def test_render_sampling_budget_and_short_or_late_windows(tmp_path, start, end, fps, channel):
+    import math
+    import av
+    import numpy as np
+    src=tmp_path/'source.mp4';video(src)
+    target=tmp_path/'bounded.mp4'
+    stats=render_window(src,target,start=start,end=end,fps=fps,max_side=128,decode_threads=2)
+    expected=math.ceil((end-start)*fps)
+    # Conversion work must scale with output FPS, not input FPS. Decoder
+    # reference frames remain necessary and must not all become RGB buffers.
+    assert 0 < stats['converted_frames'] <= expected
+    assert stats['output_frames'] == expected
+    with av.open(str(target)) as c:
+        frames=list(c.decode(video=0))
+    assert len(frames)==expected
+    for frame in frames:
+        colors=np.asarray(frame.to_image()).mean(axis=(0,1))
+        assert colors[channel]>200 and colors[2-channel]<40
+
+
+def test_render_progress_covers_seek_preroll(tmp_path, monkeypatch):
+    from types import SimpleNamespace
+    from itertools import count
+    from meowbench.datasets import video_windows
+    src=tmp_path/'source.mp4';video(src)
+    ticks=count(0,6)
+    monkeypatch.setattr(video_windows,'time',SimpleNamespace(monotonic=lambda:next(ticks)))
+    updates=[]
+    render_window(src,tmp_path/'late.mp4',start=2.5,end=3.5,fps=2,max_side=128,
+                  progress=lambda position,encoded:updates.append((position,encoded)))
+    assert any(t<2.5 for t,_ in updates), 'seek preroll must not look like a hang'
+    assert any(2.5<=t<3.5 for t,_ in updates)
 
 
 def load_script(name):

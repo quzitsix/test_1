@@ -60,6 +60,8 @@ def main() -> int:
     prep.add_argument("--chunk-seconds", type=float, default=60)
     prep.add_argument("--sample-fps", type=int, default=2)
     prep.add_argument("--max-side", type=int, default=768)
+    prep.add_argument("--decode-threads", type=int, default=4,
+                      help="CPU video decoder threads (default: 4); no GPU needed")
     check = commands.add_parser("verify")
     check.add_argument("--suite", type=Path, required=True)
     args = p.parse_args()
@@ -94,7 +96,8 @@ def main() -> int:
     if args.cmd == "prepare":
         obj = read_plan(args.plan)
         suite = prepare_suite(obj, args.video_root, args.out, chunk_seconds=args.chunk_seconds,
-                              sample_fps=args.sample_fps, max_side=args.max_side)
+                              sample_fps=args.sample_fps, max_side=args.max_side,
+                              decode_threads=args.decode_threads)
         print(suite.describe())
         return 0
     verify(args.suite)

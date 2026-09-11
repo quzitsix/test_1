@@ -91,13 +91,27 @@ python scripts/prepare_supermemory.py prepare \
   --plan /data/quzitsix/supermemory/plans/pilot-v1.json \
   --video-root /data/quzitsix/supermemory \
   --out /data/quzitsix/meow-releases/supermemory-pilot-v1 \
-  --chunk-seconds 60 --sample-fps 2 --max-side 768
+  --chunk-seconds 60 --sample-fps 2 --max-side 768 --decode-threads 8
 
 python scripts/prepare_supermemory.py verify \
   --suite /data/quzitsix/meow-releases/supermemory-pilot-v1
 ```
 
 准备方式：从原始录制 **0 秒起连续保留到 question_evidence 的最早起点**；这是明确、保守的提问截止约定，不把根字段 `start_time`（录制起始时间）误当成问题时刻。每 60 秒分一块，以 2 fps 转码为静音 RGB MP4。取帧规则与答案证据位置无关。原始视频不改动。
+
+这是 CPU 解码/转码，不加载模型，不占用 GPU。`--decode-threads` 默认 4，上面的服务器命令设为 8；不需要为这一步安装 CUDA 或 ffmpeg 命令行工具。解码采用 [PyAV 的 AUTO 多线程方式](https://pyav.org/docs/stable/cookbook/basics.html#threading)，只将采样帧转换成 RGB 并缩放。H.264 等格式仍需解码参考帧，2 fps 输出不意味着只解码 2 fps。
+
+每块现在打印 `START` / `DONE`、耗时、解码帧数和转换帧数；解码持续返回帧时约每 5 秒打印一次位置。比如 30 fps 原片的 60 秒块，输出约 120 帧，RGB 转换也只需约 120 帧，不再对约 1800 帧全部做转换。`REUSED` 表示本次准备中已生成相同片段，不会再次转码。
+
+若旧版本长时间只停在 `Preparing Q9 ... 1080.0s`，它可能仍在处理第一题的 18 个块。另开终端检查：
+
+```bash
+ps -u "$USER" -o pid,etime,%cpu,%mem,args | grep '[p]repare_supermemory.py'
+find /data/quzitsix/meow-releases/supermemory-pilot-v1/media \
+  -maxdepth 1 -name 'clip-*.mp4' ! -name '*.partial.mp4' | wc -l
+```
+
+要切换到优化版，在原运行终端按 Ctrl+C，等进程退出，再 `git pull --ff-only`；使用新目录 `supermemory-pilot-v2` 重新 prepare / verify，后续 HTML 的 `--suite` 和模型 YAML 的 `suite` 一并指向 v2。旧目录保留供检查，不会自动续用未经完整校验的旧片段。已经启动的 Python 不会因为 git pull 自动切换实现，两个版本不能同时写同一目录。
 
 输出包括：`items.jsonl`、`envs.jsonl`、`manifest.json`、`source_plan.json`、`media_index.json`、`media/*.mp4`。只有裁切后的媒体进入 adapter；原始视频后半段没有被传入。相同视频、相同前缀边界可共用一次 ingestion，不同提问边界使用独立环境，避免早题读到晚题的视频。
 
@@ -242,5 +256,7 @@ history 从原条目的 `video_ids` 选择提问之前的录制，按可靠的 U
 ## 10. 本次已验证的范围
 
 本地开发检查：`369 passed, 1 skipped`。新增回归覆盖原始选项与弃答位置、提问时间边界、缺失/损坏媒体失败处理、原视频不被修改、三轨协议与预测导出。三轨端到端回归使用可控的测试视频和模拟图像 API，验证接口行为，不把模拟回答作为模型效果。
+
+随后针对预处理性能修复，数据准备、媒体及 Python 兼容性测试共 `151 passed`。本地 6 秒合成 1080p/30 fps H.264 样本从 6.715 秒降至 0.707 秒：仍解码 180 帧，RGB 转换从 180 次降到 12 次，输出 12 帧逐像素一致。这只是该小样本的 CPU 测量，不是服务器真实长视频的耗时承诺。
 
 另外已读取官方完整问答文件并生成上面的 5 题计划；HTML 的数据嵌入、上一题/下一题、筛选、空结果和答案显示逻辑已检查。当前未完成浏览器目视验收，也尚未得到你服务器上这批 SuperMemory 视频的真实模型分数。按第 4–7 步运行后，实际视频、原题证据与模型回答才会在同一页面中展示。

@@ -201,11 +201,13 @@ def find_videos(root: Path, ids: list[str]) -> dict[str, Path]:
 
 
 def prepare_suite(plan: dict, video_root: Path, out: Path, *, chunk_seconds: float = 60,
-                  sample_fps: int = 2, max_side: int = 768) -> object:
+                  sample_fps: int = 2, max_side: int = 768, decode_threads: int = 4) -> object:
     """Physically limit media before staging. No future video path reaches an adapter."""
     from meowbench.media import probe_duration
     from meowbench.datasets.video_windows import render_window
-    if chunk_seconds <= 0 or sample_fps < 1 or max_side < 64:
+    import time
+    if (not math.isfinite(chunk_seconds) or chunk_seconds <= 0 or sample_fps < 1
+            or max_side < 64 or decode_threads < 1):
         raise ValueError("Invalid video preparation settings")
     if out.exists():
         raise FileExistsError(f"Output already exists: {out}. Use a new release directory.")
@@ -237,6 +239,7 @@ def prepare_suite(plan: dict, video_root: Path, out: Path, *, chunk_seconds: flo
                   f"{sum(s['end_sec'] for s in recordings):.1f}s of context", flush=True)
             refs = []
             index = []
+            n_clips = sum(math.ceil(rec["end_sec"] / chunk_seconds) for rec in recordings)
             for rec in recordings:
                 vid, end = rec["video_id"], rec["end_sec"]
                 start = 0.0
@@ -245,10 +248,26 @@ def prepare_suite(plan: dict, video_root: Path, out: Path, *, chunk_seconds: flo
                     sid = "clip-" + digest([vid, start, stop, sample_fps, max_side])[:24]
                     relative = f"media/{sid}.mp4"
                     target = out / relative
+                    label = f"  clip {len(refs)+1}/{n_clips} [{start:.1f}, {stop:.1f})s"
                     if relative not in manifest_media:
-                        render_window(paths[vid], target, start=start, end=stop,
-                                      fps=sample_fps, max_side=max_side)
+                        print(f"{label} START {vid}", flush=True)
+                        began = time.monotonic()
+
+                        def progress(position, encoded):
+                            phase = "seek preroll" if position < start else "decoding"
+                            print(f"{label} {phase}: source {position:.1f}s, "
+                                  f"output {encoded} frames, elapsed {time.monotonic()-began:.1f}s",
+                                  flush=True)
+
+                        stats = render_window(paths[vid], target, start=start, end=stop,
+                                              fps=sample_fps, max_side=max_side,
+                                              decode_threads=decode_threads, progress=progress)
                         manifest_media[relative] = file_sha256(target)
+                        print(f"{label} DONE in {time.monotonic()-began:.1f}s; "
+                              f"decoded {stats['decoded_frames']}, converted {stats['converted_frames']}, "
+                              f"output {stats['output_frames']}", flush=True)
+                    else:
+                        print(f"{label} REUSED", flush=True)
                     refs.append(SessionRef(session_id=sid, order=len(refs),
                                            video_path=str(target.resolve()), duration_sec=stop-start))
                     index.append({"session_id": sid, "video_id": vid, "start_sec": start,
@@ -294,7 +313,8 @@ def prepare_suite(plan: dict, video_root: Path, out: Path, *, chunk_seconds: flo
         "profile": "supermemory-native-visual/1", "context_policy": plan["context"],
         "source": SOURCE, "source_sha256": plan["source_sha256"], "plan_sha256": plan["plan_sha256"],
         "license": LICENSE, "media_sha256": manifest_media,
-        "preparation": {"chunk_seconds": chunk_seconds, "sample_fps": sample_fps, "max_side": max_side},
+        "preparation": {"chunk_seconds": chunk_seconds, "sample_fps": sample_fps,
+                        "max_side": max_side, "decode_threads": decode_threads},
         "notes": "Real video, original QA. Visual answerable subset, not the full official benchmark. "
                  "Chunks are not separate capture sessions. Frames sampled independently of answer evidence. "
                  "No audio, transcripts, gaze or geometry are sent. Single-session removes earlier recordings."})
