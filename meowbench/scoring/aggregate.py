@@ -451,23 +451,20 @@ def build_report(
 
 
 def _note_ingest_problems(report: Report) -> None:
-    """Warn when the memory track had nothing to remember.
+    """Surface missing ingestion evidence without assuming a memory architecture.
 
-    A memory-track run that produced no notes is not a low score — it is an
-    unmeasured one. Scores stay near chance either way, so without this note
-    the failure is indistinguishable from a working run.
-
-    Only `n_records` is treated as the signal. `memory_bytes` is optional in the
-    protocol (a system may legitimately not know its own footprint, and the
-    reference stub does not report it), so requiring it would accuse a healthy
-    system of remembering nothing.
+    Zero explicit records can mean empty ingestion or a parameter-only memory.
+    Allocated memory bytes alone do not prove that parameters were updated.
+    Keep this diagnostic visible; do not infer either success or failure from
+    the record count alone. Memory bytes remain optional in the protocol.
     """
     if not report.ingest or report.context_mode != "memory":
         return
     if not report.ingest.get("n_records"):
         report.notes.append(
-            "ingestion produced no memory records; the memory track answered "
-            "from nothing, so these results measure priors, not memory"
+            "ingestion reported no explicit memory records; this can indicate "
+            "empty ingestion or parameter-only memory. Inspect decoded frames "
+            "and the adapter's update metrics before attributing scores to memory"
         )
     blank = report.ingest.get("sessions_without_frames") or 0
     if blank:
