@@ -294,3 +294,5 @@ history 从原条目的 `video_ids` 选择提问之前的录制，按可靠的 U
 诊断参数：HF 模型配置中 `diagnostic_trace: true` 将记录写到对应 run 的 `adapter_trace.jsonl`；`max_new_tokens`、`note_max_new_tokens`、`torch_num_threads` 可显式设置，未设置时保留原 adapter 默认值。trace 不传入被测模型，也不加入 gold，记录的笔记是模型输出。`scripts/summarize_hf_trace.py <文件...>` 只读汇总。默认不产生诊断文件；其他黑盒系统无需实现这一内部调试功能。
 
 顶层 `env_ids: [环境ID]` 用于定点复现；被选中的原题及完整前缀不变，执行签名保存 env/item 列表，并标注为 filtered。修改选择、参数或代码后使用新 tag。
+
+已取得 Q9 的 memory 诊断摘要：18 条笔记生成耗时 988.36 秒、10,882 输出 tokens，最终回答 D，目标片段笔记未记录网袋去向。下一步用 [Q9 观察核查页操作](reports/supermemory-q9-diagnostic.md) 将实际抽帧、连续片段和笔记放在同一个 HTML 中核对；无需重跑模型。工具入口为 `scripts/make_hf_observation_review.py`。

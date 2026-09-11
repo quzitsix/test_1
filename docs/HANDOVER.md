@@ -13,6 +13,8 @@
 > 新增分段运行日志及 `scripts/watch_real_run.py` 只读进度监视器，供后续运行使用。
 > 新增 HF 可选诊断 trace（实际采样时间、耗时、token 数、笔记全文），不改黑盒协议；首轮没有此 trace。
 > 下一轮 `configs/experiments/supermemory_diagnostic.yaml` 仅跑 Q9、8B、memory/oracle，默认 GPU 1，沿用原参数。
+> Q9 memory 随后完成：18 条笔记 generate=988.36 秒、10,882 tokens，最终 D；目标片段未记网袋去向。
+> 下一步 [复现实际观察 HTML](reports/supermemory-q9-diagnostic.md)，区分帧间漏采、看不清与笔记漏记。尚未收到 oracle 诊断或完整新归档。
 
 写给**接手这个项目的模型**。假设你没有此前对话的任何记忆。
 
