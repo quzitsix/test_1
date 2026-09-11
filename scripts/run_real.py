@@ -23,8 +23,10 @@ from prepare_supermemory import verify
 REPO = Path(__file__).resolve().parents[1]
 
 
-def adapter_command(model: dict, mode: str, python: str) -> list[str]:
+def adapter_command(model: dict, mode: str, python: str, *, trace_file: str | None = None) -> list[str]:
     backend = model.get('backend', 'hf')
+    if trace_file and backend != 'hf':
+        raise ValueError('diagnostic_trace currently supports the HF adapter only')
     if backend == 'external':
         argv = model.get('command')
         if not isinstance(argv, list) or not argv or not all(isinstance(x, str) for x in argv):
@@ -40,6 +42,14 @@ def adapter_command(model: dict, mode: str, python: str) -> list[str]:
     if backend == 'hf':
         command += ['--model-path', model['model_path'], '--dtype', model.get('dtype', 'bfloat16'),
                     '--max-oracle-frames', str(model.get('max_oracle_frames', 96))]
+        for key in ('max_new_tokens', 'note_max_new_tokens', 'torch_num_threads'):
+            if key in model:
+                value = model[key]
+                if isinstance(value, bool) or not isinstance(value, int) or value < 1:
+                    raise ValueError(f'{key} must be a positive integer')
+                command += ['--' + key.replace('_', '-'), str(value)]
+        if trace_file:
+            command += ['--trace-file', trace_file]
     else:
         command += ['--model', model['model'], '--base-url', model['base_url'],
                     '--max-oracle-frames', str(model.get('max_oracle_frames', 96))]
@@ -60,6 +70,11 @@ def main() -> int:
     tracks = conf.get('tracks', ['blind', 'memory', 'oracle'])
     if not tracks or len(set(tracks)) != len(tracks) or set(tracks)-{'blind','memory','oracle'}:
         raise ValueError('Invalid or duplicated tracks')
+    env_ids = conf.get('env_ids', [])
+    if not isinstance(env_ids, list) or any(not isinstance(x, str) or not x for x in env_ids):
+        raise ValueError('env_ids must be a list of non-empty environment ids')
+    if len(set(env_ids)) != len(env_ids):
+        raise ValueError('env_ids contains duplicates')
     gpus = [str(m['gpu']) for m in models if m.get('backend','hf') == 'hf']
     if any(not re.fullmatch(r'\d+', g) for g in gpus) or len(set(gpus)) != len(gpus):
         raise ValueError('Assign one distinct physical GPU index to each HF model')
@@ -75,17 +90,28 @@ def main() -> int:
         batch = []
         for mode in tracks:
             run_id = f"{tag}-{model['id']}-{mode}"
-            command = adapter_command(model, mode, python)
+            trace = str(runs_root/run_id/'adapter_trace.jsonl') if model.get('diagnostic_trace') else None
+            command = adapter_command(model, mode, python, trace_file=trace)
             print(f"{run_id} | GPU {model.get('gpu','endpoint')} | {shlex.join(command)}", flush=True)
             batch.append((mode, run_id, command))
         jobs.append((model,batch))
     if args.dry_run:
+        if env_ids:
+            print('Filtered environments (not a full-suite result): ' + ', '.join(env_ids))
         print('Dry run only: no downloads, no model loading, no jobs launched.')
         return 0
     if os.name == 'nt':
         raise ValueError('Run real experiments on the Linux server; local Windows supports --dry-run only')
     verify(suite_path)
     suite = load_suite(suite_path)
+    if env_ids:
+        missing = set(env_ids)-set(suite.envs)
+        if missing:
+            raise ValueError('Unknown environment ids: ' + ', '.join(sorted(missing)))
+        suite = suite.filter(env_ids=set(env_ids))
+        if not suite.items:
+            raise ValueError('No questions in selected environments')
+        print(f'Diagnostic subset: {len(suite.items)} item(s), {len(suite.envs)} environment(s)', flush=True)
     for model in models:
         if model.get('backend','hf') == 'hf' and not (Path(model['model_path'])/'config.json').is_file():
             raise FileNotFoundError(model['model_path'])
@@ -99,6 +125,9 @@ def main() -> int:
             folder = runs_root/run_id
             signature = {'suite_sha': suite.suite_sha, 'media_sha256': suite.manifest['media_sha256'],
                          'model_config': model, 'mode': mode, 'command': command, 'commit': commit}
+            if env_ids:
+                signature['env_ids'] = sorted(env_ids)
+                signature['item_ids'] = sorted(i.item_id for i in suite.items)
             marker = folder/'execution.json'
             if folder.exists() and (not marker.exists() or json.loads(marker.read_text()) != signature):
                 raise ValueError(f'{run_id}: existing run uses different inputs/settings/code; choose a new --tag')
@@ -117,6 +146,8 @@ def main() -> int:
                    '--run-id',run_id,'--runs-dir',str(runs_root),'--scratch-dir',str(scratch),
                    '--context-mode',mode,'--system',shlex.join(command),
                    '--handshake-timeout','1800','--ingest-timeout','3600','--query-timeout','900']
+            if env_ids:
+                cmd += ['--env', *env_ids]
             with (folder/'run.log').open('a',encoding='utf-8') as log:
                 result = subprocess.run(cmd,cwd=REPO,env=env,stdout=log,stderr=subprocess.STDOUT)
             pred = folder/'predictions.jsonl'

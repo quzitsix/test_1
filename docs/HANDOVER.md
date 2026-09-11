@@ -7,10 +7,12 @@
 > oracle 不保证是上限；3RScan 的矩阵平移量不应直接当成物体质心位移，
 > 录制列表顺序也不等于已验证的真实时间。移除物体不自动构成不可回答题。
 >
-> **服务器新进展**：`sm-pilot-v1` 的 Qwen3-VL 2B/8B 三轨已完成，用户提供的
-> memory−blind 为 +0.200 / −0.600。实际为 pilot-v2，5 题、跨录制 0/5。
-> 尚待完整预测文件和逐题视频审阅，不可将 5 题近似区间的星号当正式统计结论。
+> **服务器新进展**：已收到并重算 `sm-pilot-v1-results.tgz`，30 个回答完整且报告一致。
+> 2B 的 blind/memory/oracle=20%/40%/20%，8B=60%/0%/40%；实际为 pilot-v2，5 题、跨录制 0/5。
+> 详见 [完整核查报告](reports/supermemory-pilot-v1.md)。原题和 gold 不变；当前不能将 5 题近似区间星号当正式统计结论。
 > 新增分段运行日志及 `scripts/watch_real_run.py` 只读进度监视器，供后续运行使用。
+> 新增 HF 可选诊断 trace（实际采样时间、耗时、token 数、笔记全文），不改黑盒协议；首轮没有此 trace。
+> 下一轮 `configs/experiments/supermemory_diagnostic.yaml` 仅跑 Q9、8B、memory/oracle，默认 GPU 1，沿用原参数。
 
 写给**接手这个项目的模型**。假设你没有此前对话的任何记忆。
 

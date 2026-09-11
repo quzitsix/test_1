@@ -242,6 +242,22 @@ def test_different_model_backends_share_protocol_and_safe_argv():
     with pytest.raises(ValueError): launcher.adapter_command({'backend':'external','command':'python a.py'},'blind','python')
 
 
+def test_hf_diagnostics_are_explicit_and_command_records_settings():
+    launcher=load_script('run_real')
+    model={'id':'q','model_path':'/model','max_new_tokens':32,
+           'note_max_new_tokens':128,'torch_num_threads':8}
+    cmd=launcher.adapter_command(model,'memory','python',trace_file='/run with spaces/trace.jsonl')
+    for flag, value in [('--trace-file','/run with spaces/trace.jsonl'),
+                        ('--max-new-tokens','32'), ('--note-max-new-tokens','128'),
+                        ('--torch-num-threads','8')]:
+        assert cmd[cmd.index(flag)+1] == value
+    with pytest.raises(ValueError,match='HF adapter only'):
+        launcher.adapter_command({'backend':'external'},'oracle','python',trace_file='x')
+    for invalid in (0, -1, True, '8'):
+        with pytest.raises(ValueError,match='positive integer'):
+            launcher.adapter_command({**model,'torch_num_threads':invalid},'memory','python')
+
+
 def test_prepared_real_profile_runs_three_tracks_and_exports_predictions(tmp_path):
     from test_adapters import FakeServer, run_with
     from meowbench.schema import ContextMode

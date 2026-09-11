@@ -58,3 +58,5 @@ data/
 .egomonth_check/
 .m2/
 *_viewer.html
+# Small server result transfers; reviewed summaries live under docs/reports.
+/*-results.tgz

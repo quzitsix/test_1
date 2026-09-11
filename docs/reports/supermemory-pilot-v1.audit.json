@@ -1,0 +1,696 @@
+{
+  "archive_sha256": "bb72424eba215a765daa36e7784bef415bacea21d5e878019a4e0f7f27f01ed4",
+  "source_annotation_sha256": "fbb3f234d8ce79e5cfbe31482d735038035ee13f59a6468a3f3a078c2aa15663",
+  "source_plan_sha256": "b3dc458cdccd644f575edbf1af808d73b6b54a6b4626594396ecc15abe716479",
+  "report_recomputation_matches": true,
+  "native_qa_matches_local_verified_plan": true,
+  "sampling_analysis": "Expected from 60-second chunks, 2fps prepared video, 4 frames/chunk; NOT observed image timestamps or evidence visibility.",
+  "runs": {
+    "sm-pilot-v1-qwen3-vl-2b-blind": {
+      "overall": {
+        "n": 5,
+        "mean": 0.2,
+        "ci95_low": 0.0362,
+        "ci95_high": 0.6245,
+        "n_correct": 1,
+        "n_incorrect": 4,
+        "n_abstained": 0,
+        "n_error": 0,
+        "n_pending_judge": 0
+      },
+      "ingest": {
+        "n_envs": 5,
+        "n_sessions": 70,
+        "n_records": 0,
+        "memory_bytes": 0,
+        "total_frames": 0,
+        "sessions_without_frames": 0,
+        "open_media_handles": 0,
+        "fd_audit_available": false
+      },
+      "model_config": {
+        "id": "qwen3-vl-2b",
+        "backend": "hf",
+        "model_path": "/data/quzitsix/models/Qwen3-VL-2B-Instruct",
+        "gpu": "0",
+        "n_frames": 4,
+        "max_side": 768,
+        "max_oracle_frames": 96
+      },
+      "mode": "blind",
+      "commit": "a58e2800a0d8688b924e8cd6080c77968e693073",
+      "suite_sha": "399d60edf1ce7e31964b5a9353644d90e11da35fccae1c074513735cdfa38e26",
+      "media_count": 38,
+      "ingest_seconds": 0.05112213734537363,
+      "query_seconds": 1.0370299108326435,
+      "answers": {
+        "supermemory-9": {
+          "gold": "A",
+          "answer": "C",
+          "abstention_option": "D",
+          "status": "ok",
+          "ingest_seconds": 0.02268044836819172,
+          "latency_ms": 807.0809235796332,
+          "memory_bytes": 0,
+          "frames": 0
+        },
+        "supermemory-14": {
+          "gold": "D",
+          "answer": "C",
+          "abstention_option": "B",
+          "status": "ok",
+          "ingest_seconds": 0.0059777237474918365,
+          "latency_ms": 69.96334623545408,
+          "memory_bytes": 0,
+          "frames": 0
+        },
+        "supermemory-15": {
+          "gold": "C",
+          "answer": "B",
+          "abstention_option": "A",
+          "status": "ok",
+          "ingest_seconds": 0.007854707539081573,
+          "latency_ms": 54.871383123099804,
+          "memory_bytes": 0,
+          "frames": 0
+        },
+        "supermemory-19": {
+          "gold": "D",
+          "answer": "C",
+          "abstention_option": "B",
+          "status": "ok",
+          "ingest_seconds": 0.005124391056597233,
+          "latency_ms": 52.83939465880394,
+          "memory_bytes": 0,
+          "frames": 0
+        },
+        "supermemory-204": {
+          "gold": "C",
+          "answer": "C",
+          "abstention_option": "D",
+          "status": "ok",
+          "ingest_seconds": 0.009484866634011269,
+          "latency_ms": 52.27486323565245,
+          "memory_bytes": 0,
+          "frames": 0
+        }
+      }
+    },
+    "sm-pilot-v1-qwen3-vl-2b-memory": {
+      "overall": {
+        "n": 5,
+        "mean": 0.4,
+        "ci95_low": 0.1176,
+        "ci95_high": 0.7693,
+        "n_correct": 2,
+        "n_incorrect": 3,
+        "n_abstained": 1,
+        "n_error": 0,
+        "n_pending_judge": 0
+      },
+      "ingest": {
+        "n_envs": 5,
+        "n_sessions": 70,
+        "n_records": 70,
+        "memory_bytes": 284941,
+        "total_frames": 280,
+        "sessions_without_frames": 0,
+        "open_media_handles": 0,
+        "fd_audit_available": true
+      },
+      "model_config": {
+        "id": "qwen3-vl-2b",
+        "backend": "hf",
+        "model_path": "/data/quzitsix/models/Qwen3-VL-2B-Instruct",
+        "gpu": "0",
+        "n_frames": 4,
+        "max_side": 768,
+        "max_oracle_frames": 96
+      },
+      "mode": "memory",
+      "commit": "a58e2800a0d8688b924e8cd6080c77968e693073",
+      "suite_sha": "399d60edf1ce7e31964b5a9353644d90e11da35fccae1c074513735cdfa38e26",
+      "media_count": 38,
+      "ingest_seconds": 3420.842866479419,
+      "query_seconds": 2.9892435390502214,
+      "answers": {
+        "supermemory-9": {
+          "gold": "A",
+          "answer": "C",
+          "abstention_option": "D",
+          "status": "ok",
+          "ingest_seconds": 885.1880298396572,
+          "latency_ms": 767.2092029824853,
+          "memory_bytes": 72498,
+          "frames": 72
+        },
+        "supermemory-14": {
+          "gold": "D",
+          "answer": "C",
+          "abstention_option": "B",
+          "status": "ok",
+          "ingest_seconds": 536.1158991837874,
+          "latency_ms": 447.0296734943986,
+          "memory_bytes": 45523,
+          "frames": 44
+        },
+        "supermemory-15": {
+          "gold": "C",
+          "answer": "C",
+          "abstention_option": "A",
+          "status": "ok",
+          "ingest_seconds": 696.1497490564361,
+          "latency_ms": 605.8417027816176,
+          "memory_bytes": 58597,
+          "frames": 56
+        },
+        "supermemory-19": {
+          "gold": "D",
+          "answer": "B",
+          "abstention_option": "B",
+          "status": "ok",
+          "ingest_seconds": 424.2675735298544,
+          "latency_ms": 357.1149641647935,
+          "memory_bytes": 37504,
+          "frames": 36
+        },
+        "supermemory-204": {
+          "gold": "C",
+          "answer": "C",
+          "abstention_option": "D",
+          "status": "ok",
+          "ingest_seconds": 879.121614869684,
+          "latency_ms": 812.0479956269264,
+          "memory_bytes": 70819,
+          "frames": 72
+        }
+      }
+    },
+    "sm-pilot-v1-qwen3-vl-2b-oracle": {
+      "overall": {
+        "n": 5,
+        "mean": 0.2,
+        "ci95_low": 0.0362,
+        "ci95_high": 0.6245,
+        "n_correct": 1,
+        "n_incorrect": 4,
+        "n_abstained": 0,
+        "n_error": 0,
+        "n_pending_judge": 0
+      },
+      "ingest": {
+        "n_envs": 5,
+        "n_sessions": 70,
+        "n_records": 280,
+        "memory_bytes": 0,
+        "total_frames": 280,
+        "sessions_without_frames": 0,
+        "open_media_handles": 0,
+        "fd_audit_available": false
+      },
+      "model_config": {
+        "id": "qwen3-vl-2b",
+        "backend": "hf",
+        "model_path": "/data/quzitsix/models/Qwen3-VL-2B-Instruct",
+        "gpu": "0",
+        "n_frames": 4,
+        "max_side": 768,
+        "max_oracle_frames": 96
+      },
+      "mode": "oracle",
+      "commit": "a58e2800a0d8688b924e8cd6080c77968e693073",
+      "suite_sha": "399d60edf1ce7e31964b5a9353644d90e11da35fccae1c074513735cdfa38e26",
+      "media_count": 38,
+      "ingest_seconds": 10.747178326360881,
+      "query_seconds": 3084.505684696138,
+      "answers": {
+        "supermemory-9": {
+          "gold": "A",
+          "answer": "C",
+          "abstention_option": "D",
+          "status": "ok",
+          "ingest_seconds": 3.07994292024523,
+          "latency_ms": 782164.071762003,
+          "memory_bytes": 0,
+          "frames": 72
+        },
+        "supermemory-14": {
+          "gold": "D",
+          "answer": "C",
+          "abstention_option": "B",
+          "status": "ok",
+          "ingest_seconds": 1.735822849906981,
+          "latency_ms": 483799.9584004283,
+          "memory_bytes": 0,
+          "frames": 44
+        },
+        "supermemory-15": {
+          "gold": "C",
+          "answer": "B",
+          "abstention_option": "A",
+          "status": "ok",
+          "ingest_seconds": 2.1882101045921445,
+          "latency_ms": 595992.8461248055,
+          "memory_bytes": 0,
+          "frames": 56
+        },
+        "supermemory-19": {
+          "gold": "D",
+          "answer": "A",
+          "abstention_option": "B",
+          "status": "ok",
+          "ingest_seconds": 1.3135582953691483,
+          "latency_ms": 405003.5798680037,
+          "memory_bytes": 0,
+          "frames": 36
+        },
+        "supermemory-204": {
+          "gold": "C",
+          "answer": "C",
+          "abstention_option": "D",
+          "status": "ok",
+          "ingest_seconds": 2.4296441562473774,
+          "latency_ms": 817545.2285408974,
+          "memory_bytes": 0,
+          "frames": 72
+        }
+      }
+    },
+    "sm-pilot-v1-qwen3-vl-8b-blind": {
+      "overall": {
+        "n": 5,
+        "mean": 0.6,
+        "ci95_low": 0.2307,
+        "ci95_high": 0.8824,
+        "n_correct": 3,
+        "n_incorrect": 2,
+        "n_abstained": 0,
+        "n_error": 0,
+        "n_pending_judge": 0
+      },
+      "ingest": {
+        "n_envs": 5,
+        "n_sessions": 70,
+        "n_records": 0,
+        "memory_bytes": 0,
+        "total_frames": 0,
+        "sessions_without_frames": 0,
+        "open_media_handles": 0,
+        "fd_audit_available": false
+      },
+      "model_config": {
+        "id": "qwen3-vl-8b",
+        "backend": "hf",
+        "model_path": "/data/quzitsix/models/Qwen3-VL-8B-Instruct",
+        "gpu": "1",
+        "n_frames": 4,
+        "max_side": 768,
+        "max_oracle_frames": 96
+      },
+      "mode": "blind",
+      "commit": "a58e2800a0d8688b924e8cd6080c77968e693073",
+      "suite_sha": "399d60edf1ce7e31964b5a9353644d90e11da35fccae1c074513735cdfa38e26",
+      "media_count": 38,
+      "ingest_seconds": 0.04335909988731146,
+      "query_seconds": 1.1513771750032902,
+      "answers": {
+        "supermemory-9": {
+          "gold": "A",
+          "answer": "A",
+          "abstention_option": "D",
+          "status": "ok",
+          "ingest_seconds": 0.016931241378188133,
+          "latency_ms": 867.5868166610599,
+          "memory_bytes": 0,
+          "frames": 0
+        },
+        "supermemory-14": {
+          "gold": "D",
+          "answer": "C",
+          "abstention_option": "B",
+          "status": "ok",
+          "ingest_seconds": 0.006185981445014477,
+          "latency_ms": 75.22925268858671,
+          "memory_bytes": 0,
+          "frames": 0
+        },
+        "supermemory-15": {
+          "gold": "C",
+          "answer": "B",
+          "abstention_option": "A",
+          "status": "ok",
+          "ingest_seconds": 0.006855612620711327,
+          "latency_ms": 66.09379034489393,
+          "memory_bytes": 0,
+          "frames": 0
+        },
+        "supermemory-19": {
+          "gold": "D",
+          "answer": "D",
+          "abstention_option": "B",
+          "status": "ok",
+          "ingest_seconds": 0.004391035996377468,
+          "latency_ms": 64.30810317397118,
+          "memory_bytes": 0,
+          "frames": 0
+        },
+        "supermemory-204": {
+          "gold": "C",
+          "answer": "C",
+          "abstention_option": "D",
+          "status": "ok",
+          "ingest_seconds": 0.008995228447020054,
+          "latency_ms": 78.1592121347785,
+          "memory_bytes": 0,
+          "frames": 0
+        }
+      }
+    },
+    "sm-pilot-v1-qwen3-vl-8b-memory": {
+      "overall": {
+        "n": 5,
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.4345,
+        "n_correct": 0,
+        "n_incorrect": 5,
+        "n_abstained": 3,
+        "n_error": 0,
+        "n_pending_judge": 0
+      },
+      "ingest": {
+        "n_envs": 5,
+        "n_sessions": 70,
+        "n_records": 70,
+        "memory_bytes": 191628,
+        "total_frames": 280,
+        "sessions_without_frames": 0,
+        "open_media_handles": 0,
+        "fd_audit_available": true
+      },
+      "model_config": {
+        "id": "qwen3-vl-8b",
+        "backend": "hf",
+        "model_path": "/data/quzitsix/models/Qwen3-VL-8B-Instruct",
+        "gpu": "1",
+        "n_frames": 4,
+        "max_side": 768,
+        "max_oracle_frames": 96
+      },
+      "mode": "memory",
+      "commit": "a58e2800a0d8688b924e8cd6080c77968e693073",
+      "suite_sha": "399d60edf1ce7e31964b5a9353644d90e11da35fccae1c074513735cdfa38e26",
+      "media_count": 38,
+      "ingest_seconds": 4418.3294015219435,
+      "query_seconds": 6.660129548050463,
+      "answers": {
+        "supermemory-9": {
+          "gold": "A",
+          "answer": "D",
+          "abstention_option": "D",
+          "status": "ok",
+          "ingest_seconds": 1084.907608896494,
+          "latency_ms": 1730.986887589097,
+          "memory_bytes": 49565,
+          "frames": 72
+        },
+        "supermemory-14": {
+          "gold": "D",
+          "answer": "C",
+          "abstention_option": "B",
+          "status": "ok",
+          "ingest_seconds": 708.4958842461929,
+          "latency_ms": 995.6175405532122,
+          "memory_bytes": 29512,
+          "frames": 44
+        },
+        "supermemory-15": {
+          "gold": "C",
+          "answer": "B",
+          "abstention_option": "A",
+          "status": "ok",
+          "ingest_seconds": 902.9877686304972,
+          "latency_ms": 1348.3937000855803,
+          "memory_bytes": 38917,
+          "frames": 56
+        },
+        "supermemory-19": {
+          "gold": "D",
+          "answer": "B",
+          "abstention_option": "B",
+          "status": "ok",
+          "ingest_seconds": 556.8293262347579,
+          "latency_ms": 756.7176418378949,
+          "memory_bytes": 23347,
+          "frames": 36
+        },
+        "supermemory-204": {
+          "gold": "C",
+          "answer": "D",
+          "abstention_option": "D",
+          "status": "ok",
+          "ingest_seconds": 1165.1088135140017,
+          "latency_ms": 1828.4137779846787,
+          "memory_bytes": 50287,
+          "frames": 72
+        }
+      }
+    },
+    "sm-pilot-v1-qwen3-vl-8b-oracle": {
+      "overall": {
+        "n": 5,
+        "mean": 0.4,
+        "ci95_low": 0.1176,
+        "ci95_high": 0.7693,
+        "n_correct": 2,
+        "n_incorrect": 3,
+        "n_abstained": 1,
+        "n_error": 0,
+        "n_pending_judge": 0
+      },
+      "ingest": {
+        "n_envs": 5,
+        "n_sessions": 70,
+        "n_records": 280,
+        "memory_bytes": 0,
+        "total_frames": 280,
+        "sessions_without_frames": 0,
+        "open_media_handles": 0,
+        "fd_audit_available": false
+      },
+      "model_config": {
+        "id": "qwen3-vl-8b",
+        "backend": "hf",
+        "model_path": "/data/quzitsix/models/Qwen3-VL-8B-Instruct",
+        "gpu": "1",
+        "n_frames": 4,
+        "max_side": 768,
+        "max_oracle_frames": 96
+      },
+      "mode": "oracle",
+      "commit": "a58e2800a0d8688b924e8cd6080c77968e693073",
+      "suite_sha": "399d60edf1ce7e31964b5a9353644d90e11da35fccae1c074513735cdfa38e26",
+      "media_count": 38,
+      "ingest_seconds": 10.314444159157574,
+      "query_seconds": 3096.438374131918,
+      "answers": {
+        "supermemory-9": {
+          "gold": "A",
+          "answer": "A",
+          "abstention_option": "D",
+          "status": "ok",
+          "ingest_seconds": 2.8717320570722222,
+          "latency_ms": 761923.1631280854,
+          "memory_bytes": 0,
+          "frames": 72
+        },
+        "supermemory-14": {
+          "gold": "D",
+          "answer": "C",
+          "abstention_option": "B",
+          "status": "ok",
+          "ingest_seconds": 1.629952766932547,
+          "latency_ms": 473078.4877464175,
+          "memory_bytes": 0,
+          "frames": 44
+        },
+        "supermemory-15": {
+          "gold": "C",
+          "answer": "B",
+          "abstention_option": "A",
+          "status": "ok",
+          "ingest_seconds": 2.1337163858115673,
+          "latency_ms": 624343.0637558922,
+          "memory_bytes": 0,
+          "frames": 56
+        },
+        "supermemory-19": {
+          "gold": "D",
+          "answer": "B",
+          "abstention_option": "B",
+          "status": "ok",
+          "ingest_seconds": 1.2935206480324268,
+          "latency_ms": 389396.60046901554,
+          "memory_bytes": 0,
+          "frames": 36
+        },
+        "supermemory-204": {
+          "gold": "C",
+          "answer": "C",
+          "abstention_option": "D",
+          "status": "ok",
+          "ingest_seconds": 2.3855223013088107,
+          "latency_ms": 847697.0590325072,
+          "memory_bytes": 0,
+          "frames": 72
+        }
+      }
+    }
+  },
+  "sampling": [
+    {
+      "item_id": "supermemory-9",
+      "video_id": "Person_1_session_8_03102026_glasses_1264",
+      "query_cutoff_sec": 1080.0,
+      "choice_types": [
+        "correct",
+        "incorrect",
+        "vague",
+        "incorrect"
+      ],
+      "evidence_spans": [
+        {
+          "start_sec": 248.0,
+          "end_sec": 267.0,
+          "expected_frame_times_sec": [
+            262.5
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "supermemory-14",
+      "video_id": "Person_1_session_8_03102026_glasses_1264",
+      "query_cutoff_sec": 658.0,
+      "choice_types": [
+        "vague",
+        "incorrect",
+        "incorrect",
+        "correct"
+      ],
+      "evidence_spans": [
+        {
+          "start_sec": 120.0,
+          "end_sec": 140.0,
+          "expected_frame_times_sec": [
+            127.5
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "supermemory-15",
+      "video_id": "Person_1_session_8_03102026_glasses_1264",
+      "query_cutoff_sec": 840.0,
+      "choice_types": [
+        "incorrect",
+        "incorrect",
+        "correct",
+        "vague"
+      ],
+      "evidence_spans": [
+        {
+          "start_sec": 294.0,
+          "end_sec": 303.0,
+          "expected_frame_times_sec": []
+        },
+        {
+          "start_sec": 303.0,
+          "end_sec": 329.0,
+          "expected_frame_times_sec": [
+            307.5,
+            322.5
+          ]
+        },
+        {
+          "start_sec": 343.0,
+          "end_sec": 360.0,
+          "expected_frame_times_sec": [
+            352.5
+          ]
+        },
+        {
+          "start_sec": 370.0,
+          "end_sec": 404.0,
+          "expected_frame_times_sec": [
+            382.5,
+            397.5
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "supermemory-19",
+      "video_id": "Person_1_session_8_03102026_glasses_1264",
+      "query_cutoff_sec": 506.0,
+      "choice_types": [
+        "vague",
+        "incorrect",
+        "incorrect",
+        "correct"
+      ],
+      "evidence_spans": [
+        {
+          "start_sec": 210.0,
+          "end_sec": 223.0,
+          "expected_frame_times_sec": [
+            217.5
+          ]
+        },
+        {
+          "start_sec": 275.0,
+          "end_sec": 288.0,
+          "expected_frame_times_sec": [
+            277.5
+          ]
+        },
+        {
+          "start_sec": 480.0,
+          "end_sec": 505.0,
+          "expected_frame_times_sec": [
+            483.5,
+            490.0,
+            496.5,
+            503.0
+          ]
+        }
+      ]
+    },
+    {
+      "item_id": "supermemory-204",
+      "video_id": "Person_1_session_1_01312026_glasses_1266",
+      "query_cutoff_sec": 1040.0,
+      "choice_types": [
+        "vague",
+        "incorrect",
+        "correct",
+        "incorrect"
+      ],
+      "evidence_spans": [
+        {
+          "start_sec": 984.0,
+          "end_sec": 996.0,
+          "expected_frame_times_sec": []
+        },
+        {
+          "start_sec": 1025.0,
+          "end_sec": 1033.0,
+          "expected_frame_times_sec": [
+            1027.5,
+            1032.5
+          ]
+        }
+      ]
+    }
+  ]
+}

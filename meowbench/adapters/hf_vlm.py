@@ -17,8 +17,11 @@ and any genuine state-carrying architecture belongs in its own adapter.
 from __future__ import annotations
 
 import logging
+import json
 import os
+from pathlib import Path
 import sys
+import time
 from typing import Any
 
 from meowbench.adapters.base import (
@@ -51,6 +54,8 @@ class HFVLMAdapter(AdapterBase):
         device_map: str = "auto",
         attn_implementation: str | None = None,
         trust_remote_code: bool = False,
+        trace_file: str | None = None,
+        torch_num_threads: int | None = None,
     ) -> None:
         # Computed outside the f-string: backslashes inside f-string expressions
         # are a syntax error before Python 3.12 (PEP 701 relaxed it), and the
@@ -64,11 +69,18 @@ class HFVLMAdapter(AdapterBase):
         self._max_new_tokens = max_new_tokens
         self._note_max_new_tokens = note_max_new_tokens
         self._temperature = temperature
+        self._trace_file = Path(trace_file) if trace_file else None
+        self._trace_env_id: str | None = None
+        self._trace_context: dict[str, Any] = {}
 
         import torch
         from transformers import AutoProcessor
 
         self._torch = torch
+        if torch_num_threads is not None:
+            if torch_num_threads < 1:
+                raise ValueError("torch_num_threads must be positive")
+            torch.set_num_threads(torch_num_threads)
         resolved = _resolve_dtype(torch, dtype)
         logger.info("loading %s (dtype=%s, device_map=%s)", model_path, dtype, device_map)
 
@@ -92,6 +104,36 @@ class HFVLMAdapter(AdapterBase):
         #: Oracle frames, decoded lazily on the first query and reused for the
         #: rest of the environment. None means "not yet decoded".
         self._oracle_frames: list[Any] | None = None
+        self._trace("ready", torch_version=torch.__version__,
+                    torch_num_threads=torch.get_num_threads(),
+                    processor=type(self._processor).__name__,
+                    image_processor=type(getattr(self._processor, "image_processor", None)).__name__,
+                    device_map={k: str(v) for k, v in
+                                (getattr(self._model, "hf_device_map", None) or {}).items()},
+                    input_device=str(self._input_device), dtype=str(self._model.dtype))
+
+    def _trace(self, event: str, **fields: Any) -> None:
+        """Optional evaluator diagnostics, never read back into the model.
+
+        No images, source annotations or gold answers are written. Notes are
+        model output, not ground truth. Append per event so a running job can
+        be inspected and a resumed process does not erase its earlier trace.
+        """
+        target = getattr(self, "_trace_file", None)
+        if target is None:
+            return
+        target.parent.mkdir(parents=True, exist_ok=True)
+        row = {"schema": "meowbench.hf-trace/1", "event": event,
+               "time_unix": time.time(), "pid": os.getpid(),
+               "mode": self.context_mode, "env_id": self._trace_env_id,
+               **getattr(self, "_trace_context", {}), **fields}
+        with target.open("a", encoding="utf-8") as fh:
+            fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+
+    def _trace_sync(self) -> None:
+        # Synchronise only in diagnostic mode, so normal inference is unchanged.
+        if getattr(self, "_trace_file", None) and self._input_device.type == "cuda":
+            self._torch.cuda.synchronize(self._input_device)
 
     # -- lifecycle -----------------------------------------------------------
 
@@ -99,6 +141,9 @@ class HFVLMAdapter(AdapterBase):
         self._notes.clear()
         self._session_paths.clear()
         self._oracle_frames = None
+        self._trace_env_id = env_id
+        self._trace_context = {}
+        self._trace("env_begin", n_sessions=n_sessions)
 
     def ingest(self, msg: dict[str, Any]) -> dict[str, Any]:
         path = msg.get("video_path")
@@ -122,7 +167,13 @@ class HFVLMAdapter(AdapterBase):
             return {"frames": 0, "note_chars": 0, "error": f"{type(exc).__name__}: {exc}"}
 
     def _ingest_session(self, msg: dict[str, Any], path: str) -> dict[str, Any]:
+        self._trace_context = {"phase": "note", "session_id": msg['session_id'],
+                               "order": msg.get('order')}
+        began = time.perf_counter()
         frames = sample_frames(path, n_frames=self._n_frames, max_side=self._max_side)
+        self._trace("sample", seconds=time.perf_counter()-began,
+                    timestamps_sec=[f.timestamp_sec for f in frames],
+                    image_sizes=[list(f.image.size) for f in frames])
         if not frames:
             logger.warning("no frames decoded from %s", path)
             return {"frames": 0, "note_chars": 0}
@@ -131,6 +182,7 @@ class HFVLMAdapter(AdapterBase):
             [f.image for f in frames], NOTE_PROMPT, max_new_tokens=self._note_max_new_tokens
         )
         self._notes.append(f"[session {msg['session_id']}]\n{note}")
+        self._trace("note", text=note, note_chars=len(note))
         return {"frames": len(frames), "note_chars": len(note)}
 
     def on_ingest_end(self) -> dict[str, Any]:
@@ -149,6 +201,7 @@ class HFVLMAdapter(AdapterBase):
         }
 
     def answer(self, msg: dict[str, Any]) -> dict[str, Any]:
+        self._trace_context = {"phase": "answer", "item_id": msg["item_id"]}
         prompt = build_prompt(msg)
         images: list[Any] = []
         if self.context_mode == "oracle":
@@ -173,6 +226,7 @@ class HFVLMAdapter(AdapterBase):
                     "from priors alone, which is the blind condition"
                 )
         text = self._generate(images, prompt, max_new_tokens=self._max_new_tokens)
+        self._trace("answer", text=text)
         return parse_reply(msg, text)
 
     # -- generation ----------------------------------------------------------
@@ -199,12 +253,13 @@ class HFVLMAdapter(AdapterBase):
         if self._oracle_frames is None:
             frames: list[Any] = []
             for path in self._session_paths:
-                frames.extend(
-                    f.image
-                    for f in sample_frames(
-                        path, n_frames=self._n_frames, max_side=self._max_side
-                    )
-                )
+                began = time.perf_counter()
+                sampled = sample_frames(path, n_frames=self._n_frames, max_side=self._max_side)
+                self._trace("sample", phase="oracle", session_id=Path(path).stem,
+                            seconds=time.perf_counter()-began,
+                            timestamps_sec=[f.timestamp_sec for f in sampled],
+                            image_sizes=[list(f.image.size) for f in sampled])
+                frames.extend(f.image for f in sampled)
             logger.info("oracle: cached %d frame(s) from %d session(s)",
                         len(frames), len(self._session_paths))
             if len(frames) > self._max_oracle_frames:
@@ -235,9 +290,17 @@ class HFVLMAdapter(AdapterBase):
         content.append({"type": "text", "text": prompt})
         messages = [{"role": "user", "content": content}]
 
+        self._trace("encode_start", n_images=len(images), max_new_tokens=max_new_tokens)
+        began = time.perf_counter()
         inputs = self._encode(messages, images)
+        encode_seconds = time.perf_counter()-began
         _assert_images_reached_the_model(inputs, len(images))
+        self._trace("encode_done", seconds=encode_seconds,
+                    prompt_tokens=int(inputs["input_ids"].shape[1]))
+        began = time.perf_counter()
         inputs = self._to_model_device(inputs)
+        self._trace_sync()
+        transfer_seconds = time.perf_counter()-began
 
         gen: dict[str, Any] = {"max_new_tokens": max_new_tokens}
         if self._temperature and self._temperature > 0:
@@ -248,10 +311,24 @@ class HFVLMAdapter(AdapterBase):
         prompt_len = int(inputs["input_ids"].shape[1])
         logger.debug("prompt is %d token(s) for %d image(s)", prompt_len, len(images))
 
+        self._trace("generate_start", n_images=len(images), prompt_tokens=prompt_len)
+        began = time.perf_counter()
         with self._torch.inference_mode():
             output = self._model.generate(**inputs, **gen)
-
-        return self._decode(output, prompt_len)
+        self._trace_sync()
+        generate_seconds = time.perf_counter()-began
+        began = time.perf_counter()
+        text = self._decode(output, prompt_len)
+        generated = int(output.shape[1])
+        if not getattr(self._model.config, "is_encoder_decoder", False):
+            generated -= prompt_len
+        self._trace("generate_done", encode_seconds=encode_seconds,
+                    transfer_seconds=transfer_seconds, generate_seconds=generate_seconds,
+                    decode_seconds=time.perf_counter()-began,
+                    n_images=len(images), prompt_tokens=prompt_len,
+                    output_tokens=generated, max_new_tokens=max_new_tokens,
+                    at_token_limit=generated >= max_new_tokens)
+        return text
 
     def _encode(self, messages: list[dict[str, Any]], images: list[Any]) -> Any:
         """Render the chat template and tokenise, preferring the fused call.
@@ -488,6 +565,8 @@ def main(argv: list[str] | None = None) -> int:
         help="e.g. flash_attention_2 or sdpa, if installed",
     )
     parser.add_argument("--trust-remote-code", action="store_true")
+    parser.add_argument("--trace-file", help="Optional JSONL of sampling, timing and model notes; evaluator only")
+    parser.add_argument("--torch-num-threads", type=int, help="Optional CPU intra-op thread count; unset preserves defaults")
     args = parser.parse_args(argv)
     configure_logging(args.log_level)
 
@@ -505,6 +584,8 @@ def main(argv: list[str] | None = None) -> int:
         device_map=args.device_map,
         attn_implementation=args.attn_implementation,
         trust_remote_code=args.trust_remote_code,
+        trace_file=args.trace_file,
+        torch_num_threads=args.torch_num_threads,
     )
     return adapter.run()
 

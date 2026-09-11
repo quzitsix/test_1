@@ -1,0 +1,21 @@
+# First inspect Q9 at the original 4-frame / 900-token settings.
+# Uses the existing prepared video and original QA; no download or recutting.
+suite: /data/quzitsix/meow-releases/supermemory-pilot-v2
+runs_dir: runs
+scratch_dir: /data/quzitsix/meow-scratch
+workers: 1
+tracks: [memory, oracle]
+env_ids: [sm-7a3e7974f1304cc9c19b]
+models:
+  - id: qwen3-vl-8b
+    backend: hf
+    model_path: /data/quzitsix/models/Qwen3-VL-8B-Instruct
+    gpu: '1'
+    n_frames: 4
+    max_side: 768
+    max_oracle_frames: 96
+    max_new_tokens: 512
+    note_max_new_tokens: 900
+    diagnostic_trace: true
+    # Leave CPU threads unchanged for the first diagnostic. The trace records
+    # the effective default. A separate ablation may set torch_num_threads: 8.

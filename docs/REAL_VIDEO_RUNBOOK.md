@@ -287,4 +287,10 @@ history 从原条目的 `video_ids` 选择提问之前的录制，按可靠的 U
 
 另外已读取官方完整问答文件并生成上面的 5 题计划；HTML 的数据嵌入、上一题/下一题、筛选、空结果和答案显示逻辑已检查。用户已确认服务器页面能播放视频，自动化浏览器目视验收未完成。
 
-2026-09-11，用户服务器日志报告 `Completed tag: sm-pilot-v1`，实际 suite 为 `supermemory-pilot-v2`（5 题、5 环境、跨录制 0/5，SHA256 `399d60edf1ce7e31964b5a9353644d90e11da35fccae1c074513735cdfa38e26`）。已收到 memory−blind 摘要：2B 为 +0.200，8B 为 −0.600；尚未取得六条轨道的完整预测和准确率，下一步是原视频与逐题回答核对。5 对样本的近似区间和星号不作为可靠的显著性结论，也不能据此宣称长期记忆能力。进度日志和只读监视器的相关回归为 `54 passed, 1 skipped`。
+2026-09-11，已收到服务器完整归档，实际 suite 为 `supermemory-pilot-v2`（5 题、5 环境、跨录制 0/5，SHA256 `399d60edf1ce7e31964b5a9353644d90e11da35fccae1c074513735cdfa38e26`）。六份报告重新评分完全一致：2B 的 blind/memory/oracle 为 20%/40%/20%，8B 为 60%/0%/40%。5 对样本的近似区间和星号不作为可靠的显著性结论，也不能据此宣称长期记忆能力。进度日志和只读监视器的相关回归为 `54 passed, 1 skipped`。
+
+完整结果、时间成本、采样覆盖分析及下一轮服务器命令见 [首轮核查报告](reports/supermemory-pilot-v1.md)。新增 `configs/experiments/supermemory_diagnostic.yaml` 只跑 Q9，可复用已准备视频。
+
+诊断参数：HF 模型配置中 `diagnostic_trace: true` 将记录写到对应 run 的 `adapter_trace.jsonl`；`max_new_tokens`、`note_max_new_tokens`、`torch_num_threads` 可显式设置，未设置时保留原 adapter 默认值。trace 不传入被测模型，也不加入 gold，记录的笔记是模型输出。`scripts/summarize_hf_trace.py <文件...>` 只读汇总。默认不产生诊断文件；其他黑盒系统无需实现这一内部调试功能。
+
+顶层 `env_ids: [环境ID]` 用于定点复现；被选中的原题及完整前缀不变，执行签名保存 env/item 列表，并标注为 filtered。修改选择、参数或代码后使用新 tag。
