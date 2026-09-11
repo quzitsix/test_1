@@ -36,13 +36,16 @@ def main(argv=None):
     add_video_arguments(parser)
     parser.add_argument("--suite", type=Path, required=True)
     parser.add_argument("--out", type=Path, required=True, help="new experiment directory")
-    parser.add_argument("--arms", nargs="+", choices=("blind", "memory", "base-read"),
+    parser.add_argument("--arms", nargs="+", choices=("blind", "memory", "base-read", "notes", "oracle"),
                         default=["blind", "memory"])
     parser.add_argument("--limit", type=int, default=8, help="pilot items; 0 means all items")
     parser.add_argument("--env", nargs="+", help="optional environment IDs")
     parser.add_argument("--handshake-timeout", type=float, default=600)
     parser.add_argument("--ingest-timeout", type=float, default=3600)
     parser.add_argument("--query-timeout", type=float, default=300)
+    parser.add_argument("--trace-teacher", action="store_true",
+                        help="persist evaluator-only observations/QA; never fed back to memory")
+    parser.add_argument("--max-oracle-frames", type=int, default=96)
     args = parser.parse_args(argv)
     config = config_from_args(args)
     if args.limit < 0 or len(set(args.arms)) != len(args.arms):
@@ -68,6 +71,10 @@ def main(argv=None):
         "suite": str(args.suite.resolve()), "suite_sha": suite.suite_sha,
         "items": [item.item_id for item in suite.items],
         "arms": args.arms, "config": asdict(config),
+        "max_oracle_frames": args.max_oracle_frames,
+        "trace_teacher": args.trace_teacher,
+        "sampling_comparison": "TTT samples each chunk from its start; HF baselines sample "
+                               "session midpoints. Match counts, but these are not identical frames.",
         "note": "max_chunks>0 observes only a prefix per session; not full-history performance",
     }, indent=2), encoding="utf-8")
     flag_args = []
@@ -83,12 +90,26 @@ def main(argv=None):
     for arm in args.arms:
         directory = root / arm
         directory.mkdir()
-        mode = ContextMode.BLIND if arm == "blind" else ContextMode.MEMORY
+        mode = (ContextMode.BLIND if arm == "blind" else
+                ContextMode.ORACLE if arm == "oracle" else ContextMode.MEMORY)
         command = [sys.executable, "-m", "meowbench.adapters.ttt_lact", "--backend", "lora",
                    "--context-mode", mode.value, "--system-id", f"video-lora-{arm}",
                    "--metrics-path", str(directory / "ttt_metrics.jsonl"), *flag_args]
         if arm == "base-read":
             command.append("--read-base")
+        if args.trace_teacher and arm in {"memory", "base-read"}:
+            command += ["--trace-file", str(directory / "teacher_trace.jsonl")]
+        if arm in {"notes", "oracle"}:
+            command = [sys.executable, "-m", "meowbench.adapters.hf_vlm",
+                       "--model-path", config.model_path, "--context-mode", mode.value,
+                       "--system-id", f"frozen-vlm-{arm}", "--device-map", config.device,
+                       "--dtype", config.dtype, "--attn-implementation", config.attn_implementation,
+                       "--n-frames", str(config.frames_per_chunk), "--max-side", str(config.max_side),
+                       "--max-new-tokens", str(config.max_new_tokens),
+                       "--note-max-new-tokens", str(config.teacher_max_new_tokens),
+                       "--max-oracle-frames", str(args.max_oracle_frames)]
+            if config.local_files_only:
+                os.environ["HF_HUB_OFFLINE"] = "1"
         run_id = re.sub(r"[^A-Za-z0-9_.-]", "_", root.name) + "-" + arm
         cfg = RunConfig(
             run_id=run_id, suite=suite.name, suite_sha=suite.suite_sha,

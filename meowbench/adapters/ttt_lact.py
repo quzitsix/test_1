@@ -343,7 +343,7 @@ class LoRAVideoAdapter(AdapterBase):
     """
 
     def __init__(self, config, *, context_mode="memory", system_id=None,
-                 read_base=False, metrics_path=None, engine=None):
+                 read_base=False, metrics_path=None, trace_file=None, engine=None):
         if context_mode not in {"memory", "blind"}:
             raise ValueError("LoRA supports memory/blind; use hf_vlm for the video oracle")
         super().__init__(system_id or f"video-lora-{'base-read' if read_base else context_mode}")
@@ -354,7 +354,7 @@ class LoRAVideoAdapter(AdapterBase):
         if engine is None:
             try:
                 from ttt_frame.videoqa import VideoTTTMemory
-                engine = VideoTTTMemory(config)
+                engine = VideoTTTMemory(config, trace_file=trace_file)
             except ImportError as exc:
                 raise ImportError('install the sibling repo: pip install -e "../TTT_frame[video]"') from exc
         self.engine = engine
@@ -366,6 +366,7 @@ class LoRAVideoAdapter(AdapterBase):
     def on_env_begin(self, env_id, n_sessions):
         self.engine.reset()
         self._env_id = env_id
+        self.engine.set_trace_context(env_id=env_id)
 
     def ingest(self, msg):
         if self.context_mode == "blind":
@@ -409,12 +410,13 @@ def _lora_main(argv):
     parser.add_argument("--read-base", action="store_true",
                         help="same ingestion/training budget, but disable LoRA during answering")
     parser.add_argument("--metrics-path", help="optional JSONL of numeric ingestion diagnostics")
+    parser.add_argument("--trace-file", help="optional evaluator-only teacher text and losses")
     add_video_arguments(parser)
     args = parser.parse_args(argv)
     configure_logging(args.log_level)
     return LoRAVideoAdapter(
         config_from_args(args), context_mode=args.context_mode, system_id=args.system_id,
-        read_base=args.read_base, metrics_path=args.metrics_path,
+        read_base=args.read_base, metrics_path=args.metrics_path, trace_file=args.trace_file,
     ).run()
 
 
