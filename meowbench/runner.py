@@ -223,12 +223,26 @@ class Runner:
             Path(cfg.scratch_dir) / cfg.run_id, env.env_id, revocable=revocable
         )
         started = time.monotonic()
+        logger.info(
+            "env %s START: mode=%s, sessions=%d, queries=%d",
+            env.env_id, cfg.context_mode.value, len(sessions), len(items),
+        )
         with area:
             proc.env_begin(env.env_id, len(sessions))
             total_frames = 0
             blank_sessions = 0
-            for session in sessions:
+            for index, session in enumerate(sessions, 1):
+                session_started = time.monotonic()
+                logger.info(
+                    "env %s session %d/%d %s: staging",
+                    env.env_id, index, len(sessions), session.session_id,
+                )
                 msg = self._ingest_msg(session, area)
+                logger.info(
+                    "env %s session %d/%d: ingest START (staging %.2fs)",
+                    env.env_id, index, len(sessions), time.monotonic()-session_started,
+                )
+                ingest_started = time.monotonic()
                 try:
                     stats = proc.ingest(msg)
                 except AdapterCrashed:
@@ -256,6 +270,13 @@ class Runner:
                 # session count, contradicting the very "frames must be
                 # non-zero" check the report tells the operator to make.
                 frames = stats.get("frames")
+                logger.info(
+                    "env %s session %d/%d: ingest DONE in %.2fs, frames=%s, "
+                    "note_chars=%s, deferred=%s, error=%s",
+                    env.env_id, index, len(sessions), time.monotonic()-ingest_started,
+                    frames, stats.get("note_chars"), bool(stats.get("deferred")),
+                    bool(stats.get("error")),
+                )
                 if stats.get("deferred"):
                     continue
                 if isinstance(frames, int):
@@ -269,6 +290,7 @@ class Runner:
                             session.session_id,
                         )
 
+            logger.info("env %s: ingest_end START", env.env_id)
             ack = proc.ingest_end(env.env_id)
             env_run.ingest_seconds = time.monotonic() - started
             env_run.memory_bytes = ack.get("memory_bytes")
@@ -280,6 +302,11 @@ class Runner:
                 total_frames = deferred_frames
             env_run.total_frames = total_frames
             env_run.sessions_without_frames = blank_sessions
+            logger.info(
+                "env %s: ingest_end DONE, elapsed=%.2fs, frames=%d, records=%s, bytes=%s",
+                env.env_id, env_run.ingest_seconds, total_frames,
+                env_run.n_records, env_run.memory_bytes,
+            )
 
             if cfg.context_mode is ContextMode.MEMORY:
                 report = area.revoke(pid=proc.pid)
@@ -296,6 +323,7 @@ class Runner:
                 self._ask(proc, item, system_info, env_run, summary, writer)
 
             proc.env_end()
+            logger.info("env %s DONE in %.2fs", env.env_id, time.monotonic()-started)
 
     def _ingest_msg(self, session, area: StagingArea) -> IngestMsg:
         """Build the ingest payload for the configured context mode.
@@ -337,6 +365,7 @@ class Runner:
         answer = answer_text = raw = error = None
         latency_ms = None
         usage: dict[str, int] = {}
+        logger.info("item %s: query START", item.item_id)
         try:
             reply = proc.query(item.to_query())
             answer, answer_text, raw = reply.answer, reply.answer_text, reply.raw
@@ -364,6 +393,8 @@ class Runner:
             status=status, answer=answer, answer_text=answer_text,
             raw=raw, error=error, latency_ms=latency_ms, usage=usage,
         )
+        logger.info("item %s: query DONE status=%s, elapsed=%.2fs",
+                    item.item_id, status.value, time.perf_counter()-started)
 
     def _record_env_failure(
         self,

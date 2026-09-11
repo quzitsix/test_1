@@ -172,6 +172,19 @@ tail -f logs/sm-pilot-v1.log
 
 一个模型异常不会停止另一个模型；每轨有独立日志与数据库。成功结束会输出 `DONE`；错误、不完整预测、零帧或撤销争议会输出 `FAIL`，不能把这些情况当成正常低分。这个检查要求本次视觉 adapter 报告 frames/n_records；自定义系统需要遵守文档中的统计约定。
 
+新版本的每轨 `run.log` 会逐环境、逐片段打印 staging、ingest START/DONE、耗时、帧数与笔记字符数，随后打印 query START/DONE；不会输出 gold 或笔记正文。默认 5 题虽只需准备 38 个不同片段，按各题独立的观察边界运行时，每个模型的 memory 共处理 70 个片段、生成 70 条笔记，每条最多 900 tokens，因此不能按“只回答 5 次”估算耗时。
+
+也可以另开终端，只读查看预测数量、最近环境的观察耗时及暂存文件：
+
+```bash
+python scripts/watch_real_run.py --tag sm-pilot-v1 \
+  --suite /data/quzitsix/meow-releases/supermemory-pilot-v2 --interval 15
+```
+
+`staged=12/18` 表示当前环境已经暂存 12 个文件，包含正在处理的片段，不等于成功生成了 12 条笔记。记录数增加或环境目录变化可用于观察活动；没有变化本身不能证明死锁。按 Ctrl+C 只停止这个只读监视器。
+
+实验运行期间保持代码版本不变：主脚本会依次启动新的轨道子进程，途中 git pull 可能让不同轨道用上不同实现。等本轮完成后再更新；新版本使用新 tag。已结束的旧运行仍可 report 和生成 HTML，无需重跑。
+
 ## 7. 查看输出、恢复与导出 HTML
 
 ```bash
@@ -196,6 +209,19 @@ python scripts/make_real_review.py \
 每个 `runs/<tag>-<模型>-<轨道>/` 包含 `execution.json`（代码版本/参数/题库/媒体指纹）、`run.log`、`predictions.jsonl`、`results.sqlite`、`report.json`。重新执行同一个 tag 会跳过已有成功项，错误项再试；若“成功”项对应零帧等质量问题，请修复后使用**新 tag**，不要把它们当作能自动重新计算的错误项。配置、代码 commit 或题库指纹改变时拒绝复用 tag；这避免再次出现重复预测把 28 题统计成 56 题。
 
 首轮只检查链路、个别题的实际观察和回答。真实视频可能因为抽样稀疏或记笔记丢信息而低分；不要求 oracle 必然高于 memory。`oracle` 只是保留媒体、受帧数预算限制的基线，不是数学上限。几道题的区间不能支撑论文结论，同一家庭/录制内的题也并非独立样本。
+
+本次服务器实际使用 `supermemory-pilot-v2`，生成结果页面时将上面的 `--suite` 指向 v2。页面地址为 `http://127.0.0.1:8765/supermemory-results.html`（VSCode 转发的本地端口不同则替换端口）。先检查 8B 中 blind 正确、memory 错误的题，再对照 oracle：oracle 能答对时，优先调查笔记和基于笔记的回答；两条视觉轨都错时，先核查采样画面与原始证据。以上是排查方向，不能仅靠得分定位原因。本轮没有保存笔记全文，不能事后直接确认某一条笔记是否遗漏或编造了内容。
+
+需要离线分析时，只打包结果，不打包模型或视频：
+
+```bash
+tar -czf sm-pilot-v1-results.tgz \
+  logs/sm-pilot-v1.log \
+  runs/sm-pilot-v1-*/predictions.jsonl \
+  runs/sm-pilot-v1-*/execution.json \
+  runs/sm-pilot-v1-*/report.json \
+  runs/sm-pilot-v1-*/run.log
+```
 
 ## 8. 接 API 或其他论文架构
 
@@ -259,4 +285,6 @@ history 从原条目的 `video_ids` 选择提问之前的录制，按可靠的 U
 
 随后针对预处理性能修复，数据准备、媒体及 Python 兼容性测试共 `151 passed`。本地 6 秒合成 1080p/30 fps H.264 样本从 6.715 秒降至 0.707 秒：仍解码 180 帧，RGB 转换从 180 次降到 12 次，输出 12 帧逐像素一致。这只是该小样本的 CPU 测量，不是服务器真实长视频的耗时承诺。
 
-另外已读取官方完整问答文件并生成上面的 5 题计划；HTML 的数据嵌入、上一题/下一题、筛选、空结果和答案显示逻辑已检查。当前未完成浏览器目视验收，也尚未得到你服务器上这批 SuperMemory 视频的真实模型分数。按第 4–7 步运行后，实际视频、原题证据与模型回答才会在同一页面中展示。
+另外已读取官方完整问答文件并生成上面的 5 题计划；HTML 的数据嵌入、上一题/下一题、筛选、空结果和答案显示逻辑已检查。用户已确认服务器页面能播放视频，自动化浏览器目视验收未完成。
+
+2026-09-11，用户服务器日志报告 `Completed tag: sm-pilot-v1`，实际 suite 为 `supermemory-pilot-v2`（5 题、5 环境、跨录制 0/5，SHA256 `399d60edf1ce7e31964b5a9353644d90e11da35fccae1c074513735cdfa38e26`）。已收到 memory−blind 摘要：2B 为 +0.200，8B 为 −0.600；尚未取得六条轨道的完整预测和准确率，下一步是原视频与逐题回答核对。5 对样本的近似区间和星号不作为可靠的显著性结论，也不能据此宣称长期记忆能力。进度日志和只读监视器的相关回归为 `54 passed, 1 skipped`。
