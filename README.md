@@ -1,7 +1,7 @@
 # MEOWBench
 
 服务器数据下载与处理的当前入口：[安全补全操作](docs/SERVER_DATA_RUNBOOK.md)
-与 [2026-09-14 数据状态](docs/SERVER_DATA_STATUS.md)。下载支持直连、官方校验与磁盘余量保护。
+与 [当前数据状态](docs/SERVER_DATA_STATUS.md)。下载支持直连、官方校验与磁盘余量保护。
 
 ## 真实视频入口（2026-09-11）
 

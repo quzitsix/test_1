@@ -1,6 +1,6 @@
 # 服务器数据补全
 
-2026-09-14。此文替代旧下载文档中的服务器环境、磁盘预算和直接下载命令。
+2026-09-14 启动，2026-09-15 更新。此文替代旧下载文档中的服务器环境、磁盘预算和直接下载命令。
 实际完成数量见 [数据状态](SERVER_DATA_STATUS.md)。原始数据及处理结果不提交 Git。
 
 ## 服务器与边界
@@ -12,6 +12,7 @@
   本次只运行 CPU 数据任务，没有申请或占用 GPU。`/mnt/ssd4t` 不作为已挂载的存储使用。
 - urllib 下载逐块检查 `/data` 可用空间，EPIC aria2 下载每 5 秒检查，默认保留 **80 GiB**。
   多个任务共享这一余量，并各有总量上限。
+  2026-09-15 用户明确批准本轮 EPIC 续传改为 **70 GiB**，其余任务没有改动。
   这是本任务的停止阈值，不能阻止其他用户继续消耗共享空间；触发后先完成已有文件校验。
 - 只用 CPU 处理视频；SuperMemory prepare 解码线程数为 4，长任务用低 CPU 优先级。无 sudo、系统配置修改或 GPU 模型重跑。
 - 默认保留原始文件；压缩包选择性解压到另一个目录。本次仅依照用户后续明确授权，
@@ -53,14 +54,19 @@ python scripts/fetch_epic_parallel.py \
   --root /data/quzitsix/epic \
   --wanted configs/datasets/epic_videos.txt \
   --manifest /data/quzitsix/epic/download-manifest-parallel-20260914.json \
-  --max-download-gib 25 --reserve-gib 80 --dry-run
+  --max-download-gib 25 --reserve-gib 70 --dry-run
 # 核对大小后去掉 --dry-run 执行；可以重跑恢复。
 ```
+
+以上 70 GiB 为用户于 2026-09-15 批准的本轮 EPIC 续传参数。最新检查共享盘仅余约
+47.898 GiB；现有脚本恢复剩余 4 项的保守预检要求约 74.730 GiB，因此尚未启动下载。
+恢复前需要重新检查可用空间，本次续传请求记录在
+`/data/quzitsix/epic/resume-request-20260915.json`。
 
 官方 MD5 清单固定在下载脚本仓库版本 `4f11fb2b579833f360c3c7bb917bf1e24a9787b5`，
 首次自动下载并检查固定 SHA256。`aria2c` 每次最多下载 2 个文件、每文件 8 个连接，
 总速度上限 16 MiB/s；每 5 秒检查磁盘，在保留线加 128 MiB 缓冲处停止本次任务。
-`--reserve-gib` 可显式设置正有限值，默认仍为 80；参数可配置不代表本轮已降低保留线。
+`--reserve-gib` 可显式设置正有限值，工具默认仍为 80；本轮 EPIC 仅通过显式参数使用已批准的 70。
 完整文件经 MD5 和解码检查后才发布到 `videos/`，恢复状态在私有 `.aria2-downloads/` 中。
 重新执行同一命令继续下载；不要同时运行单连接和分片两种下载器。
 
