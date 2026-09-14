@@ -10,6 +10,7 @@ import hashlib
 import json
 import math
 import re
+import shutil
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -201,16 +202,61 @@ def find_videos(root: Path, ids: list[str]) -> dict[str, Path]:
 
 
 def prepare_suite(plan: dict, video_root: Path, out: Path, *, chunk_seconds: float = 60,
-                  sample_fps: int = 2, max_side: int = 768, decode_threads: int = 4) -> object:
+                  sample_fps: int = 2, max_side: int = 768, decode_threads: int = 4,
+                  min_free_bytes: int = 0, workers: int = 1) -> object:
     """Physically limit media before staging. No future video path reaches an adapter."""
     from meowbench.media import probe_duration
     from meowbench.datasets.video_windows import render_window
     import time
     if (not math.isfinite(chunk_seconds) or chunk_seconds <= 0 or sample_fps < 1
-            or max_side < 64 or decode_threads < 1):
+            or max_side < 64 or decode_threads < 1 or type(min_free_bytes) is not int
+            or min_free_bytes < 0 or type(workers) is not int or not 1 <= workers <= 4):
         raise ValueError("Invalid video preparation settings")
     if out.exists():
         raise FileExistsError(f"Output already exists: {out}. Use a new release directory.")
+
+    def check_space(needed: int = 0) -> None:
+        if not min_free_bytes:
+            return
+        directory = out.absolute()
+        while not directory.exists():
+            directory = directory.parent
+        if shutil.disk_usage(directory).free - needed < min_free_bytes:
+            raise ValueError("Insufficient free space for video preparation and reserved disk floor")
+
+    def clip_budget(duration: float) -> int:
+        # Uncompressed RGB plus container overhead bounds one encoded clip
+        # conservatively without changing its sampling or encoding settings.
+        return math.ceil(duration * sample_fps) * max_side ** 2 * 3 + 1024 ** 2
+
+    def render_clip(vid, start, stop, relative, label, *, reservation, cancelled=None):
+        def check_active():
+            if cancelled is not None and cancelled.is_set():
+                raise RuntimeError("Parallel preparation cancelled after another clip failed")
+        check_active()
+        check_space(reservation)
+        target = out / relative
+        print(f"{label} START {vid}", flush=True)
+        began = time.monotonic()
+
+        def progress(position, encoded):
+            # render_window invokes this every five seconds, including preroll.
+            check_active()
+            check_space()
+            phase = "seek preroll" if position < start else "decoding"
+            print(f"{label} {phase}: source {position:.1f}s, "
+                  f"output {encoded} frames, elapsed {time.monotonic()-began:.1f}s", flush=True)
+
+        stats = render_window(paths[vid], target, start=start, end=stop,
+                              fps=sample_fps, max_side=max_side,
+                              decode_threads=decode_threads, progress=progress)
+        check_space()
+        checksum = file_sha256(target)
+        print(f"{label} DONE in {time.monotonic()-began:.1f}s; "
+              f"decoded {stats['decoded_frames']}, converted {stats['converted_frames']}, "
+              f"output {stats['output_frames']}", flush=True)
+        return checksum
+
     paths = find_videos(video_root, [v["video_id"] for v in plan["videos"]])
     missing = sorted(set(v["video_id"] for v in plan["videos"]) - set(paths))
     if missing:
@@ -226,9 +272,67 @@ def prepare_suite(plan: dict, video_root: Path, out: Path, *, chunk_seconds: flo
         current = next(s for s in ex["recordings"] if s["video_id"] == primary)
         if current["end_sec"] > durations[primary] + .1:
             raise ValueError(f"Q{r['question_id']}: query boundary exceeds video duration")
+    longest_first_clip = min(chunk_seconds, max((
+        min(rec["end_sec"], durations[rec["video_id"]])
+        for ex in plan["examples"] for rec in ex["recordings"]), default=0))
+    jobs = {}
+    if workers > 1:
+        # Deduplicate before scheduling: each output has exactly one writer.
+        for ex in plan["examples"]:
+            for rec in ex["recordings"]:
+                vid = rec["video_id"]
+                end = min(rec["end_sec"], durations[vid])
+                start = 0.0
+                while start < end - .001:
+                    stop = min(start + chunk_seconds, end)
+                    sid = "clip-" + digest([vid, start, stop, sample_fps, max_side])[:24]
+                    relative = f"media/{sid}.mp4"
+                    jobs.setdefault(relative, (vid, start, stop))
+                    start = stop
+    reservation = (sum(sorted((clip_budget(stop-start) for _, start, stop in jobs.values()),
+                              reverse=True)[:workers]) if workers > 1
+                   else clip_budget(longest_first_clip))
+    check_space(reservation)
     out.mkdir(parents=True)
     items, envs, media_index = [], {}, {}
     manifest_media = {}
+    if jobs:
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+        from threading import Event, Lock
+        cancelled, failure_lock, failures = Event(), Lock(), []
+
+        def render_job(relative, job, job_index):
+            vid, start, stop = job
+            label = f"  clip {job_index}/{len(jobs)} [{start:.1f}, {stop:.1f})s"
+            try:
+                checksum = render_clip(vid, start, stop, relative, label,
+                                       reservation=reservation, cancelled=cancelled)
+                return relative, checksum
+            except BaseException as exc:
+                with failure_lock:
+                    if not cancelled.is_set():
+                        failures.append(exc)
+                    cancelled.set()
+                raise
+
+        print(f"Preparing {len(jobs)} unique clips with {workers} workers", flush=True)
+        # Context exit waits for active render_window finally blocks. No worker
+        # may keep writing after an exception or Ctrl-C returns to the caller.
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            futures = []
+            try:
+                for job_index, (relative, job) in enumerate(jobs.items(), 1):
+                    futures.append(executor.submit(render_job, relative, job, job_index))
+                for future in as_completed(futures):
+                    relative, checksum = future.result()
+                    manifest_media[relative] = checksum
+            except BaseException as exc:
+                cancelled.set()
+                for future in futures:
+                    future.cancel()
+                if isinstance(exc, Exception) and failures:
+                    raise failures[0] from None
+                raise
     for ex in plan["examples"]:
         row = ex["source"]
         recordings = [{**s, "end_sec": min(s["end_sec"], durations[s["video_id"]])}
@@ -250,22 +354,8 @@ def prepare_suite(plan: dict, video_root: Path, out: Path, *, chunk_seconds: flo
                     target = out / relative
                     label = f"  clip {len(refs)+1}/{n_clips} [{start:.1f}, {stop:.1f})s"
                     if relative not in manifest_media:
-                        print(f"{label} START {vid}", flush=True)
-                        began = time.monotonic()
-
-                        def progress(position, encoded):
-                            phase = "seek preroll" if position < start else "decoding"
-                            print(f"{label} {phase}: source {position:.1f}s, "
-                                  f"output {encoded} frames, elapsed {time.monotonic()-began:.1f}s",
-                                  flush=True)
-
-                        stats = render_window(paths[vid], target, start=start, end=stop,
-                                              fps=sample_fps, max_side=max_side,
-                                              decode_threads=decode_threads, progress=progress)
-                        manifest_media[relative] = file_sha256(target)
-                        print(f"{label} DONE in {time.monotonic()-began:.1f}s; "
-                              f"decoded {stats['decoded_frames']}, converted {stats['converted_frames']}, "
-                              f"output {stats['output_frames']}", flush=True)
+                        manifest_media[relative] = render_clip(vid, start, stop, relative, label,
+                                                              reservation=clip_budget(stop-start))
                     else:
                         print(f"{label} REUSED", flush=True)
                     refs.append(SessionRef(session_id=sid, order=len(refs),
@@ -307,6 +397,7 @@ def prepare_suite(plan: dict, video_root: Path, out: Path, *, chunk_seconds: flo
             provenance=Provenance(miner="supermemory-native/1", dataset="SuperMemory-VQA",
                                   license=LICENSE, gt_exactness=GtExactness.DERIVED),
             audit=Audit(notes="Official answer key preserved; no independent human re-audit.")))
+    check_space(1024 ** 2)
     (out / "source_plan.json").write_text(json.dumps(plan, ensure_ascii=False, indent=2), encoding="utf-8")
     (out / "media_index.json").write_text(json.dumps(media_index, indent=2), encoding="utf-8")
     return write_suite(out, items, envs, name=out.name, extra={
@@ -314,7 +405,9 @@ def prepare_suite(plan: dict, video_root: Path, out: Path, *, chunk_seconds: flo
         "source": SOURCE, "source_sha256": plan["source_sha256"], "plan_sha256": plan["plan_sha256"],
         "license": LICENSE, "media_sha256": manifest_media,
         "preparation": {"chunk_seconds": chunk_seconds, "sample_fps": sample_fps,
-                        "max_side": max_side, "decode_threads": decode_threads},
+                        "max_side": max_side, "decode_threads": decode_threads,
+                        **({"min_free_bytes": min_free_bytes} if min_free_bytes else {}),
+                        **({"workers": workers} if workers > 1 else {})},
         "notes": "Real video, original QA. Visual answerable subset, not the full official benchmark. "
                  "Chunks are not separate capture sessions. Frames sampled independently of answer evidence. "
                  "No audio, transcripts, gaze or geometry are sent. Single-session removes earlier recordings."})

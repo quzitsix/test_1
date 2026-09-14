@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import os
 from pathlib import Path
 import sys
@@ -62,6 +63,10 @@ def main() -> int:
     prep.add_argument("--max-side", type=int, default=768)
     prep.add_argument("--decode-threads", type=int, default=4,
                       help="CPU video decoder threads (default: 4); no GPU needed")
+    prep.add_argument("--min-free-gib", type=float, default=0,
+                      help="Retain this disk space during preparation (default: disabled)")
+    prep.add_argument("--workers", type=int, choices=range(1, 5), default=1,
+                      help="Concurrent clip preparation tasks (default: 1; maximum: 4)")
     check = commands.add_parser("verify")
     check.add_argument("--suite", type=Path, required=True)
     args = p.parse_args()
@@ -94,10 +99,14 @@ def main() -> int:
                             local_dir=args.root, revision=args.revision)
         return 0
     if args.cmd == "prepare":
+        if (not math.isfinite(args.min_free_gib * 1024 ** 3) or args.min_free_gib < 0):
+            p.error("--min-free-gib must be finite and nonnegative")
         obj = read_plan(args.plan)
         suite = prepare_suite(obj, args.video_root, args.out, chunk_seconds=args.chunk_seconds,
                               sample_fps=args.sample_fps, max_side=args.max_side,
-                              decode_threads=args.decode_threads)
+                              decode_threads=args.decode_threads,
+                              min_free_bytes=math.ceil(args.min_free_gib * 1024 ** 3),
+                              workers=args.workers)
         print(suite.describe())
         return 0
     verify(args.suite)

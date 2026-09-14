@@ -27,6 +27,7 @@ htmlcov/
 # Results and scratch. Runs are reproducible from the frozen suite + config,
 # so the databases and staging dirs are not tracked.
 runs/
+/logs/
 *.sqlite
 *.sqlite-wal
 *.sqlite-shm

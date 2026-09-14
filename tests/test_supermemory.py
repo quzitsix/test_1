@@ -130,9 +130,13 @@ def video(path):
         for pkt in s.encode(): c.mux(pkt)
 
 
-def test_preparation_physically_removes_future_and_preserves_raw(tmp_path, capsys):
+def test_preparation_physically_removes_future_and_preserves_raw(tmp_path, capsys, monkeypatch):
     import hashlib
     import numpy as np
+    from meowbench.datasets import supermemory
+    def unexpected_disk_check(path):
+        pytest.fail('Default preparation must not add a disk-space requirement')
+    monkeypatch.setattr(supermemory.shutil, 'disk_usage', unexpected_disk_check)
     src=tmp_path/(V1+'.mp4');video(src)
     original=hashlib.sha256(src.read_bytes()).hexdigest()
     plan=make_plan(write_rows(tmp_path,[row()]))
@@ -153,7 +157,206 @@ def test_preparation_physically_removes_future_and_preserves_raw(tmp_path, capsy
             assert a[0]>200 and a[2]<40  # NEVER see the blue future
     assert hashlib.sha256(src.read_bytes()).hexdigest()==original
     assert suite.manifest['media_sha256']
+    assert 'min_free_bytes' not in suite.manifest['preparation']
     with pytest.raises(FileExistsError): prepare_suite(plan,tmp_path,out)
+
+
+@pytest.mark.parametrize('phase', ['before_output', 'before_clip'])
+def test_preparation_reserves_clip_bytes_before_creating_or_rendering(tmp_path, monkeypatch, phase):
+    from types import SimpleNamespace
+    from meowbench.datasets import supermemory, video_windows
+    src=tmp_path/(V1+'.mp4');video(src)
+    original=src.read_bytes()
+    plan=make_plan(write_rows(tmp_path,[row()]))
+    floor=100
+    required=2 * 128**2 * 3 + 1024**2  # One second, 2 FPS, bounded RGB + overhead.
+    values=iter(([floor+required-1] if phase=='before_output' else
+                 [floor+required, floor+required-1]))
+    monkeypatch.setattr(supermemory.shutil, 'disk_usage',
+                        lambda path: SimpleNamespace(free=next(values)))
+    monkeypatch.setattr(video_windows, 'render_window',
+                        lambda *a, **kw: pytest.fail('Insufficient space must stop before render'))
+    out=tmp_path/'suite'
+    with pytest.raises(ValueError, match='reserved disk floor'):
+        prepare_suite(plan,tmp_path,out,chunk_seconds=1,sample_fps=2,max_side=128,
+                      min_free_bytes=floor)
+    assert out.exists() == (phase=='before_clip')
+    assert not (out/'media').exists() and src.read_bytes()==original
+
+
+def test_preparation_progress_floor_preserves_completed_clips_and_cleans_partial(tmp_path, monkeypatch):
+    from itertools import count
+    from types import SimpleNamespace
+    from meowbench.datasets import supermemory, video_windows
+    src=tmp_path/(V1+'.mp4');video(src)
+    original=src.read_bytes()
+    plan=make_plan(write_rows(tmp_path,[row()]))
+    ticks=count(0,6)
+    monkeypatch.setattr(video_windows, 'time', SimpleNamespace(monotonic=lambda:next(ticks)))
+    space=SimpleNamespace(free=10**9)
+    monkeypatch.setattr(supermemory.shutil, 'disk_usage', lambda path:space)
+    real_render=video_windows.render_window
+    calls=[]
+    def render(source,target,**kwargs):
+        calls.append(target)
+        progress=kwargs.pop('progress')
+        def guarded(position,encoded):
+            if len(calls)==2 and encoded>0:
+                space.free=99
+            progress(position,encoded)
+        return real_render(source,target,progress=guarded,**kwargs)
+    monkeypatch.setattr(video_windows,'render_window',render)
+    out=tmp_path/'suite'
+    with pytest.raises(ValueError,match='reserved disk floor'):
+        prepare_suite(plan,tmp_path,out,chunk_seconds=1,sample_fps=2,max_side=128,
+                      min_free_bytes=100)
+    assert len(calls)==2 and calls[0].is_file() and not calls[1].exists()
+    assert not list(out.rglob('*.partial.mp4')) and not (out/'manifest.json').exists()
+    assert src.read_bytes()==original
+
+
+@pytest.mark.parametrize('floor', [-1, True, 1.5, '1', float('nan'), float('inf')])
+def test_preparation_rejects_invalid_floor_before_any_output(tmp_path, floor):
+    with pytest.raises(ValueError,match='preparation settings'):
+        prepare_suite({},tmp_path,tmp_path/'suite',min_free_bytes=floor)
+    assert not (tmp_path/'suite').exists()
+
+
+def test_preparation_records_nonzero_floor_and_cli_validates_gib(tmp_path,monkeypatch):
+    from types import SimpleNamespace
+    from meowbench.datasets import supermemory
+    src=tmp_path/(V1+'.mp4');video(src)
+    plan=make_plan(write_rows(tmp_path,[row()]))
+    monkeypatch.setattr(supermemory.shutil,'disk_usage',lambda path:SimpleNamespace(free=10**9))
+    suite=prepare_suite(plan,tmp_path,tmp_path/'suite',chunk_seconds=1,max_side=128,
+                        min_free_bytes=100)
+    assert suite.manifest['preparation']['min_free_bytes']==100
+    script=load_script('prepare_supermemory')
+    monkeypatch.setattr(script,'read_plan',lambda path:plan)
+    received=[]
+    def prepare(*args,**kwargs):
+        received.append(kwargs['min_free_bytes'])
+        return SimpleNamespace(describe=lambda:'synthetic suite')
+    monkeypatch.setattr(script,'prepare_suite',prepare)
+    command=['prepare_supermemory.py','prepare','--plan','unused','--video-root',str(tmp_path),
+             '--out',str(tmp_path/'cli-suite'),'--min-free-gib']
+    monkeypatch.setattr(script.sys,'argv',command+['1.5'])
+    assert script.main()==0 and received==[int(1.5*1024**3)]
+    for value in ('-1','nan','inf'):
+        monkeypatch.setattr(script.sys,'argv',command+[value])
+        with pytest.raises(SystemExit) as exc:
+            script.main()
+        assert exc.value.code==2
+    assert len(received)==1
+
+
+def test_parallel_preparation_deduplicates_and_matches_single_worker_media(tmp_path,monkeypatch):
+    import av
+    from threading import Barrier, Lock
+    from meowbench.datasets import video_windows
+    src=tmp_path/(V1+'.mp4');video(src)
+    original=src.read_bytes()
+    plan=make_plan(write_rows(tmp_path,[row(1),row(2)]))
+    sequential=prepare_suite(plan,tmp_path,tmp_path/'sequential',chunk_seconds=.5,max_side=128)
+    real_render=video_windows.render_window
+    barrier,lock=Barrier(4),Lock()
+    calls=[]
+    active=peak=0
+    def concurrent(source,target,**kwargs):
+        nonlocal active,peak
+        with lock:
+            calls.append(target.name)
+            active+=1
+            peak=max(peak,active)
+        try:
+            barrier.wait(timeout=5)
+            assert kwargs['decode_threads']==4
+            return real_render(source,target,**kwargs)
+        finally:
+            with lock:
+                active-=1
+    monkeypatch.setattr(video_windows,'render_window',concurrent)
+    parallel=prepare_suite(plan,tmp_path,tmp_path/'parallel',chunk_seconds=.5,max_side=128,workers=4)
+    assert peak==4 and active==0 and len(calls)==len(set(calls))==4
+    assert parallel.manifest['preparation']['workers']==4
+    assert 'workers' not in sequential.manifest['preparation']
+    assert [item.model_dump() for item in parallel.items]==[item.model_dump() for item in sequential.items]
+    assert parallel.manifest['media_sha256'].keys()==sequential.manifest['media_sha256'].keys()
+    def pixels(path):
+        with av.open(str(path)) as reader:
+            return [(frame.pts,frame.width,frame.height,frame.to_ndarray(format='rgb24').tobytes())
+                    for frame in reader.decode(video=0)]
+    for relative in parallel.manifest['media_sha256']:
+        assert pixels(tmp_path/'parallel'/relative)==pixels(tmp_path/'sequential'/relative)
+    assert src.read_bytes()==original
+
+
+@pytest.mark.parametrize('workers',[2,4])
+def test_parallel_preparation_reserves_all_concurrent_clip_budgets(tmp_path,monkeypatch,workers):
+    from types import SimpleNamespace
+    from meowbench.datasets import supermemory,video_windows
+    src=tmp_path/(V1+'.mp4');video(src)
+    plan=make_plan(write_rows(tmp_path,[row()]))
+    per_clip=128**2*3+1024**2  # .5-second clips at 2 FPS.
+    monkeypatch.setattr(supermemory.shutil,'disk_usage',
+                        lambda path:SimpleNamespace(free=100+workers*per_clip-1))
+    monkeypatch.setattr(video_windows,'render_window',
+                        lambda *a,**kw:pytest.fail('All worker reservations must pass before rendering'))
+    out=tmp_path/'suite'
+    with pytest.raises(ValueError,match='reserved disk floor'):
+        prepare_suite(plan,tmp_path,out,chunk_seconds=.5,max_side=128,
+                      min_free_bytes=100,workers=workers)
+    assert not out.exists()
+
+
+def test_parallel_failure_cancels_pending_jobs_and_waits_for_active_cleanup(tmp_path,monkeypatch):
+    from threading import Barrier,Lock
+    import time
+    from meowbench.datasets import video_windows
+    src=tmp_path/(V1+'.mp4');video(src)
+    original=src.read_bytes()
+    plan=make_plan(write_rows(tmp_path,[row()]))
+    barrier,lock=Barrier(2),Lock()
+    started,finished=[],[]
+    def failing(source,target,*,start,progress,**kwargs):
+        target.parent.mkdir(parents=True,exist_ok=True)
+        partial=target.with_suffix('.partial.mp4')
+        partial.write_bytes(b'temporary encoded bytes')
+        with lock:
+            started.append(start)
+        try:
+            barrier.wait(timeout=5)
+            if start==0:
+                raise ValueError('synthetic primary render failure')
+            deadline=time.monotonic()+5
+            while time.monotonic()<deadline:
+                progress(start,0)
+                time.sleep(.001)
+            pytest.fail('Active worker did not receive cancellation')
+        finally:
+            time.sleep(.02)  # Caller must wait for this cleanup before returning.
+            partial.unlink()
+            with lock:
+                finished.append(start)
+    monkeypatch.setattr(video_windows,'render_window',failing)
+    out=tmp_path/'suite'
+    with pytest.raises(ValueError,match='synthetic primary render failure'):
+        prepare_suite(plan,tmp_path,out,chunk_seconds=.25,max_side=128,workers=2)
+    assert sorted(started)==sorted(finished)==[0,.25]  # Six queued jobs never render.
+    assert not list(out.rglob('*.partial.mp4')) and not (out/'manifest.json').exists()
+    assert src.read_bytes()==original
+
+
+@pytest.mark.parametrize('workers',[0,5,True,1.5])
+def test_preparation_and_cli_reject_invalid_worker_counts(tmp_path,monkeypatch,workers):
+    with pytest.raises(ValueError,match='preparation settings'):
+        prepare_suite({},tmp_path,tmp_path/'suite',workers=workers)
+    script=load_script('prepare_supermemory')
+    monkeypatch.setattr(script.sys,'argv',['prepare_supermemory.py','prepare','--plan','unused',
+        '--video-root',str(tmp_path),'--out',str(tmp_path/'suite'),'--workers',str(workers)])
+    with pytest.raises(SystemExit) as exc:
+        script.main()
+    assert exc.value.code==2 and not (tmp_path/'suite').exists()
 
 
 def test_missing_video_never_freezes_a_fake_visual_suite(tmp_path):
