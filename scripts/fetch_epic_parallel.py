@@ -295,8 +295,8 @@ def main() -> int:
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
     if (not math.isfinite(args.max_download_gib) or not 0 < args.max_download_gib <= 25
-            or not math.isfinite(args.reserve_gib) or args.reserve_gib < 80):
-        parser.error("The batch budget must be at most 25 GiB and the disk reserve at least 80 GiB")
+            or not math.isfinite(args.reserve_gib) or args.reserve_gib <= 0):
+        parser.error("The batch budget must be at most 25 GiB and the disk reserve positive and finite")
     args.root = Path(os.path.abspath(args.root))
     args.manifest = Path(os.path.abspath(args.manifest))
     os.close(directory(args.root))

@@ -306,9 +306,33 @@ def test_exception_after_launch_stops_child_before_releasing_locks(parallel, tmp
     assert process.returncode == 7 and not list(root.rglob("*.lock"))
 
 
-@pytest.mark.parametrize("extra", [("--reserve-gib", "79"), ("--reserve-gib", "nan"),
+@pytest.mark.parametrize("reserve_gib", [0.5, 70, 80])
+def test_explicit_positive_reserve_reaches_preflight_monitor_and_manifest(
+        parallel, tmp_path, monkeypatch, reserve_gib):
+    _, manifest = configure_main(parallel, monkeypatch, tmp_path,
+                                 extra=("--reserve-gib", str(reserve_gib)))
+    metadata = Mock(wraps=parallel.ensure_md5)
+    preflight = Mock(wraps=parallel.preflight)
+    monitor = Mock(wraps=parallel.monitor)
+    monkeypatch.setattr(parallel, "ensure_md5", metadata)
+    monkeypatch.setattr(parallel, "preflight", preflight)
+    monkeypatch.setattr(parallel, "monitor", monitor)
+    def child(command, **kwargs):
+        (kwargs["cwd"] / "P07_106.MP4").write_bytes(BODY)
+        return Process([None, 0])
+    monkeypatch.setattr(parallel.subprocess, "Popen", child)
+    assert parallel.main() == 0
+    expected = int(reserve_gib * parallel.GIB)
+    assert metadata.call_args.kwargs["reserve_bytes"] == expected
+    assert preflight.call_args.kwargs["reserve_bytes"] == expected
+    assert monitor.call_args.kwargs["reserve_bytes"] == expected
+    assert json.loads(manifest.read_text())["reserve_gib"] == reserve_gib
+
+
+@pytest.mark.parametrize("extra", [("--reserve-gib", "0"), ("--reserve-gib", "-1"),
+                                  ("--reserve-gib", "nan"), ("--reserve-gib", "inf"),
                                   ("--max-download-gib", "26"), ("--max-download-gib", "inf")])
-def test_cli_cannot_lower_reserve_or_raise_batch_cap(parallel, tmp_path, monkeypatch, extra):
+def test_cli_rejects_invalid_reserve_and_excessive_batch_cap(parallel, tmp_path, monkeypatch, extra):
     configure_main(parallel, monkeypatch, tmp_path, extra=extra)
     with pytest.raises(SystemExit) as exc:
         parallel.main()
