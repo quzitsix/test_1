@@ -8,14 +8,17 @@
 
 用户已明确批准本轮 EPIC 的保留线改为 **70 GiB**，续传命令与本地
 `/data/quzitsix/epic/resume-request-20260915.json` 已更新。
-该时点共享盘可用空间约 **47.898 GiB**，低于批准的保留线。
+清理其它数据后恢复下载；EPIC 现已 **35/35** 项完成验收，下载清单为 `complete=true`，
+清单中的 35 项共 26,127,448,389 字节，保留线为 70 GiB。
+最终共享盘可用空间约 **105.64 GiB**。
+清理前曾只有约 **47.898 GiB**，低于批准的保留线。
 现有脚本恢复剩余 4 项需约 **74.730 GiB** 可用空间（按完整文件保守预算，含 128 MiB 缓冲），
 因此还缺约 **26.832 GiB**；即使抵扣已有续传分片的物理占用，也需约 74.070 GiB。
-本次没有启动网络下载，没有进一步删除数据，也没有继续降低保留线。
+清理后已启动一次直连续传并完成最终校验；没有继续降低保留线。
 只读检查未发现可用的独立数据挂载：`/mnt/ssd4t/data` 不存在，`/share` 指向同一
 `/data` 分区；根分区仅余约 22.608 GiB，没有把下载转移到根盘或共享内存来绕过预算。
 
-31/35 个完整视频和两份续传分片仍保留，没有残留 EPIC 锁。上次下载 manifest 中的
+35 个 wanted 视频和原有 `P07_106.MP4` 均保留，没有残留 EPIC 锁。上次下载 manifest 中的
 `reserve_gib=80` 是上次实际运行的历史参数，未改写为新值；下一次获准启动的续传使用 70。
 下文 2026-09-14 的空间数字是历史快照，不能用于当前预算。
 
@@ -23,34 +26,21 @@
 
 | 数据 | 已完成的下载与处理 | 本轮数据量 | 本地根目录 |
 | --- | --- | --- | --- |
-| EPIC-KITCHENS | 31/35 个 wanted 视频已下载并验收；另 4 个因共享磁盘保护暂停。已有标注 survey 与覆盖审计完成 | 验收视频 19.728 GiB；另有约 0.660 GiB 续传分片 | `/data/quzitsix/epic` |
-| ADT | 236 份 GT 原包、全部必要字段提取、20 段配置选定 RGB 预览 | 原包 9.922 GiB，预览 1.959 GiB，提取 4.273 GiB；合计 16.154 GiB | `/data/quzitsix/adt` |
-| MEMORA | EAM-QA 2,763 题、Planning Replay 207 条、Generalize 153 条，18 名参与者 | 源归档 52.460 MiB，提取 4.422 MiB（另有少量来源元数据） | `/data/quzitsix/banks/memora` |
-| R3D-Bench | Parquet 真实解码：3,033 行、17 列、57 个序列；完整 JSON 副本逐值核对一致 | Parquet 288,381 字节，JSON 4,876,292 字节 | `/data/quzitsix/banks/r3d-bench` |
-| SuperMemory | 最初校验全部 11 个原视频；后按用户授权删除新增的 session 7、13，当前保留 9/11 个，扩展处理暂停 | 新视频当前保留 7 个、17.851 GiB；中间片段约 0.313 GiB | `/data/quzitsix/supermemory` |
+| EPIC-KITCHENS | 35/35 个 wanted 视频已下载、官方校验和抽帧验收；已有标注 survey 与覆盖审计完成 | wanted 视频 24.333 GiB；另保留原有 P07_106 | `/data/quzitsix/epic` |
+| ADT | 本轮 GT、字段和预览已清理；仅保留序列摘要、manifest 与日志 | 已清理 17.345 GiB | `/data/quzitsix/adt` |
+| MEMORA | 本轮源归档和提取文件已清理；仅保留 manifest 与 validation | 已清理约 59.6 MiB | `/data/quzitsix/banks/memora` |
+| R3D-Bench | Parquet、JSON 和 pyarrow wheel 已清理；仅保留下载/校验记录 | 已清理约 48.0 MiB | `/data/quzitsix/banks/r3d-bench` |
+| SuperMemory | 原视频、MPS 和中断片段已清理；保留可直接检查的 pilot 版本 | pilot-v2 约 225.7 MiB | `/data/quzitsix/meow-releases/supermemory-pilot-v2` |
 
 ### EPIC
 
 `configs/datasets/epic_videos.txt` 固定服务器原有 wanted 的 35 个 ID，混合 EPIC-55 与
 EPIC-100 extension。原来已有的 `P07_106.MP4` 不在这 35 项中，保留不动。
-实际完成 31/35，21,182,350,725 字节；全部 35 项为 26,127,448,389 字节。
-本地 `download-manifest-parallel-20260914.json` 最终状态为 `incomplete`，
-停止原因 `shared_disk_reserve`，不是校验失败。本轮下载器与处理器均已退出。
+实际完成 35/35，26,127,448,389 字节；manifest 最终状态为 `complete=true`，
+aria2 已正常退出，清单无 pending 项和残留锁。恢复时保留线为用户批准的 70 GiB。
+整个 wanted 集合的每个文件均检查官方 MD5、文件大小、本地 SHA256、时长和抽帧解码后才发布。
 
-| 未完成视频 | 官方完整大小（字节） | 本地续传分片实际占用（字节） |
-| --- | ---: | ---: |
-| P06_113.MP4 | 936,841,147 | 483,102,720 |
-| P04_115.MP4 | 782,268,093 | 225,972,224 |
-| P04_112.MP4 | 1,488,241,835 | 0 |
-| P04_116.MP4 | 1,737,746,589 | 0 |
-
-扣除分片已分配空间，估计还需约 3.945 GiB 新空间。23:37 按用户授权删除两个
-SuperMemory 新视频，释放 7.745 GiB；共享写入使删除后的可用空间仍仅约 78.148 GiB。
-若维持 80 GiB 停止线及缓冲，当前脚本的全量保守预检还缺约 6.582 GiB 预算余量；
-按已有分片物理占用抵扣计算也仍缺约 5.922 GiB。当前未启动续传，未自行降低停止线。
-随后共享盘可用空间继续降至约 72.929 GiB。即使另行采用 70 GiB 停止线，
-当前脚本保守预检也需约 74.730 GiB 可用空间；这一方案此时同样不足。
-以上是各时点快照，释放两个授权文件不能阻止其他写入继续消耗共享空间。
+此前的 31/35、续传分片和空间不足均为历史快照；四个剩余视频随后已完成续传并通过验收。
 
 官方 MD5 清单固定于下载脚本仓库版本
 `4f11fb2b579833f360c3c7bb917bf1e24a9787b5`。每个完成视频均检查官方字节数、MD5、
@@ -83,51 +73,49 @@ SuperMemory 新视频，释放 7.745 GiB；共享写入使删除后的可用空�
 - 184 个 Apartment、52 个 LiteOffice 序列；73 个唯一物体 ID 被上游标为 dynamic。
   这只是运动类型标签，尚未计算真实迁移事件，也未生成 ADT QA suite。
 
-原包、提取字段、预览分别在 `raw/`、`processed/`、`preview/`。
-检查记录：`manifests/a3_preparation.json` 与 `processed/sequence_inventory.json`。
+原包、提取字段、预览已按用户清理；保留 `manifests/a3_preparation.json`、
+`processed/sequence_inventory.json` 和日志作为历史记录，manifest 状态已标记 `purged`。
 本轮不包含 VRS、深度、分割、合成图像与点云。
 
 ### 小题库
 
-MEMORA 源版本 `9c80048f8b4682898f967de01c2ae0c2b1326e1d`；原归档完整保留，
-选择性提取 61 个数据和说明文件，逐个对照官方 Git blob 哈希。54 个题目 JSON 已检查字段、
-选项、答案与参与者内 ID 唯一性。EAM-QA 含 2,212 个可回答项和 551 个拒答项。
+MEMORA 源版本 `9c80048f8b4682898f967de01c2ae0c2b1326e1d`；原归档与选择性提取文件此前
+已逐个对照官方 Git blob 哈希，随后按用户要求清理。仅保留 download manifest、validation
+和清理记录；EAM-QA 此前含 2,212 个可回答项和 551 个拒答项。
 本次不包含 MEMORA 参与者记忆包及全部配套 EPIC 视频。
 
 R3D 源版本 `10efd9e8706c452d145424f29eb3b4c0669dfef4`；Parquet 官方 SHA256 匹配，
-3,033 个 ID 唯一，题目和答案非空、时间范围有效。上游的 `spatial_description` 和
-`temporal_description` 两列本就全空，未自行补造。其 QA 题库和配套媒体不能混称全部已就绪。
+3,033 个 ID 唯一，题目和答案非空、时间范围有效；这些原件随后已清理，仅保留 provenance
+manifest 和 validation（状态 `purged`）。上游的 `spatial_description` 和 `temporal_description`
+两列本就全空，未自行补造。
 
-两者均保留 `download-manifest.json` 与 `validation.json`。
-为读取 Parquet，仅在现有 `meowbench` 环境新增 `pyarrow==21.0.0`，官方 wheel
-约 40.84 MiB 保留在 R3D 的 `tooling/`；安装包文件约 134.81 MiB（磁盘占用约 137 MiB），
-没有升级已有包或改动 base。
+两者均保留 `download-manifest.json` 与 `validation.json`，并标记已清理原件。
+为读取 Parquet，曾在现有 `meowbench` 环境新增 `pyarrow==21.0.0`；官方 wheel 和
+安装物随后随 R3D 原件清理，没有升级已有包或改动 base。
 
 ### SuperMemory
 
-固定视频源版本 `1d228e0f10049a8a84c458dded2aa25b1e21ce8f`。
-计划在 `plans/visual-30-20260914.json`，下载校验在 `manifests/visual-30-20260914.json`。
-最初 11 个原视频合计 32,005,764,129 字节；本轮最初新增 9 个共 27,483,841,102 字节。
-官方 SHA256、时长与抽帧解码已检查。`all_qa.json` 也核对到同一官方版本。
+固定视频源版本 `1d228e0f10049a8a84c458dded2aa25b1e21ce8f`。扩展计划和下载校验记录仍在
+`plans/visual-30-20260914.json`、`manifests/visual-30-20260914.json`，但原视频与 MPS
+已按用户要求清理。此前 11 个原视频均通过官方 SHA256、时长与抽帧解码检查，`all_qa.json`
+也曾核对到同一官方版本。
 
-23:37 按用户明确授权，逐个重新核对官方 SHA256、文件身份、所有权及实际媒体引用后，删除：
+23:37 按用户明确授权，逐个重新核对官方 SHA256、文件身份、所有权及实际媒体引用后，先删除：
 
 - `Person_1_session_7_03072026_glasses_1322.mp4`：4,444,892,224 字节。
 - `Person_1_session_13_03152026_glasses_1264.mp4`：3,871,451,108 字节。
 
-合计释放 8,316,343,332 字节（7.745 GiB）。当前计划只保留 9/11 个原视频，
-共 23,689,420,797 字节；其中本轮新增保留 7 个、19,167,497,770 字节。
-删除前清单有独立快照，当前下载清单已设 `complete=false`、`retained_files=9`，
-逐文件标记保留情况；删除记录为 `manifests/authorized-removal-20260914T153721Z.json`。
-原 30 题计划保持完整，没有静默删除相关题目或把缺少两段后的状态标为下载完成。
+合计释放 8,316,343,332 字节（7.745 GiB）。随后按“只保留 EPIC 与一个可检查的视频版本”的授权，
+清理了剩余 9 个原视频、全部 MPS、题目 JSON、transcript 和中断片段。
+删除前清单有独立快照，删除记录为 `manifests/authorized-removal-20260914T153721Z.json`；
+非 EPIC 清理总记录为 `/data/quzitsix/epic/cleanup-records/cleanup-20260915T152205Z.json`。
+原 30 题计划文件保留为 provenance，没有把缺少媒体后的状态标为可运行完成。
 
-该计划 30 题均为 Person 1 的 single-session 项，共需 301 个唯一片段。
-用户随后选择优先 EPIC，故停止扩展处理，54 个已生成片段（336,542,923 字节）保留于
-`/data/quzitsix/meow-releases/supermemory-visual-30-20260914-interrupted`，附中断说明；
-该目录没有冻结 suite，不应传给评测器。
+该计划 30 题均为 Person 1 的 single-session 项，共需 301 个唯一片段。扩展处理已停止，
+54 个未完成片段也已清理，不应传给评测器。
 已有 `/data/quzitsix/meow-releases/supermemory-pilot-v2` 仍为 5 题、5 环境、38 个片段，
 删除上述两段后再次 verify 通过，38 个片段全部通过哈希与解码校验；其实际源录制仅为
-session 1、8。原来的约 56 GiB MPS 数据及其他已有数据均保留。
+session 1、8。该 pilot 是当前唯一保留的 SuperMemory 视频数据版本。
 
 ## 尚未完成的范围
 
@@ -159,5 +147,11 @@ aria2 已退出后，共享盘仍继续降至约 74.86 GiB。没有为补齐最�
 后续授权删除：原 pilot 再次 verify 通过；EPIC 的 `--reserve-gib` 参数现允许显式正有限值，
 默认 80 不变，仍传递到预检、运行监控和结果清单。本次参数改动定向测试 **32 passed**，
 包含拒绝 0、负数、NaN、无穷及超出批次预算；没有因参数可配置而自行启动低保留线下载。
+
+本次非 EPIC 清理删除逻辑文件约 **100,658,505,710 字节**，包括 SuperMemory MPS/原视频、
+ADT 原包/预览/处理字段、MEMORA 源归档、R3D Parquet/JSON/工具 wheel 以及中断片段；
+同时删除了含签名下载 URL 的 `ADT_download_urls.json`。保留 `supermemory-pilot-v2`、
+代码、模型配置、EPIC 数据及各数据集的小型 provenance 记录。清理前置审计确认目标均属
+`quzitsix`、无 symlink/hardlink/打开句柄；记录见上述 cleanup JSON。清理后共享盘约余 105.64 GiB。
 
 实验室 Data Tracker 由使用者依据本表及本地校验清单登记。

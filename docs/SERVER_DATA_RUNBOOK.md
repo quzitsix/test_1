@@ -15,8 +15,9 @@
   2026-09-15 用户明确批准本轮 EPIC 续传改为 **70 GiB**，其余任务没有改动。
   这是本任务的停止阈值，不能阻止其他用户继续消耗共享空间；触发后先完成已有文件校验。
 - 只用 CPU 处理视频；SuperMemory prepare 解码线程数为 4，长任务用低 CPU 优先级。无 sudo、系统配置修改或 GPU 模型重跑。
-- 默认保留原始文件；压缩包选择性解压到另一个目录。本次仅依照用户后续明确授权，
-  删除本轮新增的 SuperMemory session 7、13 两个原视频以优先 EPIC，详情见状态清单。
+- 默认保留原始文件；压缩包选择性解压到另一个目录。本次用户随后明确要求只保留 EPIC
+  和一个可检查的视频版本，因此已删除非 EPIC 数据集原料及 SuperMemory 扩展原视频，
+  详情见状态清单。
   不清理他人数据，也不清理既有个人缓存。
 
 ## 直连、完整性与恢复
@@ -128,6 +129,9 @@ python scripts/prepare_supermemory.py verify \
 
 ## ADT 与小题库
 
+本节记录本轮曾完成的准备过程；用户随后要求只保留 EPIC，ADT 原包、预览和处理字段已清理，
+仅保留摘要、manifest 与日志供追溯，不能按以下命令直接声称本地原料仍在。
+
 `scripts/prepare_adt.py --help` 给出下载和处理参数。输入服务器现有的 ADT 官方链接清单，
 下载 236 份 GT 原包和两份 `configs/datasets/adt_sequences*.txt` 选中的 20 段 RGB 预览。
 原包约 9.922 GiB、预览约 1.959 GiB；处理另受 22 GiB 总预算限制。
@@ -144,7 +148,7 @@ python scripts/prepare_adt.py --root /data/quzitsix/adt --summary-only
 Parquet 原件、完整 JSON 副本及逐值核对结果都保留在 `banks/r3d-bench`；可用
 `pyarrow.parquet.read_table(...)` 重新读取原件。
 
-MEMORA 与 R3D 的小题库保存在 `/data/quzitsix/banks`，各自保留源版本、原始归档和校验清单。
+MEMORA 与 R3D 的小题库原料已清理；`/data/quzitsix/banks` 仅保留小型版本、校验和清理记录。
 这些上游题库尚未自动转换成 MEOWBench suite。ADT 同样是已整理原料，仓库尚无完整 ADT miner。
 3RScan 当前仍只有标注和 229 题旧 release，561 个媒体引用为空，不能运行其视觉两轨。
 
