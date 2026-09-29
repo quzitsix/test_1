@@ -107,3 +107,5 @@ python scripts/evaluate_homesentinel_caption.py \
 本 README 不包含 baseline 实现，也没有修改原始数据。
 
 本说明文件位于 meowbench 仓库的 docs/HOMESENTINEL_README.md；数据目录只保留 video_order.json 和 asuka 数据目录。
+
+本次 caption-only 评测的简要结果见 [HOMESENTINEL_CAPTION_RESULTS.md](HOMESENTINEL_CAPTION_RESULTS.md)。
