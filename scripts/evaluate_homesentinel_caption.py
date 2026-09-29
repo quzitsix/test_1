@@ -14,6 +14,8 @@ import json
 import re
 import string
 import time
+import urllib.error
+import urllib.request
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
@@ -26,6 +28,24 @@ def parse_args() -> argparse.Namespace:
         default="/data/quzitsix/models/Qwen3-VL-2B-Instruct",
     )
     p.add_argument(
+        "--backend",
+        choices=("hf", "openai"),
+        default="hf",
+        help="hf loads a checkpoint in-process; openai calls a local compatible server",
+    )
+    p.add_argument(
+        "--base-url",
+        default="http://127.0.0.1:18000/v1",
+        help="OpenAI-compatible base URL when --backend=openai",
+    )
+    p.add_argument(
+        "--model",
+        default="/data/hf_models/Qwen/Qwen3.5-35B-A3B",
+        help="served model name when --backend=openai",
+    )
+    p.add_argument("--api-key", default="EMPTY")
+    p.add_argument("--request-timeout", type=float, default=1800.0)
+    p.add_argument(
         "--data-root",
         type=Path,
         default=Path("/data/HomeSentinel/asuka"),
@@ -36,14 +56,23 @@ def parse_args() -> argparse.Namespace:
         default=Path("runs/homesentinel-caption-qwen3-vl-2b/predictions.jsonl"),
     )
     p.add_argument("--category", choices=("owner", "home", "event"))
+    p.add_argument("--offset", type=int, default=0, help="skip this many selected queries")
     p.add_argument("--limit", type=int, default=0, help="0 means all selected queries")
     p.add_argument(
         "--caption-mode",
-        choices=("summary", "summary_speech"),
+        choices=("summary", "summary_speech", "important"),
         default="summary",
-        help="summary is activity/location/time; summary_speech also includes speech text",
+        help=(
+            "summary is activity/location/time; summary_speech adds speech; "
+            "important adds one final structured event per scene"
+        ),
     )
-    p.add_argument("--max-context-tokens", type=int, default=200_000)
+    p.add_argument(
+        "--max-context-tokens",
+        type=int,
+        default=240_000,
+        help="reject prompts above this limit before sending them to the model",
+    )
     p.add_argument("--max-new-tokens", type=int, default=128)
     p.add_argument("--dtype", choices=("bfloat16", "float16", "float32"), default="bfloat16")
     p.add_argument("--device", default="cuda:0")
@@ -65,10 +94,12 @@ def load_data(root: Path) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
 
 
 def select_queries(
-    queries: list[dict[str, Any]], category: str | None, limit: int
+    queries: list[dict[str, Any]], category: str | None, offset: int, limit: int
 ) -> list[dict[str, Any]]:
     if category:
         queries = [q for q in queries if q["_category_file"] == category]
+    if offset:
+        queries = queries[offset:]
     if not limit or limit >= len(queries):
         return queries
     # A small pilot should cover all three question families when no category
@@ -112,6 +143,16 @@ def caption_context(
                     text = (speech.get("text") or "").strip()
                     if text:
                         chunks.append(f"SPEECH {speech.get('t', '')}: {text}")
+            if mode == "important":
+                # Keep one deterministic, question-independent event per
+                # scene.  This preserves a compact final state without using
+                # query evidence as a retrieval signal.
+                events = seg.get("events") or []
+                if events:
+                    event = events[-1]
+                    text = (event.get("text") or "").strip()
+                    if text:
+                        chunks.append(f"EVENT {event.get('t', '')}: {text}")
             n_events += len(seg.get("events") or [])
     return "\n".join(chunks), len(visible), n_segments
 
@@ -178,6 +219,12 @@ def load_model(args: argparse.Namespace):
     return torch, processor, model
 
 
+def load_tokenizer(model_path: str):
+    from transformers import AutoTokenizer
+
+    return AutoTokenizer.from_pretrained(model_path, local_files_only=True)
+
+
 def generate(
     torch: Any,
     processor: Any,
@@ -211,6 +258,49 @@ def generate(
     return text, prompt_tokens
 
 
+def generate_openai(
+    opener: urllib.request.OpenerDirector,
+    base_url: str,
+    model: str,
+    api_key: str,
+    prompt: str,
+    max_new_tokens: int,
+    timeout: float,
+) -> tuple[str, int]:
+    payload = {
+        "model": model,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0,
+        "max_tokens": max_new_tokens,
+    }
+    request = urllib.request.Request(
+        base_url.rstrip("/") + "/chat/completions",
+        data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}",
+        },
+        method="POST",
+    )
+    try:
+        with opener.open(request, timeout=timeout) as response:
+            body = json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as exc:
+        detail = exc.read().decode("utf-8", errors="replace")[:2000]
+        raise RuntimeError(f"HTTP {exc.code} from caption endpoint: {detail}") from exc
+    choices = body.get("choices") or []
+    if not choices or not isinstance(choices[0].get("message"), dict):
+        raise RuntimeError(f"caption endpoint returned no message: {body!r}")
+    content = choices[0]["message"].get("content", "")
+    if isinstance(content, list):
+        content = "".join(
+            part.get("text", "") for part in content if isinstance(part, dict)
+        )
+    usage = body.get("usage") or {}
+    prompt_tokens = int(usage.get("prompt_tokens") or 0)
+    return str(content).strip(), prompt_tokens
+
+
 def aggregate(rows: list[dict[str, Any]]) -> dict[str, Any]:
     groups: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for row in rows:
@@ -233,15 +323,22 @@ def aggregate(rows: list[dict[str, Any]]) -> dict[str, Any]:
 def main() -> int:
     args = parse_args()
     captions, all_queries = load_data(args.data_root)
-    queries = select_queries(all_queries, args.category, args.limit)
+    queries = select_queries(all_queries, args.category, args.offset, args.limit)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     completed: set[str] = set()
     if args.resume and args.output.exists():
         for line in args.output.read_text(encoding="utf-8").splitlines():
             if line.strip():
-                completed.add(json.loads(line)["query_id"])
-    torch, processor, model = load_model(args)
-    tokenizer = getattr(processor, "tokenizer", processor)
+                row = json.loads(line)
+                if row.get("status") == "ok":
+                    completed.add(row["query_id"])
+    opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+    if args.backend == "hf":
+        torch, processor, model = load_model(args)
+        tokenizer = getattr(processor, "tokenizer", processor)
+    else:
+        torch = processor = model = None
+        tokenizer = load_tokenizer(args.model_path)
     context_cache: dict[tuple[int, str], tuple[str, int, int]] = {}
     rows: list[dict[str, Any]] = []
     with args.output.open("a" if args.resume else "w", encoding="utf-8") as out:
@@ -277,9 +374,20 @@ def main() -> int:
                         f"prompt estimate {prompt_tokens} exceeds "
                         f"--max-context-tokens {args.max_context_tokens}"
                     )
-                answer, encoded_tokens = generate(
-                    torch, processor, model, prompt, args.device, args.max_new_tokens
-                )
+                if args.backend == "hf":
+                    answer, encoded_tokens = generate(
+                        torch, processor, model, prompt, args.device, args.max_new_tokens
+                    )
+                else:
+                    answer, encoded_tokens = generate_openai(
+                        opener,
+                        args.base_url,
+                        args.model,
+                        args.api_key,
+                        prompt,
+                        args.max_new_tokens,
+                        args.request_timeout,
+                    )
                 row.update(
                     status="ok",
                     model_answer=answer,
@@ -306,6 +414,9 @@ def main() -> int:
     payload = {
         "schema": "homesentinel.caption-eval/1",
         "model_path": args.model_path,
+        "backend": args.backend,
+        "base_url": args.base_url if args.backend == "openai" else None,
+        "served_model": args.model if args.backend == "openai" else None,
         "caption_mode": args.caption_mode,
         "n_queries": len(queries),
         "n_completed_this_process": len(rows),
