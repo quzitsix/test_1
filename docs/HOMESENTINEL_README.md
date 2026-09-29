@@ -64,6 +64,27 @@ asuka/benchmark_queries/ 当前有 138 条全为 open_ended 的问题：
 
 每条查询通常包含 question、ground_truth、evidence.segment_ids、video_cutoff_idx 和 expects_episodic。benchmark_tmp/ 中的 merged_profiles.json、merged_objects.json、known_objects.json 以及 video_1..52_{profile,object}.json 更像是已有处理流程的 profile/object 中间材料，不应直接当成评测答案。
 
+## Caption-only baseline
+
+当前仓库提供 `scripts/evaluate_homesentinel_caption.py`，可以不读取视频，只把 `merged_captions.json` 中截止到 `video_cutoff_idx` 的 caption 作为文本上下文发送给模型。脚本不会使用 `evidence.segment_ids` 或 ground_truth 来检索上下文。
+
+Qwen3.5-35B-A3B 的本地 OpenAI-compatible 服务可以这样调用：
+
+```bash
+python scripts/evaluate_homesentinel_caption.py \
+  --backend openai \
+  --base-url http://127.0.0.1:18001/v1 \
+  --model-path /data/hf_models/Qwen/Qwen3.5-35B-A3B \
+  --model /data/hf_models/Qwen/Qwen3.5-35B-A3B \
+  --caption-mode important \
+  --max-context-tokens 240000 \
+  --output runs/homesentinel-caption-qwen35-important/predictions.jsonl
+```
+
+`important` 模式保留场景摘要、位置/时间信息和每个场景最后一条结构化事件；它不加入 speech，以避免当前四卡服务在最长问题上超过显存。需要 speech 时可使用 `summary_speech`，但应先检查 prompt 长度。当前服务实际使用的模型配置原生上下文是 262,144 tokens；没有显式启用 YaRN 时，不能把部署当成 1M 上下文服务。
+
+本次 Asuka 138 题的 caption-only 结果保存在仓库的 `runs/` 目录：`homesentinel-caption-qwen35-important/` 是 compact important 结果，`homesentinel-caption-qwen35-summary-batched/` 是仅场景摘要结果。两者的 `summary.json` 中包含批次覆盖检查和词法匹配诊断；这些分数不等同于人工语义准确率。
+
 当前已发现两处查询证据字段需要在 baseline 前做 lint：asuka_owner_004 使用了裸视频 ID，asuka_owner_052 的 segment 后缀写成了 srg_extracted。其余已检查的 event/home evidence 可在 merged_captions.json 中解析到。
 
 ## 使用时的注意事项
